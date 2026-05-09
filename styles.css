@@ -1187,8 +1187,44 @@ textarea:focus {
 }
 
 @media (max-width: 640px) {
+  .barre-controle {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px 12px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .champ-recherche {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding: 14px;
+    border-radius: 26px;
+    background: rgba(255, 250, 241, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.62);
+    box-shadow: 0 16px 34px rgba(24, 30, 28, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  .champ-recherche input {
+    min-height: 58px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.92);
+  }
+
+  .compteurs {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    align-self: start;
+    gap: 8px;
+  }
+
   .compteur {
     min-width: 0;
+    padding: 8px 12px;
+    box-shadow: 0 12px 24px rgba(20, 82, 77, 0.16);
   }
 
   .compteur span {
@@ -1197,6 +1233,40 @@ textarea:focus {
 
   .compteur p {
     font-size: 0.64rem;
+  }
+
+  .barre-controle .message-application {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  .section-grille {
+    padding: 14px 14px 16px;
+    border-radius: 26px;
+    box-shadow: 0 16px 34px rgba(24, 30, 28, 0.1);
+  }
+
+  .section-grille__entete {
+    margin-bottom: 14px;
+  }
+
+  .section-grille__entete h2 {
+    font-size: clamp(1.45rem, 6vw, 1.9rem);
+    line-height: 1.05;
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+  }
+
+  .outils-collection {
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .onglet-vue,
+  .mode-affichage,
+  .outils-collection .champ-tri select {
+    min-height: 42px;
+    font-size: 0.96rem;
   }
 
   .grille-disques--carrousel {
@@ -1212,5 +1282,14 @@ textarea:focus {
     width: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+  }
+
+  .grille-disques--liste {
+    gap: 10px;
+  }
+
+  .ligne-vinyle {
+    border-radius: 18px;
+    box-shadow: 0 10px 20px rgba(15, 24, 25, 0.06);
   }
 }

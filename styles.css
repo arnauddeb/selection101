@@ -877,25 +877,18 @@ textarea:focus {
 
 .lien-titre {
   color: var(--texte);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
 }
 
 .lien-titre[aria-disabled="true"] {
   pointer-events: none;
+  text-decoration: none;
 }
 
 .lien-titre:not([aria-disabled="true"]):hover {
   color: var(--vert);
-  text-decoration: underline;
-}
-
-.bouton-ecouter-inline {
-  flex: 0 0 auto;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(20, 82, 77, 0.12);
-  font-size: 0.88rem;
-  text-decoration: none;
 }
 
 .commentaire {
@@ -1665,7 +1658,8 @@ textarea:focus {
     text-align: center;
     text-align-last: center;
     padding-inline: 0;
-    background-position: right 10px center;
+    text-indent: 0.14em;
+    background-position: right 8px center;
   }
 
   .grille-disques--carrousel {

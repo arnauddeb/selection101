@@ -692,8 +692,6 @@ function construireCarte(vinyle) {
     vinyle.titre_face_b || "Non renseigné",
     vinyle.lien_apple_music_face_b,
   );
-  configurerLien(fragment.querySelector(".bouton-ecouter-face-a"), vinyle.lien_apple_music_face_a, "Écouter");
-  configurerLien(fragment.querySelector(".bouton-ecouter-face-b"), vinyle.lien_apple_music_face_b, "Écouter");
   fragment.querySelector(".commentaire").textContent =
     vinyle.commentaire || "Aucun commentaire pour ce vinyle.";
 

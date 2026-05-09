@@ -102,6 +102,11 @@ body::before {
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
+}
+
+.hero__identite > div {
+  min-width: 0;
 }
 
 .hero__logo {
@@ -136,6 +141,11 @@ h1 {
   line-height: 0.95;
 }
 
+h2 {
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1;
+}
+
 .hero__intro {
   margin: 18px 0 0;
   max-width: 58ch;
@@ -154,6 +164,7 @@ h1 {
 
 .hero__actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   justify-content: flex-end;
   align-items: flex-start;
@@ -993,12 +1004,20 @@ textarea:focus {
   }
 
   .hero__actions {
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    align-items: stretch;
   }
 
   #bouton-ajouter {
     display: none !important;
+  }
+
+  .menu-sauvegarde,
+  .menu-sauvegarde summary,
+  .hero__actions .bouton {
+    width: 100%;
   }
 
   .barre-controle,
@@ -1023,6 +1042,26 @@ textarea:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .outils-collection {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .champ-tri,
+  .onglets-vues,
+  .modes-affichage {
+    width: 100%;
+    min-width: 0;
+    flex: none;
+  }
+
+  .outils-collection .champ-tri select {
+    border-radius: 14px;
+    border-bottom-color: var(--bordure);
+  }
+
   .grille-disques {
     display: grid;
     grid-template-columns: 1fr;
@@ -1033,12 +1072,12 @@ textarea:focus {
 
   .grille-disques--carrousel {
     display: flex;
-    gap: 28px;
+    gap: 16px;
     overflow-x: auto;
     overflow-y: visible;
-    padding: 20px 18px 28px;
-    scroll-padding-inline: 18px;
-    scroll-snap-type: none;
+    padding: 16px 2px 24px;
+    scroll-padding-inline: 2px;
+    scroll-snap-type: x proximity;
     scrollbar-width: none;
   }
 
@@ -1053,9 +1092,10 @@ textarea:focus {
   }
 
   .grille-disques--carrousel .carte-disque {
-    flex-basis: min(82vw, 360px);
-    width: min(82vw, 360px);
+    flex-basis: min(100%, 320px);
+    width: min(100%, 320px);
     margin-inline: 0;
+    scroll-snap-align: start;
   }
 
   .bouton-carrousel {
@@ -1090,7 +1130,11 @@ textarea:focus {
 
 @media (max-width: 520px) {
   h1 {
-    font-size: clamp(2.5rem, 14vw, 3.8rem);
+    font-size: clamp(2.2rem, 12vw, 3.3rem);
+  }
+
+  h2 {
+    font-size: clamp(1.9rem, 9vw, 2.8rem);
   }
 
   .hero__identite {
@@ -1103,18 +1147,41 @@ textarea:focus {
     border-radius: 18px;
   }
 
-  .hero__actions {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 10px;
-  }
-
   .menu-sauvegarde__contenu {
-    min-width: 200px;
+    left: 0;
+    right: 0;
+    min-width: 0;
   }
 
   .menu-options__contenu {
-    min-width: 190px;
+    left: 0;
+    right: auto;
+    min-width: min(190px, calc(100vw - 72px));
+  }
+
+  .compteurs {
+    grid-template-columns: 1fr;
+  }
+
+  .ligne-vinyle {
+    grid-template-columns: 1fr;
+  }
+
+  .ligne-vinyle__visuel {
+    width: 72px;
+  }
+
+  .ligne-vinyle__entete,
+  .face-arriere__haut,
+  .ligne-titre,
+  .formulaire__entete,
+  .formulaire__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .formulaire__actions .bouton {
+    width: 100%;
   }
 
   input,

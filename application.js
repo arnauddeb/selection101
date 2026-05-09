@@ -57,7 +57,7 @@ const elements = {
 let collection = [];
 let vueActive = "jukebox";
 let triActif = "position";
-let modeAffichage = "pochettes";
+let modeAffichage = obtenirModeAffichageInitial();
 let indexCarrousel = 0;
 let delaiCarrousel = null;
 let animationCarrousel = null;
@@ -217,6 +217,10 @@ async function chargerDepuisFichierStatique() {
 
 function estAdresseLocale() {
   return ["127.0.0.1", "localhost", ""].includes(window.location.hostname);
+}
+
+function obtenirModeAffichageInitial() {
+  return window.matchMedia("(max-width: 640px)").matches ? "liste" : "pochettes";
 }
 
 function remplirEtats() {

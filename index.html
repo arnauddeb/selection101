@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta
+      name="description"
+      content="Sélection 101, bibliothèque locale pour jukebox Seeburg Mardi Gras."
+    />
+    <meta name="theme-color" content="#14524d" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="./icone.svg?v=1.1.43" type="image/svg+xml" />
+    <title>Sélection 101</title>
+    <link rel="stylesheet" href="./styles.css?v=1.1.43" />
+    <script src="./application.js?v=1.1.43" defer></script>
+  </head>
+  <body>
+    <div class="decor decor-gauche" aria-hidden="true"></div>
+    <div class="decor decor-droite" aria-hidden="true"></div>
+
+    <header class="hero">
+      <div class="hero__marque">
+        <div class="hero__identite">
+          <img class="hero__logo" src="./icone.svg" alt="Logo Sélection 101" />
+          <div>
+            <p class="hero__sur-titre">Seeburg Mardi Gras</p>
+            <h1>Sélection 101</h1>
+          </div>
+        </div>
+        <p class="version-app">Version <span id="version-app">1.1.43</span></p>
+      </div>
+
+      <div class="hero__actions">
+        <details class="menu-sauvegarde">
+          <summary class="bouton bouton-secondaire">Sauvegarde</summary>
+          <div class="menu-sauvegarde__contenu">
+            <button id="bouton-export-csv" class="menu-sauvegarde__action" type="button">Exporter CSV</button>
+            <button id="bouton-export-json" class="menu-sauvegarde__action" type="button">Sauvegarde JSON</button>
+            <button id="bouton-import-json" class="menu-sauvegarde__action" type="button">Importer sauvegarde</button>
+            <button id="bouton-vider-donnees" class="menu-sauvegarde__action menu-sauvegarde__action-danger" type="button">
+              Vider la bibliothèque locale
+            </button>
+            <input id="import-json-fichier" type="file" accept="application/json,.json" hidden />
+          </div>
+        </details>
+        <button id="bouton-ajouter" class="bouton bouton-principal" type="button">Ajouter un vinyle</button>
+      </div>
+    </header>
+
+    <main class="conteneur">
+      <section class="barre-controle" aria-label="Recherche rapide">
+        <div class="champ champ-recherche">
+          <label for="recherche">Recherche</label>
+          <input
+            id="recherche"
+            name="recherche"
+            type="search"
+            enterkeyhint="search"
+            placeholder="Position, sélection ou artiste"
+          />
+        </div>
+
+        <div class="compteurs">
+          <article class="compteur">
+            <span id="compteur-disques">0</span>
+            <p id="libelle-compteur-disques">vinyles dans le jukebox</p>
+          </article>
+          <article class="compteur">
+            <span id="compteur-selections">0</span>
+            <p id="libelle-compteur-selections">sélections couvertes</p>
+          </article>
+        </div>
+
+        <p id="message-application" class="message-application" hidden></p>
+      </section>
+
+      <section class="section-grille" aria-label="Mur de pochettes">
+        <div class="section-grille__entete">
+          <h2>Ma sélection Seeburg</h2>
+        </div>
+
+        <div class="outils-collection" aria-label="Options de collection">
+          <div class="onglets-vues" role="tablist" aria-label="Vue de la collection">
+            <button id="onglet-jukebox" class="onglet-vue est-actif" type="button" role="tab" aria-selected="true">
+              Jukebox
+            </button>
+            <button id="onglet-bibliotheque" class="onglet-vue" type="button" role="tab" aria-selected="false">
+              Bibliothèque
+            </button>
+          </div>
+
+          <div class="champ champ-tri">
+            <label for="tri">Tri</label>
+            <select id="tri" name="tri">
+              <option value="position">Ordre du jukebox</option>
+              <option value="alphabetique">Ordre alphabétique</option>
+            </select>
+          </div>
+
+          <div class="modes-affichage" role="tablist" aria-label="Mode d'affichage">
+            <button id="mode-pochettes" class="mode-affichage est-actif" type="button" role="tab" aria-selected="true">
+              Pochettes
+            </button>
+            <button id="mode-liste" class="mode-affichage" type="button" role="tab" aria-selected="false">
+              Liste
+            </button>
+          </div>
+        </div>
+
+        <div class="carrousel-pochettes">
+          <button id="carrousel-precedent" class="bouton-carrousel bouton-carrousel--precedent" type="button" aria-label="Pochette précédente">
+            ‹
+          </button>
+          <div id="grille-disques" class="grille-disques"></div>
+          <button id="carrousel-suivant" class="bouton-carrousel bouton-carrousel--suivant" type="button" aria-label="Pochette suivante">
+            ›
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="fenetre-formulaire" class="fenetre">
+      <form id="formulaire-disque" class="formulaire">
+        <div class="formulaire__entete">
+          <div>
+            <p class="etiquette">Fiche disque</p>
+            <h2 id="titre-formulaire">Ajouter un vinyle</h2>
+          </div>
+          <button id="bouton-fermer" class="bouton-icone" type="button" aria-label="Fermer">×</button>
+        </div>
+
+        <div class="grille-formulaire">
+          <label class="champ">
+            <span>Destination</span>
+            <select id="emplacement" name="emplacement" required>
+              <option value="jukebox">Jukebox</option>
+              <option value="bibliotheque">Bibliothèque</option>
+            </select>
+          </label>
+
+          <label id="champ-position" class="champ">
+            <span>Position du vinyle</span>
+            <input
+              id="position_jukebox"
+              name="position_jukebox"
+              placeholder="02"
+              inputmode="numeric"
+              pattern="[0-9]{2}"
+              maxlength="2"
+              enterkeyhint="next"
+            />
+          </label>
+
+          <label class="champ">
+            <span>Artiste</span>
+            <input
+              id="artiste"
+              name="artiste"
+              required
+              list="liste-artistes"
+              autocapitalize="words"
+            />
+          </label>
+
+          <datalist id="liste-artistes"></datalist>
+
+          <label class="champ">
+            <span id="libelle-titre-face-a">Titre Face A (100)</span>
+            <input id="titre_face_a" name="titre_face_a" required autocapitalize="sentences" />
+          </label>
+
+          <label class="champ">
+            <span id="libelle-titre-face-b">Titre Face B (200)</span>
+            <input id="titre_face_b" name="titre_face_b" autocapitalize="sentences" />
+          </label>
+
+          <label class="champ">
+            <span>État du vinyle</span>
+            <select id="etat_vinyle" name="etat_vinyle" required></select>
+          </label>
+
+          <label class="champ">
+            <span>Lien Apple Music Face A</span>
+            <input id="lien_apple_music_face_a" name="lien_apple_music_face_a" type="url" placeholder="https://music.apple.com/..." />
+          </label>
+
+          <label class="champ">
+            <span>Lien Apple Music Face B</span>
+            <input id="lien_apple_music_face_b" name="lien_apple_music_face_b" type="url" placeholder="https://music.apple.com/..." />
+          </label>
+
+          <label class="champ champ-large">
+            <span>Photo de la pochette</span>
+            <input id="photo_pochette_fichier" name="photo_pochette_fichier" type="file" accept="image/*" />
+          </label>
+
+          <label class="champ champ-large">
+            <span>Commentaire personnel</span>
+            <textarea
+              id="commentaire"
+              name="commentaire"
+              rows="4"
+              placeholder="Souvenir, état sonore, remplacement à prévoir..."
+              autocapitalize="sentences"
+            ></textarea>
+          </label>
+        </div>
+
+        <p id="message-formulaire" class="message-formulaire" hidden></p>
+
+        <div class="formulaire__actions">
+          <button id="bouton-annuler" class="bouton bouton-secondaire" type="button">Annuler</button>
+          <button class="bouton bouton-principal" type="submit">Enregistrer</button>
+        </div>
+      </form>
+    </dialog>
+
+    <template id="modele-carte">
+      <article class="carte-disque">
+        <div class="carte-disque__interieur">
+          <section class="face face-avant carte-disque__retourner" role="button" tabindex="0">
+            <div class="visuel-pochette"></div>
+            <div class="face-avant__infos">
+              <p class="selection-code"></p>
+              <h3 class="artiste"></h3>
+              <p class="titre-principal"></p>
+              <p class="titre-secondaire"></p>
+            </div>
+          </section>
+
+          <section class="face face-arriere carte-disque__retourner" role="button" tabindex="0">
+            <div class="face-arriere__haut">
+              <details class="menu-options menu-options--titre">
+                <summary class="selection-code selection-code-action"></summary>
+                <div class="menu-options__contenu">
+                  <button class="menu-options__action bouton-placement" type="button"></button>
+                  <button class="menu-options__action bouton-modifier" type="button">Modifier</button>
+                  <button class="menu-options__action bouton-supprimer" type="button">Supprimer</button>
+                </div>
+              </details>
+              <span class="pastille-etat"></span>
+            </div>
+            <h3 class="artiste"></h3>
+            <dl class="details">
+              <div>
+                <dt>Position dans le jukebox</dt>
+                <dd class="position-jukebox"></dd>
+              </div>
+              <div>
+                <dt>Face A</dt>
+                <dd class="ligne-titre">
+                  <a class="titre-face-a lien-titre" target="_blank" rel="noreferrer"></a>
+                  <a class="bouton-ecouter-face-a bouton-ecouter-inline" target="_blank" rel="noreferrer">Écouter</a>
+                </dd>
+              </div>
+              <div>
+                <dt>Face B</dt>
+                <dd class="ligne-titre">
+                  <a class="titre-face-b lien-titre" target="_blank" rel="noreferrer"></a>
+                  <a class="bouton-ecouter-face-b bouton-ecouter-inline" target="_blank" rel="noreferrer">Écouter</a>
+                </dd>
+              </div>
+            </dl>
+            <p class="commentaire"></p>
+          </section>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>

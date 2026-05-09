@@ -80,6 +80,9 @@
             enterkeyhint="search"
             placeholder="Position, sélection ou artiste"
           />
+          <button id="bouton-effacer-recherche" class="bouton-effacer-recherche" type="button" aria-label="Effacer la recherche" hidden>
+            ×
+          </button>
         </div>
 
         <p id="message-application" class="message-application" hidden></p>
@@ -106,7 +109,7 @@
               aria-selected="true"
               aria-label="Jukebox"
               data-desktop-label="Jukebox"
-              data-mobile-label="♪"
+              data-mobile-label="◉"
             >
               Jukebox
             </button>
@@ -118,7 +121,7 @@
               aria-selected="false"
               aria-label="Bibliothèque"
               data-desktop-label="Bibliothèque"
-              data-mobile-label="▥"
+              data-mobile-label="▤"
             >
               Bibliothèque
             </button>
@@ -127,8 +130,8 @@
           <div class="champ champ-tri">
             <label for="tri">Tri</label>
             <select id="tri" name="tri">
-              <option value="position" data-desktop-label="Ordre du jukebox" data-mobile-label="↑↓ JBX">Ordre du jukebox</option>
-              <option value="alphabetique" data-desktop-label="Ordre alphabétique" data-mobile-label="↑↓ A-Z">Ordre alphabétique</option>
+              <option value="position" data-desktop-label="Ordre du jukebox" data-mobile-label="↕">Ordre du jukebox</option>
+              <option value="alphabetique" data-desktop-label="Ordre alphabétique" data-mobile-label="A↕">Ordre alphabétique</option>
             </select>
           </div>
 
@@ -141,7 +144,7 @@
               aria-selected="true"
               aria-label="Vue pochettes"
               data-desktop-label="Pochettes"
-              data-mobile-label="▣"
+              data-mobile-label="⊞"
             >
               Pochettes
             </button>
@@ -153,7 +156,7 @@
               aria-selected="false"
               aria-label="Vue liste"
               data-desktop-label="Liste"
-              data-mobile-label="≣"
+              data-mobile-label="☰"
             >
               Liste
             </button>

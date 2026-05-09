@@ -8,6 +8,7 @@ const etatsVinyle = [
 
 const elements = {
   recherche: document.querySelector("#recherche"),
+  boutonEffacerRecherche: document.querySelector("#bouton-effacer-recherche"),
   tri: document.querySelector("#tri"),
   ongletJukebox: document.querySelector("#onglet-jukebox"),
   ongletBibliotheque: document.querySelector("#onglet-bibliotheque"),
@@ -77,15 +78,20 @@ async function initialiser() {
   mettreAJourSuggestionsArtistes();
   mettreAJourAffichageVue();
   mettreAJourModeInterface();
+  mettreAJourBoutonEffacerRecherche();
   afficherCollection();
 }
 
 function brancherEvenements() {
-  elements.recherche.addEventListener("input", afficherCollection);
+  elements.recherche.addEventListener("input", () => {
+    mettreAJourBoutonEffacerRecherche();
+    afficherCollection();
+  });
   elements.tri.addEventListener("change", () => {
     triActif = elements.tri.value;
     afficherCollection();
   });
+  elements.boutonEffacerRecherche.addEventListener("click", effacerRecherche);
 
   elements.ongletJukebox.addEventListener("click", () => changerVue("jukebox"));
   elements.ongletBibliotheque.addEventListener("click", () => changerVue("bibliotheque"));
@@ -251,6 +257,7 @@ function changerVue(vue) {
   balayageCarrouselActif = modeAffichage === "pochettes" && !estVuePochettesMobile();
   effacerRepriseBalayageCarrousel();
   elements.recherche.value = "";
+  mettreAJourBoutonEffacerRecherche();
   mettreAJourAffichageVue();
   afficherCollection();
 }
@@ -313,6 +320,17 @@ function obtenirCollectionVisible() {
 
     return !recherche || blocRecherche.includes(recherche);
   });
+}
+
+function mettreAJourBoutonEffacerRecherche() {
+  elements.boutonEffacerRecherche.hidden = elements.recherche.value.trim() === "";
+}
+
+function effacerRecherche() {
+  elements.recherche.value = "";
+  mettreAJourBoutonEffacerRecherche();
+  elements.recherche.focus();
+  afficherCollection();
 }
 
 function afficherCollection() {

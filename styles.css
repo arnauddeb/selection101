@@ -301,8 +301,37 @@ h2 {
 }
 
 .champ-recherche {
+  position: relative;
   min-width: 0;
   max-width: none;
+}
+
+.champ-recherche input {
+  padding-right: 46px;
+}
+
+.bouton-effacer-recherche {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 999px;
+  padding: 0;
+  color: rgba(28, 26, 22, 0.6);
+  background: rgba(20, 82, 77, 0.08);
+  box-shadow: none;
+  font-size: 1.1rem;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.bouton-effacer-recherche:hover {
+  background: rgba(20, 82, 77, 0.14);
+  color: var(--vert);
 }
 
 .champ-tri {
@@ -992,14 +1021,14 @@ textarea:focus {
   .hero {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: end;
-    gap: 14px;
-    padding: 18px 28px 10px;
+    gap: 12px;
+    padding: 14px 24px 8px;
   }
 
   .conteneur {
     align-items: start;
-    gap: 10px;
-    padding: 0 28px 24px;
+    gap: 8px;
+    padding: 0 24px 18px;
   }
 
   .compteurs {
@@ -1012,29 +1041,29 @@ textarea:focus {
   }
 
   .hero__identite {
-    gap: 12px;
+    gap: 10px;
   }
 
   .hero__logo {
-    width: clamp(58px, 6vw, 84px);
-    height: clamp(58px, 6vw, 84px);
-    border-radius: 16px;
-    box-shadow: 0 6px 14px rgba(22, 34, 29, 0.07);
+    width: clamp(54px, 5.2vw, 76px);
+    height: clamp(54px, 5.2vw, 76px);
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(22, 34, 29, 0.06);
   }
 
   .hero__sur-titre {
-    margin-bottom: 4px;
-    font-size: 0.58rem;
-    letter-spacing: 0.26em;
+    margin-bottom: 3px;
+    font-size: 0.54rem;
+    letter-spacing: 0.24em;
   }
 
   h1 {
-    font-size: clamp(2.35rem, 4.8vw, 4rem);
+    font-size: clamp(2rem, 4.2vw, 3.45rem);
     line-height: 0.9;
   }
 
   h2 {
-    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    font-size: clamp(1.35rem, 2.6vw, 2.15rem);
     line-height: 0.94;
   }
 
@@ -1044,98 +1073,100 @@ textarea:focus {
 
   .bouton-principal,
   .bouton-secondaire {
-    padding: 9px 15px;
-    font-size: 0.92rem;
+    padding: 8px 14px;
+    font-size: 0.86rem;
   }
 
   .barre-controle,
   .section-grille {
-    padding: 12px 16px;
-    border-radius: 22px;
-    box-shadow: 0 10px 24px rgba(24, 30, 28, 0.07);
+    padding: 10px 14px;
+    border-radius: 20px;
+    box-shadow: 0 8px 18px rgba(24, 30, 28, 0.06);
   }
 
   .barre-controle {
-    gap: 8px 12px;
+    gap: 6px 10px;
   }
 
   .champ-recherche input {
-    min-height: 40px;
-    padding: 9px 13px;
-    border-radius: 16px;
-    font-size: 0.94rem;
+    min-height: 36px;
+    padding: 8px 12px;
+    border-radius: 14px;
+    font-size: 0.88rem;
+    border-color: rgba(28, 26, 22, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
   }
 
   .compteur {
-    min-width: 84px;
-    padding: 6px 9px;
+    min-width: 72px;
+    padding: 5px 8px;
   }
 
   .compteur span {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .compteur p {
-    font-size: 0.58rem;
+    font-size: 0.52rem;
   }
 
   .section-grille__entete {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .section-grille__entete .compteur {
-    min-width: 78px;
-    padding: 5px 9px;
+    min-width: 68px;
+    padding: 4px 8px;
   }
 
   .section-grille__entete .compteur span {
-    font-size: 0.84rem;
+    font-size: 0.76rem;
   }
 
   .section-grille__entete .compteur p {
-    font-size: 0.56rem;
+    font-size: 0.5rem;
   }
 
   .outils-collection {
-    gap: 8px;
-    margin-bottom: 10px;
+    gap: 6px;
+    margin-bottom: 8px;
   }
 
   .onglets-vues {
-    width: 172px;
-    flex-basis: 172px;
+    width: 154px;
+    flex-basis: 154px;
   }
 
   .modes-affichage {
-    width: 128px;
-    flex-basis: 128px;
+    width: 112px;
+    flex-basis: 112px;
   }
 
   .champ-tri {
-    flex-basis: 158px;
-    min-width: 146px;
+    flex-basis: 142px;
+    min-width: 132px;
   }
 
   .onglet-vue,
   .mode-affichage {
-    min-height: 34px;
-    font-size: 0.82rem;
+    min-height: 30px;
+    font-size: 0.76rem;
   }
 
   .outils-collection .champ-tri select {
-    min-height: 34px;
-    padding-block: 6px;
-    font-size: 0.82rem;
+    min-height: 30px;
+    padding-block: 5px;
+    font-size: 0.76rem;
   }
 
   .grille-disques {
-    gap: clamp(14px, 1.6vw, 24px);
-    padding: 12px 8px 14px;
+    gap: clamp(12px, 1.2vw, 18px);
+    padding: 10px 6px 10px;
     scroll-padding-inline: 12px;
   }
 
   .carte-disque {
-    flex-basis: clamp(220px, 24vw, 310px);
+    flex-basis: clamp(200px, 22vw, 280px);
   }
 
   .face-avant__infos,
@@ -1163,61 +1194,61 @@ textarea:focus {
   }
 
   .bouton-carrousel {
-    width: 34px;
-    height: 34px;
-    font-size: 1.4rem;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
   }
 
   .grille-disques--liste {
-    gap: 10px;
-  }
-
-  .ligne-vinyle {
-    grid-template-columns: 56px minmax(0, 1fr);
-    gap: 10px;
-    padding: 10px 12px;
-    border-radius: 18px;
-    box-shadow: 0 8px 18px rgba(15, 24, 25, 0.05);
-  }
-
-  .ligne-vinyle__visuel {
-    border-radius: 12px;
-  }
-
-  .ligne-vinyle__contenu {
-    gap: 6px;
-  }
-
-  .ligne-vinyle__entete {
     gap: 8px;
   }
 
+  .ligne-vinyle {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(15, 24, 25, 0.045);
+  }
+
+  .ligne-vinyle__visuel {
+    border-radius: 10px;
+  }
+
+  .ligne-vinyle__contenu {
+    gap: 4px;
+  }
+
+  .ligne-vinyle__entete {
+    gap: 6px;
+  }
+
   .ligne-vinyle__artiste {
-    font-size: 0.88rem;
+    font-size: 0.8rem;
     line-height: 1.05;
   }
 
   .ligne-vinyle__meta {
-    font-size: 0.72rem;
+    font-size: 0.64rem;
   }
 
   .ligne-vinyle__etat {
-    padding: 4px 10px;
-    font-size: 0.68rem;
+    padding: 3px 8px;
+    font-size: 0.62rem;
     line-height: 1;
   }
 
   .ligne-vinyle__faces {
-    gap: 5px;
+    gap: 4px;
   }
 
   .ligne-vinyle__label {
-    font-size: 0.58rem;
+    font-size: 0.52rem;
     letter-spacing: 0.12em;
   }
 
   .ligne-vinyle__titre {
-    font-size: 0.76rem;
+    font-size: 0.7rem;
     line-height: 1.18;
   }
 }
@@ -1447,18 +1478,20 @@ textarea:focus {
   .champ-recherche {
     grid-column: 1 / -1;
     grid-row: 2;
-    padding: 10px 12px;
-    border-radius: 22px;
-    background: rgba(255, 250, 241, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.62);
-    box-shadow: 0 12px 26px rgba(24, 30, 28, 0.08);
+    padding: 8px 10px;
+    border-radius: 18px;
+    background: rgba(255, 250, 241, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    box-shadow: 0 8px 18px rgba(24, 30, 28, 0.05);
     backdrop-filter: blur(10px);
   }
 
   .champ-recherche input {
-    min-height: 50px;
-    border-radius: 18px;
-    background: rgba(255, 255, 255, 0.92);
+    min-height: 46px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.94);
+    border-color: rgba(28, 26, 22, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
   }
 
   .compteurs {
@@ -1605,6 +1638,13 @@ textarea:focus {
     width: 100%;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+  }
+
+  .grille-disques--carrousel .carte-disque,
+  .grille-disques--carrousel .carte-disque--active {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 
   .grille-disques--liste {

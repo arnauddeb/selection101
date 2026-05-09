@@ -162,6 +162,10 @@ h2 {
   color: rgba(28, 26, 22, 0.56);
 }
 
+.version-app-mobile {
+  display: none;
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -1158,6 +1162,10 @@ textarea:focus {
     display: none;
   }
 
+  .version-app {
+    display: none;
+  }
+
   .ligne-vinyle {
     grid-template-columns: 1fr;
   }
@@ -1187,9 +1195,33 @@ textarea:focus {
 }
 
 @media (max-width: 640px) {
+  .hero {
+    gap: 10px;
+    padding: 16px 14px 6px;
+  }
+
+  .hero__marque {
+    max-width: none;
+  }
+
+  .hero__identite {
+    gap: 12px;
+  }
+
+  .hero__sur-titre {
+    margin-bottom: 4px;
+    font-size: 0.58rem;
+    letter-spacing: 0.22em;
+  }
+
+  .conteneur {
+    gap: 8px;
+    padding: 0 14px 20px;
+  }
+
   .barre-controle {
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 10px 12px;
+    gap: 4px 10px;
     padding: 0;
     background: transparent;
     border: 0;
@@ -1199,17 +1231,17 @@ textarea:focus {
   .champ-recherche {
     grid-column: 1 / -1;
     grid-row: 2;
-    padding: 14px;
-    border-radius: 26px;
+    padding: 10px 12px;
+    border-radius: 22px;
     background: rgba(255, 250, 241, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.62);
-    box-shadow: 0 16px 34px rgba(24, 30, 28, 0.1);
+    box-shadow: 0 12px 26px rgba(24, 30, 28, 0.08);
     backdrop-filter: blur(10px);
   }
 
   .champ-recherche input {
-    min-height: 58px;
-    border-radius: 22px;
+    min-height: 50px;
+    border-radius: 18px;
     background: rgba(255, 255, 255, 0.92);
   }
 
@@ -1218,21 +1250,23 @@ textarea:focus {
     grid-row: 1;
     justify-self: end;
     align-self: start;
-    gap: 8px;
+    gap: 6px;
+    margin-bottom: 2px;
   }
 
   .compteur {
     min-width: 0;
-    padding: 8px 12px;
-    box-shadow: 0 12px 24px rgba(20, 82, 77, 0.16);
+    padding: 6px 9px 5px;
+    box-shadow: 0 8px 18px rgba(20, 82, 77, 0.12);
   }
 
   .compteur span {
-    font-size: 1rem;
+    font-size: 0.88rem;
   }
 
   .compteur p {
-    font-size: 0.64rem;
+    font-size: 0.56rem;
+    line-height: 1;
   }
 
   .barre-controle .message-application {
@@ -1241,32 +1275,33 @@ textarea:focus {
   }
 
   .section-grille {
-    padding: 14px 14px 16px;
-    border-radius: 26px;
-    box-shadow: 0 16px 34px rgba(24, 30, 28, 0.1);
+    min-height: 0;
+    padding: 12px 12px 14px;
+    border-radius: 24px;
+    box-shadow: 0 12px 28px rgba(24, 30, 28, 0.08);
   }
 
   .section-grille__entete {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
 
   .section-grille__entete h2 {
-    font-size: clamp(1.45rem, 6vw, 1.9rem);
-    line-height: 1.05;
+    font-size: clamp(1.28rem, 5.4vw, 1.62rem);
+    line-height: 1;
     white-space: nowrap;
     letter-spacing: 0.01em;
   }
 
   .outils-collection {
-    gap: 8px;
-    margin-bottom: 14px;
+    gap: 6px;
+    margin-bottom: 10px;
   }
 
   .onglet-vue,
   .mode-affichage,
   .outils-collection .champ-tri select {
-    min-height: 42px;
-    font-size: 0.96rem;
+    min-height: 40px;
+    font-size: 0.92rem;
   }
 
   .grille-disques--carrousel {
@@ -1291,5 +1326,15 @@ textarea:focus {
   .ligne-vinyle {
     border-radius: 18px;
     box-shadow: 0 10px 20px rgba(15, 24, 25, 0.06);
+  }
+
+  .version-app-mobile {
+    display: block;
+    padding: 0 14px 12px;
+    text-align: right;
+    font-size: 0.58rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(28, 26, 22, 0.42);
   }
 }

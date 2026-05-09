@@ -27,6 +27,9 @@ const elements = {
   boutonImportJson: document.querySelector("#bouton-import-json"),
   boutonViderDonnees: document.querySelector("#bouton-vider-donnees"),
   importJsonFichier: document.querySelector("#import-json-fichier"),
+  fenetrePochette: document.querySelector("#fenetre-pochette"),
+  imagePochetteAgrandie: document.querySelector("#image-pochette-agrandie"),
+  boutonFermerPochette: document.querySelector("#bouton-fermer-pochette"),
   fenetre: document.querySelector("#fenetre-formulaire"),
   formulaire: document.querySelector("#formulaire-disque"),
   titreFormulaire: document.querySelector("#titre-formulaire"),
@@ -132,6 +135,12 @@ function brancherEvenements() {
   window.addEventListener("resize", appliquerLibellesMobiles, { passive: true });
 
   elements.boutonAjouter.addEventListener("click", ouvrirCreation);
+  elements.boutonFermerPochette.addEventListener("click", fermerPochetteAgrandie);
+  elements.fenetrePochette.addEventListener("click", (evenement) => {
+    if (!evenement.target.closest(".visionneuse-pochette")) {
+      fermerPochetteAgrandie();
+    }
+  });
   elements.boutonFermer.addEventListener("click", fermerFormulaire);
   elements.boutonAnnuler.addEventListener("click", fermerFormulaire);
   elements.formulaire.addEventListener("submit", enregistrerVinyle);
@@ -540,6 +549,17 @@ function construireLigneListe(vinyle) {
   vignette.className = "ligne-vinyle__visuel";
   if (vinyle.photo_pochette) {
     vignette.style.backgroundImage = `url("${vinyle.photo_pochette}")`;
+    vignette.setAttribute("role", "button");
+    vignette.setAttribute("tabindex", "0");
+    vignette.setAttribute("aria-label", `Agrandir la pochette de ${vinyle.artiste || "ce vinyle"}`);
+    vignette.addEventListener("click", () => ouvrirPochetteAgrandie(vinyle));
+    vignette.addEventListener("keydown", (evenement) => {
+      if (evenement.key !== "Enter" && evenement.key !== " ") {
+        return;
+      }
+      evenement.preventDefault();
+      ouvrirPochetteAgrandie(vinyle);
+    });
   }
 
   const contenu = document.createElement("div");
@@ -603,6 +623,21 @@ function construireFaceListe(libelle, titre, lien) {
 
   bloc.append(label, valeur);
   return bloc;
+}
+
+function ouvrirPochetteAgrandie(vinyle) {
+  if (!vinyle.photo_pochette) {
+    return;
+  }
+
+  elements.imagePochetteAgrandie.src = vinyle.photo_pochette;
+  elements.imagePochetteAgrandie.alt = `Pochette de ${vinyle.artiste || "ce vinyle"}`;
+  elements.fenetrePochette.showModal();
+}
+
+function fermerPochetteAgrandie() {
+  elements.fenetrePochette.close();
+  elements.imagePochetteAgrandie.removeAttribute("src");
 }
 
 function trierCollection(donnees) {

@@ -312,7 +312,7 @@ h2 {
 
 .bouton-effacer-recherche {
   position: absolute;
-  right: 10px;
+  right: 14px;
   top: 50%;
   width: 28px;
   height: 28px;
@@ -636,6 +636,10 @@ textarea:focus {
     linear-gradient(45deg, rgba(142, 33, 64, 0.74), rgba(20, 82, 77, 0.4));
   background-size: cover;
   background-position: center;
+}
+
+.ligne-vinyle__visuel[role="button"] {
+  cursor: zoom-in;
 }
 
 .ligne-vinyle__contenu {
@@ -971,6 +975,33 @@ textarea:focus {
 
 .fenetre::backdrop {
   background: rgba(18, 16, 13, 0.48);
+}
+
+.fenetre-pochette {
+  width: min(92vw, 760px);
+}
+
+.visionneuse-pochette {
+  position: relative;
+  padding: 10px;
+  border-radius: 26px;
+  background: rgba(250, 246, 235, 0.96);
+  box-shadow: 0 30px 80px rgba(14, 23, 19, 0.24);
+}
+
+.visionneuse-pochette__fermer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.visionneuse-pochette__image {
+  display: block;
+  width: 100%;
+  max-height: 82vh;
+  object-fit: contain;
+  border-radius: 20px;
 }
 
 .formulaire {

@@ -10,6 +10,7 @@ const etatsVinyle = [
 
 const elements = {
   versionApp: document.querySelector("#version-app"),
+  versionAppMobile: document.querySelector("#version-app-mobile"),
   recherche: document.querySelector("#recherche"),
   tri: document.querySelector("#tri"),
   ongletJukebox: document.querySelector("#onglet-jukebox"),
@@ -76,6 +77,9 @@ initialiser();
 
 async function initialiser() {
   elements.versionApp.textContent = versionApplication;
+  if (elements.versionAppMobile) {
+    elements.versionAppMobile.textContent = versionApplication;
+  }
   remplirEtats();
   brancherEvenements();
   await chargerModeEtCollection();

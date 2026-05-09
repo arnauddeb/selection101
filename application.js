@@ -18,9 +18,7 @@ const elements = {
   carrouselSuivant: document.querySelector("#carrousel-suivant"),
   grille: document.querySelector("#grille-disques"),
   compteurDisques: document.querySelector("#compteur-disques"),
-  compteurSelections: document.querySelector("#compteur-selections"),
   libelleCompteurDisques: document.querySelector("#libelle-compteur-disques"),
-  libelleCompteurSelections: document.querySelector("#libelle-compteur-selections"),
   messageApplication: document.querySelector("#message-application"),
   boutonAjouter: document.querySelector("#bouton-ajouter"),
   boutonExportCsv: document.querySelector("#bouton-export-csv"),
@@ -267,10 +265,8 @@ function mettreAJourAffichageVue() {
 
   if (vueJukebox) {
     elements.libelleCompteurDisques.textContent = "vinyles";
-    elements.libelleCompteurSelections.textContent = "sélections";
   } else {
     elements.libelleCompteurDisques.textContent = "stock";
-    elements.libelleCompteurSelections.textContent = "disponibles";
   }
 
   elements.modePochettes.classList.toggle("est-actif", modeAffichage === "pochettes");
@@ -333,7 +329,6 @@ function afficherCollection() {
     vide.textContent = "Base de données indisponible.";
     elements.grille.append(vide);
     elements.compteurDisques.textContent = "0";
-    elements.compteurSelections.textContent = "0";
     return;
   }
 
@@ -358,8 +353,6 @@ function afficherCollection() {
   demarrerBalayageCarrousel();
 
   elements.compteurDisques.textContent = String(donnees.length);
-  elements.compteurSelections.textContent =
-    vueActive === "jukebox" ? String(donnees.length * 2) : String(donnees.length);
 }
 
 function deplacerCarrousel(direction) {
@@ -560,12 +553,12 @@ function construireLigneListe(vinyle) {
 
   entete.append(titreBloc, etat);
 
+  const titresAffiches = obtenirTitresAffiches(vinyle);
   const faces = document.createElement("div");
   faces.className = "ligne-vinyle__faces";
-  faces.append(
-    construireFaceListe("Face A", vinyle.titre_face_a || "Non renseigné", vinyle.lien_apple_music_face_a),
-    construireFaceListe("Face B", vinyle.titre_face_b || "Non renseigné", vinyle.lien_apple_music_face_b),
-  );
+  titresAffiches.forEach((face) => {
+    faces.append(construireFaceListe(face.libelle, face.titre, face.lien));
+  });
 
   contenu.append(entete, faces);
   ligne.append(vignette, contenu);
@@ -699,6 +692,19 @@ function construireCarte(vinyle) {
 }
 
 function appliquerTitresRecto(carte, vinyle, titrePrincipal, titreSecondaire) {
+  const {
+    principal,
+    secondaire,
+    affichageDouble,
+  } = obtenirConfigurationTitresRecherche(vinyle);
+
+  titrePrincipal.textContent = principal || "Titre non renseigné";
+  titreSecondaire.textContent = secondaire;
+  titreSecondaire.hidden = !secondaire;
+  carte.classList.toggle("carte-disque--double-titre", affichageDouble);
+}
+
+function obtenirConfigurationTitresRecherche(vinyle) {
   const recherche = String(elements.recherche.value || "").trim().toLowerCase();
   const selectionA = String(vinyle.selection_face_a || "").toLowerCase();
   const selectionB = String(vinyle.selection_face_b || "").toLowerCase();
@@ -735,10 +741,50 @@ function appliquerTitresRecto(carte, vinyle, titrePrincipal, titreSecondaire) {
     secondaire = "";
   }
 
-  titrePrincipal.textContent = principal || "Titre non renseigné";
-  titreSecondaire.textContent = secondaire;
-  titreSecondaire.hidden = !secondaire;
-  carte.classList.toggle("carte-disque--double-titre", affichageDouble);
+  return {
+    principal,
+    secondaire,
+    affichageDouble,
+  };
+}
+
+function obtenirTitresAffiches(vinyle) {
+  const { principal, secondaire } = obtenirConfigurationTitresRecherche(vinyle);
+  const titreA = vinyle.titre_face_a || "";
+  const titreB = vinyle.titre_face_b || "";
+
+  if (!secondaire) {
+    if (principal === titreB && titreB) {
+      return [
+        {
+          libelle: "Face B",
+          titre: titreB || "Non renseigné",
+          lien: vinyle.lien_apple_music_face_b,
+        },
+      ];
+    }
+
+    return [
+      {
+        libelle: "Face A",
+        titre: titreA || principal || "Non renseigné",
+        lien: vinyle.lien_apple_music_face_a,
+      },
+    ];
+  }
+
+  return [
+    {
+      libelle: "Face A",
+      titre: titreA || "Non renseigné",
+      lien: vinyle.lien_apple_music_face_a,
+    },
+    {
+      libelle: "Face B",
+      titre: titreB || "Non renseigné",
+      lien: vinyle.lien_apple_music_face_b,
+    },
+  ];
 }
 
 function configurerLien(element, url, libelle) {

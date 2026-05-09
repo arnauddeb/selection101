@@ -434,8 +434,10 @@ textarea:focus {
 }
 
 .section-grille__entete {
-  display: grid;
-  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   margin-bottom: 20px;
 }
 
@@ -990,14 +992,14 @@ textarea:focus {
   .hero {
     grid-template-columns: minmax(0, 1fr) auto;
     align-items: end;
-    gap: 18px;
-    padding: 24px 32px 14px;
+    gap: 14px;
+    padding: 18px 28px 10px;
   }
 
   .conteneur {
     align-items: start;
-    gap: 14px;
-    padding: 0 32px 34px;
+    gap: 10px;
+    padding: 0 28px 24px;
   }
 
   .compteurs {
@@ -1010,146 +1012,213 @@ textarea:focus {
   }
 
   .hero__identite {
-    gap: 14px;
+    gap: 12px;
   }
 
   .hero__logo {
-    width: clamp(64px, 7vw, 94px);
-    height: clamp(64px, 7vw, 94px);
-    border-radius: 18px;
-    box-shadow: 0 8px 18px rgba(22, 34, 29, 0.08);
+    width: clamp(58px, 6vw, 84px);
+    height: clamp(58px, 6vw, 84px);
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(22, 34, 29, 0.07);
   }
 
   .hero__sur-titre {
-    margin-bottom: 6px;
-    font-size: 0.64rem;
-    letter-spacing: 0.28em;
+    margin-bottom: 4px;
+    font-size: 0.58rem;
+    letter-spacing: 0.26em;
   }
 
   h1 {
-    font-size: clamp(2.8rem, 5.3vw, 4.8rem);
-    line-height: 0.92;
+    font-size: clamp(2.35rem, 4.8vw, 4rem);
+    line-height: 0.9;
   }
 
   h2 {
-    font-size: clamp(1.9rem, 3.5vw, 3rem);
-    line-height: 0.96;
+    font-size: clamp(1.6rem, 3vw, 2.5rem);
+    line-height: 0.94;
   }
 
   .hero__actions {
-    gap: 10px;
+    gap: 8px;
   }
 
   .bouton-principal,
   .bouton-secondaire {
-    padding: 11px 18px;
-    font-size: 0.98rem;
+    padding: 9px 15px;
+    font-size: 0.92rem;
   }
 
   .barre-controle,
   .section-grille {
-    padding: 14px 18px;
-    border-radius: 24px;
-    box-shadow: 0 14px 34px rgba(24, 30, 28, 0.09);
+    padding: 12px 16px;
+    border-radius: 22px;
+    box-shadow: 0 10px 24px rgba(24, 30, 28, 0.07);
   }
 
   .barre-controle {
-    gap: 10px 14px;
+    gap: 8px 12px;
   }
 
   .champ-recherche input {
-    min-height: 46px;
-    padding: 11px 14px;
-    border-radius: 18px;
+    min-height: 40px;
+    padding: 9px 13px;
+    border-radius: 16px;
+    font-size: 0.94rem;
   }
 
   .compteur {
-    min-width: 94px;
-    padding: 7px 10px;
+    min-width: 84px;
+    padding: 6px 9px;
   }
 
   .compteur span {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .compteur p {
-    font-size: 0.64rem;
+    font-size: 0.58rem;
   }
 
   .section-grille__entete {
-    margin-bottom: 14px;
+    margin-bottom: 10px;
+  }
+
+  .section-grille__entete .compteur {
+    min-width: 78px;
+    padding: 5px 9px;
+  }
+
+  .section-grille__entete .compteur span {
+    font-size: 0.84rem;
+  }
+
+  .section-grille__entete .compteur p {
+    font-size: 0.56rem;
   }
 
   .outils-collection {
-    gap: 10px;
-    margin-bottom: 14px;
+    gap: 8px;
+    margin-bottom: 10px;
   }
 
   .onglets-vues {
-    width: 204px;
-    flex-basis: 204px;
+    width: 172px;
+    flex-basis: 172px;
   }
 
   .modes-affichage {
-    width: 156px;
-    flex-basis: 156px;
+    width: 128px;
+    flex-basis: 128px;
   }
 
   .champ-tri {
-    flex-basis: 190px;
-    min-width: 170px;
+    flex-basis: 158px;
+    min-width: 146px;
   }
 
   .onglet-vue,
   .mode-affichage {
-    min-height: 40px;
-    font-size: 0.9rem;
+    min-height: 34px;
+    font-size: 0.82rem;
   }
 
   .outils-collection .champ-tri select {
-    min-height: 40px;
-    padding-block: 8px;
-    font-size: 0.9rem;
+    min-height: 34px;
+    padding-block: 6px;
+    font-size: 0.82rem;
   }
 
   .grille-disques {
-    gap: clamp(18px, 2vw, 34px);
-    padding: 18px 12px 20px;
+    gap: clamp(14px, 1.6vw, 24px);
+    padding: 12px 8px 14px;
     scroll-padding-inline: 12px;
   }
 
   .carte-disque {
-    flex-basis: clamp(250px, 28vw, 360px);
+    flex-basis: clamp(220px, 24vw, 310px);
   }
 
   .face-avant__infos,
   .face-arriere {
-    padding: 16px;
+    padding: 14px;
   }
 
   .face-avant__infos {
-    margin: 16px;
-    max-width: min(250px, calc(100% - 32px));
-    padding: 10px 13px;
-    border-radius: 16px;
+    margin: 14px;
+    max-width: min(220px, calc(100% - 28px));
+    padding: 9px 12px;
+    border-radius: 14px;
   }
 
   .selection-code {
-    font-size: 0.82rem;
-  }
-
-  .titre-principal {
-    font-size: 0.8rem;
-  }
-
-  .titre-secondaire {
     font-size: 0.74rem;
   }
 
+  .titre-principal {
+    font-size: 0.75rem;
+  }
+
+  .titre-secondaire {
+    font-size: 0.68rem;
+  }
+
   .bouton-carrousel {
-    width: 38px;
-    height: 38px;
-    font-size: 1.6rem;
+    width: 34px;
+    height: 34px;
+    font-size: 1.4rem;
+  }
+
+  .grille-disques--liste {
+    gap: 10px;
+  }
+
+  .ligne-vinyle {
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(15, 24, 25, 0.05);
+  }
+
+  .ligne-vinyle__visuel {
+    border-radius: 12px;
+  }
+
+  .ligne-vinyle__contenu {
+    gap: 6px;
+  }
+
+  .ligne-vinyle__entete {
+    gap: 8px;
+  }
+
+  .ligne-vinyle__artiste {
+    font-size: 0.88rem;
+    line-height: 1.05;
+  }
+
+  .ligne-vinyle__meta {
+    font-size: 0.72rem;
+  }
+
+  .ligne-vinyle__etat {
+    padding: 4px 10px;
+    font-size: 0.68rem;
+    line-height: 1;
+  }
+
+  .ligne-vinyle__faces {
+    gap: 5px;
+  }
+
+  .ligne-vinyle__label {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+
+  .ligne-vinyle__titre {
+    font-size: 0.76rem;
+    line-height: 1.18;
   }
 }
 
@@ -1393,12 +1462,7 @@ textarea:focus {
   }
 
   .compteurs {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: end;
-    align-self: start;
-    gap: 6px;
-    margin-bottom: 2px;
+    display: none;
   }
 
   .compteur {
@@ -1436,7 +1500,16 @@ textarea:focus {
   }
 
   .section-grille__entete {
+    align-items: flex-start;
     margin-bottom: 10px;
+  }
+
+  .section-grille__entete .compteurs {
+    display: flex;
+    flex: 0 0 auto;
+    justify-self: auto;
+    gap: 0;
+    margin: 0;
   }
 
   .section-grille__entete h2 {
@@ -1444,6 +1517,28 @@ textarea:focus {
     line-height: 1;
     white-space: nowrap;
     letter-spacing: 0.01em;
+  }
+
+  .section-grille__entete .compteur {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+    padding: 5px 8px;
+    box-shadow: 0 8px 18px rgba(20, 82, 77, 0.12);
+  }
+
+  .section-grille__entete .compteur span {
+    font-size: 0.82rem;
+    line-height: 1;
+  }
+
+  .section-grille__entete .compteur p {
+    display: inline;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 0.52rem;
+    line-height: 1;
   }
 
   .outils-collection {

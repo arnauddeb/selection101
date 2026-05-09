@@ -16,11 +16,13 @@
     />
     <meta name="theme-color" content="#14524d" />
     <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-title" content="S101" />
-    <meta name="application-name" content="S101" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Jukebox" />
+    <meta name="application-name" content="Jukebox" />
     <meta name="referrer" content="no-referrer" />
     <link rel="icon" href="./icone.svg" type="image/svg+xml" />
-    <title>S101</title>
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <title>Jukebox</title>
     <script>
       const antiCacheToken = String(Date.now());
 
@@ -80,23 +82,18 @@
           />
         </div>
 
-        <div class="compteurs">
-          <article class="compteur">
-            <span id="compteur-disques">0</span>
-            <p id="libelle-compteur-disques">vinyles dans le jukebox</p>
-          </article>
-          <article class="compteur">
-            <span id="compteur-selections">0</span>
-            <p id="libelle-compteur-selections">sélections couvertes</p>
-          </article>
-        </div>
-
         <p id="message-application" class="message-application" hidden></p>
       </section>
 
       <section class="section-grille" aria-label="Mur de pochettes">
         <div class="section-grille__entete">
           <h2>Ma sélection Seeburg</h2>
+          <div class="compteurs">
+            <article class="compteur">
+              <span id="compteur-disques">0</span>
+              <p id="libelle-compteur-disques">vinyles</p>
+            </article>
+          </div>
         </div>
 
         <div class="outils-collection" aria-label="Options de collection">
@@ -107,8 +104,9 @@
               type="button"
               role="tab"
               aria-selected="true"
+              aria-label="Jukebox"
               data-desktop-label="Jukebox"
-              data-mobile-label="JBX"
+              data-mobile-label="♪"
             >
               Jukebox
             </button>
@@ -118,8 +116,9 @@
               type="button"
               role="tab"
               aria-selected="false"
+              aria-label="Bibliothèque"
               data-desktop-label="Bibliothèque"
-              data-mobile-label="BIB"
+              data-mobile-label="▥"
             >
               Bibliothèque
             </button>
@@ -140,8 +139,9 @@
               type="button"
               role="tab"
               aria-selected="true"
+              aria-label="Vue pochettes"
               data-desktop-label="Pochettes"
-              data-mobile-label="POC"
+              data-mobile-label="▣"
             >
               Pochettes
             </button>
@@ -151,8 +151,9 @@
               type="button"
               role="tab"
               aria-selected="false"
+              aria-label="Vue liste"
               data-desktop-label="Liste"
-              data-mobile-label="Liste"
+              data-mobile-label="≣"
             >
               Liste
             </button>

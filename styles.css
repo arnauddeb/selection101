@@ -307,24 +307,33 @@ h2 {
 }
 
 .champ-recherche input {
-  padding-right: 46px;
+  padding-right: 92px;
+}
+
+.champ-recherche input::-webkit-search-cancel-button,
+.champ-recherche input::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .bouton-effacer-recherche {
   position: absolute;
   right: 14px;
   top: 50%;
-  width: 28px;
+  min-width: 66px;
   height: 28px;
-  display: grid;
-  place-items: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 0;
   border-radius: 999px;
-  padding: 0;
-  color: rgba(28, 26, 22, 0.6);
-  background: rgba(20, 82, 77, 0.08);
+  padding: 0 10px;
+  color: rgba(20, 82, 77, 0.92);
+  background: rgba(20, 82, 77, 0.1);
   box-shadow: none;
-  font-size: 1.1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   line-height: 1;
   transform: translateY(-50%);
 }
@@ -1169,8 +1178,8 @@ textarea:focus {
   }
 
   .modes-affichage {
-    width: 112px;
-    flex-basis: 112px;
+    width: 126px;
+    flex-basis: 126px;
   }
 
   .champ-tri {

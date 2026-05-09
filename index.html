@@ -18,10 +18,22 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="apple-mobile-web-app-title" content="S101" />
     <meta name="application-name" content="S101" />
-    <link rel="icon" href="./icone.svg?v=1.1.43" type="image/svg+xml" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="icon" href="./icone.svg" type="image/svg+xml" />
     <title>S101</title>
-    <link rel="stylesheet" href="./styles.css?v=1.1.43" />
-    <script src="./application.js?v=1.1.43" defer></script>
+    <script>
+      const antiCacheToken = String(Date.now());
+
+      const feuilleStyle = document.createElement("link");
+      feuilleStyle.rel = "stylesheet";
+      feuilleStyle.href = `./styles.css?v=${antiCacheToken}`;
+      document.head.append(feuilleStyle);
+
+      const scriptApplication = document.createElement("script");
+      scriptApplication.src = `./application.js?v=${antiCacheToken}`;
+      scriptApplication.defer = true;
+      document.head.append(scriptApplication);
+    </script>
   </head>
   <body>
     <div class="decor decor-gauche" aria-hidden="true"></div>

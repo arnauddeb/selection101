@@ -1,5 +1,3 @@
-const versionApplication = "1.1.43";
-
 const etatsVinyle = [
   "Excellent",
   "Bon",
@@ -9,8 +7,6 @@ const etatsVinyle = [
 ];
 
 const elements = {
-  versionApp: document.querySelector("#version-app"),
-  versionAppMobile: document.querySelector("#version-app-mobile"),
   recherche: document.querySelector("#recherche"),
   tri: document.querySelector("#tri"),
   ongletJukebox: document.querySelector("#onglet-jukebox"),
@@ -76,10 +72,7 @@ const DELAI_REPRISE_CARROUSEL = 3200;
 initialiser();
 
 async function initialiser() {
-  elements.versionApp.textContent = versionApplication;
-  if (elements.versionAppMobile) {
-    elements.versionAppMobile.textContent = versionApplication;
-  }
+  appliquerLibellesMobiles();
   remplirEtats();
   brancherEvenements();
   await chargerModeEtCollection();
@@ -132,6 +125,7 @@ function brancherEvenements() {
       }
     }, { passive: true });
   });
+  window.addEventListener("resize", appliquerLibellesMobiles, { passive: true });
 
   elements.boutonAjouter.addEventListener("click", ouvrirCreation);
   elements.boutonFermer.addEventListener("click", fermerFormulaire);
@@ -229,6 +223,17 @@ function obtenirModeAffichageInitial() {
 
 function estVuePochettesMobile() {
   return modeAffichage === "pochettes" && window.matchMedia("(max-width: 640px)").matches;
+}
+
+function appliquerLibellesMobiles() {
+  const mobile = window.matchMedia("(max-width: 640px)").matches;
+
+  document.querySelectorAll("[data-mobile-label][data-desktop-label]").forEach((element) => {
+    const libelle = mobile ? element.dataset.mobileLabel : element.dataset.desktopLabel;
+    if (libelle) {
+      element.textContent = libelle;
+    }
+  });
 }
 
 function remplirEtats() {

@@ -30,7 +30,6 @@
             <h1>Sélection 101</h1>
           </div>
         </div>
-        <p class="version-app">Version <span id="version-app">1.1.43</span></p>
       </div>
 
       <div class="hero__actions">
@@ -84,10 +83,26 @@
 
         <div class="outils-collection" aria-label="Options de collection">
           <div class="onglets-vues" role="tablist" aria-label="Vue de la collection">
-            <button id="onglet-jukebox" class="onglet-vue est-actif" type="button" role="tab" aria-selected="true">
+            <button
+              id="onglet-jukebox"
+              class="onglet-vue est-actif"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-desktop-label="Jukebox"
+              data-mobile-label="Jukebox"
+            >
               Jukebox
             </button>
-            <button id="onglet-bibliotheque" class="onglet-vue" type="button" role="tab" aria-selected="false">
+            <button
+              id="onglet-bibliotheque"
+              class="onglet-vue"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-desktop-label="Bibliothèque"
+              data-mobile-label="Biblio"
+            >
               Bibliothèque
             </button>
           </div>
@@ -95,16 +110,32 @@
           <div class="champ champ-tri">
             <label for="tri">Tri</label>
             <select id="tri" name="tri">
-              <option value="position">Ordre du jukebox</option>
-              <option value="alphabetique">Ordre alphabétique</option>
+              <option value="position" data-desktop-label="Ordre du jukebox" data-mobile-label="Tri JBX">Ordre du jukebox</option>
+              <option value="alphabetique" data-desktop-label="Ordre alphabétique" data-mobile-label="Tri A-Z">Ordre alphabétique</option>
             </select>
           </div>
 
           <div class="modes-affichage" role="tablist" aria-label="Mode d'affichage">
-            <button id="mode-pochettes" class="mode-affichage est-actif" type="button" role="tab" aria-selected="true">
+            <button
+              id="mode-pochettes"
+              class="mode-affichage est-actif"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-desktop-label="Pochettes"
+              data-mobile-label="Pochettes"
+            >
               Pochettes
             </button>
-            <button id="mode-liste" class="mode-affichage" type="button" role="tab" aria-selected="false">
+            <button
+              id="mode-liste"
+              class="mode-affichage"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-desktop-label="Liste"
+              data-mobile-label="Liste"
+            >
               Liste
             </button>
           </div>
@@ -121,10 +152,6 @@
         </div>
       </section>
     </main>
-
-    <p class="version-app-mobile" aria-label="Version de l'application">
-      v<span id="version-app-mobile">1.1.43</span>
-    </p>
 
     <dialog id="fenetre-formulaire" class="fenetre">
       <form id="formulaire-disque" class="formulaire">

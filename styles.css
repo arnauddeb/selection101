@@ -154,18 +154,6 @@ h2 {
   font-size: 1.02rem;
 }
 
-.version-app {
-  margin: 12px 0 0;
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(28, 26, 22, 0.56);
-}
-
-.version-app-mobile {
-  display: none;
-}
-
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -1162,10 +1150,6 @@ textarea:focus {
     display: none;
   }
 
-  .version-app {
-    display: none;
-  }
-
   .ligne-vinyle {
     grid-template-columns: 1fr;
   }
@@ -1255,16 +1239,23 @@ textarea:focus {
   }
 
   .compteur {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
     min-width: 0;
-    padding: 6px 9px 5px;
+    padding: 6px 10px;
     box-shadow: 0 8px 18px rgba(20, 82, 77, 0.12);
   }
 
   .compteur span {
     font-size: 0.88rem;
+    line-height: 1;
   }
 
   .compteur p {
+    display: inline;
+    margin: 0;
+    white-space: nowrap;
     font-size: 0.56rem;
     line-height: 1;
   }
@@ -1293,15 +1284,57 @@ textarea:focus {
   }
 
   .outils-collection {
-    gap: 6px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 8px;
     margin-bottom: 10px;
+    padding: 2px 2px 8px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    border-bottom: 0;
+    overscroll-behavior-x: contain;
+  }
+
+  .outils-collection::-webkit-scrollbar {
+    display: none;
+  }
+
+  .onglets-vues,
+  .modes-affichage,
+  .champ-tri {
+    flex: 0 0 auto;
+    width: auto;
+  }
+
+  .onglets-vues {
+    min-width: 214px;
+  }
+
+  .modes-affichage {
+    min-width: 172px;
+  }
+
+  .champ-tri {
+    min-width: 108px;
   }
 
   .onglet-vue,
   .mode-affichage,
   .outils-collection .champ-tri select {
-    min-height: 40px;
-    font-size: 0.92rem;
+    min-height: 38px;
+    font-size: 0.88rem;
+    white-space: nowrap;
+  }
+
+  .outils-collection .champ-tri select {
+    min-width: 108px;
+    padding: 8px 28px 8px 12px;
+    border-radius: 999px;
+    border-bottom-color: var(--bordure);
+    background: rgba(255, 250, 241, 0.96);
+    box-shadow: 0 8px 18px rgba(24, 30, 28, 0.06);
   }
 
   .grille-disques--carrousel {
@@ -1324,17 +1357,65 @@ textarea:focus {
   }
 
   .ligne-vinyle {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 10px;
+    padding: 12px;
     border-radius: 18px;
     box-shadow: 0 10px 20px rgba(15, 24, 25, 0.06);
   }
 
-  .version-app-mobile {
-    display: block;
-    padding: 0 14px 12px;
-    text-align: right;
-    font-size: 0.58rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: rgba(28, 26, 22, 0.42);
+  .ligne-vinyle__visuel {
+    width: 72px;
+    border-radius: 14px;
   }
+
+  .ligne-vinyle__contenu {
+    gap: 8px;
+  }
+
+  .ligne-vinyle__entete {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .ligne-vinyle__titres {
+    gap: 3px;
+  }
+
+  .ligne-vinyle__artiste {
+    font-size: 0.96rem;
+    line-height: 1.05;
+  }
+
+  .ligne-vinyle__meta {
+    font-size: 0.74rem;
+    line-height: 1.2;
+  }
+
+  .ligne-vinyle__etat {
+    flex: 0 0 auto;
+    align-self: flex-start;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    line-height: 1;
+    white-space: nowrap;
+  }
+
+  .ligne-vinyle__faces {
+    gap: 6px;
+  }
+
+  .ligne-vinyle__label {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+  }
+
+  .ligne-vinyle__titre {
+    font-size: 0.82rem;
+    line-height: 1.18;
+  }
+
 }

@@ -1663,6 +1663,9 @@ textarea:focus {
     background: rgba(255, 250, 241, 0.96);
     box-shadow: 0 8px 18px rgba(24, 30, 28, 0.06);
     text-align: center;
+    text-align-last: center;
+    padding-inline: 0;
+    background-position: right 10px center;
   }
 
   .grille-disques--carrousel {

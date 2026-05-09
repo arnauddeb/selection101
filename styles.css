@@ -1130,7 +1130,8 @@ textarea:focus {
 
 @media (max-width: 520px) {
   h1 {
-    font-size: clamp(2.2rem, 12vw, 3.3rem);
+    font-size: clamp(1.95rem, 9vw, 2.5rem);
+    white-space: nowrap;
   }
 
   h2 {
@@ -1147,20 +1148,14 @@ textarea:focus {
     border-radius: 18px;
   }
 
-  .menu-sauvegarde__contenu {
-    left: 0;
-    right: 0;
-    min-width: 0;
-  }
-
   .menu-options__contenu {
     left: 0;
     right: auto;
     min-width: min(190px, calc(100vw - 72px));
   }
 
-  .compteurs {
-    grid-template-columns: 1fr;
+  .menu-sauvegarde {
+    display: none;
   }
 
   .ligne-vinyle {
@@ -1188,5 +1183,34 @@ textarea:focus {
   select,
   textarea {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .compteur {
+    min-width: 0;
+  }
+
+  .compteur span {
+    font-size: 1rem;
+  }
+
+  .compteur p {
+    font-size: 0.64rem;
+  }
+
+  .grille-disques--carrousel {
+    gap: 12px;
+    padding: 16px 0 24px;
+    scroll-padding-inline: 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .grille-disques--carrousel .carte-disque {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 }

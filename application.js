@@ -62,7 +62,7 @@ let indexCarrousel = 0;
 let delaiCarrousel = null;
 let animationCarrousel = null;
 let dernierTempsCarrousel = null;
-let balayageCarrouselActif = true;
+let balayageCarrouselActif = false;
 let delaiRepriseBalayage = null;
 let survolCarrouselActif = false;
 let identifiantEdition = null;
@@ -223,6 +223,10 @@ function obtenirModeAffichageInitial() {
   return window.matchMedia("(max-width: 640px)").matches ? "liste" : "pochettes";
 }
 
+function estVuePochettesMobile() {
+  return modeAffichage === "pochettes" && window.matchMedia("(max-width: 640px)").matches;
+}
+
 function remplirEtats() {
   elements.etatVinyle.innerHTML = "";
   etatsVinyle.forEach((etat) => {
@@ -237,7 +241,7 @@ function changerVue(vue) {
   vueActive = vue;
   triActif = vue === "jukebox" ? "position" : "alphabetique";
   indexCarrousel = 0;
-  balayageCarrouselActif = modeAffichage === "pochettes";
+  balayageCarrouselActif = modeAffichage === "pochettes" && !estVuePochettesMobile();
   effacerRepriseBalayageCarrousel();
   elements.recherche.value = "";
   mettreAJourAffichageVue();
@@ -269,7 +273,7 @@ function mettreAJourAffichageVue() {
 function changerModeAffichage(mode) {
   modeAffichage = mode;
   indexCarrousel = 0;
-  balayageCarrouselActif = mode === "pochettes";
+  balayageCarrouselActif = mode === "pochettes" && !estVuePochettesMobile();
   effacerRepriseBalayageCarrousel();
   mettreAJourAffichageVue();
   afficherCollection();
@@ -399,6 +403,7 @@ function demarrerBalayageCarrousel() {
   const mouvementAutorise =
     balayageCarrouselActif &&
     modeAffichage === "pochettes" &&
+    !estVuePochettesMobile() &&
     cartes.length > 1 &&
     !survolCarrouselActif &&
     !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -412,7 +417,7 @@ function demarrerBalayageCarrousel() {
 }
 
 function animerBalayageCarrousel(temps) {
-  if (!balayageCarrouselActif || modeAffichage !== "pochettes" || survolCarrouselActif) {
+  if (!balayageCarrouselActif || modeAffichage !== "pochettes" || estVuePochettesMobile() || survolCarrouselActif) {
     annulerAnimationCarrousel();
     return;
   }
@@ -443,14 +448,14 @@ function suspendreBalayageCarrousel() {
 }
 
 function programmerRepriseBalayageCarrousel() {
-  if (modeAffichage !== "pochettes" || survolCarrouselActif) {
+  if (modeAffichage !== "pochettes" || estVuePochettesMobile() || survolCarrouselActif) {
     return;
   }
 
   effacerRepriseBalayageCarrousel();
   delaiRepriseBalayage = window.setTimeout(() => {
     delaiRepriseBalayage = null;
-    if (modeAffichage !== "pochettes" || survolCarrouselActif) {
+    if (modeAffichage !== "pochettes" || estVuePochettesMobile() || survolCarrouselActif) {
       return;
     }
     balayageCarrouselActif = true;

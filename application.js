@@ -6,6 +6,163 @@ const etatsVinyle = [
   "Défaut / à remplacer",
 ];
 
+const modelesEtiquettes = [
+  "fleches-rouges.jpg",
+  "simple-bleu-et-noir.jpg",
+  "simple-bleu.bmp",
+  "simple-cyan.bmp",
+  "simple-vert.bmp",
+  "simple-bleu-moyen.bmp",
+  "simple-multicolore.bmp",
+  "simple-orange.bmp",
+  "simple-rose.bmp",
+  "simple-violet.bmp",
+  "simple-rouge.bmp",
+  "simple-rouge-epais.jpg",
+  "simple-mauve.bmp",
+  "simple-jaune.bmp",
+  "simple-vert-vif.bmp",
+  "bouton-bleu.bmp",
+  "bouton-rouge.bmp",
+  "decor-bleu-et-brun.jpg",
+  "decor-carres-bleus.jpg",
+  "decor-flammes.jpg",
+  "decor-marbre.jpg",
+  "decor-nuages-roses.jpg",
+  "decor-rouge-et-noir.jpg",
+  "decor-briques.jpg",
+  "classique-bleu-et-noir.jpg",
+  "classique-bleu.bmp",
+  "classique-bleu-et-blanc.bmp",
+  "classique-bleu-moderne.jpg",
+  "classique-vert.bmp",
+  "classique-vert-2.jpg",
+  "classique-vert-et-blanc.bmp",
+  "classique-bleu-marine.bmp",
+  "classique-bleu-marine-et-blanc.bmp",
+  "classique-violet.bmp",
+  "classique-violet-et-blanc.bmp",
+  "classique-rouge.bmp",
+  "classique-rouge-intense.bmp",
+  "classique-rouge-intense-2.jpg",
+  "classique-jaune.bmp",
+  "classique-jaune-et-blanc.bmp",
+  "retro-bleu.jpg",
+  "retro-vert.jpg",
+  "retro-violet-classique.jpg",
+  "retro-violet-droit.jpg",
+  "retro-violet.bmp",
+  "retro-violet-2.jpg",
+  "orange-moderne.jpg",
+  "carre-vert.jpg",
+  "carre-bleu.jpg",
+  "carre-violet.jpg",
+  "degrade-vert.bmp",
+  "degrade-bleu-moyen.bmp",
+  "degrade-rouge.bmp",
+  "degrade-violet.bmp",
+  "etoiles-jaunes.jpg",
+  "stereo-rouge.jpg",
+  "tons-bleu-clair.bmp",
+  "tons-noir.bmp",
+  "tons-vert.bmp",
+  "tons-orange.bmp",
+  "tons-rose.bmp",
+  "tons-violet.bmp",
+  "tons-rouge-avec-voiture.bmp",
+  "tons-jaune.bmp",
+  "noel-1.bmp",
+  "noel-2.bmp",
+  "noel-3.bmp",
+  "sapin-de-noel-1.bmp",
+  "sapin-de-noel-2.bmp",
+  "antho1.bmp",
+  "antho2.bmp",
+  "vert-moderne.jpg",
+  "violet-moderne.jpg",
+  "rouge.bmp",
+];
+
+const nomsModelesEtiquettes = {
+  "fleches-rouges.jpg": "Flèches rouges",
+  "simple-bleu-et-noir.jpg": "Simple bleu et noir",
+  "simple-bleu.bmp": "Simple bleu",
+  "simple-cyan.bmp": "Simple cyan",
+  "simple-vert.bmp": "Simple vert",
+  "simple-bleu-moyen.bmp": "Simple bleu moyen",
+  "simple-multicolore.bmp": "Simple multicolore",
+  "simple-orange.bmp": "Simple orange",
+  "simple-rose.bmp": "Simple rose",
+  "simple-violet.bmp": "Simple violet",
+  "simple-rouge.bmp": "Simple rouge",
+  "simple-rouge-epais.jpg": "Simple rouge épais",
+  "simple-mauve.bmp": "Simple mauve",
+  "simple-jaune.bmp": "Simple jaune",
+  "simple-vert-vif.bmp": "Simple vert vif",
+  "bouton-bleu.bmp": "Bouton bleu",
+  "bouton-rouge.bmp": "Bouton rouge",
+  "decor-bleu-et-brun.jpg": "Décor bleu et brun",
+  "decor-carres-bleus.jpg": "Décor carrés bleus",
+  "decor-flammes.jpg": "Décor flammes",
+  "decor-marbre.jpg": "Décor marbre",
+  "decor-nuages-roses.jpg": "Décor nuages roses",
+  "decor-rouge-et-noir.jpg": "Décor rouge et noir",
+  "decor-briques.jpg": "Décor briques",
+  "classique-bleu-et-noir.jpg": "Classique bleu et noir",
+  "classique-bleu.bmp": "Classique bleu",
+  "classique-bleu-et-blanc.bmp": "Classique bleu et blanc",
+  "classique-bleu-moderne.jpg": "Classique bleu moderne",
+  "classique-vert.bmp": "Classique vert",
+  "classique-vert-2.jpg": "Classique vert 2",
+  "classique-vert-et-blanc.bmp": "Classique vert et blanc",
+  "classique-bleu-marine.bmp": "Classique bleu marine",
+  "classique-bleu-marine-et-blanc.bmp": "Classique bleu marine et blanc",
+  "classique-violet.bmp": "Classique violet",
+  "classique-violet-et-blanc.bmp": "Classique violet et blanc",
+  "classique-rouge.bmp": "Classique rouge",
+  "classique-rouge-intense.bmp": "Classique rouge intense",
+  "classique-rouge-intense-2.jpg": "Classique rouge intense 2",
+  "classique-jaune.bmp": "Classique jaune",
+  "classique-jaune-et-blanc.bmp": "Classique jaune et blanc",
+  "retro-bleu.jpg": "Rétro bleu",
+  "retro-vert.jpg": "Rétro vert",
+  "retro-violet-classique.jpg": "Rétro violet classique",
+  "retro-violet-droit.jpg": "Rétro violet droit",
+  "retro-violet.bmp": "Rétro violet",
+  "retro-violet-2.jpg": "Rétro violet 2",
+  "orange-moderne.jpg": "Orange moderne",
+  "carre-vert.jpg": "Carré vert",
+  "carre-bleu.jpg": "Carré bleu",
+  "carre-violet.jpg": "Carré violet",
+  "degrade-vert.bmp": "Dégradé vert",
+  "degrade-bleu-moyen.bmp": "Dégradé bleu moyen",
+  "degrade-rouge.bmp": "Dégradé rouge",
+  "degrade-violet.bmp": "Dégradé violet",
+  "etoiles-jaunes.jpg": "Étoiles jaunes",
+  "stereo-rouge.jpg": "Stéréo rouge",
+  "tons-bleu-clair.bmp": "Tons bleu clair",
+  "tons-noir.bmp": "Tons noir",
+  "tons-vert.bmp": "Tons vert",
+  "tons-orange.bmp": "Tons orange",
+  "tons-rose.bmp": "Tons rose",
+  "tons-violet.bmp": "Tons violet",
+  "tons-rouge-avec-voiture.bmp": "Tons rouge avec voiture",
+  "tons-jaune.bmp": "Tons jaune",
+  "noel-1.bmp": "Noël 1",
+  "noel-2.bmp": "Noël 2",
+  "noel-3.bmp": "Noël 3",
+  "sapin-de-noel-1.bmp": "Sapin de Noël 1",
+  "sapin-de-noel-2.bmp": "Sapin de Noël 2",
+  "antho1.bmp": "antho1",
+  "antho2.bmp": "antho2",
+  "vert-moderne.jpg": "Vert moderne",
+  "violet-moderne.jpg": "Violet moderne",
+  "rouge.bmp": "Rouge",
+};
+
+const LARGEUR_ETIQUETTE_MM = 77;
+const HAUTEUR_ETIQUETTE_MM = 26;
+
 const elements = {
   recherche: document.querySelector("#recherche"),
   boutonEffacerRecherche: document.querySelector("#bouton-effacer-recherche"),
@@ -23,6 +180,8 @@ const elements = {
   messageApplication: document.querySelector("#message-application"),
   boutonAjouter: document.querySelector("#bouton-ajouter"),
   boutonExportCsv: document.querySelector("#bouton-export-csv"),
+  boutonExportJukeheadCsv: document.querySelector("#bouton-export-jukehead-csv"),
+  boutonOuvrirEtiquettes: document.querySelector("#bouton-ouvrir-etiquettes"),
   boutonExportJson: document.querySelector("#bouton-export-json"),
   boutonImportJson: document.querySelector("#bouton-import-json"),
   boutonViderDonnees: document.querySelector("#bouton-vider-donnees"),
@@ -30,6 +189,35 @@ const elements = {
   fenetrePochette: document.querySelector("#fenetre-pochette"),
   imagePochetteAgrandie: document.querySelector("#image-pochette-agrandie"),
   boutonFermerPochette: document.querySelector("#bouton-fermer-pochette"),
+  fenetreEtiquettes: document.querySelector("#fenetre-etiquettes"),
+  formulaireEtiquettes: document.querySelector("#formulaire-etiquettes"),
+  boutonFermerEtiquettes: document.querySelector("#bouton-fermer-etiquettes"),
+  boutonAnnulerEtiquettes: document.querySelector("#bouton-annuler-etiquettes"),
+  modeleEtiquette: document.querySelector("#modele-etiquette"),
+  champModeleEtiquetteSecondaire: document.querySelector("#champ-modele-etiquette-secondaire"),
+  modeleEtiquetteSecondaire: document.querySelector("#modele-etiquette-secondaire"),
+  policeEtiquette: document.querySelector("#police-etiquette"),
+  tailleTitresEtiquette: document.querySelector("#taille-titres-etiquette"),
+  libelleTailleTitresEtiquette: document.querySelector("#libelle-taille-titres-etiquette"),
+  grasTitresEtiquette: document.querySelector("#gras-titres-etiquette"),
+  couleurTitresEtiquette: document.querySelector("#couleur-titres-etiquette"),
+  tailleArtisteEtiquette: document.querySelector("#taille-artiste-etiquette"),
+  libelleTailleArtisteEtiquette: document.querySelector("#libelle-taille-artiste-etiquette"),
+  grasArtisteEtiquette: document.querySelector("#gras-artiste-etiquette"),
+  couleurArtisteEtiquette: document.querySelector("#couleur-artiste-etiquette"),
+  apercuEtiquetteImage: document.querySelector("#apercu-etiquette-image"),
+  apercuEtiquetteModele: document.querySelector("#apercu-etiquette-modele"),
+  apercuTitreFaceA: document.querySelector("#apercu-titre-face-a"),
+  apercuArtiste: document.querySelector("#apercu-artiste"),
+  apercuTitreFaceB: document.querySelector("#apercu-titre-face-b"),
+  apercuEtiquetteImageSecondaire: document.querySelector("#apercu-etiquette-image-secondaire"),
+  apercuEtiquetteModeleSecondaire: document.querySelector("#apercu-etiquette-modele-secondaire"),
+  apercuTitreFaceASecondaire: document.querySelector("#apercu-titre-face-a-secondaire"),
+  apercuArtisteSecondaire: document.querySelector("#apercu-artiste-secondaire"),
+  apercuTitreFaceBSecondaire: document.querySelector("#apercu-titre-face-b-secondaire"),
+  apercuEtiquettePrecedent: document.querySelector("#apercu-etiquette-precedent"),
+  apercuEtiquetteSuivant: document.querySelector("#apercu-etiquette-suivant"),
+  compteurApercuEtiquette: document.querySelector("#compteur-apercu-etiquette"),
   fenetre: document.querySelector("#fenetre-formulaire"),
   formulaire: document.querySelector("#formulaire-disque"),
   titreFormulaire: document.querySelector("#titre-formulaire"),
@@ -67,6 +255,8 @@ let survolCarrouselActif = false;
 let identifiantEdition = null;
 let lectureSeule = false;
 let baseDisponible = false;
+let indexApercuEtiquette = 0;
+const cacheImagesEtiquettes = new Map();
 
 const VITESSE_DEFILEMENT_CARROUSEL = 0.12;
 const DELAI_REPRISE_CARROUSEL = 3200;
@@ -76,6 +266,7 @@ initialiser();
 async function initialiser() {
   appliquerLibellesMobiles();
   remplirEtats();
+  remplirModelesEtiquettes();
   brancherEvenements();
   await chargerModeEtCollection();
   mettreAJourSuggestionsArtistes();
@@ -141,6 +332,26 @@ function brancherEvenements() {
       fermerPochetteAgrandie();
     }
   });
+  elements.boutonOuvrirEtiquettes.addEventListener("click", ouvrirEtiquettes);
+  elements.boutonFermerEtiquettes.addEventListener("click", fermerEtiquettes);
+  elements.boutonAnnulerEtiquettes.addEventListener("click", fermerEtiquettes);
+  elements.modeleEtiquette.addEventListener("change", mettreAJourApercuEtiquette);
+  elements.modeleEtiquetteSecondaire.addEventListener("change", mettreAJourApercuEtiquette);
+  elements.policeEtiquette.addEventListener("change", mettreAJourApercuEtiquette);
+  elements.tailleTitresEtiquette.addEventListener("input", mettreAJourApercuEtiquette);
+  elements.tailleArtisteEtiquette.addEventListener("input", mettreAJourApercuEtiquette);
+  elements.grasTitresEtiquette.addEventListener("change", mettreAJourApercuEtiquette);
+  elements.grasArtisteEtiquette.addEventListener("change", mettreAJourApercuEtiquette);
+  elements.couleurTitresEtiquette.addEventListener("input", mettreAJourApercuEtiquette);
+  elements.couleurArtisteEtiquette.addEventListener("input", mettreAJourApercuEtiquette);
+  elements.apercuEtiquettePrecedent.addEventListener("click", () => deplacerApercuEtiquette(-1));
+  elements.apercuEtiquetteSuivant.addEventListener("click", () => deplacerApercuEtiquette(1));
+  elements.formulaireEtiquettes.addEventListener("submit", imprimerEtiquettes);
+  elements.fenetreEtiquettes.addEventListener("click", (evenement) => {
+    if (!evenement.target.closest(".formulaire-etiquettes")) {
+      fermerEtiquettes();
+    }
+  });
   elements.boutonFermer.addEventListener("click", fermerFormulaire);
   elements.boutonAnnuler.addEventListener("click", fermerFormulaire);
   elements.formulaire.addEventListener("submit", enregistrerVinyle);
@@ -154,6 +365,7 @@ function brancherEvenements() {
   });
 
   elements.boutonExportCsv.addEventListener("click", exporterCsv);
+  elements.boutonExportJukeheadCsv.addEventListener("click", exporterCsvJukehead);
   elements.boutonExportJson.addEventListener("click", exporterJson);
   elements.boutonImportJson.addEventListener("click", () => {
     if (lectureSeule) {
@@ -257,6 +469,30 @@ function remplirEtats() {
     option.textContent = etat;
     elements.etatVinyle.append(option);
   });
+}
+
+function remplirModelesEtiquettes() {
+  elements.modeleEtiquette.innerHTML = "";
+  elements.modeleEtiquetteSecondaire.innerHTML = "";
+  const optionSansDeuxiemeModele = document.createElement("option");
+  optionSansDeuxiemeModele.value = "";
+  optionSansDeuxiemeModele.textContent = "Aucun deuxième modèle";
+  elements.modeleEtiquetteSecondaire.append(optionSansDeuxiemeModele);
+
+  modelesEtiquettes.forEach((modele) => {
+    const option = document.createElement("option");
+    option.value = modele;
+    option.textContent = nomLisibleModeleEtiquette(modele);
+    elements.modeleEtiquette.append(option);
+    elements.modeleEtiquetteSecondaire.append(option.cloneNode(true));
+  });
+  elements.modeleEtiquette.value = "simple-rouge.bmp";
+  elements.modeleEtiquetteSecondaire.value = "";
+  mettreAJourApercuEtiquette();
+}
+
+function nomLisibleModeleEtiquette(modele) {
+  return nomsModelesEtiquettes[modele] || modele.replace(/\.(bmp|jpg|jpeg|png)$/i, "");
 }
 
 function changerVue(vue) {
@@ -638,6 +874,361 @@ function ouvrirPochetteAgrandie(vinyle) {
 function fermerPochetteAgrandie() {
   elements.fenetrePochette.close();
   elements.imagePochetteAgrandie.removeAttribute("src");
+}
+
+function ouvrirEtiquettes() {
+  if (!collection.some((vinyle) => vinyle.emplacement === "jukebox")) {
+    afficherMessageApplication("Aucun vinyle placé dans le jukebox pour générer les étiquettes.", "erreur");
+    return;
+  }
+
+  indexApercuEtiquette = 0;
+  mettreAJourApercuEtiquette();
+  elements.fenetreEtiquettes.showModal();
+}
+
+function fermerEtiquettes() {
+  elements.fenetreEtiquettes.close();
+}
+
+async function mettreAJourApercuEtiquette() {
+  try {
+    const vinyles = obtenirVinylesEtiquettes();
+    const vinyle = vinyles[indexApercuEtiquette] || vinyles[0];
+    const modele = elements.modeleEtiquette.value || modelesEtiquettes[0];
+    const modeleSecondaire = obtenirModeleSecondaireEtiquette();
+    const reglages = obtenirReglagesEtiquettes();
+
+    elements.apercuEtiquetteModele.src = await chargerImageModeleEtiquette(modele);
+    remplirTexteApercuEtiquette(
+      elements.apercuTitreFaceA,
+      elements.apercuArtiste,
+      elements.apercuTitreFaceB,
+      vinyle,
+    );
+
+    elements.apercuEtiquetteImageSecondaire.hidden = !modeleSecondaire;
+    if (modeleSecondaire) {
+      const vinyleSecondaire = vinyles[(indexApercuEtiquette + 1) % vinyles.length] || vinyle;
+      elements.apercuEtiquetteModeleSecondaire.src = await chargerImageModeleEtiquette(modeleSecondaire);
+      remplirTexteApercuEtiquette(
+        elements.apercuTitreFaceASecondaire,
+        elements.apercuArtisteSecondaire,
+        elements.apercuTitreFaceBSecondaire,
+        vinyleSecondaire,
+      );
+    } else {
+      elements.apercuEtiquetteModeleSecondaire.removeAttribute("src");
+    }
+
+    elements.compteurApercuEtiquette.textContent = vinyles.length
+      ? `${indexApercuEtiquette + 1} / ${vinyles.length}`
+      : "0 / 0";
+    appliquerReglagesApercuEtiquette(elements.apercuEtiquetteImage, reglages);
+    appliquerReglagesApercuEtiquette(elements.apercuEtiquetteImageSecondaire, reglages);
+    elements.libelleTailleTitresEtiquette.textContent = `Taille des titres : ${reglages.tailleTitres}%`;
+    elements.libelleTailleArtisteEtiquette.textContent = `Taille artiste : ${reglages.tailleArtiste}%`;
+    elements.apercuEtiquettePrecedent.disabled = vinyles.length <= 1;
+    elements.apercuEtiquetteSuivant.disabled = vinyles.length <= 1;
+  } catch (erreur) {
+    afficherMessageApplication(erreur.message || "Impossible de charger l'image d'étiquette.", "erreur", true);
+  }
+}
+
+async function chargerImageModeleEtiquette(modele) {
+  if (cacheImagesEtiquettes.has(modele)) {
+    return cacheImagesEtiquettes.get(modele);
+  }
+
+  const reponse = await trouverImageModeleEtiquette(modele);
+
+  const blob = await reponse.blob();
+  const dataUrl = await convertirBlobEnDataUrl(blob);
+  cacheImagesEtiquettes.set(modele, dataUrl);
+  return dataUrl;
+}
+
+async function trouverImageModeleEtiquette(modele) {
+  const chemins = cheminsPossiblesEtiquette(modele);
+  for (const chemin of chemins) {
+    try {
+      const reponse = await fetch(chemin, { cache: "no-store" });
+      if (reponse.ok) {
+        return reponse;
+      }
+    } catch {
+      // On essaie le chemin suivant.
+    }
+  }
+
+  throw new Error(`Modèle d'étiquette introuvable : ${modele}`);
+}
+
+function convertirBlobEnDataUrl(blob) {
+  return new Promise((resolve, reject) => {
+    const lecteur = new FileReader();
+    lecteur.addEventListener("load", () => resolve(String(lecteur.result)));
+    lecteur.addEventListener("error", () => reject(new Error("Image d'étiquette illisible.")));
+    lecteur.readAsDataURL(blob);
+  });
+}
+
+function remplirTexteApercuEtiquette(titreA, artiste, titreB, vinyle) {
+  titreA.textContent = vinyle?.titre_face_a || "Face A";
+  artiste.textContent = raccourcirArtisteEtiquette(vinyle?.artiste || "Sans artiste");
+  titreB.textContent = vinyle?.titre_face_b || "Face B";
+}
+
+function appliquerReglagesApercuEtiquette(apercu, reglages) {
+  apercu.dataset.police = reglages.police;
+  apercu.style.setProperty("--taille-titres-etiquette", `${reglages.tailleTitres / 100}`);
+  apercu.style.setProperty("--taille-artiste-etiquette", `${reglages.tailleArtiste / 100}`);
+  apercu.style.setProperty("--poids-titres-etiquette", reglages.grasTitres ? "800" : "500");
+  apercu.style.setProperty("--poids-artiste-etiquette", reglages.grasArtiste ? "800" : "500");
+  apercu.style.setProperty("--couleur-titres-etiquette", reglages.couleurTitres);
+  apercu.style.setProperty("--couleur-artiste-etiquette", reglages.couleurArtiste);
+}
+
+function deplacerApercuEtiquette(direction) {
+  const vinyles = obtenirVinylesEtiquettes();
+  if (!vinyles.length) {
+    return;
+  }
+
+  indexApercuEtiquette = (indexApercuEtiquette + direction + vinyles.length) % vinyles.length;
+  mettreAJourApercuEtiquette();
+}
+
+function obtenirVinylesEtiquettes() {
+  return trierCollection(collection.filter((vinyle) => vinyle.emplacement === "jukebox"));
+}
+
+function obtenirModelesImpressionEtiquettes() {
+  const modele = elements.modeleEtiquette.value || modelesEtiquettes[0];
+  const modeleSecondaire = obtenirModeleSecondaireEtiquette();
+  return [modele, modeleSecondaire].filter(Boolean);
+}
+
+function obtenirModeleSecondaireEtiquette() {
+  return elements.modeleEtiquetteSecondaire.value || "";
+}
+
+function obtenirReglagesEtiquettes() {
+  return {
+    police: elements.policeEtiquette.value || "typewriter",
+    tailleTitres: Number(elements.tailleTitresEtiquette.value) || 100,
+    tailleArtiste: Number(elements.tailleArtisteEtiquette.value) || 100,
+    grasTitres: elements.grasTitresEtiquette.checked,
+    grasArtiste: elements.grasArtisteEtiquette.checked,
+    couleurTitres: elements.couleurTitresEtiquette.value || "#17120e",
+    couleurArtiste: elements.couleurArtisteEtiquette.value || "#17120e",
+  };
+}
+
+function raccourcirArtisteEtiquette(artiste) {
+  const texte = String(artiste || "").trim();
+  if (texte.length <= 24) {
+    return texte;
+  }
+
+  const separateurs = /\s+(&|ET|AND)\s+/i;
+  if (separateurs.test(texte)) {
+    return texte
+      .split(separateurs)
+      .filter((fragment) => !/^(?:&|ET|AND)$/i.test(fragment))
+      .map((fragment) => abregerNomArtiste(fragment.trim(), 16))
+      .join(" & ");
+  }
+
+  return abregerNomArtiste(texte, 24);
+}
+
+function abregerNomArtiste(nom, limite) {
+  const mots = nom.split(/\s+/).filter(Boolean);
+  if (nom.length <= limite || mots.length < 2) {
+    return nom;
+  }
+
+  const dernierMot = mots.at(-1);
+  const initiales = mots.slice(0, -1)
+    .map((mot) => mot.split(/[-']/).filter(Boolean).map((partie) => `${partie[0]}.`).join(""))
+    .join("");
+  const raccourci = `${initiales} ${dernierMot}`.trim();
+  return raccourci.length <= nom.length ? raccourci : nom;
+}
+
+function imprimerEtiquettes(evenement) {
+  evenement.preventDefault();
+
+  const vinylesJukebox = obtenirVinylesEtiquettes();
+  if (!vinylesJukebox.length) {
+    afficherMessageApplication("Aucun vinyle placé dans le jukebox pour générer les étiquettes.", "erreur");
+    return;
+  }
+
+  const modelesImpression = obtenirModelesImpressionEtiquettes();
+  const reglages = obtenirReglagesEtiquettes();
+  const imagesImpression = modelesImpression.map((modele) => cacheImagesEtiquettes.get(modele));
+
+  if (imagesImpression.some((image) => !image)) {
+    afficherMessageApplication("Préparation des images d'étiquettes, réessaie dans une seconde.", "info");
+    Promise.all(modelesImpression.map(chargerImageModeleEtiquette)).then(() => {
+      afficherMessageApplication("Images prêtes, tu peux relancer l'impression.", "info");
+    });
+    return;
+  }
+
+  lancerImpressionEtiquettes(vinylesJukebox, imagesImpression, reglages);
+  afficherMessageApplication(`${vinylesJukebox.length} étiquettes envoyées à l'impression.`, "info");
+}
+
+function lancerImpressionEtiquettes(vinyles, imagesEtiquettes, reglages) {
+  document.querySelector("#planche-impression-etiquettes")?.remove();
+
+  const planche = document.createElement("main");
+  planche.id = "planche-impression-etiquettes";
+  planche.style.setProperty("--police-etiquette", obtenirPoliceEtiquetteCss(reglages.police));
+  planche.style.setProperty("--taille-titre-mm", `${Number((2.5 * Math.max(0.75, Math.min(1.2, reglages.tailleTitres / 100))).toFixed(2))}mm`);
+  planche.style.setProperty("--taille-artiste-mm", `${Number((4.2 * Math.max(0.65, Math.min(1.2, reglages.tailleArtiste / 100))).toFixed(2))}mm`);
+  planche.style.setProperty("--poids-titres-etiquette", reglages.grasTitres ? "800" : "500");
+  planche.style.setProperty("--poids-artiste-etiquette", reglages.grasArtiste ? "800" : "500");
+  planche.style.setProperty("--couleur-titres-etiquette", reglages.couleurTitres);
+  planche.style.setProperty("--couleur-artiste-etiquette", reglages.couleurArtiste);
+  planche.innerHTML = construireArticlesEtiquettes(vinyles, imagesEtiquettes);
+  document.body.append(planche);
+  window.print();
+}
+
+function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
+  const policeCss = obtenirPoliceEtiquetteCss(reglages.police);
+  const echelleTitres = Math.max(0.75, Math.min(1.2, reglages.tailleTitres / 100));
+  const echelleArtiste = Math.max(0.65, Math.min(1.2, reglages.tailleArtiste / 100));
+  const poidsTitres = reglages.grasTitres ? "800" : "500";
+  const poidsArtiste = reglages.grasArtiste ? "800" : "500";
+  const etiquettes = construireArticlesEtiquettes(vinyles, imagesEtiquettes);
+
+  return `<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Étiquettes Sélection 101</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 5mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: white;
+        color: #18130f;
+        font-family: ${policeCss};
+        --poids-titres-etiquette: ${poidsTitres};
+        --poids-artiste-etiquette: ${poidsArtiste};
+        --couleur-titres-etiquette: ${reglages.couleurTitres};
+        --couleur-artiste-etiquette: ${reglages.couleurArtiste};
+      }
+
+      .planche {
+        display: grid;
+        grid-template-columns: repeat(2, ${LARGEUR_ETIQUETTE_MM}mm);
+        gap: 2.5mm 4mm;
+        align-content: start;
+        justify-content: center;
+      }
+
+      .etiquette-impression {
+        position: relative;
+        width: ${LARGEUR_ETIQUETTE_MM}mm;
+        height: ${HAUTEUR_ETIQUETTE_MM}mm;
+        overflow: hidden;
+        break-inside: avoid;
+        page-break-inside: avoid;
+        background: #f7f0dc;
+      }
+
+      .etiquette-impression img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+
+      .etiquette-impression__texte {
+        position: absolute;
+        inset: 2.2mm 4mm;
+        display: grid;
+        grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr);
+        gap: 0.8mm;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        text-shadow: 0 0.2mm 0 rgba(255, 255, 255, 0.5);
+      }
+
+      .etiquette-impression__titre {
+        overflow: hidden;
+        align-self: center;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        font-size: ${Number((2.5 * echelleTitres).toFixed(2))}mm;
+        color: var(--couleur-titres-etiquette);
+        font-weight: var(--poids-titres-etiquette);
+        line-height: 1.05;
+        text-overflow: ellipsis;
+      }
+
+      .etiquette-impression__artiste {
+        overflow: hidden;
+        align-self: center;
+        font-size: ${Number((4.2 * echelleArtiste).toFixed(2))}mm;
+        color: var(--couleur-artiste-etiquette);
+        font-weight: var(--poids-artiste-etiquette);
+        line-height: 1;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      @media screen {
+        body {
+          padding: 12px;
+          background: #ece3d0;
+        }
+
+        .planche {
+          width: 210mm;
+          min-height: 297mm;
+          margin: 0 auto;
+          padding: 5mm;
+          background: white;
+          box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="planche">${etiquettes}</main>
+  </body>
+</html>`;
+}
+
+function construireArticlesEtiquettes(vinyles, imagesEtiquettes) {
+  return vinyles.map((vinyle, index) => `
+    <article class="etiquette-impression">
+      <img src="${echapperHtml(imagesEtiquettes[index % imagesEtiquettes.length])}" alt="" />
+      <div class="etiquette-impression__texte">
+        <div class="etiquette-impression__titre">${echapperHtml(vinyle.titre_face_a || "Face A")}</div>
+        <div class="etiquette-impression__artiste">${echapperHtml(raccourcirArtisteEtiquette(vinyle.artiste || "Sans artiste"))}</div>
+        <div class="etiquette-impression__titre">${echapperHtml(vinyle.titre_face_b || "Face B")}</div>
+      </div>
+    </article>
+  `).join("");
 }
 
 function trierCollection(donnees) {
@@ -1361,6 +1952,50 @@ function exporterCsv() {
   afficherMessageApplication("Export CSV créé.", "info");
 }
 
+function exporterCsvJukehead() {
+  const lignes = [
+    [
+      "catalog_number",
+      "title_a_side",
+      "artist_a_side",
+      "title_b_side",
+      "artist_b_side",
+      "label",
+      "year",
+      "country",
+      "genre",
+      "discogs_release_id",
+      "info",
+      "format",
+    ],
+    ...collection
+      .filter((vinyle) => vinyle.emplacement === "jukebox")
+      .map((vinyle) => [
+        vinyle.position_jukebox || "",
+        vinyle.titre_face_a || "",
+        vinyle.artiste || "",
+        vinyle.titre_face_b || "",
+        vinyle.artiste || "",
+        "Selection 101",
+        "",
+        "",
+        "",
+        "",
+        [
+          vinyle.selection_face_a ? `Selection A: ${vinyle.selection_face_a}` : "",
+          vinyle.selection_face_b ? `Selection B: ${vinyle.selection_face_b}` : "",
+          vinyle.etat_vinyle ? `Etat: ${vinyle.etat_vinyle}` : "",
+          vinyle.commentaire || "",
+        ].filter(Boolean).join(" | "),
+        "45",
+      ]),
+  ];
+
+  const contenu = lignes.map((ligne) => ligne.map(encoderCsv).join(",")).join("\n");
+  telechargerFichier(`selection-101-jukehead-${dateCourte()}.csv`, "text/csv;charset=utf-8", contenu);
+  afficherMessageApplication("Export CSV Jukehead créé.", "info");
+}
+
 function exporterJson() {
   const contenu = JSON.stringify(
     {
@@ -1429,6 +2064,48 @@ async function viderBibliotheque() {
 
 function encoderCsv(valeur) {
   return `"${String(valeur ?? "").replaceAll('"', '""')}"`;
+}
+
+function cheminEtiquette(nomFichier) {
+  return cheminsPossiblesEtiquette(nomFichier)[0];
+}
+
+function cheminsPossiblesEtiquette(nomFichier) {
+  const nomEncode = encodeURIComponent(nomFichier);
+
+  if (window.location.protocol === "http:" || window.location.protocol === "https:") {
+    return [
+      `labels/${nomEncode}`,
+      `../labels/${nomEncode}`,
+      `/labels/${nomEncode}`,
+    ];
+  }
+
+  return [
+    `../labels/${nomEncode}`,
+    `labels/${nomEncode}`,
+  ];
+}
+
+function obtenirPoliceEtiquetteCss(police) {
+  if (police === "compacte") {
+    return '"Arial Narrow", "Helvetica Neue", Arial, sans-serif';
+  }
+
+  if (police === "classique") {
+    return 'Georgia, "Times New Roman", serif';
+  }
+
+  return '"Courier Prime", "American Typewriter", "Courier New", Courier, monospace';
+}
+
+function echapperHtml(valeur) {
+  return String(valeur ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 function telechargerFichier(nom, type, contenu) {

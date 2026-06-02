@@ -161,8 +161,11 @@ const nomsModelesEtiquettes = {
 };
 
 const LARGEUR_ETIQUETTE_MM = 77;
-const HAUTEUR_ETIQUETTE_MM = 26;
+const HAUTEUR_ETIQUETTE_MM = 27;
 const ETIQUETTES_PAR_PAGE_IMPRESSION = 16;
+const MARGE_PAGE_IMPRESSION_MM = 8;
+const ECART_HORIZONTAL_ETIQUETTES_MM = 6;
+const ECART_VERTICAL_ETIQUETTES_MM = 4;
 
 const elements = {
   recherche: document.querySelector("#recherche"),
@@ -1213,6 +1216,11 @@ function lancerImpressionEtiquettes(vinyles, imagesEtiquettes, reglages) {
   const planche = document.createElement("main");
   planche.id = "planche-impression-etiquettes";
   planche.style.setProperty("--police-etiquette", obtenirPoliceEtiquetteCss(reglages.police));
+  planche.style.setProperty("--largeur-etiquette-mm", `${LARGEUR_ETIQUETTE_MM}mm`);
+  planche.style.setProperty("--hauteur-etiquette-mm", `${HAUTEUR_ETIQUETTE_MM}mm`);
+  planche.style.setProperty("--marge-page-impression-mm", `${MARGE_PAGE_IMPRESSION_MM}mm`);
+  planche.style.setProperty("--ecart-horizontal-etiquettes-mm", `${ECART_HORIZONTAL_ETIQUETTES_MM}mm`);
+  planche.style.setProperty("--ecart-vertical-etiquettes-mm", `${ECART_VERTICAL_ETIQUETTES_MM}mm`);
   planche.style.setProperty("--taille-titre-mm", `${Number((2.5 * Math.max(0.75, Math.min(1.2, reglages.tailleTitres / 100))).toFixed(2))}mm`);
   planche.style.setProperty("--taille-artiste-mm", `${Number((4.2 * Math.max(0.65, Math.min(1.2, reglages.tailleArtiste / 100))).toFixed(2))}mm`);
   planche.style.setProperty("--poids-titres-etiquette", reglages.grasTitres ? "800" : "500");
@@ -1252,6 +1260,11 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
         background: white;
         color: #18130f;
         font-family: ${policeCss};
+        --largeur-etiquette-mm: ${LARGEUR_ETIQUETTE_MM}mm;
+        --hauteur-etiquette-mm: ${HAUTEUR_ETIQUETTE_MM}mm;
+        --marge-page-impression-mm: ${MARGE_PAGE_IMPRESSION_MM}mm;
+        --ecart-horizontal-etiquettes-mm: ${ECART_HORIZONTAL_ETIQUETTES_MM}mm;
+        --ecart-vertical-etiquettes-mm: ${ECART_VERTICAL_ETIQUETTES_MM}mm;
         --poids-titres-etiquette: ${poidsTitres};
         --poids-artiste-etiquette: ${poidsArtiste};
         --couleur-titres-etiquette: ${reglages.couleurTitres};
@@ -1263,9 +1276,9 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
         width: 210mm;
         height: 297mm;
         box-sizing: border-box;
-        padding: 12mm 0;
-        grid-template-columns: repeat(2, ${LARGEUR_ETIQUETTE_MM}mm);
-        gap: 4mm 6mm;
+        padding: var(--marge-page-impression-mm);
+        grid-template-columns: repeat(2, var(--largeur-etiquette-mm));
+        gap: var(--ecart-vertical-etiquettes-mm) var(--ecart-horizontal-etiquettes-mm);
         align-content: center;
         justify-content: center;
         break-after: page;
@@ -1279,8 +1292,8 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
 
       .etiquette-impression {
         position: relative;
-        width: ${LARGEUR_ETIQUETTE_MM}mm;
-        height: ${HAUTEUR_ETIQUETTE_MM}mm;
+        width: var(--largeur-etiquette-mm);
+        height: var(--hauteur-etiquette-mm);
         overflow: hidden;
         break-inside: avoid;
         page-break-inside: avoid;

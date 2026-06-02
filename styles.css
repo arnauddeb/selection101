@@ -1356,6 +1356,11 @@ textarea:focus {
     display: block !important;
     color: #18130f;
     font-family: var(--police-etiquette);
+    --largeur-etiquette-mm: 77mm;
+    --hauteur-etiquette-mm: 27mm;
+    --marge-page-impression-mm: 8mm;
+    --ecart-horizontal-etiquettes-mm: 6mm;
+    --ecart-vertical-etiquettes-mm: 4mm;
   }
 
   #planche-impression-etiquettes .page-impression-etiquettes {
@@ -1363,9 +1368,9 @@ textarea:focus {
     width: 210mm;
     height: 297mm;
     box-sizing: border-box;
-    padding: 12mm 0;
-    grid-template-columns: repeat(2, 77mm);
-    gap: 4mm 6mm;
+    padding: var(--marge-page-impression-mm);
+    grid-template-columns: repeat(2, var(--largeur-etiquette-mm));
+    gap: var(--ecart-vertical-etiquettes-mm) var(--ecart-horizontal-etiquettes-mm);
     align-content: center;
     justify-content: center;
     break-after: page;
@@ -1379,8 +1384,8 @@ textarea:focus {
 
   #planche-impression-etiquettes .etiquette-impression {
     position: relative;
-    width: 77mm;
-    height: 26mm;
+    width: var(--largeur-etiquette-mm);
+    height: var(--hauteur-etiquette-mm);
     overflow: hidden;
     break-inside: avoid;
     page-break-inside: avoid;

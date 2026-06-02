@@ -181,9 +181,13 @@ h2 {
 
 .bouton,
 .bouton-icone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 0;
   border-radius: 999px;
   cursor: pointer;
+  text-decoration: none;
   transition:
     transform var(--transition),
     box-shadow var(--transition),
@@ -1357,7 +1361,7 @@ textarea:focus {
     color: #18130f;
     font-family: var(--police-etiquette);
     --largeur-etiquette-mm: 77mm;
-    --hauteur-etiquette-mm: 27mm;
+    --hauteur-etiquette-mm: 26mm;
     --marge-page-impression-mm: 8mm;
     --ecart-horizontal-etiquettes-mm: 6mm;
     --ecart-vertical-etiquettes-mm: 4mm;

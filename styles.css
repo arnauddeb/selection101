@@ -1006,6 +1006,10 @@ textarea:focus {
   border-radius: 20px;
 }
 
+.fenetre-etiquettes {
+  width: min(720px, calc(100vw - 24px));
+}
+
 .formulaire {
   max-height: min(94vh, 980px);
   overflow: auto;
@@ -1046,8 +1050,286 @@ textarea:focus {
   grid-column: 1 / -1;
 }
 
+.formulaire-etiquettes {
+  max-height: min(92vh, 760px);
+}
+
+.grille-formulaire-etiquettes {
+  align-items: start;
+}
+
+.champ-taille-etiquette p {
+  min-height: 48px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 14px;
+  border: 1px solid var(--bordure);
+  background: rgba(255, 255, 255, 0.58);
+  padding: 13px 14px;
+  color: var(--texte);
+  font-weight: 700;
+}
+
+.panneau-style-etiquette {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid rgba(20, 82, 77, 0.12);
+  border-radius: 18px;
+  background: rgba(20, 82, 77, 0.06);
+}
+
+.panneau-style-etiquette legend {
+  padding: 0 6px;
+  color: var(--texte-secondaire);
+  font-size: 0.92rem;
+}
+
+.ligne-style-etiquette {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.option-style-etiquette,
+.couleur-style-etiquette {
+  display: grid;
+  gap: 8px;
+  color: var(--texte-secondaire);
+  font-size: 0.92rem;
+}
+
+.option-style-etiquette {
+  min-height: 48px;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  border: 1px solid var(--bordure);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.option-style-etiquette input {
+  width: auto;
+}
+
+.couleur-style-etiquette input {
+  width: 56px;
+  min-height: 48px;
+  padding: 5px;
+}
+
+.apercu-etiquette {
+  display: grid;
+  place-items: center;
+  gap: 14px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(20, 82, 77, 0.08);
+  border: 1px solid rgba(20, 82, 77, 0.1);
+}
+
+.apercus-etiquettes {
+  width: min(100%, 460px);
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+
+.apercu-etiquette__image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 77 / 26;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+  padding: 11px 28px;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #f7f0dc;
+  box-shadow: 0 16px 26px rgba(18, 28, 25, 0.16);
+  color: #18130f;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Courier Prime", "American Typewriter", "Courier New", Courier, monospace;
+  --taille-titres-etiquette: 1;
+  --taille-artiste-etiquette: 1;
+  --poids-titres-etiquette: 800;
+  --poids-artiste-etiquette: 800;
+  --couleur-titres-etiquette: #17120e;
+  --couleur-artiste-etiquette: #17120e;
+}
+
+.apercu-etiquette__image[data-police="compacte"] {
+  font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+}
+
+.apercu-etiquette__image[data-police="classique"] {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.apercu-etiquette__image img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.apercu-etiquette__face {
+  position: relative;
+  overflow: hidden;
+  color: var(--couleur-titres-etiquette);
+  font-size: calc(clamp(0.74rem, 2vw, 0.9rem) * var(--taille-titres-etiquette));
+  font-weight: var(--poids-titres-etiquette);
+  line-height: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.apercu-etiquette__artiste {
+  position: relative;
+  overflow: hidden;
+  color: var(--couleur-artiste-etiquette);
+  font-size: calc(clamp(1rem, 3vw, 1.35rem) * var(--taille-artiste-etiquette));
+  font-weight: var(--poids-artiste-etiquette);
+  line-height: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.navigation-apercu-etiquette {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: var(--vert);
+  font-weight: 700;
+}
+
+.navigation-apercu-etiquette .bouton-icone {
+  width: 38px;
+  height: 38px;
+  font-size: 1.5rem;
+}
+
+.navigation-apercu-etiquette .bouton-icone:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+#planche-impression-etiquettes {
+  position: fixed;
+  left: -10000px;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.aide-etiquettes {
+  margin: 14px 0 0;
+  color: var(--texte-secondaire);
+  line-height: 1.45;
+}
+
 #champ-position[hidden] {
   display: none;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 5mm;
+  }
+
+  body {
+    background: white !important;
+  }
+
+  body > :not(#planche-impression-etiquettes) {
+    display: none !important;
+  }
+
+  #planche-impression-etiquettes {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    pointer-events: auto;
+    display: grid !important;
+    grid-template-columns: repeat(2, 77mm);
+    gap: 2.5mm 4mm;
+    align-content: start;
+    justify-content: center;
+    color: #18130f;
+    font-family: var(--police-etiquette);
+  }
+
+  #planche-impression-etiquettes .etiquette-impression {
+    position: relative;
+    width: 77mm;
+    height: 26mm;
+    overflow: hidden;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    background: #f7f0dc;
+  }
+
+  #planche-impression-etiquettes .etiquette-impression img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+
+  #planche-impression-etiquettes .etiquette-impression__texte {
+    position: absolute;
+    inset: 2.2mm 4mm;
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr);
+    gap: 0.8mm;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    text-shadow: 0 0.2mm 0 rgba(255, 255, 255, 0.5);
+  }
+
+  #planche-impression-etiquettes .etiquette-impression__titre {
+    overflow: hidden;
+    align-self: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: var(--taille-titre-mm);
+    color: var(--couleur-titres-etiquette);
+    font-weight: var(--poids-titres-etiquette);
+    line-height: 1.05;
+    text-overflow: ellipsis;
+  }
+
+  #planche-impression-etiquettes .etiquette-impression__artiste {
+    overflow: hidden;
+    align-self: center;
+    font-size: var(--taille-artiste-mm);
+    color: var(--couleur-artiste-etiquette);
+    font-weight: var(--poids-artiste-etiquette);
+    line-height: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
 @media (min-width: 860px) {
@@ -1440,10 +1722,6 @@ textarea:focus {
     left: 0;
     right: auto;
     min-width: min(190px, calc(100vw - 72px));
-  }
-
-  .menu-sauvegarde {
-    display: none;
   }
 
   .ligne-vinyle {

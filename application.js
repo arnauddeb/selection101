@@ -511,6 +511,10 @@ function remplirEtats() {
 }
 
 function remplirModelesEtiquettes() {
+  if (!elements.modeleEtiquette || !elements.modeleEtiquetteSecondaire) {
+    return;
+  }
+
   elements.modeleEtiquette.innerHTML = "";
   elements.modeleEtiquetteSecondaire.innerHTML = "";
   const optionSansDeuxiemeModele = document.createElement("option");
@@ -916,6 +920,14 @@ function fermerPochetteAgrandie() {
 }
 
 function ouvrirEtiquettes() {
+  if (!panneauEtiquettesDisponible()) {
+    afficherMessageApplication(
+      "Publie aussi index.html pour afficher le panneau d'impression des étiquettes.",
+      "erreur",
+    );
+    return;
+  }
+
   if (!collection.some((vinyle) => vinyle.emplacement === "jukebox")) {
     afficherMessageApplication("Aucun vinyle placé dans le jukebox pour générer les étiquettes.", "erreur");
     return;
@@ -927,10 +939,16 @@ function ouvrirEtiquettes() {
 }
 
 function fermerEtiquettes() {
-  elements.fenetreEtiquettes.close();
+  if (elements.fenetreEtiquettes?.open) {
+    elements.fenetreEtiquettes.close();
+  }
 }
 
 async function mettreAJourApercuEtiquette() {
+  if (!panneauEtiquettesDisponible()) {
+    return;
+  }
+
   try {
     const vinyles = obtenirVinylesEtiquettes();
     const vinyle = vinyles[indexApercuEtiquette] || vinyles[0];
@@ -1019,6 +1037,10 @@ function remplirTexteApercuEtiquette(titreA, artiste, titreB, vinyle) {
 }
 
 function appliquerReglagesApercuEtiquette(apercu, reglages) {
+  if (!apercu) {
+    return;
+  }
+
   apercu.dataset.police = reglages.police;
   apercu.style.setProperty("--taille-titres-etiquette", `${reglages.tailleTitres / 100}`);
   apercu.style.setProperty("--taille-artiste-etiquette", `${reglages.tailleArtiste / 100}`);
@@ -1043,24 +1065,24 @@ function obtenirVinylesEtiquettes() {
 }
 
 function obtenirModelesImpressionEtiquettes() {
-  const modele = elements.modeleEtiquette.value || modelesEtiquettes[0];
+  const modele = elements.modeleEtiquette?.value || modelesEtiquettes[0];
   const modeleSecondaire = obtenirModeleSecondaireEtiquette();
   return [modele, modeleSecondaire].filter(Boolean);
 }
 
 function obtenirModeleSecondaireEtiquette() {
-  return elements.modeleEtiquetteSecondaire.value || "";
+  return elements.modeleEtiquetteSecondaire?.value || "";
 }
 
 function obtenirReglagesEtiquettes() {
   return {
-    police: elements.policeEtiquette.value || "typewriter",
-    tailleTitres: Number(elements.tailleTitresEtiquette.value) || 100,
-    tailleArtiste: Number(elements.tailleArtisteEtiquette.value) || 100,
-    grasTitres: elements.grasTitresEtiquette.checked,
-    grasArtiste: elements.grasArtisteEtiquette.checked,
-    couleurTitres: elements.couleurTitresEtiquette.value || "#17120e",
-    couleurArtiste: elements.couleurArtisteEtiquette.value || "#17120e",
+    police: elements.policeEtiquette?.value || "typewriter",
+    tailleTitres: Number(elements.tailleTitresEtiquette?.value) || 100,
+    tailleArtiste: Number(elements.tailleArtisteEtiquette?.value) || 100,
+    grasTitres: elements.grasTitresEtiquette?.checked ?? true,
+    grasArtiste: elements.grasArtisteEtiquette?.checked ?? true,
+    couleurTitres: elements.couleurTitresEtiquette?.value || "#17120e",
+    couleurArtiste: elements.couleurArtisteEtiquette?.value || "#17120e",
   };
 }
 

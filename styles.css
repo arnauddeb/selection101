@@ -1254,7 +1254,7 @@ textarea:focus {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   color: var(--couleur-titres-etiquette);
-  font-size: calc(clamp(0.74rem, 2vw, 0.9rem) * var(--taille-titres-etiquette) * var(--ajustement-titres-etiquette));
+  font-size: calc(clamp(0.74rem, 2vw, 0.9rem) * var(--taille-titres-etiquette) * var(--ajustement-texte-etiquette, 1));
   font-weight: var(--poids-titres-etiquette);
   line-height: 1.05;
   text-overflow: ellipsis;
@@ -1265,7 +1265,7 @@ textarea:focus {
   overflow: hidden;
   align-self: center;
   color: var(--couleur-artiste-etiquette);
-  font-size: calc(clamp(1rem, 3vw, 1.35rem) * var(--taille-artiste-etiquette) * var(--ajustement-artiste-etiquette));
+  font-size: calc(clamp(1rem, 3vw, 1.35rem) * var(--taille-artiste-etiquette) * var(--ajustement-texte-etiquette, 1));
   font-weight: var(--poids-artiste-etiquette);
   line-height: 1;
   white-space: nowrap;

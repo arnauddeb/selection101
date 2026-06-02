@@ -162,7 +162,7 @@ const nomsModelesEtiquettes = {
 
 const LARGEUR_ETIQUETTE_MM = 77;
 const HAUTEUR_ETIQUETTE_MM = 26;
-const ETIQUETTES_PAR_PAGE_IMPRESSION = 20;
+const ETIQUETTES_PAR_PAGE_IMPRESSION = 16;
 
 const elements = {
   recherche: document.querySelector("#recherche"),
@@ -1041,10 +1041,9 @@ function remplirTexteApercuEtiquette(apercu, titreA, artiste, titreB, vinyle) {
   artiste.textContent = textes.artiste;
   titreB.textContent = textes.titreB;
 
-  if (apercu) {
-    apercu.style.setProperty("--ajustement-titres-etiquette", ajustements.titres);
-    apercu.style.setProperty("--ajustement-artiste-etiquette", ajustements.artiste);
-  }
+  titreA.style.setProperty("--ajustement-texte-etiquette", ajustements.titreA);
+  artiste.style.setProperty("--ajustement-texte-etiquette", ajustements.artiste);
+  titreB.style.setProperty("--ajustement-texte-etiquette", ajustements.titreB);
 }
 
 function appliquerReglagesApercuEtiquette(apercu, reglages) {
@@ -1106,16 +1105,17 @@ function obtenirTextesEtiquette(vinyle) {
 }
 
 function calculerAjustementsTexteEtiquette(textes) {
-  const longueurTitre = Math.max(longueurVisibleEtiquette(textes.titreA), longueurVisibleEtiquette(textes.titreB));
   const longueurArtiste = longueurVisibleEtiquette(textes.artiste);
+  const paliersTitres = [
+    [22, 1],
+    [28, 0.9],
+    [34, 0.8],
+    [42, 0.7],
+  ];
 
   return {
-    titres: calculerAjustementTexteEtiquette(longueurTitre, [
-      [22, 1],
-      [28, 0.9],
-      [34, 0.8],
-      [42, 0.7],
-    ]),
+    titreA: calculerAjustementTexteEtiquette(longueurVisibleEtiquette(textes.titreA), paliersTitres),
+    titreB: calculerAjustementTexteEtiquette(longueurVisibleEtiquette(textes.titreB), paliersTitres),
     artiste: calculerAjustementTexteEtiquette(longueurArtiste, [
       [15, 1],
       [18, 0.92],
@@ -1144,7 +1144,8 @@ function calculerTaillesImpressionEtiquette(reglages, ajustements) {
   const echelleArtiste = Math.max(0.65, Math.min(1.2, reglages.tailleArtiste / 100));
 
   return {
-    titre: `${Number((2.5 * echelleTitres * Number(ajustements.titres)).toFixed(2))}mm`,
+    titreA: `${Number((2.5 * echelleTitres * Number(ajustements.titreA)).toFixed(2))}mm`,
+    titreB: `${Number((2.5 * echelleTitres * Number(ajustements.titreB)).toFixed(2))}mm`,
     artiste: `${Number((4.2 * echelleArtiste * Number(ajustements.artiste)).toFixed(2))}mm`,
   };
 }
@@ -1367,12 +1368,12 @@ function construireArticlesEtiquettes(vinyles, imagesEtiquettes, decalageModele 
     const tailles = calculerTaillesImpressionEtiquette(reglages, ajustements);
 
     return `
-    <article class="etiquette-impression" style="--ajustement-titres-etiquette: ${ajustements.titres}; --ajustement-artiste-etiquette: ${ajustements.artiste}; --taille-titre-ajustee-mm: ${tailles.titre}; --taille-artiste-ajustee-mm: ${tailles.artiste};">
+    <article class="etiquette-impression">
       <img src="${echapperHtml(imagesEtiquettes[(index + decalageModele) % imagesEtiquettes.length])}" alt="" />
       <div class="etiquette-impression__texte">
-        <div class="etiquette-impression__titre">${echapperHtml(textes.titreA)}</div>
-        <div class="etiquette-impression__artiste">${echapperHtml(textes.artiste)}</div>
-        <div class="etiquette-impression__titre">${echapperHtml(textes.titreB)}</div>
+        <div class="etiquette-impression__titre" style="--taille-titre-ajustee-mm: ${tailles.titreA}; --ajustement-texte-etiquette: ${ajustements.titreA};">${echapperHtml(textes.titreA)}</div>
+        <div class="etiquette-impression__artiste" style="--taille-artiste-ajustee-mm: ${tailles.artiste}; --ajustement-texte-etiquette: ${ajustements.artiste};">${echapperHtml(textes.artiste)}</div>
+        <div class="etiquette-impression__titre" style="--taille-titre-ajustee-mm: ${tailles.titreB}; --ajustement-texte-etiquette: ${ajustements.titreB};">${echapperHtml(textes.titreB)}</div>
       </div>
     </article>
   `;

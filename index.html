@@ -57,6 +57,7 @@
           <summary class="bouton bouton-secondaire">Sauvegarde</summary>
           <div class="menu-sauvegarde__contenu">
             <button id="bouton-export-csv" class="menu-sauvegarde__action" type="button">Exporter CSV</button>
+            <button id="bouton-export-jukehead-csv" class="menu-sauvegarde__action" type="button">Exporter CSV Jukehead</button>
             <button id="bouton-export-json" class="menu-sauvegarde__action" type="button">Sauvegarde JSON</button>
             <button id="bouton-import-json" class="menu-sauvegarde__action" type="button">Importer sauvegarde</button>
             <button id="bouton-vider-donnees" class="menu-sauvegarde__action menu-sauvegarde__action-danger" type="button">
@@ -65,6 +66,7 @@
             <input id="import-json-fichier" type="file" accept="application/json,.json" hidden />
           </div>
         </details>
+        <button id="bouton-ouvrir-etiquettes" class="bouton bouton-secondaire" type="button">Imprimer les étiquettes</button>
         <button id="bouton-ajouter" class="bouton bouton-principal" type="button">Ajouter un vinyle</button>
       </div>
     </header>
@@ -180,6 +182,107 @@
         <button id="bouton-fermer-pochette" class="bouton-icone visionneuse-pochette__fermer" type="button" aria-label="Fermer l'image">×</button>
         <img id="image-pochette-agrandie" class="visionneuse-pochette__image" alt="Pochette agrandie" />
       </div>
+    </dialog>
+
+    <dialog id="fenetre-etiquettes" class="fenetre fenetre-etiquettes">
+      <form id="formulaire-etiquettes" class="formulaire formulaire-etiquettes">
+        <div class="formulaire__entete">
+          <div>
+            <p class="etiquette">Labels jukebox</p>
+            <h2>Imprimer les étiquettes</h2>
+          </div>
+          <button id="bouton-fermer-etiquettes" class="bouton-icone" type="button" aria-label="Fermer">×</button>
+        </div>
+
+        <div class="grille-formulaire grille-formulaire-etiquettes">
+          <label class="champ">
+            <span>Modèle du dossier labels</span>
+            <select id="modele-etiquette" name="modele-etiquette"></select>
+          </label>
+
+          <label id="champ-modele-etiquette-secondaire" class="champ">
+            <span>Deuxième modèle optionnel</span>
+            <select id="modele-etiquette-secondaire" name="modele-etiquette-secondaire"></select>
+          </label>
+
+          <div class="champ champ-taille-etiquette">
+            <span>Taille d'impression</span>
+            <p>77 × 26 mm</p>
+          </div>
+
+          <label class="champ">
+            <span>Police</span>
+            <select id="police-etiquette" name="police-etiquette">
+              <option value="typewriter">Machine à écrire</option>
+              <option value="compacte">Compacte</option>
+              <option value="classique">Classique</option>
+            </select>
+          </label>
+
+          <fieldset class="panneau-style-etiquette champ-large">
+            <legend>Panneau de contrôle</legend>
+
+            <div class="ligne-style-etiquette">
+              <label class="champ">
+                <span id="libelle-taille-titres-etiquette">Titres : 100%</span>
+                <input id="taille-titres-etiquette" name="taille-titres-etiquette" type="range" min="75" max="120" step="5" value="100" />
+              </label>
+              <label class="option-style-etiquette">
+                <input id="gras-titres-etiquette" name="gras-titres-etiquette" type="checkbox" checked />
+                <span>Gras</span>
+              </label>
+              <label class="couleur-style-etiquette">
+                <span>Couleur</span>
+                <input id="couleur-titres-etiquette" name="couleur-titres-etiquette" type="color" value="#17120e" />
+              </label>
+            </div>
+
+            <div class="ligne-style-etiquette">
+              <label class="champ">
+                <span id="libelle-taille-artiste-etiquette">Artiste : 100%</span>
+                <input id="taille-artiste-etiquette" name="taille-artiste-etiquette" type="range" min="65" max="120" step="5" value="100" />
+              </label>
+              <label class="option-style-etiquette">
+                <input id="gras-artiste-etiquette" name="gras-artiste-etiquette" type="checkbox" checked />
+                <span>Gras</span>
+              </label>
+              <label class="couleur-style-etiquette">
+                <span>Couleur</span>
+                <input id="couleur-artiste-etiquette" name="couleur-artiste-etiquette" type="color" value="#17120e" />
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="apercu-etiquette champ-large">
+            <div class="apercus-etiquettes">
+              <div id="apercu-etiquette-image" class="apercu-etiquette__image">
+                <img id="apercu-etiquette-modele" alt="" />
+                <span id="apercu-titre-face-a" class="apercu-etiquette__face apercu-etiquette__face-a">Titre Face A</span>
+                <strong id="apercu-artiste" class="apercu-etiquette__artiste">ARTISTE</strong>
+                <span id="apercu-titre-face-b" class="apercu-etiquette__face apercu-etiquette__face-b">Titre Face B</span>
+              </div>
+              <div id="apercu-etiquette-image-secondaire" class="apercu-etiquette__image" hidden>
+                <img id="apercu-etiquette-modele-secondaire" alt="" />
+                <span id="apercu-titre-face-a-secondaire" class="apercu-etiquette__face apercu-etiquette__face-a">Titre Face A</span>
+                <strong id="apercu-artiste-secondaire" class="apercu-etiquette__artiste">ARTISTE</strong>
+                <span id="apercu-titre-face-b-secondaire" class="apercu-etiquette__face apercu-etiquette__face-b">Titre Face B</span>
+              </div>
+            </div>
+            <div class="navigation-apercu-etiquette">
+              <button id="apercu-etiquette-precedent" class="bouton-icone" type="button" aria-label="Étiquette précédente">‹</button>
+              <span id="compteur-apercu-etiquette">1 / 1</span>
+              <button id="apercu-etiquette-suivant" class="bouton-icone" type="button" aria-label="Étiquette suivante">›</button>
+            </div>
+          </div>
+        </div>
+
+        <p class="aide-etiquettes">Les étiquettes sont générées pour les vinyles actuellement placés dans le jukebox.</p>
+
+        <div class="formulaire__actions">
+          <button id="bouton-annuler-etiquettes" class="bouton bouton-secondaire" type="button">Annuler</button>
+          <button id="bouton-imprimer-etiquettes" class="bouton bouton-principal" type="submit">Imprimer les étiquettes</button>
+        </div>
+      </form>
     </dialog>
 
     <dialog id="fenetre-formulaire" class="fenetre">

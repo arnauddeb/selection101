@@ -276,6 +276,36 @@ async function initialiser() {
   afficherCollection();
 }
 
+function ecouter(element, nomEvenement, action, options) {
+  if (element) {
+    element.addEventListener(nomEvenement, action, options);
+  }
+}
+
+function panneauEtiquettesDisponible() {
+  return Boolean(
+    elements.fenetreEtiquettes
+      && elements.formulaireEtiquettes
+      && elements.modeleEtiquette
+      && elements.modeleEtiquetteSecondaire
+      && elements.policeEtiquette
+      && elements.tailleTitresEtiquette
+      && elements.tailleArtisteEtiquette
+      && elements.grasTitresEtiquette
+      && elements.grasArtisteEtiquette
+      && elements.couleurTitresEtiquette
+      && elements.couleurArtisteEtiquette
+      && elements.apercuEtiquetteImage
+      && elements.apercuEtiquetteModele
+      && elements.apercuTitreFaceA
+      && elements.apercuArtiste
+      && elements.apercuTitreFaceB
+      && elements.apercuEtiquetteImageSecondaire
+      && elements.apercuEtiquetteModeleSecondaire
+      && elements.compteurApercuEtiquette,
+  );
+}
+
 function brancherEvenements() {
   elements.recherche.addEventListener("input", () => {
     mettreAJourBoutonEffacerRecherche();
@@ -332,26 +362,7 @@ function brancherEvenements() {
       fermerPochetteAgrandie();
     }
   });
-  elements.boutonOuvrirEtiquettes.addEventListener("click", ouvrirEtiquettes);
-  elements.boutonFermerEtiquettes.addEventListener("click", fermerEtiquettes);
-  elements.boutonAnnulerEtiquettes.addEventListener("click", fermerEtiquettes);
-  elements.modeleEtiquette.addEventListener("change", mettreAJourApercuEtiquette);
-  elements.modeleEtiquetteSecondaire.addEventListener("change", mettreAJourApercuEtiquette);
-  elements.policeEtiquette.addEventListener("change", mettreAJourApercuEtiquette);
-  elements.tailleTitresEtiquette.addEventListener("input", mettreAJourApercuEtiquette);
-  elements.tailleArtisteEtiquette.addEventListener("input", mettreAJourApercuEtiquette);
-  elements.grasTitresEtiquette.addEventListener("change", mettreAJourApercuEtiquette);
-  elements.grasArtisteEtiquette.addEventListener("change", mettreAJourApercuEtiquette);
-  elements.couleurTitresEtiquette.addEventListener("input", mettreAJourApercuEtiquette);
-  elements.couleurArtisteEtiquette.addEventListener("input", mettreAJourApercuEtiquette);
-  elements.apercuEtiquettePrecedent.addEventListener("click", () => deplacerApercuEtiquette(-1));
-  elements.apercuEtiquetteSuivant.addEventListener("click", () => deplacerApercuEtiquette(1));
-  elements.formulaireEtiquettes.addEventListener("submit", imprimerEtiquettes);
-  elements.fenetreEtiquettes.addEventListener("click", (evenement) => {
-    if (!evenement.target.closest(".formulaire-etiquettes")) {
-      fermerEtiquettes();
-    }
-  });
+  brancherEvenementsEtiquettes();
   elements.boutonFermer.addEventListener("click", fermerFormulaire);
   elements.boutonAnnuler.addEventListener("click", fermerFormulaire);
   elements.formulaire.addEventListener("submit", enregistrerVinyle);
@@ -376,6 +387,34 @@ function brancherEvenements() {
   });
   elements.importJsonFichier.addEventListener("change", importerJson);
   elements.boutonViderDonnees.addEventListener("click", viderBibliotheque);
+}
+
+function brancherEvenementsEtiquettes() {
+  ecouter(elements.boutonOuvrirEtiquettes, "click", ouvrirEtiquettes);
+
+  if (!panneauEtiquettesDisponible()) {
+    return;
+  }
+
+  ecouter(elements.boutonFermerEtiquettes, "click", fermerEtiquettes);
+  ecouter(elements.boutonAnnulerEtiquettes, "click", fermerEtiquettes);
+  ecouter(elements.modeleEtiquette, "change", mettreAJourApercuEtiquette);
+  ecouter(elements.modeleEtiquetteSecondaire, "change", mettreAJourApercuEtiquette);
+  ecouter(elements.policeEtiquette, "change", mettreAJourApercuEtiquette);
+  ecouter(elements.tailleTitresEtiquette, "input", mettreAJourApercuEtiquette);
+  ecouter(elements.tailleArtisteEtiquette, "input", mettreAJourApercuEtiquette);
+  ecouter(elements.grasTitresEtiquette, "change", mettreAJourApercuEtiquette);
+  ecouter(elements.grasArtisteEtiquette, "change", mettreAJourApercuEtiquette);
+  ecouter(elements.couleurTitresEtiquette, "input", mettreAJourApercuEtiquette);
+  ecouter(elements.couleurArtisteEtiquette, "input", mettreAJourApercuEtiquette);
+  ecouter(elements.apercuEtiquettePrecedent, "click", () => deplacerApercuEtiquette(-1));
+  ecouter(elements.apercuEtiquetteSuivant, "click", () => deplacerApercuEtiquette(1));
+  ecouter(elements.formulaireEtiquettes, "submit", imprimerEtiquettes);
+  ecouter(elements.fenetreEtiquettes, "click", (evenement) => {
+    if (!evenement.target.closest(".formulaire-etiquettes")) {
+      fermerEtiquettes();
+    }
+  });
 }
 
 async function chargerModeEtCollection() {

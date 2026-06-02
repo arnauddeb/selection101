@@ -1240,7 +1240,7 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
     <style>
       @page {
         size: A4;
-        margin: 5mm;
+        margin: 0;
       }
 
       * {
@@ -1260,9 +1260,13 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
 
       .page-impression-etiquettes {
         display: grid;
+        width: 210mm;
+        height: 297mm;
+        box-sizing: border-box;
+        padding: 12mm 0;
         grid-template-columns: repeat(2, ${LARGEUR_ETIQUETTE_MM}mm);
-        gap: 2.5mm 4mm;
-        align-content: start;
+        gap: 4mm 6mm;
+        align-content: center;
         justify-content: center;
         break-after: page;
         page-break-after: always;

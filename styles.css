@@ -1007,7 +1007,7 @@ textarea:focus {
 }
 
 .fenetre-etiquettes {
-  width: min(720px, calc(100vw - 24px));
+  width: min(560px, calc(100vw - 18px));
 }
 
 .formulaire {
@@ -1051,92 +1051,147 @@ textarea:focus {
 }
 
 .formulaire-etiquettes {
-  max-height: min(92vh, 760px);
+  max-height: min(92vh, 640px);
+  padding: 14px;
+  border-radius: 22px;
+}
+
+.formulaire-etiquettes .formulaire__entete {
+  align-items: start;
+}
+
+.formulaire-etiquettes h2 {
+  font-size: clamp(1.45rem, 2.6vw, 1.9rem);
+  line-height: 0.95;
+}
+
+.formulaire-etiquettes .bouton-icone {
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+}
+
+.formulaire-etiquettes .grille-formulaire {
+  gap: 10px 12px;
+  margin-top: 12px;
+}
+
+.formulaire-etiquettes .champ span,
+.formulaire-etiquettes .champ label,
+.formulaire-etiquettes label.champ {
+  font-size: 0.76rem;
+}
+
+.formulaire-etiquettes input,
+.formulaire-etiquettes select {
+  min-height: 34px;
+  padding: 7px 9px;
+  border-radius: 11px;
+  font-size: 0.86rem;
 }
 
 .grille-formulaire-etiquettes {
   align-items: start;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .champ-taille-etiquette p {
-  min-height: 48px;
+  min-height: 34px;
   margin: 0;
   display: flex;
   align-items: center;
-  border-radius: 14px;
+  border-radius: 11px;
   border: 1px solid var(--bordure);
   background: rgba(255, 255, 255, 0.58);
-  padding: 13px 14px;
+  padding: 7px 9px;
   color: var(--texte);
   font-weight: 700;
+  font-size: 0.88rem;
 }
 
 .panneau-style-etiquette {
   display: grid;
-  gap: 14px;
+  gap: 9px;
   margin: 0;
-  padding: 14px;
+  padding: 8px 10px 10px;
   border: 1px solid rgba(20, 82, 77, 0.12);
-  border-radius: 18px;
+  border-radius: 14px;
   background: rgba(20, 82, 77, 0.06);
 }
 
 .panneau-style-etiquette legend {
-  padding: 0 6px;
+  padding: 0 5px;
   color: var(--texte-secondaire);
-  font-size: 0.92rem;
+  font-size: 0.8rem;
 }
 
 .ligne-style-etiquette {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;
-  gap: 12px;
+  gap: 8px;
   align-items: end;
 }
 
 .option-style-etiquette,
 .couleur-style-etiquette {
   display: grid;
-  gap: 8px;
+  gap: 5px;
   color: var(--texte-secondaire);
-  font-size: 0.92rem;
+  font-size: 0.78rem;
 }
 
 .option-style-etiquette {
-  min-height: 48px;
+  min-height: 34px;
   grid-template-columns: auto auto;
   align-items: center;
   justify-content: center;
-  padding: 0 12px;
+  padding: 0 9px;
   border: 1px solid var(--bordure);
-  border-radius: 14px;
+  border-radius: 11px;
   background: rgba(255, 255, 255, 0.58);
 }
 
 .option-style-etiquette input {
-  width: auto;
+  width: 18px;
+  min-height: 18px;
+  height: 18px;
+  padding: 0;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+}
+
+.option-style-etiquette input:checked {
+  border-color: rgba(20, 82, 77, 0.78);
+  background: var(--vert);
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.95);
+}
+
+.option-style-etiquette input:focus {
+  outline: 2px solid rgba(20, 82, 77, 0.22);
+  outline-offset: 2px;
 }
 
 .couleur-style-etiquette input {
-  width: 56px;
-  min-height: 48px;
-  padding: 5px;
+  width: 38px;
+  min-height: 34px;
+  padding: 4px;
 }
 
 .apercu-etiquette {
   display: grid;
   place-items: center;
-  gap: 14px;
-  padding: 18px;
-  border-radius: 18px;
+  gap: 9px;
+  padding: 12px;
+  border-radius: 14px;
   background: rgba(20, 82, 77, 0.08);
   border: 1px solid rgba(20, 82, 77, 0.1);
 }
 
 .apercus-etiquettes {
-  width: min(100%, 460px);
+  width: min(100%, 380px);
   display: grid;
-  gap: 12px;
+  gap: 8px;
   justify-items: center;
 }
 
@@ -1144,22 +1199,21 @@ textarea:focus {
   position: relative;
   width: 100%;
   aspect-ratio: 77 / 26;
-  display: grid;
-  grid-template-rows: 1fr auto 1fr;
-  align-items: center;
-  padding: 11px 28px;
+  padding: 8px 22px;
   overflow: hidden;
   border-radius: 6px;
   background-color: #f7f0dc;
-  box-shadow: 0 16px 26px rgba(18, 28, 25, 0.16);
+  box-shadow: 0 10px 18px rgba(18, 28, 25, 0.14);
   color: #18130f;
   text-align: center;
   text-transform: uppercase;
   font-family: "Courier Prime", "American Typewriter", "Courier New", Courier, monospace;
   --taille-titres-etiquette: 1;
-  --taille-artiste-etiquette: 1;
+  --taille-artiste-etiquette: 0.9;
+  --ajustement-titres-etiquette: 1;
+  --ajustement-artiste-etiquette: 1;
   --poids-titres-etiquette: 800;
-  --poids-artiste-etiquette: 800;
+  --poids-artiste-etiquette: 500;
   --couleur-titres-etiquette: #17120e;
   --couleur-artiste-etiquette: #17120e;
 }
@@ -1180,22 +1234,38 @@ textarea:focus {
   object-fit: fill;
 }
 
-.apercu-etiquette__face {
+.apercu-etiquette__image .etiquette-impression__texte {
+  position: absolute;
+  inset: 8.5% 5.2%;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.apercu-etiquette__image .etiquette-impression__titre {
   position: relative;
   overflow: hidden;
+  align-self: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   color: var(--couleur-titres-etiquette);
-  font-size: calc(clamp(0.74rem, 2vw, 0.9rem) * var(--taille-titres-etiquette));
+  font-size: calc(clamp(0.74rem, 2vw, 0.9rem) * var(--taille-titres-etiquette) * var(--ajustement-titres-etiquette));
   font-weight: var(--poids-titres-etiquette);
-  line-height: 1;
-  white-space: nowrap;
+  line-height: 1.05;
   text-overflow: ellipsis;
 }
 
-.apercu-etiquette__artiste {
+.apercu-etiquette__image .etiquette-impression__artiste {
   position: relative;
   overflow: hidden;
+  align-self: center;
   color: var(--couleur-artiste-etiquette);
-  font-size: calc(clamp(1rem, 3vw, 1.35rem) * var(--taille-artiste-etiquette));
+  font-size: calc(clamp(1rem, 3vw, 1.35rem) * var(--taille-artiste-etiquette) * var(--ajustement-artiste-etiquette));
   font-weight: var(--poids-artiste-etiquette);
   line-height: 1;
   white-space: nowrap;
@@ -1206,15 +1276,30 @@ textarea:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 10px;
   color: var(--vert);
   font-weight: 700;
 }
 
 .navigation-apercu-etiquette .bouton-icone {
-  width: 38px;
-  height: 38px;
-  font-size: 1.5rem;
+  width: 28px;
+  height: 28px;
+  font-size: 1.05rem;
+}
+
+.formulaire-etiquettes .aide-etiquettes {
+  margin: 10px 0 0;
+  font-size: 0.82rem;
+}
+
+.formulaire-etiquettes .formulaire__actions {
+  margin-top: 10px;
+}
+
+.formulaire-etiquettes .formulaire__actions .bouton {
+  min-height: 34px;
+  padding: 8px 12px;
+  font-size: 0.86rem;
 }
 
 .navigation-apercu-etiquette .bouton-icone:disabled {
@@ -1268,13 +1353,24 @@ textarea:focus {
     overflow: visible;
     opacity: 1;
     pointer-events: auto;
+    display: block !important;
+    color: #18130f;
+    font-family: var(--police-etiquette);
+  }
+
+  #planche-impression-etiquettes .page-impression-etiquettes {
     display: grid !important;
     grid-template-columns: repeat(2, 77mm);
     gap: 2.5mm 4mm;
     align-content: start;
     justify-content: center;
-    color: #18130f;
-    font-family: var(--police-etiquette);
+    break-after: page;
+    page-break-after: always;
+  }
+
+  #planche-impression-etiquettes .page-impression-etiquettes:last-child {
+    break-after: auto;
+    page-break-after: auto;
   }
 
   #planche-impression-etiquettes .etiquette-impression {
@@ -1313,7 +1409,7 @@ textarea:focus {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-    font-size: var(--taille-titre-mm);
+    font-size: var(--taille-titre-ajustee-mm, var(--taille-titre-mm));
     color: var(--couleur-titres-etiquette);
     font-weight: var(--poids-titres-etiquette);
     line-height: 1.05;
@@ -1323,7 +1419,7 @@ textarea:focus {
   #planche-impression-etiquettes .etiquette-impression__artiste {
     overflow: hidden;
     align-self: center;
-    font-size: var(--taille-artiste-mm);
+    font-size: var(--taille-artiste-ajustee-mm, var(--taille-artiste-mm));
     color: var(--couleur-artiste-etiquette);
     font-weight: var(--poids-artiste-etiquette);
     line-height: 1;

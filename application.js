@@ -162,6 +162,7 @@ const nomsModelesEtiquettes = {
 
 const LARGEUR_ETIQUETTE_MM = 77;
 const HAUTEUR_ETIQUETTE_MM = 26;
+const ETIQUETTES_PAR_PAGE_IMPRESSION = 20;
 
 const elements = {
   recherche: document.querySelector("#recherche"),
@@ -958,6 +959,7 @@ async function mettreAJourApercuEtiquette() {
 
     elements.apercuEtiquetteModele.src = await chargerImageModeleEtiquette(modele);
     remplirTexteApercuEtiquette(
+      elements.apercuEtiquetteImage,
       elements.apercuTitreFaceA,
       elements.apercuArtiste,
       elements.apercuTitreFaceB,
@@ -969,6 +971,7 @@ async function mettreAJourApercuEtiquette() {
       const vinyleSecondaire = vinyles[(indexApercuEtiquette + 1) % vinyles.length] || vinyle;
       elements.apercuEtiquetteModeleSecondaire.src = await chargerImageModeleEtiquette(modeleSecondaire);
       remplirTexteApercuEtiquette(
+        elements.apercuEtiquetteImageSecondaire,
         elements.apercuTitreFaceASecondaire,
         elements.apercuArtisteSecondaire,
         elements.apercuTitreFaceBSecondaire,
@@ -1030,10 +1033,18 @@ function convertirBlobEnDataUrl(blob) {
   });
 }
 
-function remplirTexteApercuEtiquette(titreA, artiste, titreB, vinyle) {
-  titreA.textContent = vinyle?.titre_face_a || "Face A";
-  artiste.textContent = raccourcirArtisteEtiquette(vinyle?.artiste || "Sans artiste");
-  titreB.textContent = vinyle?.titre_face_b || "Face B";
+function remplirTexteApercuEtiquette(apercu, titreA, artiste, titreB, vinyle) {
+  const textes = obtenirTextesEtiquette(vinyle);
+  const ajustements = calculerAjustementsTexteEtiquette(textes);
+
+  titreA.textContent = textes.titreA;
+  artiste.textContent = textes.artiste;
+  titreB.textContent = textes.titreB;
+
+  if (apercu) {
+    apercu.style.setProperty("--ajustement-titres-etiquette", ajustements.titres);
+    apercu.style.setProperty("--ajustement-artiste-etiquette", ajustements.artiste);
+  }
 }
 
 function appliquerReglagesApercuEtiquette(apercu, reglages) {
@@ -1078,11 +1089,63 @@ function obtenirReglagesEtiquettes() {
   return {
     police: elements.policeEtiquette?.value || "typewriter",
     tailleTitres: Number(elements.tailleTitresEtiquette?.value) || 100,
-    tailleArtiste: Number(elements.tailleArtisteEtiquette?.value) || 100,
+    tailleArtiste: Number(elements.tailleArtisteEtiquette?.value) || 90,
     grasTitres: elements.grasTitresEtiquette?.checked ?? true,
-    grasArtiste: elements.grasArtisteEtiquette?.checked ?? true,
+    grasArtiste: elements.grasArtisteEtiquette?.checked ?? false,
     couleurTitres: elements.couleurTitresEtiquette?.value || "#17120e",
     couleurArtiste: elements.couleurArtisteEtiquette?.value || "#17120e",
+  };
+}
+
+function obtenirTextesEtiquette(vinyle) {
+  return {
+    titreA: vinyle?.titre_face_a || "Face A",
+    artiste: raccourcirArtisteEtiquette(vinyle?.artiste || "Sans artiste"),
+    titreB: vinyle?.titre_face_b || "Face B",
+  };
+}
+
+function calculerAjustementsTexteEtiquette(textes) {
+  const longueurTitre = Math.max(longueurVisibleEtiquette(textes.titreA), longueurVisibleEtiquette(textes.titreB));
+  const longueurArtiste = longueurVisibleEtiquette(textes.artiste);
+
+  return {
+    titres: calculerAjustementTexteEtiquette(longueurTitre, [
+      [22, 1],
+      [28, 0.9],
+      [34, 0.8],
+      [42, 0.7],
+    ]),
+    artiste: calculerAjustementTexteEtiquette(longueurArtiste, [
+      [15, 1],
+      [18, 0.92],
+      [21, 0.84],
+      [24, 0.74],
+      [28, 0.66],
+    ]),
+  };
+}
+
+function longueurVisibleEtiquette(texte) {
+  return String(texte || "")
+    .replace(/[.,'’"-]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .length;
+}
+
+function calculerAjustementTexteEtiquette(longueur, paliers) {
+  const palier = paliers.find(([limite]) => longueur <= limite);
+  return String(palier ? palier[1] : 0.58);
+}
+
+function calculerTaillesImpressionEtiquette(reglages, ajustements) {
+  const echelleTitres = Math.max(0.75, Math.min(1.2, reglages.tailleTitres / 100));
+  const echelleArtiste = Math.max(0.65, Math.min(1.2, reglages.tailleArtiste / 100));
+
+  return {
+    titre: `${Number((2.5 * echelleTitres * Number(ajustements.titres)).toFixed(2))}mm`,
+    artiste: `${Number((4.2 * echelleArtiste * Number(ajustements.artiste)).toFixed(2))}mm`,
   };
 }
 
@@ -1155,7 +1218,7 @@ function lancerImpressionEtiquettes(vinyles, imagesEtiquettes, reglages) {
   planche.style.setProperty("--poids-artiste-etiquette", reglages.grasArtiste ? "800" : "500");
   planche.style.setProperty("--couleur-titres-etiquette", reglages.couleurTitres);
   planche.style.setProperty("--couleur-artiste-etiquette", reglages.couleurArtiste);
-  planche.innerHTML = construireArticlesEtiquettes(vinyles, imagesEtiquettes);
+  planche.innerHTML = construirePagesEtiquettes(vinyles, imagesEtiquettes, reglages);
   document.body.append(planche);
   window.print();
 }
@@ -1166,7 +1229,7 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
   const echelleArtiste = Math.max(0.65, Math.min(1.2, reglages.tailleArtiste / 100));
   const poidsTitres = reglages.grasTitres ? "800" : "500";
   const poidsArtiste = reglages.grasArtiste ? "800" : "500";
-  const etiquettes = construireArticlesEtiquettes(vinyles, imagesEtiquettes);
+  const pages = construirePagesEtiquettes(vinyles, imagesEtiquettes, reglages);
 
   return `<!doctype html>
 <html lang="fr">
@@ -1194,12 +1257,19 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
         --couleur-artiste-etiquette: ${reglages.couleurArtiste};
       }
 
-      .planche {
+      .page-impression-etiquettes {
         display: grid;
         grid-template-columns: repeat(2, ${LARGEUR_ETIQUETTE_MM}mm);
         gap: 2.5mm 4mm;
         align-content: start;
         justify-content: center;
+        break-after: page;
+        page-break-after: always;
+      }
+
+      .page-impression-etiquettes:last-child {
+        break-after: auto;
+        page-break-after: auto;
       }
 
       .etiquette-impression {
@@ -1238,7 +1308,7 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
-        font-size: ${Number((2.5 * echelleTitres).toFixed(2))}mm;
+        font-size: var(--taille-titre-ajustee-mm, ${Number((2.5 * echelleTitres).toFixed(2))}mm);
         color: var(--couleur-titres-etiquette);
         font-weight: var(--poids-titres-etiquette);
         line-height: 1.05;
@@ -1248,7 +1318,7 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
       .etiquette-impression__artiste {
         overflow: hidden;
         align-self: center;
-        font-size: ${Number((4.2 * echelleArtiste).toFixed(2))}mm;
+        font-size: var(--taille-artiste-ajustee-mm, ${Number((4.2 * echelleArtiste).toFixed(2))}mm);
         color: var(--couleur-artiste-etiquette);
         font-weight: var(--poids-artiste-etiquette);
         line-height: 1;
@@ -1262,7 +1332,7 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
           background: #ece3d0;
         }
 
-        .planche {
+        .page-impression-etiquettes {
           width: 210mm;
           min-height: 297mm;
           margin: 0 auto;
@@ -1274,22 +1344,39 @@ function construireDocumentEtiquettes(vinyles, imagesEtiquettes, reglages) {
     </style>
   </head>
   <body>
-    <main class="planche">${etiquettes}</main>
+    <main class="planche">${pages}</main>
   </body>
 </html>`;
 }
 
-function construireArticlesEtiquettes(vinyles, imagesEtiquettes) {
-  return vinyles.map((vinyle, index) => `
-    <article class="etiquette-impression">
-      <img src="${echapperHtml(imagesEtiquettes[index % imagesEtiquettes.length])}" alt="" />
+function construirePagesEtiquettes(vinyles, imagesEtiquettes, reglages) {
+  const pages = [];
+
+  for (let index = 0; index < vinyles.length; index += ETIQUETTES_PAR_PAGE_IMPRESSION) {
+    const vinylesPage = vinyles.slice(index, index + ETIQUETTES_PAR_PAGE_IMPRESSION);
+    pages.push(`<section class="page-impression-etiquettes">${construireArticlesEtiquettes(vinylesPage, imagesEtiquettes, index, reglages)}</section>`);
+  }
+
+  return pages.join("");
+}
+
+function construireArticlesEtiquettes(vinyles, imagesEtiquettes, decalageModele = 0, reglages = obtenirReglagesEtiquettes()) {
+  return vinyles.map((vinyle, index) => {
+    const textes = obtenirTextesEtiquette(vinyle);
+    const ajustements = calculerAjustementsTexteEtiquette(textes);
+    const tailles = calculerTaillesImpressionEtiquette(reglages, ajustements);
+
+    return `
+    <article class="etiquette-impression" style="--ajustement-titres-etiquette: ${ajustements.titres}; --ajustement-artiste-etiquette: ${ajustements.artiste}; --taille-titre-ajustee-mm: ${tailles.titre}; --taille-artiste-ajustee-mm: ${tailles.artiste};">
+      <img src="${echapperHtml(imagesEtiquettes[(index + decalageModele) % imagesEtiquettes.length])}" alt="" />
       <div class="etiquette-impression__texte">
-        <div class="etiquette-impression__titre">${echapperHtml(vinyle.titre_face_a || "Face A")}</div>
-        <div class="etiquette-impression__artiste">${echapperHtml(raccourcirArtisteEtiquette(vinyle.artiste || "Sans artiste"))}</div>
-        <div class="etiquette-impression__titre">${echapperHtml(vinyle.titre_face_b || "Face B")}</div>
+        <div class="etiquette-impression__titre">${echapperHtml(textes.titreA)}</div>
+        <div class="etiquette-impression__artiste">${echapperHtml(textes.artiste)}</div>
+        <div class="etiquette-impression__titre">${echapperHtml(textes.titreB)}</div>
       </div>
     </article>
-  `).join("");
+  `;
+  }).join("");
 }
 
 function trierCollection(donnees) {

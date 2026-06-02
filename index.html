@@ -188,7 +188,6 @@
       <form id="formulaire-etiquettes" class="formulaire formulaire-etiquettes">
         <div class="formulaire__entete">
           <div>
-            <p class="etiquette">Labels jukebox</p>
             <h2>Imprimer les étiquettes</h2>
           </div>
           <button id="bouton-fermer-etiquettes" class="bouton-icone" type="button" aria-label="Fermer">×</button>
@@ -239,11 +238,11 @@
 
             <div class="ligne-style-etiquette">
               <label class="champ">
-                <span id="libelle-taille-artiste-etiquette">Artiste : 100%</span>
-                <input id="taille-artiste-etiquette" name="taille-artiste-etiquette" type="range" min="65" max="120" step="5" value="100" />
+                <span id="libelle-taille-artiste-etiquette">Artiste : 90%</span>
+                <input id="taille-artiste-etiquette" name="taille-artiste-etiquette" type="range" min="65" max="120" step="5" value="90" />
               </label>
               <label class="option-style-etiquette">
-                <input id="gras-artiste-etiquette" name="gras-artiste-etiquette" type="checkbox" checked />
+                <input id="gras-artiste-etiquette" name="gras-artiste-etiquette" type="checkbox" />
                 <span>Gras</span>
               </label>
               <label class="couleur-style-etiquette">
@@ -257,15 +256,19 @@
             <div class="apercus-etiquettes">
               <div id="apercu-etiquette-image" class="apercu-etiquette__image">
                 <img id="apercu-etiquette-modele" alt="" />
-                <span id="apercu-titre-face-a" class="apercu-etiquette__face apercu-etiquette__face-a">Titre Face A</span>
-                <strong id="apercu-artiste" class="apercu-etiquette__artiste">ARTISTE</strong>
-                <span id="apercu-titre-face-b" class="apercu-etiquette__face apercu-etiquette__face-b">Titre Face B</span>
+                <div class="etiquette-impression__texte">
+                  <span id="apercu-titre-face-a" class="etiquette-impression__titre">Titre Face A</span>
+                  <strong id="apercu-artiste" class="etiquette-impression__artiste">ARTISTE</strong>
+                  <span id="apercu-titre-face-b" class="etiquette-impression__titre">Titre Face B</span>
+                </div>
               </div>
               <div id="apercu-etiquette-image-secondaire" class="apercu-etiquette__image" hidden>
                 <img id="apercu-etiquette-modele-secondaire" alt="" />
-                <span id="apercu-titre-face-a-secondaire" class="apercu-etiquette__face apercu-etiquette__face-a">Titre Face A</span>
-                <strong id="apercu-artiste-secondaire" class="apercu-etiquette__artiste">ARTISTE</strong>
-                <span id="apercu-titre-face-b-secondaire" class="apercu-etiquette__face apercu-etiquette__face-b">Titre Face B</span>
+                <div class="etiquette-impression__texte">
+                  <span id="apercu-titre-face-a-secondaire" class="etiquette-impression__titre">Titre Face A</span>
+                  <strong id="apercu-artiste-secondaire" class="etiquette-impression__artiste">ARTISTE</strong>
+                  <span id="apercu-titre-face-b-secondaire" class="etiquette-impression__titre">Titre Face B</span>
+                </div>
               </div>
             </div>
             <div class="navigation-apercu-etiquette">

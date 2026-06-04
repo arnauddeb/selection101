@@ -1,0 +1,2262 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Étiquettes personnalisées</title>
+    <style>
+      :root {
+        --fond: #f4efe5;
+        --surface: #fffaf1;
+        --panneau: rgba(255, 250, 241, 0.96);
+        --texte: #1d1915;
+        --texte-doux: #6b6156;
+        --accent: #15524d;
+        --accent-2: #8e2140;
+        --bordure: rgba(44, 35, 28, 0.14);
+        --ombre: 0 14px 34px rgba(37, 27, 20, 0.11);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--fond);
+        color: var(--texte);
+        font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+
+      .page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 16px;
+      }
+
+      .entete {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: Baskerville, "Palatino Linotype", "Book Antiqua", serif;
+        font-size: clamp(1.9rem, 3.2vw, 3rem);
+        line-height: 0.95;
+      }
+
+      .surtitre {
+        margin: 0 0 8px;
+        color: #b73948;
+        font-size: 0.74rem;
+        font-weight: 800;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+      }
+
+      .retour,
+      .bouton {
+        min-height: 36px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 0;
+        border-radius: 10px;
+        padding: 8px 12px;
+        background: var(--surface);
+        color: var(--accent);
+        border: 1px solid var(--bordure);
+        text-decoration: none;
+        cursor: pointer;
+        box-shadow: none;
+        font-weight: 800;
+      }
+
+      .bouton-principal {
+        color: #fff;
+        border-color: transparent;
+        background: var(--accent);
+      }
+
+      .bouton-secondaire {
+        color: var(--accent-2);
+      }
+
+      .atelier {
+        display: grid;
+        grid-template-columns: minmax(310px, 390px) minmax(430px, 1fr);
+        gap: 14px;
+        align-items: start;
+      }
+
+      .panneau {
+        border: 1px solid var(--bordure);
+        border-radius: 12px;
+        background: var(--panneau);
+        box-shadow: var(--ombre);
+      }
+
+      .controles {
+        display: block;
+        padding: 12px;
+      }
+
+      .groupe {
+        padding: 10px 0;
+        border-top: 1px solid var(--bordure);
+      }
+
+      .groupe:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .groupe summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        list-style: none;
+      }
+
+      .groupe summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .groupe summary::after {
+        content: "+";
+        color: var(--texte-doux);
+        font-weight: 900;
+      }
+
+      .groupe[open] summary::after {
+        content: "-";
+      }
+
+      .groupe:not([open]) > :not(summary) {
+        display: none;
+      }
+
+      .groupe__titre {
+        margin: 0;
+        color: var(--accent);
+        font-size: 0.88rem;
+        font-weight: 900;
+      }
+
+      .grille {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+        padding-top: 10px;
+      }
+
+      .champ {
+        display: grid;
+        gap: 6px;
+        min-width: 0;
+        color: var(--texte-doux);
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
+
+      .champ__libelle {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+      }
+
+      .valeur-range {
+        color: var(--accent);
+        font-variant-numeric: tabular-nums;
+      }
+
+      .champ-masque {
+        display: none !important;
+      }
+
+      .champ-description {
+        margin: 0;
+        color: var(--texte-doux);
+        font-size: 0.72rem;
+        font-weight: 700;
+        line-height: 1.3;
+      }
+
+      .champ-large {
+        grid-column: 1 / -1;
+      }
+
+      .champ input,
+      .champ select {
+        width: 100%;
+        min-height: 36px;
+        border: 1px solid var(--bordure);
+        border-radius: 8px;
+        padding: 8px 10px;
+        background: rgba(255, 255, 255, 0.74);
+        color: var(--texte);
+      }
+
+      .champ input[type="checkbox"] {
+        width: 20px;
+        min-height: 20px;
+      }
+
+      .champ input[type="radio"] {
+        width: 18px;
+        min-width: 18px;
+        height: 18px;
+        min-height: 18px;
+        padding: 0;
+        margin: 0;
+      }
+
+      .champ input[type="color"] {
+        padding: 3px;
+      }
+
+      .barre-actions,
+      .selecteur-etiquette {
+        display: grid;
+        gap: 8px;
+      }
+
+      .barre-actions {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .barre-actions--apercu {
+        justify-content: flex-end;
+      }
+
+      .groupe-actions-reglages {
+        display: block;
+      }
+
+      .barre-actions--reglages {
+        justify-content: center;
+        padding-top: 10px;
+      }
+
+      .barre-actions--reglages .bouton {
+        min-width: 150px;
+      }
+
+      .selecteur-etiquette {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        border: 1px solid var(--bordure);
+        border-radius: 8px;
+        padding: 8px;
+      }
+
+      .selecteur-etiquette label {
+        min-height: 38px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+        border: 1px solid var(--bordure);
+        border-radius: 8px;
+        padding: 8px 10px;
+        background: rgba(255, 255, 255, 0.62);
+        color: var(--texte);
+        font-size: 0.78rem;
+        font-weight: 900;
+        line-height: 1.1;
+      }
+
+      .ligne-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .scene {
+        position: sticky;
+        top: 16px;
+        min-height: 390px;
+        display: grid;
+        align-content: start;
+        justify-items: center;
+        gap: 12px;
+        overflow: hidden;
+        padding: 14px;
+        background:
+          linear-gradient(90deg, rgba(255, 255, 255, 0.42) 1px, transparent 1px),
+          linear-gradient(rgba(255, 255, 255, 0.42) 1px, transparent 1px),
+          rgba(255, 250, 241, 0.58);
+        background-size: 24px 24px;
+      }
+
+      .scene__entete {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: center;
+      }
+
+      .scene__titre {
+        margin: 0;
+        color: var(--accent);
+        font-size: 0.86rem;
+        font-weight: 900;
+      }
+
+      .apercus {
+        width: 100%;
+        display: grid;
+        gap: 12px;
+      }
+
+      .apercus--duo {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .apercu-image {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-inline: auto;
+        box-shadow: 0 16px 28px rgba(31, 21, 14, 0.18);
+      }
+
+      .apercu-secondaire {
+        justify-self: center;
+        opacity: 0.96;
+      }
+
+      .apercu-secondaire[hidden] {
+        display: none;
+      }
+
+      .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .navigation .bouton {
+        min-width: 46px;
+        padding-inline: 14px;
+      }
+
+      .bouton-coeur {
+        min-width: 0;
+        gap: 8px;
+        color: var(--accent-2);
+      }
+
+      .bouton-coeur[aria-pressed="true"] {
+        background: rgba(142, 33, 64, 0.1);
+        border-color: rgba(142, 33, 64, 0.28);
+      }
+
+      .coups-coeur {
+        width: 100%;
+        display: grid;
+        gap: 8px;
+        padding: 10px;
+        border: 1px solid var(--bordure);
+        border-radius: 10px;
+        background: rgba(255, 250, 241, 0.82);
+      }
+
+      .coups-coeur__titre {
+        margin: 0;
+        color: var(--accent);
+        font-size: 0.86rem;
+        font-weight: 900;
+      }
+
+      .coups-coeur__vide {
+        margin: 0;
+        color: var(--texte-doux);
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
+
+      .coups-coeur__liste {
+        display: grid;
+        gap: 7px;
+      }
+
+      .coup-coeur {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        border: 1px solid rgba(44, 35, 28, 0.1);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .coup-coeur__texte {
+        min-width: 0;
+        display: grid;
+        gap: 2px;
+      }
+
+      .coup-coeur__nom,
+      .coup-coeur__details {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .coup-coeur__nom {
+        color: var(--texte);
+        font-size: 0.8rem;
+        font-weight: 900;
+      }
+
+      .coup-coeur__details {
+        color: var(--texte-doux);
+        font-size: 0.72rem;
+        font-weight: 800;
+      }
+
+      .coup-coeur__actions {
+        display: inline-flex;
+        gap: 6px;
+      }
+
+      .coup-coeur__actions .bouton {
+        min-width: 34px;
+        width: 34px;
+        padding: 0;
+      }
+
+      .etat {
+        margin: 0;
+        color: var(--texte-doux);
+        font-size: 0.82rem;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      #planche-impression {
+        display: none;
+      }
+
+      @media print {
+        @page {
+          size: A4;
+          margin: 0;
+        }
+
+        body > :not(#planche-impression) {
+          display: none !important;
+        }
+
+        body,
+        #planche-impression {
+          width: 210mm;
+          min-width: 210mm;
+          margin: 0;
+          background: white !important;
+        }
+
+        #planche-impression {
+          display: block;
+        }
+
+        .page-impression {
+          width: 210mm;
+          height: calc(297mm - var(--marge-haut-impression-mm, 39.5mm));
+          display: grid;
+          grid-template-columns: repeat(var(--colonnes-impression, 2), var(--largeur-etiquette-mm, 77mm));
+          grid-template-rows: repeat(var(--lignes-impression, 7), var(--hauteur-etiquette-mm, 26mm));
+          gap: var(--ecart-impression-mm, 6mm);
+          justify-content: center;
+          align-content: start;
+          padding-top: var(--marge-haut-impression-mm, 39.5mm);
+          overflow: hidden;
+          break-after: page;
+          print-color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+        }
+
+        .page-impression:last-child {
+          break-after: auto;
+        }
+
+        .cellule-impression,
+        .cellule-impression img {
+          width: var(--largeur-etiquette-mm, 77mm);
+          height: var(--hauteur-etiquette-mm, 26mm);
+          display: block;
+        }
+      }
+
+      @media (max-width: 860px) {
+        .atelier {
+          grid-template-columns: 1fr;
+        }
+
+        .entete {
+          align-items: start;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="entete">
+        <div>
+          <p class="surtitre">Sélection 101</p>
+          <h1>Étiquettes personnalisées</h1>
+        </div>
+        <a class="retour" href="./index.html">Retour au jukebox</a>
+      </header>
+
+      <section class="atelier" aria-label="Atelier étiquettes Canvas">
+        <form class="panneau controles" id="formulaire">
+          <details class="groupe" open>
+            <summary><p class="groupe__titre">Style de l'étiquette</p></summary>
+            <div class="grille">
+              <label class="champ">
+                Thème
+                <select id="theme">
+                  <option value="classique">Classique</option>
+                </select>
+              </label>
+              <label class="champ">
+                Étiquette
+                <select id="modele"></select>
+              </label>
+              <label class="champ champ-large">
+                Deuxième étiquette optionnelle
+                <select id="modeleSecondaire"></select>
+              </label>
+              <fieldset class="champ champ-large selecteur-etiquette" id="selecteurEtiquette" hidden>
+                <label><input id="editionEtiquette1" name="editionEtiquette" type="radio" value="1" checked /> Étiquette 1</label>
+                <label><input id="editionEtiquette2" name="editionEtiquette" type="radio" value="2" /> Étiquette 2</label>
+              </fieldset>
+            </div>
+          </details>
+
+          <details class="groupe groupe-actions-reglages" open>
+            <summary><p class="groupe__titre">Reglages</p></summary>
+            <div class="barre-actions barre-actions--reglages">
+              <button class="bouton" id="copierReglages" type="button">Copier reglages</button>
+              <button class="bouton" id="importerReglages" type="button">Importer reglages</button>
+            </div>
+          </details>
+
+          <details class="groupe">
+            <summary><p class="groupe__titre">Palette</p></summary>
+            <div class="grille">
+              <label class="champ">Cadre <input id="couleur1" type="color" /></label>
+              <label class="champ">Fond haut <input id="couleur2" type="color" /></label>
+              <label class="champ">Fond bas <input id="couleur3" type="color" /></label>
+              <label class="champ">Ruban <input id="couleurRuban" type="color" /></label>
+            </div>
+          </details>
+
+          <details class="groupe">
+            <summary><p class="groupe__titre">Typographie</p></summary>
+            <div class="grille">
+              <label class="champ">Police titres
+                <select id="policeTitres">
+                  <optgroup label="Retro">
+                    <option value="dactylo-ronde">Dactylo ronde</option>
+                    <option value="dactylo-seche">Dactylo seche</option>
+                    <option value="terminal-carre">Terminal carre</option>
+                    <option value="journal-ancien">Journal ancien</option>
+                  </optgroup>
+                  <optgroup label="Classique">
+                    <option value="classique-livre">Classique livre</option>
+                    <option value="elegante">Elegante</option>
+                    <option value="luxe-fin">Luxe fin</option>
+                    <option value="gravure">Gravure</option>
+                  </optgroup>
+                  <optgroup label="Affiche">
+                    <option value="compacte">Compacte nette</option>
+                    <option value="affiche-condensee">Affiche condensee</option>
+                    <option value="sans-serree">Sans serree</option>
+                    <option value="mono-moderne">Mono moderne</option>
+                  </optgroup>
+                </select>
+              </label>
+              <label class="champ">Police artiste
+                <select id="policeArtiste">
+                  <optgroup label="Retro">
+                    <option value="dactylo-ronde">Dactylo ronde</option>
+                    <option value="dactylo-seche">Dactylo seche</option>
+                    <option value="terminal-carre">Terminal carre</option>
+                    <option value="journal-ancien">Journal ancien</option>
+                  </optgroup>
+                  <optgroup label="Classique">
+                    <option value="classique-livre">Classique livre</option>
+                    <option value="elegante">Elegante</option>
+                    <option value="luxe-fin">Luxe fin</option>
+                    <option value="gravure">Gravure</option>
+                  </optgroup>
+                  <optgroup label="Affiche">
+                    <option value="compacte">Compacte nette</option>
+                    <option value="affiche-condensee">Affiche condensee</option>
+                    <option value="sans-serree">Sans serree</option>
+                    <option value="mono-moderne">Mono moderne</option>
+                  </optgroup>
+                </select>
+              </label>
+              <label class="champ">Couleur titres <input id="couleurTitres" type="color" /></label>
+              <label class="champ">Couleur artiste <input id="couleurArtiste" type="color" /></label>
+              <label class="champ"><span class="champ__libelle">Taille titres <span class="valeur-range" data-range-value="tailleTitres"></span></span><input id="tailleTitres" type="range" min="60" max="200" step="5" /></label>
+              <label class="champ"><span class="champ__libelle">Taille artiste <span class="valeur-range" data-range-value="tailleArtiste"></span></span><input id="tailleArtiste" type="range" min="70" max="200" step="5" /></label>
+              <label class="champ">Gras titres <input id="grasTitres" type="checkbox" /></label>
+              <label class="champ">Gras artiste <input id="grasArtiste" type="checkbox" /></label>
+            </div>
+          </details>
+
+          <details class="groupe">
+            <summary><p class="groupe__titre">Decor</p></summary>
+            <div class="grille">
+              <label class="champ champ-large">Partie a regler
+                <select id="decorPanel">
+                  <option value="bordure">Bordure</option>
+                  <option value="motif">Motif</option>
+                  <option value="vignette">Vignettage</option>
+                </select>
+              </label>
+              <label class="champ champ-large" data-decor-panel="bordure">
+                <span class="champ__libelle">Epaisseur bordure <span class="valeur-range" data-range-value="bordure" data-range-unit="%"></span></span>
+                <input id="bordure" type="range" min="0" max="100" step="1" />
+              </label>
+              <label class="champ" data-decor-panel="motif">Motif
+                <select id="motifType">
+                  <option value="aucun">Aucun</option>
+                  <option value="grille">Grille fine</option>
+                  <option value="rayures">Rayures</option>
+                  <option value="points">Points</option>
+                  <option value="diagonales">Diagonales</option>
+                </select>
+              </label>
+              <label class="champ" data-decor-panel="motif" data-motif-reglage>Couleur <input id="couleurMotif" type="color" /></label>
+              <label class="champ" data-decor-panel="motif" data-motif-reglage><span class="champ__libelle">Opacite motif <span class="valeur-range" data-range-value="motif" data-range-unit="%"></span></span><input id="motif" type="range" min="0" max="100" step="1" /></label>
+              <p class="champ-description champ-large" data-decor-panel="motif">L'opacite controle la visibilite du motif selectionne.</p>
+              <label class="champ" data-decor-panel="vignette">Vignettage
+                <select id="modeVignette">
+                  <option value="aucun">Sans</option>
+                  <option value="fond">Fond seulement</option>
+                  <option value="global">Fond et etiquette</option>
+                </select>
+              </label>
+              <label class="champ" data-decor-panel="vignette" data-vignette-reglage>Couleur <input id="couleurVignette" type="color" /></label>
+              <label class="champ" data-decor-panel="vignette" data-vignette-reglage><span class="champ__libelle">Intensite vignettage <span class="valeur-range" data-range-value="intensite" data-range-unit="%"></span></span><input id="intensite" type="range" min="0" max="100" step="1" /></label>
+              <label class="champ" data-decor-panel="vignette" data-vignette-reglage><span class="champ__libelle">Opacite vignette <span class="valeur-range" data-range-value="vignette" data-range-unit="%"></span></span><input id="vignette" type="range" min="0" max="100" step="1" /></label>
+              <label class="champ" data-decor-panel="vignette" data-vignette-reglage><span class="champ__libelle">Angle <span class="valeur-range" data-range-value="angle"></span></span><input id="angle" type="range" min="0" max="180" step="5" /></label>
+            </div>
+          </details>
+
+          <details class="groupe">
+            <summary><p class="groupe__titre">Ruban</p></summary>
+            <div class="grille">
+              <label class="champ"><span class="champ__libelle">Largeur ruban <span class="valeur-range" data-range-value="largeurRuban" data-range-unit="%"></span></span><input id="largeurRuban" type="range" min="0" max="100" step="1" /></label>
+              <label class="champ"><span class="champ__libelle">Hauteur ruban <span class="valeur-range" data-range-value="hauteurRuban" data-range-unit="%"></span></span><input id="hauteurRuban" type="range" min="0" max="100" step="1" /></label>
+              <label class="champ"><span class="champ__libelle">Bande centrale <span class="valeur-range" data-range-value="hauteurBande" data-range-unit="%"></span></span><input id="hauteurBande" type="range" min="0" max="100" step="1" /></label>
+            </div>
+          </details>
+
+          <details class="groupe" id="groupeMarques">
+            <summary><p class="groupe__titre">Ecriture laterale</p></summary>
+            <div class="grille">
+              <label class="champ">Afficher <input id="afficherMarques" type="checkbox" /></label>
+              <label class="champ" data-marque-reglage>Propositions
+                <select id="presetMarques">
+                  <option value="custom">Texte libre</option>
+                  <option value="hit-oldy">HIT / OLDY</option>
+                  <option value="stereo">STEREO / STEREO</option>
+                  <option value="super-nono">SUPER / NONO</option>
+                  <option value="selection-101">SELEC / 101</option>
+                  <option value="juke-box">JUKE / BOX</option>
+                  <option value="rock-roll">ROCK / ROLL</option>
+                  <option value="rock-ola">ROCK / OLA</option>
+                  <option value="side-a">SIDE / A</option>
+                  <option value="vinyl-club">VINYL / CLUB</option>
+                  <option value="see-burg">SEE / BURG</option>
+                </select>
+              </label>
+              <label class="champ" data-marque-reglage>Couleur <input id="couleurMarques" type="color" /></label>
+              <label class="champ" data-marque-reglage>Gauche <input id="marqueGauche" type="text" maxlength="8" /></label>
+              <label class="champ" data-marque-reglage>Droite <input id="marqueDroite" type="text" maxlength="8" /></label>
+              <label class="champ" data-marque-reglage>Police
+                <select id="policeMarques">
+                  <option value="compacte">Compacte nette</option>
+                  <option value="dactylo-ronde">Dactylo ronde</option>
+                  <option value="mono-moderne">Mono moderne</option>
+                  <option value="affiche-condensee">Affiche condensee</option>
+                  <option value="sans-serree">Sans serree</option>
+                </select>
+              </label>
+              <label class="champ" data-marque-reglage><span class="champ__libelle">Taille <span class="valeur-range" data-range-value="tailleMarques"></span></span><input id="tailleMarques" type="range" min="50" max="220" step="5" /></label>
+              <label class="champ" data-marque-reglage><span class="champ__libelle">Angle <span class="valeur-range" data-range-value="angleMarques"></span></span><input id="angleMarques" type="range" min="-180" max="180" step="5" /></label>
+              <label class="champ" data-marque-reglage><span class="champ__libelle">Distance du bord <span class="valeur-range" data-range-value="positionMarques" data-range-unit="%"></span></span><input id="positionMarques" type="range" min="0" max="100" step="1" /></label>
+              <label class="champ" data-marque-reglage><span class="champ__libelle">Hauteur <span class="valeur-range" data-range-value="hauteurMarques" data-range-unit="%"></span></span><input id="hauteurMarques" type="range" min="0" max="100" step="1" /></label>
+            </div>
+          </details>
+
+          <details class="groupe" open>
+            <summary><p class="groupe__titre">Impression</p></summary>
+            <div class="grille">
+              <label class="champ">
+                Largeur etiquette (mm)
+                <input id="largeurEtiquette" type="number" min="20" max="194" step="0.1" value="77" inputmode="decimal" />
+              </label>
+              <label class="champ">
+                Hauteur etiquette (mm)
+                <input id="hauteurEtiquette" type="number" min="10" max="280" step="0.1" value="26" inputmode="decimal" />
+              </label>
+              <label class="champ champ-large">
+                Numeros ou positions
+                <input id="selections" type="text" placeholder="00, 13, 100, 213 ou 100-105" />
+              </label>
+            </div>
+          </details>
+        </form>
+
+        <section class="panneau scene">
+          <div class="scene__entete">
+            <p class="scene__titre">Apercu</p>
+            <p class="etat" id="statutPlanche">0 page</p>
+          </div>
+          <div class="barre-actions barre-actions--apercu">
+            <button class="bouton bouton-secondaire" id="surprise" type="button">Surprise</button>
+            <button class="bouton bouton-secondaire" id="inverser" type="button">Variante</button>
+            <button class="bouton bouton-principal" id="imprimer" type="button">Imprimer</button>
+          </div>
+          <div class="apercus">
+            <img class="apercu-image" id="apercu" alt="Apercu etiquette Canvas" />
+            <img class="apercu-image apercu-secondaire" id="apercuSecondaire" alt="Apercu etiquette secondaire Canvas" hidden />
+          </div>
+          <div class="navigation">
+            <button class="bouton" id="precedent" type="button">‹</button>
+            <p class="etat" id="etat">Chargement...</p>
+            <button class="bouton" id="suivant" type="button">›</button>
+          </div>
+          <button class="bouton bouton-coeur" id="aimerReglage" type="button" aria-pressed="false">
+            <span aria-hidden="true">♡</span>
+            <span>Garder ce reglage</span>
+          </button>
+          <section class="coups-coeur" aria-labelledby="titreCoupsCoeur">
+            <h2 class="coups-coeur__titre" id="titreCoupsCoeur">Mes coups de coeur</h2>
+            <p class="coups-coeur__vide" id="messageCoupsCoeur">Aucun reglage garde pour le moment.</p>
+            <div class="coups-coeur__liste" id="listeCoupsCoeur"></div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <main id="planche-impression"></main>
+
+    <script>
+      const PX_PAR_MM = 12;
+      const LARGEUR_MM = 77;
+      const HAUTEUR_MM = 26;
+      const LARGEUR_PAGE_MM = 210;
+      const HAUTEUR_PAGE_MM = 297;
+      const MARGE_PAGE_MM = 8;
+      const ECART_MM = 6;
+      const CLE_COUPS_COEUR = "selection101.etiquettesPersonnalisees.coupsCoeur";
+
+      const presets = {
+        alice: {
+          theme: "classique",
+          modele: "alice",
+          couleur1: "#942193",
+          couleur2: "#ffffff",
+          couleur3: "#ffffff",
+          couleurRuban: "#ecdef6",
+          couleurVignette: "#d9b6ee",
+          couleurTitres: "#17120e",
+          couleurArtiste: "#942193",
+          decorPanel: "bordure",
+          angle: 0,
+          intensite: 0,
+          motifType: "aucun",
+          couleurMotif: "#7c007c",
+          motif: 45,
+          modeVignette: "fond",
+          vignette: 0,
+          bordure: 60,
+          largeurRuban: 85,
+          hauteurRuban: 25,
+          hauteurBande: 15,
+          policeTitres: "terminal-carre",
+          policeArtiste: "luxe-fin",
+          tailleTitres: 140,
+          tailleArtiste: 150,
+          grasTitres: false,
+          grasArtiste: true,
+          afficherMarques: true,
+          couleurMarques: "#ffffff",
+          presetMarques: "custom",
+          marqueGauche: "HIT",
+          marqueDroite: "OLDY",
+          policeMarques: "compacte",
+          positionMarques: 6,
+          hauteurMarques: 50,
+          angleMarques: 0,
+          tailleMarques: 155,
+          largeurEtiquette: 77,
+          hauteurEtiquette: 26,
+        },
+        martin: {
+          theme: "classique",
+          modele: "martin",
+          couleur1: "#0a4f95",
+          couleur2: "#fffdf8",
+          couleur3: "#fffdf8",
+          couleurRuban: "#c8ddf8",
+          couleurVignette: "#c8ddf8",
+          couleurTitres: "#101923",
+          couleurArtiste: "#084f95",
+          decorPanel: "bordure",
+          angle: 70,
+          intensite: 80,
+          motifType: "aucun",
+          couleurMotif: "#0a4f95",
+          motif: 45,
+          modeVignette: "fond",
+          vignette: 80,
+          bordure: 50,
+          largeurRuban: 96,
+          hauteurRuban: 25,
+          hauteurBande: 0,
+          afficherMarques: false,
+          marqueGauche: "HIT",
+          marqueDroite: "OLDY",
+          couleurMarques: "#ffffff",
+          policeMarques: "compacte",
+          positionMarques: 7.2,
+          hauteurMarques: 50,
+          angleMarques: 0,
+          tailleMarques: 100,
+          policeTitres: "mono-moderne",
+          policeArtiste: "elegante",
+          tailleTitres: 110,
+          tailleArtiste: 100,
+          grasTitres: true,
+          grasArtiste: false,
+          largeurEtiquette: 77,
+          hauteurEtiquette: 26,
+        },
+      };
+
+      const combosSurprise = [
+        {
+          couleurs: ["#ff2f7d", "#1c1138", "#fff1a8", "#20d6d2", "#fff7ea", "#271439", "#fff7ea"],
+          decor: "motif",
+          motif: "diagonales",
+          vignette: "global",
+          marques: "stereo",
+        },
+        {
+          couleurs: ["#09215f", "#f9e3b2", "#ff6b35", "#152b6f", "#15120c", "#fff3da", "#ffef9a"],
+          decor: "vignette",
+          motif: "rayures",
+          vignette: "fond",
+          marques: "juke-box",
+        },
+        {
+          couleurs: ["#0b7a75", "#fff7ec", "#f7cad0", "#f9d65c", "#13201f", "#832340", "#ffffff"],
+          decor: "motif",
+          motif: "points",
+          vignette: "fond",
+          marques: "super-nono",
+        },
+        {
+          couleurs: ["#d71920", "#fff6df", "#0f1115", "#f4c430", "#17120b", "#fff6df", "#ffffff"],
+          decor: "vignette",
+          motif: "grille",
+          vignette: "global",
+          marques: "hit-oldy",
+        },
+        {
+          couleurs: ["#6d28d9", "#e0f2fe", "#fef08a", "#f472b6", "#231033", "#3b1670", "#fff7ff"],
+          decor: "motif",
+          motif: "rayures",
+          vignette: "fond",
+          marques: "vinyl-club",
+        },
+        {
+          couleurs: ["#0f5132", "#fffbe6", "#b7f7d4", "#d4a017", "#172016", "#064e3b", "#fff4c7"],
+          decor: "vignette",
+          motif: "diagonales",
+          vignette: "fond",
+          marques: "selection-101",
+        },
+        {
+          couleurs: ["#004e89", "#fdf0d5", "#c1121f", "#7bdff2", "#111827", "#fff7ed", "#ffffff"],
+          decor: "motif",
+          motif: "grille",
+          vignette: "global",
+          marques: "rock-roll",
+        },
+        {
+          couleurs: ["#121212", "#f8c8dc", "#b8f2e6", "#f15bb5", "#101010", "#101010", "#fffdf8"],
+          decor: "vignette",
+          motif: "points",
+          vignette: "fond",
+          marques: "side-a",
+        },
+        {
+          couleurs: ["#ff7a00", "#2a0a3d", "#ffe45e", "#00c2ff", "#fff7e8", "#30104c", "#fff7e8"],
+          decor: "motif",
+          motif: "diagonales",
+          vignette: "global",
+          marques: "rock-ola",
+        },
+        {
+          couleurs: ["#004643", "#abd1c6", "#f9bc60", "#e16162", "#001e1d", "#001e1d", "#fffffe"],
+          decor: "motif",
+          motif: "points",
+          vignette: "global",
+          marques: "see-burg",
+        },
+        {
+          couleurs: ["#a4161a", "#f5f0e1", "#283618", "#dda15e", "#16120d", "#fff7e8", "#fffdf0"],
+          decor: "vignette",
+          motif: "rayures",
+          vignette: "fond",
+          marques: "aucun",
+        },
+      ];
+
+      const modelesParTheme = {
+        classique: [
+          ["alice", "ALICE"],
+          ["martin", "MARTIN"],
+        ],
+      };
+
+      const presetsMarques = {
+        custom: null,
+        "hit-oldy": ["HIT", "OLDY"],
+        stereo: ["STEREO", "STEREO"],
+        "super-nono": ["SUPER", "NONO"],
+        "selection-101": ["SELEC", "101"],
+        "juke-box": ["JUKE", "BOX"],
+        "rock-roll": ["ROCK", "ROLL"],
+        "rock-ola": ["ROCK", "OLA"],
+        "side-a": ["SIDE", "A"],
+        "vinyl-club": ["VINYL", "CLUB"],
+        "see-burg": ["SEE", "BURG"],
+      };
+
+      const elements = {
+        formulaire: document.querySelector("#formulaire"),
+        apercu: document.querySelector("#apercu"),
+        apercuSecondaire: document.querySelector("#apercuSecondaire"),
+        apercus: document.querySelector(".apercus"),
+        selecteurEtiquette: document.querySelector("#selecteurEtiquette"),
+        editionEtiquette: document.querySelectorAll('input[name="editionEtiquette"]'),
+        theme: document.querySelector("#theme"),
+        modele: document.querySelector("#modele"),
+        modeleSecondaire: document.querySelector("#modeleSecondaire"),
+        couleur1: document.querySelector("#couleur1"),
+        couleur2: document.querySelector("#couleur2"),
+        couleur3: document.querySelector("#couleur3"),
+        couleurRuban: document.querySelector("#couleurRuban"),
+        couleurVignette: document.querySelector("#couleurVignette"),
+        couleurTitres: document.querySelector("#couleurTitres"),
+        couleurArtiste: document.querySelector("#couleurArtiste"),
+        decorPanel: document.querySelector("#decorPanel"),
+        angle: document.querySelector("#angle"),
+        intensite: document.querySelector("#intensite"),
+        motifType: document.querySelector("#motifType"),
+        couleurMotif: document.querySelector("#couleurMotif"),
+        motif: document.querySelector("#motif"),
+        modeVignette: document.querySelector("#modeVignette"),
+        vignette: document.querySelector("#vignette"),
+        bordure: document.querySelector("#bordure"),
+        largeurRuban: document.querySelector("#largeurRuban"),
+        hauteurRuban: document.querySelector("#hauteurRuban"),
+        hauteurBande: document.querySelector("#hauteurBande"),
+        policeTitres: document.querySelector("#policeTitres"),
+        policeArtiste: document.querySelector("#policeArtiste"),
+        tailleTitres: document.querySelector("#tailleTitres"),
+        tailleArtiste: document.querySelector("#tailleArtiste"),
+        grasTitres: document.querySelector("#grasTitres"),
+        grasArtiste: document.querySelector("#grasArtiste"),
+        afficherMarques: document.querySelector("#afficherMarques"),
+        groupeMarques: document.querySelector("#groupeMarques"),
+        reglagesMarques: document.querySelectorAll("[data-marque-reglage]"),
+        reglagesDecor: document.querySelectorAll("[data-decor-panel]"),
+        reglagesMotif: document.querySelectorAll("[data-motif-reglage]"),
+        reglagesVignette: document.querySelectorAll("[data-vignette-reglage]"),
+        champsModele: document.querySelectorAll("[data-modele-visible]"),
+        valeursRange: document.querySelectorAll("[data-range-value]"),
+        presetMarques: document.querySelector("#presetMarques"),
+        couleurMarques: document.querySelector("#couleurMarques"),
+        marqueGauche: document.querySelector("#marqueGauche"),
+        marqueDroite: document.querySelector("#marqueDroite"),
+        policeMarques: document.querySelector("#policeMarques"),
+        positionMarques: document.querySelector("#positionMarques"),
+        hauteurMarques: document.querySelector("#hauteurMarques"),
+        angleMarques: document.querySelector("#angleMarques"),
+        tailleMarques: document.querySelector("#tailleMarques"),
+        largeurEtiquette: document.querySelector("#largeurEtiquette"),
+        hauteurEtiquette: document.querySelector("#hauteurEtiquette"),
+        selections: document.querySelector("#selections"),
+        copierReglages: document.querySelector("#copierReglages"),
+        importerReglages: document.querySelector("#importerReglages"),
+        aimerReglage: document.querySelector("#aimerReglage"),
+        listeCoupsCoeur: document.querySelector("#listeCoupsCoeur"),
+        messageCoupsCoeur: document.querySelector("#messageCoupsCoeur"),
+        imprimer: document.querySelector("#imprimer"),
+        surprise: document.querySelector("#surprise"),
+        inverser: document.querySelector("#inverser"),
+        precedent: document.querySelector("#precedent"),
+        suivant: document.querySelector("#suivant"),
+        etat: document.querySelector("#etat"),
+        statutPlanche: document.querySelector("#statutPlanche"),
+        plancheImpression: document.querySelector("#planche-impression"),
+      };
+
+      let vinyles = [];
+      let indexApercu = 0;
+      let etiquetteActive = "1";
+      let chargementReglages = false;
+      const reglagesParEtiquette = {
+        1: null,
+        2: null,
+      };
+      const signaturesSurpriseRecentes = [];
+
+      initialiser();
+
+      async function initialiser() {
+        remplirModelesTheme();
+        appliquerReglagesAuFormulaire(presets.alice);
+        reglagesParEtiquette[1] = lireReglagesFormulaire();
+        brancherEvenements();
+        await chargerBibliotheque();
+        mettreAJour();
+        afficherCoupsCoeur();
+      }
+
+      function brancherEvenements() {
+        elements.formulaire.addEventListener("input", () => {
+          if (chargementReglages) {
+            return;
+          }
+          enregistrerReglagesActifs();
+          mettreAJour();
+        });
+        elements.modele.addEventListener("change", () => appliquerPreset(elements.modele.value));
+        elements.theme.addEventListener("change", changerTheme);
+        elements.modeleSecondaire.addEventListener("change", changerModeleSecondaire);
+        elements.decorPanel.addEventListener("change", () => {
+          enregistrerReglagesActifs();
+          mettreAJour();
+        });
+        elements.motifType.addEventListener("change", ajusterMotifVisible);
+        elements.modeVignette.addEventListener("change", ajusterVignetteVisible);
+        elements.presetMarques.addEventListener("change", appliquerPresetMarques);
+        elements.editionEtiquette.forEach((radio) => {
+          radio.addEventListener("change", changerEtiquetteActive);
+        });
+        elements.surprise.addEventListener("click", melanger);
+        elements.inverser.addEventListener("click", inverserStyle);
+        elements.copierReglages.addEventListener("click", copierReglages);
+        elements.importerReglages.addEventListener("click", importerReglages);
+        elements.aimerReglage.addEventListener("click", basculerCoupCoeur);
+        elements.listeCoupsCoeur.addEventListener("click", gererActionCoupCoeur);
+        elements.precedent.addEventListener("click", () => changerApercu(-1));
+        elements.suivant.addEventListener("click", () => changerApercu(1));
+        elements.imprimer.addEventListener("click", imprimer);
+      }
+
+      async function chargerBibliotheque() {
+        try {
+          const reponse = await fetch("./bibliotheque.json", { cache: "no-store" });
+          const donnees = await reponse.json();
+          vinyles = donnees.vinyles
+            .filter((vinyle) => vinyle.emplacement === "jukebox")
+            .sort((a, b) => String(a.position_jukebox || "").localeCompare(String(b.position_jukebox || ""), "fr", { numeric: true }));
+        } catch {
+          vinyles = [];
+        }
+      }
+
+      function appliquerPreset(modele) {
+        const preset = presets[modele];
+        if (!preset) {
+          return;
+        }
+        appliquerReglagesAuFormulaire({ ...lireReglagesFormulaire(), ...preset, modele });
+        enregistrerReglagesActifs();
+        mettreAJour();
+      }
+
+      function remplirModelesTheme() {
+        const modeles = modelesParTheme[elements.theme.value] || modelesParTheme.classique;
+        const valeurActuelle = elements.modele.value;
+        const valeurSecondaire = elements.modeleSecondaire.value;
+        elements.modele.replaceChildren(...modeles.map(([valeur, libelle]) => new Option(libelle, valeur)));
+        elements.modeleSecondaire.replaceChildren(
+          new Option("Aucune", ""),
+          ...modeles.map(([valeur, libelle]) => new Option(libelle, valeur)),
+        );
+        elements.modele.value = modeles.some(([valeur]) => valeur === valeurActuelle) ? valeurActuelle : modeles[0][0];
+        elements.modeleSecondaire.value = modeles.some(([valeur]) => valeur === valeurSecondaire) ? valeurSecondaire : "";
+      }
+
+      function changerTheme() {
+        remplirModelesTheme();
+        appliquerPreset(elements.modele.value);
+      }
+
+      function appliquerReglagesAuFormulaire(reglages) {
+        chargementReglages = true;
+        Object.entries(reglages).forEach(([cle, valeur]) => {
+          const element = elements[cle];
+          if (!element) {
+            return;
+          }
+          if (element.type === "checkbox") {
+            element.checked = Boolean(valeur);
+          } else {
+            element.value = String(valeur);
+          }
+        });
+        chargementReglages = false;
+      }
+
+      function obtenirCoupsCoeur() {
+        try {
+          const donnees = JSON.parse(localStorage.getItem(CLE_COUPS_COEUR) || "[]");
+          if (!Array.isArray(donnees)) {
+            return [];
+          }
+          return donnees
+            .map(normaliserCoupCoeur)
+            .filter(Boolean);
+        } catch {
+          return [];
+        }
+      }
+
+      function enregistrerCoupsCoeur(coupsCoeur) {
+        localStorage.setItem(CLE_COUPS_COEUR, JSON.stringify(coupsCoeur));
+      }
+
+      function normaliserCoupCoeur(coupCoeur) {
+        if (!coupCoeur || typeof coupCoeur !== "object") {
+          return null;
+        }
+
+        try {
+          const reglages = normaliserReglagesImportes(coupCoeur.reglages || coupCoeur);
+          return {
+            id: signatureReglages(reglages),
+            creeLe: coupCoeur.creeLe || new Date().toISOString(),
+            reglages,
+          };
+        } catch {
+          return null;
+        }
+      }
+
+      function signatureReglages(reglages) {
+        return JSON.stringify(reglages);
+      }
+
+      function basculerCoupCoeur() {
+        const reglages = lireReglagesFormulaire();
+        const id = signatureReglages(reglages);
+        const coupsCoeur = obtenirCoupsCoeur();
+        const dejaPresent = coupsCoeur.some((coupCoeur) => coupCoeur.id === id);
+
+        if (dejaPresent) {
+          enregistrerCoupsCoeur(coupsCoeur.filter((coupCoeur) => coupCoeur.id !== id));
+        } else {
+          enregistrerCoupsCoeur([{ id, creeLe: new Date().toISOString(), reglages }, ...coupsCoeur].slice(0, 24));
+        }
+
+        afficherCoupsCoeur();
+      }
+
+      function afficherCoupsCoeur() {
+        const coupsCoeur = obtenirCoupsCoeur();
+        const idCourant = signatureReglages(lireReglagesFormulaire());
+        const estFavori = coupsCoeur.some((coupCoeur) => coupCoeur.id === idCourant);
+
+        elements.aimerReglage.setAttribute("aria-pressed", String(estFavori));
+        elements.aimerReglage.querySelector("span:first-child").textContent = estFavori ? "♥" : "♡";
+        elements.aimerReglage.querySelector("span:last-child").textContent = estFavori ? "Reglage garde" : "Garder ce reglage";
+        elements.messageCoupsCoeur.hidden = coupsCoeur.length > 0;
+        elements.listeCoupsCoeur.innerHTML = "";
+
+        coupsCoeur.forEach((coupCoeur) => {
+          elements.listeCoupsCoeur.append(creerCarteCoupCoeur(coupCoeur));
+        });
+      }
+
+      function creerCarteCoupCoeur(coupCoeur) {
+        const carte = document.createElement("article");
+        carte.className = "coup-coeur";
+
+        const texte = document.createElement("div");
+        texte.className = "coup-coeur__texte";
+
+        const nom = document.createElement("strong");
+        nom.className = "coup-coeur__nom";
+        nom.textContent = nomCoupCoeur(coupCoeur.reglages);
+
+        const details = document.createElement("span");
+        details.className = "coup-coeur__details";
+        details.textContent = detailsCoupCoeur(coupCoeur.reglages);
+
+        const actions = document.createElement("div");
+        actions.className = "coup-coeur__actions";
+
+        const appliquer = document.createElement("button");
+        appliquer.className = "bouton";
+        appliquer.type = "button";
+        appliquer.textContent = "↺";
+        appliquer.dataset.action = "appliquer";
+        appliquer.dataset.id = coupCoeur.id;
+        appliquer.setAttribute("aria-label", `Appliquer ${nom.textContent}`);
+
+        const supprimer = document.createElement("button");
+        supprimer.className = "bouton bouton-secondaire";
+        supprimer.type = "button";
+        supprimer.textContent = "×";
+        supprimer.dataset.action = "supprimer";
+        supprimer.dataset.id = coupCoeur.id;
+        supprimer.setAttribute("aria-label", `Supprimer ${nom.textContent}`);
+
+        texte.append(nom, details);
+        actions.append(appliquer, supprimer);
+        carte.append(texte, actions);
+        return carte;
+      }
+
+      function nomCoupCoeur(reglages) {
+        const modele = modelesParTheme[reglages.theme]?.find(([valeur]) => valeur === reglages.modele)?.[1] || reglages.modele;
+        return `${modele} · ${reglages.couleur1} / ${reglages.couleurRuban}`;
+      }
+
+      function detailsCoupCoeur(reglages) {
+        return `${reglages.largeurEtiquette} x ${reglages.hauteurEtiquette} mm · titres ${reglages.tailleTitres}% · artiste ${reglages.tailleArtiste}%`;
+      }
+
+      function gererActionCoupCoeur(evenement) {
+        const bouton = evenement.target.closest("[data-action]");
+        if (!bouton) {
+          return;
+        }
+
+        const coupsCoeur = obtenirCoupsCoeur();
+        const coupCoeur = coupsCoeur.find((favori) => favori.id === bouton.dataset.id);
+        if (!coupCoeur) {
+          afficherCoupsCoeur();
+          return;
+        }
+
+        if (bouton.dataset.action === "appliquer") {
+          appliquerReglagesAuFormulaire(coupCoeur.reglages);
+          enregistrerReglagesActifs();
+          mettreAJour();
+          return;
+        }
+
+        if (bouton.dataset.action === "supprimer") {
+          enregistrerCoupsCoeur(coupsCoeur.filter((favori) => favori.id !== coupCoeur.id));
+          afficherCoupsCoeur();
+        }
+      }
+
+      function lireReglagesFormulaire() {
+        return {
+          theme: elements.theme.value,
+          modele: elements.modele.value,
+          couleur1: elements.couleur1.value,
+          couleur2: elements.couleur2.value,
+          couleur3: elements.couleur3.value,
+          couleurRuban: elements.couleurRuban.value,
+          couleurVignette: elements.couleurVignette.value,
+          couleurTitres: elements.couleurTitres.value,
+          couleurArtiste: elements.couleurArtiste.value,
+          decorPanel: elements.decorPanel.value,
+          angle: Number(elements.angle.value),
+          intensite: Number(elements.intensite.value),
+          motifType: elements.motifType.value,
+          couleurMotif: elements.couleurMotif.value,
+          motif: Number(elements.motif.value),
+          modeVignette: elements.modeVignette.value,
+          vignette: Number(elements.vignette.value),
+          bordure: Number(elements.bordure.value),
+          largeurRuban: Number(elements.largeurRuban.value),
+          hauteurRuban: Number(elements.hauteurRuban.value),
+          hauteurBande: Number(elements.hauteurBande.value),
+          policeTitres: elements.policeTitres.value,
+          policeArtiste: elements.policeArtiste.value,
+          tailleTitres: Number(elements.tailleTitres.value),
+          tailleArtiste: Number(elements.tailleArtiste.value),
+          grasTitres: elements.grasTitres.checked,
+          grasArtiste: elements.grasArtiste.checked,
+          afficherMarques: elements.afficherMarques.checked,
+          couleurMarques: elements.couleurMarques.value,
+          presetMarques: elements.presetMarques.value,
+          marqueGauche: elements.marqueGauche.value.trim() || "HIT",
+          marqueDroite: elements.marqueDroite.value.trim() || "OLDY",
+          policeMarques: elements.policeMarques.value,
+          positionMarques: Number(elements.positionMarques.value),
+          hauteurMarques: Number(elements.hauteurMarques.value),
+          angleMarques: Number(elements.angleMarques.value),
+          tailleMarques: Number(elements.tailleMarques.value),
+          largeurEtiquette: lireDimensionEtiquette(elements.largeurEtiquette, LARGEUR_MM),
+          hauteurEtiquette: lireDimensionEtiquette(elements.hauteurEtiquette, HAUTEUR_MM),
+        };
+      }
+
+      function lireDimensionEtiquette(element, valeurDefaut) {
+        const valeur = Number(String(element?.value || "").replace(",", "."));
+        const minimum = Number(element?.min) || 1;
+        const maximum = Number(element?.max) || 999;
+        if (!Number.isFinite(valeur)) {
+          return valeurDefaut;
+        }
+
+        return Number(Math.max(minimum, Math.min(maximum, valeur)).toFixed(1));
+      }
+
+      function lireReglages(numero = etiquetteActive) {
+        if (numero === "2") {
+          return reglagesParEtiquette[2] || creerReglagesSecondaires();
+        }
+
+        return reglagesParEtiquette[1] || lireReglagesFormulaire();
+      }
+
+      function enregistrerReglagesActifs() {
+        reglagesParEtiquette[etiquetteActive] = lireReglagesFormulaire();
+      }
+
+      function obtenirEditionActive() {
+        return [...elements.editionEtiquette].find((radio) => radio.checked)?.value || "1";
+      }
+
+      function changerEtiquetteActive() {
+        enregistrerReglagesActifs();
+        etiquetteActive = obtenirEditionActive();
+        appliquerReglagesAuFormulaire(lireReglages(etiquetteActive));
+        mettreAJour();
+      }
+
+      function changerModeleSecondaire() {
+        enregistrerReglagesActifs();
+        if (!elements.modeleSecondaire.value) {
+          reglagesParEtiquette[2] = null;
+          etiquetteActive = "1";
+          elements.editionEtiquette.forEach((radio) => {
+            radio.checked = radio.value === "1";
+          });
+          appliquerReglagesAuFormulaire(lireReglages("1"));
+          mettreAJour();
+          return;
+        }
+
+        reglagesParEtiquette[2] = creerReglagesSecondaires();
+        mettreAJour();
+      }
+
+      function creerReglagesSecondaires() {
+        const modele = elements.modeleSecondaire.value || elements.modele.value;
+        return {
+          ...lireReglages("1"),
+          ...presets[modele],
+          modele,
+        };
+      }
+
+      function choisirAleatoire(liste) {
+        return liste[Math.floor(Math.random() * liste.length)];
+      }
+
+      function nombreAleatoire(minimum, maximum, pas = 1) {
+        const crans = Math.floor((maximum - minimum) / pas);
+        return minimum + Math.floor(Math.random() * (crans + 1)) * pas;
+      }
+
+      function creerMarquesSurprise(combo, modele) {
+        if (modele === "martin" || combo.marques === "aucun") {
+          return {
+            afficherMarques: false,
+            presetMarques: combo.marques === "aucun" ? "custom" : combo.marques,
+            marqueGauche: "HIT",
+            marqueDroite: "OLDY",
+          };
+        }
+
+        const preset = Math.random() > 0.18 ? combo.marques : choisirAleatoire([
+          "hit-oldy",
+          "stereo",
+          "super-nono",
+          "selection-101",
+          "juke-box",
+          "rock-roll",
+          "rock-ola",
+          "side-a",
+          "vinyl-club",
+          "see-burg",
+        ]);
+        const textes = presetsMarques[preset] || ["HIT", "OLDY"];
+        return {
+          afficherMarques: Math.random() > 0.16,
+          presetMarques: preset,
+          marqueGauche: textes[0],
+          marqueDroite: textes[1],
+        };
+      }
+
+      function melanger() {
+        const base = lireReglagesFormulaire();
+        let surprise = null;
+        let signature = "";
+
+        for (let tentative = 0; tentative < 40; tentative += 1) {
+          const combo = choisirAleatoire(combosSurprise);
+          const variation = choisirAleatoire(["original", "inverse", "ruban-fond-haut", "ruban-fond-bas"]);
+          const [couleur1, couleur2, couleur3, couleurRuban, couleurTitres, couleurArtiste, couleurMarques] = combo.couleurs;
+          const marques = creerMarquesSurprise(combo, base.modele);
+          const motifActif = Math.random() > 0.1 ? combo.motif : choisirAleatoire(["grille", "rayures", "points", "diagonales"]);
+          const modeVignette = Math.random() > 0.14 ? combo.vignette : choisirAleatoire(["fond", "global", "aucun"]);
+          const fondHaut = variation === "inverse" ? couleur3 : couleur2;
+          const fondBas = variation === "inverse" ? couleur2 : couleur3;
+          const ruban = variation === "ruban-fond-haut" ? couleur2 : variation === "ruban-fond-bas" ? couleur3 : couleurRuban;
+          surprise = {
+            ...base,
+            couleur1,
+            couleur2: fondHaut,
+            couleur3: fondBas,
+            couleurRuban: ruban,
+            couleurVignette: variation === "inverse" ? couleur1 : couleurRuban,
+            couleurTitres: couleurLisible(fondHaut, couleurTitres),
+            couleurArtiste: couleurLisible(ruban, couleurArtiste),
+            couleurMarques: couleurLisible(couleur1, couleurMarques),
+            decorPanel: Math.random() > 0.2 ? combo.decor : choisirAleatoire(["motif", "vignette"]),
+            angle: nombreAleatoire(0, 180, 10),
+            intensite: modeVignette === "aucun" ? base.intensite : nombreAleatoire(64, 94, 2),
+            motifType: motifActif,
+            couleurMotif: couleur1,
+            motif: nombreAleatoire(34, 82, 2),
+            modeVignette,
+            vignette: modeVignette === "aucun" ? base.vignette : nombreAleatoire(18, 46, 2),
+            bordure: nombreAleatoire(38, 92, 2),
+            largeurRuban: nombreAleatoire(72, 96, 2),
+            hauteurRuban: nombreAleatoire(22, 36, 1),
+            hauteurBande: base.modele === "alice" ? nombreAleatoire(8, 24, 1) : base.hauteurBande,
+            tailleTitres: nombreAleatoire(92, 130, 2),
+            tailleArtiste: nombreAleatoire(92, 138, 2),
+            grasTitres: Math.random() > 0.18,
+            grasArtiste: Math.random() > 0.55,
+            policeTitres: choisirAleatoire(["dactylo-ronde", "mono-moderne", "affiche-condensee", "sans-serree"]),
+            policeArtiste: choisirAleatoire(["compacte", "elegante", "mono-moderne", "sans-serree"]),
+            ...marques,
+          };
+          signature = JSON.stringify([
+            surprise.couleur1,
+            surprise.couleur2,
+            surprise.couleur3,
+            surprise.couleurRuban,
+            surprise.modeVignette,
+            surprise.motifType,
+            surprise.presetMarques,
+            surprise.afficherMarques,
+            surprise.largeurRuban,
+            surprise.hauteurRuban,
+          ]);
+          if (!signaturesSurpriseRecentes.includes(signature)) {
+            break;
+          }
+        }
+
+        signaturesSurpriseRecentes.push(signature);
+        signaturesSurpriseRecentes.splice(0, Math.max(0, signaturesSurpriseRecentes.length - 12));
+        appliquerReglagesAuFormulaire(surprise);
+        enregistrerReglagesActifs();
+        mettreAJour();
+      }
+
+      function ajusterMotifVisible() {
+        elements.decorPanel.value = "motif";
+        if (elements.motifType.value !== "aucun" && Number(elements.motif.value) < 25) {
+          elements.motif.value = "45";
+        }
+        if (!chargementReglages) {
+          enregistrerReglagesActifs();
+          mettreAJour();
+        }
+      }
+
+      function ajusterVignetteVisible() {
+        elements.decorPanel.value = "vignette";
+        if (elements.modeVignette.value !== "aucun" && Number(elements.vignette.value) < 25) {
+          elements.vignette.value = "80";
+        }
+        if (!chargementReglages) {
+          enregistrerReglagesActifs();
+          mettreAJour();
+        }
+      }
+
+      function appliquerPresetMarques() {
+        const valeurs = presetsMarques[elements.presetMarques.value];
+        if (!valeurs) {
+          return;
+        }
+        elements.marqueGauche.value = valeurs[0];
+        elements.marqueDroite.value = valeurs[1];
+        enregistrerReglagesActifs();
+        mettreAJour();
+      }
+
+      async function copierReglages() {
+        const texte = JSON.stringify(lireReglagesFormulaire(), null, 2);
+        try {
+          await navigator.clipboard.writeText(texte);
+          elements.copierReglages.textContent = "Reglages copies";
+          setTimeout(() => {
+            elements.copierReglages.textContent = "Copier reglages";
+          }, 1400);
+        } catch {
+          window.prompt("Reglages a copier", texte);
+        }
+      }
+
+      function importerReglages() {
+        const texte = window.prompt("Colle les reglages JSON a importer");
+        if (!texte) {
+          return;
+        }
+
+        try {
+          const reglages = normaliserReglagesImportes(JSON.parse(texte));
+          appliquerReglagesAuFormulaire(reglages);
+          enregistrerReglagesActifs();
+          mettreAJour();
+        } catch (erreur) {
+          window.alert(erreur.message || "Impossible d'importer ces reglages.");
+        }
+      }
+
+      function normaliserReglagesImportes(donnees) {
+        if (!donnees || Array.isArray(donnees) || typeof donnees !== "object") {
+          throw new Error("Format de reglages invalide.");
+        }
+
+        const reglages = lireReglagesFormulaire();
+        Object.entries(donnees).forEach(([cle, valeur]) => {
+          const champ = elements[cle];
+          if (!champ || !(cle in reglages)) {
+            return;
+          }
+
+          if (champ.type === "checkbox") {
+            reglages[cle] = Boolean(valeur);
+            return;
+          }
+
+          if (champ.type === "range" || champ.type === "number") {
+            const nombre = Number(valeur);
+            if (!Number.isFinite(nombre)) {
+              return;
+            }
+            const minimum = champ.min === "" ? -Infinity : Number(champ.min);
+            const maximum = champ.max === "" ? Infinity : Number(champ.max);
+            reglages[cle] = Math.max(minimum, Math.min(maximum, nombre));
+            return;
+          }
+
+          if (champ.type === "color") {
+            if (/^#[0-9a-f]{6}$/i.test(String(valeur))) {
+              reglages[cle] = String(valeur);
+            }
+            return;
+          }
+
+          if (champ.tagName === "SELECT") {
+            if ([...champ.options].some((option) => option.value === String(valeur))) {
+              reglages[cle] = String(valeur);
+            }
+            return;
+          }
+
+          reglages[cle] = String(valeur).slice(0, champ.maxLength > 0 ? champ.maxLength : 500);
+        });
+
+        if (reglages.modele === "martin" && !Object.prototype.hasOwnProperty.call(donnees, "hauteurBande")) {
+          reglages.hauteurBande = 0;
+        }
+
+        return reglages;
+      }
+
+      function inverserStyle() {
+        const reglages = lireReglagesFormulaire();
+        appliquerReglagesAuFormulaire({
+          ...reglages,
+          couleur2: reglages.couleurRuban,
+          couleur3: reglages.couleurRuban,
+          couleurRuban: reglages.couleur3,
+        });
+        enregistrerReglagesActifs();
+        mettreAJour();
+      }
+
+      function obtenirLignes() {
+        const filtre = parserSelections(elements.selections.value);
+        const source = filtre.size
+          ? vinyles.filter((vinyle) => [vinyle.position_jukebox, vinyle.selection_face_a, vinyle.selection_face_b].some((valeur) => filtre.has(String(valeur || ""))))
+          : vinyles;
+
+        return source.map((vinyle) => ({
+          titreA: vinyle.titre_face_a || "Face A",
+          artiste: vinyle.artiste || "Sans artiste",
+          titreB: vinyle.titre_face_b || "Face B",
+          position: vinyle.position_jukebox || "",
+        }));
+      }
+
+      function parserSelections(texte) {
+        const numeros = new Set();
+        String(texte || "")
+          .split(/[\s,;]+/)
+          .map((item) => item.trim())
+          .filter(Boolean)
+          .forEach((item) => {
+            const plage = item.match(/^(\d{1,3})-(\d{1,3})$/);
+            if (plage) {
+              const debut = Number(plage[1]);
+              const fin = Number(plage[2]);
+              const sens = debut <= fin ? 1 : -1;
+              for (let valeur = debut; sens > 0 ? valeur <= fin : valeur >= fin; valeur += sens) {
+                numeros.add(String(valeur).padStart(valeur < 100 ? 2 : 3, "0"));
+              }
+              return;
+            }
+
+            const nombre = Number(item);
+            if (Number.isFinite(nombre)) {
+              numeros.add(String(nombre).padStart(nombre < 100 ? 2 : 3, "0"));
+            } else {
+              numeros.add(item);
+            }
+          });
+        return numeros;
+      }
+
+      function changerApercu(delta) {
+        const lignes = obtenirLignes();
+        if (!lignes.length) {
+          return;
+        }
+        indexApercu = (indexApercu + delta + lignes.length) % lignes.length;
+        mettreAJour();
+      }
+
+      function mettreAJour() {
+        const lignes = obtenirLignes();
+        const deuxiemeActive = Boolean(elements.modeleSecondaire.value);
+        mettreAJourInterfaceConditionnelle(lireReglages(etiquetteActive));
+        mettreAJourValeursRange();
+        elements.selecteurEtiquette.hidden = !deuxiemeActive;
+        elements.apercus.classList.toggle("apercus--duo", deuxiemeActive);
+
+        if (!lignes.length) {
+          elements.etat.textContent = "Aucune etiquette";
+          elements.apercu.removeAttribute("src");
+          elements.apercuSecondaire.hidden = true;
+          elements.statutPlanche.textContent = "0 page";
+          afficherCoupsCoeur();
+          return;
+        }
+
+        indexApercu = ((indexApercu % lignes.length) + lignes.length) % lignes.length;
+        const image = dessinerEtiquette(lignes[indexApercu], lireReglages("1")).toDataURL("image/png");
+        elements.apercu.src = image;
+        if (deuxiemeActive) {
+          elements.apercuSecondaire.src = dessinerEtiquette(lignes[indexApercu], lireReglages("2")).toDataURL("image/png");
+          elements.apercuSecondaire.hidden = false;
+        } else {
+          elements.apercuSecondaire.hidden = true;
+          elements.apercuSecondaire.removeAttribute("src");
+        }
+        elements.etat.textContent = `${indexApercu + 1} / ${lignes.length} - ${lignes[indexApercu].position || "Bibliotheque"}`;
+        const disposition = calculerDispositionImpression(lireReglages(etiquetteActive));
+        const pages = disposition.etiquettesParPage ? Math.max(1, Math.ceil(lignes.length / disposition.etiquettesParPage)) : 0;
+        elements.statutPlanche.textContent = `${pages} page${pages > 1 ? "s" : ""} A4`;
+        afficherCoupsCoeur();
+      }
+
+      function mettreAJourInterfaceConditionnelle(reglages) {
+        const modele = reglages.modele;
+        elements.champsModele.forEach((champ) => {
+          champ.classList.toggle("champ-masque", champ.dataset.modeleVisible !== modele);
+        });
+        const masquerGroupeMarques = modele === "martin";
+        elements.groupeMarques.hidden = masquerGroupeMarques;
+        if (!masquerGroupeMarques) {
+          elements.reglagesMarques.forEach((champ) => {
+            champ.classList.toggle("champ-masque", !reglages.afficherMarques);
+          });
+        }
+        elements.reglagesDecor.forEach((champ) => {
+          champ.classList.toggle("champ-masque", champ.dataset.decorPanel !== reglages.decorPanel);
+        });
+        elements.reglagesMotif.forEach((champ) => {
+          champ.classList.toggle("champ-masque", reglages.decorPanel !== "motif" || reglages.motifType === "aucun");
+        });
+        elements.reglagesVignette.forEach((champ) => {
+          champ.classList.toggle("champ-masque", reglages.decorPanel !== "vignette" || reglages.modeVignette === "aucun");
+        });
+      }
+
+      function mettreAJourValeursRange() {
+        elements.valeursRange.forEach((valeur) => {
+          const cle = valeur.dataset.rangeValue;
+          const input = elements[cle];
+          if (!input) {
+            return;
+          }
+          valeur.textContent = formaterValeurRange(cle, input.value, valeur.dataset.rangeUnit);
+        });
+      }
+
+      function formaterValeurRange(cle, valeur, unite) {
+        const nombre = Number(valeur);
+        if (cle.toLowerCase().includes("angle")) {
+          return `${nombre}°`;
+        }
+        if (unite === "%") {
+          return `${nombre}%`;
+        }
+        return `${nombre}%`;
+      }
+
+      function calculerDispositionImpression(reglages) {
+        const largeurUtile = LARGEUR_PAGE_MM - MARGE_PAGE_MM * 2;
+        const hauteurUtile = HAUTEUR_PAGE_MM - MARGE_PAGE_MM * 2;
+        const colonnes = Math.floor((largeurUtile + ECART_MM) / (reglages.largeurEtiquette + ECART_MM));
+        const lignes = Math.floor((hauteurUtile + ECART_MM) / (reglages.hauteurEtiquette + ECART_MM));
+        return {
+          colonnes: Math.max(0, colonnes),
+          lignes: Math.max(0, lignes),
+          etiquettesParPage: Math.max(0, colonnes * lignes),
+        };
+      }
+
+      function imprimer() {
+        enregistrerReglagesActifs();
+        const lignes = obtenirLignes();
+        const deuxiemeActive = Boolean(elements.modeleSecondaire.value);
+        const reglagesPrincipaux = lireReglages("1");
+        const disposition = calculerDispositionImpression(reglagesPrincipaux);
+        if (!disposition.etiquettesParPage) {
+          elements.etat.textContent = "Format trop grand pour une page A4";
+          return;
+        }
+        console.info(
+          `Dimensions etiquette impression: ${reglagesPrincipaux.largeurEtiquette} x ${reglagesPrincipaux.hauteurEtiquette} mm`,
+        );
+        const hauteurContenu = disposition.lignes * reglagesPrincipaux.hauteurEtiquette + (disposition.lignes - 1) * ECART_MM;
+        const margeHaut = Math.max(0, (HAUTEUR_PAGE_MM - hauteurContenu) / 2);
+        const pages = [];
+        elements.plancheImpression.style.setProperty("--largeur-etiquette-mm", `${reglagesPrincipaux.largeurEtiquette}mm`);
+        elements.plancheImpression.style.setProperty("--hauteur-etiquette-mm", `${reglagesPrincipaux.hauteurEtiquette}mm`);
+        elements.plancheImpression.style.setProperty("--ecart-impression-mm", `${ECART_MM}mm`);
+        elements.plancheImpression.style.setProperty("--marge-haut-impression-mm", `${Number(margeHaut.toFixed(3))}mm`);
+        elements.plancheImpression.style.setProperty("--colonnes-impression", String(disposition.colonnes));
+        elements.plancheImpression.style.setProperty("--lignes-impression", String(disposition.lignes));
+
+        for (let index = 0; index < lignes.length; index += disposition.etiquettesParPage) {
+          const page = document.createElement("section");
+          page.className = "page-impression";
+          lignes.slice(index, index + disposition.etiquettesParPage).forEach((ligne, decalage) => {
+            const cellule = document.createElement("div");
+            const image = document.createElement("img");
+            const reglages = deuxiemeActive && (index + decalage) % 2 === 1 ? lireReglages("2") : lireReglages("1");
+            image.alt = "Etiquette imprimee";
+            image.src = dessinerEtiquette(ligne, reglages).toDataURL("image/png");
+            cellule.className = "cellule-impression";
+            cellule.append(image);
+            page.append(cellule);
+          });
+          pages.push(page);
+        }
+
+        elements.plancheImpression.replaceChildren(...pages);
+        window.print();
+      }
+
+      function dessinerEtiquette(ligne, reglages) {
+        const largeur = reglages.largeurEtiquette * PX_PAR_MM;
+        const hauteur = reglages.hauteurEtiquette * PX_PAR_MM;
+        const canvas = document.createElement("canvas");
+        canvas.width = largeur;
+        canvas.height = hauteur;
+        const ctx = canvas.getContext("2d");
+        ctx.imageSmoothingEnabled = true;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+
+        const bordure = (reglages.bordure / 50) * PX_PAR_MM;
+        const rubanH = hauteur * reglages.hauteurRuban / 100;
+        const rubanW = largeur * reglages.largeurRuban / 100;
+        const rubanX = (largeur - rubanW) / 2;
+        const rubanY = (hauteur - rubanH) / 2;
+        const rubanVisible = rubanW > 0.5 && rubanH > 0.5;
+        const bandeH = hauteur * reglages.hauteurBande / 100;
+        const bandeY = (hauteur - bandeH) / 2;
+
+        ctx.fillStyle = reglages.couleur2;
+        ctx.fillRect(0, 0, largeur, hauteur / 2);
+        ctx.fillStyle = reglages.couleur3;
+        ctx.fillRect(0, hauteur / 2, largeur, hauteur / 2);
+        dessinerMotif(ctx, reglages, largeur, hauteur);
+
+        if (reglages.modeVignette === "fond") {
+          dessinerVignette(ctx, reglages, largeur, hauteur);
+        }
+
+        if (bandeH > 0) {
+          ctx.fillStyle = reglages.couleur1;
+          ctx.fillRect(bordure / 2, bandeY, largeur - bordure, bandeH);
+        }
+
+        if (rubanVisible) {
+          if (reglages.modele === "alice") {
+            ctx.fillStyle = reglages.couleurRuban;
+            ctx.fillRect(rubanX, rubanY, rubanW, rubanH);
+            ctx.strokeStyle = reglages.couleur1;
+            ctx.lineWidth = Math.max(2, rubanH * 0.075);
+            ctx.strokeRect(
+              rubanX + ctx.lineWidth / 2,
+              rubanY + ctx.lineWidth / 2,
+              rubanW - ctx.lineWidth,
+              rubanH - ctx.lineWidth,
+            );
+            dessinerFlechesAlice(ctx, reglages, largeur, rubanX, rubanY, rubanW, rubanH);
+          } else {
+            dessinerRubanMartin(ctx, reglages, rubanX, rubanY, rubanW, rubanH);
+          }
+        }
+
+        if (reglages.modeVignette === "global") {
+          dessinerVignette(ctx, reglages, largeur, hauteur);
+        }
+
+        if (bordure > 0) {
+          ctx.strokeStyle = reglages.couleur1;
+          ctx.lineWidth = Math.max(1, bordure);
+          ctx.strokeRect(ctx.lineWidth / 2, ctx.lineWidth / 2, largeur - ctx.lineWidth, hauteur - ctx.lineWidth);
+        }
+
+        if (rubanVisible && reglages.modele !== "martin" && reglages.afficherMarques) {
+          dessinerMarques(ctx, reglages, largeur, hauteur, rubanY, rubanH);
+        }
+
+        dessinerTitre(ctx, ligne.titreA, largeur / 2, rubanY / 2, largeur * 0.72, reglages, reglages.couleur2);
+        dessinerArtiste(
+          ctx,
+          ligne.artiste,
+          largeur / 2,
+          hauteur / 2,
+          rubanVisible ? rubanW * (reglages.modele === "martin" ? 0.72 : 0.7) : largeur * 0.58,
+          reglages,
+        );
+        dessinerTitre(ctx, ligne.titreB, largeur / 2, hauteur - (hauteur - rubanY - rubanH) / 2, largeur * 0.72, reglages, reglages.couleur3);
+
+        return canvas;
+      }
+
+      function dessinerFlechesAlice(ctx, reglages, largeur, rubanX, rubanY, rubanW, rubanH) {
+        const flecheW = largeur * 0.086;
+        const recouvrement = Math.max(1, largeur * 0.0012);
+        ctx.fillStyle = reglages.couleur1;
+        ctx.beginPath();
+        ctx.moveTo(rubanX - recouvrement, rubanY);
+        ctx.lineTo(rubanX + flecheW, rubanY + rubanH / 2);
+        ctx.lineTo(rubanX - recouvrement, rubanY + rubanH);
+        ctx.closePath();
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(rubanX + rubanW + recouvrement, rubanY);
+        ctx.lineTo(rubanX + rubanW - flecheW, rubanY + rubanH / 2);
+        ctx.lineTo(rubanX + rubanW + recouvrement, rubanY + rubanH);
+        ctx.closePath();
+        ctx.fill();
+      }
+
+      function dessinerRubanMartin(ctx, reglages, rubanX, rubanY, rubanW, rubanH) {
+        const cran = rubanW * 0.085;
+        const insetY = Math.max(3, rubanH * 0.14);
+        const centreX = rubanX + cran * 1.08;
+        const centreW = rubanW - cran * 2.16;
+        ctx.fillStyle = reglages.couleur1;
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(rubanX, rubanY, rubanW, rubanH);
+        tracerEncocheMartin(ctx, [
+          [rubanX, rubanY],
+          [rubanX + cran, rubanY + rubanH / 2],
+          [rubanX, rubanY + rubanH],
+        ]);
+        tracerEncocheMartin(ctx, [
+          [rubanX + rubanW, rubanY],
+          [rubanX + rubanW - cran, rubanY + rubanH / 2],
+          [rubanX + rubanW, rubanY + rubanH],
+        ]);
+        ctx.fill("evenodd");
+        ctx.restore();
+        ctx.fillStyle = reglages.couleurRuban;
+        ctx.fillRect(centreX, rubanY + insetY, centreW, rubanH - insetY * 2);
+        ctx.strokeStyle = reglages.couleur1;
+        ctx.lineWidth = Math.max(2, rubanH * 0.045);
+        ctx.strokeRect(centreX, rubanY + insetY, centreW, rubanH - insetY * 2);
+      }
+
+      function tracerEncocheMartin(ctx, points) {
+        const [a, b, c] = points;
+        ctx.moveTo(a[0], a[1]);
+        ctx.lineTo(b[0], b[1]);
+        ctx.lineTo(c[0], c[1]);
+        ctx.closePath();
+      }
+
+      function dessinerMarques(ctx, reglages, largeur, hauteur, rubanY, rubanH) {
+        let taille = largeur * 0.0205 * reglages.tailleMarques / 100;
+        const texteGauche = String(reglages.marqueGauche || "").toLocaleUpperCase("fr-FR");
+        const texteDroite = String(reglages.marqueDroite || "").toLocaleUpperCase("fr-FR");
+        ctx.fillStyle = couleurLisible(reglages.couleur1, reglages.couleurMarques);
+        ctx.font = `800 ${taille}px ${policeCanvas(reglages.policeMarques)}`;
+        let largeurTexte = Math.max(ctx.measureText(texteGauche).width, ctx.measureText(texteDroite).width);
+        const hauteurMax = rubanH * 0.82;
+        while (largeurTexte > hauteurMax && taille > 10) {
+          taille -= 1;
+          ctx.font = `800 ${taille}px ${policeCanvas(reglages.policeMarques)}`;
+          largeurTexte = Math.max(ctx.measureText(texteGauche).width, ctx.measureText(texteDroite).width);
+        }
+        const x = largeur * reglages.positionMarques / 100;
+        const y = hauteur * reglages.hauteurMarques / 100;
+        dessinerTexteTourne(ctx, texteGauche, x, y, reglages.angleMarques);
+        dessinerTexteTourne(ctx, texteDroite, largeur - x, y, -reglages.angleMarques);
+      }
+
+      function dessinerTexteTourne(ctx, texte, x, y, angle) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate((angle * Math.PI) / 180);
+        ctx.fillText(String(texte || "").toLocaleUpperCase("fr-FR"), 0, 0);
+        ctx.restore();
+      }
+
+      function dessinerMotif(ctx, reglages, largeur, hauteur) {
+        const type = reglages.motifType || "aucun";
+        const opacite = Math.max(0, Math.min(1, reglages.motif / 100)) * 0.42;
+        if (type === "aucun" || opacite <= 0) {
+          return;
+        }
+        ctx.save();
+        const couleurMotif = reglages.couleurMotif || reglages.couleur1;
+        ctx.strokeStyle = convertirHexEnRgba(couleurMotif, opacite);
+        ctx.fillStyle = convertirHexEnRgba(couleurMotif, opacite * 0.85);
+        ctx.lineWidth = Math.max(1, largeur * 0.0016);
+        if (type === "grille") {
+          for (let x = 0; x <= largeur; x += 22) {
+            ctx.beginPath();
+            ctx.moveTo(x, 0);
+            ctx.lineTo(x, hauteur);
+            ctx.stroke();
+          }
+          for (let y = 0; y <= hauteur; y += 18) {
+            ctx.beginPath();
+            ctx.moveTo(0, y);
+            ctx.lineTo(largeur, y);
+            ctx.stroke();
+          }
+        } else if (type === "rayures") {
+          ctx.lineWidth = Math.max(2, largeur * 0.003);
+          for (let x = -largeur; x <= largeur * 2; x += 24) {
+            ctx.beginPath();
+            ctx.moveTo(x, 0);
+            ctx.lineTo(x + hauteur * 1.2, hauteur);
+            ctx.stroke();
+          }
+        } else if (type === "points") {
+          const rayon = Math.max(2, largeur * 0.0036);
+          for (let x = 14; x <= largeur; x += 28) {
+            for (let y = 12; y <= hauteur; y += 22) {
+              ctx.beginPath();
+              ctx.arc(x, y, rayon, 0, Math.PI * 2);
+              ctx.fill();
+            }
+          }
+        } else if (type === "diagonales") {
+          ctx.strokeStyle = convertirHexEnRgba(couleurMotif, opacite * 0.72);
+          for (let x = -largeur; x <= largeur * 2; x += 18) {
+            ctx.beginPath();
+            ctx.moveTo(x, hauteur);
+            ctx.lineTo(x + hauteur, 0);
+            ctx.stroke();
+          }
+        }
+        ctx.restore();
+      }
+
+      function dessinerVignette(ctx, reglages, largeur, hauteur) {
+        if (reglages.modeVignette === "aucun") {
+          return;
+        }
+        const force = (reglages.vignette / 100) * (reglages.intensite / 100);
+        if (force <= 0) {
+          return;
+        }
+        const angle = (Number(reglages.angle) || 0) * Math.PI / 180;
+        const horizontal = Math.abs(Math.cos(angle));
+        const vertical = Math.abs(Math.sin(angle));
+        ctx.save();
+        if (horizontal > 0.01) {
+          const gradientH = ctx.createLinearGradient(0, 0, largeur, 0);
+          gradientH.addColorStop(0, convertirHexEnRgba(reglages.couleurVignette, force * horizontal));
+          gradientH.addColorStop(0.18, convertirHexEnRgba(reglages.couleurVignette, force * horizontal * 0.38));
+          gradientH.addColorStop(0.38, convertirHexEnRgba(reglages.couleurVignette, 0));
+          gradientH.addColorStop(0.62, convertirHexEnRgba(reglages.couleurVignette, 0));
+          gradientH.addColorStop(0.82, convertirHexEnRgba(reglages.couleurVignette, force * horizontal * 0.38));
+          gradientH.addColorStop(1, convertirHexEnRgba(reglages.couleurVignette, force * horizontal));
+          ctx.fillStyle = gradientH;
+          ctx.fillRect(0, 0, largeur, hauteur);
+        }
+        if (vertical > 0.01) {
+          const gradientV = ctx.createLinearGradient(0, 0, 0, hauteur);
+          gradientV.addColorStop(0, convertirHexEnRgba(reglages.couleurVignette, force * vertical));
+          gradientV.addColorStop(0.18, convertirHexEnRgba(reglages.couleurVignette, force * vertical * 0.38));
+          gradientV.addColorStop(0.38, convertirHexEnRgba(reglages.couleurVignette, 0));
+          gradientV.addColorStop(0.62, convertirHexEnRgba(reglages.couleurVignette, 0));
+          gradientV.addColorStop(0.82, convertirHexEnRgba(reglages.couleurVignette, force * vertical * 0.38));
+          gradientV.addColorStop(1, convertirHexEnRgba(reglages.couleurVignette, force * vertical));
+          ctx.fillStyle = gradientV;
+          ctx.fillRect(0, 0, largeur, hauteur);
+        }
+        ctx.restore();
+      }
+
+      function dessinerTitre(ctx, texte, x, y, largeurMax, reglages, couleurFond) {
+        const taille = 22 * reglages.tailleTitres / 100;
+        const poids = reglages.grasTitres ? 800 : 500;
+        ctx.fillStyle = couleurLisible(couleurFond, reglages.couleurTitres);
+        ctx.font = `${poids} ${taille}px ${policeCanvas(reglages.policeTitres)}`;
+        dessinerTexteMultiligne(ctx, texte, x, y, largeurMax, taille * 1.12, 2, composerLignesTitre);
+      }
+
+      function dessinerArtiste(ctx, texte, x, y, largeurMax, reglages) {
+        let taille = 32 * reglages.tailleArtiste / 100;
+        const poids = reglages.grasArtiste ? 800 : 500;
+        ctx.fillStyle = couleurLisible(reglages.couleurRuban, reglages.couleurArtiste);
+        ctx.font = `${poids} ${taille}px ${policeCanvas(reglages.policeArtiste)}`;
+        const contenu = choisirTexteArtiste(ctx, texte, largeurMax).toLocaleUpperCase("fr-FR");
+        const mesure = ctx.measureText(contenu).width;
+        if (mesure > largeurMax) {
+          taille *= Math.max(0.5, largeurMax / mesure);
+          ctx.font = `${poids} ${taille}px ${policeCanvas(reglages.policeArtiste)}`;
+        }
+        ctx.fillText(contenu, x, y);
+      }
+
+      function choisirTexteArtiste(ctx, artiste, largeurMax) {
+        const variantes = variantesArtiste(artiste);
+        return variantes.find((variante) => ctx.measureText(variante.toLocaleUpperCase("fr-FR")).width <= largeurMax) || variantes.at(-1);
+      }
+
+      function variantesArtiste(artiste) {
+        const texte = String(artiste || "").trim();
+        if (!texte) {
+          return ["Sans artiste"];
+        }
+        const variantes = [texte, abregerPrenomsArtiste(texte), nomPrincipalArtiste(texte)]
+          .map((variante) => variante.trim())
+          .filter(Boolean);
+        return [...new Set(variantes)];
+      }
+
+      function abregerPrenomsArtiste(artiste) {
+        const texte = String(artiste || "").trim();
+        const separateurs = /\s+(&|ET|AND)\s+/i;
+        if (separateurs.test(texte)) {
+          return texte
+            .split(separateurs)
+            .filter((fragment) => !/^(?:&|ET|AND)$/i.test(fragment))
+            .map((fragment) => abregerNom(fragment.trim()))
+            .join(" & ");
+        }
+        return abregerNom(texte);
+      }
+
+      function abregerNom(nom) {
+        const mots = nom.split(/\s+/).filter(Boolean);
+        if (mots.length < 2) {
+          return nom;
+        }
+        const dernierMot = mots.at(-1);
+        const initiales = mots
+          .slice(0, -1)
+          .map((mot) => mot.split(/[-']/).filter(Boolean).map((partie) => `${partie[0]}.`).join(""))
+          .join("");
+        return `${initiales} ${dernierMot}`.trim();
+      }
+
+      function nomPrincipalArtiste(artiste) {
+        const texte = String(artiste || "").trim();
+        const separateurs = /\s+(&|ET|AND)\s+/i;
+        if (separateurs.test(texte)) {
+          return texte
+            .split(separateurs)
+            .filter((fragment) => !/^(?:&|ET|AND)$/i.test(fragment))
+            .map((fragment) => dernierMotArtiste(fragment.trim()))
+            .join(" & ");
+        }
+        return dernierMotArtiste(texte);
+      }
+
+      function dernierMotArtiste(artiste) {
+        const mots = String(artiste || "").split(/\s+/).filter(Boolean);
+        return mots.at(-1) || artiste;
+      }
+
+      function composerLignesTitre(ctx, texte, largeurMax) {
+        const contenu = String(texte || "").trim();
+        if (ctx.measureText(contenu.toLocaleUpperCase("fr-FR")).width <= largeurMax) {
+          return null;
+        }
+
+        const parenthese = contenu.match(/^(.*?)\s*(\((?=[^)]*[A-Za-zÀ-ÖØ-öø-ÿ])[^)]+\))\s*$/);
+        if (parenthese && parenthese[1].trim()) {
+          return [parenthese[1].trim(), parenthese[2].trim()];
+        }
+        return null;
+      }
+
+      function dessinerTexteMultiligne(ctx, texte, x, y, largeurMax, interligne, limite, composerLignes = null) {
+        const lignesForcees = composerLignes?.(ctx, texte, largeurMax);
+        const mots = String(texte || "").toLocaleUpperCase("fr-FR").split(/\s+/).filter(Boolean);
+        const lignes = [];
+        if (lignesForcees) {
+          lignes.push(...lignesForcees.map((ligne) => ligne.toLocaleUpperCase("fr-FR")));
+        } else {
+          mots.forEach((mot) => {
+            const derniere = lignes.at(-1) || "";
+            const candidate = derniere ? `${derniere} ${mot}` : mot;
+            if (!derniere || ctx.measureText(candidate).width <= largeurMax) {
+              if (lignes.length) {
+                lignes[lignes.length - 1] = candidate;
+              } else {
+                lignes.push(candidate);
+              }
+            } else if (lignes.length < limite) {
+              lignes.push(mot);
+            } else {
+              lignes[lignes.length - 1] += ` ${mot}`;
+            }
+          });
+        }
+
+        const visibles = lignes.slice(0, limite);
+        const depart = y - ((visibles.length - 1) * interligne) / 2;
+        const policeBase = ctx.font;
+        visibles.forEach((ligne, index) => {
+          ctx.font = policeBase;
+          let taillePolice = parseFloat(ctx.font.match(/(\d+(?:\.\d+)?)px/)?.[1] || "18");
+          while (ctx.measureText(ligne).width > largeurMax && taillePolice > 9) {
+            taillePolice -= 1;
+            ctx.font = ctx.font.replace(/\d+(?:\.\d+)?px/, `${taillePolice}px`);
+          }
+          ctx.fillText(ligne, x, depart + index * interligne);
+        });
+      }
+
+      function policeCanvas(police) {
+        const polices = {
+          "dactylo-ronde": '"American Typewriter", "Courier New", monospace',
+          "dactylo-seche": '"Courier New", Courier, monospace',
+          "terminal-carre": 'Monaco, "Lucida Console", monospace',
+          "mono-moderne": 'Menlo, Monaco, Consolas, monospace',
+          "classique-livre": 'Georgia, "Times New Roman", serif',
+          "journal-ancien": '"Times New Roman", Times, serif',
+          elegante: 'Palatino, "Palatino Linotype", Georgia, serif',
+          "luxe-fin": 'Didot, "Bodoni 72", "Hoefler Text", Georgia, serif',
+          gravure: '"Hoefler Text", Baskerville, Georgia, serif',
+          compacte: '"Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif',
+          "affiche-condensee": 'Impact, "Arial Black", "Arial Narrow", sans-serif',
+          "sans-serree": '"Helvetica Neue", Helvetica, Arial, sans-serif',
+        };
+        return polices[police] || polices["dactylo-ronde"];
+      }
+
+      function convertirHexEnRgba(couleur, opacite) {
+        const { rouge, vert, bleu } = lireCouleurRgb(couleur);
+        return `rgba(${rouge}, ${vert}, ${bleu}, ${Math.max(0, Math.min(1, opacite)).toFixed(3)})`;
+      }
+
+      function lireCouleurRgb(couleur) {
+        const valeur = String(couleur || "#000000").replace("#", "");
+        return {
+          rouge: parseInt(valeur.slice(0, 2), 16) || 0,
+          vert: parseInt(valeur.slice(2, 4), 16) || 0,
+          bleu: parseInt(valeur.slice(4, 6), 16) || 0,
+        };
+      }
+
+      function luminanceCouleur(couleur) {
+        const { rouge, vert, bleu } = lireCouleurRgb(couleur);
+        const convertir = (canal) => {
+          const valeur = canal / 255;
+          return valeur <= 0.03928 ? valeur / 12.92 : ((valeur + 0.055) / 1.055) ** 2.4;
+        };
+        return 0.2126 * convertir(rouge) + 0.7152 * convertir(vert) + 0.0722 * convertir(bleu);
+      }
+
+      function ratioContraste(couleurA, couleurB) {
+        const luminanceA = luminanceCouleur(couleurA);
+        const luminanceB = luminanceCouleur(couleurB);
+        const clair = Math.max(luminanceA, luminanceB);
+        const fonce = Math.min(luminanceA, luminanceB);
+        return (clair + 0.05) / (fonce + 0.05);
+      }
+
+      function couleurLisible(couleurFond, couleurPreferee) {
+        if (ratioContraste(couleurFond, couleurPreferee) >= 4.5) {
+          return couleurPreferee;
+        }
+        return ratioContraste(couleurFond, "#fffdf8") > ratioContraste(couleurFond, "#16120d") ? "#fffdf8" : "#16120d";
+      }
+    </script>
+  </body>
+</html>

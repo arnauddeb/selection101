@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0b" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Jukebox">
+  <meta name="robots" content="noindex">
+  <title>Jukebox</title>
+  <link rel="icon" href="icons/icone.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="barre">
+    <div class="barre-haut">
+      <div class="marque">
+        <h1>Jukebox</h1>
+        <p id="sous-titre">Selection 101</p>
+      </div>
+      <div class="actions">
+        <button class="icone" id="btn-export" aria-label="Exporter pour 45'O'Juke" title="Exporter pour 45'O'Juke">
+          <svg viewBox="0 0 24 24"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 13v5.5A2.5 2.5 0 0 0 7.5 21h9a2.5 2.5 0 0 0 2.5-2.5V13"/></svg>
+        </button>
+        <button class="icone" id="btn-reglages" aria-label="Réglages" title="Réglages">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.6 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="outils">
+    <label class="recherche">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="recherche" type="search" placeholder="Artiste, titre ou numéro" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search">
+    </label>
+    <div class="segments" role="tablist">
+      <button role="tab" id="tab-jukebox" class="actif" aria-selected="true">Jukebox <span id="nb-jukebox"></span></button>
+      <button role="tab" id="tab-reserve" aria-selected="false">Réserve <span id="nb-reserve"></span></button>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <p class="etat" id="etat">Chargement…</p>
+    <div class="grille" id="grille"></div>
+  </main>
+
+  <button class="fab" id="btn-ajouter" aria-label="Ajouter un disque">
+    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+  </button>
+
+  <!-- Fiche disque (ajout / modification) -->
+  <div class="voile" id="fiche" hidden>
+    <form class="feuille" id="form-disque" autocomplete="off" novalidate>
+      <div class="poignee"></div>
+      <header class="feuille-tete">
+        <h2 id="fiche-titre">Nouveau disque</h2>
+        <button type="button" class="icone fermer" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </header>
+
+      <section class="discogs" id="zone-discogs">
+        <label class="recherche petite">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="discogs-q" type="search" placeholder="Chercher sur Discogs : artiste titre" enterkeyhint="search" autocorrect="off" spellcheck="false">
+        </label>
+        <ul class="resultats" id="discogs-resultats"></ul>
+      </section>
+
+      <div class="fiche-corps">
+        <button type="button" class="pochette-edit" id="pochette-edit" aria-label="Changer la pochette">
+          <img id="pochette-img" alt="">
+          <span class="pochette-vide" id="pochette-vide">
+            <svg viewBox="0 0 24 24"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.6l1.4-2h5l1.4 2h1.6A2.5 2.5 0 0 1 20 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg>
+            Pochette
+          </span>
+        </button>
+        <input type="file" id="pochette-fichier" accept="image/*" hidden>
+
+        <div class="champs">
+          <label class="champ"><span>Artiste</span><input id="f-artiste" required></label>
+          <label class="champ"><span>Face A <b id="sel-a"></b></span><input id="f-a" required></label>
+          <label class="champ"><span>Face B <b id="sel-b"></b></span><input id="f-b"></label>
+        </div>
+      </div>
+
+      <label class="champ"><span>Emplacement</span>
+        <select id="f-pos"></select>
+      </label>
+      <p class="aide" id="aide-pos" hidden></p>
+
+      <details class="note" id="bloc-note">
+        <summary>Note</summary>
+        <textarea id="f-note" rows="4" placeholder="Facultatif"></textarea>
+      </details>
+
+      <p class="erreur" id="fiche-erreur" hidden></p>
+
+      <footer class="feuille-pied">
+        <button type="button" class="texte danger" id="btn-supprimer">Supprimer</button>
+        <a class="texte" id="lien-discogs" target="_blank" rel="noopener" hidden>Discogs ↗</a>
+        <button type="submit" class="principal" id="btn-enregistrer">Enregistrer</button>
+      </footer>
+    </form>
+  </div>
+
+  <!-- Export 45'O'Juke -->
+  <div class="voile" id="export" hidden>
+    <div class="feuille">
+      <div class="poignee"></div>
+      <header class="feuille-tete">
+        <h2>Export 45'O'Juke</h2>
+        <button type="button" class="icone fermer" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </header>
+      <p class="lead" id="export-resume"></p>
+      <div class="alerte" id="export-trous" hidden>
+        <p id="export-trous-texte"></p>
+        <label class="bascule"><input type="checkbox" id="export-garder" checked> Garder une étiquette « – » pour chaque position libre</label>
+      </div>
+      <div class="boutons">
+        <button class="principal" id="btn-csv">Télécharger le CSV</button>
+        <button class="secondaire" id="btn-copier">Copier la liste</button>
+      </div>
+      <p class="aide">Dans 45'O'Juke : « Importer un fichier » avec le CSV, ou « Coller une liste » dans Mes disques après avoir copié. Les disques sont dans l'ordre des positions.</p>
+    </div>
+  </div>
+
+  <!-- Réglages -->
+  <div class="voile" id="reglages" hidden>
+    <form class="feuille" id="form-reglages" autocomplete="off">
+      <div class="poignee"></div>
+      <header class="feuille-tete">
+        <h2>Réglages</h2>
+        <button type="button" class="icone fermer" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </header>
+      <p class="lead">À faire une fois sur chaque appareil. Les clés restent sur cet appareil.</p>
+      <label class="champ"><span>Clé GitHub — pour enregistrer</span>
+        <input id="r-github" type="password" placeholder="github_pat_…" autocapitalize="off" autocorrect="off" spellcheck="false">
+      </label>
+      <p class="aide">Crée une clé « fine-grained » sur <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens</a> : accès au seul dépôt <b id="r-depot-nom"></b>, permission <b>Contents : Read and write</b>.</p>
+      <label class="champ"><span>Clé Discogs — pour remplir automatiquement</span>
+        <input id="r-discogs" type="password" placeholder="Jeton personnel" autocapitalize="off" autocorrect="off" spellcheck="false">
+      </label>
+      <p class="aide">Sur <a href="https://www.discogs.com/settings/developers" target="_blank" rel="noopener">discogs.com/settings/developers</a> : « Generate new token ».</p>
+      <details class="note">
+        <summary>Dépôt</summary>
+        <label class="champ"><span>Dépôt GitHub</span><input id="r-depot" placeholder="utilisateur/depot" autocapitalize="off" autocorrect="off" spellcheck="false"></label>
+        <label class="champ"><span>Branche</span><input id="r-branche" placeholder="main" autocapitalize="off" autocorrect="off" spellcheck="false"></label>
+      </details>
+      <p class="aide" id="r-statut"></p>
+      <footer class="feuille-pied">
+        <span></span>
+        <button type="submit" class="principal">Enregistrer</button>
+      </footer>
+    </form>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

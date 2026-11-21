@@ -101,7 +101,7 @@ async function pochetteCarree(blob) {
 const lsGet = (k) => { try { return localStorage.getItem(k) || ""; } catch { return ""; } };
 const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
 // Filtres mémorisés sur l'appareil.
-const FILTRES = ["tri", "inventaire", "doublon", "pochette", "discogs"];
+const FILTRES = ["emplacement", "tri", "inventaire", "doublon", "pochette", "discogs"];
 const etat = { vinyles: [], vue: "jukebox", q: "", charge: false, edition: null, f: Object.fromEntries(FILTRES.map((k) => [k, lsGet(`jb.${k}`)])) };
 
 let modeInventaire = false;
@@ -366,6 +366,14 @@ function rendre() {
   if (!etat.charge) return;
   rendreInventaire();
 
+  const emplacement = etat.f.emplacement;
+  const onglet = emplacement || etat.vue;
+  $("onglets-emplacement").hidden = emplacement === "tous";
+  for (const [id, vue] of [["tab-jukebox", "jukebox"], ["tab-reserve", "reserve"]]) {
+    $(id).classList.toggle("actif", vue === onglet);
+    $(id).setAttribute("aria-selected", String(vue === onglet));
+  }
+
   let html, vide = "";
   const filtresActifs = FILTRES.some(filtreActif);
   for (const s of document.querySelectorAll("[data-filtre]")) {
@@ -380,8 +388,9 @@ function rendre() {
     html = toutesPositions.map((p) => (occ.has(p) ? carte(occ.get(p)) : carteLibre(p))).join("");
     $("compte-filtre").textContent = "";
   } else {
-    // Doublons : cherchés dans tout (jukebox et réserve).
-    const source = etat.q || etat.f.doublon ? etat.vinyles : etat.vue === "jukebox" ? jukebox : reserve;
+    // En mode Auto, recherche et doublons couvrent toute la collection.
+    const perimetre = emplacement || (etat.q || etat.f.doublon ? "tous" : etat.vue);
+    const source = perimetre === "jukebox" ? jukebox : perimetre === "reserve" ? reserve : etat.vinyles;
     const liste = filtrer(source);
     let nombre;
     if (/^\d{1,4}$/.test(etat.q)) {
@@ -402,11 +411,8 @@ function rendre() {
 
 function changerVue(vue) {
   etat.vue = vue;
-  for (const [id, v] of [["tab-jukebox", "jukebox"], ["tab-reserve", "reserve"]]) {
-    $(id).classList.toggle("actif", v === vue);
-    $(id).setAttribute("aria-selected", String(v === vue));
-  }
-  rendre();
+  if (etat.f.emplacement) changerFiltre("emplacement", vue);
+  else rendre();
   window.scrollTo({ top: 0 });
 }
 

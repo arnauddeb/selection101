@@ -104,6 +104,16 @@
         <textarea id="f-note" rows="4" placeholder="Facultatif"></textarea>
       </details>
 
+      <div class="alerte" id="doublon" hidden>
+        <p id="doublon-texte"></p>
+        <div class="choix">
+          <button type="button" class="secondaire" id="doublon-garder">Ajouter quand même</button>
+          <button type="button" class="secondaire" id="doublon-remplacer">Remplacer l'ancien</button>
+          <button type="button" class="texte" id="doublon-annuler">Annuler</button>
+        </div>
+      </div>
+      <p class="aide" id="doublon-choix" hidden></p>
+
       <p class="erreur" id="fiche-erreur" hidden></p>
 
       <footer class="feuille-pied">

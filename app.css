@@ -285,6 +285,9 @@ textarea { height: auto; padding: 10px 12px; resize: vertical; line-height: 1.45
 
 .alerte { padding: 12px 14px; border-radius: 12px; background: color-mix(in srgb, var(--accent) 10%, var(--carte)); font-size: 14px; }
 .alerte p { margin: 0 0 8px; }
+.choix { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.choix .secondaire { height: 40px; padding: 0 16px; font-size: 15px; background: var(--carte); }
+@media (max-width: 700px) { #btn-export { display: none; } }
 .bascule { display: flex; gap: 10px; align-items: flex-start; color: var(--ink); }
 .bascule input { width: 20px; height: 20px; margin: 0; accent-color: var(--accent); flex: none; }
 .case-pochette { align-items: center; min-height: 44px; padding: 0 14px; border-radius: 11px; background: var(--carte); box-shadow: inset 0 0 0 1px var(--ligne); font-size: 16px; cursor: pointer; }

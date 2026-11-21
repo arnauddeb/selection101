@@ -701,6 +701,16 @@
    "avecPochette": true
   },
   {
+   "id": "cf218382-9fe6-4bcf-9810-636ed85b9c3c",
+   "artiste": "ABBA",
+   "a": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+   "b": "The King Has Lost His Crown",
+   "pos": null,
+   "pochette": "covers/cf218382-9fe6-4bcf-9810-636ed85b9c3c-mwqrbl9h.jpg",
+   "avecPochette": true,
+   "discogs": 677126
+  },
+  {
    "id": "b354dd8a-7daf-47cb-a3a5-42133f4ba4a3",
    "artiste": "Barry White",
    "a": "You're the First the Last, my Everything",
@@ -805,20 +815,23 @@
    "pochette": "covers/5114d14c-eb57-45bf-8121-7f80feda8770.jpg"
   },
   {
+   "id": "0b64a7b1-d033-4de0-8311-cd3359e5dff3",
+   "artiste": "France Gall",
+   "a": "Débranche",
+   "b": "J'ai Besoin De Vous",
+   "pos": null,
+   "pochette": "covers/0b64a7b1-d033-4de0-8311-cd3359e5dff3-mwqrcy8x.jpg",
+   "avecPochette": true,
+   "discogs": 1068562
+  },
+  {
    "id": "37fb95aa-b7b7-4fe5-9963-e1bbfef516e8",
    "artiste": "France Gall",
    "a": "Tout Pour La Musique",
    "b": "Résiste",
    "pos": null,
-   "pochette": "covers/37fb95aa-b7b7-4fe5-9963-e1bbfef516e8.jpg"
-  },
-  {
-   "id": "3e8c3d75-63da-4f36-a972-0814609f7e92",
-   "artiste": "France Gall",
-   "a": "Débranche",
-   "b": "J'ai Besoin De Vous",
-   "pos": null,
-   "pochette": "covers/3e8c3d75-63da-4f36-a972-0814609f7e92.jpg"
+   "pochette": "covers/37fb95aa-b7b7-4fe5-9963-e1bbfef516e8.jpg",
+   "avecPochette": true
   },
   {
    "id": "e72d93f4-5877-4bd0-ac6d-64069768b936",
@@ -826,7 +839,8 @@
    "a": "Rock And Roll (1)",
    "b": "Rock And Roll (2)",
    "pos": null,
-   "pochette": "covers/e72d93f4-5877-4bd0-ac6d-64069768b936.jpg"
+   "pochette": "covers/e72d93f4-5877-4bd0-ac6d-64069768b936.jpg",
+   "avecPochette": true
   },
   {
    "id": "dab6ecc2-ed8d-472a-bdb8-57c5342c9fd9",
@@ -835,6 +849,16 @@
    "b": "Être Le Premier",
    "pos": null,
    "pochette": "covers/dab6ecc2-ed8d-472a-bdb8-57c5342c9fd9.jpg"
+  },
+  {
+   "id": "ac79a8ff-30b8-4b2f-940e-e2b60d2b2266",
+   "artiste": "Jean-Jacques Goldman / Michael Jones",
+   "a": "Je Te Donne",
+   "b": "Confidentiel",
+   "pos": null,
+   "pochette": "covers/ac79a8ff-30b8-4b2f-940e-e2b60d2b2266-mwqrccdf.jpg",
+   "avecPochette": true,
+   "discogs": 987861
   },
   {
    "id": "4f85442c-cee7-4b7e-8b37-bb63f0065ab6",
@@ -914,7 +938,18 @@
    "a": "Les Corons",
    "b": "Nos Jours Heureux",
    "pos": null,
-   "pochette": "covers/d25a011b-d848-4d1d-8580-ee274cf7cc69.jpg"
+   "pochette": "covers/d25a011b-d848-4d1d-8580-ee274cf7cc69.jpg",
+   "avecPochette": true
+  },
+  {
+   "id": "918b81f8-0765-4695-a8c1-72f7682d0dc7",
+   "artiste": "Queen",
+   "a": "We Are The Champions",
+   "b": "We Will Rock You",
+   "pos": null,
+   "pochette": "covers/918b81f8-0765-4695-a8c1-72f7682d0dc7-mwqr9688.jpg",
+   "avecPochette": true,
+   "discogs": 4159617
   },
   {
    "id": "42312dbc-7f18-4a78-a393-38a9478a317c",
@@ -938,7 +973,8 @@
    "a": "Rock And Rool Music",
    "b": "Donny's Blues",
    "pos": null,
-   "pochette": "covers/8c63b252-c805-44cc-ac30-7a9085c4c5a0.jpg"
+   "pochette": "covers/8c63b252-c805-44cc-ac30-7a9085c4c5a0.jpg",
+   "avecPochette": true
   },
   {
    "id": "3ac466de-d7ea-4574-8a7f-843c19e32f9d",
@@ -954,7 +990,8 @@
    "a": "Venus",
    "b": "Hot Sand",
    "pos": null,
-   "pochette": "covers/25cfa028-522f-4959-ac7d-7b2df7265bf5.jpg"
+   "pochette": "covers/25cfa028-522f-4959-ac7d-7b2df7265bf5.jpg",
+   "avecPochette": true
   },
   {
    "id": "fed611ef-4280-4675-bdb0-bdff9218dabc",

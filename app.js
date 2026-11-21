@@ -182,7 +182,40 @@ document.addEventListener("keydown", (e) => {
 });
 
 // ——— Fiche disque ———
-let fiche = null; // { id, nouveau, pochette, blob, discogs }
+let fiche = null; // { id, nouveau, pochette, blob, discogs, choixDoublon, remplacer }
+
+// ——— Doublons ———
+function doublonActuel() {
+  const artiste = norm($("f-artiste").value), a = norm($("f-a").value);
+  if (!artiste || !a) return null;
+  return etat.vinyles.find((v) => v.id !== fiche.id && v.id !== fiche.remplacer && norm(v.artiste) === artiste && norm(v.a) === a) || null;
+}
+function afficherDoublon(d) {
+  $("doublon-texte").textContent = `Tu as déjà ce disque : ${d.artiste} – ${d.a}, ${d.pos ? "position " + d.pos : "en réserve"}.`;
+  $("doublon").dataset.id = d.id;
+  $("doublon").hidden = false;
+  $("doublon-choix").hidden = true;
+}
+$("doublon-garder").addEventListener("click", () => {
+  fiche.choixDoublon = $("doublon").dataset.id;
+  $("doublon").hidden = true;
+  $("doublon-choix").textContent = "Il sera ajouté en double.";
+  $("doublon-choix").hidden = false;
+});
+$("doublon-remplacer").addEventListener("click", () => {
+  fiche.remplacer = $("doublon").dataset.id;
+  $("doublon").hidden = true;
+  $("doublon-choix").textContent = "L'ancien sera supprimé à l'enregistrement.";
+  $("doublon-choix").hidden = false;
+});
+$("doublon-annuler").addEventListener("click", () => fermer("fiche"));
+for (const id of ["f-artiste", "f-a"]) {
+  $(id).addEventListener("input", () => {
+    if (!fiche) return;
+    fiche.choixDoublon = fiche.remplacer = null;
+    $("doublon").hidden = $("doublon-choix").hidden = true;
+  });
+}
 
 function remplirPositions(posActuelle, idActuel) {
   const occ = parPosition();
@@ -243,6 +276,7 @@ function ouvrirFiche(v, posLibre) {
   $("discogs-q").value = "";
   $("discogs-resultats").innerHTML = "";
   $("fiche-erreur").hidden = true;
+  $("doublon").hidden = $("doublon-choix").hidden = true;
   $("btn-enregistrer").disabled = false;
   $("btn-enregistrer").textContent = "Enregistrer";
   ouvrir("fiche");
@@ -300,7 +334,12 @@ async function chercherDiscogs() {
     // 45 tours d'abord (éditions françaises en tête), puis les autres formats.
     const est45 = (x) => /7"|45 RPM/.test((x.format || []).join(" "));
     const parPays = (liste) => liste.map((x, i) => ({ x, i })).sort((a, b) => (b.x.country === "France") - (a.x.country === "France") || a.i - b.i).map((o) => o.x);
-    const res = r.results || [];
+    // Discogs liste chaque pressage : on n'en garde qu'un par disque et par pays.
+    const vus = new Set();
+    const res = (r.results || []).filter((x) => {
+      const cle = `${x.master_id || norm(x.title)}|${x.country || ""}|${est45(x)}`;
+      return !vus.has(cle) && vus.add(cle);
+    });
     const quarante5 = parPays(res.filter(est45)).slice(0, 15);
     const autres = parPays(res.filter((x) => !est45(x))).slice(0, 8);
     if (!res.length) { ul.innerHTML = `<li class="info">Rien trouvé. Essaie avec moins de mots.</li>`; return; }
@@ -343,8 +382,9 @@ $("discogs-resultats").addEventListener("click", async (e) => {
     }
     ul.innerHTML = "";
     $("zone-discogs").hidden = true;
-    const doublon = etat.vinyles.find((v) => norm(v.artiste) === norm(artiste) && norm(v.a) === norm($("f-a").value));
-    if (doublon) erreurFiche(`Tu l'as déjà : ${doublon.pos ? "position " + doublon.pos : "en réserve"}.`);
+    fiche.choixDoublon = fiche.remplacer = null;
+    const doublon = doublonActuel();
+    if (doublon) afficherDoublon(doublon);
   } catch {
     ul.innerHTML = `<li class="info">Ce disque n'a pas pu être importé.</li>`;
   }
@@ -364,12 +404,15 @@ $("form-disque").addEventListener("submit", async (e) => {
   const artiste = $("f-artiste").value.trim();
   const a = $("f-a").value.trim();
   if (!artiste || !a) return erreurFiche("Il faut au moins l'artiste et la face A.");
+  const doublon = doublonActuel();
+  if (doublon && fiche.choixDoublon !== doublon.id) return afficherDoublon(doublon);
   const btn = $("btn-enregistrer");
   btn.disabled = true;
   btn.textContent = "Enregistrement…";
   $("fiche-erreur").hidden = true;
   try {
     const ancien = etat.vinyles.find((v) => v.id === fiche.id);
+    const remplace = fiche.remplacer && etat.vinyles.find((v) => v.id === fiche.remplacer);
     let pochette = fiche.pochette;
     if (fiche.blob) {
       const nom = `${fiche.id}-${Date.now().toString(36)}.jpg`;
@@ -382,9 +425,10 @@ $("form-disque").addEventListener("submit", async (e) => {
     if (note) disque.note = note;
     if ($("f-avec-pochette").checked) disque.avecPochette = true;
     if (fiche.discogs) disque.discogs = fiche.discogs;
-    const liste = etat.vinyles.map((v) => (pos && v.id !== disque.id && v.pos === pos ? { ...v, pos: null } : v)).filter((v) => v.id !== disque.id);
+    const liste = etat.vinyles.map((v) => (pos && v.id !== disque.id && v.pos === pos ? { ...v, pos: null } : v)).filter((v) => v.id !== disque.id && v.id !== remplace?.id);
     await enregistrerCollection([...liste, disque]);
     if (ancien?.pochette !== pochette) retirerPochette(ancien?.pochette);
+    if (remplace?.pochette && remplace.pochette !== pochette) retirerPochette(remplace.pochette);
     fermer("fiche");
     rendre();
     toast(pos ? `Enregistré en ${pos}` : "Enregistré en réserve");

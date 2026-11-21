@@ -31,7 +31,8 @@
    "a": "My Girl",
    "b": "Theme From My Girl",
    "pos": "03",
-   "pochette": "covers/3036aaae-3edd-423b-8d54-c5904c3e0567.jpg"
+   "pochette": "covers/3036aaae-3edd-423b-8d54-c5904c3e0567.jpg",
+   "avecPochette": true
   },
   {
    "id": "c7d64b99-848f-4422-84f2-6604d730ca8d",
@@ -39,7 +40,8 @@
    "a": "Ring My Bell",
    "b": "If I Could Feel That Old Feeling Again",
    "pos": "04",
-   "pochette": "covers/c7d64b99-848f-4422-84f2-6604d730ca8d.jpg"
+   "pochette": "covers/c7d64b99-848f-4422-84f2-6604d730ca8d.jpg",
+   "avecPochette": true
   },
   {
    "id": "ee30c0a2-95c6-427a-8a0d-0fd5c1ea620b",
@@ -47,7 +49,8 @@
    "a": "L'Amérique",
    "b": "Cecilia",
    "pos": "05",
-   "pochette": "covers/ee30c0a2-95c6-427a-8a0d-0fd5c1ea620b.jpg"
+   "pochette": "covers/ee30c0a2-95c6-427a-8a0d-0fd5c1ea620b.jpg",
+   "avecPochette": true
   },
   {
    "id": "be5bdc25-5ee7-4ef8-a4c0-5a3b08b73ec5",
@@ -55,7 +58,8 @@
    "a": "You Should Be Dancing",
    "b": "Subway",
    "pos": "06",
-   "pochette": "covers/be5bdc25-5ee7-4ef8-a4c0-5a3b08b73ec5.jpg"
+   "pochette": "covers/be5bdc25-5ee7-4ef8-a4c0-5a3b08b73ec5.jpg",
+   "avecPochette": true
   },
   {
    "id": "50024049-135a-4537-9ba9-2f0d3919dcfb",
@@ -103,7 +107,8 @@
    "a": "Fall In Love With Me",
    "b": "Lady Sun",
    "pos": "12",
-   "pochette": "covers/fcaa6bc2-b52b-4cb2-b3bc-d46281a726b5.jpg"
+   "pochette": "covers/fcaa6bc2-b52b-4cb2-b3bc-d46281a726b5.jpg",
+   "avecPochette": true
   },
   {
    "id": "c94d84ed-db26-434c-805f-afc51cc81028",
@@ -111,7 +116,8 @@
    "a": "Ça Plane Pour Moi",
    "b": "Pogo Pogo",
    "pos": "13",
-   "pochette": "covers/c94d84ed-db26-434c-805f-afc51cc81028.jpg"
+   "pochette": "covers/c94d84ed-db26-434c-805f-afc51cc81028.jpg",
+   "avecPochette": true
   },
   {
    "id": "92e1b7d1-240f-4c14-8322-2f4284e4854b",
@@ -119,7 +125,8 @@
    "a": "Un, Deux, Trois",
    "b": "Je Commence Demain",
    "pos": "14",
-   "pochette": "covers/92e1b7d1-240f-4c14-8322-2f4284e4854b.jpg"
+   "pochette": "covers/92e1b7d1-240f-4c14-8322-2f4284e4854b.jpg",
+   "avecPochette": true
   },
   {
    "id": "74a916d8-8eaa-45cf-9d27-6b8d06d0b083",
@@ -143,7 +150,8 @@
    "a": "Tomorrow Tomorrow",
    "b": "Sun In My Morning",
    "pos": "17",
-   "pochette": "covers/87a255a8-fd7f-4bad-abf4-dca85a570fdd.jpg"
+   "pochette": "covers/87a255a8-fd7f-4bad-abf4-dca85a570fdd.jpg",
+   "avecPochette": true
   },
   {
    "id": "8ff50b69-07a2-4724-9098-5e392af32849",
@@ -151,7 +159,8 @@
    "a": "The Talk Of All The U.S.A.",
    "b": "On This Land",
    "pos": "18",
-   "pochette": "covers/8ff50b69-07a2-4724-9098-5e392af32849.jpg"
+   "pochette": "covers/8ff50b69-07a2-4724-9098-5e392af32849.jpg",
+   "avecPochette": true
   },
   {
    "id": "7e43b25e-57b1-4850-8281-c7aaba8192ff",
@@ -175,7 +184,8 @@
    "a": "September",
    "b": "Can't Hide Love",
    "pos": "21",
-   "pochette": "covers/145ef4b9-18ce-4a3f-9752-3246d0ef9efb.jpg"
+   "pochette": "covers/145ef4b9-18ce-4a3f-9752-3246d0ef9efb.jpg",
+   "avecPochette": true
   },
   {
    "id": "8dada09e-2443-4ffb-a820-84055f7a15fa",
@@ -183,7 +193,8 @@
    "a": "Boogie Wonderland",
    "b": "Boogie Wonderland (Instru)",
    "pos": "22",
-   "pochette": "covers/8dada09e-2443-4ffb-a820-84055f7a15fa.jpg"
+   "pochette": "covers/8dada09e-2443-4ffb-a820-84055f7a15fa.jpg",
+   "avecPochette": true
   },
   {
    "id": "d7fd4026-62ce-43b7-8536-074c14838049",
@@ -223,7 +234,8 @@
    "a": "Wake Me Up Before You Go-Go",
    "b": "Wake Me Up Before You Go-Go (Instru)",
    "pos": "27",
-   "pochette": "covers/85770c0d-fd4e-4e84-b3e3-701c5a5b2707.jpg"
+   "pochette": "covers/85770c0d-fd4e-4e84-b3e3-701c5a5b2707.jpg",
+   "avecPochette": true
   },
   {
    "id": "68a97dc9-1560-4a89-8df3-b33dc7786179",
@@ -231,7 +243,8 @@
    "a": "Money, Money, Money",
    "b": "Crazy World",
    "pos": "28",
-   "pochette": "covers/68a97dc9-1560-4a89-8df3-b33dc7786179.jpg"
+   "pochette": "covers/68a97dc9-1560-4a89-8df3-b33dc7786179.jpg",
+   "avecPochette": true
   },
   {
    "id": "e7ef3264-8261-46a3-9b59-6ccff716bcd4",
@@ -239,7 +252,8 @@
    "a": "Felicita",
    "b": "Arrivedecci De Bahi",
    "pos": "29",
-   "pochette": "covers/e7ef3264-8261-46a3-9b59-6ccff716bcd4.jpg"
+   "pochette": "covers/e7ef3264-8261-46a3-9b59-6ccff716bcd4.jpg",
+   "avecPochette": true
   },
   {
    "id": "d3532070-a49e-498f-9050-18dace5fb790",
@@ -255,15 +269,8 @@
    "a": "Bubble Star (1)",
    "b": "Bubble Star (2)",
    "pos": "31",
-   "pochette": "covers/ffef3a85-63cb-4b40-9ac1-047e3b4e79ca.jpg"
-  },
-  {
-   "id": "e72d93f4-5877-4bd0-ac6d-64069768b936",
-   "artiste": "Gary Glitter",
-   "a": "Rock And Roll (1)",
-   "b": "Rock And Roll (2)",
-   "pos": "32",
-   "pochette": "covers/e72d93f4-5877-4bd0-ac6d-64069768b936.jpg"
+   "pochette": "covers/ffef3a85-63cb-4b40-9ac1-047e3b4e79ca.jpg",
+   "avecPochette": true
   },
   {
    "id": "ccd8b75c-72c9-4a30-b346-aae9b16e6fdc",
@@ -271,7 +278,8 @@
    "a": "Let's Dance",
    "b": "Cat People (Putting Out Fire)",
    "pos": "33",
-   "pochette": "covers/ccd8b75c-72c9-4a30-b346-aae9b16e6fdc.jpg"
+   "pochette": "covers/ccd8b75c-72c9-4a30-b346-aae9b16e6fdc.jpg",
+   "avecPochette": true
   },
   {
    "id": "8b25a53e-efc6-4a84-845d-451a7a851b78",
@@ -279,7 +287,8 @@
    "a": "San Francisco",
    "b": "What's The Difference",
    "pos": "34",
-   "pochette": "covers/8b25a53e-efc6-4a84-845d-451a7a851b78.jpg"
+   "pochette": "covers/8b25a53e-efc6-4a84-845d-451a7a851b78.jpg",
+   "avecPochette": true
   },
   {
    "id": "507c9e82-6401-4e00-a49f-e1059ec503ad",
@@ -288,7 +297,8 @@
    "b": "Génération 60",
    "pos": "35",
    "pochette": "covers/507c9e82-6401-4e00-a49f-e1059ec503ad.jpg",
-   "note": "Salut Les Copains 0:02 \nSi J'Avais Un Marteau 0:33 \nLeçon De Twist 0:23 \nLet's Twist Again 0:21 \nYa Ya Twist 0:17 \nDaniela 0:21 \nDonne-Moi Ma Chance 0:25 \nPremière Surprise Partie 0:13 \nDancin' Party 0:03 \nBelles, Belles, Belles 0:08 \nC'est Ma Fête 0:13 \nTu Parles Trop 0:27 \nJ'ai Un Secret À Te Dire 0:31 \nSunny 0:33"
+   "note": "Salut Les Copains 0:02 \nSi J'Avais Un Marteau 0:33 \nLeçon De Twist 0:23 \nLet's Twist Again 0:21 \nYa Ya Twist 0:17 \nDaniela 0:21 \nDonne-Moi Ma Chance 0:25 \nPremière Surprise Partie 0:13 \nDancin' Party 0:03 \nBelles, Belles, Belles 0:08 \nC'est Ma Fête 0:13 \nTu Parles Trop 0:27 \nJ'ai Un Secret À Te Dire 0:31 \nSunny 0:33",
+   "avecPochette": true
   },
   {
    "id": "e85e4570-c73e-485f-840a-226f3078c733",
@@ -296,7 +306,8 @@
    "a": "Hot Stuff",
    "b": "Journey To The Centre Of Your Heart",
    "pos": "36",
-   "pochette": "covers/e85e4570-c73e-485f-840a-226f3078c733.jpg"
+   "pochette": "covers/e85e4570-c73e-485f-840a-226f3078c733.jpg",
+   "avecPochette": true
   },
   {
    "id": "d42821d8-009c-46ca-8dcc-3bef5455b1b4",
@@ -304,7 +315,8 @@
    "a": "Il Est Libre Max",
    "b": "Boogie Boum",
    "pos": "37",
-   "pochette": "covers/d42821d8-009c-46ca-8dcc-3bef5455b1b4.jpg"
+   "pochette": "covers/d42821d8-009c-46ca-8dcc-3bef5455b1b4.jpg",
+   "avecPochette": true
   },
   {
    "id": "5dc8bc52-ca8b-498c-bfaa-9119079e17d8",
@@ -312,7 +324,8 @@
    "a": "Fire",
    "b": "Just Like A Rolling Stone",
    "pos": "38",
-   "pochette": "covers/5dc8bc52-ca8b-498c-bfaa-9119079e17d8.jpg"
+   "pochette": "covers/5dc8bc52-ca8b-498c-bfaa-9119079e17d8.jpg",
+   "avecPochette": true
   },
   {
    "id": "d757cf08-f347-48d4-ac3a-8f5dbf3d82bd",
@@ -320,7 +333,8 @@
    "a": "Voyage Voyage",
    "b": "Destin Fragile (Instru)",
    "pos": "39",
-   "pochette": "covers/d757cf08-f347-48d4-ac3a-8f5dbf3d82bd.jpg"
+   "pochette": "covers/d757cf08-f347-48d4-ac3a-8f5dbf3d82bd.jpg",
+   "avecPochette": true
   },
   {
    "id": "d8944b8b-c5d6-4ed3-bd96-705b0dee1501",
@@ -328,7 +342,8 @@
    "a": "Joe Le Taxi",
    "b": "Varvara Pavlovna",
    "pos": "40",
-   "pochette": "covers/d8944b8b-c5d6-4ed3-bd96-705b0dee1501.jpg"
+   "pochette": "covers/d8944b8b-c5d6-4ed3-bd96-705b0dee1501.jpg",
+   "avecPochette": true
   },
   {
    "id": "20d58400-f002-44c6-94aa-7449de89eed8",
@@ -336,7 +351,8 @@
    "a": "Sarà Perché Ti Amo",
    "b": "Bello L'Amore",
    "pos": "41",
-   "pochette": "covers/20d58400-f002-44c6-94aa-7449de89eed8.jpg"
+   "pochette": "covers/20d58400-f002-44c6-94aa-7449de89eed8.jpg",
+   "avecPochette": true
   },
   {
    "id": "ef667476-d38a-40ac-adda-0e89c43c7a30",
@@ -344,7 +360,8 @@
    "a": "Stars On 45",
    "b": "Stars On 45",
    "pos": "42",
-   "pochette": "covers/ef667476-d38a-40ac-adda-0e89c43c7a30.jpg"
+   "pochette": "covers/ef667476-d38a-40ac-adda-0e89c43c7a30.jpg",
+   "avecPochette": true
   },
   {
    "id": "82473f82-684f-47fb-b71b-87b19bf76bec",
@@ -352,7 +369,8 @@
    "a": "Hits Des Années 60",
    "b": "Hits Des Années 60",
    "pos": "43",
-   "pochette": "covers/82473f82-684f-47fb-b71b-87b19bf76bec.jpg"
+   "pochette": "covers/82473f82-684f-47fb-b71b-87b19bf76bec.jpg",
+   "avecPochette": true
   },
   {
    "id": "c343118f-6c02-45c8-aa31-b407f2fc4035",
@@ -360,7 +378,8 @@
    "a": "Rockollection (1)",
    "b": "Rockollection (2)",
    "pos": "44",
-   "pochette": "covers/c343118f-6c02-45c8-aa31-b407f2fc4035.jpg"
+   "pochette": "covers/c343118f-6c02-45c8-aa31-b407f2fc4035.jpg",
+   "avecPochette": true
   },
   {
    "id": "d6c64a29-dbc6-407d-9307-00c74968e15c",
@@ -368,7 +387,8 @@
    "a": "Lady Lay",
    "b": "Un Jour Pas Comme Les Autres",
    "pos": "45",
-   "pochette": "covers/d6c64a29-dbc6-407d-9307-00c74968e15c.jpg"
+   "pochette": "covers/d6c64a29-dbc6-407d-9307-00c74968e15c.jpg",
+   "avecPochette": true
   },
   {
    "id": "621c33b1-fe45-4a28-b506-5c90949ae82e",
@@ -376,7 +396,8 @@
    "a": "Rivers Of Babylon",
    "b": "Brown Girl In The Ring",
    "pos": "46",
-   "pochette": "covers/621c33b1-fe45-4a28-b506-5c90949ae82e.jpg"
+   "pochette": "covers/621c33b1-fe45-4a28-b506-5c90949ae82e.jpg",
+   "avecPochette": true
   },
   {
    "id": "107ae17d-6a49-4747-9564-2ca59c30bd52",
@@ -384,7 +405,8 @@
    "a": "Sunny",
    "b": "New York City",
    "pos": "47",
-   "pochette": "covers/107ae17d-6a49-4747-9564-2ca59c30bd52.jpg"
+   "pochette": "covers/107ae17d-6a49-4747-9564-2ca59c30bd52.jpg",
+   "avecPochette": true
   },
   {
    "id": "8b23ad06-c1af-45fb-b7ad-d20acb206dd5",
@@ -392,7 +414,8 @@
    "a": "Daddy Cool",
    "b": "No Women No Cry",
    "pos": "48",
-   "pochette": "covers/8b23ad06-c1af-45fb-b7ad-d20acb206dd5.jpg"
+   "pochette": "covers/8b23ad06-c1af-45fb-b7ad-d20acb206dd5.jpg",
+   "avecPochette": true
   },
   {
    "id": "af029e5e-cc87-4e14-90d6-4963e31bfb2d",
@@ -400,7 +423,8 @@
    "a": "Dancing Queen (1)",
    "b": "Dancing Queen (2)",
    "pos": "49",
-   "pochette": "covers/af029e5e-cc87-4e14-90d6-4963e31bfb2d.jpg"
+   "pochette": "covers/af029e5e-cc87-4e14-90d6-4963e31bfb2d.jpg",
+   "avecPochette": true
   },
   {
    "id": "77695495-ebbc-4b11-bf5c-138f8b6d6636",
@@ -408,7 +432,8 @@
    "a": "Chinese Kung Fu",
    "b": "Rythm Kung Fu",
    "pos": "50",
-   "pochette": "covers/77695495-ebbc-4b11-bf5c-138f8b6d6636.jpg"
+   "pochette": "covers/77695495-ebbc-4b11-bf5c-138f8b6d6636.jpg",
+   "avecPochette": true
   },
   {
    "id": "0118cc28-3945-4e8b-8462-c9dfaf010528",
@@ -416,7 +441,8 @@
    "a": "Waterloo",
    "b": "Watch Out",
    "pos": "51",
-   "pochette": "covers/0118cc28-3945-4e8b-8462-c9dfaf010528.jpg"
+   "pochette": "covers/0118cc28-3945-4e8b-8462-c9dfaf010528.jpg",
+   "avecPochette": true
   },
   {
    "id": "4d3f1be3-da1f-410b-9d95-a559ebc45586",
@@ -424,7 +450,8 @@
    "a": "What'd I Say (1)",
    "b": "What'd I Say (2)",
    "pos": "52",
-   "pochette": "covers/4d3f1be3-da1f-410b-9d95-a559ebc45586.jpg"
+   "pochette": "covers/4d3f1be3-da1f-410b-9d95-a559ebc45586.jpg",
+   "avecPochette": true
   },
   {
    "id": "cba09af8-fbbb-4bef-bf90-04fb10d41834",
@@ -432,7 +459,8 @@
    "a": "I Can Help",
    "b": "Ways Of A Woman In Love",
    "pos": "53",
-   "pochette": "covers/cba09af8-fbbb-4bef-bf90-04fb10d41834.jpg"
+   "pochette": "covers/cba09af8-fbbb-4bef-bf90-04fb10d41834.jpg",
+   "avecPochette": true
   },
   {
    "id": "d7a43a14-7059-4611-8c15-85a57f679cc1",
@@ -440,7 +468,8 @@
    "a": "Be-Bop-A-Lula",
    "b": "Baby Blue",
    "pos": "54",
-   "pochette": "covers/d7a43a14-7059-4611-8c15-85a57f679cc1.jpg"
+   "pochette": "covers/d7a43a14-7059-4611-8c15-85a57f679cc1.jpg",
+   "avecPochette": true
   },
   {
    "id": "56676d45-684a-4e39-86ad-abc473c4ab84",
@@ -448,7 +477,8 @@
    "a": "Nuit De Folie",
    "b": "Tout Pour La Danse",
    "pos": "55",
-   "pochette": "covers/56676d45-684a-4e39-86ad-abc473c4ab84.jpg"
+   "pochette": "covers/56676d45-684a-4e39-86ad-abc473c4ab84.jpg",
+   "avecPochette": true
   },
   {
    "id": "eaa80021-0b42-4c84-a2ae-0ab9ddcdab5d",
@@ -496,7 +526,8 @@
    "a": "Too Much Heaven",
    "b": "Rest Your Love On Me",
    "pos": "61",
-   "pochette": "covers/ba76ae10-b322-41ed-a102-2f17309a1c8a.jpg"
+   "pochette": "covers/ba76ae10-b322-41ed-a102-2f17309a1c8a.jpg",
+   "avecPochette": true
   },
   {
    "id": "80100cef-6088-472b-a79e-0836f0d34f7b",
@@ -520,7 +551,8 @@
    "a": "Femme Liberée",
    "b": "Sexy Rock",
    "pos": "64",
-   "pochette": "covers/241b33b3-8f63-475b-977f-1baf14fe47a7.jpg"
+   "pochette": "covers/241b33b3-8f63-475b-977f-1baf14fe47a7.jpg",
+   "avecPochette": true
   },
   {
    "id": "72bf444a-c441-44a2-9926-1d97d04763ce",
@@ -528,15 +560,8 @@
    "a": "Apache",
    "b": "Guitar Tango",
    "pos": "65",
-   "pochette": "covers/72bf444a-c441-44a2-9926-1d97d04763ce.jpg"
-  },
-  {
-   "id": "8c63b252-c805-44cc-ac30-7a9085c4c5a0",
-   "artiste": "The Frost",
-   "a": "Rock And Rool Music",
-   "b": "Donny's Blues",
-   "pos": "66",
-   "pochette": "covers/8c63b252-c805-44cc-ac30-7a9085c4c5a0.jpg"
+   "pochette": "covers/72bf444a-c441-44a2-9926-1d97d04763ce.jpg",
+   "avecPochette": true
   },
   {
    "id": "3fb6f5ec-b53b-44b5-80a4-b1be798cfba1",
@@ -544,7 +569,8 @@
    "a": "Venus",
    "b": "White Train",
    "pos": "67",
-   "pochette": "covers/3fb6f5ec-b53b-44b5-80a4-b1be798cfba1.jpg"
+   "pochette": "covers/3fb6f5ec-b53b-44b5-80a4-b1be798cfba1.jpg",
+   "avecPochette": true
   },
   {
    "id": "49f4474a-cb0a-4dc7-88af-9ebb543de60a",
@@ -552,7 +578,8 @@
    "a": "I Love Rock'n Roll",
    "b": "Love Is Pain",
    "pos": "68",
-   "pochette": "covers/49f4474a-cb0a-4dc7-88af-9ebb543de60a.jpg"
+   "pochette": "covers/49f4474a-cb0a-4dc7-88af-9ebb543de60a.jpg",
+   "avecPochette": true
   },
   {
    "id": "fdacbd3a-8ced-4f79-a8a8-7453d1442998",
@@ -560,7 +587,8 @@
    "a": "The Locomotion",
    "b": "He Is The Boy",
    "pos": "69",
-   "pochette": "covers/fdacbd3a-8ced-4f79-a8a8-7453d1442998.jpg"
+   "pochette": "covers/fdacbd3a-8ced-4f79-a8a8-7453d1442998.jpg",
+   "avecPochette": true
   },
   {
    "id": "cc8a36a4-4d82-4508-aff7-2bc2c0788cd5",
@@ -568,7 +596,8 @@
    "a": "Un Autre Monde",
    "b": "Le Garçon D'ascenseur",
    "pos": "70",
-   "pochette": "covers/cc8a36a4-4d82-4508-aff7-2bc2c0788cd5.jpg"
+   "pochette": "covers/cc8a36a4-4d82-4508-aff7-2bc2c0788cd5.jpg",
+   "avecPochette": true
   },
   {
    "id": "d1992b5b-c8b5-416d-ade1-1393d3af3002",
@@ -576,7 +605,8 @@
    "a": "Le Le Banana Split",
    "b": "Teenager",
    "pos": "71",
-   "pochette": "covers/d1992b5b-c8b5-416d-ade1-1393d3af3002.jpg"
+   "pochette": "covers/d1992b5b-c8b5-416d-ade1-1393d3af3002.jpg",
+   "avecPochette": true
   },
   {
    "id": "1364b4c3-b33b-4c10-89dd-0b6257bcf6b8",
@@ -591,7 +621,8 @@
    "a": "Le Jerk",
    "b": "Goodbye Mary",
    "pos": "73",
-   "pochette": "covers/28515269-d349-4db8-b37b-5671c20e4c54.jpg"
+   "pochette": "covers/28515269-d349-4db8-b37b-5671c20e4c54.jpg",
+   "avecPochette": true
   },
   {
    "id": "2cbec7b3-d1a3-4513-b584-11fc3eb42583",
@@ -599,7 +630,8 @@
    "a": "Funkytown",
    "b": "All Night Dancing",
    "pos": "74",
-   "pochette": "covers/2cbec7b3-d1a3-4513-b584-11fc3eb42583.jpg"
+   "pochette": "covers/2cbec7b3-d1a3-4513-b584-11fc3eb42583.jpg",
+   "avecPochette": true
   },
   {
    "id": "e952712b-b631-48e2-a039-134eec9c7894",
@@ -615,7 +647,8 @@
    "a": "Live Is Life",
    "b": "Up And Down",
    "pos": "76",
-   "pochette": "covers/10c71a16-e948-4dbe-8df5-5d7df821fadc.jpg"
+   "pochette": "covers/10c71a16-e948-4dbe-8df5-5d7df821fadc.jpg",
+   "avecPochette": true
   },
   {
    "id": "129b5093-521c-4048-9ae4-d36699c92141",
@@ -623,7 +656,8 @@
    "a": "Sugar, Sugar",
    "b": "Melody Hill",
    "pos": "77",
-   "pochette": "covers/129b5093-521c-4048-9ae4-d36699c92141.jpg"
+   "pochette": "covers/129b5093-521c-4048-9ae4-d36699c92141.jpg",
+   "avecPochette": true
   },
   {
    "id": "641dfaff-f706-45c7-b9e9-ff47cba6a2bc",
@@ -631,7 +665,8 @@
    "a": "Baby, Come Back",
    "b": "Hold Me Closer",
    "pos": "78",
-   "pochette": "covers/641dfaff-f706-45c7-b9e9-ff47cba6a2bc.jpg"
+   "pochette": "covers/641dfaff-f706-45c7-b9e9-ff47cba6a2bc.jpg",
+   "avecPochette": true
   },
   {
    "id": "5e0d2ded-17b2-4b70-b691-e06124363c66",
@@ -639,7 +674,8 @@
    "a": "How Deep Is Your Love",
    "b": "Can't Keep A Good Man Down",
    "pos": "79",
-   "pochette": "covers/5e0d2ded-17b2-4b70-b691-e06124363c66.jpg"
+   "pochette": "covers/5e0d2ded-17b2-4b70-b691-e06124363c66.jpg",
+   "avecPochette": true
   },
   {
    "id": "b354dd8a-7daf-47cb-a3a5-42133f4ba4a3",
@@ -754,6 +790,14 @@
    "pochette": "covers/3e8c3d75-63da-4f36-a972-0814609f7e92.jpg"
   },
   {
+   "id": "e72d93f4-5877-4bd0-ac6d-64069768b936",
+   "artiste": "Gary Glitter",
+   "a": "Rock And Roll (1)",
+   "b": "Rock And Roll (2)",
+   "pos": null,
+   "pochette": "covers/e72d93f4-5877-4bd0-ac6d-64069768b936.jpg"
+  },
+  {
    "id": "dab6ecc2-ed8d-472a-bdb8-57c5342c9fd9",
    "artiste": "Jean-Jacques Goldman",
    "a": "Comme Toi",
@@ -856,6 +900,14 @@
    "b": "Even In The Quietest Moments",
    "pos": null,
    "pochette": "covers/22bf11a7-f893-4777-8257-5c6abd21b177.jpg"
+  },
+  {
+   "id": "8c63b252-c805-44cc-ac30-7a9085c4c5a0",
+   "artiste": "The Frost",
+   "a": "Rock And Rool Music",
+   "b": "Donny's Blues",
+   "pos": null,
+   "pochette": "covers/8c63b252-c805-44cc-ac30-7a9085c4c5a0.jpg"
   },
   {
    "id": "3ac466de-d7ea-4574-8a7f-843c19e32f9d",

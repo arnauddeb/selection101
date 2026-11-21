@@ -150,6 +150,14 @@ main { padding: 18px var(--d) calc(var(--bas) + 110px) var(--g); max-width: calc
   -webkit-backdrop-filter: blur(12px) saturate(160%); backdrop-filter: blur(12px) saturate(160%);
 }
 .num.reserve { font-weight: 600; font-size: 13px; }
+.coche {
+  position: absolute; right: 8px; bottom: 8px;
+  width: 26px; height: 26px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: #30b94d; color: #fff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .9), 0 2px 6px rgba(0, 0, 0, .25);
+}
+.coche svg { width: 15px; height: 15px; stroke-width: 3; }
 .infos { display: flex; flex-direction: column; gap: 3px; padding: 0 2px; }
 .artiste { font-size: 15px; font-weight: 600; letter-spacing: -.01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .face { display: flex; gap: 7px; font-size: 14px; line-height: 1.3; color: var(--muted); }
@@ -277,6 +285,8 @@ textarea { height: auto; padding: 10px 12px; resize: vertical; line-height: 1.45
 .alerte p { margin: 0 0 8px; }
 .bascule { display: flex; gap: 10px; align-items: flex-start; color: var(--ink); }
 .bascule input { width: 20px; height: 20px; margin: 0; accent-color: var(--accent); flex: none; }
+.case-pochette { align-items: center; min-height: 44px; padding: 0 14px; border-radius: 11px; background: var(--carte); box-shadow: inset 0 0 0 1px var(--ligne); font-size: 16px; cursor: pointer; }
+.case-pochette input { accent-color: #30b94d; }
 
 /* Toast */
 .toast {

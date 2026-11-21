@@ -112,7 +112,7 @@ function carte(v) {
   const selA = v.pos ? JUKEBOX.selectionA(v.pos) : "A";
   const selB = v.pos ? JUKEBOX.selectionB(v.pos) : "B";
   return `<button class="disque" data-id="${esc(v.id)}">
-    <div class="pochette">${img}${num}</div>
+    <div class="pochette">${img}${num}${v.avecPochette ? `<span class="coche" title="Pochette présente"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>` : ""}</div>
     <div class="infos">
       <span class="artiste">${esc(v.artiste)}</span>
       <span class="face"><b>${selA}</b><span>${esc(v.a)}</span></span>
@@ -225,6 +225,7 @@ function ouvrirFiche(v, posLibre) {
   $("f-a").value = v?.a || "";
   $("f-b").value = v?.b || "";
   $("f-note").value = v?.note || "";
+  $("f-avec-pochette").checked = !!v?.avecPochette;
   $("bloc-note").open = !!v?.note;
   remplirPositions(v ? v.pos : posLibre || "", v?.id);
   afficherPochette(v?.pochette || "");
@@ -367,6 +368,7 @@ $("form-disque").addEventListener("submit", async (e) => {
     const disque = { id: fiche.id, artiste, a, b: $("f-b").value.trim(), pos };
     if (pochette) disque.pochette = pochette;
     if (note) disque.note = note;
+    if ($("f-avec-pochette").checked) disque.avecPochette = true;
     if (fiche.discogs) disque.discogs = fiche.discogs;
     const liste = etat.vinyles.map((v) => (pos && v.id !== disque.id && v.pos === pos ? { ...v, pos: null } : v)).filter((v) => v.id !== disque.id);
     await enregistrerCollection([...liste, disque]);
@@ -406,12 +408,19 @@ $("btn-publier").addEventListener("click", async () => {
   const b = $("btn-publier");
   b.disabled = true;
   b.textContent = "Publication…";
+  const suivi = setInterval(async () => {
+    try {
+      const p = await api("progression");
+      if (p.total) b.textContent = `Publication… ${p.fait}/${p.total}`;
+    } catch {}
+  }, 700);
   try {
     const r = await api("publier", { method: "POST" });
-    toast(r.a_jour ? "Déjà à jour en ligne" : "Publié — en ligne dans une minute");
+    toast(r.a_jour ? "Déjà à jour en ligne ✓" : "Publié ✓ — en ligne d'ici une minute");
   } catch (err) {
     toast(err.message);
   } finally {
+    clearInterval(suivi);
     b.disabled = false;
     b.textContent = "Publier";
   }

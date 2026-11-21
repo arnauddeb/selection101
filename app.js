@@ -281,21 +281,22 @@ function prixCarte(p) {
     : `${court(p.bas)} · <b>${court(p.moyen)}</b> · ${court(p.haut)} €`;
   return `<span class="prix-disque" title="${titre}">${texte}</span>`;
 }
-function pastilleDisque(type, active, texte, libelle, dessin) {
-  return `<span class="statut-disque ${type}${active ? " actif" : ""}" role="img" aria-label="${libelle}" title="${libelle}">
-    <svg viewBox="0 0 24 24" aria-hidden="true">${dessin}</svg><span>${texte}</span>
+function pastilleDiscogs(synchronise) {
+  const libelle = synchronise ? "Synchronisé avec Discogs" : "Non synchronisé avec Discogs";
+  const dessin = synchronise
+    ? '<path d="M10 13a3.5 3.5 0 0 0 5 0l4-4a3.5 3.5 0 0 0-5-5l-2 2m2 5a3.5 3.5 0 0 0-5 0l-4 4a3.5 3.5 0 0 0 5 5l2-2"/>'
+    : '<path d="M14 6l2-2a3 3 0 0 1 4 4l-2 2M10 18l-2 2a3 3 0 0 1-4-4l2-2M4 4l16 16"/>';
+  return `<span class="pastille-discogs${synchronise ? " actif" : ""}" role="img" aria-label="${libelle}" title="${libelle}">
+    <svg viewBox="0 0 24 24" aria-hidden="true">${dessin}</svg>
   </span>`;
 }
+const symboleVinyle = `<span class="vinyle-seul" aria-hidden="true">
+  <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><path d="M7 16a9 9 0 0 1 9-9m0 18a9 9 0 0 0 9-9"/><circle cx="16" cy="16" r="4"/><path d="M16 16h.01"/></svg>
+</span>`;
 function statutsDisque(v, present) {
-  const synchro = v.discogs
-    ? pastilleDisque("synchro", true, "Discogs", "Synchronisé avec Discogs", '<path d="M10 13a3.5 3.5 0 0 0 5 0l4-4a3.5 3.5 0 0 0-5-5l-2 2m2 5a3.5 3.5 0 0 0-5 0l-4 4a3.5 3.5 0 0 0 5 5l2-2"/>')
-    : pastilleDisque("synchro", false, "Discogs", "Non synchronisé avec Discogs", '<path d="M14 6l2-2a3 3 0 0 1 4 4l-2 2M10 18l-2 2a3 3 0 0 1-4-4l2-2M4 4l16 16"/>');
-  const pointage = inventaireCharge ? pastilleDisque("pointage", present, present ? "Pointé" : "À pointer", present ? "Disque pointé présent" : "Disque à vérifier",
-    present ? '<path d="m6 12 4 4 8-8"/>' : '<circle cx="12" cy="12" r="6"/>') : "";
-  const pochette = v.avecPochette
-    ? pastilleDisque("etat-pochette", true, "Pochette OK", "Pochette physique présente", '<rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M12 12h.01"/>')
-    : pastilleDisque("etat-pochette", false, "Sans pochette", "Sans pochette physique", '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 7a5 5 0 0 0-5 5"/>');
-  return `<span class="statuts-disque">${synchro}${pointage}${pochette}</span>`;
+  const pointage = inventaireCharge ? `<span class="statut-disque pointage${present ? " actif" : ""}">${present ? "✓ Pointé" : "À vérifier"}</span>` : "";
+  const pochette = `<span class="statut-disque etat-pochette${v.avecPochette ? "" : " absente"}">${v.avecPochette ? "Avec pochette" : "Sans pochette"}</span>`;
+  return `<span class="statuts-disque">${pointage}${pochette}</span>`;
 }
 function carte(v) {
   const num = v.pos ? `<span class="num">${v.pos}</span>` : '<span class="num reserve">Réserve</span>';
@@ -306,7 +307,9 @@ function carte(v) {
   const selA = v.pos ? JUKEBOX.selectionA(v.pos) : "A";
   const selB = v.pos ? JUKEBOX.selectionB(v.pos) : "B";
   return `<button class="disque" data-id="${esc(v.id)}" ${modeInventaire ? `aria-pressed="${present}"` : 'aria-haspopup="dialog"'}>
-    <div class="pochette">${img}${num}${prixCarte(v.prix)}</div>
+    <div class="pochette${v.avecPochette ? "" : " sans-pochette-physique"}">
+      ${img}${num}${pastilleDiscogs(v.discogs)}${prixCarte(v.prix)}${v.avecPochette ? "" : symboleVinyle}
+    </div>
     ${statutsDisque(v, present)}
     <div class="infos">
       <span class="artiste">${esc(v.artiste)}</span>

@@ -273,6 +273,16 @@
    "avecPochette": true
   },
   {
+   "id": "3d320d23-e498-403a-b9ce-285155ac54ae",
+   "artiste": "Images",
+   "a": "Les Démons De Minuit",
+   "b": "Les Démons De Minuit (Instrumental)",
+   "pos": "32",
+   "pochette": "covers/3d320d23-e498-403a-b9ce-285155ac54ae-mwqqtex5.jpg",
+   "avecPochette": true,
+   "discogs": 503674
+  },
+  {
    "id": "ccd8b75c-72c9-4a30-b346-aae9b16e6fdc",
    "artiste": "David Bowie",
    "a": "Let's Dance",
@@ -497,12 +507,14 @@
    "pochette": "covers/02cf007d-3089-4439-bd1a-92d324e50665.jpg"
   },
   {
-   "id": "80603032-1316-493f-8084-083e5f6d8876",
+   "id": "c91ab752-0a83-4b4e-8ff1-46f11f4f7a56",
    "artiste": "Stevie Wonder",
    "a": "I Just Called To Say I Love You",
-   "b": "I Just Called To Say I Love You (Instru)",
+   "b": "I Just Called To Say I Love You (Instrumental)",
    "pos": "58",
-   "pochette": "covers/80603032-1316-493f-8084-083e5f6d8876.jpg"
+   "pochette": "covers/c91ab752-0a83-4b4e-8ff1-46f11f4f7a56-mwqqvyxl.jpg",
+   "avecPochette": true,
+   "discogs": 1925404
   },
   {
    "id": "e24758a6-fcd7-4432-84c6-dc0bf5cda673",
@@ -538,12 +550,13 @@
    "pochette": "covers/80100cef-6088-472b-a79e-0836f0d34f7b.jpg"
   },
   {
-   "id": "48d44637-e2b2-45c7-9849-b10147cff19d",
-   "artiste": "Barry White",
-   "a": "What Am I Gonna Do With You",
-   "b": "What Am I Gonna Do With You Baby",
+   "id": "ad838b7b-a97b-4409-9299-554afaf1aee5",
+   "artiste": "Stars On 45",
+   "a": "Stars On 45 Volume Two / Voulez Vous / S.O.S. / Bang A Boomerang / Money, Money, Money / Knowing Me, Knowing You / Fernando / The Winner Takes It All / Super Trouper / Stars On 45 (2)",
+   "b": "Stars Get Ready",
    "pos": "63",
-   "pochette": "covers/48d44637-e2b2-45c7-9849-b10147cff19d.jpg"
+   "pochette": "covers/ad838b7b-a97b-4409-9299-554afaf1aee5-mwqr3kji.jpg",
+   "discogs": 13537586
   },
   {
    "id": "241b33b3-8f63-475b-977f-1baf14fe47a7",
@@ -562,6 +575,16 @@
    "pos": "65",
    "pochette": "covers/72bf444a-c441-44a2-9926-1d97d04763ce.jpg",
    "avecPochette": true
+  },
+  {
+   "id": "fbdca4a1-c0a0-4959-92b6-5a0c53e0a94d",
+   "artiste": "Buggles, The",
+   "a": "Video Killed The Radio Star",
+   "b": "Kid Dynamo",
+   "pos": "66",
+   "pochette": "covers/fbdca4a1-c0a0-4959-92b6-5a0c53e0a94d-mwqqulpf.jpg",
+   "avecPochette": true,
+   "discogs": 186604
   },
   {
    "id": "3fb6f5ec-b53b-44b5-80a4-b1be798cfba1",
@@ -684,6 +707,14 @@
    "b": "Can't get Enough of your Love, Babe",
    "pos": null,
    "pochette": "covers/b354dd8a-7daf-47cb-a3a5-42133f4ba4a3.jpg"
+  },
+  {
+   "id": "48d44637-e2b2-45c7-9849-b10147cff19d",
+   "artiste": "Barry White",
+   "a": "What Am I Gonna Do With You",
+   "b": "What Am I Gonna Do With You Baby",
+   "pos": null,
+   "pochette": "covers/48d44637-e2b2-45c7-9849-b10147cff19d.jpg"
   },
   {
    "id": "0c27a55a-c08f-4662-ae57-c8e05355da44",

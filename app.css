@@ -150,6 +150,7 @@ main { padding: 18px var(--d) calc(var(--bas) + 110px) var(--g); max-width: calc
   -webkit-backdrop-filter: blur(12px) saturate(160%); backdrop-filter: blur(12px) saturate(160%);
 }
 .num.reserve { font-weight: 600; font-size: 13px; }
+.num.vert { background: #30b94d; }
 .coche {
   position: absolute; right: 8px; bottom: 8px;
   width: 26px; height: 26px; border-radius: 50%;
@@ -260,6 +261,7 @@ textarea { height: auto; padding: 10px 12px; resize: vertical; line-height: 1.45
   padding: 7px 8px; border-radius: 10px; text-align: left; background: var(--carte);
 }
 .resultats li.info { display: block; color: var(--muted); font-size: 14px; padding: 12px; }
+.resultats li.titre-resultats { padding: 10px 4px 4px; font-size: 13px; font-weight: 600; color: var(--muted); }
 .resultats li > button:active { background: var(--champ); }
 .resultats img, .resultats .vignette { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; background: var(--champ); display: block; }
 .resultats strong { display: block; font-size: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

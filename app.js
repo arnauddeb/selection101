@@ -105,14 +105,16 @@ function correspond(v, q) {
 
 // ——— Rendu ———
 function carte(v) {
-  const num = v.pos ? `<span class="num">${v.pos}</span>` : etat.q ? `<span class="num reserve">Réserve</span>` : "";
+  // Pochette présente : V vert sur la pochette, et numéro en vert s'il y en a un.
+  const num = v.pos ? `<span class="num${v.avecPochette ? " vert" : ""}">${v.pos}</span>` : etat.q ? `<span class="num reserve">Réserve</span>` : "";
+  const coche = v.avecPochette ? `<span class="coche" title="Pochette présente"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>` : "";
   const img = v.pochette
     ? `<img src="${esc(v.pochette)}" alt="" loading="lazy" decoding="async" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'sans'}))">`
     : `<div class="sans"></div>`;
   const selA = v.pos ? JUKEBOX.selectionA(v.pos) : "A";
   const selB = v.pos ? JUKEBOX.selectionB(v.pos) : "B";
   return `<button class="disque" data-id="${esc(v.id)}">
-    <div class="pochette">${img}${num}${v.avecPochette ? `<span class="coche" title="Pochette présente"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>` : ""}</div>
+    <div class="pochette">${img}${num}${coche}</div>
     <div class="infos">
       <span class="artiste">${esc(v.artiste)}</span>
       <span class="face"><b>${selA}</b><span>${esc(v.a)}</span></span>
@@ -184,13 +186,17 @@ let fiche = null; // { id, nouveau, pochette, blob, discogs }
 
 function remplirPositions(posActuelle, idActuel) {
   const occ = parPosition();
-  const opts = [`<option value="">Réserve (hors jukebox)</option>`];
-  for (const p of toutesPositions) {
-    const o = occ.get(p);
-    const lib = !o ? `${p} · libre` : o.id === idActuel ? `${p} · ce disque` : `${p} · ${o.artiste}`;
-    opts.push(`<option value="${p}">${esc(lib)}</option>`);
-  }
-  $("f-pos").innerHTML = opts.join("");
+  // Ordre : réserve, position actuelle, positions libres, puis positions occupées.
+  const option = (p, lib) => `<option value="${p}">${esc(lib)}</option>`;
+  const actuelle = toutesPositions.filter((p) => occ.get(p)?.id === idActuel).map((p) => option(p, `${p} · ce disque`));
+  const libres = toutesPositions.filter((p) => !occ.has(p)).map((p) => option(p, `${p} · libre`));
+  const occupees = toutesPositions.filter((p) => occ.has(p) && occ.get(p).id !== idActuel).map((p) => option(p, `${p} · ${occ.get(p).artiste}`));
+  $("f-pos").innerHTML = [
+    `<option value="">Réserve (hors jukebox)</option>`,
+    ...actuelle,
+    libres.length ? `<optgroup label="Libres">${libres.join("")}</optgroup>` : "",
+    occupees.length ? `<optgroup label="Occupées (le disque passera en réserve)">${occupees.join("")}</optgroup>` : "",
+  ].join("");
   $("f-pos").value = posActuelle || "";
   majSelections();
 }
@@ -289,19 +295,25 @@ async function chercherDiscogs() {
   ul.innerHTML = `<li class="info">Recherche…</li>`;
   const moi = (discogsCtl = {});
   try {
-    const r = await discogs("database/search", { q, type: "release", format: "Vinyl", per_page: "25" });
+    const r = await discogs("database/search", { q, type: "release", format: "Vinyl", per_page: "50" });
     if (moi !== discogsCtl) return;
-    const score = (x) => {
-      const f = (x.format || []).join(" ");
-      return (/7"/.test(f) ? 3 : 0) + (/Single|45 RPM/.test(f) ? 2 : 0) + (x.country === "France" ? 1 : 0);
-    };
-    const res = (r.results || []).map((x, i) => ({ x, s: score(x), i })).sort((a, b) => b.s - a.s || a.i - b.i).slice(0, 12).map((o) => o.x);
+    // 45 tours d'abord (éditions françaises en tête), puis les autres formats.
+    const est45 = (x) => /7"|45 RPM/.test((x.format || []).join(" "));
+    const parPays = (liste) => liste.map((x, i) => ({ x, i })).sort((a, b) => (b.x.country === "France") - (a.x.country === "France") || a.i - b.i).map((o) => o.x);
+    const res = r.results || [];
+    const quarante5 = parPays(res.filter(est45)).slice(0, 15);
+    const autres = parPays(res.filter((x) => !est45(x))).slice(0, 8);
     if (!res.length) { ul.innerHTML = `<li class="info">Rien trouvé. Essaie avec moins de mots.</li>`; return; }
-    ul.innerHTML = res.map((x) => {
+    const ligne = (x) => {
       const details = [x.year, x.country, (x.label || [])[0], (x.format || []).filter((f) => f !== "Vinyl").slice(0, 2).join(", ")].filter(Boolean).join(" · ");
       const vignette = x.thumb ? `<img src="${esc(x.thumb)}" alt="" loading="lazy">` : `<span class="vignette"></span>`;
       return `<li><button type="button" data-release="${x.id}">${vignette}<span><strong>${esc(x.title)}</strong><small>${esc(details)}</small></span></button></li>`;
-    }).join("");
+    };
+    ul.innerHTML = [
+      `<li class="titre-resultats">45 tours</li>`,
+      quarante5.length ? quarante5.map(ligne).join("") : `<li class="info">Aucun 45 tours trouvé.</li>`,
+      autres.length ? `<li class="titre-resultats">Autres formats</li>${autres.map(ligne).join("")}` : "",
+    ].join("");
   } catch (e) {
     if (moi !== discogsCtl) return;
     ul.innerHTML = `<li class="info">${e.status === 401 ? "Clé Discogs refusée — vérifie-la dans les réglages." : e.status === 429 ? "Discogs demande une petite pause, réessaie dans une minute." : "Discogs ne répond pas. Vérifie ta connexion."}</li>`;

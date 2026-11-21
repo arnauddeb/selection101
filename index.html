@@ -28,6 +28,9 @@
         <p id="statut-sync-discogs" role="status" hidden></p>
       </div>
       <div class="actions">
+        <button type="button" class="icone" id="btn-stats" aria-label="Statistiques de la collection" title="Statistiques de la collection" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4v16h16M9 16v-4m5 4V7m5 9v-7"/></svg>
+        </button>
         <button type="button" class="pilule sync-discogs seul-edition" id="btn-sync-discogs" aria-label="Synchroniser avec Discogs" title="Synchroniser avec Discogs" disabled>
           <span class="sync-discogs-complet">Synchroniser avec Discogs</span><span class="sync-discogs-court" aria-hidden="true">↻ Discogs</span>
         </button>
@@ -219,6 +222,23 @@
         <button type="button" class="texte danger seul-edition" id="btn-supprimer">Supprimer</button>
         <button type="submit" class="principal seul-edition" id="btn-enregistrer">Enregistrer</button>
       </footer>
+    </form>
+  </dialog>
+
+  <dialog class="stats-collection" id="stats" aria-labelledby="stats-titre">
+    <form method="dialog" class="feuille">
+      <header class="feuille-tete">
+        <h2 id="stats-titre">La collection en chiffres</h2>
+        <button type="submit" class="icone fermer" aria-label="Fermer" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </header>
+      <label class="filtre stats-perimetre"><span>Disques</span>
+        <select id="stats-perimetre">
+          <option value="tous">Toute la collection</option>
+          <option value="jukebox">Jukebox</option>
+          <option value="reserve">Réserve</option>
+        </select>
+      </label>
+      <dl class="stats-grille" id="stats-grille"></dl>
     </form>
   </dialog>
 

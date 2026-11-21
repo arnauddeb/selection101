@@ -293,6 +293,25 @@ main {
 .erreur { margin: 0; color: var(--accent); font-size: 14px; }
 .prix-aide { margin: 0 0 6px; padding-left: 2px; }
 
+.stats-collection {
+  width: min(600px, calc(100% - 24px));
+  max-height: calc(100dvh - 32px);
+  padding: 0; border: 0; border-radius: 22px;
+  background: var(--bg); color: var(--ink); box-shadow: var(--ombre);
+}
+.stats-collection::backdrop { background: rgba(0, 0, 0, .4); }
+html:has(.stats-collection[open]) { overflow: hidden; }
+.stats-collection .feuille { max-width: none; max-height: none; padding: 16px; border-radius: inherit; box-shadow: none; }
+.stats-collection .feuille-tete h2 { white-space: normal; }
+.stats-collection .fermer { flex: none; }
+.stats-perimetre { align-self: flex-start; }
+.stats-grille { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0; }
+.stats-grille > div { padding: 12px 14px; border-radius: var(--r); background: var(--champ); overflow-wrap: anywhere; }
+.stats-grille > div:first-child { grid-column: 1 / -1; }
+.stats-grille dt, .stats-grille small { color: var(--muted); font-size: 13px; }
+.stats-grille dd { margin: 2px 0 0; font-size: 18px; font-weight: 700; }
+.stats-grille small { display: block; margin-top: 3px; font-weight: 400; }
+
 .fiche-disque {
   width: min(1040px, calc(100% - 40px)); max-width: none;
   max-height: calc(100dvh - 48px);

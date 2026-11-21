@@ -364,6 +364,7 @@ function rendre() {
     (etat.balayage ? ` · comparaison des pochettes… ${etat.balayage}` : "");
   document.body.classList.toggle("recherche-active", !!etat.q);
   if (!etat.charge) return;
+  $("btn-stats").disabled = false;
   rendreInventaire();
 
   const emplacement = etat.f.emplacement;
@@ -415,6 +416,76 @@ function changerVue(vue) {
   else rendre();
   window.scrollTo({ top: 0 });
 }
+
+// ——— Statistiques de la collection ———
+function secondesPiste(duree) {
+  if (!/^\d+(?::[0-5]\d){1,2}$/.test(duree || "")) return 0;
+  return duree.split(":").reduce((total, partie) => total * 60 + Number(partie), 0);
+}
+
+function formatEcoute(secondes) {
+  const heures = Math.floor(secondes / 3600);
+  const minutes = Math.floor(secondes / 60) % 60;
+  const reste = secondes % 60;
+  return [heures && `${heures} h`, minutes && `${minutes} min`, reste && `${reste} s`].filter(Boolean).join(" ");
+}
+
+function rendreStats() {
+  const perimetre = $("stats-perimetre").value;
+  const disques = etat.vinyles.filter((v) => perimetre === "tous" || Boolean(v.pos) === (perimetre === "jukebox"));
+  let ecoute = 0, dureesConnues = 0, pistes = 0;
+  let plusLongue = null, doyens = [];
+  const artistes = new Map();
+  for (const v of disques) {
+    const artiste = v.artiste?.trim();
+    if (artiste) {
+      const nom = norm(artiste);
+      const entree = artistes.get(nom) || { artiste, nombre: 0 };
+      entree.nombre++;
+      artistes.set(nom, entree);
+    }
+    const annee = Number(v.infos?.annee);
+    if (Number.isInteger(annee) && annee > 0) {
+      if (!doyens.length || annee < Number(doyens[0].infos.annee)) doyens = [v];
+      else if (annee === Number(doyens[0].infos.annee)) doyens.push(v);
+    }
+    for (const piste of v.infos?.pistes || []) {
+      pistes++;
+      const duree = secondesPiste(piste.duree);
+      if (!duree) continue;
+      dureesConnues++;
+      ecoute += duree;
+      if (!plusLongue || duree > plusLongue.duree) plusLongue = { piste, artiste, duree };
+    }
+  }
+  const plusRepresentes = [...artistes.values()].sort((a, b) => b.nombre - a.nombre);
+  const maximum = plusRepresentes[0]?.nombre;
+  const premiers = plusRepresentes.filter((a) => a.nombre === maximum);
+  const pochettes = disques.filter((v) => v.avecPochette).length;
+  const cartes = [
+    ["Temps d’écoute connu", ecoute ? formatEcoute(ecoute) : "Durée indisponible",
+      `${dureesConnues}/${pistes} pistes renseignées · hors disques sans liste de pistes`],
+    ["Morceau le plus long", plusLongue && formatEcoute(plusLongue.duree),
+      plusLongue && [plusLongue.piste.titre, plusLongue.artiste].filter(Boolean).join(" · ")],
+    ["Plus ancienne année connue", doyens[0]?.infos.annee,
+      doyens.length > 1 ? `${doyens.length} disques de cette année` : doyens[0] && [doyens[0].artiste, doyens[0].a].filter(Boolean).join(" · ")],
+    ["En tête par nombre de disques", premiers.length === 1 ? premiers[0].artiste : premiers.length && `${premiers.length} artistes ex æquo`,
+      maximum && `${maximum} disque${maximum > 1 ? "s" : ""}${premiers.length > 1 ? " par artiste" : ""}`],
+    ["Pochettes en main", `${pochettes} / ${disques.length}`],
+  ];
+  $("stats-grille").innerHTML = cartes.map(([titre, valeur, detail]) => `<div>
+    <dt>${esc(titre)}</dt><dd>${esc(valeur || "—")}${detail ? `<small>${esc(detail)}</small>` : ""}</dd>
+  </div>`).join("");
+}
+
+$("btn-stats").addEventListener("click", () => {
+  rendreStats();
+  $("stats").showModal();
+});
+$("stats-perimetre").addEventListener("change", rendreStats);
+$("stats").addEventListener("click", (e) => {
+  if (e.target === $("stats")) $("stats").close();
+});
 
 // ——— Feuilles ———
 function ouvrir(id) {

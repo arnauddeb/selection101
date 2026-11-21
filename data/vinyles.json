@@ -1,0 +1,885 @@
+{
+ "version": 2,
+ "vinyles": [
+  {
+   "id": "5af7aa7e-8160-43a3-9d4d-f684590cbea8",
+   "artiste": "Jeanne Mas",
+   "a": "En Rouge Et Noir",
+   "b": "Plus Forte Que L'Océan",
+   "pos": "00",
+   "pochette": "covers/5af7aa7e-8160-43a3-9d4d-f684590cbea8.jpg"
+  },
+  {
+   "id": "47586168-4834-4882-860a-eea4091bc4c1",
+   "artiste": "Cindy Lauper",
+   "a": "Girls Just Want to Have Fun",
+   "b": "Right Track Wrong Train",
+   "pos": "01",
+   "pochette": "covers/47586168-4834-4882-860a-eea4091bc4c1.jpg"
+  },
+  {
+   "id": "f4630491-93f0-4ee9-b99e-b21164941517",
+   "artiste": "Tears For Fears",
+   "a": "Everybody Wants To Rule The World",
+   "b": "Pharaohs",
+   "pos": "02",
+   "pochette": "covers/f4630491-93f0-4ee9-b99e-b21164941517.jpg"
+  },
+  {
+   "id": "3036aaae-3edd-423b-8d54-c5904c3e0567",
+   "artiste": "The Temptations",
+   "a": "My Girl",
+   "b": "Theme From My Girl",
+   "pos": "03",
+   "pochette": "covers/3036aaae-3edd-423b-8d54-c5904c3e0567.jpg"
+  },
+  {
+   "id": "c7d64b99-848f-4422-84f2-6604d730ca8d",
+   "artiste": "Anita Ward",
+   "a": "Ring My Bell",
+   "b": "If I Could Feel That Old Feeling Again",
+   "pos": "04",
+   "pochette": "covers/c7d64b99-848f-4422-84f2-6604d730ca8d.jpg"
+  },
+  {
+   "id": "ee30c0a2-95c6-427a-8a0d-0fd5c1ea620b",
+   "artiste": "Joe Dassin",
+   "a": "L'Amérique",
+   "b": "Cecilia",
+   "pos": "05",
+   "pochette": "covers/ee30c0a2-95c6-427a-8a0d-0fd5c1ea620b.jpg"
+  },
+  {
+   "id": "be5bdc25-5ee7-4ef8-a4c0-5a3b08b73ec5",
+   "artiste": "Bee Gees",
+   "a": "You Should Be Dancing",
+   "b": "Subway",
+   "pos": "06",
+   "pochette": "covers/be5bdc25-5ee7-4ef8-a4c0-5a3b08b73ec5.jpg"
+  },
+  {
+   "id": "50024049-135a-4537-9ba9-2f0d3919dcfb",
+   "artiste": "The Beach Boys",
+   "a": "Good Vibrations",
+   "b": "Let's Go Away For Awhile",
+   "pos": "07",
+   "pochette": "covers/50024049-135a-4537-9ba9-2f0d3919dcfb.jpg"
+  },
+  {
+   "id": "4613cdef-6963-4250-a58f-d60aee3791b7",
+   "artiste": "Cher",
+   "a": "The Shoop Shoop Song",
+   "b": "Baby I'm Yours",
+   "pos": "08",
+   "pochette": "covers/4613cdef-6963-4250-a58f-d60aee3791b7.jpg"
+  },
+  {
+   "id": "9b1e52fb-e768-4b69-a6f9-7ab2acd0b45e",
+   "artiste": "Phil Collins",
+   "a": "In The Air Tonight",
+   "b": "The Roof Is Leaking",
+   "pos": "09",
+   "pochette": "covers/9b1e52fb-e768-4b69-a6f9-7ab2acd0b45e.jpg"
+  },
+  {
+   "id": "cdd06da4-8c12-491a-9c8f-9b73b9ce51f0",
+   "artiste": "Wings",
+   "a": "Listen To What The Man Said",
+   "b": "Love In Song",
+   "pos": "10",
+   "pochette": "covers/cdd06da4-8c12-491a-9c8f-9b73b9ce51f0.jpg"
+  },
+  {
+   "id": "244e1ead-79b4-4c57-8427-e10b53726cd2",
+   "artiste": "INXS",
+   "a": "Mystify",
+   "b": "Need You Tonight",
+   "pos": "11",
+   "pochette": "covers/244e1ead-79b4-4c57-8427-e10b53726cd2.jpg"
+  },
+  {
+   "id": "fcaa6bc2-b52b-4cb2-b3bc-d46281a726b5",
+   "artiste": "Earth Wind & Fire",
+   "a": "Fall In Love With Me",
+   "b": "Lady Sun",
+   "pos": "12",
+   "pochette": "covers/fcaa6bc2-b52b-4cb2-b3bc-d46281a726b5.jpg"
+  },
+  {
+   "id": "c94d84ed-db26-434c-805f-afc51cc81028",
+   "artiste": "Plastic Bertrand",
+   "a": "Ça Plane Pour Moi",
+   "b": "Pogo Pogo",
+   "pos": "13",
+   "pochette": "covers/c94d84ed-db26-434c-805f-afc51cc81028.jpg"
+  },
+  {
+   "id": "92e1b7d1-240f-4c14-8322-2f4284e4854b",
+   "artiste": "Fredericks Goldman Jones",
+   "a": "Un, Deux, Trois",
+   "b": "Je Commence Demain",
+   "pos": "14",
+   "pochette": "covers/92e1b7d1-240f-4c14-8322-2f4284e4854b.jpg"
+  },
+  {
+   "id": "74a916d8-8eaa-45cf-9d27-6b8d06d0b083",
+   "artiste": "Kaoma",
+   "a": "Lambada",
+   "b": "Lambada (Instru)",
+   "pos": "15",
+   "pochette": "covers/74a916d8-8eaa-45cf-9d27-6b8d06d0b083.jpg"
+  },
+  {
+   "id": "04e6f500-20e6-4603-ab8c-6223e502053f",
+   "artiste": "Jean-Jacques Goldman",
+   "a": "Long Is The Road (Américain)",
+   "b": "P'tit Blues Peinard (Inédit)",
+   "pos": "16",
+   "pochette": "covers/04e6f500-20e6-4603-ab8c-6223e502053f.jpg"
+  },
+  {
+   "id": "87a255a8-fd7f-4bad-abf4-dca85a570fdd",
+   "artiste": "Bee Gees",
+   "a": "Tomorrow Tomorrow",
+   "b": "Sun In My Morning",
+   "pos": "17",
+   "pochette": "covers/87a255a8-fd7f-4bad-abf4-dca85a570fdd.jpg"
+  },
+  {
+   "id": "8ff50b69-07a2-4724-9098-5e392af32849",
+   "artiste": "Middle Of The Road",
+   "a": "The Talk Of All The U.S.A.",
+   "b": "On This Land",
+   "pos": "18",
+   "pochette": "covers/8ff50b69-07a2-4724-9098-5e392af32849.jpg"
+  },
+  {
+   "id": "7e43b25e-57b1-4850-8281-c7aaba8192ff",
+   "artiste": "Wham!",
+   "a": "Freedom",
+   "b": "Freedom (Instru)",
+   "pos": "19",
+   "pochette": "covers/7e43b25e-57b1-4850-8281-c7aaba8192ff.jpg"
+  },
+  {
+   "id": "cf57cbe3-1df0-4e19-9a50-fd3dd8395fed",
+   "artiste": "La Velle",
+   "a": "Play Girl",
+   "b": "Finally I'm Free",
+   "pos": "20",
+   "pochette": "covers/cf57cbe3-1df0-4e19-9a50-fd3dd8395fed.jpg"
+  },
+  {
+   "id": "145ef4b9-18ce-4a3f-9752-3246d0ef9efb",
+   "artiste": "Earth Wind & Fire",
+   "a": "September",
+   "b": "Can't Hide Love",
+   "pos": "21",
+   "pochette": "covers/145ef4b9-18ce-4a3f-9752-3246d0ef9efb.jpg"
+  },
+  {
+   "id": "8dada09e-2443-4ffb-a820-84055f7a15fa",
+   "artiste": "Earth Wind & Fire",
+   "a": "Boogie Wonderland",
+   "b": "Boogie Wonderland (Instru)",
+   "pos": "22",
+   "pochette": "covers/8dada09e-2443-4ffb-a820-84055f7a15fa.jpg"
+  },
+  {
+   "id": "d7fd4026-62ce-43b7-8536-074c14838049",
+   "artiste": "Imagination",
+   "a": "Flashback",
+   "b": "Burnin' Up",
+   "pos": "23",
+   "pochette": "covers/d7fd4026-62ce-43b7-8536-074c14838049.jpg"
+  },
+  {
+   "id": "c9db2c79-07c8-4f8b-9c22-337f15b76011",
+   "artiste": "Chemise",
+   "a": "She Can't Love You",
+   "b": "She Can't Love You (Instru)",
+   "pos": "24",
+   "pochette": "covers/c9db2c79-07c8-4f8b-9c22-337f15b76011.jpg"
+  },
+  {
+   "id": "d412e6c9-0204-4045-81c7-d65ac616bfa9",
+   "artiste": "Wings",
+   "a": "Letting Go",
+   "b": "You Gave Me The Answer",
+   "pos": "25",
+   "pochette": "covers/d412e6c9-0204-4045-81c7-d65ac616bfa9.jpg"
+  },
+  {
+   "id": "76dfb488-fd62-477c-8fd6-77316a890a3c",
+   "artiste": "Catherine Lara",
+   "a": "Nuit Magique",
+   "b": "Au Milieu De Nulle Part",
+   "pos": "26",
+   "pochette": "covers/76dfb488-fd62-477c-8fd6-77316a890a3c.jpg"
+  },
+  {
+   "id": "85770c0d-fd4e-4e84-b3e3-701c5a5b2707",
+   "artiste": "Wham!",
+   "a": "Wake Me Up Before You Go-Go",
+   "b": "Wake Me Up Before You Go-Go (Instru)",
+   "pos": "27",
+   "pochette": "covers/85770c0d-fd4e-4e84-b3e3-701c5a5b2707.jpg"
+  },
+  {
+   "id": "68a97dc9-1560-4a89-8df3-b33dc7786179",
+   "artiste": "ABBA",
+   "a": "Money, Money, Money",
+   "b": "Crazy World",
+   "pos": "28",
+   "pochette": "covers/68a97dc9-1560-4a89-8df3-b33dc7786179.jpg"
+  },
+  {
+   "id": "e7ef3264-8261-46a3-9b59-6ccff716bcd4",
+   "artiste": "Al Bano & Romina Power",
+   "a": "Felicita",
+   "b": "Arrivedecci De Bahi",
+   "pos": "29",
+   "pochette": "covers/e7ef3264-8261-46a3-9b59-6ccff716bcd4.jpg"
+  },
+  {
+   "id": "d3532070-a49e-498f-9050-18dace5fb790",
+   "artiste": "Patrick Hernandez",
+   "a": "Born To Be Alive",
+   "b": "Born To Be Alive (Instru)",
+   "pos": "30",
+   "pochette": "covers/d3532070-a49e-498f-9050-18dace5fb790.jpg"
+  },
+  {
+   "id": "ffef3a85-63cb-4b40-9ac1-047e3b4e79ca",
+   "artiste": "Laurent Voulzy",
+   "a": "Bubble Star (1)",
+   "b": "Bubble Star (2)",
+   "pos": "31",
+   "pochette": "covers/ffef3a85-63cb-4b40-9ac1-047e3b4e79ca.jpg"
+  },
+  {
+   "id": "e72d93f4-5877-4bd0-ac6d-64069768b936",
+   "artiste": "Gary Glitter",
+   "a": "Rock And Roll (1)",
+   "b": "Rock And Roll (2)",
+   "pos": "32",
+   "pochette": "covers/e72d93f4-5877-4bd0-ac6d-64069768b936.jpg"
+  },
+  {
+   "id": "ccd8b75c-72c9-4a30-b346-aae9b16e6fdc",
+   "artiste": "David Bowie",
+   "a": "Let's Dance",
+   "b": "Cat People (Putting Out Fire)",
+   "pos": "33",
+   "pochette": "covers/ccd8b75c-72c9-4a30-b346-aae9b16e6fdc.jpg"
+  },
+  {
+   "id": "8b25a53e-efc6-4a84-845d-451a7a851b78",
+   "artiste": "Scott McKenzie",
+   "a": "San Francisco",
+   "b": "What's The Difference",
+   "pos": "34",
+   "pochette": "covers/8b25a53e-efc6-4a84-845d-451a7a851b78.jpg"
+  },
+  {
+   "id": "507c9e82-6401-4e00-a49f-e1059ec503ad",
+   "artiste": "Mixte",
+   "a": "Génération 60",
+   "b": "Génération 60",
+   "pos": "35",
+   "pochette": "covers/507c9e82-6401-4e00-a49f-e1059ec503ad.jpg",
+   "note": "Salut Les Copains 0:02 \nSi J'Avais Un Marteau 0:33 \nLeçon De Twist 0:23 \nLet's Twist Again 0:21 \nYa Ya Twist 0:17 \nDaniela 0:21 \nDonne-Moi Ma Chance 0:25 \nPremière Surprise Partie 0:13 \nDancin' Party 0:03 \nBelles, Belles, Belles 0:08 \nC'est Ma Fête 0:13 \nTu Parles Trop 0:27 \nJ'ai Un Secret À Te Dire 0:31 \nSunny 0:33"
+  },
+  {
+   "id": "e85e4570-c73e-485f-840a-226f3078c733",
+   "artiste": "Donna Summer",
+   "a": "Hot Stuff",
+   "b": "Journey To The Centre Of Your Heart",
+   "pos": "36",
+   "pochette": "covers/e85e4570-c73e-485f-840a-226f3078c733.jpg"
+  },
+  {
+   "id": "d42821d8-009c-46ca-8dcc-3bef5455b1b4",
+   "artiste": "Hervé Cristiani",
+   "a": "Il Est Libre Max",
+   "b": "Boogie Boum",
+   "pos": "37",
+   "pochette": "covers/d42821d8-009c-46ca-8dcc-3bef5455b1b4.jpg"
+  },
+  {
+   "id": "5dc8bc52-ca8b-498c-bfaa-9119079e17d8",
+   "artiste": "Pointer Sisters",
+   "a": "Fire",
+   "b": "Just Like A Rolling Stone",
+   "pos": "38",
+   "pochette": "covers/5dc8bc52-ca8b-498c-bfaa-9119079e17d8.jpg"
+  },
+  {
+   "id": "d757cf08-f347-48d4-ac3a-8f5dbf3d82bd",
+   "artiste": "Desireless",
+   "a": "Voyage Voyage",
+   "b": "Destin Fragile (Instru)",
+   "pos": "39",
+   "pochette": "covers/d757cf08-f347-48d4-ac3a-8f5dbf3d82bd.jpg"
+  },
+  {
+   "id": "d8944b8b-c5d6-4ed3-bd96-705b0dee1501",
+   "artiste": "Vanessa Paradis",
+   "a": "Joe Le Taxi",
+   "b": "Varvara Pavlovna",
+   "pos": "40",
+   "pochette": "covers/d8944b8b-c5d6-4ed3-bd96-705b0dee1501.jpg"
+  },
+  {
+   "id": "20d58400-f002-44c6-94aa-7449de89eed8",
+   "artiste": "Ricchi & Poveri",
+   "a": "Sarà Perché Ti Amo",
+   "b": "Bello L'Amore",
+   "pos": "41",
+   "pochette": "covers/20d58400-f002-44c6-94aa-7449de89eed8.jpg"
+  },
+  {
+   "id": "ef667476-d38a-40ac-adda-0e89c43c7a30",
+   "artiste": "Mixte",
+   "a": "Stars On 45",
+   "b": "Stars On 45",
+   "pos": "42",
+   "pochette": "covers/ef667476-d38a-40ac-adda-0e89c43c7a30.jpg"
+  },
+  {
+   "id": "82473f82-684f-47fb-b71b-87b19bf76bec",
+   "artiste": "Mixte",
+   "a": "Hits Des Années 60",
+   "b": "Hits Des Années 60",
+   "pos": "43",
+   "pochette": "covers/82473f82-684f-47fb-b71b-87b19bf76bec.jpg"
+  },
+  {
+   "id": "c343118f-6c02-45c8-aa31-b407f2fc4035",
+   "artiste": "Laurent Voulzy",
+   "a": "Rockollection (1)",
+   "b": "Rockollection (2)",
+   "pos": "44",
+   "pochette": "covers/c343118f-6c02-45c8-aa31-b407f2fc4035.jpg"
+  },
+  {
+   "id": "d6c64a29-dbc6-407d-9307-00c74968e15c",
+   "artiste": "Pierre Groscolas",
+   "a": "Lady Lay",
+   "b": "Un Jour Pas Comme Les Autres",
+   "pos": "45",
+   "pochette": "covers/d6c64a29-dbc6-407d-9307-00c74968e15c.jpg"
+  },
+  {
+   "id": "621c33b1-fe45-4a28-b506-5c90949ae82e",
+   "artiste": "Boney M",
+   "a": "Rivers Of Babylon",
+   "b": "Brown Girl In The Ring",
+   "pos": "46",
+   "pochette": "covers/621c33b1-fe45-4a28-b506-5c90949ae82e.jpg"
+  },
+  {
+   "id": "107ae17d-6a49-4747-9564-2ca59c30bd52",
+   "artiste": "Boney M",
+   "a": "Sunny",
+   "b": "New York City",
+   "pos": "47",
+   "pochette": "covers/107ae17d-6a49-4747-9564-2ca59c30bd52.jpg"
+  },
+  {
+   "id": "8b23ad06-c1af-45fb-b7ad-d20acb206dd5",
+   "artiste": "Boney M",
+   "a": "Daddy Cool",
+   "b": "No Women No Cry",
+   "pos": "48",
+   "pochette": "covers/8b23ad06-c1af-45fb-b7ad-d20acb206dd5.jpg"
+  },
+  {
+   "id": "af029e5e-cc87-4e14-90d6-4963e31bfb2d",
+   "artiste": "ABBA",
+   "a": "Dancing Queen (1)",
+   "b": "Dancing Queen (2)",
+   "pos": "49",
+   "pochette": "covers/af029e5e-cc87-4e14-90d6-4963e31bfb2d.jpg"
+  },
+  {
+   "id": "77695495-ebbc-4b11-bf5c-138f8b6d6636",
+   "artiste": "Banzaii",
+   "a": "Chinese Kung Fu",
+   "b": "Rythm Kung Fu",
+   "pos": "50",
+   "pochette": "covers/77695495-ebbc-4b11-bf5c-138f8b6d6636.jpg"
+  },
+  {
+   "id": "0118cc28-3945-4e8b-8462-c9dfaf010528",
+   "artiste": "ABBA",
+   "a": "Waterloo",
+   "b": "Watch Out",
+   "pos": "51",
+   "pochette": "covers/0118cc28-3945-4e8b-8462-c9dfaf010528.jpg"
+  },
+  {
+   "id": "4d3f1be3-da1f-410b-9d95-a559ebc45586",
+   "artiste": "Ray Charles",
+   "a": "What'd I Say (1)",
+   "b": "What'd I Say (2)",
+   "pos": "52",
+   "pochette": "covers/4d3f1be3-da1f-410b-9d95-a559ebc45586.jpg"
+  },
+  {
+   "id": "cba09af8-fbbb-4bef-bf90-04fb10d41834",
+   "artiste": "Billy Swan",
+   "a": "I Can Help",
+   "b": "Ways Of A Woman In Love",
+   "pos": "53",
+   "pochette": "covers/cba09af8-fbbb-4bef-bf90-04fb10d41834.jpg"
+  },
+  {
+   "id": "d7a43a14-7059-4611-8c15-85a57f679cc1",
+   "artiste": "Gene Vincent",
+   "a": "Be-Bop-A-Lula",
+   "b": "Baby Blue",
+   "pos": "54",
+   "pochette": "covers/d7a43a14-7059-4611-8c15-85a57f679cc1.jpg"
+  },
+  {
+   "id": "56676d45-684a-4e39-86ad-abc473c4ab84",
+   "artiste": "Début De Soirée",
+   "a": "Nuit De Folie",
+   "b": "Tout Pour La Danse",
+   "pos": "55",
+   "pochette": "covers/56676d45-684a-4e39-86ad-abc473c4ab84.jpg"
+  },
+  {
+   "id": "eaa80021-0b42-4c84-a2ae-0ab9ddcdab5d",
+   "artiste": "Roch Voisine",
+   "a": "Hélène",
+   "b": "Ton Blues",
+   "pos": "56",
+   "pochette": "covers/eaa80021-0b42-4c84-a2ae-0ab9ddcdab5d.jpg"
+  },
+  {
+   "id": "02cf007d-3089-4439-bd1a-92d324e50665",
+   "artiste": "Elton John & Kiki Dee",
+   "a": "Don't Go Breaking My Heart",
+   "b": "Snow Queen",
+   "pos": "57",
+   "pochette": "covers/02cf007d-3089-4439-bd1a-92d324e50665.jpg"
+  },
+  {
+   "id": "80603032-1316-493f-8084-083e5f6d8876",
+   "artiste": "Stevie Wonder",
+   "a": "I Just Called To Say I Love You",
+   "b": "I Just Called To Say I Love You (Instru)",
+   "pos": "58",
+   "pochette": "covers/80603032-1316-493f-8084-083e5f6d8876.jpg"
+  },
+  {
+   "id": "e24758a6-fcd7-4432-84c6-dc0bf5cda673",
+   "artiste": "Eagles",
+   "a": "Hotel California",
+   "b": "One Of These Nights",
+   "pos": "59",
+   "pochette": "covers/e24758a6-fcd7-4432-84c6-dc0bf5cda673.jpg"
+  },
+  {
+   "id": "9fcd380d-656c-4f50-9b22-d27b4669914d",
+   "artiste": "Marvin Gaye",
+   "a": "I Heard It Through The Grapevine",
+   "b": "Can I Get A Witness",
+   "pos": "60",
+   "pochette": "covers/9fcd380d-656c-4f50-9b22-d27b4669914d.jpg"
+  },
+  {
+   "id": "ba76ae10-b322-41ed-a102-2f17309a1c8a",
+   "artiste": "Bee Gees",
+   "a": "Too Much Heaven",
+   "b": "Rest Your Love On Me",
+   "pos": "61",
+   "pochette": "covers/ba76ae10-b322-41ed-a102-2f17309a1c8a.jpg"
+  },
+  {
+   "id": "80100cef-6088-472b-a79e-0836f0d34f7b",
+   "artiste": "Stevie Wonder",
+   "a": "Do I Do",
+   "b": "Rocket Love",
+   "pos": "62",
+   "pochette": "covers/80100cef-6088-472b-a79e-0836f0d34f7b.jpg"
+  },
+  {
+   "id": "48d44637-e2b2-45c7-9849-b10147cff19d",
+   "artiste": "Barry White",
+   "a": "What Am I Gonna Do With You",
+   "b": "What Am I Gonna Do With You Baby",
+   "pos": "63",
+   "pochette": "covers/48d44637-e2b2-45c7-9849-b10147cff19d.jpg"
+  },
+  {
+   "id": "241b33b3-8f63-475b-977f-1baf14fe47a7",
+   "artiste": "Cookie Dingler",
+   "a": "Femme Liberée",
+   "b": "Sexy Rock",
+   "pos": "64",
+   "pochette": "covers/241b33b3-8f63-475b-977f-1baf14fe47a7.jpg"
+  },
+  {
+   "id": "72bf444a-c441-44a2-9926-1d97d04763ce",
+   "artiste": "The Shadows",
+   "a": "Apache",
+   "b": "Guitar Tango",
+   "pos": "65",
+   "pochette": "covers/72bf444a-c441-44a2-9926-1d97d04763ce.jpg"
+  },
+  {
+   "id": "8c63b252-c805-44cc-ac30-7a9085c4c5a0",
+   "artiste": "The Frost",
+   "a": "Rock And Rool Music",
+   "b": "Donny's Blues",
+   "pos": "66",
+   "pochette": "covers/8c63b252-c805-44cc-ac30-7a9085c4c5a0.jpg"
+  },
+  {
+   "id": "3fb6f5ec-b53b-44b5-80a4-b1be798cfba1",
+   "artiste": "Bananarama",
+   "a": "Venus",
+   "b": "White Train",
+   "pos": "67",
+   "pochette": "covers/3fb6f5ec-b53b-44b5-80a4-b1be798cfba1.jpg"
+  },
+  {
+   "id": "49f4474a-cb0a-4dc7-88af-9ebb543de60a",
+   "artiste": "Joan Jett & The Blackhearts",
+   "a": "I Love Rock'n Roll",
+   "b": "Love Is Pain",
+   "pos": "68",
+   "pochette": "covers/49f4474a-cb0a-4dc7-88af-9ebb543de60a.jpg"
+  },
+  {
+   "id": "fdacbd3a-8ced-4f79-a8a8-7453d1442998",
+   "artiste": "Little Eva",
+   "a": "The Locomotion",
+   "b": "He Is The Boy",
+   "pos": "69",
+   "pochette": "covers/fdacbd3a-8ced-4f79-a8a8-7453d1442998.jpg"
+  },
+  {
+   "id": "cc8a36a4-4d82-4508-aff7-2bc2c0788cd5",
+   "artiste": "Téléphone",
+   "a": "Un Autre Monde",
+   "b": "Le Garçon D'ascenseur",
+   "pos": "70",
+   "pochette": "covers/cc8a36a4-4d82-4508-aff7-2bc2c0788cd5.jpg"
+  },
+  {
+   "id": "d1992b5b-c8b5-416d-ade1-1393d3af3002",
+   "artiste": "LIO",
+   "a": "Le Le Banana Split",
+   "b": "Teenager",
+   "pos": "71",
+   "pochette": "covers/d1992b5b-c8b5-416d-ade1-1393d3af3002.jpg"
+  },
+  {
+   "id": "1364b4c3-b33b-4c10-89dd-0b6257bcf6b8",
+   "artiste": "Mixte",
+   "a": "Star On 45",
+   "b": "Star On 45",
+   "pos": "72"
+  },
+  {
+   "id": "28515269-d349-4db8-b37b-5671c20e4c54",
+   "artiste": "Thierry Hazard",
+   "a": "Le Jerk",
+   "b": "Goodbye Mary",
+   "pos": "73",
+   "pochette": "covers/28515269-d349-4db8-b37b-5671c20e4c54.jpg"
+  },
+  {
+   "id": "2cbec7b3-d1a3-4513-b584-11fc3eb42583",
+   "artiste": "Lipps",
+   "a": "Funkytown",
+   "b": "All Night Dancing",
+   "pos": "74",
+   "pochette": "covers/2cbec7b3-d1a3-4513-b584-11fc3eb42583.jpg"
+  },
+  {
+   "id": "e952712b-b631-48e2-a039-134eec9c7894",
+   "artiste": "The Beatles",
+   "a": "Hey Jude",
+   "b": "Revolution",
+   "pos": "75",
+   "pochette": "covers/e952712b-b631-48e2-a039-134eec9c7894.jpg"
+  },
+  {
+   "id": "10c71a16-e948-4dbe-8df5-5d7df821fadc",
+   "artiste": "Opus",
+   "a": "Live Is Life",
+   "b": "Up And Down",
+   "pos": "76",
+   "pochette": "covers/10c71a16-e948-4dbe-8df5-5d7df821fadc.jpg"
+  },
+  {
+   "id": "129b5093-521c-4048-9ae4-d36699c92141",
+   "artiste": "The Archies",
+   "a": "Sugar, Sugar",
+   "b": "Melody Hill",
+   "pos": "77",
+   "pochette": "covers/129b5093-521c-4048-9ae4-d36699c92141.jpg"
+  },
+  {
+   "id": "641dfaff-f706-45c7-b9e9-ff47cba6a2bc",
+   "artiste": "The Equals",
+   "a": "Baby, Come Back",
+   "b": "Hold Me Closer",
+   "pos": "78",
+   "pochette": "covers/641dfaff-f706-45c7-b9e9-ff47cba6a2bc.jpg"
+  },
+  {
+   "id": "5e0d2ded-17b2-4b70-b691-e06124363c66",
+   "artiste": "Bee Gees",
+   "a": "How Deep Is Your Love",
+   "b": "Can't Keep A Good Man Down",
+   "pos": "79",
+   "pochette": "covers/5e0d2ded-17b2-4b70-b691-e06124363c66.jpg"
+  },
+  {
+   "id": "b354dd8a-7daf-47cb-a3a5-42133f4ba4a3",
+   "artiste": "Barry White",
+   "a": "You're the First the Last, my Everything",
+   "b": "Can't get Enough of your Love, Babe",
+   "pos": null,
+   "pochette": "covers/b354dd8a-7daf-47cb-a3a5-42133f4ba4a3.jpg"
+  },
+  {
+   "id": "0c27a55a-c08f-4662-ae57-c8e05355da44",
+   "artiste": "Bee Gees",
+   "a": "Too Much Heaven",
+   "b": "Rest Your Love On Me",
+   "pos": null,
+   "pochette": "covers/0c27a55a-c08f-4662-ae57-c8e05355da44.jpg"
+  },
+  {
+   "id": "8738a0e1-9aa9-496c-949e-76364b3a700a",
+   "artiste": "Bibie",
+   "a": "Tout Doucement (Tout Simplement)",
+   "b": "Tam Tam Man",
+   "pos": null,
+   "pochette": "covers/8738a0e1-9aa9-496c-949e-76364b3a700a.jpg"
+  },
+  {
+   "id": "b08866b6-1536-46ce-88b5-5d527b117543",
+   "artiste": "Bonnie Tyler",
+   "a": "Here She Comes",
+   "b": "Time",
+   "pos": null,
+   "pochette": "covers/b08866b6-1536-46ce-88b5-5d527b117543.jpg"
+  },
+  {
+   "id": "af30afb3-51a6-4903-8a8a-2565cf8d66b1",
+   "artiste": "Cabrel",
+   "a": "Il Faudra Leur Dire",
+   "b": "Il Faudra Leur Dire (Instru)",
+   "pos": null,
+   "pochette": "covers/af30afb3-51a6-4903-8a8a-2565cf8d66b1.jpg"
+  },
+  {
+   "id": "6f6aee36-e2bf-4dd2-8df7-bbd499f6d00d",
+   "artiste": "Daniel Balavoine",
+   "a": "L'Aziza",
+   "b": "Tous Les Cris Les S.O.S.",
+   "pos": null,
+   "pochette": "covers/6f6aee36-e2bf-4dd2-8df7-bbd499f6d00d.jpg"
+  },
+  {
+   "id": "fe81918b-6658-4369-856f-232fa234887b",
+   "artiste": "David Bowie",
+   "a": "Ashes To Ashes",
+   "b": "Move On",
+   "pos": null,
+   "pochette": "covers/fe81918b-6658-4369-856f-232fa234887b.jpg"
+  },
+  {
+   "id": "bb634c07-32c6-48a3-bac1-279ebff978c0",
+   "artiste": "Dorothée",
+   "a": "Rox Et Rouky",
+   "b": "Disney Dimanche",
+   "pos": null,
+   "pochette": "covers/bb634c07-32c6-48a3-bac1-279ebff978c0.jpg"
+  },
+  {
+   "id": "4c55d9a9-f5ec-46e9-905d-5ccd5da2e846",
+   "artiste": "Dorothée",
+   "a": "Les Schtroumpfs",
+   "b": "L'école Des Schtroumpfs",
+   "pos": null,
+   "pochette": "covers/4c55d9a9-f5ec-46e9-905d-5ccd5da2e846.jpg"
+  },
+  {
+   "id": "84fdca03-c658-49f3-bc1b-d306af1d28b8",
+   "artiste": "Electric Light Orchestra",
+   "a": "Don't Bring Me Down",
+   "b": "Dreaming Of 4000",
+   "pos": null,
+   "pochette": "covers/84fdca03-c658-49f3-bc1b-d306af1d28b8.jpg"
+  },
+  {
+   "id": "bba490f2-4cf7-4564-938c-cb5e3fed4e77",
+   "artiste": "F. Gray & D. Barbelivien",
+   "a": "À Toutes Les Filles",
+   "b": "À Toutes Les Filles (Instru)",
+   "pos": null,
+   "pochette": "covers/bba490f2-4cf7-4564-938c-cb5e3fed4e77.jpg"
+  },
+  {
+   "id": "5114d14c-eb57-45bf-8121-7f80feda8770",
+   "artiste": "France Gall",
+   "a": "Comment Lui Dire",
+   "b": "Samba Mambo",
+   "pos": null,
+   "pochette": "covers/5114d14c-eb57-45bf-8121-7f80feda8770.jpg"
+  },
+  {
+   "id": "37fb95aa-b7b7-4fe5-9963-e1bbfef516e8",
+   "artiste": "France Gall",
+   "a": "Tout Pour La Musique",
+   "b": "Résiste",
+   "pos": null,
+   "pochette": "covers/37fb95aa-b7b7-4fe5-9963-e1bbfef516e8.jpg"
+  },
+  {
+   "id": "3e8c3d75-63da-4f36-a972-0814609f7e92",
+   "artiste": "France Gall",
+   "a": "Débranche",
+   "b": "J'ai Besoin De Vous",
+   "pos": null,
+   "pochette": "covers/3e8c3d75-63da-4f36-a972-0814609f7e92.jpg"
+  },
+  {
+   "id": "dab6ecc2-ed8d-472a-bdb8-57c5342c9fd9",
+   "artiste": "Jean-Jacques Goldman",
+   "a": "Comme Toi",
+   "b": "Être Le Premier",
+   "pos": null,
+   "pochette": "covers/dab6ecc2-ed8d-472a-bdb8-57c5342c9fd9.jpg"
+  },
+  {
+   "id": "4f85442c-cee7-4b7e-8b37-bb63f0065ab6",
+   "artiste": "Jeanne Mas",
+   "a": "Johnny, Johnny",
+   "b": "Lisa",
+   "pos": null,
+   "pochette": "covers/4f85442c-cee7-4b7e-8b37-bb63f0065ab6.jpg"
+  },
+  {
+   "id": "a5bfb8ef-7704-486b-a629-651e94367645",
+   "artiste": "Joe Dassin",
+   "a": "Siffler Sur La Colline",
+   "b": "Comment Te Dire",
+   "pos": null,
+   "pochette": "covers/a5bfb8ef-7704-486b-a629-651e94367645.jpg"
+  },
+  {
+   "id": "7d000fb6-54ae-4269-9d59-dd63bf7a4ac3",
+   "artiste": "Johnny Hallyday",
+   "a": "Qu'Est-Ce Que Tu Croyais",
+   "b": "C'Est Mieux Ainsi",
+   "pos": null,
+   "pochette": "covers/7d000fb6-54ae-4269-9d59-dd63bf7a4ac3.jpg"
+  },
+  {
+   "id": "a49a56a0-a11e-44a4-b042-031c1f46bdf7",
+   "artiste": "Kool & The Gang",
+   "a": "Fresh",
+   "b": "Rollin'",
+   "pos": null,
+   "pochette": "covers/a49a56a0-a11e-44a4-b042-031c1f46bdf7.jpg"
+  },
+  {
+   "id": "78f0b356-b843-4ec8-a354-f6ec974c6c4e",
+   "artiste": "Licence IV",
+   "a": "Viens Boire Un P'tit Coup A La Maison",
+   "b": "Viens Boire Un P'tit Coup A La Maison (Instru)",
+   "pos": null,
+   "pochette": "covers/78f0b356-b843-4ec8-a354-f6ec974c6c4e.jpg"
+  },
+  {
+   "id": "837a5672-3da1-4e1c-add5-e58ac52caebc",
+   "artiste": "Marches Militaires",
+   "a": "Auprès De Ma Blonde",
+   "b": "Le Chant Du Départ",
+   "pos": null,
+   "pochette": "covers/837a5672-3da1-4e1c-add5-e58ac52caebc.jpg"
+  },
+  {
+   "id": "fd45c2f4-e50f-47ab-91bf-0e5d33b1d56f",
+   "artiste": "Mecano",
+   "a": "Une Femme Avec Une Femme",
+   "b": "Mujer Contra Mujer",
+   "pos": null,
+   "pochette": "covers/fd45c2f4-e50f-47ab-91bf-0e5d33b1d56f.jpg"
+  },
+  {
+   "id": "15002a5f-ed8e-4805-a01f-371db390b9db",
+   "artiste": "Nono",
+   "a": "La Chanson De Nono",
+   "b": "La Chanson De Nono (Instru)",
+   "pos": null,
+   "pochette": "covers/15002a5f-ed8e-4805-a01f-371db390b9db.jpg"
+  },
+  {
+   "id": "2ad730b5-137c-41e7-85b2-d1910c1668c0",
+   "artiste": "Patrick Bruel",
+   "a": "J'te L'dis Quand Même",
+   "b": "Même Si On Est Fou",
+   "pos": null,
+   "pochette": "covers/2ad730b5-137c-41e7-85b2-d1910c1668c0.jpg"
+  },
+  {
+   "id": "d25a011b-d848-4d1d-8580-ee274cf7cc69",
+   "artiste": "Pierre Bachelet",
+   "a": "Les Corons",
+   "b": "Nos Jours Heureux",
+   "pos": null,
+   "pochette": "covers/d25a011b-d848-4d1d-8580-ee274cf7cc69.jpg"
+  },
+  {
+   "id": "42312dbc-7f18-4a78-a393-38a9478a317c",
+   "artiste": "Ringo",
+   "a": "Good Bye, Elvis",
+   "b": "Good Bye, Elvis (Instru)",
+   "pos": null,
+   "pochette": "covers/42312dbc-7f18-4a78-a393-38a9478a317c.jpg"
+  },
+  {
+   "id": "22bf11a7-f893-4777-8257-5c6abd21b177",
+   "artiste": "Supertramp",
+   "a": "Goodbye Stranger",
+   "b": "Even In The Quietest Moments",
+   "pos": null,
+   "pochette": "covers/22bf11a7-f893-4777-8257-5c6abd21b177.jpg"
+  },
+  {
+   "id": "3ac466de-d7ea-4574-8a7f-843c19e32f9d",
+   "artiste": "The Holiday Bells",
+   "a": "Mon Beau Sapin",
+   "b": "Vive Le Vent D'hiver",
+   "pos": null,
+   "pochette": "covers/3ac466de-d7ea-4574-8a7f-843c19e32f9d.jpg"
+  },
+  {
+   "id": "25cfa028-522f-4959-ac7d-7b2df7265bf5",
+   "artiste": "The Shocking Blue",
+   "a": "Venus",
+   "b": "Hot Sand",
+   "pos": null,
+   "pochette": "covers/25cfa028-522f-4959-ac7d-7b2df7265bf5.jpg"
+  },
+  {
+   "id": "fed611ef-4280-4675-bdb0-bdff9218dabc",
+   "artiste": "Vangelis",
+   "a": "To The Unknown Man (1)",
+   "b": "To The Unknown Man (2)",
+   "pos": null,
+   "pochette": "covers/fed611ef-4280-4675-bdb0-bdff9218dabc.jpg"
+  }
+ ]
+}

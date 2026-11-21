@@ -72,6 +72,15 @@ a { color: var(--accent); }
 .marque h1 { margin: 0; font-size: 32px; line-height: 1.05; font-weight: 700; letter-spacing: -.025em; }
 .marque p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
 .actions { display: flex; gap: 8px; }
+.pilule {
+  height: 40px; padding: 0 18px; border-radius: 20px;
+  background: var(--accent); color: var(--accent-ink); font-size: 15px; font-weight: 600;
+  transition: transform .15s ease, opacity .15s ease;
+}
+.pilule:active { transform: scale(.94); }
+.pilule:disabled { opacity: .6; }
+body:not(.edition) .seul-edition { display: none !important; }
+body:not(.edition) .disque { cursor: default; }
 .icone {
   width: 40px; height: 40px; border-radius: 50%;
   display: grid; place-items: center;
@@ -124,8 +133,8 @@ main { padding: 18px var(--d) calc(var(--bas) + 110px) var(--g); max-width: calc
   background: var(--carte); box-shadow: var(--ombre);
   transition: transform .25s cubic-bezier(.2, .8, .2, 1);
 }
-.disque:active .pochette { transform: scale(.97); }
-@media (hover: hover) { .disque:hover .pochette { transform: translateY(-3px); } }
+.edition .disque:active .pochette { transform: scale(.97); }
+@media (hover: hover) { .edition .disque:hover .pochette { transform: translateY(-3px); } }
 .pochette img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .pochette .sans {
   position: absolute; inset: 0; display: grid; place-items: center;
@@ -147,13 +156,10 @@ main { padding: 18px var(--d) calc(var(--bas) + 110px) var(--g); max-width: calc
 .face b { flex: none; font-weight: 600; color: var(--accent); min-width: 2.1em; }
 .face span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
 
-.libre { opacity: 1; }
 .libre .pochette { background: none; box-shadow: inset 0 0 0 1.5px var(--ligne); display: grid; place-items: center; }
 .libre .pochette strong { font-size: 40px; font-weight: 600; color: var(--faible); letter-spacing: -.03em; }
 .libre .infos { color: var(--faible); font-size: 14px; }
 .libre .artiste { color: var(--faible); font-weight: 500; }
-
-.titre-groupe { grid-column: 1 / -1; margin: 8px 0 -8px; font-size: 13px; font-weight: 600; color: var(--muted); }
 
 /* ——— Bouton + ——— */
 .fab {
@@ -263,6 +269,7 @@ textarea { height: auto; padding: 10px 12px; resize: vertical; line-height: 1.45
 .principal:disabled { opacity: .5; }
 .texte { height: 44px; padding: 0 4px; font-size: 15px; font-weight: 500; color: var(--muted); text-decoration: none; display: inline-flex; align-items: center; }
 .danger { color: var(--accent); }
+.lien { align-self: flex-start; margin-top: -6px; font-size: 14px; font-weight: 500; color: var(--accent); min-height: 32px; }
 .boutons { display: grid; grid-template-columns: 1fr; gap: 10px; }
 @media (min-width: 480px) { .boutons { grid-template-columns: 1fr 1fr; } }
 

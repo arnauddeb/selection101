@@ -8,6 +8,7 @@
    "b": "Plus Forte Que L'Océan",
    "pos": "00",
    "pochette": "covers/5af7aa7e-8160-43a3-9d4d-f684590cbea8.webp",
+   "avecPochette": true,
    "discogs": 500696,
    "prix": {
     "bas": 0.3,
@@ -15,6 +16,61 @@
     "haut": 9.99,
     "vendu": "2026-11-19",
     "release": 500696
+   },
+   "infos": {
+    "label": "Columbia",
+    "catno": "1733207",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1986,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Synth-pop"
+    ],
+    "arrangeurs": [
+     "Romano Musumarra"
+    ],
+    "enVente": 89,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "En Rouge Et Noir",
+      "duree": "4:32",
+      "auteurs": [
+       "Jeanne Mas",
+       "Lorenzo Meinardi",
+       "Massimo Calabrese",
+       "Piero Calabrese",
+       "Romano Musumarra"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Plus Forte Que L'Océan",
+      "duree": "4:09",
+      "auteurs": [
+       "Jeanne Mas",
+       "Romano Musumarra"
+      ]
+     }
+    ],
+    "have": 1785,
+    "want": 45,
+    "note": 4,
+    "votes": 87
+   },
+   "titresDiscogs": {
+    "artiste": "Jeanne Mas",
+    "a": "En Rouge Et Noir",
+    "b": "Plus Forte Que L'Océan"
    }
   },
   {
@@ -28,8 +84,8 @@
   {
    "id": "f4630491-93f0-4ee9-b99e-b21164941517",
    "artiste": "Tears For Fears",
-   "a": "Everybody Wants To Rule The World",
-   "b": "Pharaohs",
+   "a": "Everybody Wants To Rule The World (Extended Version)",
+   "b": "Everybody Wants To Rule The World (7\" Version) / Pharaohs",
    "pos": "02",
    "pochette": "covers/f4630491-93f0-4ee9-b99e-b21164941517.webp",
    "discogs": 1119898,
@@ -39,6 +95,71 @@
     "haut": 20,
     "vendu": "2026-09-27",
     "release": 1119898
+   },
+   "infos": {
+    "label": "Mercury",
+    "catno": "880 659-1",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
+    "formats": [
+     "12\"",
+     "Maxi-Single"
+    ],
+    "pays": "France",
+    "annee": 1985,
+    "genres": [
+     "Electronic",
+     "Rock"
+    ],
+    "styles": [
+     "New Wave",
+     "Synth-pop"
+    ],
+    "producteurs": [
+     "Chris Hughes"
+    ],
+    "enVente": 6,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Everybody Wants To Rule The World (Extended Version)",
+      "duree": "5:40",
+      "auteurs": [
+       "Chris Hughes",
+       "Ian Stanley",
+       "Roland Orzabal"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Everybody Wants To Rule The World (7\" Version)",
+      "duree": "4:10",
+      "auteurs": [
+       "Chris Hughes",
+       "Ian Stanley",
+       "Roland Orzabal"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Pharaohs",
+      "duree": "3:42",
+      "auteurs": [
+       "Chris Hughes",
+       "Curt Smith",
+       "Ian Stanley",
+       "Roland Orzabal"
+      ]
+     }
+    ],
+    "have": 489,
+    "want": 363,
+    "note": 4.44,
+    "votes": 34
+   },
+   "titresDiscogs": {
+    "artiste": "Tears For Fears",
+    "a": "Everybody Wants To Rule The World (Extended Version)",
+    "b": "Everybody Wants To Rule The World (7\" Version) / Pharaohs"
    }
   },
   {
@@ -56,6 +177,44 @@
     "haut": 29.93,
     "vendu": "2014-05-01",
     "release": 4506646
+   },
+   "infos": {
+    "label": "Motown",
+    "catno": "Anchor 1",
+    "format": "Vinyl, 12\", 45 RPM, Promo",
+    "formats": [
+     "12\"",
+     "Promo"
+    ],
+    "pays": "UK",
+    "annee": 1994,
+    "genres": [
+     "Pop"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "My Girl",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "My Girl",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 1,
+    "want": 11,
+    "note": 1,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Temptations, The",
+    "a": "My Girl",
+    "b": "My Girl"
    }
   },
   {
@@ -73,6 +232,52 @@
     "haut": 4,
     "vendu": "2026-06-16",
     "release": 9382130
+   },
+   "infos": {
+    "label": "Freestyle Records",
+    "catno": "FRS 3",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1990,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Euro House",
+     "Disco"
+    ],
+    "producteurs": [
+     "Frederick Knight"
+    ],
+    "enVente": 7,
+    "pistes": [
+     {
+      "position": "Side 1",
+      "titre": "Ring My Bell 1990 Mega Remix",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "Side 2",
+      "titre": "Ring My Bell 1979 Original 7\" Version",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 28,
+    "want": 21,
+    "note": 5,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Anita Ward",
+    "a": "Ring My Bell 1990 Mega Remix",
+    "b": "Ring My Bell 1979 Original 7\" Version"
    }
   },
   {
@@ -90,6 +295,53 @@
     "haut": 5,
     "vendu": "2026-02-14",
     "release": 701427
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "5006",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1970,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "enVente": 26,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "L'Amérique",
+      "duree": "2:27",
+      "auteurs": [
+       "Jeff Christie",
+       "Pierre Delanoë"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Cecilia",
+      "duree": "4:00",
+      "auteurs": [
+       "Paul Simon",
+       "Pierre Delanoë"
+      ]
+     }
+    ],
+    "have": 956,
+    "want": 18,
+    "note": 4.17,
+    "votes": 41
+   },
+   "titresDiscogs": {
+    "artiste": "Joe Dassin",
+    "a": "L'Amérique",
+    "b": "Cecilia"
    }
   },
   {
@@ -107,6 +359,54 @@
     "haut": 90,
     "vendu": "2026-05-11",
     "release": 6961179
+   },
+   "infos": {
+    "label": "Polydor",
+    "catno": "0381",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single, Promo",
+    "formats": [
+     "12\"",
+     "Maxi-Single",
+     "Promo"
+    ],
+    "pays": "France",
+    "annee": 2002,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "You Should Be Dancing (Remix Maxi)",
+      "duree": "7:05",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "You Should Be Dancing (Dub Mix)",
+      "duree": "5:16",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "You Should Be Dancing (Remix Single)",
+      "duree": "3:35",
+      "auteurs": []
+     }
+    ],
+    "have": 43,
+    "want": 176,
+    "note": 4.57,
+    "votes": 7
+   },
+   "titresDiscogs": {
+    "artiste": "Bee Gees",
+    "a": "You Should Be Dancing (Remix Maxi)",
+    "b": "You Should Be Dancing (Dub Mix) / You Should Be Dancing (Remix Single)"
    }
   },
   {
@@ -123,6 +423,48 @@
     "haut": 8.99,
     "vendu": "2026-03-16",
     "release": 14448162
+   },
+   "infos": {
+    "label": "EMI France",
+    "catno": "2043737",
+    "format": "Vinyl, 7\", 45 RPM",
+    "formats": [
+     "7\""
+    ],
+    "pays": "France",
+    "annee": 1991,
+    "genres": [
+     "Rock",
+     "Pop",
+     "Folk, World, & Country"
+    ],
+    "styles": [
+     "Surf"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "California Dreamin'",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Good Vibrations",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 14,
+    "want": 14,
+    "note": 4,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Beach Boys, The",
+    "a": "California Dreamin'",
+    "b": "Good Vibrations"
    }
   },
   {
@@ -139,6 +481,58 @@
     "haut": 3,
     "vendu": "2024-11-06",
     "release": 24084461
+   },
+   "infos": {
+    "label": "Epic",
+    "catno": "656673 7",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1991,
+    "genres": [
+     "Funk / Soul",
+     "Pop",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Rhythm & Blues",
+     "Europop"
+    ],
+    "producteurs": [
+     "Peter Asher"
+    ],
+    "enVente": 2,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "The Shoop Shoop Song (It's In His Kiss)",
+      "duree": "2:50",
+      "auteurs": [
+       "Rudy Clark"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Baby I'm Yours",
+      "duree": "3:19",
+      "auteurs": [
+       "Van McCoy"
+      ]
+     }
+    ],
+    "have": 114,
+    "want": 21,
+    "note": 3,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Cher",
+    "a": "The Shoop Shoop Song (It's In His Kiss)",
+    "b": "Baby I'm Yours"
    }
   },
   {
@@ -155,6 +549,54 @@
     "haut": 15.28,
     "vendu": "2026-10-22",
     "release": 2587952
+   },
+   "infos": {
+    "label": "Not On Label (Phil Collins)",
+    "format": "Vinyl, 12\", 33 ⅓ RPM, 45 RPM, Unofficial Release, White Label",
+    "formats": [
+     "12\"",
+     "Unofficial Release",
+     "White Label"
+    ],
+    "pays": "US",
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Progressive House",
+     "Tech House",
+     "House"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "In The Air Tonight (Mix 1)",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "In The Air Tonight (Mix 2)",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "In The Air Tonight (Mix 3)",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 41,
+    "want": 48,
+    "note": 4.25,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Phil Collins",
+    "a": "In The Air Tonight (Mix 1)",
+    "b": "In The Air Tonight (Mix 2) / In The Air Tonight (Mix 3)"
    }
   },
   {
@@ -171,6 +613,51 @@
     "haut": 12.09,
     "vendu": "2018-03-31",
     "release": 6212552
+   },
+   "infos": {
+    "label": "Capitol Records",
+    "catno": "4091",
+    "format": "Vinyl, 7\", 45 RPM, Test Pressing",
+    "formats": [
+     "7\"",
+     "Test Pressing"
+    ],
+    "pays": "US",
+    "annee": 1975,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "Paul McCartney"
+    ],
+    "producteurs": [
+     "Paul McCartney"
+    ],
+    "enVente": 1,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Listen To What The Man Said",
+      "duree": "3:53",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Listen To What The Man Said",
+      "duree": "3:53",
+      "auteurs": []
+     }
+    ],
+    "have": 9,
+    "want": 36
+   },
+   "titresDiscogs": {
+    "artiste": "Wings",
+    "a": "Listen To What The Man Said",
+    "b": "Listen To What The Man Said"
    }
   },
   {
@@ -187,6 +674,56 @@
     "haut": 9.99,
     "vendu": "2026-10-06",
     "release": 562721
+   },
+   "infos": {
+    "label": "Mercury",
+    "catno": "874 150-7",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "Europe",
+    "annee": 1989,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "Andrew Farriss",
+     "Michael Hutchence"
+    ],
+    "producteurs": [
+     "Chris Thomas"
+    ],
+    "enVente": 17,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Mystify",
+      "duree": "3:15",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Need You Tonight (Mendelsohn 7\" Edit)",
+      "duree": "3:58",
+      "auteurs": []
+     }
+    ],
+    "have": 506,
+    "want": 78,
+    "note": 4.29,
+    "votes": 28
+   },
+   "titresDiscogs": {
+    "artiste": "INXS",
+    "a": "Mystify",
+    "b": "Need You Tonight (Mendelsohn 7\" Edit)"
    }
   },
   {
@@ -204,6 +741,54 @@
     "haut": 4.75,
     "vendu": "2026-04-12",
     "release": 4109992
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "A-2927",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1983,
+    "genres": [
+     "Funk / Soul",
+     "Pop"
+    ],
+    "producteurs": [
+     "Maurice White"
+    ],
+    "enVente": 33,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Fall In Love With Me",
+      "duree": "3:54",
+      "auteurs": [
+       "Maurice White",
+       "Wanda Vaughn",
+       "Wayne Vaughn"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Lady Sun",
+      "duree": "3:39",
+      "auteurs": [
+       "Bernard Taylor"
+      ]
+     }
+    ],
+    "have": 438,
+    "want": 15,
+    "note": 3.76,
+    "votes": 21
+   },
+   "titresDiscogs": {
+    "artiste": "Earth, Wind & Fire",
+    "a": "Fall In Love With Me",
+    "b": "Lady Sun"
    }
   },
   {
@@ -221,6 +806,55 @@
     "haut": 12.5,
     "vendu": "2025-12-28",
     "release": 6381365
+   },
+   "infos": {
+    "label": "Vogue",
+    "catno": "45. X. 140.316",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Punk"
+    ],
+    "auteurs": [
+     "Lou Deprijck",
+     "Yves Lacomblez"
+    ],
+    "producteurs": [
+     "Lou Deprijck"
+    ],
+    "enVente": 14,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Ça Plane Pour Moi",
+      "duree": "3:00",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Pogo Pogo",
+      "duree": "2:41",
+      "auteurs": []
+     }
+    ],
+    "have": 361,
+    "want": 166,
+    "note": 4.36,
+    "votes": 25
+   },
+   "titresDiscogs": {
+    "artiste": "Plastic Bertrand",
+    "a": "Ça Plane Pour Moi",
+    "b": "Pogo Pogo"
    }
   },
   {
@@ -238,6 +872,54 @@
     "haut": 49,
     "vendu": "2021-10-22",
     "release": 10497283
+   },
+   "infos": {
+    "label": "Columbia",
+    "catno": "657969 6",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single, Stereo",
+    "formats": [
+     "12\"",
+     "Maxi-Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1992,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Tu Manques",
+      "duree": "8:11",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Vivre Cent Vies",
+      "duree": "4:18",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Un, Deux, Trois (Remix)",
+      "duree": "5:32",
+      "auteurs": []
+     }
+    ],
+    "have": 26,
+    "want": 42,
+    "note": 4,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Fredericks Goldman Jones",
+    "a": "Tu Manques",
+    "b": "Vivre Cent Vies / Un, Deux, Trois (Remix)"
    }
   },
   {
@@ -254,6 +936,53 @@
     "haut": 4.8,
     "vendu": "2026-09-25",
     "release": 3403785
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "655011 7",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1989,
+    "genres": [
+     "Latin"
+    ],
+    "styles": [
+     "Lambada"
+    ],
+    "auteurs": [
+     "Chico De Oliveira"
+    ],
+    "producteurs": [
+     "Jean-Claude Bonaventure"
+    ],
+    "enVente": 19,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Lambada",
+      "duree": "3:28",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Lambada (Instrumental)",
+      "duree": "3:48",
+      "auteurs": []
+     }
+    ],
+    "have": 327,
+    "want": 60,
+    "note": 3.53,
+    "votes": 30
+   },
+   "titresDiscogs": {
+    "artiste": "Kaoma",
+    "a": "Lambada",
+    "b": "Lambada (Instrumental)"
    }
   },
   {
@@ -270,6 +999,54 @@
     "haut": 2.99,
     "vendu": "2025-07-25",
     "release": 9374696
+   },
+   "infos": {
+    "label": "Epic",
+    "catno": "EPC A 4821",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Jean-Jacques Goldman"
+    ],
+    "producteurs": [
+     "Jean-Jacques Goldman",
+     "Marc Lumbroso"
+    ],
+    "enVente": 6,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Long Is The Road (Américain)",
+      "duree": "3:59",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "P'tit Blues Peinard (Inédit)",
+      "duree": "4:27",
+      "auteurs": []
+     }
+    ],
+    "have": 335,
+    "want": 12,
+    "note": 4.25,
+    "votes": 12
+   },
+   "titresDiscogs": {
+    "artiste": "Jean-Jacques Goldman",
+    "a": "Long Is The Road (Américain)",
+    "b": "P'tit Blues Peinard (Inédit)"
    }
   },
   {
@@ -287,6 +1064,56 @@
     "haut": 3,
     "vendu": "2026-09-29",
     "release": 2827909
+   },
+   "infos": {
+    "label": "Polydor",
+    "catno": "421 463",
+    "format": "Vinyl, 7\", 45 RPM, Single, Mono",
+    "formats": [
+     "7\"",
+     "Single",
+     "Mono"
+    ],
+    "pays": "France",
+    "annee": 1969,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "Barry Gibb",
+     "Maurice Gibb"
+    ],
+    "producteurs": [
+     "Bee Gees",
+     "Robert Stigwood"
+    ],
+    "enVente": 12,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Tomorrow Tomorrow",
+      "duree": "4:00",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Sun In My Morning",
+      "duree": "2:55",
+      "auteurs": []
+     }
+    ],
+    "have": 130,
+    "want": 17,
+    "note": 3,
+    "votes": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Bee Gees",
+    "a": "Tomorrow Tomorrow",
+    "b": "Sun In My Morning"
    }
   },
   {
@@ -297,7 +1124,52 @@
    "pos": "18",
    "pochette": "covers/8ff50b69-07a2-4724-9098-5e392af32849.webp",
    "avecPochette": true,
-   "discogs": 6228312
+   "discogs": 6228312,
+   "infos": {
+    "label": "Opus",
+    "catno": "90 43 0193",
+    "format": "Vinyl, 7\", 45 RPM, Repress, Mono",
+    "formats": [
+     "7\"",
+     "Repress",
+     "Mono"
+    ],
+    "pays": "Czechoslovakia",
+    "annee": 1973,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Europop"
+    ],
+    "auteurs": [
+     "Giosy Capuano",
+     "Harold Stott",
+     "Mario Capuano"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Tweedle Dee, Tweedle Dum",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "The Talk Of All The U. S. A.",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 10,
+    "want": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Middle Of The Road",
+    "a": "Tweedle Dee, Tweedle Dum",
+    "b": "The Talk Of All The U. S. A."
+   }
   },
   {
    "id": "7e43b25e-57b1-4850-8281-c7aaba8192ff",
@@ -314,7 +1186,60 @@
    "b": "Finally I'm Free",
    "pos": "20",
    "pochette": "covers/cf57cbe3-1df0-4e19-9a50-fd3dd8395fed.webp",
-   "discogs": 15783834
+   "discogs": 15783834,
+   "infos": {
+    "label": "EMI",
+    "catno": "2C 008-14.758",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Baciotti",
+     "Pamela Marion Forrest"
+    ],
+    "producteurs": [
+     "Yona"
+    ],
+    "arrangeurs": [
+     "Baciotti"
+    ],
+    "enVente": 11,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Play Girl",
+      "duree": "3:50",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Finally I'm Free",
+      "duree": "3:39",
+      "auteurs": [
+       "Jacques Lachambre"
+      ]
+     }
+    ],
+    "have": 26,
+    "want": 1,
+    "note": 4,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "La Velle",
+    "a": "Play Girl",
+    "b": "Finally I'm Free"
+   }
   },
   {
    "id": "145ef4b9-18ce-4a3f-9752-3246d0ef9efb",
@@ -331,6 +1256,62 @@
     "haut": 22.75,
     "vendu": "2026-09-20",
     "release": 1872611
+   },
+   "infos": {
+    "label": "ARC",
+    "catno": "3-10854",
+    "format": "Vinyl, 7\", 45 RPM, Single, Promo, Stereo, Mono",
+    "formats": [
+     "7\"",
+     "Single",
+     "Promo",
+     "Stereo",
+     "Mono"
+    ],
+    "pays": "US",
+    "annee": 1978,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Funk",
+     "Disco"
+    ],
+    "auteurs": [
+     "Al McKay",
+     "Allee Willis",
+     "Maurice White"
+    ],
+    "producteurs": [
+     "Maurice White"
+    ],
+    "arrangeurs": [
+     "TOM TOM 84"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "September",
+      "duree": "3:37",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "September",
+      "duree": "3:37",
+      "auteurs": []
+     }
+    ],
+    "have": 76,
+    "want": 284,
+    "note": 4.5,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Earth, Wind & Fire",
+    "a": "September",
+    "b": "September"
    }
   },
   {
@@ -341,7 +1322,43 @@
    "pos": "22",
    "pochette": "covers/8dada09e-2443-4ffb-a820-84055f7a15fa.webp",
    "avecPochette": true,
-   "discogs": 25113730
+   "discogs": 25113730,
+   "infos": {
+    "label": "CBS",
+    "catno": "CSR 1066",
+    "format": "Vinyl, 7\", Promo",
+    "formats": [
+     "7\"",
+     "Promo"
+    ],
+    "pays": "Peru",
+    "annee": 1979,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "enVente": 2,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Boogie Wonderland",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Boogie Wonderland",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 0,
+    "want": 33
+   },
+   "titresDiscogs": {
+    "artiste": "Earth, Wind & Fire",
+    "a": "Boogie Wonderland",
+    "b": "Boogie Wonderland"
+   }
   },
   {
    "id": "d7fd4026-62ce-43b7-8536-074c14838049",
@@ -357,6 +1374,59 @@
     "haut": 6,
     "vendu": "2026-09-21",
     "release": 3482525
+   },
+   "infos": {
+    "label": "Red Bus Records",
+    "catno": "02.2975/2",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "Spain",
+    "annee": 1981,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Downtempo",
+     "Disco"
+    ],
+    "auteurs": [
+     "Ashley Ingram",
+     "Leee John",
+     "Steve Jolley & Tony Swain"
+    ],
+    "producteurs": [
+     "Steve Jolley & Tony Swain"
+    ],
+    "arrangeurs": [
+     "Steve Jolley & Tony Swain"
+    ],
+    "enVente": 7,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Body Talk",
+      "duree": "3:35",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Flashback",
+      "duree": "4:20",
+      "auteurs": []
+     }
+    ],
+    "have": 26,
+    "want": 25,
+    "note": 5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Imagination",
+    "a": "Body Talk",
+    "b": "Flashback"
    }
   },
   {
@@ -381,6 +1451,47 @@
     "haut": 38.92,
     "vendu": "2025-07-05",
     "release": 8508328
+   },
+   "infos": {
+    "label": "Capitol Records",
+    "catno": "4145",
+    "format": "Vinyl, 7\", 45 RPM, Single, Test Pressing, Stereo, Mono",
+    "formats": [
+     "7\"",
+     "Single",
+     "Test Pressing",
+     "Stereo",
+     "Mono"
+    ],
+    "pays": "US",
+    "annee": 1975,
+    "genres": [
+     "Rock"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Letting Go (Mono)",
+      "duree": "3:30",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Letting Go (Stereo)",
+      "duree": "3:30",
+      "auteurs": []
+     }
+    ],
+    "have": 14,
+    "want": 30,
+    "note": 5,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Wings",
+    "a": "Letting Go (Mono)",
+    "b": "Letting Go (Stereo)"
    }
   },
   {
@@ -390,7 +1501,57 @@
    "b": "Au Milieu De Nulle Part",
    "pos": "26",
    "pochette": "covers/76dfb488-fd62-477c-8fd6-77316a890a3c.webp",
-   "discogs": 38170992
+   "discogs": 38170992,
+   "infos": {
+    "label": "Trema",
+    "catno": "150186",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1986,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "enVente": 2,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Nuit Magique",
+      "duree": "3:55",
+      "auteurs": [
+       "Catherine Lara",
+       "Luc Plamondon",
+       "Sebastian Santa Maria"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Assis Dans L'Eau",
+      "duree": "3:54",
+      "auteurs": [
+       "Catherine Lara",
+       "Luc Plamondon",
+       "Sebastian Santa Maria"
+      ]
+     }
+    ],
+    "have": 0,
+    "want": 0,
+    "note": 3,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Catherine Lara",
+    "a": "Nuit Magique",
+    "b": "Assis Dans L'Eau"
+   }
   },
   {
    "id": "85770c0d-fd4e-4e84-b3e3-701c5a5b2707",
@@ -416,6 +1577,56 @@
     "haut": 8.98,
     "vendu": "2025-04-19",
     "release": 3276660
+   },
+   "infos": {
+    "label": "Atlantic",
+    "catno": "3434",
+    "format": "Vinyl, 7\", 45 RPM, Single, Promo, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Promo",
+     "Stereo"
+    ],
+    "pays": "US",
+    "annee": 1977,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Disco",
+     "Europop"
+    ],
+    "auteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "producteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "enVente": 14,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Money, Money, Money",
+      "duree": "3:05",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Money, Money, Money",
+      "duree": "3:05",
+      "auteurs": []
+     }
+    ],
+    "have": 57,
+    "want": 39,
+    "note": 4.25,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "ABBA",
+    "a": "Money, Money, Money",
+    "b": "Money, Money, Money"
    }
   },
   {
@@ -433,6 +1644,53 @@
     "haut": 9,
     "vendu": "2024-11-12",
     "release": 5840034
+   },
+   "infos": {
+    "label": "Carrere Music",
+    "catno": "903175931-7",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1991,
+    "genres": [
+     "Pop"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Felicitá",
+      "duree": "3:23",
+      "auteurs": [
+       "Cristiano Minellono",
+       "Dario Farina",
+       "Gino De Stefani"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Libertá",
+      "duree": "4:23",
+      "auteurs": [
+       "Romina Power",
+       "Springbock",
+       "Vito Pallavicini",
+       "Willy Molco"
+      ]
+     }
+    ],
+    "have": 3,
+    "want": 9,
+    "note": 4.67,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Al Bano & Romina Power",
+    "a": "Felicitá",
+    "b": "Libertá"
    }
   },
   {
@@ -449,6 +1707,53 @@
     "haut": 4.5,
     "vendu": "2026-03-24",
     "release": 6706932
+   },
+   "infos": {
+    "label": "Aquarius",
+    "catno": "JC 55 558",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Patrick Hernandez"
+    ],
+    "producteurs": [
+     "Jean Vanloo"
+    ],
+    "enVente": 17,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Born To Be Alive",
+      "duree": "3:05",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Born To Be Alive",
+      "duree": "3:40",
+      "auteurs": []
+     }
+    ],
+    "have": 144,
+    "want": 88,
+    "note": 3.25,
+    "votes": 8
+   },
+   "titresDiscogs": {
+    "artiste": "Patrick Hernandez",
+    "a": "Born To Be Alive",
+    "b": "Born To Be Alive"
    }
   },
   {
@@ -466,6 +1771,52 @@
     "haut": 1,
     "vendu": "2025-01-13",
     "release": 9096475
+   },
+   "infos": {
+    "label": "RCA Victor",
+    "catno": "PB 8192",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Alain Souchon",
+     "Laurent Voulzy"
+    ],
+    "enVente": 17,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Bubble Star (Part.1)",
+      "duree": "3:46",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Bubble Star (Part.2)",
+      "duree": "4:36",
+      "auteurs": []
+     }
+    ],
+    "have": 106,
+    "want": 3,
+    "note": 5,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Laurent Voulzy",
+    "a": "Bubble Star (Part.1)",
+    "b": "Bubble Star (Part.2)"
    }
   },
   {
@@ -483,6 +1834,61 @@
     "haut": 8.5,
     "vendu": "2026-11-02",
     "release": 503674
+   },
+   "infos": {
+    "label": "Flarenasch",
+    "catno": "721 847",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1986,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Synth-pop",
+     "New Wave"
+    ],
+    "auteurs": [
+     "Christophe Despres",
+     "Jean-Louis Pujade"
+    ],
+    "producteurs": [
+     "Richard Seff"
+    ],
+    "enVente": 102,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Les Démons De Minuit",
+      "duree": "3:54",
+      "auteurs": [
+       "Philippe Mimouni",
+       "Richard Seff",
+       "Stephane Despres"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Les Démons De Minuit (Instrumental)",
+      "duree": "3:58",
+      "auteurs": []
+     }
+    ],
+    "have": 3052,
+    "want": 103,
+    "note": 3.9,
+    "votes": 164
+   },
+   "titresDiscogs": {
+    "artiste": "Images",
+    "a": "Les Démons De Minuit",
+    "b": "Les Démons De Minuit (Instrumental)"
    }
   },
   {
@@ -500,6 +1906,60 @@
     "haut": 5,
     "vendu": "2026-11-11",
     "release": 507148
+   },
+   "infos": {
+    "label": "EMI America",
+    "catno": "2C 008-86660",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1983,
+    "genres": [
+     "Electronic",
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Synth-pop"
+    ],
+    "producteurs": [
+     "David Bowie",
+     "Nile Rodgers"
+    ],
+    "enVente": 56,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Let's Dance",
+      "duree": "4:08",
+      "auteurs": [
+       "David Bowie"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Cat People (Putting Out Fire)",
+      "duree": "5:09",
+      "auteurs": [
+       "David Bowie",
+       "Giorgio Moroder"
+      ]
+     }
+    ],
+    "have": 2768,
+    "want": 220,
+    "note": 4.13,
+    "votes": 196
+   },
+   "titresDiscogs": {
+    "artiste": "David Bowie",
+    "a": "Let's Dance",
+    "b": "Cat People (Putting Out Fire)"
    }
   },
   {
@@ -510,7 +1970,57 @@
    "pos": "34",
    "pochette": "covers/8b25a53e-efc6-4a84-845d-451a7a851b78.webp",
    "avecPochette": true,
-   "discogs": 33503501
+   "discogs": 33503501,
+   "infos": {
+    "label": "4 Track",
+    "catno": "M.171",
+    "format": "Vinyl, 7\", 45 RPM, EP, Compilation, Unofficial Release",
+    "formats": [
+     "7\"",
+     "EP",
+     "Compilation",
+     "Unofficial Release"
+    ],
+    "pays": "Thailand",
+    "genres": [
+     "Pop",
+     "Folk, World, & Country"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "San Francisco",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "San Francisco",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "To Sir, With Love",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Guantanamera",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 3,
+    "want": 0
+   },
+   "titresDiscogs": {
+    "artiste": "Scott McKenzie",
+    "a": "San Francisco / San Francisco",
+    "b": "To Sir, With Love / Guantanamera"
+   }
   },
   {
    "id": "507c9e82-6401-4e00-a49f-e1059ec503ad",
@@ -537,6 +2047,59 @@
     "haut": 10.17,
     "vendu": "2026-08-15",
     "release": 4886849
+   },
+   "infos": {
+    "label": "Casablanca",
+    "catno": "NB 978 DJ",
+    "format": "Vinyl, 7\", 45 RPM, Single, Promo, Stereo, Mono",
+    "formats": [
+     "7\"",
+     "Single",
+     "Promo",
+     "Stereo",
+     "Mono"
+    ],
+    "pays": "US",
+    "annee": 1979,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Harold Faltermeyer",
+     "Keith Forsey",
+     "Pete Bellotte"
+    ],
+    "producteurs": [
+     "Giorgio Moroder",
+     "Pete Bellotte"
+    ],
+    "enVente": 6,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Hot Stuff",
+      "duree": "3:47",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Hot Stuff",
+      "duree": "3:47",
+      "auteurs": []
+     }
+    ],
+    "have": 40,
+    "want": 92,
+    "note": 4.67,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Donna Summer",
+    "a": "Hot Stuff",
+    "b": "Hot Stuff"
    }
   },
   {
@@ -554,6 +2117,55 @@
     "haut": 4.4,
     "vendu": "2026-05-05",
     "release": 6474350
+   },
+   "infos": {
+    "label": "RCA Victor",
+    "catno": "PB 8804",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Hervé Cristiani"
+    ],
+    "enVente": 37,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Il Est Libre Max",
+      "duree": "3:10",
+      "auteurs": [
+       "Hervé Cristiani"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Boogie Boum",
+      "duree": "3:53",
+      "auteurs": [
+       "Hervé Cristiani"
+      ]
+     }
+    ],
+    "have": 538,
+    "want": 16,
+    "note": 4.04,
+    "votes": 25
+   },
+   "titresDiscogs": {
+    "artiste": "Hervé Cristiani",
+    "a": "Il Est Libre Max",
+    "b": "Boogie Boum"
    }
   },
   {
@@ -571,6 +2183,59 @@
     "haut": 8,
     "vendu": "2026-02-04",
     "release": 7215999
+   },
+   "infos": {
+    "label": "Planet",
+    "catno": "12 341",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Electronic",
+     "Rock",
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Soul",
+     "Disco"
+    ],
+    "producteurs": [
+     "Richard Perry"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Fire",
+      "duree": "3:41",
+      "auteurs": [
+       "Bruce Springsteen"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Happiness",
+      "duree": "4:19",
+      "auteurs": [
+       "Allen Toussaint"
+      ]
+     }
+    ],
+    "have": 39,
+    "want": 42,
+    "note": 4,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Pointer Sisters",
+    "a": "Fire",
+    "b": "Happiness"
    }
   },
   {
@@ -588,6 +2253,62 @@
     "haut": 31,
     "vendu": "2025-11-07",
     "release": 23159903
+   },
+   "infos": {
+    "label": "Discoring Records",
+    "catno": "DR-011",
+    "format": "Vinyl, 12\", 33 ⅓ RPM, 45 RPM, Maxi-Single, Reissue",
+    "formats": [
+     "12\"",
+     "Maxi-Single",
+     "Reissue"
+    ],
+    "pays": "Italy",
+    "annee": 2022,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Euro-Disco",
+     "Synth-pop"
+    ],
+    "auteurs": [
+     "Dominique Dubois",
+     "Jean-Michel Rivat"
+    ],
+    "producteurs": [
+     "Jean-Michel Rivat"
+    ],
+    "enVente": 8,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Voyage, Voyage (Extended Remix)",
+      "duree": "6:45",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Voyage, Voyage (Euro Remix)",
+      "duree": "6:12",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Voyage, Voyage (Original)",
+      "duree": "4:21",
+      "auteurs": []
+     }
+    ],
+    "have": 305,
+    "want": 286,
+    "note": 4.86,
+    "votes": 44
+   },
+   "titresDiscogs": {
+    "artiste": "Desireless",
+    "a": "Voyage, Voyage (Extended Remix)",
+    "b": "Voyage, Voyage (Euro Remix) / Voyage, Voyage (Original)"
    }
   },
   {
@@ -605,6 +2326,70 @@
     "haut": 29.44,
     "vendu": "2026-11-11",
     "release": 386991
+   },
+   "infos": {
+    "label": "Polydor",
+    "catno": "885 765-1",
+    "format": "Vinyl, 12\", Maxi-Single, 45 RPM",
+    "formats": [
+     "12\"",
+     "Maxi-Single"
+    ],
+    "pays": "France",
+    "annee": 1987,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Synth-pop",
+     "Latin"
+    ],
+    "producteurs": [
+     "Franck Langolff"
+    ],
+    "arrangeurs": [
+     "Franck Langolff"
+    ],
+    "enVente": 41,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Joe Le Taxi (Version Longue)",
+      "duree": "5:30",
+      "auteurs": [
+       "Franck Langolff",
+       "Étienne Roda-Gil"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Joe Le Taxi",
+      "duree": "3:54",
+      "auteurs": [
+       "Franck Langolff",
+       "Étienne Roda-Gil"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Varvara Pavlovna",
+      "duree": "3:28",
+      "auteurs": [
+       "Bertrand Châtenet",
+       "Franck Langolff"
+      ]
+     }
+    ],
+    "have": 1443,
+    "want": 263,
+    "note": 4.37,
+    "votes": 131
+   },
+   "titresDiscogs": {
+    "artiste": "Vanessa Paradis",
+    "a": "Joe Le Taxi (Version Longue)",
+    "b": "Joe Le Taxi / Varvara Pavlovna"
    }
   },
   {
@@ -615,7 +2400,53 @@
    "pos": "41",
    "pochette": "covers/20d58400-f002-44c6-94aa-7449de89eed8.webp",
    "avecPochette": true,
-   "discogs": 23891555
+   "discogs": 23891555,
+   "infos": {
+    "label": "Ibach Records",
+    "catno": "60 118",
+    "format": "Vinyl, 7\", 45 RPM",
+    "formats": [
+     "7\""
+    ],
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "enVente": 1,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Sarà Perché Ti Amo",
+      "duree": "3:10",
+      "auteurs": [
+       "Daniele Pace",
+       "Dario Farina",
+       "Enzo Ghinazzi"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Bello L'Amore",
+      "duree": "3:20",
+      "auteurs": [
+       "Angelo Sotgiu",
+       "Cristiano Minellono",
+       "Franco Gatti"
+      ]
+     }
+    ],
+    "have": 5,
+    "want": 31
+   },
+   "titresDiscogs": {
+    "artiste": "Ricchi E Poveri",
+    "a": "Sarà Perché Ti Amo",
+    "b": "Bello L'Amore"
+   }
   },
   {
    "id": "ef667476-d38a-40ac-adda-0e89c43c7a30",
@@ -650,6 +2481,67 @@
     "haut": 7.69,
     "vendu": "2026-10-26",
     "release": 894424
+   },
+   "infos": {
+    "label": "RCA Victor",
+    "catno": "PC 8089",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
+    "formats": [
+     "12\"",
+     "Maxi-Single"
+    ],
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Alain Souchon",
+     "Brian",
+     "Laurent Voulzy"
+    ],
+    "arrangeurs": [
+     "Laurent Voulzy"
+    ],
+    "enVente": 59,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Rockollection (Part 1)",
+      "duree": "3:50",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "Rockollection (Part 2)",
+      "duree": "3:40",
+      "auteurs": []
+     },
+     {
+      "position": "A3",
+      "titre": "Rockollection (Final Orchestre)",
+      "duree": "4:15",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Le Miroir",
+      "duree": "3:55",
+      "auteurs": []
+     }
+    ],
+    "have": 1051,
+    "want": 57,
+    "note": 4.04,
+    "votes": 91
+   },
+   "titresDiscogs": {
+    "artiste": "Laurent Voulzy",
+    "a": "Rockollection (Part 1) / Rockollection (Part 2) / Rockollection (Final Orchestre)",
+    "b": "Le Miroir"
    }
   },
   {
@@ -667,6 +2559,60 @@
     "haut": 82.5,
     "vendu": "2025-06-16",
     "release": 7703173
+   },
+   "infos": {
+    "label": "Arcade",
+    "catno": "3019906",
+    "format": "Vinyl, 12\", 45 RPM, Single",
+    "formats": [
+     "12\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1996,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Gérard Melet",
+     "Jacques Revaux"
+    ],
+    "arrangeurs": [
+     "Pierre Groscolas"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Lady Lay ( Club Mix )",
+      "duree": "6:53",
+      "auteurs": [
+       "Michel Jourdan",
+       "Pierre Groscolas"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Lady Lay ( Album Version )",
+      "duree": "3:09",
+      "auteurs": [
+       "Michel Jourdan",
+       "Pierre Groscolas"
+      ]
+     }
+    ],
+    "have": 5,
+    "want": 24,
+    "note": 5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Pierre Groscolas",
+    "a": "Lady Lay ( Club Mix )",
+    "b": "Lady Lay ( Album Version )"
    }
   },
   {
@@ -684,6 +2630,61 @@
     "haut": 4.96,
     "vendu": "2026-08-06",
     "release": 8855071
+   },
+   "infos": {
+    "label": "Sire",
+    "catno": "SRE 1027",
+    "format": "Vinyl, 7\", 45 RPM, Promo, Single, Mono, Stereo",
+    "formats": [
+     "7\"",
+     "Promo",
+     "Single",
+     "Mono",
+     "Stereo"
+    ],
+    "pays": "US",
+    "annee": 1978,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Vocal",
+     "Disco"
+    ],
+    "auteurs": [
+     "Brent Dowe",
+     "Frank Farian",
+     "George Reyam",
+     "James McNaughton"
+    ],
+    "producteurs": [
+     "Frank Farian"
+    ],
+    "enVente": 10,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Rivers Of Babylon",
+      "duree": "4:16",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Rivers Of Babylon",
+      "duree": "4:16",
+      "auteurs": []
+     }
+    ],
+    "have": 32,
+    "want": 48,
+    "note": 5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Boney M.",
+    "a": "Rivers Of Babylon",
+    "b": "Rivers Of Babylon"
    }
   },
   {
@@ -701,6 +2702,60 @@
     "haut": 45.5,
     "vendu": "2026-04-26",
     "release": 3064717
+   },
+   "infos": {
+    "label": "ATCO Records",
+    "catno": "7080",
+    "format": "Vinyl, 7\", 45 RPM, Single, Promo, Stereo, Mono",
+    "formats": [
+     "7\"",
+     "Single",
+     "Promo",
+     "Stereo",
+     "Mono"
+    ],
+    "pays": "US",
+    "annee": 1976,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "producteurs": [
+     "Frank Farian"
+    ],
+    "arrangeurs": [
+     "Steven Hammer"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Sunny",
+      "duree": "3:59",
+      "auteurs": [
+       "Bobby Hebb"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Sunny",
+      "duree": "3:59",
+      "auteurs": [
+       "Bobby Hebb"
+      ]
+     }
+    ],
+    "have": 24,
+    "want": 133,
+    "note": 3,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Boney M.",
+    "a": "Sunny",
+    "b": "Sunny"
    }
   },
   {
@@ -718,6 +2773,59 @@
     "haut": 16.38,
     "vendu": "2026-07-02",
     "release": 4065042
+   },
+   "infos": {
+    "label": "ATCO Records",
+    "catno": "45-7063",
+    "format": "Vinyl, 7\", 45 RPM, Promo, Stereo, Mono",
+    "formats": [
+     "7\"",
+     "Promo",
+     "Stereo",
+     "Mono"
+    ],
+    "pays": "US",
+    "annee": 1976,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Frank Farian",
+     "George Reyam"
+    ],
+    "producteurs": [
+     "Frank Farian"
+    ],
+    "arrangeurs": [
+     "Steven Hammer"
+    ],
+    "enVente": 10,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Daddy Cool",
+      "duree": "3:27",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Daddy Cool",
+      "duree": "3:27",
+      "auteurs": []
+     }
+    ],
+    "have": 51,
+    "want": 94,
+    "note": 4.67,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Boney M.",
+    "a": "Daddy Cool",
+    "b": "Daddy Cool"
    }
   },
   {
@@ -735,6 +2843,536 @@
     "haut": 495,
     "vendu": "2026-09-25",
     "release": 416696
+   },
+   "infos": {
+    "label": "Polydor",
+    "catno": "815 619-7",
+    "format": "Vinyl, 7\", 45 RPM, Single, Reissue",
+    "formats": [
+     "7\"",
+     "Single",
+     "Reissue",
+     "Picture Disc",
+     "Box Set",
+     "Compilation"
+    ],
+    "pays": "Germany",
+    "annee": 1984,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Disco",
+     "Ballad",
+     "Soft Rock"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "1-A",
+      "titre": "People Need Love",
+      "duree": "2:44",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "1-B",
+      "titre": "Merry-Go-Round",
+      "duree": "3:24",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "2-A",
+      "titre": "Ring Ring",
+      "duree": "3:05",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Neil Sedaka",
+       "Phil Cody",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "2-B",
+      "titre": "Rock 'n' Roll Band",
+      "duree": "3:10",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "3-A",
+      "titre": "Waterloo (English Version)",
+      "duree": "2:47",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "3-B",
+      "titre": "Watch Out",
+      "duree": "3:46",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "4-A",
+      "titre": "Honey Honey",
+      "duree": "2:56",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "4-B",
+      "titre": "Ring Ring",
+      "duree": "3:09",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Neil Sedaka",
+       "Phil Cody",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "5-A",
+      "titre": "So Long",
+      "duree": "3:05",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "5-B",
+      "titre": "I've Been Waiting For You",
+      "duree": "3:38",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "6-A",
+      "titre": "I Do, I Do, I Do, I Do, I Do",
+      "duree": "3:15",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "6-B",
+      "titre": "Rock Me",
+      "duree": "3:04",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "7-A",
+      "titre": "SOS",
+      "duree": "3:21",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "7-B",
+      "titre": "The Man In The Middle",
+      "duree": "3:00",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "8-A",
+      "titre": "Mamma Mia",
+      "duree": "3:32",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "8-B",
+      "titre": "Intermezzo No. 1",
+      "duree": "3:46",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "9-A",
+      "titre": "Fernando",
+      "duree": "4:14",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "9-B",
+      "titre": "Tropical Loveland",
+      "duree": "3:04",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "10-A",
+      "titre": "Dancing Queen",
+      "duree": "3:51",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "10-B",
+      "titre": "That's Me",
+      "duree": "3:17",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "11-A",
+      "titre": "Money, Money, Money",
+      "duree": "3:05",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "11-B",
+      "titre": "Crazy World",
+      "duree": "3:47",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "12-A",
+      "titre": "Knowing Me, Knowing You",
+      "duree": "4:02",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "12-B",
+      "titre": "Happy Hawaii",
+      "duree": "4:22",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "13-A",
+      "titre": "The Name Of The Game",
+      "duree": "4:50",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "13-B",
+      "titre": "I Wonder (Departure) (Live)",
+      "duree": "4:29",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "14-A",
+      "titre": "Take A Chance On Me",
+      "duree": "4:05",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "14-B",
+      "titre": "I'm A Marionette",
+      "duree": "4:03",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "15-A",
+      "titre": "Eagle",
+      "duree": "4:23",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "15-B",
+      "titre": "Thank You For The Music",
+      "duree": "3:48",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "16-A",
+      "titre": "Summer Night City",
+      "duree": "3:34",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "16-B",
+      "titre": "Medley: Pick A Bale Of Cotton / On Top Of Old Smokey / Midnight Special",
+      "duree": "4:15",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Traditional"
+      ]
+     },
+     {
+      "position": "17-A",
+      "titre": "Chiquitita",
+      "duree": "5:26",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "17-B",
+      "titre": "Lovelight",
+      "duree": "3:28",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "18-A",
+      "titre": "Does Your Mother Know",
+      "duree": "3:13",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "18-B",
+      "titre": "Kisses Of Fire",
+      "duree": "3:16",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "19-A",
+      "titre": "Voulez-Vous",
+      "duree": "5:11",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "19-B",
+      "titre": "Angeleyes",
+      "duree": "3:47",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "20-A",
+      "titre": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+      "duree": "4:47",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "20-B",
+      "titre": "The King Has Lost His Crown",
+      "duree": "3:30",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "21-A",
+      "titre": "I Have A Dream",
+      "duree": "4:44",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "21-B",
+      "titre": "Take A Chance On Me (Live)",
+      "duree": "4:24",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "22-A",
+      "titre": "The Winner Takes It All",
+      "duree": "4:56",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "22-B",
+      "titre": "Elaine",
+      "duree": "3:39",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "23-A",
+      "titre": "Super Trouper",
+      "duree": "4:13",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "23-B",
+      "titre": "The Piper",
+      "duree": "3:25",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "24-A",
+      "titre": "One Of Us",
+      "duree": "3:55",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "24-B",
+      "titre": "Should I Laugh Or Cry",
+      "duree": "4:29",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "25-A",
+      "titre": "Head Over Heels",
+      "duree": "3:45",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "25-B",
+      "titre": "The Visitors",
+      "duree": "5:49",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "26-A",
+      "titre": "The Day Before You Came",
+      "duree": "5:50",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "26-B",
+      "titre": "Cassandra",
+      "duree": "4:50",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "27-A",
+      "titre": "Under Attack",
+      "duree": "3:45",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "27-B",
+      "titre": "You Owe Me One",
+      "duree": "3:29",
+      "auteurs": [
+       "Björn Ulvaeus & Benny Andersson"
+      ]
+     },
+     {
+      "position": "28-A",
+      "titre": "Waterloo (German Version)",
+      "duree": "2:46",
+      "auteurs": [
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Gerd Müller-Schwanke",
+       "Stig Anderson"
+      ]
+     },
+     {
+      "position": "28-B",
+      "titre": "Waterloo (French Version)",
+      "duree": "2:46",
+      "auteurs": [
+       "Alain Boublil",
+       "Benny Andersson",
+       "Björn Ulvaeus",
+       "Stig Anderson"
+      ]
+     }
+    ],
+    "have": 640,
+    "want": 242,
+    "note": 4.16,
+    "votes": 83
+   },
+   "titresDiscogs": {
+    "artiste": "ABBA",
+    "a": "People Need Love",
+    "b": "Merry-Go-Round"
    }
   },
   {
@@ -752,6 +3390,53 @@
     "haut": 5.99,
     "vendu": "2026-09-10",
     "release": 4592954
+   },
+   "infos": {
+    "label": "Contempo",
+    "catno": "CS.2068",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "UK",
+    "annee": 1975,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Subway"
+    ],
+    "producteurs": [
+     "S.A. Creations Artistiques"
+    ],
+    "enVente": 32,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Chinese Kung Fu",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Chinese Kung Fu (Disco Version)",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 75,
+    "want": 43,
+    "note": 3.5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Banzaii",
+    "a": "Chinese Kung Fu",
+    "b": "Chinese Kung Fu (Disco Version)"
    }
   },
   {
@@ -762,7 +3447,61 @@
    "pos": "51",
    "pochette": "covers/0118cc28-3945-4e8b-8462-c9dfaf010528.webp",
    "avecPochette": true,
-   "discogs": 31339168
+   "discogs": 31339168,
+   "infos": {
+    "label": "Not On Label (ABBA)",
+    "format": "Vinyl, 12\", 45 RPM, Picture Disc, Unofficial Release",
+    "formats": [
+     "12\"",
+     "Picture Disc",
+     "Unofficial Release"
+    ],
+    "pays": "UK",
+    "annee": 2024,
+    "genres": [
+     "Pop"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Waterloo",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "Waterloo (Alternate Mix)",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Waterloo (Swedish)",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Waterloo (German)",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B3",
+      "titre": "Waterloo (French)",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 3,
+    "want": 27
+   },
+   "titresDiscogs": {
+    "artiste": "ABBA",
+    "a": "Waterloo / Waterloo (Alternate Mix)",
+    "b": "Waterloo (Swedish) / Waterloo (German) / Waterloo (French)"
+   }
   },
   {
    "id": "4d3f1be3-da1f-410b-9d95-a559ebc45586",
@@ -779,6 +3518,53 @@
     "haut": 7.18,
     "vendu": "2026-02-16",
     "release": 11251175
+   },
+   "infos": {
+    "label": "Atlantic",
+    "catno": "212013",
+    "format": "Vinyl, 7\", 45 RPM, EP",
+    "formats": [
+     "7\"",
+     "EP"
+    ],
+    "pays": "France",
+    "genres": [
+     "Rock"
+    ],
+    "enVente": 4,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "What'D I Say (Part 1)",
+      "duree": "3:05",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "What'D I Say (Part 2)",
+      "duree": "1:59",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Blackjack",
+      "duree": "2:15",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Heartbreaker",
+      "duree": "2:51",
+      "auteurs": []
+     }
+    ],
+    "have": 30,
+    "want": 11
+   },
+   "titresDiscogs": {
+    "artiste": "Ray Charles And His Orchestra",
+    "a": "What'D I Say (Part 1) / What'D I Say (Part 2)",
+    "b": "Blackjack / Heartbreaker"
    }
   },
   {
@@ -796,6 +3582,49 @@
     "haut": 1.99,
     "vendu": "2021-01-29",
     "release": 7776398
+   },
+   "infos": {
+    "label": "Little Prune Music",
+    "catno": "JD 460516",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1990,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Vocal"
+    ],
+    "enVente": 1,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "I Can Help (Nouvelle Version)",
+      "duree": "3:52",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Sound Of Love",
+      "duree": "3:40",
+      "auteurs": []
+     }
+    ],
+    "have": 1,
+    "want": 1,
+    "note": 5,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Billy Swan",
+    "a": "I Can Help (Nouvelle Version)",
+    "b": "Sound Of Love"
    }
   },
   {
@@ -813,6 +3642,52 @@
     "haut": 32.33,
     "vendu": "2021-02-06",
     "release": 7480756
+   },
+   "infos": {
+    "label": "Capitol Records",
+    "catno": "S7C-11233",
+    "format": "Vinyl, 7\"",
+    "formats": [
+     "7\""
+    ],
+    "pays": "Brazil",
+    "annee": 1974,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Rock & Roll"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Be-Bop A Lula",
+      "duree": "",
+      "auteurs": [
+       "Gene Vincent",
+       "Sheriff Tex Davis"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Blue Jean Bop",
+      "duree": "",
+      "auteurs": [
+       "Gene Vincent",
+       "Hal Levy"
+      ]
+     }
+    ],
+    "have": 6,
+    "want": 6,
+    "note": 5,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Gene Vincent",
+    "a": "Be-Bop A Lula",
+    "b": "Blue Jean Bop"
    }
   },
   {
@@ -830,6 +3705,67 @@
     "haut": 28.37,
     "vendu": "2026-10-24",
     "release": 85940
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 651438 8",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
+    "formats": [
+     "12\"",
+     "Maxi-Single"
+    ],
+    "pays": "France",
+    "annee": 1988,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Disco",
+     "Hi NRG",
+     "Euro House",
+     "Synth-pop"
+    ],
+    "auteurs": [
+     "Claude Mainguy",
+     "Sauveur Pichot",
+     "William Picard"
+    ],
+    "enVente": 31,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Nuit De Folie (Crazy Night Remix)",
+      "duree": "6:40",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Nuit De Folie (French Mix Club)",
+      "duree": "6:40",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Nuit De Folie (A Capella Chœur)",
+      "duree": "0:50",
+      "auteurs": []
+     },
+     {
+      "position": "B3",
+      "titre": "Nuit De Folie (A Capella Voix Rap)",
+      "duree": "0:40",
+      "auteurs": []
+     }
+    ],
+    "have": 666,
+    "want": 139,
+    "note": 4.13,
+    "votes": 60
+   },
+   "titresDiscogs": {
+    "artiste": "Début De Soirée",
+    "a": "Nuit De Folie (Crazy Night Remix)",
+    "b": "Nuit De Folie (French Mix Club) / Nuit De Folie (A Capella Chœur) / Nuit De Folie (A Capella Voix Rap)"
    }
   },
   {
@@ -846,6 +3782,52 @@
     "haut": 3,
     "vendu": "2025-09-12",
     "release": 9009513
+   },
+   "infos": {
+    "label": "Les Editions Productions Georges Mary",
+    "catno": "74321132067",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1993,
+    "genres": [
+     "Pop"
+    ],
+    "producteurs": [
+     "Marc Beaulieu",
+     "Andre Di Cesare",
+     "Roch Voisine"
+    ],
+    "enVente": 4,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "L'Idole",
+      "duree": "4:19",
+      "auteurs": [
+       "Roch Voisine"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Hélène (Live)",
+      "duree": "6:24",
+      "auteurs": [
+       "Roch Voisine",
+       "Stéphane Lessard"
+      ]
+     }
+    ],
+    "have": 48,
+    "want": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Roch Voisine",
+    "a": "L'Idole",
+    "b": "Hélène (Live)"
    }
   },
   {
@@ -871,6 +3853,61 @@
     "haut": 7.21,
     "vendu": "2026-09-14",
     "release": 1925404
+   },
+   "infos": {
+    "label": "Motown",
+    "catno": "ZB 61451",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Electronic",
+     "Funk / Soul",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soul",
+     "Synth-pop",
+     "Score",
+     "Soundtrack"
+    ],
+    "auteurs": [
+     "Stevie Wonder"
+    ],
+    "producteurs": [
+     "Stevie Wonder"
+    ],
+    "arrangeurs": [
+     "Stevie Wonder"
+    ],
+    "enVente": 80,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "I Just Called To Say I Love You",
+      "duree": "4:16",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "I Just Called To Say I Love You (Instrumental)",
+      "duree": "4:16",
+      "auteurs": []
+     }
+    ],
+    "have": 2045,
+    "want": 77,
+    "note": 3.96,
+    "votes": 97
+   },
+   "titresDiscogs": {
+    "artiste": "Stevie Wonder",
+    "a": "I Just Called To Say I Love You",
+    "b": "I Just Called To Say I Love You (Instrumental)"
    }
   },
   {
@@ -880,7 +3917,47 @@
    "b": "One Of These Nights",
    "pos": "59",
    "pochette": "covers/e24758a6-fcd7-4432-84c6-dc0bf5cda673.webp",
-   "discogs": 10649124
+   "discogs": 10649124,
+   "infos": {
+    "label": "Asylum Records",
+    "catno": "13 084",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Classic Rock"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Hotel California",
+      "duree": "6:30",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "New Kid In Town",
+      "duree": "3:51",
+      "auteurs": []
+     }
+    ],
+    "have": 12,
+    "want": 50,
+    "note": 3.5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Eagles",
+    "a": "Hotel California",
+    "b": "New Kid In Town"
+   }
   },
   {
    "id": "9fcd380d-656c-4f50-9b22-d27b4669914d",
@@ -896,6 +3973,44 @@
     "haut": 27.25,
     "vendu": "2026-05-22",
     "release": 12382175
+   },
+   "infos": {
+    "label": "Tamla",
+    "catno": "T 54176",
+    "format": "Vinyl, 7\", 45 RPM, Promo",
+    "formats": [
+     "7\"",
+     "Promo"
+    ],
+    "pays": "US",
+    "annee": 1968,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "I Heard It Through The Grapevine",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "I Heard It Through The Grapevine",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 12,
+    "want": 58,
+    "note": 4.33,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Marvin Gaye",
+    "a": "I Heard It Through The Grapevine",
+    "b": "I Heard It Through The Grapevine"
    }
   },
   {
@@ -913,6 +4028,51 @@
     "haut": 18,
     "vendu": "2026-04-12",
     "release": 5880244
+   },
+   "infos": {
+    "label": "Cosmos",
+    "catno": "105",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "Turkey",
+    "genres": [
+     "Funk / Soul",
+     "Pop"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "enVente": 4,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Too Much Heaven",
+      "duree": "4:54",
+      "auteurs": [
+       "Robin Gibb, Barry Gibb & Maurice Gibb"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Rest Your Love On Me",
+      "duree": "4:20",
+      "auteurs": [
+       "Barry Gibb"
+      ]
+     }
+    ],
+    "have": 14,
+    "want": 11,
+    "note": 4.5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Bee Gees",
+    "a": "Too Much Heaven",
+    "b": "Rest Your Love On Me"
    }
   },
   {
@@ -929,6 +4089,50 @@
     "haut": 7,
     "vendu": "2025-12-04",
     "release": 11109138
+   },
+   "infos": {
+    "label": "Motown",
+    "catno": "ESP-589",
+    "format": "Vinyl, 7\", 45 RPM, Single, Promo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Promo"
+    ],
+    "pays": "Spain",
+    "annee": 1982,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Rhythm & Blues",
+     "Soul",
+     "Disco"
+    ],
+    "enVente": 6,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Do I Do = ¿Lo Hago?",
+      "duree": "4:14",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Do I Do = ¿Lo Hago? Parte 2",
+      "duree": "4:52",
+      "auteurs": []
+     }
+    ],
+    "have": 15,
+    "want": 46,
+    "note": 4.5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Stevie Wonder",
+    "a": "Do I Do = ¿Lo Hago?",
+    "b": "Do I Do = ¿Lo Hago? Parte 2"
    }
   },
   {
@@ -945,6 +4149,103 @@
     "haut": 0.9,
     "vendu": "2022-12-13",
     "release": 13537586
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS A 1407",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "Ireland",
+    "annee": 1981,
+    "genres": [
+     "Electronic",
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "enVente": 11,
+    "pistes": [
+     {
+      "position": "A.1",
+      "titre": "Stars On 45 Volume Two",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A.2",
+      "titre": "Voulez Vous",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A.3",
+      "titre": "S.O.S.",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A.4",
+      "titre": "Bang A Boomerang",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A.5",
+      "titre": "Money, Money, Money",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A.6",
+      "titre": "Knowing Me, Knowing You",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A.7",
+      "titre": "Fernando",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A.8",
+      "titre": "The Winner Takes It All",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A.9",
+      "titre": "Super Trouper",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A.10",
+      "titre": "Stars On 45 (2)",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Stars Get Ready",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 65,
+    "want": 10,
+    "note": 2,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Stars On 45",
+    "a": "Stars On 45 Volume Two / Voulez Vous / S.O.S. / Bang A Boomerang / Money, Money, Money / Knowing Me, Knowing You / Fernando / The Winner Takes It All / Super Trouper / Stars On 45 (2)",
+    "b": "Stars Get Ready"
    }
   },
   {
@@ -962,6 +4263,57 @@
     "haut": 7.5,
     "vendu": "2026-11-14",
     "release": 536976
+   },
+   "infos": {
+    "label": "Charles Talar Records",
+    "catno": "2000997",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Rock",
+     "Reggae",
+     "Pop"
+    ],
+    "styles": [
+     "Reggae-Pop",
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "Christian Dingler"
+    ],
+    "producteurs": [
+     "Bob Mehdi"
+    ],
+    "enVente": 91,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Femme Libérée",
+      "duree": "3:40",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Sexy Rock",
+      "duree": "2:47",
+      "auteurs": []
+     }
+    ],
+    "have": 2535,
+    "want": 73,
+    "note": 3.63,
+    "votes": 115
+   },
+   "titresDiscogs": {
+    "artiste": "Cookie Dingler",
+    "a": "Femme Libérée",
+    "b": "Sexy Rock"
    }
   },
   {
@@ -979,6 +4331,52 @@
     "haut": 7.27,
     "vendu": "2025-08-01",
     "release": 2901049
+   },
+   "infos": {
+    "label": "Pathé Marconi EMI",
+    "catno": "2C008-04700",
+    "format": "Vinyl, 7\", Reissue",
+    "formats": [
+     "7\"",
+     "Reissue"
+    ],
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Rock & Roll"
+    ],
+    "enVente": 13,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Apache",
+      "duree": "",
+      "auteurs": [
+       "Jerry Lordan"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Guitar Tango",
+      "duree": "2:56",
+      "auteurs": [
+       "Georges Liferman",
+       "Norman Maine"
+      ]
+     }
+    ],
+    "have": 69,
+    "want": 11,
+    "note": 4.5,
+    "votes": 6
+   },
+   "titresDiscogs": {
+    "artiste": "Shadows, The",
+    "a": "Apache",
+    "b": "Guitar Tango"
    }
   },
   {
@@ -996,6 +4394,57 @@
     "haut": 9.9,
     "vendu": "2026-11-15",
     "release": 186604
+   },
+   "infos": {
+    "label": "Island Records",
+    "catno": "6172 870",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Synth-pop",
+     "New Wave"
+    ],
+    "auteurs": [
+     "Bruce Woolley",
+     "Geoff Downes",
+     "Trevor Horn"
+    ],
+    "producteurs": [
+     "The Buggles"
+    ],
+    "enVente": 50,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Video Killed The Radio Star",
+      "duree": "3:20",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Kid Dynamo",
+      "duree": "3:27",
+      "auteurs": []
+     }
+    ],
+    "have": 4658,
+    "want": 329,
+    "note": 4.06,
+    "votes": 289
+   },
+   "titresDiscogs": {
+    "artiste": "Buggles, The",
+    "a": "Video Killed The Radio Star",
+    "b": "Kid Dynamo"
    }
   },
   {
@@ -1013,6 +4462,64 @@
     "haut": 15.9,
     "vendu": "2026-10-31",
     "release": 1081518
+   },
+   "infos": {
+    "label": "London Records",
+    "catno": "886 056-1",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
+    "formats": [
+     "12\"",
+     "Maxi-Single"
+    ],
+    "pays": "France",
+    "annee": 1986,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Synth-pop",
+     "Hi NRG"
+    ],
+    "enVente": 33,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Venus (Extended Version)",
+      "duree": "7:20",
+      "auteurs": [
+       "Robbie van Leeuwen"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Venus (Dub)",
+      "duree": "8:15",
+      "auteurs": [
+       "Robbie van Leeuwen"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "White Train",
+      "duree": "3:50",
+      "auteurs": [
+       "Keren Woodward",
+       "Patrick Seymour",
+       "Phil Bishop",
+       "Sarah Dallin",
+       "Siobhan Fahey"
+      ]
+     }
+    ],
+    "have": 463,
+    "want": 120,
+    "note": 4.31,
+    "votes": 45
+   },
+   "titresDiscogs": {
+    "artiste": "Bananarama",
+    "a": "Venus (Extended Version)",
+    "b": "Venus (Dub) / White Train"
    }
   },
   {
@@ -1030,6 +4537,56 @@
     "haut": 30,
     "vendu": "2025-03-20",
     "release": 5140915
+   },
+   "infos": {
+    "label": "The Boardwalk Entertainment Co",
+    "catno": "101616",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Hard Rock"
+    ],
+    "producteurs": [
+     "Kenny Laguna",
+     "Ritchie Cordell"
+    ],
+    "enVente": 11,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "I Love Rock 'N Roll",
+      "duree": "2:56",
+      "auteurs": [
+       "Alan Merrill",
+       "Jake Hooker"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Love Is Pain",
+      "duree": "3:07",
+      "auteurs": [
+       "Joan Jett"
+      ]
+     }
+    ],
+    "have": 266,
+    "want": 98,
+    "note": 4.25,
+    "votes": 24
+   },
+   "titresDiscogs": {
+    "artiste": "Joan Jett & The Blackhearts",
+    "a": "I Love Rock 'N Roll",
+    "b": "Love Is Pain"
    }
   },
   {
@@ -1047,6 +4604,52 @@
     "haut": 7,
     "vendu": "2025-01-05",
     "release": 11066213
+   },
+   "infos": {
+    "label": "London Records",
+    "catno": "84078",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1972,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Rock & Roll"
+    ],
+    "enVente": 5,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "The Locomotion",
+      "duree": "2:12",
+      "auteurs": [
+       "Goffin And King"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "He Is The Boy",
+      "duree": "2:48",
+      "auteurs": [
+       "Dee Ervin",
+       "Gerry Goffin"
+      ]
+     }
+    ],
+    "have": 50,
+    "want": 33,
+    "note": 5,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Little Eva",
+    "a": "The Locomotion",
+    "b": "He Is The Boy"
    }
   },
   {
@@ -1064,6 +4667,56 @@
     "haut": 5.7,
     "vendu": "2024-09-01",
     "release": 14886483
+   },
+   "infos": {
+    "label": "Virgin",
+    "catno": "90148",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "producteurs": [
+     "Glyn Johns"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Un Autre Monde",
+      "duree": "4:30",
+      "auteurs": [
+       "Jean-Louis Aubert",
+       "Téléphone"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Le Garçon D'ascenseur",
+      "duree": "4:56",
+      "auteurs": [
+       "Louis Bertignac",
+       "Téléphone"
+      ]
+     }
+    ],
+    "have": 92,
+    "want": 20,
+    "note": 4.8,
+    "votes": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Téléphone",
+    "a": "Un Autre Monde",
+    "b": "Le Garçon D'ascenseur"
    }
   },
   {
@@ -1081,6 +4734,53 @@
     "haut": 25,
     "vendu": "2026-03-11",
     "release": 5833321
+   },
+   "infos": {
+    "label": "Ariola",
+    "catno": "PRO 1112",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single, Promo",
+    "formats": [
+     "12\"",
+     "Maxi-Single",
+     "Promo"
+    ],
+    "pays": "France",
+    "annee": 1995,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Synth-pop"
+    ],
+    "producteurs": [
+     "Marc Moulin"
+    ],
+    "enVente": 1,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Le Banana Split (Disco Mix)",
+      "duree": "6:00",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Le Banana Split (Radio Mix)",
+      "duree": "2:35",
+      "auteurs": []
+     }
+    ],
+    "have": 48,
+    "want": 120,
+    "note": 4.8,
+    "votes": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Lio",
+    "a": "Le Banana Split (Disco Mix)",
+    "b": "Le Banana Split (Radio Mix)"
    }
   },
   {
@@ -1105,6 +4805,54 @@
     "haut": 7,
     "vendu": "2026-10-01",
     "release": 701924
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "655137 7",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1989,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Thierry Hazard"
+    ],
+    "producteurs": [
+     "Daniel Glikmans",
+     "Thierry Hazard"
+    ],
+    "enVente": 49,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Le Jerk",
+      "duree": "3:58",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Goodbye Mary",
+      "duree": "4:19",
+      "auteurs": []
+     }
+    ],
+    "have": 1708,
+    "want": 60,
+    "note": 3.9,
+    "votes": 89
+   },
+   "titresDiscogs": {
+    "artiste": "Thierry Hazard",
+    "a": "Le Jerk",
+    "b": "Goodbye Mary"
    }
   },
   {
@@ -1115,7 +4863,52 @@
    "pos": "74",
    "pochette": "covers/2cbec7b3-d1a3-4513-b584-11fc3eb42583.webp",
    "avecPochette": true,
-   "discogs": 36580285
+   "discogs": 36580285,
+   "infos": {
+    "label": "Casablanca",
+    "catno": "6175 034",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Steven Greenberg"
+    ],
+    "producteurs": [
+     "Steven Greenberg"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Funkytown",
+      "duree": "3:58",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "All Night Dancing",
+      "duree": "3:09",
+      "auteurs": []
+     }
+    ],
+    "have": 5,
+    "want": 10
+   },
+   "titresDiscogs": {
+    "artiste": "Lipps, Inc.",
+    "a": "Funkytown",
+    "b": "All Night Dancing"
+   }
   },
   {
    "id": "e952712b-b631-48e2-a039-134eec9c7894",
@@ -1124,7 +4917,54 @@
    "b": "Revolution",
    "pos": "75",
    "pochette": "covers/e952712b-b631-48e2-a039-134eec9c7894.webp",
-   "discogs": 16122084
+   "discogs": 16122084,
+   "infos": {
+    "label": "Capitol Records",
+    "catno": "6365",
+    "format": "Vinyl, 7\", Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "Mexico",
+    "annee": 1968,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "Lennon-McCartney"
+    ],
+    "producteurs": [
+     "George Martin"
+    ],
+    "enVente": 2,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Hey Jude",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Revolution",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 16,
+    "want": 48,
+    "note": 4.75,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Beatles, The",
+    "a": "Hey Jude",
+    "b": "Revolution"
+   }
   },
   {
    "id": "10c71a16-e948-4dbe-8df5-5d7df821fadc",
@@ -1134,7 +4974,55 @@
    "pos": "76",
    "pochette": "covers/10c71a16-e948-4dbe-8df5-5d7df821fadc.webp",
    "avecPochette": true,
-   "discogs": 34452028
+   "discogs": 34452028,
+   "infos": {
+    "label": "Polydor",
+    "catno": "S/N-529",
+    "format": "Vinyl, 7\", 45 RPM, Promo, Stereo, Mono",
+    "formats": [
+     "7\"",
+     "Promo",
+     "Stereo",
+     "Mono"
+    ],
+    "pays": "Mexico",
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "producteurs": [
+     "Peter Müller"
+    ],
+    "enVente": 1,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Live Is Life",
+      "duree": "3:30",
+      "auteurs": [
+       "Opus"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Live Is Life",
+      "duree": "3:30",
+      "auteurs": [
+       "Ewald Pfleger",
+       "Opus"
+      ]
+     }
+    ],
+    "have": 1,
+    "want": 8
+   },
+   "titresDiscogs": {
+    "artiste": "Opus",
+    "a": "Live Is Life",
+    "b": "Live Is Life"
+   }
   },
   {
    "id": "129b5093-521c-4048-9ae4-d36699c92141",
@@ -1151,6 +5039,68 @@
     "haut": 16,
     "vendu": "2024-01-06",
     "release": 6443950
+   },
+   "infos": {
+    "label": "Carrere",
+    "catno": "8803",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
+    "formats": [
+     "12\"",
+     "Maxi-Single"
+    ],
+    "pays": "France",
+    "annee": 1987,
+    "genres": [
+     "Hip Hop",
+     "Pop"
+    ],
+    "styles": [
+     "Europop"
+    ],
+    "auteurs": [
+     "Don Kirshner"
+    ],
+    "producteurs": [
+     "Jeff Barry"
+    ],
+    "enVente": 9,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Sugar Sugar (Candyfloss Mix)",
+      "duree": "5:25",
+      "auteurs": [
+       "Andy Kim",
+       "Jeff Barry"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Sugar Sugar (Original Version)",
+      "duree": "2:45",
+      "auteurs": [
+       "Andy Kim",
+       "Jeff Barry"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Sugar And Spice",
+      "duree": "2:01",
+      "auteurs": [
+       "Jeff Barry"
+      ]
+     }
+    ],
+    "have": 35,
+    "want": 30,
+    "note": 3.8,
+    "votes": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Archies, The",
+    "a": "Sugar Sugar (Candyfloss Mix)",
+    "b": "Sugar Sugar (Original Version) / Sugar And Spice"
    }
   },
   {
@@ -1168,23 +5118,106 @@
     "haut": 8,
     "vendu": "2026-01-25",
     "release": 1068580
+   },
+   "infos": {
+    "label": "Eurodisc",
+    "catno": "911 119",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "enVente": 10,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Baby Come Back",
+      "duree": "2:32",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Johnny B. Goode",
+      "duree": "3:55",
+      "auteurs": []
+     }
+    ],
+    "have": 51,
+    "want": 18,
+    "note": 5,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Equals, The",
+    "a": "Baby Come Back",
+    "b": "Johnny B. Goode"
    }
   },
   {
-   "id": "5e0d2ded-17b2-4b70-b691-e06124363c66",
-   "artiste": "Bee Gees",
-   "a": "How Deep Is Your Love",
-   "b": "Can't Keep A Good Man Down",
+   "id": "b6b58145-c500-49f0-a165-13ad669bc2d2",
+   "artiste": "Ray Parker Jr.",
+   "a": "Ghostbusters",
+   "b": "Ghostbusters (Instrumental)",
    "pos": "79",
-   "pochette": "covers/5e0d2ded-17b2-4b70-b691-e06124363c66.webp",
+   "pochette": "covers/b6b58145-c500-49f0-a165-13ad669bc2d2-mwqx04lj.webp",
    "avecPochette": true,
-   "discogs": 590894,
-   "prix": {
-    "bas": 0.95,
-    "moyen": 2,
-    "haut": 8,
-    "vendu": "2026-11-04",
-    "release": 590894
+   "discogs": 8130818,
+   "infos": {
+    "label": "Arista",
+    "catno": "106740",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Electronic",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Synth-pop",
+     "Soundtrack"
+    ],
+    "auteurs": [
+     "Ray Parker Jr."
+    ],
+    "producteurs": [
+     "Ray Parker Jr."
+    ],
+    "enVente": 14,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Ghostbusters",
+      "duree": "3:46",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Ghostbusters (Instrumental)",
+      "duree": "3:46",
+      "auteurs": []
+     }
+    ],
+    "have": 938,
+    "want": 135,
+    "note": 4.17,
+    "votes": 52
+   },
+   "titresDiscogs": {
+    "artiste": "Ray Parker Jr.",
+    "a": "Ghostbusters",
+    "b": "Ghostbusters (Instrumental)"
    }
   },
   {
@@ -1202,6 +5235,56 @@
     "haut": 12.88,
     "vendu": "2026-11-18",
     "release": 677126
+   },
+   "infos": {
+    "label": "Vogue",
+    "catno": "101237",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "producteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "arrangeurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "enVente": 26,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+      "duree": "4:48",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "The King Has Lost His Crown",
+      "duree": "3:28",
+      "auteurs": []
+     }
+    ],
+    "have": 2538,
+    "want": 245,
+    "note": 4.2,
+    "votes": 161
+   },
+   "titresDiscogs": {
+    "artiste": "ABBA",
+    "a": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+    "b": "The King Has Lost His Crown"
    }
   },
   {
@@ -1219,6 +5302,56 @@
     "haut": 9.13,
     "vendu": "2026-11-07",
     "release": 585346
+   },
+   "infos": {
+    "label": "Vogue",
+    "catno": "101353",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1980,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Europop"
+    ],
+    "auteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "producteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "arrangeurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "enVente": 133,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "The Winner Takes It All",
+      "duree": "4:55",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Elaine",
+      "duree": "3:43",
+      "auteurs": []
+     }
+    ],
+    "have": 2604,
+    "want": 90,
+    "note": 4.15,
+    "votes": 159
+   },
+   "titresDiscogs": {
+    "artiste": "ABBA",
+    "a": "The Winner Takes It All",
+    "b": "Elaine"
    }
   },
   {
@@ -1236,22 +5369,241 @@
     "haut": 12,
     "vendu": "2026-10-15",
     "release": 893378
+   },
+   "infos": {
+    "label": "Melba",
+    "catno": "45.X. 140 188",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Europop",
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "Benny Andersson",
+     "Björn Ulvaeus",
+     "Stig Anderson"
+    ],
+    "producteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "enVente": 94,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Knowing Me, Knowing You",
+      "duree": "4:01",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Happy Hawaii (Early Version Of \"Why Did It Have To Be Me\")",
+      "duree": "4:23",
+      "auteurs": []
+     }
+    ],
+    "have": 1886,
+    "want": 67,
+    "note": 3.97,
+    "votes": 130
+   },
+   "titresDiscogs": {
+    "artiste": "ABBA",
+    "a": "Knowing Me, Knowing You",
+    "b": "Happy Hawaii (Early Version Of \"Why Did It Have To Be Me\")"
    }
   },
   {
-   "id": "48d44637-e2b2-45c7-9849-b10147cff19d",
-   "artiste": "Barry White",
-   "a": "What Am I Gonna Do With You",
-   "b": "What Am I Gonna Do With You Baby",
+   "id": "2cc55ca1-43b5-4ff2-a911-9d2ba6eea45a",
+   "artiste": "ABBA",
+   "a": "Chiquitita",
+   "b": "Lovelight",
    "pos": null,
-   "pochette": "covers/48d44637-e2b2-45c7-9849-b10147cff19d.webp",
-   "discogs": 2473358,
-   "prix": {
-    "bas": 1,
-    "moyen": 2.14,
-    "haut": 2.99,
-    "vendu": "2024-01-25",
-    "release": 2473358
+   "pochette": "covers/2cc55ca1-43b5-4ff2-a911-9d2ba6eea45a-mwqwmh0t.webp",
+   "avecPochette": true,
+   "discogs": 983431,
+   "infos": {
+    "label": "Polydor",
+    "catno": "2001 850",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "Netherlands",
+    "annee": 1979,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Europop"
+    ],
+    "auteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "producteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "arrangeurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "enVente": 112,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Chiquitita",
+      "duree": "5:26",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Lovelight",
+      "duree": "3:34",
+      "auteurs": []
+     }
+    ],
+    "have": 2387,
+    "want": 60,
+    "note": 4.08,
+    "votes": 121
+   },
+   "titresDiscogs": {
+    "artiste": "ABBA",
+    "a": "Chiquitita",
+    "b": "Lovelight"
+   }
+  },
+  {
+   "id": "a9fb0823-c03e-4a39-874a-c14ba10cf5f8",
+   "artiste": "ABBA",
+   "a": "Super Trouper",
+   "b": "The Piper",
+   "pos": null,
+   "pochette": "covers/a9fb0823-c03e-4a39-874a-c14ba10cf5f8-mwqwmy37.webp",
+   "avecPochette": true,
+   "discogs": 596520,
+   "infos": {
+    "label": "Vogue",
+    "catno": "101384",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1980,
+    "genres": [
+     "Electronic",
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Disco"
+    ],
+    "auteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "producteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "arrangeurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "enVente": 109,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Super Trouper",
+      "duree": "4:12",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "The Piper",
+      "duree": "3:27",
+      "auteurs": []
+     }
+    ],
+    "have": 2063,
+    "want": 64,
+    "note": 4.07,
+    "votes": 129
+   },
+   "titresDiscogs": {
+    "artiste": "ABBA",
+    "a": "Super Trouper",
+    "b": "The Piper"
+   }
+  },
+  {
+   "id": "3f2fd232-0c4a-48bc-8640-c5cb4e396d11",
+   "artiste": "ABBA",
+   "a": "Take A Chance On Me",
+   "b": "I'm A Marionette",
+   "pos": null,
+   "pochette": "covers/3f2fd232-0c4a-48bc-8640-c5cb4e396d11-mwqwrsr6.webp",
+   "avecPochette": true,
+   "discogs": 577327,
+   "infos": {
+    "label": "Melba",
+    "catno": "45. X. 140357",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Disco"
+    ],
+    "auteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "producteurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "arrangeurs": [
+     "Björn Ulvaeus & Benny Andersson"
+    ],
+    "enVente": 84,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Take A Chance On Me",
+      "duree": "4:05",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "I'm A Marionette",
+      "duree": "3:54",
+      "auteurs": []
+     }
+    ],
+    "have": 1915,
+    "want": 77,
+    "note": 4.11,
+    "votes": 113
+   },
+   "titresDiscogs": {
+    "artiste": "ABBA",
+    "a": "Take A Chance On Me",
+    "b": "I'm A Marionette"
    }
   },
   {
@@ -1269,6 +5621,121 @@
     "haut": 10.92,
     "vendu": "2026-10-11",
     "release": 830264
+   },
+   "infos": {
+    "label": "Disc'Az",
+    "catno": "SG 528",
+    "format": "Vinyl, 7\", 45 RPM",
+    "formats": [
+     "7\""
+    ],
+    "pays": "France",
+    "annee": 1975,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Rhythm & Blues",
+     "Soul",
+     "Disco"
+    ],
+    "producteurs": [
+     "Barry White"
+    ],
+    "arrangeurs": [
+     "Barry White",
+     "Gene Page"
+    ],
+    "enVente": 23,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "You're The First, The Last, My Everything",
+      "duree": "4:37",
+      "auteurs": [
+       "Barry White",
+       "Peter Sterling Radcliffe",
+       "Tony Sepe"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Can't Get Enough Of Your Love, Babe",
+      "duree": "4:31",
+      "auteurs": [
+       "Barry White"
+      ]
+     }
+    ],
+    "have": 1152,
+    "want": 94,
+    "note": 4.22,
+    "votes": 89
+   },
+   "titresDiscogs": {
+    "artiste": "Barry White",
+    "a": "You're The First, The Last, My Everything",
+    "b": "Can't Get Enough Of Your Love, Babe"
+   }
+  },
+  {
+   "id": "48d44637-e2b2-45c7-9849-b10147cff19d",
+   "artiste": "Barry White",
+   "a": "What Am I Gonna Do With You",
+   "b": "What Am I Gonna Do With You Baby",
+   "pos": null,
+   "pochette": "covers/48d44637-e2b2-45c7-9849-b10147cff19d.webp",
+   "discogs": 2473358,
+   "prix": {
+    "bas": 1,
+    "moyen": 2.14,
+    "haut": 2.99,
+    "vendu": "2024-01-25",
+    "release": 2473358
+   },
+   "infos": {
+    "label": "Philips",
+    "catno": "6162 041",
+    "format": "Vinyl, 7\", Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "Yugoslavia",
+    "annee": 1976,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Barry White"
+    ],
+    "enVente": 12,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "What Am I Gonna Do With You",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "What Am I Gonna Do With You Baby",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 29,
+    "want": 18,
+    "note": 4.4,
+    "votes": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Barry White",
+    "a": "What Am I Gonna Do With You",
+    "b": "What Am I Gonna Do With You Baby"
    }
   },
   {
@@ -1286,6 +5753,192 @@
     "haut": 6.5,
     "vendu": "2026-09-16",
     "release": 843462
+   },
+   "infos": {
+    "label": "RSO",
+    "catno": "2090 331",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Ballad"
+    ],
+    "producteurs": [
+     "Albhy Galuten",
+     "Bee Gees",
+     "Karl Richardson"
+    ],
+    "enVente": 120,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Too Much Heaven",
+      "duree": "4:54",
+      "auteurs": [
+       "Barry Gibb",
+       "Robin Gibb"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Rest Your Love On Me",
+      "duree": "3:56",
+      "auteurs": [
+       "Barry Gibb"
+      ]
+     }
+    ],
+    "have": 1855,
+    "want": 37,
+    "note": 3.91,
+    "votes": 94
+   },
+   "titresDiscogs": {
+    "artiste": "Bee Gees",
+    "a": "Too Much Heaven",
+    "b": "Rest Your Love On Me"
+   }
+  },
+  {
+   "id": "7116e25c-dc6b-447e-9060-433a874903ca",
+   "artiste": "Bee Gees",
+   "a": "Night Fever",
+   "b": "Down The Road",
+   "pos": null,
+   "pochette": "covers/7116e25c-dc6b-447e-9060-433a874903ca-mwqwyl4j.webp",
+   "avecPochette": true,
+   "discogs": 2744790,
+   "infos": {
+    "label": "RSO",
+    "catno": "2090 272",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Pop",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Disco"
+    ],
+    "producteurs": [
+     "Albhy Galuten",
+     "Karl Richardson",
+     "Robin Gibb, Barry Gibb & Maurice Gibb"
+    ],
+    "enVente": 38,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Night Fever",
+      "duree": "3:32",
+      "auteurs": [
+       "Robin Gibb, Barry Gibb & Maurice Gibb"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Down The Road",
+      "duree": "4:26",
+      "auteurs": [
+       "Barry Gibb",
+       "Robin Gibb"
+      ]
+     }
+    ],
+    "have": 1208,
+    "want": 76,
+    "note": 4.06,
+    "votes": 68
+   },
+   "titresDiscogs": {
+    "artiste": "Bee Gees",
+    "a": "Night Fever",
+    "b": "Down The Road"
+   }
+  },
+  {
+   "id": "5e0d2ded-17b2-4b70-b691-e06124363c66",
+   "artiste": "Bee Gees",
+   "a": "How Deep Is Your Love",
+   "b": "Can't Keep A Good Man Down",
+   "pos": null,
+   "pochette": "covers/5e0d2ded-17b2-4b70-b691-e06124363c66.webp",
+   "avecPochette": true,
+   "discogs": 590894,
+   "prix": {
+    "bas": 0.95,
+    "moyen": 2,
+    "haut": 8,
+    "vendu": "2026-11-04",
+    "release": 590894
+   },
+   "infos": {
+    "label": "RSO",
+    "catno": "2090 259",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Electronic",
+     "Rock",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soft Rock",
+     "Disco",
+     "Soundtrack",
+     "Score"
+    ],
+    "auteurs": [
+     "Robin Gibb, Barry Gibb & Maurice Gibb"
+    ],
+    "producteurs": [
+     "Albhy Galuten",
+     "Karl Richardson",
+     "Bee Gees"
+    ],
+    "enVente": 67,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "How Deep Is Your Love",
+      "duree": "3:30",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Can't Keep A Good Man Down",
+      "duree": "4:43",
+      "auteurs": []
+     }
+    ],
+    "have": 2489,
+    "want": 117,
+    "note": 4.12,
+    "votes": 135
+   },
+   "titresDiscogs": {
+    "artiste": "Bee Gees",
+    "a": "How Deep Is Your Love",
+    "b": "Can't Keep A Good Man Down"
    }
   },
   {
@@ -1302,6 +5955,55 @@
     "haut": 15,
     "vendu": "2026-03-25",
     "release": 1456478
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "CBSA 12.6050",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
+    "formats": [
+     "12\"",
+     "Maxi-Single"
+    ],
+    "pays": "France",
+    "annee": 1985,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Downtempo",
+     "Ballad"
+    ],
+    "producteurs": [
+     "Jean-Paul Malek"
+    ],
+    "arrangeurs": [
+     "Bernard Estardy"
+    ],
+    "enVente": 9,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Tout Simplement (Tout Doucement)",
+      "duree": "5:14",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Tam Tam Man",
+      "duree": "5:25",
+      "auteurs": []
+     }
+    ],
+    "have": 217,
+    "want": 33,
+    "note": 3.87,
+    "votes": 15
+   },
+   "titresDiscogs": {
+    "artiste": "Bibie",
+    "a": "Tout Simplement (Tout Doucement)",
+    "b": "Tam Tam Man"
    }
   },
   {
@@ -1319,6 +6021,61 @@
     "haut": 10.47,
     "vendu": "2026-10-03",
     "release": 577324
+   },
+   "infos": {
+    "label": "Carrere",
+    "catno": "49.421",
+    "format": "Vinyl, 7\", 45 RPM, Single, Reissue",
+    "formats": [
+     "7\"",
+     "Single",
+     "Reissue"
+    ],
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Electronic",
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Fred Jay"
+    ],
+    "producteurs": [
+     "Frank Farian"
+    ],
+    "enVente": 18,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Rasputin",
+      "duree": "4:39",
+      "auteurs": [
+       "Frank Farian",
+       "George Reyam"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Never Change Lovers In The Middle Of The Night",
+      "duree": "4:45",
+      "auteurs": [
+       "Keith Forsey",
+       "Mats Björklund"
+      ]
+     }
+    ],
+    "have": 1946,
+    "want": 228,
+    "note": 4.05,
+    "votes": 108
+   },
+   "titresDiscogs": {
+    "artiste": "Boney M.",
+    "a": "Rasputin",
+    "b": "Never Change Lovers In The Middle Of The Night"
    }
   },
   {
@@ -1336,6 +6093,58 @@
     "haut": 9.5,
     "vendu": "2026-10-18",
     "release": 746257
+   },
+   "infos": {
+    "label": "Carrere",
+    "catno": "49.289",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Electronic",
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "producteurs": [
+     "Frank Farian"
+    ],
+    "enVente": 32,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Ma Baker",
+      "duree": "4:33",
+      "auteurs": [
+       "Frank Farian",
+       "Fred Jay",
+       "George Reyam"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "A Woman Can Change A Man",
+      "duree": "3:34",
+      "auteurs": [
+       "Frank Farian",
+       "Fred Jay"
+      ]
+     }
+    ],
+    "have": 1668,
+    "want": 109,
+    "note": 4.16,
+    "votes": 97
+   },
+   "titresDiscogs": {
+    "artiste": "Boney M.",
+    "a": "Ma Baker",
+    "b": "A Woman Can Change A Man"
    }
   },
   {
@@ -1353,6 +6162,237 @@
     "haut": 6.51,
     "vendu": "2026-10-15",
     "release": 1905880
+   },
+   "infos": {
+    "label": "Hansa International",
+    "catno": "16 959 AT",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "Netherlands",
+    "annee": 1976,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "producteurs": [
+     "Frank Farian"
+    ],
+    "enVente": 11,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Daddy Cool",
+      "duree": "3:30",
+      "auteurs": [
+       "Frank Farian",
+       "George Reyam"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "No Woman No Cry",
+      "duree": "5:00",
+      "auteurs": [
+       "Bob Marley"
+      ]
+     }
+    ],
+    "have": 601,
+    "want": 129,
+    "note": 3.74,
+    "votes": 35
+   },
+   "titresDiscogs": {
+    "artiste": "Boney M.",
+    "a": "Daddy Cool",
+    "b": "No Woman No Cry"
+   }
+  },
+  {
+   "id": "fb73aa4c-8cd9-4b1b-a667-b35886659328",
+   "artiste": "Boney M.",
+   "a": "I See A Boat (On The River)",
+   "b": "My Friend Jack",
+   "pos": null,
+   "pochette": "covers/fb73aa4c-8cd9-4b1b-a667-b35886659328-mwqwo7zi.webp",
+   "avecPochette": true,
+   "discogs": 2900135,
+   "infos": {
+    "label": "Hansa International",
+    "catno": "101 750",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "Germany",
+    "annee": 1980,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "producteurs": [
+     "Frank Farian"
+    ],
+    "enVente": 114,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "I See A Boat (On The River)",
+      "duree": "4:29",
+      "auteurs": [
+       "Frank Farian",
+       "Fred Jay",
+       "Gilla Winger",
+       "Helmut Rulofs"
+      ]
+     },
+     {
+      "position": "AA",
+      "titre": "My Friend Jack",
+      "duree": "4:56",
+      "auteurs": [
+       "The Smoke"
+      ]
+     }
+    ],
+    "have": 1309,
+    "want": 40,
+    "note": 3.65,
+    "votes": 71
+   },
+   "titresDiscogs": {
+    "artiste": "Boney M.",
+    "a": "I See A Boat (On The River) / My Friend Jack",
+    "b": ""
+   }
+  },
+  {
+   "id": "b0451647-1031-44f0-b703-86e9d0487f2a",
+   "artiste": "Boney M.",
+   "a": "Malaika",
+   "b": "Consuela Biaz",
+   "pos": null,
+   "pochette": "covers/b0451647-1031-44f0-b703-86e9d0487f2a-mwqwp9ve.webp",
+   "avecPochette": true,
+   "discogs": 948272,
+   "infos": {
+    "label": "Carrere",
+    "catno": "49.802",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "producteurs": [
+     "Frank Farian"
+    ],
+    "enVente": 34,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Malaika",
+      "duree": "4:15",
+      "auteurs": [
+       "Traditional"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Consuela Biaz",
+      "duree": "4:57",
+      "auteurs": [
+       "Catharine Courage",
+       "Frank Farian",
+       "Michael O'Hara"
+      ]
+     }
+    ],
+    "have": 328,
+    "want": 18,
+    "note": 3.2,
+    "votes": 20
+   },
+   "titresDiscogs": {
+    "artiste": "Boney M.",
+    "a": "Malaika",
+    "b": "Consuela Biaz"
+   }
+  },
+  {
+   "id": "dae404ac-3f3c-48d7-bf09-7b54f670ccb0",
+   "artiste": "Boney M.",
+   "a": "Hooray! Hooray! It's A Holi-Holiday",
+   "b": "Ribbons Of Blue",
+   "pos": null,
+   "pochette": "covers/dae404ac-3f3c-48d7-bf09-7b54f670ccb0-mwqwqxn8.webp",
+   "avecPochette": true,
+   "discogs": 757398,
+   "infos": {
+    "label": "Atlantic",
+    "catno": "K 11279",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "UK",
+    "annee": 1979,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "producteurs": [
+     "Frank Farian"
+    ],
+    "enVente": 89,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Hooray! Hooray! It's A Holi-Holiday",
+      "duree": "3:57",
+      "auteurs": [
+       "Frank Farian",
+       "Fred Jay"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Ribbons Of Blue",
+      "duree": "4:07",
+      "auteurs": [
+       "Keith Forsey"
+      ]
+     }
+    ],
+    "have": 420,
+    "want": 23,
+    "note": 3.81,
+    "votes": 16
+   },
+   "titresDiscogs": {
+    "artiste": "Boney M.",
+    "a": "Hooray! Hooray! It's A Holi-Holiday",
+    "b": "Ribbons Of Blue"
    }
   },
   {
@@ -1369,32 +6409,170 @@
     "haut": 2.5,
     "vendu": "2025-02-05",
     "release": 12344816
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS A 4637",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Electronic",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Synth-pop"
+    ],
+    "enVente": 10,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Here She Comes",
+      "duree": "3:21",
+      "auteurs": [
+       "Giorgio Moroder",
+       "Pete Bellotte"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Time",
+      "duree": "3:37",
+      "auteurs": [
+       "Bonnie Tyler",
+       "Paul Hopkins"
+      ]
+     }
+    ],
+    "have": 86,
+    "want": 8,
+    "note": 2.67,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Bonnie Tyler",
+    "a": "Here She Comes",
+    "b": "Time"
    }
   },
   {
-   "id": "af30afb3-51a6-4903-8a8a-2565cf8d66b1",
-   "artiste": "Cabrel",
-   "a": "Il Faudra Leur Dire",
-   "b": "Il Faudra Leur Dire (Instru)",
+   "id": "d3e742bd-981c-4a7a-b9df-98a7def72ae0",
+   "artiste": "Culture Club",
+   "a": "Karma Chameleon",
+   "b": "That's The Way",
    "pos": null,
-   "pochette": "covers/af30afb3-51a6-4903-8a8a-2565cf8d66b1.webp",
-   "discogs": 736284,
-   "prix": {
-    "bas": 0.2,
-    "moyen": 1,
-    "haut": 19.9,
-    "vendu": "2026-04-22",
-    "release": 736284
+   "pochette": "covers/d3e742bd-981c-4a7a-b9df-98a7def72ae0-mwqwz66r.webp",
+   "avecPochette": true,
+   "discogs": 1176574,
+   "infos": {
+    "label": "Virgin",
+    "catno": "105 750",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1983,
+    "genres": [
+     "Electronic",
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "New Wave",
+     "Synth-pop"
+    ],
+    "producteurs": [
+     "Steve Levine"
+    ],
+    "enVente": 77,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Karma Chameleon",
+      "duree": "3:59",
+      "auteurs": [
+       "George O'Dowd",
+       "Jon Moss",
+       "Michael Craig",
+       "Phil Pickett",
+       "Roy Hay"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "That's The Way",
+      "duree": "1:43",
+      "auteurs": [
+       "Culture Club"
+      ]
+     }
+    ],
+    "have": 1544,
+    "want": 80,
+    "note": 4.13,
+    "votes": 87
+   },
+   "titresDiscogs": {
+    "artiste": "Culture Club",
+    "a": "Karma Chameleon",
+    "b": "That's The Way"
    }
   },
   {
    "id": "6f6aee36-e2bf-4dd2-8df7-bbd499f6d00d",
    "artiste": "Daniel Balavoine",
-   "a": "L'Aziza",
-   "b": "Tous Les Cris Les S.O.S.",
+   "a": "L’aziza",
+   "b": "Tous les cris les SOS",
    "pos": null,
    "pochette": "covers/6f6aee36-e2bf-4dd2-8df7-bbd499f6d00d.webp",
-   "discogs": 16113700
+   "discogs": 16113700,
+   "infos": {
+    "label": "C.P.F. Barclay",
+    "catno": "8844847",
+    "format": "Vinyl, 7\", 45 RPM, Test Pressing, Stereo",
+    "formats": [
+     "7\"",
+     "Test Pressing",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1985,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "L’aziza",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Tous les cris les SOS",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 7,
+    "want": 8
+   },
+   "titresDiscogs": {
+    "artiste": "Daniel Balavoine",
+    "a": "L’aziza",
+    "b": "Tous les cris les SOS"
+   }
   },
   {
    "id": "fe81918b-6658-4369-856f-232fa234887b",
@@ -1410,6 +6588,55 @@
     "haut": 14,
     "vendu": "2025-01-15",
     "release": 18717997
+   },
+   "infos": {
+    "label": "RCA",
+    "catno": "PB 9575",
+    "format": "Vinyl, 7\", 45 RPM, Single, Promo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Promo"
+    ],
+    "pays": "France",
+    "annee": 1980,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "David Bowie"
+    ],
+    "producteurs": [
+     "Tony Visconti",
+     "David Bowie"
+    ],
+    "enVente": 8,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Ashes To Ashes",
+      "duree": "3:35",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Move On",
+      "duree": "3:16",
+      "auteurs": []
+     }
+    ],
+    "have": 19,
+    "want": 44,
+    "note": 5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "David Bowie",
+    "a": "Ashes To Ashes",
+    "b": "Move On"
    }
   },
   {
@@ -1427,6 +6654,121 @@
     "haut": 5,
     "vendu": "2026-11-11",
     "release": 507148
+   },
+   "infos": {
+    "label": "EMI America",
+    "catno": "2C 008-86660",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1983,
+    "genres": [
+     "Electronic",
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Synth-pop"
+    ],
+    "producteurs": [
+     "David Bowie",
+     "Nile Rodgers"
+    ],
+    "enVente": 56,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Let's Dance",
+      "duree": "4:08",
+      "auteurs": [
+       "David Bowie"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Cat People (Putting Out Fire)",
+      "duree": "5:09",
+      "auteurs": [
+       "David Bowie",
+       "Giorgio Moroder"
+      ]
+     }
+    ],
+    "have": 2768,
+    "want": 220,
+    "note": 4.13,
+    "votes": 196
+   },
+   "titresDiscogs": {
+    "artiste": "David Bowie",
+    "a": "Let's Dance",
+    "b": "Cat People (Putting Out Fire)"
+   }
+  },
+  {
+   "id": "47852967-92b7-4879-9c47-958bafc2e7ea",
+   "artiste": "David Bowie",
+   "a": "China Girl",
+   "b": "Shake It (Re-Mix)",
+   "pos": null,
+   "pochette": "covers/47852967-92b7-4879-9c47-958bafc2e7ea-mwqwrgf7.webp",
+   "avecPochette": true,
+   "discogs": 544861,
+   "infos": {
+    "label": "EMI America",
+    "catno": "1866877",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1983,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Synth-pop"
+    ],
+    "producteurs": [
+     "David Bowie",
+     "Nile Rodgers"
+    ],
+    "enVente": 73,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "China Girl",
+      "duree": "4:15",
+      "auteurs": [
+       "David Bowie",
+       "Iggy Pop"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Shake It (Re-Mix)",
+      "duree": "3:49",
+      "auteurs": [
+       "David Bowie"
+      ]
+     }
+    ],
+    "have": 1994,
+    "want": 101,
+    "note": 4.24,
+    "votes": 136
+   },
+   "titresDiscogs": {
+    "artiste": "David Bowie",
+    "a": "China Girl",
+    "b": "Shake It (Re-Mix)"
    }
   },
   {
@@ -1443,6 +6785,59 @@
     "haut": 2.4,
     "vendu": "2019-10-29",
     "release": 11705336
+   },
+   "infos": {
+    "label": "Disques Adès",
+    "catno": "VS-642 F",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Pop",
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Theme",
+     "Chanson"
+    ],
+    "auteurs": [
+     "Gérard Salesses",
+     "Jean-François Porry"
+    ],
+    "arrangeurs": [
+     "Gérard Salesses"
+    ],
+    "enVente": 6,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Rox Et Rouky",
+      "duree": "3:00",
+      "auteurs": [
+       "Jean-François Porry"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Disney Dimanche",
+      "duree": "2:39",
+      "auteurs": [
+       "William Leymergie"
+      ]
+     }
+    ],
+    "have": 46,
+    "want": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Dorothée",
+    "a": "Rox Et Rouky",
+    "b": "Disney Dimanche"
    }
   },
   {
@@ -1459,6 +6854,59 @@
     "haut": 7.5,
     "vendu": "2020-08-09",
     "release": 11659202
+   },
+   "infos": {
+    "label": "AB Productions",
+    "catno": "815 808-7",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1983,
+    "genres": [
+     "Non-Music",
+     "Children's"
+    ],
+    "styles": [
+     "Audiobook",
+     "Story"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Les Schtroumpfs",
+      "duree": "0:56",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "Superschtroumpf (Supersmurf)",
+      "duree": "4:35",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Superschtroumpf (Supersmurf)",
+      "duree": "5:03",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Les Schtroumpfs",
+      "duree": "0:56",
+      "auteurs": []
+     }
+    ],
+    "have": 18,
+    "want": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Dorothée",
+    "a": "Les Schtroumpfs / Superschtroumpf (Supersmurf)",
+    "b": "Superschtroumpf (Supersmurf) / Les Schtroumpfs"
    }
   },
   {
@@ -1476,6 +6924,58 @@
     "haut": 18.2,
     "vendu": "2026-11-15",
     "release": 1435235
+   },
+   "infos": {
+    "label": "Asylum Records",
+    "catno": "E-45085",
+    "format": "Vinyl, 7\", 45 RPM, Stereo",
+    "formats": [
+     "7\"",
+     "Stereo"
+    ],
+    "pays": "US",
+    "annee": 1977,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Classic Rock"
+    ],
+    "producteurs": [
+     "Bill Szymczyk"
+    ],
+    "enVente": 13,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Hotel California",
+      "duree": "6:08",
+      "auteurs": [
+       "Don Felder",
+       "Don Henley",
+       "Glenn Frey"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "New Kid In Town",
+      "duree": "4:49",
+      "auteurs": [
+       "Don Henley",
+       "Glenn Frey",
+       "John David Souther"
+      ]
+     }
+    ],
+    "have": 763,
+    "want": 92,
+    "note": 4.25,
+    "votes": 57
+   },
+   "titresDiscogs": {
+    "artiste": "Eagles",
+    "a": "Hotel California",
+    "b": "New Kid In Town"
    }
   },
   {
@@ -1485,6 +6985,70 @@
    "b": "Dreaming Of 4000",
    "pos": null,
    "pochette": "covers/84fdca03-c658-49f3-bc1b-d306af1d28b8.webp"
+  },
+  {
+   "id": "cf2cf5c6-213a-4189-8a81-245624197216",
+   "artiste": "Elsa",
+   "a": "T'en Va Pas",
+   "b": "T'en Va Pas (Instrumental)",
+   "pos": null,
+   "pochette": "covers/cf2cf5c6-213a-4189-8a81-245624197216-mwqywixz.webp",
+   "avecPochette": true,
+   "discogs": 705785,
+   "infos": {
+    "label": "Carrere",
+    "catno": "14092",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1986,
+    "genres": [
+     "Pop",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Chanson",
+     "Soundtrack",
+     "Theme"
+    ],
+    "auteurs": [
+     "Romano Musumarra"
+    ],
+    "arrangeurs": [
+     "Romano Musumarra"
+    ],
+    "enVente": 111,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "T'en Va Pas",
+      "duree": "3:50",
+      "auteurs": [
+       "Catherine Cohen",
+       "Régis Wargnier"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "T'en Va Pas (Instrumental)",
+      "duree": "4:45",
+      "auteurs": []
+     }
+    ],
+    "have": 2210,
+    "want": 115,
+    "note": 3.9,
+    "votes": 134
+   },
+   "titresDiscogs": {
+    "artiste": "Elsa",
+    "a": "T'en Va Pas",
+    "b": "T'en Va Pas (Instrumental)"
+   }
   },
   {
    "id": "bba490f2-4cf7-4564-938c-cb5e3fed4e77",
@@ -1509,6 +7073,51 @@
     "haut": 5.72,
     "vendu": "2026-10-16",
     "release": 1068562
+   },
+   "infos": {
+    "label": "Apache",
+    "catno": "249433-7",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Europop"
+    ],
+    "auteurs": [
+     "Michel Berger"
+    ],
+    "enVente": 74,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Débranche",
+      "duree": "4:08",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "J'ai Besoin De Vous",
+      "duree": "3:44",
+      "auteurs": []
+     }
+    ],
+    "have": 1028,
+    "want": 25,
+    "note": 3.98,
+    "votes": 58
+   },
+   "titresDiscogs": {
+    "artiste": "France Gall",
+    "a": "Débranche",
+    "b": "J'ai Besoin De Vous"
    }
   },
   {
@@ -1526,6 +7135,50 @@
     "haut": 6.6,
     "vendu": "2025-11-24",
     "release": 8926407
+   },
+   "infos": {
+    "label": "Atlantic",
+    "catno": "11 698",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Michel Berger"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Tout Pour La Musique",
+      "duree": "4:40",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Résiste",
+      "duree": "4:40",
+      "auteurs": []
+     }
+    ],
+    "have": 219,
+    "want": 25,
+    "note": 4.57,
+    "votes": 7
+   },
+   "titresDiscogs": {
+    "artiste": "France Gall",
+    "a": "Tout Pour La Musique",
+    "b": "Résiste"
    }
   },
   {
@@ -1543,6 +7196,122 @@
     "haut": 10,
     "vendu": "2023-06-29",
     "release": 10847163
+   },
+   "infos": {
+    "label": "Atlantic",
+    "catno": "PRO 41",
+    "format": "Vinyl, 7\", 45 RPM, Single, Promo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Promo"
+    ],
+    "pays": "France",
+    "annee": 1975,
+    "genres": [
+     "Jazz",
+     "Funk / Soul",
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Disco"
+    ],
+    "producteurs": [
+     "Michel Berger"
+    ],
+    "enVente": 7,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Comment Lui Dire",
+      "duree": "3:30",
+      "auteurs": [
+       "Michel Berger"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Samba Mambo",
+      "duree": "2:35",
+      "auteurs": [
+       "Michel Berger"
+      ]
+     }
+    ],
+    "have": 18,
+    "want": 31,
+    "note": 4.67,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "France Gall",
+    "a": "Comment Lui Dire",
+    "b": "Samba Mambo"
+   }
+  },
+  {
+   "id": "af30afb3-51a6-4903-8a8a-2565cf8d66b1",
+   "artiste": "Francis Cabrel Et Les Petits Chanteurs D'Asnières",
+   "a": "Il Faudra Leur Dire",
+   "b": "Il Faudra Leur Dire (Instrumental)",
+   "pos": null,
+   "pochette": "covers/af30afb3-51a6-4903-8a8a-2565cf8d66b1.webp",
+   "discogs": 736284,
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1,
+    "haut": 19.9,
+    "vendu": "2026-04-22",
+    "release": 736284
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 650291 7",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1986,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Francis Cabrel"
+    ],
+    "producteurs": [
+     "Georges Augier De Moussac"
+    ],
+    "enVente": 103,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Il Faudra Leur Dire",
+      "duree": "3:42",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Il Faudra Leur Dire (Instrumental)",
+      "duree": "3:42",
+      "auteurs": []
+     }
+    ],
+    "have": 1392,
+    "want": 15,
+    "note": 3.92,
+    "votes": 63
+   },
+   "titresDiscogs": {
+    "artiste": "Francis Cabrel Et Les Petits Chanteurs D'Asnières",
+    "a": "Il Faudra Leur Dire",
+    "b": "Il Faudra Leur Dire (Instrumental)"
    }
   },
   {
@@ -1560,6 +7329,54 @@
     "haut": 4.36,
     "vendu": "2026-11-16",
     "release": 1349739
+   },
+   "infos": {
+    "label": "Bell Records",
+    "catno": "2008 057",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1972,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Glam"
+    ],
+    "auteurs": [
+     "Mike Leander",
+     "Gary Glitter"
+    ],
+    "producteurs": [
+     "Mike Leander"
+    ],
+    "enVente": 44,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Rock And Roll (Part 1)",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Rock And Roll (Part 2)",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 747,
+    "want": 55,
+    "note": 4.12,
+    "votes": 50
+   },
+   "titresDiscogs": {
+    "artiste": "Gary Glitter",
+    "a": "Rock And Roll (Part 1)",
+    "b": "Rock And Roll (Part 2)"
    }
   },
   {
@@ -1594,10 +7411,155 @@
     "producteurs": [
      "Mike Leander"
     ],
+    "enVente": 26,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Do You Wanna Touch Me? (Oh Yeah)",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "I Would If I Could But I Can't",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
     "have": 326,
     "want": 16,
     "note": 3.06,
     "votes": 16
+   },
+   "prix": {
+    "bas": 0.5,
+    "moyen": 2.95,
+    "haut": 5,
+    "vendu": "2026-09-03",
+    "release": 5451969
+   },
+   "titresDiscogs": {
+    "artiste": "Gary Glitter",
+    "a": "Do You Wanna Touch Me? (Oh Yeah)",
+    "b": "I Would If I Could But I Can't"
+   }
+  },
+  {
+   "id": "693a976a-10f0-4e3f-8c2f-bb48f9456931",
+   "artiste": "Gary Glitter",
+   "a": "I Love You Love Me Love",
+   "b": "Hands Up! It's A Stick Up",
+   "pos": null,
+   "pochette": "covers/693a976a-10f0-4e3f-8c2f-bb48f9456931-mwqwlren.webp",
+   "avecPochette": true,
+   "discogs": 4904428,
+   "infos": {
+    "label": "Bell Records",
+    "catno": "2008 210",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1973,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Glam"
+    ],
+    "auteurs": [
+     "Gary Glitter",
+     "Mike Leander"
+    ],
+    "producteurs": [
+     "Mike Leander"
+    ],
+    "enVente": 28,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "I Love You Love Me Love",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Hands Up! It's A Stick Up",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 208,
+    "want": 14,
+    "note": 3.6,
+    "votes": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Gary Glitter",
+    "a": "I Love You Love Me Love",
+    "b": "Hands Up! It's A Stick Up"
+   }
+  },
+  {
+   "id": "3cb25b1b-896d-4286-8dde-604c779750d7",
+   "artiste": "Gipsy Kings",
+   "a": "Djobi, Djoba",
+   "b": "Allegria",
+   "pos": null,
+   "pochette": "covers/3cb25b1b-896d-4286-8dde-604c779750d7-mwqwuysf.webp",
+   "avecPochette": true,
+   "discogs": 1013663,
+   "infos": {
+    "label": "Philips",
+    "catno": "811 434-7",
+    "format": "Vinyl, 7\", 45 RPM, Single, Reissue, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Reissue",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1987,
+    "genres": [
+     "Folk, World, & Country"
+    ],
+    "styles": [
+     "Flamenco"
+    ],
+    "auteurs": [
+     "Gipsy Kings",
+     "Los Reyes"
+    ],
+    "producteurs": [
+     "Sara Music"
+    ],
+    "enVente": 24,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Djobi, Djoba",
+      "duree": "3:50",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Allegria",
+      "duree": "2:40",
+      "auteurs": []
+     }
+    ],
+    "have": 482,
+    "want": 56,
+    "note": 3.59,
+    "votes": 29
+   },
+   "titresDiscogs": {
+    "artiste": "Gipsy Kings",
+    "a": "Djobi, Djoba",
+    "b": "Allegria"
    }
   },
   {
@@ -1608,7 +7570,71 @@
    "pos": null,
    "pochette": "covers/3ac466de-d7ea-4574-8a7f-843c19e32f9d.webp",
    "avecPochette": true,
-   "discogs": 17177470
+   "discogs": 17177470,
+   "infos": {
+    "label": "Kapp Records",
+    "catno": "214.005",
+    "format": "Vinyl, 7\", 45 RPM, EP",
+    "formats": [
+     "7\"",
+     "EP"
+    ],
+    "pays": "France",
+    "annee": 1960,
+    "genres": [
+     "Children's",
+     "Folk, World, & Country"
+    ],
+    "styles": [
+     "Holiday"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Douce Nuit",
+      "duree": "1:55",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "Venite Adoremus",
+      "duree": "2:31",
+      "auteurs": []
+     },
+     {
+      "position": "A3",
+      "titre": "Vive Le Vent D'hiver",
+      "duree": "1:28",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Les Anges De Nos Campagnes",
+      "duree": "1:51",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Petite Ville De Bethleem",
+      "duree": "1:56",
+      "auteurs": []
+     },
+     {
+      "position": "B3",
+      "titre": "Mon Beau Sapin",
+      "duree": "1:41",
+      "auteurs": []
+     }
+    ],
+    "have": 2,
+    "want": 0
+   },
+   "titresDiscogs": {
+    "artiste": "Holiday Bells, The",
+    "a": "Douce Nuit / Venite Adoremus / Vive Le Vent D'hiver",
+    "b": "Les Anges De Nos Campagnes / Petite Ville De Bethleem / Mon Beau Sapin"
+   }
   },
   {
    "id": "dab6ecc2-ed8d-472a-bdb8-57c5342c9fd9",
@@ -1625,6 +7651,47 @@
     "haut": 4,
     "vendu": "2025-06-08",
     "release": 11674561
+   },
+   "infos": {
+    "label": "Epic",
+    "catno": "EPC A 3103",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Comme Toi",
+      "duree": "4:17",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Être Le Premier",
+      "duree": "3:52",
+      "auteurs": []
+     }
+    ],
+    "have": 139,
+    "want": 8,
+    "note": 4,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Jean-Jacques Goldman",
+    "a": "Comme Toi",
+    "b": "Être Le Premier"
    }
   },
   {
@@ -1642,6 +7709,54 @@
     "haut": 30,
     "vendu": "2026-05-17",
     "release": 987861
+   },
+   "infos": {
+    "label": "Epic",
+    "catno": "A 12.6668",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
+    "formats": [
+     "12\"",
+     "Maxi-Single"
+    ],
+    "pays": "France",
+    "annee": 1985,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "auteurs": [
+     "Jean-Jacques Goldman"
+    ],
+    "producteurs": [
+     "Marc Lumbroso",
+     "Jean-Jacques Goldman"
+    ],
+    "enVente": 18,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Je Te Donne",
+      "duree": "4:22",
+      "auteurs": [
+       "Michael Jones"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Confidentiel",
+      "duree": "2:35",
+      "auteurs": []
+     }
+    ],
+    "have": 512,
+    "want": 57,
+    "note": 4.2,
+    "votes": 49
+   },
+   "titresDiscogs": {
+    "artiste": "Jean-Jacques Goldman / Michael Jones",
+    "a": "Je Te Donne",
+    "b": "Confidentiel"
    }
   },
   {
@@ -1658,6 +7773,57 @@
     "haut": 30,
     "vendu": "2026-09-06",
     "release": 1229945
+   },
+   "infos": {
+    "label": "Columbia",
+    "catno": "1549756",
+    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
+    "formats": [
+     "12\"",
+     "Maxi-Single"
+    ],
+    "pays": "France",
+    "annee": 1985,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Synth-pop",
+     "Disco"
+    ],
+    "auteurs": [
+     "Jeanne Mas",
+     "Romano Musumarra"
+    ],
+    "arrangeurs": [
+     "Romano Musumarra"
+    ],
+    "enVente": 5,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Johnny, Johnny (Nouveau Mixage Club)",
+      "duree": "6:22",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Johnny, Johnny (Version Longue)",
+      "duree": "6:30",
+      "auteurs": []
+     }
+    ],
+    "have": 192,
+    "want": 76,
+    "note": 4.29,
+    "votes": 24
+   },
+   "titresDiscogs": {
+    "artiste": "Jeanne Mas",
+    "a": "Johnny, Johnny (Nouveau Mixage Club)",
+    "b": "Johnny, Johnny (Version Longue)"
    }
   },
   {
@@ -1675,38 +7841,351 @@
     "haut": 7,
     "vendu": "2026-07-24",
     "release": 6907459
+   },
+   "infos": {
+    "label": "CBS",
+    "catno": "3368",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "Netherlands",
+    "annee": 1968,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Jacques Plait"
+    ],
+    "enVente": 14,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Siffler Sur La Colline",
+      "duree": "2:32",
+      "auteurs": [
+       "Daniele Pace",
+       "Frank Thomas",
+       "Jean-Michel Rivat",
+       "Lorenzo Pilat",
+       "Mario Panzeri"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Comment Te Dire",
+      "duree": "2:55",
+      "auteurs": [
+       "Daniele Pace",
+       "Frank Thomas",
+       "Jean-Michel Rivat",
+       "Mario Panzeri",
+       "Roberto Livraghi"
+      ]
+     }
+    ],
+    "have": 103,
+    "want": 15,
+    "note": 3.13,
+    "votes": 8
+   },
+   "titresDiscogs": {
+    "artiste": "Joe Dassin",
+    "a": "Siffler Sur La Colline",
+    "b": "Comment Te Dire"
    }
   },
   {
-   "id": "7d000fb6-54ae-4269-9d59-dd63bf7a4ac3",
+   "id": "1effa8e6-ed26-4bc0-ad80-fcf2d1c69fbd",
+   "artiste": "John Travolta",
+   "a": "Greased Lightnin'",
+   "b": "Back Doors Crying",
+   "pos": null,
+   "pochette": "covers/1effa8e6-ed26-4bc0-ad80-fcf2d1c69fbd-mwqwx02o.webp",
+   "avecPochette": true,
+   "discogs": 1391655,
+   "infos": {
+    "label": "Midsong International",
+    "catno": "45.MD. 151",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Rock",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Rock & Roll",
+     "Soft Rock"
+    ],
+    "enVente": 34,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Greased Lightnin'",
+      "duree": "3:12",
+      "auteurs": [
+       "Jim Jacobs",
+       "Warren Casey"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Back Doors Crying",
+      "duree": "4:02",
+      "auteurs": [
+       "Carole Bayer Sager",
+       "Peter Allen"
+      ]
+     }
+    ],
+    "have": 878,
+    "want": 26,
+    "note": 3.7,
+    "votes": 50
+   },
+   "titresDiscogs": {
+    "artiste": "John Travolta",
+    "a": "Greased Lightnin'",
+    "b": "Back Doors Crying"
+   }
+  },
+  {
+   "id": "9e1753e0-8eda-4d72-83c8-98059d0e0924",
+   "artiste": "John Travolta, Olivia Newton-John",
+   "a": "Summer Nights",
+   "b": "Rock 'n' Roll Party Queen",
+   "pos": null,
+   "pochette": "covers/9e1753e0-8eda-4d72-83c8-98059d0e0924-mwqwvk2p.webp",
+   "avecPochette": true,
+   "discogs": 590897,
+   "infos": {
+    "label": "RSO",
+    "catno": "2090 316",
+    "format": "Vinyl, 7\", 45 RPM, Stereo",
+    "formats": [
+     "7\"",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Rock",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Rock & Roll",
+     "Soft Rock"
+    ],
+    "producteurs": [
+     "Louis St. Louis"
+    ],
+    "enVente": 29,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Summer Nights",
+      "duree": "3:36",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Rock 'n' Roll Party Queen",
+      "duree": "2:08",
+      "auteurs": []
+     }
+    ],
+    "have": 827,
+    "want": 43,
+    "note": 3.85,
+    "votes": 48
+   },
+   "titresDiscogs": {
+    "artiste": "John Travolta, Olivia Newton-John",
+    "a": "Summer Nights",
+    "b": "Rock 'n' Roll Party Queen"
+   }
+  },
+  {
+   "id": "eddfbcae-1d55-425a-a515-5cc19315366c",
+   "artiste": "John Travolta, Olivia Newton-John",
+   "a": "Graize",
+   "b": "Graize",
+   "pos": null,
+   "pochette": "covers/eddfbcae-1d55-425a-a515-5cc19315366c-mwqwwhi5.webp",
+   "avecPochette": true,
+   "discogs": 7526340,
+   "infos": {
+    "label": "Zed El Youm",
+    "catno": "Z.E.Y-6212",
+    "format": "Vinyl, 7\", 45 RPM",
+    "formats": [
+     "7\""
+    ],
+    "pays": "Algeria",
+    "genres": [
+     "Funk / Soul",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "enVente": 0,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Graize",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Graize",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 37,
+    "want": 43,
+    "note": 3.5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "John Travolta, Olivia Newton-John",
+    "a": "Graize",
+    "b": "Graize"
+   }
+  },
+  {
+   "id": "2eb8c759-5959-4375-95e6-3d9dd3d15dec",
    "artiste": "Johnny Hallyday",
-   "a": "Qu'Est-Ce Que Tu Croyais",
+   "a": "Qu'Est-Ce Que Tu Croyais \"Rock'n'roll Dancing\"",
    "b": "C'Est Mieux Ainsi",
    "pos": null,
-   "pochette": "covers/7d000fb6-54ae-4269-9d59-dd63bf7a4ac3.webp",
+   "pochette": "covers/2eb8c759-5959-4375-95e6-3d9dd3d15dec-mwqy07cn.webp",
    "discogs": 8325889,
-   "prix": {
-    "bas": 0.99,
-    "moyen": 1,
-    "haut": 3.99,
-    "vendu": "2026-06-10",
-    "release": 8325889
+   "infos": {
+    "label": "Philips",
+    "catno": "6172 254",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "producteurs": [
+     "Eddie Vartan"
+    ],
+    "arrangeurs": [
+     "Jacques Denjean"
+    ],
+    "enVente": 32,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Qu'Est-Ce Que Tu Croyais \"Rock'n'roll Dancing\"",
+      "duree": "3:30",
+      "auteurs": [
+       "Fred Beckmeier",
+       "Georges Terme",
+       "Steve Beckmeier"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "C'Est Mieux Ainsi",
+      "duree": "3:55",
+      "auteurs": [
+       "Franck Langolff",
+       "Pascal Lefèbvre"
+      ]
+     }
+    ],
+    "have": 301,
+    "want": 8,
+    "note": 3.4,
+    "votes": 10
+   },
+   "titresDiscogs": {
+    "artiste": "Johnny Hallyday",
+    "a": "Qu'Est-Ce Que Tu Croyais \"Rock'n'roll Dancing\"",
+    "b": "C'Est Mieux Ainsi"
    }
   },
   {
-   "id": "a49a56a0-a11e-44a4-b042-031c1f46bdf7",
+   "id": "83e0888c-557d-4782-9b89-c0b64d003d02",
    "artiste": "Kool & The Gang",
    "a": "Fresh",
    "b": "Rollin'",
    "pos": null,
-   "pochette": "covers/a49a56a0-a11e-44a4-b042-031c1f46bdf7.webp",
-   "discogs": 1555475,
-   "prix": {
-    "bas": 0.63,
-    "moyen": 3.18,
-    "haut": 9.58,
-    "vendu": "2026-11-12",
-    "release": 1555475
+   "pochette": "covers/83e0888c-557d-4782-9b89-c0b64d003d02-mwqxdces.webp",
+   "discogs": 547263,
+   "infos": {
+    "label": "De-Lite Records",
+    "catno": "102024",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "enVente": 28,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Fresh",
+      "duree": "4:20",
+      "auteurs": [
+       "J.T. Taylor",
+       "Kool & The Gang",
+       "Sandy Linzer"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Rollin'",
+      "duree": "3:11",
+      "auteurs": [
+       "J.T. Taylor",
+       "Kool & The Gang",
+       "Ronald Bell"
+      ]
+     }
+    ],
+    "have": 1416,
+    "want": 142,
+    "note": 4.12,
+    "votes": 83
+   },
+   "titresDiscogs": {
+    "artiste": "Kool & The Gang",
+    "a": "Fresh",
+    "b": "Rollin'"
    }
   },
   {
@@ -1724,6 +8203,60 @@
     "haut": 4,
     "vendu": "2026-02-04",
     "release": 972559
+   },
+   "infos": {
+    "label": "Flarenasch",
+    "catno": "15115",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1991,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Dimitri Yerasimos",
+     "Lagaf'"
+    ],
+    "producteurs": [
+     "Dimitri Yerasimos",
+     "Goofie Show",
+     "Hervé Hubert",
+     "Emmanuel Jacques"
+    ],
+    "arrangeurs": [
+     "Dimitri Yerasimos"
+    ],
+    "enVente": 72,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "La Zoubida",
+      "duree": "3:55",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "La Zoubida \"Instrumental\"",
+      "duree": "3:55",
+      "auteurs": []
+     }
+    ],
+    "have": 1231,
+    "want": 32,
+    "note": 3.68,
+    "votes": 63
+   },
+   "titresDiscogs": {
+    "artiste": "Lagaf'",
+    "a": "La Zoubida",
+    "b": "La Zoubida \"Instrumental\""
    }
   },
   {
@@ -1741,6 +8274,37 @@
     "haut": 8,
     "vendu": "2025-12-16",
     "release": 1485728
+   },
+   "infos": {
+    "label": "RCA",
+    "catno": "PB 8067",
+    "format": "Vinyl, 7\", 45 RPM, Stereo",
+    "formats": [
+     "7\"",
+     "Stereo"
+    ],
+    "pays": "Italy",
+    "annee": 1977,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Alain Souchon",
+     "Laurent Voulzy"
+    ],
+    "enVente": 107,
+    "have": 255,
+    "want": 13,
+    "note": 3.6,
+    "votes": 25
+   },
+   "titresDiscogs": {
+    "artiste": "Laurent Voulzy",
+    "a": "Rockollection",
+    "b": ""
    }
   },
   {
@@ -1758,6 +8322,68 @@
     "haut": 5,
     "vendu": "2017-10-04",
     "release": 9051508
+   },
+   "infos": {
+    "label": "Disques Déesse",
+    "catno": "DDP 101",
+    "format": "Vinyl, 7\", 45 RPM, EP",
+    "formats": [
+     "7\"",
+     "EP"
+    ],
+    "pays": "France",
+    "annee": 1966,
+    "genres": [
+     "Folk, World, & Country"
+    ],
+    "arrangeurs": [
+     "Jack Defer"
+    ],
+    "enVente": 2,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Ch'Est Un Bon D'Mi",
+      "duree": "3:50",
+      "auteurs": [
+       "Robert Capenoul"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Polka Come Cha",
+      "duree": "2:00",
+      "auteurs": [
+       "Jack Defer",
+       "Robert Capenoul"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "In R'Venant D'Marquette",
+      "duree": "4:20",
+      "auteurs": [
+       "Robert Capenoul"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Ch'Est Mi D'Siré",
+      "duree": "2:20",
+      "auteurs": [
+       "Robert Capenoul"
+      ]
+     }
+    ],
+    "have": 41,
+    "want": 1,
+    "note": 3,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Les Capenoules",
+    "a": "Ch'Est Un Bon D'Mi / Polka Come Cha",
+    "b": "In R'Venant D'Marquette / Ch'Est Mi D'Siré"
    }
   },
   {
@@ -1768,7 +8394,64 @@
    "pos": null,
    "pochette": "covers/d0383439-0b33-4e0d-a8ea-a9f14e05c46f-mwquw4ek.webp",
    "avecPochette": true,
-   "discogs": 7548242
+   "discogs": 7548242,
+   "infos": {
+    "label": "Disques Déesse",
+    "catno": "DDP 129",
+    "format": "Vinyl, 7\", 45 RPM, EP",
+    "formats": [
+     "7\"",
+     "EP"
+    ],
+    "pays": "France",
+    "genres": [
+     "Pop",
+     "Folk, World, & Country"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "L'Bonnet D'Nu",
+      "duree": "",
+      "auteurs": [
+       "Jack Defer"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Ah ! La Pourisse",
+      "duree": "",
+      "auteurs": [
+       "P. Capenoul"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "L'Planque à Pain",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Pitche Et Mitche",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "have": 15,
+    "want": 0,
+    "note": 4,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Les Capenoules Accompagnés par L'Orchestre De Jack Defer",
+    "a": "L'Bonnet D'Nu / Ah ! La Pourisse",
+    "b": "L'Planque à Pain / Pitche Et Mitche"
+   }
   },
   {
    "id": "78f0b356-b843-4ec8-a354-f6ec974c6c4e",
@@ -1777,14 +8460,6 @@
    "b": "Viens Boire Un P'tit Coup A La Maison (Instru)",
    "pos": null,
    "pochette": "covers/78f0b356-b843-4ec8-a354-f6ec974c6c4e.webp"
-  },
-  {
-   "id": "837a5672-3da1-4e1c-add5-e58ac52caebc",
-   "artiste": "Marches Militaires",
-   "a": "Auprès De Ma Blonde",
-   "b": "Le Chant Du Départ",
-   "pos": null,
-   "pochette": "covers/837a5672-3da1-4e1c-add5-e58ac52caebc.webp"
   },
   {
    "id": "fd45c2f4-e50f-47ab-91bf-0e5d33b1d56f",
@@ -1800,6 +8475,51 @@
     "haut": 9.95,
     "vendu": "2026-08-22",
     "release": 663449
+   },
+   "infos": {
+    "label": "Ariola",
+    "catno": "113189",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "France",
+    "annee": 1990,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "José María Cano"
+    ],
+    "enVente": 84,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Une Femme Avec Une Femme",
+      "duree": "4:05",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Mujer Contra Mujer",
+      "duree": "4:05",
+      "auteurs": []
+     }
+    ],
+    "have": 1565,
+    "want": 37,
+    "note": 4.35,
+    "votes": 79
+   },
+   "titresDiscogs": {
+    "artiste": "Mecano",
+    "a": "Une Femme Avec Une Femme",
+    "b": "Mujer Contra Mujer"
    }
   },
   {
@@ -1816,6 +8536,64 @@
     "haut": 5,
     "vendu": "2026-10-17",
     "release": 757734
+   },
+   "infos": {
+    "label": "Saban Records & Music",
+    "catno": "2097 130",
+    "format": "Vinyl, 7\", Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Theme"
+    ],
+    "auteurs": [
+     "Haim Saban",
+     "Shuki Levy"
+    ],
+    "producteurs": [
+     "Haim Saban",
+     "Shuki Levy"
+    ],
+    "arrangeurs": [
+     "Haim Saban",
+     "Shuki Levy"
+    ],
+    "enVente": 7,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "La Chanson De Nono",
+      "duree": "2:24",
+      "auteurs": [
+       "Haim Saban",
+       "Pascal Auriat"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "La Chanson De Nono (Instrumental)",
+      "duree": "2:24",
+      "auteurs": []
+     }
+    ],
+    "have": 389,
+    "want": 30,
+    "note": 3.56,
+    "votes": 18
+   },
+   "titresDiscogs": {
+    "artiste": "Nono",
+    "a": "La Chanson De Nono",
+    "b": "La Chanson De Nono (Instrumental)"
    }
   },
   {
@@ -1833,6 +8611,55 @@
     "haut": 4,
     "vendu": "2026-11-20",
     "release": 673288
+   },
+   "infos": {
+    "label": "Carrere",
+    "catno": "13761",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "Ewald Pfleger",
+     "Opus"
+    ],
+    "producteurs": [
+     "Peter Müller"
+    ],
+    "enVente": 103,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Live Is Life",
+      "duree": "4:15",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Up And Down",
+      "duree": "3:49",
+      "auteurs": []
+     }
+    ],
+    "have": 2557,
+    "want": 110,
+    "note": 4.08,
+    "votes": 135
+   },
+   "titresDiscogs": {
+    "artiste": "Opus",
+    "a": "Live Is Life",
+    "b": "Up And Down"
    }
   },
   {
@@ -1842,6 +8669,65 @@
    "b": "Même Si On Est Fou",
    "pos": null,
    "pochette": "covers/2ad730b5-137c-41e7-85b2-d1910c1668c0.webp"
+  },
+  {
+   "id": "68be503d-58d2-4b61-a7dd-95e553c3b187",
+   "artiste": "Paul McCartney & Michael Jackson",
+   "a": "Say Say Say",
+   "b": "Ode To A Koala Bear",
+   "pos": null,
+   "pochette": "covers/68be503d-58d2-4b61-a7dd-95e553c3b187-mwqwy95f.webp",
+   "avecPochette": true,
+   "discogs": 577310,
+   "infos": {
+    "label": "Parlophone",
+    "catno": "1652527",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1983,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Synth-pop"
+    ],
+    "producteurs": [
+     "George Martin"
+    ],
+    "enVente": 65,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Say Say Say",
+      "duree": "3:55",
+      "auteurs": [
+       "Michael Jackson",
+       "Paul McCartney"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Ode To A Koala Bear",
+      "duree": "3:45",
+      "auteurs": [
+       "Paul McCartney"
+      ]
+     }
+    ],
+    "have": 2642,
+    "want": 145,
+    "note": 4.19,
+    "votes": 182
+   },
+   "titresDiscogs": {
+    "artiste": "Paul McCartney & Michael Jackson",
+    "a": "Say Say Say",
+    "b": "Ode To A Koala Bear"
+   }
   },
   {
    "id": "d25a011b-d848-4d1d-8580-ee274cf7cc69",
@@ -1858,6 +8744,53 @@
     "haut": 7.92,
     "vendu": "2026-10-09",
     "release": 648376
+   },
+   "infos": {
+    "label": "Polydor",
+    "catno": "2056 954",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "enVente": 67,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Les Corons",
+      "duree": "4:12",
+      "auteurs": [
+       "Jean-Pierre Lang",
+       "Pierre Bachelet"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Nos Jours Heureux",
+      "duree": "2:56",
+      "auteurs": [
+       "Jean-Pierre Lang",
+       "Pierre Bachelet"
+      ]
+     }
+    ],
+    "have": 1322,
+    "want": 22,
+    "note": 4,
+    "votes": 63
+   },
+   "titresDiscogs": {
+    "artiste": "Pierre Bachelet",
+    "a": "Les Corons",
+    "b": "Nos Jours Heureux"
    }
   },
   {
@@ -1875,6 +8808,55 @@
     "haut": 20,
     "vendu": "2026-11-16",
     "release": 4159617
+   },
+   "infos": {
+    "label": "EMI",
+    "catno": "2 C 006-60045",
+    "format": "Vinyl, 7\", Single, 45 RPM",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "producteurs": [
+     "Queen",
+     "Mike Stone"
+    ],
+    "enVente": 48,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "We Are The Champions",
+      "duree": "3:00",
+      "auteurs": [
+       "Freddie Mercury"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "We Will Rock You",
+      "duree": "2:02",
+      "auteurs": [
+       "Brian May"
+      ]
+     }
+    ],
+    "have": 2258,
+    "want": 203,
+    "note": 4.26,
+    "votes": 119
+   },
+   "titresDiscogs": {
+    "artiste": "Queen",
+    "a": "We Are The Champions",
+    "b": "We Will Rock You"
    }
   },
   {
@@ -1891,6 +8873,167 @@
     "haut": 2.2,
     "vendu": "2026-04-21",
     "release": 660279
+   },
+   "infos": {
+    "label": "Formule 1",
+    "catno": "49 307",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Claude Carrère",
+     "Jean Kluger",
+     "Vline Buggy",
+     "Will Tura"
+    ],
+    "enVente": 123,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Good Bye, Elvis",
+      "duree": "2:51",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Good Bye, Elvis (Instrumental)",
+      "duree": "2:51",
+      "auteurs": []
+     }
+    ],
+    "have": 579,
+    "want": 2,
+    "note": 2.92,
+    "votes": 24
+   },
+   "titresDiscogs": {
+    "artiste": "Ringo",
+    "a": "Good Bye, Elvis",
+    "b": "Good Bye, Elvis (Instrumental)"
+   }
+  },
+  {
+   "id": "f88b2345-d084-4138-a731-4d1a1126ee6f",
+   "artiste": "Roch Voisine",
+   "a": "Hélène",
+   "b": "Ton Blues",
+   "pos": null,
+   "pochette": "covers/f88b2345-d084-4138-a731-4d1a1126ee6f-mwqyf6gx.webp",
+   "discogs": 1260491,
+   "infos": {
+    "label": "Ariola",
+    "catno": "112 628",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "Europe",
+    "annee": 1989,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Soft Rock"
+    ],
+    "enVente": 48,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Hélène",
+      "duree": "3:42",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Ton Blues",
+      "duree": "3:35",
+      "auteurs": []
+     }
+    ],
+    "have": 356,
+    "want": 7,
+    "note": 3.87,
+    "votes": 15
+   },
+   "titresDiscogs": {
+    "artiste": "Roch Voisine",
+    "a": "Hélène",
+    "b": "Ton Blues"
+   }
+  },
+  {
+   "id": "a00168db-b933-4abb-b19e-b65f299a5d93",
+   "artiste": "Scorpions",
+   "a": "Wind Of Change",
+   "b": "Tease Me Please Me",
+   "pos": null,
+   "pochette": "covers/a00168db-b933-4abb-b19e-b65f299a5d93-mwqwxid2.webp",
+   "avecPochette": true,
+   "discogs": 2611235,
+   "infos": {
+    "label": "Mercury",
+    "catno": "878 692-7",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1990,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Soft Rock",
+     "Hard Rock"
+    ],
+    "producteurs": [
+     "Keith Olsen",
+     "Scorpions"
+    ],
+    "enVente": 36,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Wind Of Change",
+      "duree": "5:10",
+      "auteurs": [
+       "Klaus Meine"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Tease Me Please Me",
+      "duree": "4:44",
+      "auteurs": [
+       "Herman Rarebell",
+       "Jim Vallance",
+       "Klaus Meine",
+       "Rudolf Schenker"
+      ]
+     }
+    ],
+    "have": 2045,
+    "want": 134,
+    "note": 4.08,
+    "votes": 132
+   },
+   "titresDiscogs": {
+    "artiste": "Scorpions",
+    "a": "Wind Of Change",
+    "b": "Tease Me Please Me"
    }
   },
   {
@@ -1907,6 +9050,58 @@
     "haut": 27.3,
     "vendu": "2026-09-30",
     "release": 3259956
+   },
+   "infos": {
+    "label": "A&M Records",
+    "catno": "2162-S",
+    "format": "Vinyl, 7\", 45 RPM, Single, Promo, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Promo",
+     "Stereo"
+    ],
+    "pays": "US",
+    "annee": 1979,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Prog Rock"
+    ],
+    "auteurs": [
+     "Rick Davies & Roger Hodgson"
+    ],
+    "producteurs": [
+     "Peter Henderson",
+     "Supertramp"
+    ],
+    "enVente": 11,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Goodbye Stranger",
+      "duree": "5:49",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Goodbye Stranger",
+      "duree": "4:25",
+      "auteurs": []
+     }
+    ],
+    "have": 67,
+    "want": 42,
+    "note": 4.75,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Supertramp",
+    "a": "Goodbye Stranger",
+    "b": "Goodbye Stranger"
    }
   },
   {
@@ -1917,7 +9112,55 @@
    "pos": null,
    "pochette": "covers/8c63b252-c805-44cc-ac30-7a9085c4c5a0.webp",
    "avecPochette": true,
-   "discogs": 13302138
+   "discogs": 13302138,
+   "infos": {
+    "label": "Vanguard",
+    "catno": "119 017",
+    "format": "Vinyl, 7\", 45 RPM, Single, Misprint",
+    "formats": [
+     "7\"",
+     "Single",
+     "Misprint"
+    ],
+    "pays": "France",
+    "annee": 1969,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Blues Rock",
+     "Psychedelic Rock",
+     "Classic Rock"
+    ],
+    "enVente": 7,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Rock And Rool Music",
+      "duree": "2:44",
+      "auteurs": [
+       "Dick Wagner"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Donny's Blues",
+      "duree": "4:03",
+      "auteurs": [
+       "Don Hartman"
+      ]
+     }
+    ],
+    "have": 48,
+    "want": 8,
+    "note": 3.5,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Frost (2), The",
+    "a": "Rock And Rool Music",
+    "b": "Donny's Blues"
+   }
   },
   {
    "id": "25cfa028-522f-4959-ac7d-7b2df7265bf5",
@@ -1934,6 +9177,121 @@
     "haut": 7,
     "vendu": "2026-11-05",
     "release": 901394
+   },
+   "infos": {
+    "label": "Disc'Az",
+    "catno": "AZ 10 473",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1969,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Classic Rock"
+    ],
+    "auteurs": [
+     "Robbie van Leeuwen"
+    ],
+    "enVente": 42,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Venus",
+      "duree": "2:58",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Hot Sand",
+      "duree": "2:35",
+      "auteurs": []
+     }
+    ],
+    "have": 1708,
+    "want": 154,
+    "note": 4.21,
+    "votes": 117
+   },
+   "titresDiscogs": {
+    "artiste": "Shocking Blue",
+    "a": "Venus",
+    "b": "Hot Sand"
+   }
+  },
+  {
+   "id": "401e1402-0367-44b9-b59a-81c85b1ec27c",
+   "artiste": "Unknown Artist",
+   "a": "La Marche Lorraine / Auprès De Ma Blonde",
+   "b": "Le Chant Du Départ / La Madelon",
+   "pos": null,
+   "pochette": "covers/401e1402-0367-44b9-b59a-81c85b1ec27c-mwqybsfv.webp",
+   "discogs": 4818175,
+   "infos": {
+    "label": "Vega",
+    "catno": "LDP 5.051",
+    "format": "Vinyl, 7\", 45 RPM, EP",
+    "formats": [
+     "7\"",
+     "EP"
+    ],
+    "pays": "France",
+    "annee": 1972,
+    "genres": [
+     "Brass & Military"
+    ],
+    "styles": [
+     "Marches"
+    ],
+    "enVente": 16,
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "La Marche Lorraine",
+      "duree": "",
+      "auteurs": [
+       "Louis Ganne"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Auprès De Ma Blonde",
+      "duree": "",
+      "auteurs": [
+       "Traditional"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Le Chant Du Départ",
+      "duree": "",
+      "auteurs": [
+       "Étienne-Nicolas Méhul"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "La Madelon",
+      "duree": "",
+      "auteurs": [
+       "Camille Robert"
+      ]
+     }
+    ],
+    "have": 48,
+    "want": 1,
+    "note": 3,
+    "votes": 5
+   },
+   "titresDiscogs": {
+    "artiste": "Unknown Artist",
+    "a": "La Marche Lorraine / Auprès De Ma Blonde",
+    "b": "Le Chant Du Départ / La Madelon"
    }
   },
   {
@@ -1950,6 +9308,179 @@
     "haut": 7.28,
     "vendu": "2024-11-02",
     "release": 4020893
+   },
+   "infos": {
+    "label": "RCA",
+    "catno": "PB-13402",
+    "format": "Vinyl, 7\", 45 RPM",
+    "formats": [
+     "7\""
+    ],
+    "pays": "Canada",
+    "annee": 1982,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Modern Classical",
+     "Ambient"
+    ],
+    "auteurs": [
+     "Vangelis"
+    ],
+    "producteurs": [
+     "Vangelis"
+    ],
+    "arrangeurs": [
+     "Vangelis"
+    ],
+    "enVente": 3,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "To The Unknown Man Part 1",
+      "duree": "3:49",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "To The Unknown Man Part 11",
+      "duree": "2:32",
+      "auteurs": []
+     }
+    ],
+    "have": 8,
+    "want": 11,
+    "note": 5,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Vangelis",
+    "a": "To The Unknown Man Part 1",
+    "b": "To The Unknown Man Part 11"
+   }
+  },
+  {
+   "id": "1714ad02-d1bd-4a48-b46f-1252c2e8c75b",
+   "artiste": "Village People",
+   "a": "Y.M.C.A.",
+   "b": "The Women",
+   "pos": null,
+   "pochette": "covers/1714ad02-d1bd-4a48-b46f-1252c2e8c75b-mwqwttk4.webp",
+   "avecPochette": true,
+   "discogs": 410179,
+   "infos": {
+    "label": "Metronome",
+    "catno": "0030.140",
+    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
+    "formats": [
+     "7\"",
+     "Single",
+     "Stereo"
+    ],
+    "pays": "Germany",
+    "annee": 1978,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Jacques Morali",
+     "Henri Belolo",
+     "Victor Willis"
+    ],
+    "producteurs": [
+     "Jacques Morali",
+     "Henri Belolo"
+    ],
+    "enVente": 175,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Y.M.C.A.",
+      "duree": "3:45",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "The Women",
+      "duree": "3:39",
+      "auteurs": []
+     }
+    ],
+    "have": 2629,
+    "want": 97,
+    "note": 3.68,
+    "votes": 149
+   },
+   "titresDiscogs": {
+    "artiste": "Village People",
+    "a": "Y.M.C.A.",
+    "b": "The Women"
+   }
+  },
+  {
+   "id": "bd1be54a-11d3-4287-844e-e45a23af0b11",
+   "artiste": "Wham!",
+   "a": "Wake Me Up Before You Go-Go",
+   "b": "Wake Me Up Before You Go-Go (Instrumental)",
+   "pos": null,
+   "pochette": "covers/bd1be54a-11d3-4287-844e-e45a23af0b11-mwqy7f5s.webp",
+   "discogs": 1460376,
+   "infos": {
+    "label": "Epic",
+    "catno": "EPC A4440",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Synth-pop"
+    ],
+    "auteurs": [
+     "George Michael"
+    ],
+    "producteurs": [
+     "George Michael"
+    ],
+    "arrangeurs": [
+     "George Michael"
+    ],
+    "enVente": 5,
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Wake Me Up Before You Go-Go",
+      "duree": "3:51",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Wake Me Up Before You Go-Go (Instrumental)",
+      "duree": "4:03",
+      "auteurs": []
+     }
+    ],
+    "have": 478,
+    "want": 95,
+    "note": 4.32,
+    "votes": 19
+   },
+   "titresDiscogs": {
+    "artiste": "Wham!",
+    "a": "Wake Me Up Before You Go-Go",
+    "b": "Wake Me Up Before You Go-Go (Instrumental)"
    }
   }
  ],

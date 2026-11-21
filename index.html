@@ -25,8 +25,12 @@
       <div class="marque">
         <h1>Jukebox <span class="total" id="total" hidden></span></h1>
         <p id="sous-titre">Selection 101</p>
+        <p id="statut-sync-discogs" role="status" hidden></p>
       </div>
       <div class="actions">
+        <button type="button" class="pilule sync-discogs seul-edition" id="btn-sync-discogs" aria-label="Synchroniser avec Discogs" title="Synchroniser avec Discogs" disabled>
+          <span class="sync-discogs-complet">Synchroniser avec Discogs</span><span class="sync-discogs-court" aria-hidden="true">↻ Discogs</span>
+        </button>
         <button class="pilule seul-edition" id="btn-publier">Publier</button>
         <button class="icone" id="btn-export" aria-label="Exporter pour 45'O'Juke" title="Exporter pour 45'O'Juke">
           <svg viewBox="0 0 24 24"><path d="M12 3v12M7.5 7.5 12 3l4.5 4.5M5 13v5.5A2.5 2.5 0 0 0 7.5 21h9a2.5 2.5 0 0 0 2.5-2.5V13"/></svg>
@@ -39,42 +43,40 @@
     <div class="outils">
     <label class="recherche">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-      <input id="recherche" type="search" placeholder="Artiste, titre ou numéro" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search">
+      <input id="recherche" type="search" aria-label="Rechercher dans la collection" placeholder="Artiste, titre, genre, année…" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search">
     </label>
     <div class="segments" role="tablist">
       <button role="tab" id="tab-jukebox" class="actif" aria-selected="true">Jukebox <span id="nb-jukebox"></span></button>
       <button role="tab" id="tab-reserve" aria-selected="false">Réserve <span id="nb-reserve"></span></button>
     </div>
     <div class="filtres">
-      <label class="filtre"><span>Trier</span>
-        <select data-filtre="tri">
+      <button type="button" class="filtre bouton-inventaire seul-edition" id="btn-inventaire" aria-pressed="false" aria-controls="barre-inventaire">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="m8 12 3 3 5-6"/></svg>
+        Inventaire
+      </button>
+      <label class="filtre"><span>Tri</span>
+        <select id="tri-disques" data-filtre="tri">
           <option value="">Par défaut</option>
-          <option value="artiste">Artiste A → Z</option>
-          <option value="titre">Titre A → Z</option>
-          <option value="prix">Prix décroissant</option>
-          <option value="prix-asc">Prix croissant</option>
-          <option value="annee">Année : ancien → récent</option>
-          <option value="annee-desc">Année : récent → ancien</option>
-          <option value="recherche">Plus recherchés sur Discogs</option>
+          <option value="artiste-az">Artiste A–Z</option>
+          <option value="artiste-za">Artiste Z–A</option>
+          <option value="titre-az">Titre A–Z</option>
+          <option value="titre-za">Titre Z–A</option>
+          <option value="prix-croissant">Prix croissant</option>
+          <option value="prix-decroissant">Prix décroissant</option>
+          <option value="annee-croissante">Année croissante</option>
+          <option value="annee-decroissante">Année décroissante</option>
+          <optgroup id="tris-inventaire" label="Inventaire" hidden disabled>
+            <option value="inventaire-pointes">Pointés d’abord</option>
+            <option value="inventaire-a-verifier">À vérifier d’abord</option>
+          </optgroup>
         </select>
       </label>
-      <label class="filtre"><span>Genre</span>
-        <select data-filtre="genre" id="filtre-genre"><option value="">Tous</option></select>
-      </label>
-      <label class="filtre"><span>Style</span>
-        <select data-filtre="style" id="filtre-style"><option value="">Tous</option></select>
-      </label>
-      <label class="filtre"><span>Décennie</span>
-        <select data-filtre="decennie" id="filtre-decennie"><option value="">Toutes</option></select>
-      </label>
-      <label class="filtre"><span>Pays</span>
-        <select data-filtre="pays" id="filtre-pays"><option value="">Tous</option></select>
-      </label>
-      <label class="filtre"><span>Label</span>
-        <select data-filtre="label" id="filtre-label"><option value="">Tous</option></select>
-      </label>
-      <label class="filtre"><span>Format</span>
-        <select data-filtre="format" id="filtre-format"><option value="">Tous</option></select>
+      <label class="filtre seul-edition"><span>Pointage</span>
+        <select id="filtre-inventaire" data-filtre="inventaire" disabled>
+          <option value="">Tous</option>
+          <option value="pointes">Pointés</option>
+          <option value="a-verifier">À vérifier</option>
+        </select>
       </label>
       <label class="filtre"><span>Doublons</span>
         <select data-filtre="doublon">
@@ -89,15 +91,6 @@
           <option value="sans">Sans</option>
         </select>
       </label>
-      <label class="filtre"><span>Prix</span>
-        <select data-filtre="prix">
-          <option value="">Tous</option>
-          <option value="bas">Moins de 5 €</option>
-          <option value="moyen">5 à 15 €</option>
-          <option value="haut">Plus de 15 €</option>
-          <option value="inconnu">Inconnu</option>
-        </select>
-      </label>
       <label class="filtre seul-edition"><span>Discogs</span>
         <select data-filtre="discogs">
           <option value="">Tous</option>
@@ -106,12 +99,19 @@
         </select>
       </label>
       <button type="button" class="lien" id="filtres-effacer" hidden>Effacer</button>
-      <span class="compte" id="compte-filtre"></span>
+      <span class="compte" id="compte-filtre" role="status"></span>
     </div>
     </div>
   </header>
 
   <main>
+    <div class="barre-inventaire seul-edition" id="barre-inventaire" hidden>
+      <div>
+        <p id="compte-inventaire" role="status"></p>
+        <p class="aide">Clique sur un disque trouvé pour le pointer. Clique à nouveau pour annuler.</p>
+      </div>
+      <label class="bascule reste-inventaire"><input type="checkbox" id="reste-inventaire"> À vérifier seulement</label>
+    </div>
     <p class="etat" id="etat">Chargement…</p>
     <div class="grille" id="grille"></div>
   </main>
@@ -120,83 +120,99 @@
     <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
   </button>
 
-  <!-- Fiche disque (ajout / modification) -->
-  <div class="voile" id="fiche" hidden>
+  <dialog class="fiche-disque" id="fiche" aria-labelledby="fiche-titre">
     <form class="feuille" id="form-disque" autocomplete="off" novalidate>
-      <div class="poignee"></div>
       <header class="feuille-tete">
         <h2 id="fiche-titre">Nouveau disque</h2>
-        <button type="button" class="icone fermer" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        <button type="button" class="icone fermer" data-fermer aria-label="Fermer" autofocus><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
       </header>
 
-      <section class="discogs" id="zone-discogs">
-        <label class="recherche petite">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <input id="discogs-q" type="search" placeholder="Chercher sur Discogs : artiste titre" enterkeyhint="search" autocorrect="off" spellcheck="false">
-        </label>
-        <ul class="resultats" id="discogs-resultats"></ul>
-      </section>
+      <div class="fiche-defilement">
+        <div class="fiche-corps">
+          <div class="fiche-visuel">
+            <button type="button" class="pochette-edit" id="pochette-edit" aria-label="Changer la pochette">
+              <img id="pochette-img" alt="">
+              <span class="pochette-vide" id="pochette-vide">
+                <svg viewBox="0 0 24 24"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.6l1.4-2h5l1.4 2h1.6A2.5 2.5 0 0 1 20 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg>
+                Pochette
+              </span>
+            </button>
+            <input type="file" id="pochette-fichier" accept="image/*" hidden>
+            <div class="fiche-reference">
+              <a id="lien-discogs" target="_blank" rel="noopener" hidden>Discogs ↗</a>
+              <p class="aide" id="fiche-prix" hidden></p>
+            </div>
+          </div>
 
-      <div class="fiche-corps">
-        <button type="button" class="pochette-edit" id="pochette-edit" aria-label="Changer la pochette">
-          <img id="pochette-img" alt="">
-          <span class="pochette-vide" id="pochette-vide">
-            <svg viewBox="0 0 24 24"><path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.6l1.4-2h5l1.4 2h1.6A2.5 2.5 0 0 1 20 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 4 17.5z"/><circle cx="12" cy="13" r="3.5"/></svg>
-            Pochette
-          </span>
-        </button>
-        <input type="file" id="pochette-fichier" accept="image/*" hidden>
+          <div class="fiche-contenu">
+            <div class="fiche-identite">
+              <div class="fiche-bloc fiche-lecture" id="fiche-lecture" hidden></div>
+              <div class="fiche-bloc seul-edition">
+                <section class="discogs" id="zone-discogs">
+                  <label class="recherche petite">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                    <input id="discogs-q" type="search" placeholder="Chercher sur Discogs : artiste titre" enterkeyhint="search" autocorrect="off" spellcheck="false">
+                  </label>
+                  <ul class="resultats" id="discogs-resultats"></ul>
+                </section>
+                <div class="champs">
+                  <label class="champ"><span>Artiste</span><input id="f-artiste" required></label>
+                  <label class="champ"><span>Face A <b id="sel-a"></b></span><input id="f-a" required></label>
+                  <label class="champ"><span>Face B <b id="sel-b"></b></span><input id="f-b"></label>
+                  <p class="aide indication-titre" id="indication-titre" hidden>En jaune, les titres ajustés manuellement.</p>
+                  <button type="button" class="lien" id="btn-verifier">Vérifier avec Discogs</button>
+                </div>
+                <div class="alerte suggestion" id="suggestion" hidden>
+                  <p><b>Sur Discogs :</b> <span id="sugg-texte"></span></p>
+                  <div class="choix">
+                    <button type="button" class="secondaire" id="sugg-utiliser">Utiliser ces titres</button>
+                    <button type="button" class="texte" id="sugg-autre">Ce n'est pas le bon disque</button>
+                  </div>
+                </div>
+                <div class="alerte" id="doublon" hidden>
+                  <p id="doublon-texte"></p>
+                  <div class="choix">
+                    <button type="button" class="secondaire" id="doublon-garder">Ajouter quand même</button>
+                    <button type="button" class="secondaire" id="doublon-remplacer">Remplacer l'ancien</button>
+                    <button type="button" class="texte" id="doublon-annuler">Annuler</button>
+                  </div>
+                </div>
+                <p class="aide" id="doublon-choix" hidden></p>
+              </div>
+            </div>
 
-        <div class="champs">
-          <label class="champ"><span>Artiste</span><input id="f-artiste" required></label>
-          <label class="champ"><span>Face A <b id="sel-a"></b></span><input id="f-a" required></label>
-          <label class="champ"><span>Face B <b id="sel-b"></b></span><input id="f-b"></label>
-          <button type="button" class="lien" id="btn-verifier">Vérifier avec Discogs</button>
+            <section class="fiche-bloc fiche-discogs" id="fiche-discogs" aria-label="Informations Discogs" hidden>
+              <div id="bloc-pistes" hidden>
+                <h3>Pistes Discogs</h3>
+                <ul class="fiche-pistes" id="pistes-discogs"></ul>
+              </div>
+              <dl class="infos-discogs" id="infos-discogs" hidden></dl>
+            </section>
+          </div>
+
+          <div class="fiche-bloc fiche-emplacement seul-edition">
+            <label class="champ"><span>Emplacement</span>
+              <select id="f-pos"></select>
+            </label>
+            <p class="aide" id="aide-pos" hidden></p>
+            <button type="button" class="lien" id="btn-reserve" hidden>Mettre en réserve</button>
+            <label class="bascule case-pochette"><input type="checkbox" id="f-avec-pochette"> J'ai la pochette</label>
+            <details class="note" id="bloc-note">
+              <summary>Note</summary>
+              <textarea id="f-note" rows="3" aria-label="Note" placeholder="Facultatif"></textarea>
+            </details>
+          </div>
         </div>
       </div>
 
-      <dl class="infos-discogs" id="infos-discogs" hidden></dl>
-
-      <div class="alerte suggestion" id="suggestion" hidden>
-        <p><b>Sur Discogs :</b> <span id="sugg-texte"></span></p>
-        <div class="choix">
-          <button type="button" class="secondaire" id="sugg-utiliser">Utiliser ces titres</button>
-          <button type="button" class="texte" id="sugg-autre">Ce n'est pas le bon disque</button>
-        </div>
-      </div>
-
-      <label class="champ"><span>Emplacement</span>
-        <select id="f-pos"></select>
-      </label>
-      <p class="aide" id="aide-pos" hidden></p>
-      <button type="button" class="lien" id="btn-reserve" hidden>Mettre en réserve (la position redevient libre)</button>
-
-      <label class="bascule case-pochette"><input type="checkbox" id="f-avec-pochette"> J'ai la pochette</label>
-
-      <details class="note" id="bloc-note">
-        <summary>Note</summary>
-        <textarea id="f-note" rows="4" placeholder="Facultatif"></textarea>
-      </details>
-
-      <div class="alerte" id="doublon" hidden>
-        <p id="doublon-texte"></p>
-        <div class="choix">
-          <button type="button" class="secondaire" id="doublon-garder">Ajouter quand même</button>
-          <button type="button" class="secondaire" id="doublon-remplacer">Remplacer l'ancien</button>
-          <button type="button" class="texte" id="doublon-annuler">Annuler</button>
-        </div>
-      </div>
-      <p class="aide" id="doublon-choix" hidden></p>
-
-      <p class="erreur" id="fiche-erreur" hidden></p>
-
-      <footer class="feuille-pied">
-        <button type="button" class="texte danger" id="btn-supprimer">Supprimer</button>
-        <a class="texte" id="lien-discogs" target="_blank" rel="noopener" hidden>Discogs ↗</a>
-        <button type="submit" class="principal" id="btn-enregistrer">Enregistrer</button>
+      <p class="aide fiche-statut" id="fiche-statut" role="status" hidden></p>
+      <p class="erreur" id="fiche-erreur" role="alert" hidden></p>
+      <footer class="feuille-pied seul-edition">
+        <button type="button" class="texte danger seul-edition" id="btn-supprimer">Supprimer</button>
+        <button type="submit" class="principal seul-edition" id="btn-enregistrer">Enregistrer</button>
       </footer>
     </form>
-  </div>
+  </dialog>
 
   <!-- Export 45'O'Juke -->
   <div class="voile" id="export" hidden>
@@ -232,17 +248,14 @@
         <input id="r-github" type="password" placeholder="github_pat_…" autocapitalize="off" autocorrect="off" spellcheck="false">
       </label>
       <p class="aide">Crée une clé « fine-grained » sur <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens</a> : accès au seul dépôt <b>selection101</b>, permissions <b>Contents</b> et <b>Pages</b> : Read and write.</p>
-      <label class="champ"><span>Clé Discogs — pour remplir automatiquement</span>
+      <label class="champ"><span>Clé Discogs</span>
         <input id="r-discogs" type="password" placeholder="Jeton personnel" autocapitalize="off" autocorrect="off" spellcheck="false">
       </label>
       <p class="aide">Sur <a href="https://www.discogs.com/settings/developers" target="_blank" rel="noopener">discogs.com/settings/developers</a> : « Generate new token ».</p>
       <div class="champ">
-        <span>Vérifier la collection avec Discogs</span>
-        <p class="aide prix-aide" id="r-verif">Retrouve chaque disque sur Discogs : titres exacts, prix, doublons. Tes titres ne changent que si tu le demandes.</p>
-        <div class="boutons">
-          <button type="button" class="secondaire" id="btn-verifier-tout">Vérifier la collection</button>
-          <button type="button" class="secondaire" id="btn-voir-verif" hidden>Voir les résultats</button>
-        </div>
+        <span>Synchronisation Discogs</span>
+        <p class="aide prix-aide" id="r-verif">Utilise « Synchroniser avec Discogs » dans la barre du jukebox.</p>
+        <button type="button" class="secondaire" id="btn-voir-verif" hidden>Voir les résultats</button>
       </div>
       <div class="champ">
         <span>Comparer les pochettes avec Discogs</span>

@@ -101,69 +101,87 @@ async function pochetteCarree(blob) {
 const lsGet = (k) => { try { return localStorage.getItem(k) || ""; } catch { return ""; } };
 const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
 // Filtres mémorisés sur l'appareil.
-const FILTRES = ["tri", "doublon", "genre", "style", "decennie", "pays", "label", "format", "pochette", "prix", "discogs"];
-// Filtres à choix remplis avec les valeurs de la collection (infos Discogs).
-const FILTRES_LISTE = {
-  genre: { tous: "Tous", valeurs: (v) => v.infos?.genres || [] },
-  style: { tous: "Tous", valeurs: (v) => v.infos?.styles || [] },
-  decennie: { tous: "Toutes", valeurs: (v) => (v.infos?.annee ? [String(Math.floor(v.infos.annee / 10) * 10)] : []),
-    nom: (d) => `Années ${d < 2000 ? d.slice(2) : d}`, ordre: (a, b) => a[0] - b[0] },
-  pays: { tous: "Tous", valeurs: (v) => (v.infos?.pays ? [v.infos.pays] : []) },
-  label: { tous: "Tous", valeurs: (v) => (v.infos?.label ? [v.infos.label] : []) },
-  format: { tous: "Tous", valeurs: (v) => v.infos?.formats || [] },
-};
+const FILTRES = ["tri", "inventaire", "doublon", "pochette", "discogs"];
 const etat = { vinyles: [], vue: "jukebox", q: "", charge: false, edition: null, f: Object.fromEntries(FILTRES.map((k) => [k, lsGet(`jb.${k}`)])) };
 
+let modeInventaire = false;
+let inventaireCharge = false;
+const presentsInventaire = new Set();
+const pointagesEnCours = new Set();
+
+function rendreInventaire() {
+  $("barre-inventaire").hidden = !modeInventaire;
+  $("btn-inventaire").setAttribute("aria-pressed", String(modeInventaire));
+  $("reste-inventaire").checked = etat.f.inventaire === "a-verifier";
+  $("filtre-inventaire").disabled = !inventaireCharge;
+  $("tris-inventaire").hidden = $("tris-inventaire").disabled = !inventaireCharge;
+  const presents = etat.vinyles.filter((v) => presentsInventaire.has(v.id)).length;
+  $("compte-inventaire").textContent = `${presents} / ${etat.vinyles.length} pointés · ${etat.vinyles.length - presents} à vérifier`;
+}
+
 const comparer = (a, b) => String(a || "").localeCompare(String(b || ""), "fr", { sensitivity: "base" });
-const TRIS = {
-  artiste: (x, y) => comparer(x.artiste, y.artiste) || comparer(x.a, y.a),
-  titre: (x, y) => comparer(x.a, y.a) || comparer(x.artiste, y.artiste),
-  prix: (x, y) => (y.prix?.moyen || -1) - (x.prix?.moyen || -1) || comparer(x.artiste, y.artiste),
-  "prix-asc": (x, y) => (x.prix?.moyen ?? Infinity) - (y.prix?.moyen ?? Infinity) || comparer(x.artiste, y.artiste),
-  annee: (x, y) => (x.infos?.annee || Infinity) - (y.infos?.annee || Infinity) || comparer(x.artiste, y.artiste),
-  "annee-desc": (x, y) => (y.infos?.annee || -1) - (x.infos?.annee || -1) || comparer(x.artiste, y.artiste),
-  recherche: (x, y) => (y.infos?.want ?? -1) - (x.infos?.want ?? -1) || comparer(x.artiste, y.artiste),
-};
-const TRANCHES = { bas: (p) => p < 5, moyen: (p) => p >= 5 && p <= 15, haut: (p) => p > 15 };
-// Doublons : même identifiant Discogs ; sans identifiant, même artiste et mêmes faces A et B.
-function doublons() {
+const parArtiste = (x, y) => comparer(x.artiste, y.artiste) || comparer(x.a, y.a);
+const estPointe = (v) => presentsInventaire.has(v.id);
+function comparerNombre(x, y, sens) {
+  const connuX = Number.isFinite(x), connuY = Number.isFinite(y);
+  if (connuX && connuY) return (x - y) * sens;
+  return Number(connuY) - Number(connuX);
+}
+const TRIS = new Map([
+  ["artiste-az", parArtiste],
+  ["artiste-za", (x, y) => comparer(y.artiste, x.artiste) || comparer(x.a, y.a)],
+  ["titre-az", (x, y) => comparer(x.a, y.a) || parArtiste(x, y)],
+  ["titre-za", (x, y) => comparer(y.a, x.a) || parArtiste(x, y)],
+  ["prix-croissant", (x, y) => comparerNombre(x.prix?.moyen, y.prix?.moyen, 1) || parArtiste(x, y)],
+  ["prix-decroissant", (x, y) => comparerNombre(x.prix?.moyen, y.prix?.moyen, -1) || parArtiste(x, y)],
+  ["annee-croissante", (x, y) => comparerNombre(x.infos?.annee, y.infos?.annee, 1) || parArtiste(x, y)],
+  ["annee-decroissante", (x, y) => comparerNombre(x.infos?.annee, y.infos?.annee, -1) || parArtiste(x, y)],
+  ["inventaire-pointes", (x, y) => Number(estPointe(y)) - Number(estPointe(x))],
+  ["inventaire-a-verifier", (x, y) => Number(estPointe(x)) - Number(estPointe(y))],
+]);
+const triParInventaire = () => etat.f.tri.startsWith("inventaire-");
+function filtreActif(cle) {
+  if (cle === "discogs" && !etat.edition) return false;
+  if ((cle === "inventaire" || (cle === "tri" && triParInventaire())) && !inventaireCharge) return false;
+  return !!etat.f[cle];
+}
+
+// Les deux critères restent valables même si les éditions Discogs diffèrent.
+function groupesDoublons(liste) {
   const groupes = new Map();
-  for (const v of etat.vinyles) {
-    const r = releaseDe(v);
-    for (const cle of [r ? `r${r}` : `t${base(v.artiste)}|${base(v.a)}|${base(v.b)}`]) {
+  for (const v of liste) {
+    const release = releaseDe(v);
+    const artiste = base(v.artiste), faceA = base(v.a), faceB = base(v.b);
+    const cles = [];
+    if (release) cles.push(`r:${release}`);
+    if (artiste && faceA) cles.push(`t:${artiste}|${[faceA, faceB].sort().join("|")}`);
+    for (const cle of cles) {
       if (!groupes.has(cle)) groupes.set(cle, []);
-      groupes.get(cle).push(v.id);
+      groupes.get(cle).push(v);
     }
   }
-  return new Set([...groupes.values()].filter((ids) => ids.length > 1).flat());
+
+  const dejaVus = new Set();
+  return [...groupes.values()].filter((groupe) => {
+    if (groupe.length < 2) return false;
+    const cle = JSON.stringify(groupe.map((v) => v.id).sort());
+    if (dejaVus.has(cle)) return false;
+    dejaVus.add(cle);
+    return true;
+  });
 }
 function filtrer(liste) {
   const f = etat.f;
-  const dbl = f.doublon ? doublons() : null;
+  const dbl = f.doublon ? new Set(groupesDoublons(etat.vinyles).flatMap((groupe) => groupe.map((v) => v.id))) : null;
   const l = liste.filter((v) => {
     if (dbl && !dbl.has(v.id)) return false;
-    const p = v.prix?.moyen;
-    for (const [k, d] of Object.entries(FILTRES_LISTE)) if (f[k] && !d.valeurs(v).includes(f[k])) return false;
     if (f.pochette && !!v.avecPochette !== (f.pochette === "avec")) return false;
-    if (f.prix === "inconnu" ? p : f.prix && !(p && TRANCHES[f.prix](p))) return false;
     if (etat.edition && f.discogs && !!v.discogs !== (f.discogs === "oui")) return false;
+    if (filtreActif("inventaire") && estPointe(v) !== (f.inventaire === "pointes")) return false;
     return true;
   });
-  // Doublons côte à côte, sauf si un autre tri est choisi.
-  return TRIS[f.tri] ? l.sort(TRIS[f.tri]) : dbl ? l.sort(TRIS.artiste) : l;
-}
-function majFiltresListes() {
-  for (const [k, d] of Object.entries(FILTRES_LISTE)) {
-    const compte = new Map();
-    for (const v of etat.vinyles) for (const x of new Set(d.valeurs(v))) compte.set(x, (compte.get(x) || 0) + 1);
-    const choix = etat.f[k];
-    if (choix && !compte.has(choix)) compte.set(choix, 0);
-    const s = $(`filtre-${k}`);
-    s.parentElement.hidden = !compte.size;
-    s.innerHTML = `<option value="">${d.tous}</option>` +
-      [...compte].sort(d.ordre || ((a, b) => comparer(a[0], b[0]))).map(([x, n]) => `<option value="${esc(x)}">${esc(d.nom ? d.nom(x) : x)} (${n})</option>`).join("");
-    s.value = choix;
-  }
+  const ordre = (filtreActif("tri") && TRIS.get(f.tri)) || (dbl && parArtiste);
+  return ordre ? l.sort(ordre) : l;
 }
 
 function trier(liste) {
@@ -171,45 +189,131 @@ function trier(liste) {
     if (x.pos && y.pos) return x.pos.localeCompare(y.pos);
     if (x.pos) return -1;
     if (y.pos) return 1;
-    return x.artiste.localeCompare(y.artiste, "fr", { sensitivity: "base" });
+    return comparer(x.artiste, y.artiste);
   });
 }
 const parPosition = () => new Map(etat.vinyles.filter((v) => v.pos).map((v) => [v.pos, v]));
 
-function correspond(v, q) {
-  if (/^\d{1,3}$/.test(q) && v.pos && (v.pos === pad(q) || JUKEBOX.selectionA(v.pos) === q || JUKEBOX.selectionB(v.pos) === q)) return true;
-  const n = norm(q);
-  return [v.artiste, v.a, v.b, v.note, v.infos?.label, v.infos?.catno].some((c) => norm(c).includes(n));
+// ——— Recherche dans la collection ———
+function texteRecherche(texte) {
+  return norm(texte).replace(/œ/g, "oe").replace(/æ/g, "ae")
+    .replace(/\b(33|45|78)\s*tours?\b/g, "$1 rpm")
+    .replace(/\b(7|10|12)\s*["″]/g, "$1 pouces ")
+    .replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+}
+
+function texteDisque(v) {
+  const i = v.infos || {};
+  return texteRecherche([
+    v.artiste, v.a, v.b, v.note, v.titresDiscogs?.artiste, v.titresDiscogs?.a, v.titresDiscogs?.b,
+    i.label, i.catno, i.pays, i.format, ...(i.genres || []), ...(i.styles || []), ...(i.formats || []),
+  ].join(" "));
+}
+
+function correspondNumero(v, numero) {
+  return !!v.pos && (v.pos === pad(numero) || JUKEBOX.selectionA(v.pos) === numero || JUKEBOX.selectionB(v.pos) === numero);
+}
+
+function correspondDate(v, valeur, decennie) {
+  const annee = Number(v.infos?.annee);
+  if (!annee) return false;
+  const date = decennie ? Math.floor(annee / 10) * 10 : annee;
+  return (valeur.length === 2 ? date % 100 : date) === Number(valeur);
+}
+
+function dateImplicite(mot) {
+  if (/^\d0$/.test(mot)) return true;
+  if (/^(?:18|19|20)\d{2}$/.test(mot) || /^\d{2}$/.test(mot)) return false;
+  return null;
+}
+
+function classerNumero(v, numero) {
+  if (correspondNumero(v, numero)) return "numero";
+  const decennie = dateImplicite(numero);
+  if (decennie !== null && correspondDate(v, numero, decennie)) return "date";
+  if (texteDisque(v).includes(numero)) return "autre";
+  return "";
+}
+
+function rechercheCollection(q) {
+  const conditions = [];
+  const reste = norm(q)
+    .replace(/^(?:genre|style|pays|label|format)(?:\s*:\s*|\s+)(?=\S)/, "")
+    .replace(/\b(annees?)\s*:?\s*['’]?(\d{4}|\d{2})\b|\b(\d{2})['’]?s\b/g, (_, mot, date, dateCourte) => {
+      conditions.push((v) => correspondDate(v, date || dateCourte, mot !== "annee"));
+      return " ";
+    })
+    .replace(/\b(?:prix (?:inconnu|non renseigne)|sans prix)\b/g, () => {
+      conditions.push((v) => !v.prix?.moyen);
+      return " ";
+    })
+    .replace(/(?:(moins de|plus de)\s+)?\b(\d+(?:[.,]\d{1,2})?)(?:\s+(?:a|et)\s+(\d+(?:[.,]\d{1,2})?))?\s*(?:€|euros?\b)/g, (_, comparaison, montant, plafond) => {
+      const bas = Number(montant.replace(",", "."));
+      const haut = plafond ? Number(plafond.replace(",", ".")) : bas;
+      conditions.push((v) => {
+        const prix = v.prix?.moyen;
+        if (!prix) return false;
+        if (comparaison === "moins de") return prix < bas;
+        if (comparaison === "plus de") return prix > bas;
+        return prix >= bas && prix <= haut;
+      });
+      return " ";
+    });
+  const mots = texteRecherche(reste).split(" ").filter(Boolean);
+  return (v) => {
+    if (!conditions.every((condition) => condition(v))) return false;
+    if (!mots.length) return conditions.length > 0;
+    const texte = texteDisque(v);
+    return mots.every((mot) => {
+      const decennie = dateImplicite(mot);
+      return texte.includes(mot) || (/^\d{1,3}$/.test(mot) && correspondNumero(v, mot))
+        || (decennie !== null && correspondDate(v, mot, decennie));
+    });
+  };
 }
 
 // ——— Rendu ———
 // Ventes Discogs sur la pochette : bas · moyen (en gras) · haut.
 function prixCarte(p) {
   if (!p?.moyen) return "";
-  const titre = `Ventes Discogs — bas ${euros(p.bas || p.moyen)} · moyen ${euros(p.moyen)} · haut ${euros(p.haut || p.moyen)}`;
+  const titre = `${p.source === "conseil" ? "Prix conseillés Discogs (VG · VG+ · NM)" : "Ventes Discogs"} — bas ${euros(p.bas || p.moyen)} · moyen ${euros(p.moyen)} · haut ${euros(p.haut || p.moyen)}`;
   const texte = p.bas === p.moyen && p.haut === p.moyen ? `<b>${euros(p.moyen)}</b>`
     : `${court(p.bas)} · <b>${court(p.moyen)}</b> · ${court(p.haut)} €`;
   return `<span class="prix-disque" title="${titre}">${texte}</span>`;
 }
+function pastilleDisque(type, active, texte, libelle, dessin) {
+  return `<span class="statut-disque ${type}${active ? " actif" : ""}" role="img" aria-label="${libelle}" title="${libelle}">
+    <svg viewBox="0 0 24 24" aria-hidden="true">${dessin}</svg><span>${texte}</span>
+  </span>`;
+}
+function statutsDisque(v, present) {
+  const synchro = v.discogs
+    ? pastilleDisque("synchro", true, "Discogs", "Synchronisé avec Discogs", '<path d="M10 13a3.5 3.5 0 0 0 5 0l4-4a3.5 3.5 0 0 0-5-5l-2 2m2 5a3.5 3.5 0 0 0-5 0l-4 4a3.5 3.5 0 0 0 5 5l2-2"/>')
+    : pastilleDisque("synchro", false, "Discogs", "Non synchronisé avec Discogs", '<path d="M14 6l2-2a3 3 0 0 1 4 4l-2 2M10 18l-2 2a3 3 0 0 1-4-4l2-2M4 4l16 16"/>');
+  const pointage = inventaireCharge ? pastilleDisque("pointage", present, present ? "Pointé" : "À pointer", present ? "Disque pointé présent" : "Disque à vérifier",
+    present ? '<path d="m6 12 4 4 8-8"/>' : '<circle cx="12" cy="12" r="6"/>') : "";
+  const pochette = v.avecPochette
+    ? pastilleDisque("etat-pochette", true, "Pochette OK", "Pochette physique présente", '<rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="12" cy="12" r="4"/><path d="M12 12h.01"/>')
+    : pastilleDisque("etat-pochette", false, "Sans pochette", "Sans pochette physique", '<circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2"/><path d="M12 7a5 5 0 0 0-5 5"/>');
+  return `<span class="statuts-disque">${synchro}${pointage}${pochette}</span>`;
+}
 function carte(v) {
-  // Badge en haut : numéro (ou « Réserve »), en vert si j'ai la pochette.
-  // V vert en bas : disque synchronisé avec Discogs (identifiant Discogs connu).
-  const vert = v.avecPochette ? " vert" : "";
-  const num = v.pos ? `<span class="num${vert}">${v.pos}</span>`
-    : v.avecPochette || etat.q ? `<span class="num reserve${vert}">Réserve</span>` : "";
-  const coche = v.discogs ? `<span class="coche" title="Synchronisé avec Discogs"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>` : "";
+  const num = v.pos ? `<span class="num">${v.pos}</span>` : '<span class="num reserve">Réserve</span>';
+  const present = estPointe(v);
   const img = v.pochette
     ? `<img src="${esc(v.pochette)}" alt="" loading="lazy" decoding="async" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'sans'}))">`
     : `<div class="sans"></div>`;
   const selA = v.pos ? JUKEBOX.selectionA(v.pos) : "A";
   const selB = v.pos ? JUKEBOX.selectionB(v.pos) : "B";
-  return `<button class="disque${releaseDe(v) ? " discogs" : ""}" data-id="${esc(v.id)}">
-    <div class="pochette">${img}${num}${coche}${prixCarte(v.prix)}</div>
+  return `<button class="disque" data-id="${esc(v.id)}" ${modeInventaire ? `aria-pressed="${present}"` : 'aria-haspopup="dialog"'}>
+    <div class="pochette">${img}${num}${prixCarte(v.prix)}</div>
+    ${statutsDisque(v, present)}
     <div class="infos">
       <span class="artiste">${esc(v.artiste)}</span>
       <span class="face"><b>${selA}</b><span>${esc(v.a)}</span></span>
       ${v.b ? `<span class="face"><b>${selB}</b><span>${esc(v.b)}</span></span>` : ""}
       ${v.infos ? `<span class="details">${esc([v.infos.annee, v.infos.label, (v.infos.styles || v.infos.genres || [])[0]].filter(Boolean).join(" · "))}</span>` : ""}
+      ${v.infos?.enVente != null ? `<span class="details">${esc(exemplairesEnVente(v.infos.enVente))}</span>` : ""}
     </div>
   </button>`;
 }
@@ -217,6 +321,25 @@ const carteLibre = (pos) => `<button class="disque libre" data-libre="${pos}">
     <div class="pochette"><strong>${pos}</strong></div>
     <div class="infos"><span class="artiste">Libre</span><span>${JUKEBOX.selectionA(pos)} · ${JUKEBOX.selectionB(pos)}</span></div>
   </button>`;
+
+function resultatsNumeriques(liste, numero) {
+  const groupes = { numero: [], date: [], autre: [] };
+  for (const v of liste) {
+    const groupe = classerNumero(v, numero);
+    if (groupe) groupes[groupe].push(v);
+  }
+  const titres = {
+    numero: `Numéro ${numero.length < 3 ? pad(numero) : numero}`,
+    date: `${dateImplicite(numero) ? "Années" : "Année"} ${numero}`,
+    autre: "Autres correspondances",
+  };
+  const html = Object.entries(groupes).map(([groupe, disques]) => disques.length ? `
+    <section class="groupe-resultats">
+      <h2>${titres[groupe]}</h2>
+      <div class="grille">${disques.map(carte).join("")}</div>
+    </section>` : "").join("");
+  return { html, total: groupes.numero.length + groupes.date.length + groupes.autre.length };
+}
 
 function rendre() {
   const jukebox = etat.vinyles.filter((v) => v.pos);
@@ -230,34 +353,45 @@ function rendre() {
   $("total").hidden = !connus.length;
   $("total").textContent = connus.length ? `≈ ${euros(somme("moyen"))}` : "";
   const date = etat.prixMaj ? new Date(etat.prixMaj).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" }) : "";
-  $("total").title = `Valeur de la collection : somme des prix moyens de vente Discogs${date ? `, mis à jour le ${date}` : ""}`;
+  $("total").title = `Valeur de la collection : somme des prix moyens Discogs (ventes réelles, ou prix conseillé VG+)${date ? `, mis à jour le ${date}` : ""}`;
   const manque = total - connus.length;
   $("sous-titre").textContent = `${total} disques` +
     (connus.length ? ` · bas ${euros(somme("bas"))} · moyen ${euros(somme("moyen"))} · haut ${euros(somme("haut"))}` : "") +
     (connus.length && manque ? ` · prix connu pour ${connus.length}` : "") +
-    (etat.balayage ? ` · comparaison des pochettes… ${etat.balayage}` : "") +
-    (etat.majPrix ? ` · mise à jour des prix Discogs… ${etat.majPrix}` :
-      etat.edition && manque && !rapport ? ` — pour ${connus.length ? "les autres" : "les prix"} : ⚙︎ › Vérifier la collection` : "");
+    (etat.balayage ? ` · comparaison des pochettes… ${etat.balayage}` : "");
   document.body.classList.toggle("recherche-active", !!etat.q);
   if (!etat.charge) return;
+  rendreInventaire();
 
   let html, vide = "";
-  const filtreActif = FILTRES.some((k) => etat.f[k]);
-  majFiltresListes();
-  for (const s of document.querySelectorAll("[data-filtre]")) s.parentElement.classList.toggle("actif", !!etat.f[s.dataset.filtre]);
-  $("filtres-effacer").hidden = !filtreActif;
-  if (!etat.q && etat.vue === "jukebox" && !filtreActif) {
+  const filtresActifs = FILTRES.some(filtreActif);
+  for (const s of document.querySelectorAll("[data-filtre]")) {
+    const cle = s.dataset.filtre;
+    s.value = filtreActif(cle) ? etat.f[cle] : "";
+    s.parentElement.classList.toggle("actif", filtreActif(cle));
+  }
+  $("filtres-effacer").hidden = !filtresActifs;
+  if (!etat.q && etat.vue === "jukebox" && !filtresActifs && !modeInventaire) {
     // Vue normale du jukebox : les 80 positions, libres comprises.
     const occ = parPosition();
     html = toutesPositions.map((p) => (occ.has(p) ? carte(occ.get(p)) : carteLibre(p))).join("");
     $("compte-filtre").textContent = "";
   } else {
     // Doublons : cherchés dans tout (jukebox et réserve).
-    const source = etat.q ? etat.vinyles.filter((v) => correspond(v, etat.q)) : etat.f.doublon ? etat.vinyles : etat.vue === "jukebox" ? jukebox : reserve;
-    const res = filtrer(source);
-    html = res.map(carte).join("");
-    $("compte-filtre").textContent = filtreActif || etat.q ? `${res.length} disque${res.length > 1 ? "s" : ""}` : "";
-    if (!res.length) vide = etat.q ? "Aucun disque ne correspond." : filtreActif ? "Aucun disque avec ce filtre." : "Aucun disque en réserve.";
+    const source = etat.q || etat.f.doublon ? etat.vinyles : etat.vue === "jukebox" ? jukebox : reserve;
+    const liste = filtrer(source);
+    let nombre;
+    if (/^\d{1,4}$/.test(etat.q)) {
+      const groupes = resultatsNumeriques(liste, etat.q);
+      html = groupes.html;
+      nombre = groupes.total;
+    } else {
+      const res = etat.q ? liste.filter(rechercheCollection(etat.q)) : liste;
+      html = res.map(carte).join("");
+      nombre = res.length;
+    }
+    $("compte-filtre").textContent = filtresActifs || etat.q ? `${nombre} disque${nombre > 1 ? "s" : ""}` : "";
+    if (!nombre) vide = etat.q ? "Aucun disque ne correspond." : filtresActifs ? "Aucun disque avec ce filtre." : "Aucun disque en réserve.";
   }
   $("etat").textContent = vide;
   $("grille").innerHTML = html;
@@ -279,6 +413,7 @@ function ouvrir(id) {
   document.documentElement.style.overflow = "hidden";
 }
 function fermer(id) {
+  if (id === "fiche") return $("fiche").close();
   $(id).hidden = true;
   if ([...document.querySelectorAll(".voile")].every((v) => v.hidden)) document.documentElement.style.overflow = "";
 }
@@ -294,6 +429,21 @@ document.addEventListener("keydown", (e) => {
 
 // ——— Fiche disque ———
 let fiche = null; // { id, nouveau, pochette, blob, discogs, choixDoublon, remplacer }
+const dialogueFiche = $("fiche");
+const defilementFiche = dialogueFiche.querySelector(".fiche-defilement");
+const fermetureFiche = dialogueFiche.querySelector("[data-fermer]");
+
+dialogueFiche.addEventListener("click", (e) => {
+  if ((e.target === dialogueFiche || e.target.closest("[data-fermer]")) && !$("btn-enregistrer").disabled) fermer("fiche");
+});
+dialogueFiche.addEventListener("cancel", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+  if (!$("btn-enregistrer").disabled) fermer("fiche");
+});
+dialogueFiche.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") e.stopPropagation();
+});
 
 // ——— Doublons ———
 // Titre « de base » : sans majuscules, accents, ponctuation ni ce qui est entre parenthèses.
@@ -312,6 +462,7 @@ function afficherDoublon(d) {
   $("doublon").dataset.id = d.id;
   $("doublon").hidden = false;
   $("doublon-choix").hidden = true;
+  $("doublon").scrollIntoView({ block: "nearest" });
 }
 $("doublon-garder").addEventListener("click", () => {
   fiche.choixDoublon = $("doublon").dataset.id;
@@ -364,16 +515,40 @@ function afficherPochette(src) {
   if (src) img.src = src; else img.removeAttribute("src");
   $("pochette-vide").hidden = !!src;
 }
+$("pochette-img").addEventListener("error", () => afficherPochette(""));
 function majLienDiscogs() {
-  const l = $("lien-discogs");
-  const release = fiche?.discogs || fiche?.prix?.release;
-  l.hidden = !release;
+  const lien = $("lien-discogs");
+  const release = releaseDe(fiche);
+  lien.hidden = !release;
+  $("fiche-prix").hidden = true;
   if (!release) return;
-  l.href = `https://www.discogs.com/release/${release}`;
+
+  lien.href = `https://www.discogs.com/release/${encodeURIComponent(release)}`;
+  lien.textContent = `Discogs #${release} ↗`;
   const p = fiche.prix || {};
   const prix = [p.bas && `bas ${euros(p.bas)}`, p.moyen && `moyen ${euros(p.moyen)}`, p.haut && `haut ${euros(p.haut)}`].filter(Boolean).join(" · ");
-  l.textContent = prix ? `Discogs ↗ · ${prix}` : "Discogs ↗";
+  $("fiche-prix").textContent = p.source === "conseil" ? `Prix conseillés · ${prix}` : prix;
+  $("fiche-prix").hidden = !prix;
 }
+const normaliserTitreDiscogs = (s) => norm(s).replace(/\s+/g, " ").replace(/^(.*), (the|les|la|le|los|die)$/, "$2 $1");
+function titreAjuste(disque, face, titre) {
+  const reference = disque.titresDiscogs?.[face];
+  return typeof reference === "string" && normaliserTitreDiscogs(titre) !== normaliserTitreDiscogs(reference);
+}
+function majTitresAjustes() {
+  let auMoinsUn = false;
+  for (const face of ["a", "b"]) {
+    const champ = $(`f-${face}`);
+    const ajuste = titreAjuste(fiche, face, champ.value);
+    champ.classList.toggle("titre-ajuste", ajuste);
+    if (ajuste) champ.setAttribute("aria-describedby", "indication-titre");
+    else champ.removeAttribute("aria-describedby");
+    auMoinsUn ||= ajuste;
+  }
+  $("indication-titre").hidden = !auMoinsUn;
+}
+for (const face of ["a", "b"]) $(`f-${face}`).addEventListener("input", majTitresAjustes);
+
 // ——— Vérifier un disque existant avec Discogs (les titres ne changent que si on le demande) ———
 const depuisDiscogs = (rel) => {
   const faces = facesDepuisTracklist(rel.tracklist);
@@ -381,26 +556,29 @@ const depuisDiscogs = (rel) => {
 };
 // Infos utiles d'une fiche Discogs (même règle que infos_discogs dans App/serveur.py).
 const sansNumero = (n) => String(n || "").replace(/\s*\(\d+\)$/, "").replace(/\*$/, "").trim();
+const AUTEURS_DISCOGS = /Written-By|Words By|Lyrics By|Music By|Composed By|Songwriter/i;
 function infosDiscogs(rel) {
   const l = (rel.labels || [])[0] || {};
   const f = (rel.formats || [])[0] || {};
   const formats = [...new Set((rel.formats || []).flatMap((x) => [x.name !== "Vinyl" && x.name, ...(x.descriptions || []).filter((d) => !/RPM$/.test(d))]).filter(Boolean))];
-  const roles = (motif) => [...new Set((rel.extraartists || []).filter((a) => motif.test(a.role || "")).map((a) => sansNumero(a.name)))].slice(0, 6);
+  const roles = (motif, credits = rel.extraartists) => [...new Set((credits || []).filter((a) => motif.test(a.role || "")).map((a) => sansNumero(a.name)))].slice(0, 6);
   const r = rel.community?.rating || {};
+  const pistes = (rel.tracklist || []).filter((p) => (p.type_ || "track") === "track" && p.title?.trim()).map((p) => ({
+    position: p.position || "", titre: p.title.trim(), duree: p.duration || "", auteurs: roles(AUTEURS_DISCOGS, p.extraartists || []),
+  }));
   const infos = {
     label: sansNumero(l.name), catno: l.catno && l.catno.toLowerCase() !== "none" ? l.catno : "",
     format: [f.name, ...(f.descriptions || [])].filter(Boolean).join(", "), formats,
     pays: rel.country || "", annee: rel.year || null, genres: rel.genres || [], styles: rel.styles || [],
-    auteurs: roles(/Written-By|Words By|Lyrics By|Music By|Composed By|Songwriter/i), producteurs: roles(/Producer/i), arrangeurs: roles(/Arranged By/i),
+    auteurs: roles(AUTEURS_DISCOGS), producteurs: roles(/Producer/i), arrangeurs: roles(/Arranged By/i),
+    enVente: rel.num_for_sale ?? null, pistes,
     have: rel.community?.have ?? null, want: rel.community?.want ?? null, note: r.count ? Math.round(r.average * 100) / 100 : null, votes: r.count || null,
   };
   return Object.fromEntries(Object.entries(infos).filter(([, x]) => (Array.isArray(x) ? x.length : x !== "" && x !== null)));
 }
-function majInfosDiscogs() {
-  const i = fiche?.infos;
-  const dl = $("infos-discogs");
-  dl.hidden = !i;
-  if (!i) return (dl.innerHTML = "");
+const exemplairesEnVente = (n) => n === 0 ? "Aucun exemplaire en vente" : `${n} exemplaire${n === 1 ? "" : "s"} en vente`;
+function contenuInfosDiscogs(i) {
+  if (!i) return "";
   const lignes = [
     ["Label", [i.label, i.catno].filter(Boolean).join(" – ")],
     ["Format", i.format],
@@ -411,28 +589,49 @@ function majInfosDiscogs() {
     ["Auteurs", (i.auteurs || []).join(", ")],
     ["Production", (i.producteurs || []).join(", ")],
     ["Arrangements", (i.arrangeurs || []).join(", ")],
+    ["En vente", i.enVente != null && exemplairesEnVente(i.enVente)],
     ["Discogs", [i.have != null && `${i.have} l'ont`, i.want != null && `${i.want} le veulent`, i.note && `★ ${court(i.note)} (${i.votes})`].filter(Boolean).join(" · ")],
   ].filter(([, x]) => x);
-  dl.innerHTML = lignes.map(([k, x]) => `<dt>${k}</dt><dd>${esc(x)}</dd>`).join("");
+  return lignes.map(([k, x]) => `<div><dt>${k}</dt><dd>${esc(x)}</dd></div>`).join("");
+}
+function majInfosDiscogs() {
+  const dl = $("infos-discogs");
+  dl.innerHTML = contenuInfosDiscogs(fiche?.infos);
+  dl.hidden = !dl.innerHTML;
+
+  const pistes = $("pistes-discogs");
+  pistes.innerHTML = (fiche?.infos?.pistes || []).map((p) => `
+    <li>
+      <b>${esc(p.position)}</b>
+      <span class="piste-titre">${esc(p.titre)}${p.auteurs?.length ? `<small>${esc(p.auteurs.join(", "))}</small>` : ""}</span>
+      <span class="piste-duree">${esc(p.duree)}</span>
+    </li>`).join("");
+  $("bloc-pistes").hidden = !pistes.innerHTML;
+  $("fiche-discogs").hidden = dl.hidden && $("bloc-pistes").hidden;
 }
 // Prix Discogs d'un disque, affichés dans le lien en bas de la fiche.
 function chargerPrix(release) {
+  const courante = fiche;
   api(`prix-release?id=${release}`).then((r) => {
-    if (Object.keys(r).length && fiche?.discogs === release) {
+    if (dialogueFiche.open && fiche === courante && Object.keys(r).length && fiche.discogs === release) {
       fiche.prix = { ...r, release };
       majLienDiscogs();
     }
   }).catch(() => {});
 }
-async function proposerTitres(release) {
+async function proposerTitres(release, chargement = discogs(`releases/${release}`)) {
+  const courante = fiche;
   const ul = $("discogs-resultats");
   try {
-    const rel = await discogs(`releases/${release}`);
+    const rel = await chargement;
+    if (!dialogueFiche.open || fiche !== courante) return;
     if (fiche.discogs !== rel.id) fiche.prix = null; // prix d'un autre disque Discogs
     fiche.discogs = rel.id;
     fiche.infos = infosDiscogs(rel);
     majInfosDiscogs();
     fiche.suggestion = depuisDiscogs(rel);
+    fiche.titresDiscogs = fiche.suggestion;
+    majTitresAjustes();
     const s = fiche.suggestion;
     $("sugg-texte").textContent = `${s.artiste} – ${s.a}${s.b ? " / " + s.b : ""}${rel.year ? ` (${rel.year}${rel.country ? ", " + rel.country : ""})` : ""}`;
     const identique = base(s.artiste) === base($("f-artiste").value) && s.a === $("f-a").value && s.b === $("f-b").value;
@@ -446,7 +645,9 @@ async function proposerTitres(release) {
     const doublon = doublonActuel();
     if (doublon) afficherDoublon(doublon);
   } catch {
-    ul.innerHTML = `<li class="info">Ce disque n'a pas pu être lu sur Discogs.</li>`;
+    if (!dialogueFiche.open || fiche !== courante) return;
+    erreurFiche("Ce disque n'a pas pu être lu sur Discogs.");
+    ul.innerHTML = "";
   }
 }
 function rechercherDepuisFiche() {
@@ -466,8 +667,10 @@ $("sugg-utiliser").addEventListener("click", () => {
   $("f-artiste").value = s.artiste;
   $("f-a").value = s.a;
   $("f-b").value = s.b;
+  majTitresAjustes();
   $("suggestion").hidden = true;
-  toast("Titres Discogs repris — pense à Enregistrer");
+  $("fiche-statut").textContent = "Titres Discogs repris. Clique sur Enregistrer pour les conserver.";
+  $("fiche-statut").hidden = false;
   const doublon = doublonActuel();
   if (doublon) afficherDoublon(doublon);
 });
@@ -558,7 +761,7 @@ async function comparerPochettes() {
       }
       if (meilleur && meilleur.score >= SEUIL_POCHETTE) {
         const rel = await discogsPatient(`releases/${meilleur.release}`);
-        correspondances.push({ id: v.id, score: meilleur.score, release: rel.id, image: meilleur.image, ...depuisDiscogs(rel), annee: rel.year, pays: rel.country });
+        correspondances.push({ id: v.id, score: meilleur.score, release: rel.id, image: meilleur.image, infos: infosDiscogs(rel), ...depuisDiscogs(rel), annee: rel.year, pays: rel.country });
       }
     } catch {}
   }
@@ -612,7 +815,7 @@ $("corresp-appliquer").addEventListener("click", async () => {
       const c = nouvelles.get(v.id);
       if (!c) return v;
       anciennes.push(v.pochette);
-      return { ...v, artiste: c.artiste, a: c.a, b: c.b, discogs: c.release, pochette: c.chemin };
+      return { ...v, artiste: c.artiste, a: c.a, b: c.b, discogs: c.release, pochette: c.chemin, infos: c.infos, titresDiscogs: { artiste: c.artiste, a: c.a, b: c.b } };
     }));
     anciennes.forEach(retirerPochette);
     correspondances = correspondances.filter((c) => !nouvelles.has(c.id));
@@ -631,13 +834,31 @@ function erreurFiche(msg) {
   $("fiche-erreur").hidden = false;
 }
 
+function rendreFicheLecture(v) {
+  const position = v.pos ? `Position ${v.pos} · ${JUKEBOX.selectionA(v.pos)} / ${JUKEBOX.selectionB(v.pos)}` : "Réserve";
+  const titre = (face) => titreAjuste(v, face, v[face])
+    ? `<mark class="titre-ajuste" title="Titre ajusté manuellement">${esc(v[face])}</mark>`
+    : esc(v[face]);
+  $("fiche-lecture").innerHTML = `
+    <p class="lead">${esc(position)} · ${v.avecPochette ? "Avec pochette" : "Sans pochette"}</p>
+    <p><b>Face A</b> ${titre("a")}</p>
+    ${v.b ? `<p><b>Face B</b> ${titre("b")}</p>` : ""}
+    ${v.note ? `<div><h3>Note</h3><p>${esc(v.note)}</p></div>` : ""}`;
+}
+
 function ouvrirFiche(v, posLibre) {
   fiche = { id: v?.id || uid(), nouveau: !v, pochette: v?.pochette || "", blob: null, discogs: v?.discogs || null,
-    origine: { artiste: base(v?.artiste), a: base(v?.a), discogs: v?.discogs || null }, prix: v?.prix || null, infos: v?.infos || null, suggestion: null };
+    origine: { artiste: base(v?.artiste), a: base(v?.a), discogs: v?.discogs || null }, prix: v?.prix || null, infos: v?.infos || null, titresDiscogs: v?.titresDiscogs || null, suggestion: null };
+  const edition = !!etat.edition;
+  $("fiche-lecture").hidden = edition;
+  if (!edition) rendreFicheLecture(v);
+  $("pochette-edit").disabled = !edition;
+  $("pochette-img").alt = v ? `Pochette de ${v.artiste} — ${v.a}` : "";
   $("fiche-titre").textContent = v ? v.artiste || "Disque" : "Nouveau disque";
   $("f-artiste").value = v?.artiste || "";
   $("f-a").value = v?.a || "";
   $("f-b").value = v?.b || "";
+  majTitresAjustes();
   $("f-note").value = v?.note || "";
   $("f-avec-pochette").checked = !!v?.avecPochette;
   $("bloc-note").open = !!v?.note;
@@ -649,30 +870,86 @@ function ouvrirFiche(v, posLibre) {
   majLienDiscogs();
   majInfosDiscogs();
   $("zone-discogs").hidden = !!v;
+  arreterRechercheDiscogs();
   $("discogs-q").value = "";
   $("discogs-resultats").innerHTML = "";
-  $("fiche-erreur").hidden = true;
+  $("fiche-erreur").hidden = $("fiche-statut").hidden = true;
   $("doublon").hidden = $("doublon-choix").hidden = true;
   $("suggestion").hidden = true;
   $("btn-verifier").hidden = !v;
   $("btn-enregistrer").disabled = false;
   $("btn-enregistrer").textContent = "Enregistrer";
-  ouvrir("fiche");
-  if (!v) setTimeout(() => $("discogs-q").focus(), 50);
+  dialogueFiche.showModal();
+  defilementFiche.scrollTop = 0;
+  if (!v) $("discogs-q").focus();
 }
+
+async function chargerInventaire() {
+  const { presents } = await api("inventaire");
+  presentsInventaire.clear();
+  for (const id of presents) presentsInventaire.add(id);
+  inventaireCharge = true;
+}
+
+async function pointerDisque(v) {
+  if (pointagesEnCours.has(v.id)) return;
+  pointagesEnCours.add(v.id);
+  const present = !presentsInventaire.has(v.id);
+  try {
+    await posterJson("inventaire", { id: v.id, present });
+    if (present) presentsInventaire.add(v.id);
+    else presentsInventaire.delete(v.id);
+
+    const grille = $("grille");
+    const trouverCarte = (id) => grille.querySelector(`[data-id="${CSS.escape(id)}"]`);
+    const carteActuelle = trouverCarte(v.id);
+    const avaitFocus = document.activeElement === carteActuelle;
+    if (filtreActif("inventaire") || triParInventaire()) {
+      const voisine = carteActuelle?.nextElementSibling || carteActuelle?.previousElementSibling;
+      rendre();
+      if (avaitFocus) (trouverCarte(v.id) || trouverCarte(voisine?.dataset.id) || $("filtre-inventaire")).focus({ preventScroll: true });
+    } else {
+      if (carteActuelle) {
+        carteActuelle.outerHTML = carte(etat.vinyles.find((disque) => disque.id === v.id) || v);
+        if (avaitFocus) trouverCarte(v.id)?.focus({ preventScroll: true });
+      }
+      rendreInventaire();
+    }
+  } catch (err) {
+    toast(err.message);
+  } finally {
+    pointagesEnCours.delete(v.id);
+  }
+}
+
+$("btn-inventaire").addEventListener("click", async () => {
+  if (!etat.edition || !etat.charge) return;
+  if (modeInventaire) {
+    modeInventaire = false;
+    rendre();
+    return;
+  }
+  $("btn-inventaire").disabled = true;
+  try {
+    if (!inventaireCharge) await chargerInventaire();
+    modeInventaire = true;
+    rendre();
+  } catch (err) {
+    toast(err.message);
+  } finally {
+    $("btn-inventaire").disabled = false;
+  }
+});
+$("reste-inventaire").addEventListener("change", (e) => changerFiltre("inventaire", e.target.checked ? "a-verifier" : ""));
 
 $("grille").addEventListener("click", (e) => {
   const b = e.target.closest(".disque");
   if (!b) return;
-  if (!etat.edition) {
-    // En ligne : toucher un disque ouvre sa page Discogs.
-    const release = releaseDe(etat.vinyles.find((x) => x.id === b.dataset.id));
-    if (release) window.open(`https://www.discogs.com/release/${release}`, "_blank", "noopener");
-    return;
-  }
-  if (b.dataset.libre) return ouvrirFiche(null, b.dataset.libre);
+  if (b.dataset.libre && etat.edition) return ouvrirFiche(null, b.dataset.libre);
   const v = etat.vinyles.find((x) => x.id === b.dataset.id);
-  if (v) ouvrirFiche(v);
+  if (!v) return;
+  if (modeInventaire) pointerDisque(v);
+  else ouvrirFiche(v);
 });
 $("btn-ajouter").addEventListener("click", () => ouvrirFiche(null, ""));
 $("f-pos").addEventListener("change", majSelections);
@@ -683,26 +960,91 @@ $("btn-reserve").addEventListener("click", () => {
 $("pochette-edit").addEventListener("click", () => $("pochette-fichier").click());
 $("pochette-fichier").addEventListener("change", async (e) => {
   const f = e.target.files?.[0];
+  const courante = fiche;
   e.target.value = "";
   if (!f) return;
   try {
-    fiche.blob = await pochetteCarree(f);
-    afficherPochette(URL.createObjectURL(fiche.blob));
+    const blob = await pochetteCarree(f);
+    if (!dialogueFiche.open || fiche !== courante) return;
+    fiche.blob = blob;
+    afficherPochette(URL.createObjectURL(blob));
   } catch {
-    erreurFiche("Cette image n'a pas pu être lue.");
+    if (dialogueFiche.open && fiche === courante) erreurFiche("Cette image n'a pas pu être lue.");
   }
 });
 
 // Recherche Discogs
 let discogsTimer, discogsCtl;
-$("discogs-q").addEventListener("input", () => {
+let fileApercusDiscogs = Promise.resolve();
+let prochainApercuDiscogs = 0;
+let repriseApercusDiscogs = 0;
+
+function arreterRechercheDiscogs() {
   clearTimeout(discogsTimer);
+  discogsCtl?.observateur?.disconnect();
+  discogsCtl = null;
+}
+dialogueFiche.addEventListener("close", arreterRechercheDiscogs);
+
+function afficherFacesResultat(bouton, faces) {
+  bouton.querySelector("[data-face-a]").textContent = faces.a || "Non renseignée";
+  bouton.querySelector("[data-face-b]").textContent = faces.b || "Non renseignée";
+}
+
+function chargerFacesResultats(liste, recherche) {
+  const visibles = new Set();
+  const enAttente = new Set();
+  const active = () => dialogueFiche.open && discogsCtl === recherche;
+  const indisponibles = (bouton) => afficherFacesResultat(bouton, { a: "Indisponible", b: "Indisponible" });
+  const observateur = recherche.observateur = new IntersectionObserver((entrees) => {
+    for (const { target: bouton, isIntersecting } of entrees) {
+      if (!isIntersecting) {
+        visibles.delete(bouton);
+        continue;
+      }
+      visibles.add(bouton);
+      if (enAttente.has(bouton)) continue;
+      enAttente.add(bouton);
+
+      fileApercusDiscogs = fileApercusDiscogs.then(async () => {
+        if (active() && visibles.has(bouton)) {
+          const delai = prochainApercuDiscogs - Date.now();
+          if (delai > 0) await new Promise((resolve) => setTimeout(resolve, delai));
+        }
+        enAttente.delete(bouton);
+        if (!active() || !visibles.has(bouton)) return;
+        visibles.delete(bouton);
+        observateur.unobserve(bouton);
+        if (Date.now() < repriseApercusDiscogs) return indisponibles(bouton);
+
+        const release = bouton.dataset.release;
+        prochainApercuDiscogs = Date.now() + 1100;
+        const chargement = discogs(`releases/${release}`);
+        recherche.releases.set(release, chargement);
+        try {
+          const rel = await chargement;
+          if (active()) afficherFacesResultat(bouton, facesDepuisTracklist(rel.tracklist));
+        } catch (e) {
+          recherche.releases.delete(release);
+          if (e.status === 429) repriseApercusDiscogs = Date.now() + 60_000;
+          if (active()) indisponibles(bouton);
+        }
+      });
+    }
+  }, { root: liste });
+  liste.querySelectorAll("button[data-release]").forEach((bouton) => observateur.observe(bouton));
+}
+
+$("discogs-q").addEventListener("input", () => {
+  arreterRechercheDiscogs();
   discogsTimer = setTimeout(chercherDiscogs, 450);
 });
 $("discogs-q").addEventListener("keydown", (e) => {
   if (e.key === "Enter") { e.preventDefault(); clearTimeout(discogsTimer); chercherDiscogs(); }
 });
 async function chercherDiscogs() {
+  arreterRechercheDiscogs();
+  if (!dialogueFiche.open) return;
   const q = $("discogs-q").value.trim();
   const ul = $("discogs-resultats");
   if (q.length < 3) { ul.innerHTML = ""; return; }
@@ -711,10 +1053,10 @@ async function chercherDiscogs() {
     return;
   }
   ul.innerHTML = `<li class="info">Recherche…</li>`;
-  const moi = (discogsCtl = {});
+  const moi = (discogsCtl = { releases: new Map() });
   try {
     const r = await discogs("database/search", { q, type: "release", format: "Vinyl", per_page: "50" });
-    if (moi !== discogsCtl) return;
+    if (!dialogueFiche.open || moi !== discogsCtl) return;
     // 45 tours d'abord (éditions françaises en tête), puis les autres formats.
     const est45 = (x) => /7"|45 RPM/.test((x.format || []).join(" "));
     const parPays = (liste) => liste.map((x, i) => ({ x, i })).sort((a, b) => (b.x.country === "France") - (a.x.country === "France") || a.i - b.i).map((o) => o.x);
@@ -730,15 +1072,27 @@ async function chercherDiscogs() {
     const ligne = (x) => {
       const details = [x.year, x.country, (x.label || [])[0], (x.format || []).filter((f) => f !== "Vinyl").slice(0, 2).join(", ")].filter(Boolean).join(" · ");
       const vignette = x.thumb ? `<img src="${esc(x.thumb)}" alt="" loading="lazy">` : `<span class="vignette"></span>`;
-      return `<li><button type="button" data-release="${x.id}">${vignette}<span><strong>${esc(x.title)}</strong><small>${esc(details)}</small></span></button></li>`;
+      return `<li><button type="button" data-release="${x.id}">
+        ${vignette}
+        <span>
+          <strong>${esc(x.title)}</strong>
+          <small>${esc(details)}</small>
+          <span class="resultat-faces">
+            <span><b>Face A</b><span data-face-a>…</span></span>
+            <span><b>Face B</b><span data-face-b>…</span></span>
+          </span>
+        </span>
+      </button></li>`;
     };
     ul.innerHTML = [
       `<li class="titre-resultats">45 tours</li>`,
       quarante5.length ? quarante5.map(ligne).join("") : `<li class="info">Aucun 45 tours trouvé.</li>`,
       autres.length ? `<li class="titre-resultats">Autres formats</li>${autres.map(ligne).join("")}` : "",
     ].join("");
+    ul.scrollTop = 0;
+    chargerFacesResultats(ul, moi);
   } catch (e) {
-    if (moi !== discogsCtl) return;
+    if (!dialogueFiche.open || moi !== discogsCtl) return;
     ul.innerHTML = `<li class="info">${e.status === 401 ? "Clé Discogs refusée — vérifie-la dans les réglages." : e.status === 429 ? "Discogs demande une petite pause, réessaie dans une minute." : "Discogs ne répond pas. Vérifie ta connexion."}</li>`;
   }
 }
@@ -746,14 +1100,21 @@ $("discogs-resultats").addEventListener("click", async (e) => {
   const b = e.target.closest("button[data-release]");
   if (!b) return;
   const ul = $("discogs-resultats");
+  const release = b.dataset.release;
+  const chargement = discogsCtl?.releases.get(release) || discogs(`releases/${release}`);
+  arreterRechercheDiscogs();
   ul.innerHTML = `<li class="info">Import…</li>`;
-  if (!fiche.nouveau) return proposerTitres(b.dataset.release);
+  if (!fiche.nouveau) return proposerTitres(release, chargement);
+  const courante = fiche;
   try {
-    const rel = await discogs(`releases/${b.dataset.release}`);
+    const rel = await chargement;
+    if (!dialogueFiche.open || fiche !== courante) return;
     const t = depuisDiscogs(rel);
+    fiche.titresDiscogs = t;
     $("f-artiste").value = t.artiste;
     $("f-a").value = t.a;
     $("f-b").value = t.b;
+    majTitresAjustes();
     $("fiche-titre").textContent = t.artiste || "Nouveau disque";
     fiche.discogs = rel.id;
     fiche.infos = infosDiscogs(rel);
@@ -764,17 +1125,22 @@ $("discogs-resultats").addEventListener("click", async (e) => {
     const image = (rel.images || []).find((i) => i.type === "primary") || (rel.images || [])[0];
     if (image?.uri && !fiche.blob) {
       try {
-        fiche.blob = await pochetteCarree(await api(`image?url=${encodeURIComponent(image.uri)}`));
-        afficherPochette(URL.createObjectURL(fiche.blob));
+        const blob = await pochetteCarree(await api(`image?url=${encodeURIComponent(image.uri)}`));
+        if (!dialogueFiche.open || fiche !== courante) return;
+        if (!fiche.blob) {
+          fiche.blob = blob;
+          afficherPochette(URL.createObjectURL(blob));
+        }
       } catch {}
     }
+    if (!dialogueFiche.open || fiche !== courante) return;
     ul.innerHTML = "";
     $("zone-discogs").hidden = true;
     fiche.choixDoublon = fiche.remplacer = null;
     const doublon = doublonActuel();
     if (doublon) afficherDoublon(doublon);
   } catch {
-    ul.innerHTML = `<li class="info">Ce disque n'a pas pu être importé.</li>`;
+    if (dialogueFiche.open && fiche === courante) ul.innerHTML = `<li class="info">Ce disque n'a pas pu être importé.</li>`;
   }
 });
 
@@ -790,6 +1156,7 @@ const retirerPochette = (chemin) => {
 
 $("form-disque").addEventListener("submit", async (e) => {
   e.preventDefault();
+  if (!etat.edition || !dialogueFiche.open || $("btn-enregistrer").disabled) return;
   const artiste = $("f-artiste").value.trim();
   const a = $("f-a").value.trim();
   if (!artiste || !a) return erreurFiche("Il faut au moins l'artiste et la face A.");
@@ -798,6 +1165,7 @@ $("form-disque").addEventListener("submit", async (e) => {
   const btn = $("btn-enregistrer");
   btn.disabled = true;
   btn.textContent = "Enregistrement…";
+  fermetureFiche.disabled = $("btn-supprimer").disabled = defilementFiche.inert = true;
   $("fiche-erreur").hidden = true;
   try {
     const ancien = etat.vinyles.find((v) => v.id === fiche.id);
@@ -816,6 +1184,7 @@ $("form-disque").addEventListener("submit", async (e) => {
     if (fiche.discogs) disque.discogs = fiche.discogs;
     if (fiche.prix) disque.prix = fiche.prix;
     if (fiche.discogs && fiche.infos) disque.infos = fiche.infos;
+    if (fiche.discogs && fiche.titresDiscogs) disque.titresDiscogs = fiche.titresDiscogs;
     const liste = etat.vinyles.map((v) => (pos && v.id !== disque.id && v.pos === pos ? { ...v, pos: null } : v)).filter((v) => v.id !== disque.id && v.id !== remplace?.id);
     await enregistrerCollection([...liste, disque]);
     if (ancien?.pochette !== pochette) retirerPochette(ancien?.pochette);
@@ -827,6 +1196,8 @@ $("form-disque").addEventListener("submit", async (e) => {
     btn.disabled = false;
     btn.textContent = "Enregistrer";
     erreurFiche(`Enregistrement impossible : ${err.message}`);
+  } finally {
+    fermetureFiche.disabled = $("btn-supprimer").disabled = defilementFiche.inert = false;
   }
 });
 
@@ -960,55 +1331,56 @@ function ouvrirReglages(message) {
   $("r-discogs").placeholder = etat.edition.discogs ? "Enregistré ✓" : "Jeton personnel";
   $("r-statut").textContent = message || "";
   ouvrir("reglages");
-  api("verification").then((p) => { afficherVerif(p); if (p.en_cours) suivreVerif(!p.auto); }).catch(() => {});
 }
 $("btn-reglages").addEventListener("click", () => ouvrirReglages());
 
-// ——— Vérification de toute la collection avec Discogs (tourne sur le Mac, ~3 s par disque) ———
-let suiviVerif, rapport = null;
+// ——— Synchronisation de la collection avec Discogs ———
+let rapport = null;
+const boutonSyncDiscogs = $("btn-sync-discogs");
+
 function afficherVerif(p) {
-  const b = $("btn-verifier-tout");
-  b.disabled = p.en_cours;
+  boutonSyncDiscogs.disabled = !!p.en_cours;
   rapport = p.rapport || rapport;
   $("btn-voir-verif").hidden = p.en_cours || !rapport;
+  const statut = $("statut-sync-discogs");
+  statut.hidden = !p.en_cours;
+  statut.textContent = p.total ? `Synchronisation Discogs · ${p.fait}/${p.total}` : "Synchronisation Discogs…";
   if (p.en_cours) {
-    const reste = Math.max(1, Math.round(((p.total - p.fait) * 3.5) / 60));
-    b.textContent = p.total ? `Vérification… ${p.fait}/${p.total}` : "Vérification…";
-    $("r-verif").textContent = `Environ ${reste} min restantes. Tu peux fermer cette fenêtre et continuer.`;
-  } else {
-    b.textContent = "Vérifier la collection";
-    if (rapport) $("r-verif").textContent = `Dernière vérification : ${rapport.date}.`;
+    $("r-verif").textContent = "Synchronisation en cours. Tu peux continuer à utiliser le jukebox.";
+  } else if (rapport) {
+    $("r-verif").textContent = `Dernière synchronisation : ${rapport.date}.`;
   }
 }
-function suivreVerif(ouvrirALaFin = true) {
-  clearInterval(suiviVerif);
-  suiviVerif = setInterval(async () => {
-    try {
-      const p = await api("verification");
-      afficherVerif(p);
-      etat.majPrix = p.en_cours && p.total ? `${p.fait}/${p.total}` : "";
-      rendre();
-      if (!p.en_cours) {
-        clearInterval(suiviVerif);
-        await charger();
-        majPublier();
-        if (ouvrirALaFin) {
-          toast("Vérification terminée");
-          fermer("reglages");
-          ouvrirVerif();
-        } else {
-          toast("Prix Discogs mis à jour");
-        }
-      }
-    } catch { clearInterval(suiviVerif); }
-  }, ouvrirALaFin ? 1500 : 4000);
-}
-$("btn-verifier-tout").addEventListener("click", async () => {
+
+async function suivreVerif() {
   try {
-    afficherVerif(await api("verifier", { method: "POST" }));
-    suivreVerif(true);
+    let progression;
+    do {
+      await new Promise((resolve) => setTimeout(resolve, 1500));
+      progression = await api("verification");
+      if (progression.en_cours) afficherVerif(progression);
+    } while (progression.en_cours);
+
+    await charger();
+    afficherVerif(progression);
+    majPublier();
+    toast(progression.erreur || "Synchronisation Discogs terminée");
+  } catch {
+    afficherVerif({ en_cours: false });
+    toast("Impossible de suivre la synchronisation Discogs");
+  }
+}
+
+boutonSyncDiscogs.addEventListener("click", async () => {
+  if (!etat.edition.discogs) return ouvrirReglages("Ajoute ta clé Discogs pour synchroniser la collection.");
+  boutonSyncDiscogs.disabled = true;
+  try {
+    await api("verifier", { method: "POST" });
+    afficherVerif({ en_cours: true });
+    await suivreVerif();
   } catch (err) {
-    $("r-verif").textContent = err.message;
+    boutonSyncDiscogs.disabled = false;
+    toast(err.message);
   }
 });
 $("btn-voir-verif").addEventListener("click", () => { fermer("reglages"); ouvrirVerif(); });
@@ -1024,17 +1396,7 @@ function differences() {
 }
 function rendreVerif() {
   const diffs = differences();
-  const groupes = new Map();
-  for (const v of etat.vinyles) {
-    const cle = releaseDe(v) ? `r${releaseDe(v)}` : `t${base(v.artiste)}|${base(v.a)}`;
-    const autre = `t${base(v.artiste)}|${base(v.a)}`;
-    for (const k of new Set([cle, autre])) groupes.set(k, [...(groupes.get(k) || []), v]);
-  }
-  const vus = new Set();
-  const doublons = [...groupes.values()].filter((g) => g.length > 1).filter((g) => {
-    const k = g.map((v) => v.id).sort().join();
-    return !vus.has(k) && vus.add(k);
-  });
+  const doublons = groupesDoublons(etat.vinyles);
   const introuvables = (rapport?.introuvables || []).map((id) => etat.vinyles.find((v) => v.id === id)).filter(Boolean);
   const ou = (v) => (v.pos ? `position ${v.pos}` : "réserve");
 
@@ -1120,13 +1482,13 @@ async function charger() {
   }
 }
 
+function changerFiltre(cle, valeur) {
+  etat.f[cle] = valeur;
+  lsSet(`jb.${cle}`, valeur);
+  rendre();
+}
 for (const s of document.querySelectorAll("[data-filtre]")) {
-  s.value = etat.f[s.dataset.filtre];
-  s.addEventListener("change", () => {
-    etat.f[s.dataset.filtre] = s.value;
-    lsSet(`jb.${s.dataset.filtre}`, s.value);
-    rendre();
-  });
+  s.addEventListener("change", () => changerFiltre(s.dataset.filtre, s.value));
 }
 $("filtres-effacer").addEventListener("click", () => {
   for (const s of document.querySelectorAll("[data-filtre]")) {
@@ -1145,12 +1507,14 @@ $("recherche").addEventListener("input", (e) => {
 (async () => {
   etat.edition = await modeEdition();
   document.body.classList.toggle("edition", !!etat.edition);
+  if (etat.edition) await chargerInventaire().catch(() => {});
   await charger();
   if (etat.edition) {
     majPublier();
-    api("verification").then((p) => { rapport = p.rapport || null; rendre(); }).catch(() => {});
-    // Mise à jour automatique des prix (lancée par le Mac une fois par jour) : on suit sa progression.
-    setTimeout(() => api("verification").then((p) => { if (p.en_cours) suivreVerif(!p.auto); }).catch(() => {}), 4000);
+    api("verification").then((p) => {
+      afficherVerif(p);
+      if (p.en_cours) suivreVerif();
+    }).catch(() => { boutonSyncDiscogs.disabled = false; });
     // En revenant sur la page (après une modification ailleurs), on revérifie.
     document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") majPublier(); });
   } else {

@@ -23,7 +23,7 @@
   <header class="barre">
     <div class="barre-haut">
       <div class="marque">
-        <h1>Jukebox</h1>
+        <h1>Jukebox <span class="total" id="total" hidden></span></h1>
         <p id="sous-titre">Selection 101</p>
       </div>
       <div class="actions">
@@ -44,6 +44,69 @@
     <div class="segments" role="tablist">
       <button role="tab" id="tab-jukebox" class="actif" aria-selected="true">Jukebox <span id="nb-jukebox"></span></button>
       <button role="tab" id="tab-reserve" aria-selected="false">Réserve <span id="nb-reserve"></span></button>
+    </div>
+    <div class="filtres">
+      <label class="filtre"><span>Trier</span>
+        <select data-filtre="tri">
+          <option value="">Par défaut</option>
+          <option value="artiste">Artiste A → Z</option>
+          <option value="titre">Titre A → Z</option>
+          <option value="prix">Prix décroissant</option>
+          <option value="prix-asc">Prix croissant</option>
+          <option value="annee">Année : ancien → récent</option>
+          <option value="annee-desc">Année : récent → ancien</option>
+          <option value="recherche">Plus recherchés sur Discogs</option>
+        </select>
+      </label>
+      <label class="filtre"><span>Genre</span>
+        <select data-filtre="genre" id="filtre-genre"><option value="">Tous</option></select>
+      </label>
+      <label class="filtre"><span>Style</span>
+        <select data-filtre="style" id="filtre-style"><option value="">Tous</option></select>
+      </label>
+      <label class="filtre"><span>Décennie</span>
+        <select data-filtre="decennie" id="filtre-decennie"><option value="">Toutes</option></select>
+      </label>
+      <label class="filtre"><span>Pays</span>
+        <select data-filtre="pays" id="filtre-pays"><option value="">Tous</option></select>
+      </label>
+      <label class="filtre"><span>Label</span>
+        <select data-filtre="label" id="filtre-label"><option value="">Tous</option></select>
+      </label>
+      <label class="filtre"><span>Format</span>
+        <select data-filtre="format" id="filtre-format"><option value="">Tous</option></select>
+      </label>
+      <label class="filtre"><span>Doublons</span>
+        <select data-filtre="doublon">
+          <option value="">Tous</option>
+          <option value="oui">Seulement les doublons</option>
+        </select>
+      </label>
+      <label class="filtre"><span>Pochette</span>
+        <select data-filtre="pochette">
+          <option value="">Toutes</option>
+          <option value="avec">Avec</option>
+          <option value="sans">Sans</option>
+        </select>
+      </label>
+      <label class="filtre"><span>Prix</span>
+        <select data-filtre="prix">
+          <option value="">Tous</option>
+          <option value="bas">Moins de 5 €</option>
+          <option value="moyen">5 à 15 €</option>
+          <option value="haut">Plus de 15 €</option>
+          <option value="inconnu">Inconnu</option>
+        </select>
+      </label>
+      <label class="filtre seul-edition"><span>Discogs</span>
+        <select data-filtre="discogs">
+          <option value="">Tous</option>
+          <option value="oui">Synchronisés</option>
+          <option value="non">Non synchronisés</option>
+        </select>
+      </label>
+      <button type="button" class="lien" id="filtres-effacer" hidden>Effacer</button>
+      <span class="compte" id="compte-filtre"></span>
     </div>
     </div>
   </header>
@@ -88,6 +151,17 @@
           <label class="champ"><span>Artiste</span><input id="f-artiste" required></label>
           <label class="champ"><span>Face A <b id="sel-a"></b></span><input id="f-a" required></label>
           <label class="champ"><span>Face B <b id="sel-b"></b></span><input id="f-b"></label>
+          <button type="button" class="lien" id="btn-verifier">Vérifier avec Discogs</button>
+        </div>
+      </div>
+
+      <dl class="infos-discogs" id="infos-discogs" hidden></dl>
+
+      <div class="alerte suggestion" id="suggestion" hidden>
+        <p><b>Sur Discogs :</b> <span id="sugg-texte"></span></p>
+        <div class="choix">
+          <button type="button" class="secondaire" id="sugg-utiliser">Utiliser ces titres</button>
+          <button type="button" class="texte" id="sugg-autre">Ce n'est pas le bon disque</button>
         </div>
       </div>
 
@@ -162,12 +236,60 @@
         <input id="r-discogs" type="password" placeholder="Jeton personnel" autocapitalize="off" autocorrect="off" spellcheck="false">
       </label>
       <p class="aide">Sur <a href="https://www.discogs.com/settings/developers" target="_blank" rel="noopener">discogs.com/settings/developers</a> : « Generate new token ».</p>
+      <div class="champ">
+        <span>Vérifier la collection avec Discogs</span>
+        <p class="aide prix-aide" id="r-verif">Retrouve chaque disque sur Discogs : titres exacts, prix, doublons. Tes titres ne changent que si tu le demandes.</p>
+        <div class="boutons">
+          <button type="button" class="secondaire" id="btn-verifier-tout">Vérifier la collection</button>
+          <button type="button" class="secondaire" id="btn-voir-verif" hidden>Voir les résultats</button>
+        </div>
+      </div>
+      <div class="champ">
+        <span>Comparer les pochettes avec Discogs</span>
+        <p class="aide prix-aide" id="r-pochettes">Compare l'image de chaque pochette avec celles de Discogs. Seules les pochettes identiques sont proposées. Garde la page ouverte pendant la comparaison.</p>
+        <button type="button" class="secondaire" id="btn-pochettes">Comparer les pochettes</button>
+      </div>
       <p class="aide" id="r-statut"></p>
       <footer class="feuille-pied">
         <span></span>
         <button type="submit" class="principal">Enregistrer</button>
       </footer>
     </form>
+  </div>
+
+  <!-- Résultats de la vérification Discogs -->
+  <div class="voile" id="verif" hidden>
+    <div class="feuille large">
+      <div class="poignee"></div>
+      <header class="feuille-tete">
+        <h2>Vérification Discogs</h2>
+        <button type="button" class="icone fermer" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </header>
+      <p class="lead" id="verif-resume"></p>
+      <section id="verif-bloc-titres">
+        <div class="verif-tete"><h3>Titres différents de Discogs</h3><button type="button" class="principal petit" id="verif-tout">Tout mettre à jour</button></div>
+        <ul class="verif-liste" id="verif-titres"></ul>
+      </section>
+      <section id="verif-bloc-doublons"><h3>Doublons possibles</h3><ul class="verif-liste" id="verif-doublons"></ul></section>
+      <section id="verif-bloc-introuvables"><h3>Non trouvés sur Discogs</h3><ul class="verif-liste" id="verif-introuvables"></ul></section>
+    </div>
+  </div>
+
+  <!-- Pochettes identiques trouvées sur Discogs -->
+  <div class="voile" id="corresp" hidden>
+    <div class="feuille large">
+      <div class="poignee"></div>
+      <header class="feuille-tete">
+        <h2>Pochettes identiques sur Discogs</h2>
+        <button type="button" class="icone fermer" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </header>
+      <p class="lead" id="corresp-resume"></p>
+      <div class="verif-tete">
+        <label class="bascule"><input type="checkbox" id="corresp-tout" checked> Tout sélectionner</label>
+        <button type="button" class="principal petit" id="corresp-appliquer">Appliquer</button>
+      </div>
+      <ul class="verif-liste" id="corresp-liste"></ul>
+    </div>
   </div>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>

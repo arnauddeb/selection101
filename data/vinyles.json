@@ -7,7 +7,15 @@
    "a": "En Rouge Et Noir",
    "b": "Plus Forte Que L'Océan",
    "pos": "00",
-   "pochette": "covers/5af7aa7e-8160-43a3-9d4d-f684590cbea8.jpg"
+   "pochette": "covers/5af7aa7e-8160-43a3-9d4d-f684590cbea8.webp",
+   "discogs": 500696,
+   "prix": {
+    "bas": 0.3,
+    "moyen": 2,
+    "haut": 9.99,
+    "vendu": "2026-11-19",
+    "release": 500696
+   }
   },
   {
    "id": "47586168-4834-4882-860a-eea4091bc4c1",
@@ -15,7 +23,7 @@
    "a": "Girls Just Want to Have Fun",
    "b": "Right Track Wrong Train",
    "pos": "01",
-   "pochette": "covers/47586168-4834-4882-860a-eea4091bc4c1.jpg"
+   "pochette": "covers/47586168-4834-4882-860a-eea4091bc4c1.webp"
   },
   {
    "id": "f4630491-93f0-4ee9-b99e-b21164941517",
@@ -23,7 +31,15 @@
    "a": "Everybody Wants To Rule The World",
    "b": "Pharaohs",
    "pos": "02",
-   "pochette": "covers/f4630491-93f0-4ee9-b99e-b21164941517.jpg"
+   "pochette": "covers/f4630491-93f0-4ee9-b99e-b21164941517.webp",
+   "discogs": 1119898,
+   "prix": {
+    "bas": 4.99,
+    "moyen": 8,
+    "haut": 20,
+    "vendu": "2026-09-27",
+    "release": 1119898
+   }
   },
   {
    "id": "3036aaae-3edd-423b-8d54-c5904c3e0567",
@@ -31,8 +47,16 @@
    "a": "My Girl",
    "b": "Theme From My Girl",
    "pos": "03",
-   "pochette": "covers/3036aaae-3edd-423b-8d54-c5904c3e0567.jpg",
-   "avecPochette": true
+   "pochette": "covers/3036aaae-3edd-423b-8d54-c5904c3e0567.webp",
+   "avecPochette": true,
+   "discogs": 4506646,
+   "prix": {
+    "bas": 29.93,
+    "moyen": 29.93,
+    "haut": 29.93,
+    "vendu": "2014-05-01",
+    "release": 4506646
+   }
   },
   {
    "id": "c7d64b99-848f-4422-84f2-6604d730ca8d",
@@ -40,8 +64,16 @@
    "a": "Ring My Bell",
    "b": "If I Could Feel That Old Feeling Again",
    "pos": "04",
-   "pochette": "covers/c7d64b99-848f-4422-84f2-6604d730ca8d.jpg",
-   "avecPochette": true
+   "pochette": "covers/c7d64b99-848f-4422-84f2-6604d730ca8d.webp",
+   "avecPochette": true,
+   "discogs": 9382130,
+   "prix": {
+    "bas": 1.09,
+    "moyen": 3.59,
+    "haut": 4,
+    "vendu": "2026-06-16",
+    "release": 9382130
+   }
   },
   {
    "id": "ee30c0a2-95c6-427a-8a0d-0fd5c1ea620b",
@@ -49,8 +81,16 @@
    "a": "L'Amérique",
    "b": "Cecilia",
    "pos": "05",
-   "pochette": "covers/ee30c0a2-95c6-427a-8a0d-0fd5c1ea620b.jpg",
-   "avecPochette": true
+   "pochette": "covers/ee30c0a2-95c6-427a-8a0d-0fd5c1ea620b.webp",
+   "avecPochette": true,
+   "discogs": 701427,
+   "prix": {
+    "bas": 0.4,
+    "moyen": 1.35,
+    "haut": 5,
+    "vendu": "2026-02-14",
+    "release": 701427
+   }
   },
   {
    "id": "be5bdc25-5ee7-4ef8-a4c0-5a3b08b73ec5",
@@ -58,8 +98,16 @@
    "a": "You Should Be Dancing",
    "b": "Subway",
    "pos": "06",
-   "pochette": "covers/be5bdc25-5ee7-4ef8-a4c0-5a3b08b73ec5.jpg",
-   "avecPochette": true
+   "pochette": "covers/be5bdc25-5ee7-4ef8-a4c0-5a3b08b73ec5.webp",
+   "avecPochette": true,
+   "discogs": 6961179,
+   "prix": {
+    "bas": 6.99,
+    "moyen": 25,
+    "haut": 90,
+    "vendu": "2026-05-11",
+    "release": 6961179
+   }
   },
   {
    "id": "50024049-135a-4537-9ba9-2f0d3919dcfb",
@@ -67,7 +115,15 @@
    "a": "Good Vibrations",
    "b": "Let's Go Away For Awhile",
    "pos": "07",
-   "pochette": "covers/50024049-135a-4537-9ba9-2f0d3919dcfb.jpg"
+   "pochette": "covers/50024049-135a-4537-9ba9-2f0d3919dcfb.webp",
+   "discogs": 14448162,
+   "prix": {
+    "bas": 1,
+    "moyen": 3.44,
+    "haut": 8.99,
+    "vendu": "2026-03-16",
+    "release": 14448162
+   }
   },
   {
    "id": "4613cdef-6963-4250-a58f-d60aee3791b7",
@@ -75,7 +131,15 @@
    "a": "The Shoop Shoop Song",
    "b": "Baby I'm Yours",
    "pos": "08",
-   "pochette": "covers/4613cdef-6963-4250-a58f-d60aee3791b7.jpg"
+   "pochette": "covers/4613cdef-6963-4250-a58f-d60aee3791b7.webp",
+   "discogs": 24084461,
+   "prix": {
+    "bas": 1.6,
+    "moyen": 2.3,
+    "haut": 3,
+    "vendu": "2024-11-06",
+    "release": 24084461
+   }
   },
   {
    "id": "9b1e52fb-e768-4b69-a6f9-7ab2acd0b45e",
@@ -83,7 +147,15 @@
    "a": "In The Air Tonight",
    "b": "The Roof Is Leaking",
    "pos": "09",
-   "pochette": "covers/9b1e52fb-e768-4b69-a6f9-7ab2acd0b45e.jpg"
+   "pochette": "covers/9b1e52fb-e768-4b69-a6f9-7ab2acd0b45e.webp",
+   "discogs": 2587952,
+   "prix": {
+    "bas": 1.82,
+    "moyen": 7.26,
+    "haut": 15.28,
+    "vendu": "2026-10-22",
+    "release": 2587952
+   }
   },
   {
    "id": "cdd06da4-8c12-491a-9c8f-9b73b9ce51f0",
@@ -91,7 +163,15 @@
    "a": "Listen To What The Man Said",
    "b": "Love In Song",
    "pos": "10",
-   "pochette": "covers/cdd06da4-8c12-491a-9c8f-9b73b9ce51f0.jpg"
+   "pochette": "covers/cdd06da4-8c12-491a-9c8f-9b73b9ce51f0.webp",
+   "discogs": 6212552,
+   "prix": {
+    "bas": 12.09,
+    "moyen": 12.09,
+    "haut": 12.09,
+    "vendu": "2018-03-31",
+    "release": 6212552
+   }
   },
   {
    "id": "244e1ead-79b4-4c57-8427-e10b53726cd2",
@@ -99,7 +179,15 @@
    "a": "Mystify",
    "b": "Need You Tonight",
    "pos": "11",
-   "pochette": "covers/244e1ead-79b4-4c57-8427-e10b53726cd2.jpg"
+   "pochette": "covers/244e1ead-79b4-4c57-8427-e10b53726cd2.webp",
+   "discogs": 562721,
+   "prix": {
+    "bas": 2.5,
+    "moyen": 5,
+    "haut": 9.99,
+    "vendu": "2026-10-06",
+    "release": 562721
+   }
   },
   {
    "id": "fcaa6bc2-b52b-4cb2-b3bc-d46281a726b5",
@@ -107,8 +195,16 @@
    "a": "Fall In Love With Me",
    "b": "Lady Sun",
    "pos": "12",
-   "pochette": "covers/fcaa6bc2-b52b-4cb2-b3bc-d46281a726b5.jpg",
-   "avecPochette": true
+   "pochette": "covers/fcaa6bc2-b52b-4cb2-b3bc-d46281a726b5.webp",
+   "avecPochette": true,
+   "discogs": 4109992,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 1.27,
+    "haut": 4.75,
+    "vendu": "2026-04-12",
+    "release": 4109992
+   }
   },
   {
    "id": "c94d84ed-db26-434c-805f-afc51cc81028",
@@ -116,8 +212,16 @@
    "a": "Ça Plane Pour Moi",
    "b": "Pogo Pogo",
    "pos": "13",
-   "pochette": "covers/c94d84ed-db26-434c-805f-afc51cc81028.jpg",
-   "avecPochette": true
+   "pochette": "covers/c94d84ed-db26-434c-805f-afc51cc81028.webp",
+   "avecPochette": true,
+   "discogs": 6381365,
+   "prix": {
+    "bas": 2,
+    "moyen": 5.51,
+    "haut": 12.5,
+    "vendu": "2025-12-28",
+    "release": 6381365
+   }
   },
   {
    "id": "92e1b7d1-240f-4c14-8322-2f4284e4854b",
@@ -125,8 +229,16 @@
    "a": "Un, Deux, Trois",
    "b": "Je Commence Demain",
    "pos": "14",
-   "pochette": "covers/92e1b7d1-240f-4c14-8322-2f4284e4854b.jpg",
-   "avecPochette": true
+   "pochette": "covers/92e1b7d1-240f-4c14-8322-2f4284e4854b.webp",
+   "avecPochette": true,
+   "discogs": 10497283,
+   "prix": {
+    "bas": 45,
+    "moyen": 47,
+    "haut": 49,
+    "vendu": "2021-10-22",
+    "release": 10497283
+   }
   },
   {
    "id": "74a916d8-8eaa-45cf-9d27-6b8d06d0b083",
@@ -134,7 +246,15 @@
    "a": "Lambada",
    "b": "Lambada (Instru)",
    "pos": "15",
-   "pochette": "covers/74a916d8-8eaa-45cf-9d27-6b8d06d0b083.jpg"
+   "pochette": "covers/74a916d8-8eaa-45cf-9d27-6b8d06d0b083.webp",
+   "discogs": 3403785,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 2.46,
+    "haut": 4.8,
+    "vendu": "2026-09-25",
+    "release": 3403785
+   }
   },
   {
    "id": "04e6f500-20e6-4603-ab8c-6223e502053f",
@@ -142,7 +262,15 @@
    "a": "Long Is The Road (Américain)",
    "b": "P'tit Blues Peinard (Inédit)",
    "pos": "16",
-   "pochette": "covers/04e6f500-20e6-4603-ab8c-6223e502053f.jpg"
+   "pochette": "covers/04e6f500-20e6-4603-ab8c-6223e502053f.webp",
+   "discogs": 9374696,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 1.13,
+    "haut": 2.99,
+    "vendu": "2025-07-25",
+    "release": 9374696
+   }
   },
   {
    "id": "87a255a8-fd7f-4bad-abf4-dca85a570fdd",
@@ -150,8 +278,16 @@
    "a": "Tomorrow Tomorrow",
    "b": "Sun In My Morning",
    "pos": "17",
-   "pochette": "covers/87a255a8-fd7f-4bad-abf4-dca85a570fdd.jpg",
-   "avecPochette": true
+   "pochette": "covers/87a255a8-fd7f-4bad-abf4-dca85a570fdd.webp",
+   "avecPochette": true,
+   "discogs": 2827909,
+   "prix": {
+    "bas": 1,
+    "moyen": 2.75,
+    "haut": 3,
+    "vendu": "2026-09-29",
+    "release": 2827909
+   }
   },
   {
    "id": "8ff50b69-07a2-4724-9098-5e392af32849",
@@ -159,8 +295,9 @@
    "a": "The Talk Of All The U.S.A.",
    "b": "On This Land",
    "pos": "18",
-   "pochette": "covers/8ff50b69-07a2-4724-9098-5e392af32849.jpg",
-   "avecPochette": true
+   "pochette": "covers/8ff50b69-07a2-4724-9098-5e392af32849.webp",
+   "avecPochette": true,
+   "discogs": 6228312
   },
   {
    "id": "7e43b25e-57b1-4850-8281-c7aaba8192ff",
@@ -168,7 +305,7 @@
    "a": "Freedom",
    "b": "Freedom (Instru)",
    "pos": "19",
-   "pochette": "covers/7e43b25e-57b1-4850-8281-c7aaba8192ff.jpg"
+   "pochette": "covers/7e43b25e-57b1-4850-8281-c7aaba8192ff.webp"
   },
   {
    "id": "cf57cbe3-1df0-4e19-9a50-fd3dd8395fed",
@@ -176,7 +313,8 @@
    "a": "Play Girl",
    "b": "Finally I'm Free",
    "pos": "20",
-   "pochette": "covers/cf57cbe3-1df0-4e19-9a50-fd3dd8395fed.jpg"
+   "pochette": "covers/cf57cbe3-1df0-4e19-9a50-fd3dd8395fed.webp",
+   "discogs": 15783834
   },
   {
    "id": "145ef4b9-18ce-4a3f-9752-3246d0ef9efb",
@@ -184,8 +322,16 @@
    "a": "September",
    "b": "Can't Hide Love",
    "pos": "21",
-   "pochette": "covers/145ef4b9-18ce-4a3f-9752-3246d0ef9efb.jpg",
-   "avecPochette": true
+   "pochette": "covers/145ef4b9-18ce-4a3f-9752-3246d0ef9efb.webp",
+   "avecPochette": true,
+   "discogs": 1872611,
+   "prix": {
+    "bas": 4.55,
+    "moyen": 10.69,
+    "haut": 22.75,
+    "vendu": "2026-09-20",
+    "release": 1872611
+   }
   },
   {
    "id": "8dada09e-2443-4ffb-a820-84055f7a15fa",
@@ -193,8 +339,9 @@
    "a": "Boogie Wonderland",
    "b": "Boogie Wonderland (Instru)",
    "pos": "22",
-   "pochette": "covers/8dada09e-2443-4ffb-a820-84055f7a15fa.jpg",
-   "avecPochette": true
+   "pochette": "covers/8dada09e-2443-4ffb-a820-84055f7a15fa.webp",
+   "avecPochette": true,
+   "discogs": 25113730
   },
   {
    "id": "d7fd4026-62ce-43b7-8536-074c14838049",
@@ -202,7 +349,15 @@
    "a": "Flashback",
    "b": "Burnin' Up",
    "pos": "23",
-   "pochette": "covers/d7fd4026-62ce-43b7-8536-074c14838049.jpg"
+   "pochette": "covers/d7fd4026-62ce-43b7-8536-074c14838049.webp",
+   "discogs": 3482525,
+   "prix": {
+    "bas": 0.99,
+    "moyen": 1.95,
+    "haut": 6,
+    "vendu": "2026-09-21",
+    "release": 3482525
+   }
   },
   {
    "id": "c9db2c79-07c8-4f8b-9c22-337f15b76011",
@@ -210,7 +365,7 @@
    "a": "She Can't Love You",
    "b": "She Can't Love You (Instru)",
    "pos": "24",
-   "pochette": "covers/c9db2c79-07c8-4f8b-9c22-337f15b76011.jpg"
+   "pochette": "covers/c9db2c79-07c8-4f8b-9c22-337f15b76011.webp"
   },
   {
    "id": "d412e6c9-0204-4045-81c7-d65ac616bfa9",
@@ -218,7 +373,15 @@
    "a": "Letting Go",
    "b": "You Gave Me The Answer",
    "pos": "25",
-   "pochette": "covers/d412e6c9-0204-4045-81c7-d65ac616bfa9.jpg"
+   "pochette": "covers/d412e6c9-0204-4045-81c7-d65ac616bfa9.webp",
+   "discogs": 8508328,
+   "prix": {
+    "bas": 18.2,
+    "moyen": 30.14,
+    "haut": 38.92,
+    "vendu": "2025-07-05",
+    "release": 8508328
+   }
   },
   {
    "id": "76dfb488-fd62-477c-8fd6-77316a890a3c",
@@ -226,7 +389,8 @@
    "a": "Nuit Magique",
    "b": "Au Milieu De Nulle Part",
    "pos": "26",
-   "pochette": "covers/76dfb488-fd62-477c-8fd6-77316a890a3c.jpg"
+   "pochette": "covers/76dfb488-fd62-477c-8fd6-77316a890a3c.webp",
+   "discogs": 38170992
   },
   {
    "id": "85770c0d-fd4e-4e84-b3e3-701c5a5b2707",
@@ -234,7 +398,7 @@
    "a": "Wake Me Up Before You Go-Go",
    "b": "Wake Me Up Before You Go-Go (Instru)",
    "pos": "27",
-   "pochette": "covers/85770c0d-fd4e-4e84-b3e3-701c5a5b2707.jpg",
+   "pochette": "covers/85770c0d-fd4e-4e84-b3e3-701c5a5b2707.webp",
    "avecPochette": true
   },
   {
@@ -243,8 +407,16 @@
    "a": "Money, Money, Money",
    "b": "Crazy World",
    "pos": "28",
-   "pochette": "covers/68a97dc9-1560-4a89-8df3-b33dc7786179.jpg",
-   "avecPochette": true
+   "pochette": "covers/68a97dc9-1560-4a89-8df3-b33dc7786179.webp",
+   "avecPochette": true,
+   "discogs": 3276660,
+   "prix": {
+    "bas": 2.5,
+    "moyen": 4.51,
+    "haut": 8.98,
+    "vendu": "2025-04-19",
+    "release": 3276660
+   }
   },
   {
    "id": "e7ef3264-8261-46a3-9b59-6ccff716bcd4",
@@ -252,8 +424,16 @@
    "a": "Felicita",
    "b": "Arrivedecci De Bahi",
    "pos": "29",
-   "pochette": "covers/e7ef3264-8261-46a3-9b59-6ccff716bcd4.jpg",
-   "avecPochette": true
+   "pochette": "covers/e7ef3264-8261-46a3-9b59-6ccff716bcd4.webp",
+   "avecPochette": true,
+   "discogs": 5840034,
+   "prix": {
+    "bas": 9,
+    "moyen": 9,
+    "haut": 9,
+    "vendu": "2024-11-12",
+    "release": 5840034
+   }
   },
   {
    "id": "d3532070-a49e-498f-9050-18dace5fb790",
@@ -261,7 +441,15 @@
    "a": "Born To Be Alive",
    "b": "Born To Be Alive (Instru)",
    "pos": "30",
-   "pochette": "covers/d3532070-a49e-498f-9050-18dace5fb790.jpg"
+   "pochette": "covers/d3532070-a49e-498f-9050-18dace5fb790.webp",
+   "discogs": 6706932,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 1.9,
+    "haut": 4.5,
+    "vendu": "2026-03-24",
+    "release": 6706932
+   }
   },
   {
    "id": "ffef3a85-63cb-4b40-9ac1-047e3b4e79ca",
@@ -269,8 +457,16 @@
    "a": "Bubble Star (1)",
    "b": "Bubble Star (2)",
    "pos": "31",
-   "pochette": "covers/ffef3a85-63cb-4b40-9ac1-047e3b4e79ca.jpg",
-   "avecPochette": true
+   "pochette": "covers/ffef3a85-63cb-4b40-9ac1-047e3b4e79ca.webp",
+   "avecPochette": true,
+   "discogs": 9096475,
+   "prix": {
+    "bas": 0.8,
+    "moyen": 0.9,
+    "haut": 1,
+    "vendu": "2025-01-13",
+    "release": 9096475
+   }
   },
   {
    "id": "3d320d23-e498-403a-b9ce-285155ac54ae",
@@ -278,9 +474,16 @@
    "a": "Les Démons De Minuit",
    "b": "Les Démons De Minuit (Instrumental)",
    "pos": "32",
-   "pochette": "covers/3d320d23-e498-403a-b9ce-285155ac54ae-mwqqtex5.jpg",
+   "pochette": "covers/3d320d23-e498-403a-b9ce-285155ac54ae-mwqqtex5.webp",
    "avecPochette": true,
-   "discogs": 503674
+   "discogs": 503674,
+   "prix": {
+    "bas": 0.6,
+    "moyen": 2.5,
+    "haut": 8.5,
+    "vendu": "2026-11-02",
+    "release": 503674
+   }
   },
   {
    "id": "ccd8b75c-72c9-4a30-b346-aae9b16e6fdc",
@@ -288,8 +491,16 @@
    "a": "Let's Dance",
    "b": "Cat People (Putting Out Fire)",
    "pos": "33",
-   "pochette": "covers/ccd8b75c-72c9-4a30-b346-aae9b16e6fdc.jpg",
-   "avecPochette": true
+   "pochette": "covers/ccd8b75c-72c9-4a30-b346-aae9b16e6fdc.webp",
+   "avecPochette": true,
+   "discogs": 507148,
+   "prix": {
+    "bas": 0.9,
+    "moyen": 2.9,
+    "haut": 5,
+    "vendu": "2026-11-11",
+    "release": 507148
+   }
   },
   {
    "id": "8b25a53e-efc6-4a84-845d-451a7a851b78",
@@ -297,8 +508,9 @@
    "a": "San Francisco",
    "b": "What's The Difference",
    "pos": "34",
-   "pochette": "covers/8b25a53e-efc6-4a84-845d-451a7a851b78.jpg",
-   "avecPochette": true
+   "pochette": "covers/8b25a53e-efc6-4a84-845d-451a7a851b78.webp",
+   "avecPochette": true,
+   "discogs": 33503501
   },
   {
    "id": "507c9e82-6401-4e00-a49f-e1059ec503ad",
@@ -306,7 +518,7 @@
    "a": "Génération 60",
    "b": "Génération 60",
    "pos": "35",
-   "pochette": "covers/507c9e82-6401-4e00-a49f-e1059ec503ad.jpg",
+   "pochette": "covers/507c9e82-6401-4e00-a49f-e1059ec503ad.webp",
    "note": "Salut Les Copains 0:02 \nSi J'Avais Un Marteau 0:33 \nLeçon De Twist 0:23 \nLet's Twist Again 0:21 \nYa Ya Twist 0:17 \nDaniela 0:21 \nDonne-Moi Ma Chance 0:25 \nPremière Surprise Partie 0:13 \nDancin' Party 0:03 \nBelles, Belles, Belles 0:08 \nC'est Ma Fête 0:13 \nTu Parles Trop 0:27 \nJ'ai Un Secret À Te Dire 0:31 \nSunny 0:33",
    "avecPochette": true
   },
@@ -316,8 +528,16 @@
    "a": "Hot Stuff",
    "b": "Journey To The Centre Of Your Heart",
    "pos": "36",
-   "pochette": "covers/e85e4570-c73e-485f-840a-226f3078c733.jpg",
-   "avecPochette": true
+   "pochette": "covers/e85e4570-c73e-485f-840a-226f3078c733.webp",
+   "avecPochette": true,
+   "discogs": 4886849,
+   "prix": {
+    "bas": 1.36,
+    "moyen": 5.92,
+    "haut": 10.17,
+    "vendu": "2026-08-15",
+    "release": 4886849
+   }
   },
   {
    "id": "d42821d8-009c-46ca-8dcc-3bef5455b1b4",
@@ -325,8 +545,16 @@
    "a": "Il Est Libre Max",
    "b": "Boogie Boum",
    "pos": "37",
-   "pochette": "covers/d42821d8-009c-46ca-8dcc-3bef5455b1b4.jpg",
-   "avecPochette": true
+   "pochette": "covers/d42821d8-009c-46ca-8dcc-3bef5455b1b4.webp",
+   "avecPochette": true,
+   "discogs": 6474350,
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1.91,
+    "haut": 4.4,
+    "vendu": "2026-05-05",
+    "release": 6474350
+   }
   },
   {
    "id": "5dc8bc52-ca8b-498c-bfaa-9119079e17d8",
@@ -334,8 +562,16 @@
    "a": "Fire",
    "b": "Just Like A Rolling Stone",
    "pos": "38",
-   "pochette": "covers/5dc8bc52-ca8b-498c-bfaa-9119079e17d8.jpg",
-   "avecPochette": true
+   "pochette": "covers/5dc8bc52-ca8b-498c-bfaa-9119079e17d8.webp",
+   "avecPochette": true,
+   "discogs": 7215999,
+   "prix": {
+    "bas": 1.95,
+    "moyen": 5,
+    "haut": 8,
+    "vendu": "2026-02-04",
+    "release": 7215999
+   }
   },
   {
    "id": "d757cf08-f347-48d4-ac3a-8f5dbf3d82bd",
@@ -343,8 +579,16 @@
    "a": "Voyage Voyage",
    "b": "Destin Fragile (Instru)",
    "pos": "39",
-   "pochette": "covers/d757cf08-f347-48d4-ac3a-8f5dbf3d82bd.jpg",
-   "avecPochette": true
+   "pochette": "covers/d757cf08-f347-48d4-ac3a-8f5dbf3d82bd.webp",
+   "avecPochette": true,
+   "discogs": 23159903,
+   "prix": {
+    "bas": 10.8,
+    "moyen": 18.49,
+    "haut": 31,
+    "vendu": "2025-11-07",
+    "release": 23159903
+   }
   },
   {
    "id": "d8944b8b-c5d6-4ed3-bd96-705b0dee1501",
@@ -352,8 +596,16 @@
    "a": "Joe Le Taxi",
    "b": "Varvara Pavlovna",
    "pos": "40",
-   "pochette": "covers/d8944b8b-c5d6-4ed3-bd96-705b0dee1501.jpg",
-   "avecPochette": true
+   "pochette": "covers/d8944b8b-c5d6-4ed3-bd96-705b0dee1501.webp",
+   "avecPochette": true,
+   "discogs": 386991,
+   "prix": {
+    "bas": 5,
+    "moyen": 10.97,
+    "haut": 29.44,
+    "vendu": "2026-11-11",
+    "release": 386991
+   }
   },
   {
    "id": "20d58400-f002-44c6-94aa-7449de89eed8",
@@ -361,8 +613,9 @@
    "a": "Sarà Perché Ti Amo",
    "b": "Bello L'Amore",
    "pos": "41",
-   "pochette": "covers/20d58400-f002-44c6-94aa-7449de89eed8.jpg",
-   "avecPochette": true
+   "pochette": "covers/20d58400-f002-44c6-94aa-7449de89eed8.webp",
+   "avecPochette": true,
+   "discogs": 23891555
   },
   {
    "id": "ef667476-d38a-40ac-adda-0e89c43c7a30",
@@ -370,7 +623,7 @@
    "a": "Stars On 45",
    "b": "Stars On 45",
    "pos": "42",
-   "pochette": "covers/ef667476-d38a-40ac-adda-0e89c43c7a30.jpg",
+   "pochette": "covers/ef667476-d38a-40ac-adda-0e89c43c7a30.webp",
    "avecPochette": true
   },
   {
@@ -379,7 +632,7 @@
    "a": "Hits Des Années 60",
    "b": "Hits Des Années 60",
    "pos": "43",
-   "pochette": "covers/82473f82-684f-47fb-b71b-87b19bf76bec.jpg",
+   "pochette": "covers/82473f82-684f-47fb-b71b-87b19bf76bec.webp",
    "avecPochette": true
   },
   {
@@ -388,8 +641,16 @@
    "a": "Rockollection (1)",
    "b": "Rockollection (2)",
    "pos": "44",
-   "pochette": "covers/c343118f-6c02-45c8-aa31-b407f2fc4035.jpg",
-   "avecPochette": true
+   "pochette": "covers/c343118f-6c02-45c8-aa31-b407f2fc4035.webp",
+   "avecPochette": true,
+   "discogs": 894424,
+   "prix": {
+    "bas": 0.75,
+    "moyen": 3.99,
+    "haut": 7.69,
+    "vendu": "2026-10-26",
+    "release": 894424
+   }
   },
   {
    "id": "d6c64a29-dbc6-407d-9307-00c74968e15c",
@@ -397,8 +658,16 @@
    "a": "Lady Lay",
    "b": "Un Jour Pas Comme Les Autres",
    "pos": "45",
-   "pochette": "covers/d6c64a29-dbc6-407d-9307-00c74968e15c.jpg",
-   "avecPochette": true
+   "pochette": "covers/d6c64a29-dbc6-407d-9307-00c74968e15c.webp",
+   "avecPochette": true,
+   "discogs": 7703173,
+   "prix": {
+    "bas": 5,
+    "moyen": 53.91,
+    "haut": 82.5,
+    "vendu": "2025-06-16",
+    "release": 7703173
+   }
   },
   {
    "id": "621c33b1-fe45-4a28-b506-5c90949ae82e",
@@ -406,8 +675,16 @@
    "a": "Rivers Of Babylon",
    "b": "Brown Girl In The Ring",
    "pos": "46",
-   "pochette": "covers/621c33b1-fe45-4a28-b506-5c90949ae82e.jpg",
-   "avecPochette": true
+   "pochette": "covers/621c33b1-fe45-4a28-b506-5c90949ae82e.webp",
+   "avecPochette": true,
+   "discogs": 8855071,
+   "prix": {
+    "bas": 1.37,
+    "moyen": 2.72,
+    "haut": 4.96,
+    "vendu": "2026-08-06",
+    "release": 8855071
+   }
   },
   {
    "id": "107ae17d-6a49-4747-9564-2ca59c30bd52",
@@ -415,8 +692,16 @@
    "a": "Sunny",
    "b": "New York City",
    "pos": "47",
-   "pochette": "covers/107ae17d-6a49-4747-9564-2ca59c30bd52.jpg",
-   "avecPochette": true
+   "pochette": "covers/107ae17d-6a49-4747-9564-2ca59c30bd52.webp",
+   "avecPochette": true,
+   "discogs": 3064717,
+   "prix": {
+    "bas": 3.64,
+    "moyen": 6.32,
+    "haut": 45.5,
+    "vendu": "2026-04-26",
+    "release": 3064717
+   }
   },
   {
    "id": "8b23ad06-c1af-45fb-b7ad-d20acb206dd5",
@@ -424,8 +709,16 @@
    "a": "Daddy Cool",
    "b": "No Women No Cry",
    "pos": "48",
-   "pochette": "covers/8b23ad06-c1af-45fb-b7ad-d20acb206dd5.jpg",
-   "avecPochette": true
+   "pochette": "covers/8b23ad06-c1af-45fb-b7ad-d20acb206dd5.webp",
+   "avecPochette": true,
+   "discogs": 4065042,
+   "prix": {
+    "bas": 1.55,
+    "moyen": 4.09,
+    "haut": 16.38,
+    "vendu": "2026-07-02",
+    "release": 4065042
+   }
   },
   {
    "id": "af029e5e-cc87-4e14-90d6-4963e31bfb2d",
@@ -433,8 +726,16 @@
    "a": "Dancing Queen (1)",
    "b": "Dancing Queen (2)",
    "pos": "49",
-   "pochette": "covers/af029e5e-cc87-4e14-90d6-4963e31bfb2d.jpg",
-   "avecPochette": true
+   "pochette": "covers/af029e5e-cc87-4e14-90d6-4963e31bfb2d.webp",
+   "avecPochette": true,
+   "discogs": 416696,
+   "prix": {
+    "bas": 0.96,
+    "moyen": 44.5,
+    "haut": 495,
+    "vendu": "2026-09-25",
+    "release": 416696
+   }
   },
   {
    "id": "77695495-ebbc-4b11-bf5c-138f8b6d6636",
@@ -442,8 +743,16 @@
    "a": "Chinese Kung Fu",
    "b": "Rythm Kung Fu",
    "pos": "50",
-   "pochette": "covers/77695495-ebbc-4b11-bf5c-138f8b6d6636.jpg",
-   "avecPochette": true
+   "pochette": "covers/77695495-ebbc-4b11-bf5c-138f8b6d6636.webp",
+   "avecPochette": true,
+   "discogs": 4592954,
+   "prix": {
+    "bas": 0.6,
+    "moyen": 2.39,
+    "haut": 5.99,
+    "vendu": "2026-09-10",
+    "release": 4592954
+   }
   },
   {
    "id": "0118cc28-3945-4e8b-8462-c9dfaf010528",
@@ -451,8 +760,9 @@
    "a": "Waterloo",
    "b": "Watch Out",
    "pos": "51",
-   "pochette": "covers/0118cc28-3945-4e8b-8462-c9dfaf010528.jpg",
-   "avecPochette": true
+   "pochette": "covers/0118cc28-3945-4e8b-8462-c9dfaf010528.webp",
+   "avecPochette": true,
+   "discogs": 31339168
   },
   {
    "id": "4d3f1be3-da1f-410b-9d95-a559ebc45586",
@@ -460,8 +770,16 @@
    "a": "What'd I Say (1)",
    "b": "What'd I Say (2)",
    "pos": "52",
-   "pochette": "covers/4d3f1be3-da1f-410b-9d95-a559ebc45586.jpg",
-   "avecPochette": true
+   "pochette": "covers/4d3f1be3-da1f-410b-9d95-a559ebc45586.webp",
+   "avecPochette": true,
+   "discogs": 11251175,
+   "prix": {
+    "bas": 2.99,
+    "moyen": 5.09,
+    "haut": 7.18,
+    "vendu": "2026-02-16",
+    "release": 11251175
+   }
   },
   {
    "id": "cba09af8-fbbb-4bef-bf90-04fb10d41834",
@@ -469,8 +787,16 @@
    "a": "I Can Help",
    "b": "Ways Of A Woman In Love",
    "pos": "53",
-   "pochette": "covers/cba09af8-fbbb-4bef-bf90-04fb10d41834.jpg",
-   "avecPochette": true
+   "pochette": "covers/cba09af8-fbbb-4bef-bf90-04fb10d41834.webp",
+   "avecPochette": true,
+   "discogs": 7776398,
+   "prix": {
+    "bas": 1.99,
+    "moyen": 1.99,
+    "haut": 1.99,
+    "vendu": "2021-01-29",
+    "release": 7776398
+   }
   },
   {
    "id": "d7a43a14-7059-4611-8c15-85a57f679cc1",
@@ -478,8 +804,16 @@
    "a": "Be-Bop-A-Lula",
    "b": "Baby Blue",
    "pos": "54",
-   "pochette": "covers/d7a43a14-7059-4611-8c15-85a57f679cc1.jpg",
-   "avecPochette": true
+   "pochette": "covers/d7a43a14-7059-4611-8c15-85a57f679cc1.webp",
+   "avecPochette": true,
+   "discogs": 7480756,
+   "prix": {
+    "bas": 25,
+    "moyen": 28.67,
+    "haut": 32.33,
+    "vendu": "2021-02-06",
+    "release": 7480756
+   }
   },
   {
    "id": "56676d45-684a-4e39-86ad-abc473c4ab84",
@@ -487,8 +821,16 @@
    "a": "Nuit De Folie",
    "b": "Tout Pour La Danse",
    "pos": "55",
-   "pochette": "covers/56676d45-684a-4e39-86ad-abc473c4ab84.jpg",
-   "avecPochette": true
+   "pochette": "covers/56676d45-684a-4e39-86ad-abc473c4ab84.webp",
+   "avecPochette": true,
+   "discogs": 85940,
+   "prix": {
+    "bas": 4,
+    "moyen": 10,
+    "haut": 28.37,
+    "vendu": "2026-10-24",
+    "release": 85940
+   }
   },
   {
    "id": "eaa80021-0b42-4c84-a2ae-0ab9ddcdab5d",
@@ -496,7 +838,15 @@
    "a": "Hélène",
    "b": "Ton Blues",
    "pos": "56",
-   "pochette": "covers/eaa80021-0b42-4c84-a2ae-0ab9ddcdab5d.jpg"
+   "pochette": "covers/eaa80021-0b42-4c84-a2ae-0ab9ddcdab5d.webp",
+   "discogs": 9009513,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 1,
+    "haut": 3,
+    "vendu": "2025-09-12",
+    "release": 9009513
+   }
   },
   {
    "id": "02cf007d-3089-4439-bd1a-92d324e50665",
@@ -504,7 +854,7 @@
    "a": "Don't Go Breaking My Heart",
    "b": "Snow Queen",
    "pos": "57",
-   "pochette": "covers/02cf007d-3089-4439-bd1a-92d324e50665.jpg"
+   "pochette": "covers/02cf007d-3089-4439-bd1a-92d324e50665.webp"
   },
   {
    "id": "c91ab752-0a83-4b4e-8ff1-46f11f4f7a56",
@@ -512,9 +862,16 @@
    "a": "I Just Called To Say I Love You",
    "b": "I Just Called To Say I Love You (Instrumental)",
    "pos": "58",
-   "pochette": "covers/c91ab752-0a83-4b4e-8ff1-46f11f4f7a56-mwqqvyxl.jpg",
+   "pochette": "covers/c91ab752-0a83-4b4e-8ff1-46f11f4f7a56-mwqqvyxl.webp",
    "avecPochette": true,
-   "discogs": 1925404
+   "discogs": 1925404,
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1.29,
+    "haut": 7.21,
+    "vendu": "2026-09-14",
+    "release": 1925404
+   }
   },
   {
    "id": "e24758a6-fcd7-4432-84c6-dc0bf5cda673",
@@ -522,7 +879,8 @@
    "a": "Hotel California",
    "b": "One Of These Nights",
    "pos": "59",
-   "pochette": "covers/e24758a6-fcd7-4432-84c6-dc0bf5cda673.jpg"
+   "pochette": "covers/e24758a6-fcd7-4432-84c6-dc0bf5cda673.webp",
+   "discogs": 10649124
   },
   {
    "id": "9fcd380d-656c-4f50-9b22-d27b4669914d",
@@ -530,16 +888,32 @@
    "a": "I Heard It Through The Grapevine",
    "b": "Can I Get A Witness",
    "pos": "60",
-   "pochette": "covers/9fcd380d-656c-4f50-9b22-d27b4669914d.jpg"
+   "pochette": "covers/9fcd380d-656c-4f50-9b22-d27b4669914d.webp",
+   "discogs": 12382175,
+   "prix": {
+    "bas": 9.1,
+    "moyen": 15.93,
+    "haut": 27.25,
+    "vendu": "2026-05-22",
+    "release": 12382175
+   }
   },
   {
-   "id": "ba76ae10-b322-41ed-a102-2f17309a1c8a",
+   "id": "37fe997b-bd94-4842-86ff-4f745cdf7322",
    "artiste": "Bee Gees",
    "a": "Too Much Heaven",
    "b": "Rest Your Love On Me",
    "pos": "61",
-   "pochette": "covers/ba76ae10-b322-41ed-a102-2f17309a1c8a.jpg",
-   "avecPochette": true
+   "pochette": "covers/37fe997b-bd94-4842-86ff-4f745cdf7322-mwqs3z9m.webp",
+   "avecPochette": true,
+   "discogs": 5880244,
+   "prix": {
+    "bas": 15,
+    "moyen": 16.5,
+    "haut": 18,
+    "vendu": "2026-04-12",
+    "release": 5880244
+   }
   },
   {
    "id": "80100cef-6088-472b-a79e-0836f0d34f7b",
@@ -547,7 +921,15 @@
    "a": "Do I Do",
    "b": "Rocket Love",
    "pos": "62",
-   "pochette": "covers/80100cef-6088-472b-a79e-0836f0d34f7b.jpg"
+   "pochette": "covers/80100cef-6088-472b-a79e-0836f0d34f7b.webp",
+   "discogs": 11109138,
+   "prix": {
+    "bas": 6.5,
+    "moyen": 6.75,
+    "haut": 7,
+    "vendu": "2025-12-04",
+    "release": 11109138
+   }
   },
   {
    "id": "ad838b7b-a97b-4409-9299-554afaf1aee5",
@@ -555,8 +937,15 @@
    "a": "Stars On 45 Volume Two / Voulez Vous / S.O.S. / Bang A Boomerang / Money, Money, Money / Knowing Me, Knowing You / Fernando / The Winner Takes It All / Super Trouper / Stars On 45 (2)",
    "b": "Stars Get Ready",
    "pos": "63",
-   "pochette": "covers/ad838b7b-a97b-4409-9299-554afaf1aee5-mwqr3kji.jpg",
-   "discogs": 13537586
+   "pochette": "covers/ad838b7b-a97b-4409-9299-554afaf1aee5-mwqr3kji.webp",
+   "discogs": 13537586,
+   "prix": {
+    "bas": 0.01,
+    "moyen": 0.46,
+    "haut": 0.9,
+    "vendu": "2022-12-13",
+    "release": 13537586
+   }
   },
   {
    "id": "241b33b3-8f63-475b-977f-1baf14fe47a7",
@@ -564,8 +953,16 @@
    "a": "Femme Liberée",
    "b": "Sexy Rock",
    "pos": "64",
-   "pochette": "covers/241b33b3-8f63-475b-977f-1baf14fe47a7.jpg",
-   "avecPochette": true
+   "pochette": "covers/241b33b3-8f63-475b-977f-1baf14fe47a7.webp",
+   "avecPochette": true,
+   "discogs": 536976,
+   "prix": {
+    "bas": 0.2,
+    "moyen": 2.15,
+    "haut": 7.5,
+    "vendu": "2026-11-14",
+    "release": 536976
+   }
   },
   {
    "id": "72bf444a-c441-44a2-9926-1d97d04763ce",
@@ -573,8 +970,16 @@
    "a": "Apache",
    "b": "Guitar Tango",
    "pos": "65",
-   "pochette": "covers/72bf444a-c441-44a2-9926-1d97d04763ce.jpg",
-   "avecPochette": true
+   "pochette": "covers/72bf444a-c441-44a2-9926-1d97d04763ce.webp",
+   "avecPochette": true,
+   "discogs": 2901049,
+   "prix": {
+    "bas": 2,
+    "moyen": 5,
+    "haut": 7.27,
+    "vendu": "2025-08-01",
+    "release": 2901049
+   }
   },
   {
    "id": "fbdca4a1-c0a0-4959-92b6-5a0c53e0a94d",
@@ -582,9 +987,16 @@
    "a": "Video Killed The Radio Star",
    "b": "Kid Dynamo",
    "pos": "66",
-   "pochette": "covers/fbdca4a1-c0a0-4959-92b6-5a0c53e0a94d-mwqqulpf.jpg",
+   "pochette": "covers/fbdca4a1-c0a0-4959-92b6-5a0c53e0a94d-mwqqulpf.webp",
    "avecPochette": true,
-   "discogs": 186604
+   "discogs": 186604,
+   "prix": {
+    "bas": 0.78,
+    "moyen": 2.99,
+    "haut": 9.9,
+    "vendu": "2026-11-15",
+    "release": 186604
+   }
   },
   {
    "id": "3fb6f5ec-b53b-44b5-80a4-b1be798cfba1",
@@ -592,8 +1004,16 @@
    "a": "Venus",
    "b": "White Train",
    "pos": "67",
-   "pochette": "covers/3fb6f5ec-b53b-44b5-80a4-b1be798cfba1.jpg",
-   "avecPochette": true
+   "pochette": "covers/3fb6f5ec-b53b-44b5-80a4-b1be798cfba1.webp",
+   "avecPochette": true,
+   "discogs": 1081518,
+   "prix": {
+    "bas": 2.5,
+    "moyen": 6.89,
+    "haut": 15.9,
+    "vendu": "2026-10-31",
+    "release": 1081518
+   }
   },
   {
    "id": "49f4474a-cb0a-4dc7-88af-9ebb543de60a",
@@ -601,8 +1021,16 @@
    "a": "I Love Rock'n Roll",
    "b": "Love Is Pain",
    "pos": "68",
-   "pochette": "covers/49f4474a-cb0a-4dc7-88af-9ebb543de60a.jpg",
-   "avecPochette": true
+   "pochette": "covers/49f4474a-cb0a-4dc7-88af-9ebb543de60a.webp",
+   "avecPochette": true,
+   "discogs": 5140915,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 2.87,
+    "haut": 30,
+    "vendu": "2025-03-20",
+    "release": 5140915
+   }
   },
   {
    "id": "fdacbd3a-8ced-4f79-a8a8-7453d1442998",
@@ -610,8 +1038,16 @@
    "a": "The Locomotion",
    "b": "He Is The Boy",
    "pos": "69",
-   "pochette": "covers/fdacbd3a-8ced-4f79-a8a8-7453d1442998.jpg",
-   "avecPochette": true
+   "pochette": "covers/fdacbd3a-8ced-4f79-a8a8-7453d1442998.webp",
+   "avecPochette": true,
+   "discogs": 11066213,
+   "prix": {
+    "bas": 0.99,
+    "moyen": 4.99,
+    "haut": 7,
+    "vendu": "2025-01-05",
+    "release": 11066213
+   }
   },
   {
    "id": "cc8a36a4-4d82-4508-aff7-2bc2c0788cd5",
@@ -619,8 +1055,16 @@
    "a": "Un Autre Monde",
    "b": "Le Garçon D'ascenseur",
    "pos": "70",
-   "pochette": "covers/cc8a36a4-4d82-4508-aff7-2bc2c0788cd5.jpg",
-   "avecPochette": true
+   "pochette": "covers/cc8a36a4-4d82-4508-aff7-2bc2c0788cd5.webp",
+   "avecPochette": true,
+   "discogs": 14886483,
+   "prix": {
+    "bas": 4.33,
+    "moyen": 4.75,
+    "haut": 5.7,
+    "vendu": "2024-09-01",
+    "release": 14886483
+   }
   },
   {
    "id": "d1992b5b-c8b5-416d-ade1-1393d3af3002",
@@ -628,8 +1072,16 @@
    "a": "Le Le Banana Split",
    "b": "Teenager",
    "pos": "71",
-   "pochette": "covers/d1992b5b-c8b5-416d-ade1-1393d3af3002.jpg",
-   "avecPochette": true
+   "pochette": "covers/d1992b5b-c8b5-416d-ade1-1393d3af3002.webp",
+   "avecPochette": true,
+   "discogs": 5833321,
+   "prix": {
+    "bas": 4,
+    "moyen": 13.5,
+    "haut": 25,
+    "vendu": "2026-03-11",
+    "release": 5833321
+   }
   },
   {
    "id": "1364b4c3-b33b-4c10-89dd-0b6257bcf6b8",
@@ -644,8 +1096,16 @@
    "a": "Le Jerk",
    "b": "Goodbye Mary",
    "pos": "73",
-   "pochette": "covers/28515269-d349-4db8-b37b-5671c20e4c54.jpg",
-   "avecPochette": true
+   "pochette": "covers/28515269-d349-4db8-b37b-5671c20e4c54.webp",
+   "avecPochette": true,
+   "discogs": 701924,
+   "prix": {
+    "bas": 1,
+    "moyen": 2.42,
+    "haut": 7,
+    "vendu": "2026-10-01",
+    "release": 701924
+   }
   },
   {
    "id": "2cbec7b3-d1a3-4513-b584-11fc3eb42583",
@@ -653,8 +1113,9 @@
    "a": "Funkytown",
    "b": "All Night Dancing",
    "pos": "74",
-   "pochette": "covers/2cbec7b3-d1a3-4513-b584-11fc3eb42583.jpg",
-   "avecPochette": true
+   "pochette": "covers/2cbec7b3-d1a3-4513-b584-11fc3eb42583.webp",
+   "avecPochette": true,
+   "discogs": 36580285
   },
   {
    "id": "e952712b-b631-48e2-a039-134eec9c7894",
@@ -662,7 +1123,8 @@
    "a": "Hey Jude",
    "b": "Revolution",
    "pos": "75",
-   "pochette": "covers/e952712b-b631-48e2-a039-134eec9c7894.jpg"
+   "pochette": "covers/e952712b-b631-48e2-a039-134eec9c7894.webp",
+   "discogs": 16122084
   },
   {
    "id": "10c71a16-e948-4dbe-8df5-5d7df821fadc",
@@ -670,8 +1132,9 @@
    "a": "Live Is Life",
    "b": "Up And Down",
    "pos": "76",
-   "pochette": "covers/10c71a16-e948-4dbe-8df5-5d7df821fadc.jpg",
-   "avecPochette": true
+   "pochette": "covers/10c71a16-e948-4dbe-8df5-5d7df821fadc.webp",
+   "avecPochette": true,
+   "discogs": 34452028
   },
   {
    "id": "129b5093-521c-4048-9ae4-d36699c92141",
@@ -679,8 +1142,16 @@
    "a": "Sugar, Sugar",
    "b": "Melody Hill",
    "pos": "77",
-   "pochette": "covers/129b5093-521c-4048-9ae4-d36699c92141.jpg",
-   "avecPochette": true
+   "pochette": "covers/129b5093-521c-4048-9ae4-d36699c92141.webp",
+   "avecPochette": true,
+   "discogs": 6443950,
+   "prix": {
+    "bas": 4,
+    "moyen": 6.74,
+    "haut": 16,
+    "vendu": "2024-01-06",
+    "release": 6443950
+   }
   },
   {
    "id": "641dfaff-f706-45c7-b9e9-ff47cba6a2bc",
@@ -688,8 +1159,16 @@
    "a": "Baby, Come Back",
    "b": "Hold Me Closer",
    "pos": "78",
-   "pochette": "covers/641dfaff-f706-45c7-b9e9-ff47cba6a2bc.jpg",
-   "avecPochette": true
+   "pochette": "covers/641dfaff-f706-45c7-b9e9-ff47cba6a2bc.webp",
+   "avecPochette": true,
+   "discogs": 1068580,
+   "prix": {
+    "bas": 1.85,
+    "moyen": 3,
+    "haut": 8,
+    "vendu": "2026-01-25",
+    "release": 1068580
+   }
   },
   {
    "id": "5e0d2ded-17b2-4b70-b691-e06124363c66",
@@ -697,26 +1176,67 @@
    "a": "How Deep Is Your Love",
    "b": "Can't Keep A Good Man Down",
    "pos": "79",
-   "pochette": "covers/5e0d2ded-17b2-4b70-b691-e06124363c66.jpg",
-   "avecPochette": true
+   "pochette": "covers/5e0d2ded-17b2-4b70-b691-e06124363c66.webp",
+   "avecPochette": true,
+   "discogs": 590894,
+   "prix": {
+    "bas": 0.95,
+    "moyen": 2,
+    "haut": 8,
+    "vendu": "2026-11-04",
+    "release": 590894
+   }
   },
   {
-   "id": "cf218382-9fe6-4bcf-9810-636ed85b9c3c",
+   "id": "69761d01-79e7-4ece-b2bd-9e3e3c5f857b",
    "artiste": "ABBA",
    "a": "Gimme! Gimme! Gimme! (A Man After Midnight)",
    "b": "The King Has Lost His Crown",
    "pos": null,
-   "pochette": "covers/cf218382-9fe6-4bcf-9810-636ed85b9c3c-mwqrbl9h.jpg",
+   "pochette": "covers/69761d01-79e7-4ece-b2bd-9e3e3c5f857b-mwqunz3t.webp",
    "avecPochette": true,
-   "discogs": 677126
+   "discogs": 677126,
+   "prix": {
+    "bas": 1,
+    "moyen": 3.19,
+    "haut": 12.88,
+    "vendu": "2026-11-18",
+    "release": 677126
+   }
   },
   {
-   "id": "b354dd8a-7daf-47cb-a3a5-42133f4ba4a3",
-   "artiste": "Barry White",
-   "a": "You're the First the Last, my Everything",
-   "b": "Can't get Enough of your Love, Babe",
+   "id": "3c4f519d-791d-4f8f-bcab-d9d9fca41592",
+   "artiste": "ABBA",
+   "a": "The Winner Takes It All",
+   "b": "Elaine",
    "pos": null,
-   "pochette": "covers/b354dd8a-7daf-47cb-a3a5-42133f4ba4a3.jpg"
+   "pochette": "covers/3c4f519d-791d-4f8f-bcab-d9d9fca41592-mwquybua.webp",
+   "avecPochette": true,
+   "discogs": 585346,
+   "prix": {
+    "bas": 0.37,
+    "moyen": 2,
+    "haut": 9.13,
+    "vendu": "2026-11-07",
+    "release": 585346
+   }
+  },
+  {
+   "id": "6a85de94-0185-47ea-8833-ab98d8a6418c",
+   "artiste": "ABBA",
+   "a": "Knowing Me, Knowing You",
+   "b": "Happy Hawaii (Early Version Of \"Why Did It Have To Be Me\")",
+   "pos": null,
+   "pochette": "covers/6a85de94-0185-47ea-8833-ab98d8a6418c-mwqv2m5c.webp",
+   "avecPochette": true,
+   "discogs": 893378,
+   "prix": {
+    "bas": 0.72,
+    "moyen": 3.5,
+    "haut": 12,
+    "vendu": "2026-10-15",
+    "release": 893378
+   }
   },
   {
    "id": "48d44637-e2b2-45c7-9849-b10147cff19d",
@@ -724,15 +1244,49 @@
    "a": "What Am I Gonna Do With You",
    "b": "What Am I Gonna Do With You Baby",
    "pos": null,
-   "pochette": "covers/48d44637-e2b2-45c7-9849-b10147cff19d.jpg"
+   "pochette": "covers/48d44637-e2b2-45c7-9849-b10147cff19d.webp",
+   "discogs": 2473358,
+   "prix": {
+    "bas": 1,
+    "moyen": 2.14,
+    "haut": 2.99,
+    "vendu": "2024-01-25",
+    "release": 2473358
+   }
   },
   {
-   "id": "0c27a55a-c08f-4662-ae57-c8e05355da44",
+   "id": "b354dd8a-7daf-47cb-a3a5-42133f4ba4a3",
+   "artiste": "Barry White",
+   "a": "You're The First, The Last, My Everything",
+   "b": "Can't Get Enough Of Your Love, Babe",
+   "pos": null,
+   "pochette": "covers/b354dd8a-7daf-47cb-a3a5-42133f4ba4a3.webp",
+   "avecPochette": true,
+   "discogs": 830264,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 3.25,
+    "haut": 10.92,
+    "vendu": "2026-10-11",
+    "release": 830264
+   }
+  },
+  {
+   "id": "9c24cf42-353b-40a4-bb84-5c84bd6b751e",
    "artiste": "Bee Gees",
    "a": "Too Much Heaven",
    "b": "Rest Your Love On Me",
    "pos": null,
-   "pochette": "covers/0c27a55a-c08f-4662-ae57-c8e05355da44.jpg"
+   "pochette": "covers/9c24cf42-353b-40a4-bb84-5c84bd6b751e-mwquor6w.webp",
+   "avecPochette": true,
+   "discogs": 843462,
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1.19,
+    "haut": 6.5,
+    "vendu": "2026-09-16",
+    "release": 843462
+   }
   },
   {
    "id": "8738a0e1-9aa9-496c-949e-76364b3a700a",
@@ -740,7 +1294,66 @@
    "a": "Tout Doucement (Tout Simplement)",
    "b": "Tam Tam Man",
    "pos": null,
-   "pochette": "covers/8738a0e1-9aa9-496c-949e-76364b3a700a.jpg"
+   "pochette": "covers/8738a0e1-9aa9-496c-949e-76364b3a700a.webp",
+   "discogs": 1456478,
+   "prix": {
+    "bas": 0.6,
+    "moyen": 6.25,
+    "haut": 15,
+    "vendu": "2026-03-25",
+    "release": 1456478
+   }
+  },
+  {
+   "id": "24ff8d27-49e0-451e-a73f-f84de20fa2b6",
+   "artiste": "Boney M.",
+   "a": "Rasputin",
+   "b": "Never Change Lovers In The Middle Of The Night",
+   "pos": null,
+   "pochette": "covers/24ff8d27-49e0-451e-a73f-f84de20fa2b6-mwqri1mb.webp",
+   "avecPochette": true,
+   "discogs": 577324,
+   "prix": {
+    "bas": 0.9,
+    "moyen": 3,
+    "haut": 10.47,
+    "vendu": "2026-10-03",
+    "release": 577324
+   }
+  },
+  {
+   "id": "cf8d3db5-ce74-4b93-a0de-b5ce88460205",
+   "artiste": "Boney M.",
+   "a": "Ma Baker",
+   "b": "A Woman Can Change A Man",
+   "pos": null,
+   "pochette": "covers/cf8d3db5-ce74-4b93-a0de-b5ce88460205-mwqrig7r.webp",
+   "avecPochette": true,
+   "discogs": 746257,
+   "prix": {
+    "bas": 0.1,
+    "moyen": 1.74,
+    "haut": 9.5,
+    "vendu": "2026-10-18",
+    "release": 746257
+   }
+  },
+  {
+   "id": "1f2bdac3-a88c-4898-9842-5c7a08e718ee",
+   "artiste": "Boney M.",
+   "a": "Daddy Cool",
+   "b": "No Woman No Cry",
+   "pos": null,
+   "pochette": "covers/1f2bdac3-a88c-4898-9842-5c7a08e718ee-mwqv1m37.webp",
+   "avecPochette": true,
+   "discogs": 1905880,
+   "prix": {
+    "bas": 0.25,
+    "moyen": 1.75,
+    "haut": 6.51,
+    "vendu": "2026-10-15",
+    "release": 1905880
+   }
   },
   {
    "id": "b08866b6-1536-46ce-88b5-5d527b117543",
@@ -748,7 +1361,15 @@
    "a": "Here She Comes",
    "b": "Time",
    "pos": null,
-   "pochette": "covers/b08866b6-1536-46ce-88b5-5d527b117543.jpg"
+   "pochette": "covers/b08866b6-1536-46ce-88b5-5d527b117543.webp",
+   "discogs": 12344816,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 1.5,
+    "haut": 2.5,
+    "vendu": "2025-02-05",
+    "release": 12344816
+   }
   },
   {
    "id": "af30afb3-51a6-4903-8a8a-2565cf8d66b1",
@@ -756,7 +1377,15 @@
    "a": "Il Faudra Leur Dire",
    "b": "Il Faudra Leur Dire (Instru)",
    "pos": null,
-   "pochette": "covers/af30afb3-51a6-4903-8a8a-2565cf8d66b1.jpg"
+   "pochette": "covers/af30afb3-51a6-4903-8a8a-2565cf8d66b1.webp",
+   "discogs": 736284,
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1,
+    "haut": 19.9,
+    "vendu": "2026-04-22",
+    "release": 736284
+   }
   },
   {
    "id": "6f6aee36-e2bf-4dd2-8df7-bbd499f6d00d",
@@ -764,7 +1393,8 @@
    "a": "L'Aziza",
    "b": "Tous Les Cris Les S.O.S.",
    "pos": null,
-   "pochette": "covers/6f6aee36-e2bf-4dd2-8df7-bbd499f6d00d.jpg"
+   "pochette": "covers/6f6aee36-e2bf-4dd2-8df7-bbd499f6d00d.webp",
+   "discogs": 16113700
   },
   {
    "id": "fe81918b-6658-4369-856f-232fa234887b",
@@ -772,7 +1402,32 @@
    "a": "Ashes To Ashes",
    "b": "Move On",
    "pos": null,
-   "pochette": "covers/fe81918b-6658-4369-856f-232fa234887b.jpg"
+   "pochette": "covers/fe81918b-6658-4369-856f-232fa234887b.webp",
+   "discogs": 18717997,
+   "prix": {
+    "bas": 8,
+    "moyen": 12.99,
+    "haut": 14,
+    "vendu": "2025-01-15",
+    "release": 18717997
+   }
+  },
+  {
+   "id": "babd9e21-1d78-4318-8d4b-496fffff8c56",
+   "artiste": "David Bowie",
+   "a": "Let's Dance",
+   "b": "Cat People (Putting Out Fire)",
+   "pos": null,
+   "pochette": "covers/babd9e21-1d78-4318-8d4b-496fffff8c56-mwqvnrjf.webp",
+   "avecPochette": true,
+   "discogs": 507148,
+   "prix": {
+    "bas": 0.9,
+    "moyen": 2.9,
+    "haut": 5,
+    "vendu": "2026-11-11",
+    "release": 507148
+   }
   },
   {
    "id": "bb634c07-32c6-48a3-bac1-279ebff978c0",
@@ -780,7 +1435,15 @@
    "a": "Rox Et Rouky",
    "b": "Disney Dimanche",
    "pos": null,
-   "pochette": "covers/bb634c07-32c6-48a3-bac1-279ebff978c0.jpg"
+   "pochette": "covers/bb634c07-32c6-48a3-bac1-279ebff978c0.webp",
+   "discogs": 11705336,
+   "prix": {
+    "bas": 2.4,
+    "moyen": 2.4,
+    "haut": 2.4,
+    "vendu": "2019-10-29",
+    "release": 11705336
+   }
   },
   {
    "id": "4c55d9a9-f5ec-46e9-905d-5ccd5da2e846",
@@ -788,7 +1451,32 @@
    "a": "Les Schtroumpfs",
    "b": "L'école Des Schtroumpfs",
    "pos": null,
-   "pochette": "covers/4c55d9a9-f5ec-46e9-905d-5ccd5da2e846.jpg"
+   "pochette": "covers/4c55d9a9-f5ec-46e9-905d-5ccd5da2e846.webp",
+   "discogs": 11659202,
+   "prix": {
+    "bas": 2.5,
+    "moyen": 5,
+    "haut": 7.5,
+    "vendu": "2020-08-09",
+    "release": 11659202
+   }
+  },
+  {
+   "id": "d09d74c2-27b8-402a-8c96-48fc9a604147",
+   "artiste": "Eagles",
+   "a": "Hotel California",
+   "b": "New Kid In Town",
+   "pos": null,
+   "pochette": "covers/d09d74c2-27b8-402a-8c96-48fc9a604147-mwqrlu3p.webp",
+   "avecPochette": true,
+   "discogs": 1435235,
+   "prix": {
+    "bas": 1.14,
+    "moyen": 3.61,
+    "haut": 18.2,
+    "vendu": "2026-11-15",
+    "release": 1435235
+   }
   },
   {
    "id": "84fdca03-c658-49f3-bc1b-d306af1d28b8",
@@ -796,7 +1484,7 @@
    "a": "Don't Bring Me Down",
    "b": "Dreaming Of 4000",
    "pos": null,
-   "pochette": "covers/84fdca03-c658-49f3-bc1b-d306af1d28b8.jpg"
+   "pochette": "covers/84fdca03-c658-49f3-bc1b-d306af1d28b8.webp"
   },
   {
    "id": "bba490f2-4cf7-4564-938c-cb5e3fed4e77",
@@ -804,15 +1492,7 @@
    "a": "À Toutes Les Filles",
    "b": "À Toutes Les Filles (Instru)",
    "pos": null,
-   "pochette": "covers/bba490f2-4cf7-4564-938c-cb5e3fed4e77.jpg"
-  },
-  {
-   "id": "5114d14c-eb57-45bf-8121-7f80feda8770",
-   "artiste": "France Gall",
-   "a": "Comment Lui Dire",
-   "b": "Samba Mambo",
-   "pos": null,
-   "pochette": "covers/5114d14c-eb57-45bf-8121-7f80feda8770.jpg"
+   "pochette": "covers/bba490f2-4cf7-4564-938c-cb5e3fed4e77.webp"
   },
   {
    "id": "0b64a7b1-d033-4de0-8311-cd3359e5dff3",
@@ -820,9 +1500,16 @@
    "a": "Débranche",
    "b": "J'ai Besoin De Vous",
    "pos": null,
-   "pochette": "covers/0b64a7b1-d033-4de0-8311-cd3359e5dff3-mwqrcy8x.jpg",
+   "pochette": "covers/0b64a7b1-d033-4de0-8311-cd3359e5dff3-mwqrcy8x.webp",
    "avecPochette": true,
-   "discogs": 1068562
+   "discogs": 1068562,
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1.5,
+    "haut": 5.72,
+    "vendu": "2026-10-16",
+    "release": 1068562
+   }
   },
   {
    "id": "37fb95aa-b7b7-4fe5-9963-e1bbfef516e8",
@@ -830,8 +1517,33 @@
    "a": "Tout Pour La Musique",
    "b": "Résiste",
    "pos": null,
-   "pochette": "covers/37fb95aa-b7b7-4fe5-9963-e1bbfef516e8.jpg",
-   "avecPochette": true
+   "pochette": "covers/37fb95aa-b7b7-4fe5-9963-e1bbfef516e8.webp",
+   "avecPochette": true,
+   "discogs": 8926407,
+   "prix": {
+    "bas": 1,
+    "moyen": 2.5,
+    "haut": 6.6,
+    "vendu": "2025-11-24",
+    "release": 8926407
+   }
+  },
+  {
+   "id": "5114d14c-eb57-45bf-8121-7f80feda8770",
+   "artiste": "France Gall",
+   "a": "Comment Lui Dire",
+   "b": "Samba Mambo",
+   "pos": null,
+   "pochette": "covers/5114d14c-eb57-45bf-8121-7f80feda8770.webp",
+   "avecPochette": true,
+   "discogs": 10847163,
+   "prix": {
+    "bas": 10,
+    "moyen": 10,
+    "haut": 10,
+    "vendu": "2023-06-29",
+    "release": 10847163
+   }
   },
   {
    "id": "e72d93f4-5877-4bd0-ac6d-64069768b936",
@@ -839,8 +1551,64 @@
    "a": "Rock And Roll (1)",
    "b": "Rock And Roll (2)",
    "pos": null,
-   "pochette": "covers/e72d93f4-5877-4bd0-ac6d-64069768b936.jpg",
-   "avecPochette": true
+   "pochette": "covers/e72d93f4-5877-4bd0-ac6d-64069768b936.webp",
+   "avecPochette": true,
+   "discogs": 1349739,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 2.06,
+    "haut": 4.36,
+    "vendu": "2026-11-16",
+    "release": 1349739
+   }
+  },
+  {
+   "id": "c0bece9a-d384-43db-b8b3-aa3b36642398",
+   "artiste": "Gary Glitter",
+   "a": "Do You Wanna Touch Me? (Oh Yeah)",
+   "b": "I Would If I Could But I Can't",
+   "pos": null,
+   "pochette": "covers/c0bece9a-d384-43db-b8b3-aa3b36642398-mwqvzg1c.webp",
+   "avecPochette": true,
+   "discogs": 5451969,
+   "infos": {
+    "label": "Bell Records",
+    "catno": "2008 136",
+    "format": "Vinyl, 7\", 45 RPM, Single",
+    "formats": [
+     "7\"",
+     "Single"
+    ],
+    "pays": "France",
+    "annee": 1973,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Glam"
+    ],
+    "auteurs": [
+     "Gary Glitter",
+     "Mike Leander"
+    ],
+    "producteurs": [
+     "Mike Leander"
+    ],
+    "have": 326,
+    "want": 16,
+    "note": 3.06,
+    "votes": 16
+   }
+  },
+  {
+   "id": "3ac466de-d7ea-4574-8a7f-843c19e32f9d",
+   "artiste": "Holiday Bells, The",
+   "a": "Douce Nuit / Venite Adoremus / Vive Le Vent D'hiver",
+   "b": "Les Anges De Nos Campagnes / Petite Ville De Bethleem / Mon Beau Sapin",
+   "pos": null,
+   "pochette": "covers/3ac466de-d7ea-4574-8a7f-843c19e32f9d.webp",
+   "avecPochette": true,
+   "discogs": 17177470
   },
   {
    "id": "dab6ecc2-ed8d-472a-bdb8-57c5342c9fd9",
@@ -848,7 +1616,16 @@
    "a": "Comme Toi",
    "b": "Être Le Premier",
    "pos": null,
-   "pochette": "covers/dab6ecc2-ed8d-472a-bdb8-57c5342c9fd9.jpg"
+   "pochette": "covers/dab6ecc2-ed8d-472a-bdb8-57c5342c9fd9.webp",
+   "avecPochette": true,
+   "discogs": 11674561,
+   "prix": {
+    "bas": 0.9,
+    "moyen": 3,
+    "haut": 4,
+    "vendu": "2025-06-08",
+    "release": 11674561
+   }
   },
   {
    "id": "ac79a8ff-30b8-4b2f-940e-e2b60d2b2266",
@@ -856,9 +1633,16 @@
    "a": "Je Te Donne",
    "b": "Confidentiel",
    "pos": null,
-   "pochette": "covers/ac79a8ff-30b8-4b2f-940e-e2b60d2b2266-mwqrccdf.jpg",
+   "pochette": "covers/ac79a8ff-30b8-4b2f-940e-e2b60d2b2266-mwqrccdf.webp",
    "avecPochette": true,
-   "discogs": 987861
+   "discogs": 987861,
+   "prix": {
+    "bas": 3.5,
+    "moyen": 8.34,
+    "haut": 30,
+    "vendu": "2026-05-17",
+    "release": 987861
+   }
   },
   {
    "id": "4f85442c-cee7-4b7e-8b37-bb63f0065ab6",
@@ -866,7 +1650,15 @@
    "a": "Johnny, Johnny",
    "b": "Lisa",
    "pos": null,
-   "pochette": "covers/4f85442c-cee7-4b7e-8b37-bb63f0065ab6.jpg"
+   "pochette": "covers/4f85442c-cee7-4b7e-8b37-bb63f0065ab6.webp",
+   "discogs": 1229945,
+   "prix": {
+    "bas": 3.99,
+    "moyen": 12,
+    "haut": 30,
+    "vendu": "2026-09-06",
+    "release": 1229945
+   }
   },
   {
    "id": "a5bfb8ef-7704-486b-a629-651e94367645",
@@ -874,7 +1666,16 @@
    "a": "Siffler Sur La Colline",
    "b": "Comment Te Dire",
    "pos": null,
-   "pochette": "covers/a5bfb8ef-7704-486b-a629-651e94367645.jpg"
+   "pochette": "covers/a5bfb8ef-7704-486b-a629-651e94367645.webp",
+   "avecPochette": true,
+   "discogs": 6907459,
+   "prix": {
+    "bas": 0.01,
+    "moyen": 1.05,
+    "haut": 7,
+    "vendu": "2026-07-24",
+    "release": 6907459
+   }
   },
   {
    "id": "7d000fb6-54ae-4269-9d59-dd63bf7a4ac3",
@@ -882,7 +1683,15 @@
    "a": "Qu'Est-Ce Que Tu Croyais",
    "b": "C'Est Mieux Ainsi",
    "pos": null,
-   "pochette": "covers/7d000fb6-54ae-4269-9d59-dd63bf7a4ac3.jpg"
+   "pochette": "covers/7d000fb6-54ae-4269-9d59-dd63bf7a4ac3.webp",
+   "discogs": 8325889,
+   "prix": {
+    "bas": 0.99,
+    "moyen": 1,
+    "haut": 3.99,
+    "vendu": "2026-06-10",
+    "release": 8325889
+   }
   },
   {
    "id": "a49a56a0-a11e-44a4-b042-031c1f46bdf7",
@@ -890,7 +1699,76 @@
    "a": "Fresh",
    "b": "Rollin'",
    "pos": null,
-   "pochette": "covers/a49a56a0-a11e-44a4-b042-031c1f46bdf7.jpg"
+   "pochette": "covers/a49a56a0-a11e-44a4-b042-031c1f46bdf7.webp",
+   "discogs": 1555475,
+   "prix": {
+    "bas": 0.63,
+    "moyen": 3.18,
+    "haut": 9.58,
+    "vendu": "2026-11-12",
+    "release": 1555475
+   }
+  },
+  {
+   "id": "bd2e53ec-b80a-4f34-963e-9d48551f7ec2",
+   "artiste": "Lagaf'",
+   "a": "La Zoubida",
+   "b": "La Zoubida \"Instrumental\"",
+   "pos": null,
+   "pochette": "covers/bd2e53ec-b80a-4f34-963e-9d48551f7ec2-mwqrnalz.webp",
+   "avecPochette": true,
+   "discogs": 972559,
+   "prix": {
+    "bas": 0.3,
+    "moyen": 1,
+    "haut": 4,
+    "vendu": "2026-02-04",
+    "release": 972559
+   }
+  },
+  {
+   "id": "36c25a43-fbec-48bb-a236-c04c56051dd9",
+   "artiste": "Laurent Voulzy",
+   "a": "Rockollection",
+   "b": "Rockollection",
+   "pos": null,
+   "pochette": "covers/36c25a43-fbec-48bb-a236-c04c56051dd9-mwqrqqwj.webp",
+   "avecPochette": true,
+   "discogs": 1485728,
+   "prix": {
+    "bas": 0.49,
+    "moyen": 2,
+    "haut": 8,
+    "vendu": "2025-12-16",
+    "release": 1485728
+   }
+  },
+  {
+   "id": "6d5ece82-cd20-477f-bf8b-c4c57e006b0d",
+   "artiste": "Les Capenoules",
+   "a": "Ch'Est Un Bon D'Mi / Polka Come Cha",
+   "b": "In R'Venant D'Marquette / Ch'Est Mi D'Siré",
+   "pos": null,
+   "pochette": "covers/6d5ece82-cd20-477f-bf8b-c4c57e006b0d-mwquwjm9.webp",
+   "avecPochette": true,
+   "discogs": 9051508,
+   "prix": {
+    "bas": 5,
+    "moyen": 5,
+    "haut": 5,
+    "vendu": "2017-10-04",
+    "release": 9051508
+   }
+  },
+  {
+   "id": "d0383439-0b33-4e0d-a8ea-a9f14e05c46f",
+   "artiste": "Les Capenoules Accompagnés par L'Orchestre De Jack Defer",
+   "a": "L'Bonnet D'Nu / Ah ! La Pourisse",
+   "b": "L'Planque à Pain / Pitche Et Mitche",
+   "pos": null,
+   "pochette": "covers/d0383439-0b33-4e0d-a8ea-a9f14e05c46f-mwquw4ek.webp",
+   "avecPochette": true,
+   "discogs": 7548242
   },
   {
    "id": "78f0b356-b843-4ec8-a354-f6ec974c6c4e",
@@ -898,7 +1776,7 @@
    "a": "Viens Boire Un P'tit Coup A La Maison",
    "b": "Viens Boire Un P'tit Coup A La Maison (Instru)",
    "pos": null,
-   "pochette": "covers/78f0b356-b843-4ec8-a354-f6ec974c6c4e.jpg"
+   "pochette": "covers/78f0b356-b843-4ec8-a354-f6ec974c6c4e.webp"
   },
   {
    "id": "837a5672-3da1-4e1c-add5-e58ac52caebc",
@@ -906,7 +1784,7 @@
    "a": "Auprès De Ma Blonde",
    "b": "Le Chant Du Départ",
    "pos": null,
-   "pochette": "covers/837a5672-3da1-4e1c-add5-e58ac52caebc.jpg"
+   "pochette": "covers/837a5672-3da1-4e1c-add5-e58ac52caebc.webp"
   },
   {
    "id": "fd45c2f4-e50f-47ab-91bf-0e5d33b1d56f",
@@ -914,7 +1792,15 @@
    "a": "Une Femme Avec Une Femme",
    "b": "Mujer Contra Mujer",
    "pos": null,
-   "pochette": "covers/fd45c2f4-e50f-47ab-91bf-0e5d33b1d56f.jpg"
+   "pochette": "covers/fd45c2f4-e50f-47ab-91bf-0e5d33b1d56f.webp",
+   "discogs": 663449,
+   "prix": {
+    "bas": 0.2,
+    "moyen": 2.25,
+    "haut": 9.95,
+    "vendu": "2026-08-22",
+    "release": 663449
+   }
   },
   {
    "id": "15002a5f-ed8e-4805-a01f-371db390b9db",
@@ -922,7 +1808,32 @@
    "a": "La Chanson De Nono",
    "b": "La Chanson De Nono (Instru)",
    "pos": null,
-   "pochette": "covers/15002a5f-ed8e-4805-a01f-371db390b9db.jpg"
+   "pochette": "covers/15002a5f-ed8e-4805-a01f-371db390b9db.webp",
+   "discogs": 757734,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 1.75,
+    "haut": 5,
+    "vendu": "2026-10-17",
+    "release": 757734
+   }
+  },
+  {
+   "id": "b2617c3b-b02e-40fa-b190-09b35f8e6add",
+   "artiste": "Opus",
+   "a": "Live Is Life",
+   "b": "Up And Down",
+   "pos": null,
+   "pochette": "covers/b2617c3b-b02e-40fa-b190-09b35f8e6add-mwquxuyd.webp",
+   "avecPochette": true,
+   "discogs": 673288,
+   "prix": {
+    "bas": 0.45,
+    "moyen": 2,
+    "haut": 4,
+    "vendu": "2026-11-20",
+    "release": 673288
+   }
   },
   {
    "id": "2ad730b5-137c-41e7-85b2-d1910c1668c0",
@@ -930,7 +1841,7 @@
    "a": "J'te L'dis Quand Même",
    "b": "Même Si On Est Fou",
    "pos": null,
-   "pochette": "covers/2ad730b5-137c-41e7-85b2-d1910c1668c0.jpg"
+   "pochette": "covers/2ad730b5-137c-41e7-85b2-d1910c1668c0.webp"
   },
   {
    "id": "d25a011b-d848-4d1d-8580-ee274cf7cc69",
@@ -938,8 +1849,16 @@
    "a": "Les Corons",
    "b": "Nos Jours Heureux",
    "pos": null,
-   "pochette": "covers/d25a011b-d848-4d1d-8580-ee274cf7cc69.jpg",
-   "avecPochette": true
+   "pochette": "covers/d25a011b-d848-4d1d-8580-ee274cf7cc69.webp",
+   "avecPochette": true,
+   "discogs": 648376,
+   "prix": {
+    "bas": 0.1,
+    "moyen": 1.48,
+    "haut": 7.92,
+    "vendu": "2026-10-09",
+    "release": 648376
+   }
   },
   {
    "id": "918b81f8-0765-4695-a8c1-72f7682d0dc7",
@@ -947,9 +1866,16 @@
    "a": "We Are The Champions",
    "b": "We Will Rock You",
    "pos": null,
-   "pochette": "covers/918b81f8-0765-4695-a8c1-72f7682d0dc7-mwqr9688.jpg",
+   "pochette": "covers/918b81f8-0765-4695-a8c1-72f7682d0dc7-mwqr9688.webp",
    "avecPochette": true,
-   "discogs": 4159617
+   "discogs": 4159617,
+   "prix": {
+    "bas": 0.8,
+    "moyen": 4.8,
+    "haut": 20,
+    "vendu": "2026-11-16",
+    "release": 4159617
+   }
   },
   {
    "id": "42312dbc-7f18-4a78-a393-38a9478a317c",
@@ -957,7 +1883,15 @@
    "a": "Good Bye, Elvis",
    "b": "Good Bye, Elvis (Instru)",
    "pos": null,
-   "pochette": "covers/42312dbc-7f18-4a78-a393-38a9478a317c.jpg"
+   "pochette": "covers/42312dbc-7f18-4a78-a393-38a9478a317c.webp",
+   "discogs": 660279,
+   "prix": {
+    "bas": 0.08,
+    "moyen": 0.32,
+    "haut": 2.2,
+    "vendu": "2026-04-21",
+    "release": 660279
+   }
   },
   {
    "id": "22bf11a7-f893-4777-8257-5c6abd21b177",
@@ -965,7 +1899,15 @@
    "a": "Goodbye Stranger",
    "b": "Even In The Quietest Moments",
    "pos": null,
-   "pochette": "covers/22bf11a7-f893-4777-8257-5c6abd21b177.jpg"
+   "pochette": "covers/22bf11a7-f893-4777-8257-5c6abd21b177.webp",
+   "discogs": 3259956,
+   "prix": {
+    "bas": 1.82,
+    "moyen": 5.27,
+    "haut": 27.3,
+    "vendu": "2026-09-30",
+    "release": 3259956
+   }
   },
   {
    "id": "8c63b252-c805-44cc-ac30-7a9085c4c5a0",
@@ -973,16 +1915,9 @@
    "a": "Rock And Rool Music",
    "b": "Donny's Blues",
    "pos": null,
-   "pochette": "covers/8c63b252-c805-44cc-ac30-7a9085c4c5a0.jpg",
-   "avecPochette": true
-  },
-  {
-   "id": "3ac466de-d7ea-4574-8a7f-843c19e32f9d",
-   "artiste": "The Holiday Bells",
-   "a": "Mon Beau Sapin",
-   "b": "Vive Le Vent D'hiver",
-   "pos": null,
-   "pochette": "covers/3ac466de-d7ea-4574-8a7f-843c19e32f9d.jpg"
+   "pochette": "covers/8c63b252-c805-44cc-ac30-7a9085c4c5a0.webp",
+   "avecPochette": true,
+   "discogs": 13302138
   },
   {
    "id": "25cfa028-522f-4959-ac7d-7b2df7265bf5",
@@ -990,8 +1925,16 @@
    "a": "Venus",
    "b": "Hot Sand",
    "pos": null,
-   "pochette": "covers/25cfa028-522f-4959-ac7d-7b2df7265bf5.jpg",
-   "avecPochette": true
+   "pochette": "covers/25cfa028-522f-4959-ac7d-7b2df7265bf5.webp",
+   "avecPochette": true,
+   "discogs": 901394,
+   "prix": {
+    "bas": 0.4,
+    "moyen": 3,
+    "haut": 7,
+    "vendu": "2026-11-05",
+    "release": 901394
+   }
   },
   {
    "id": "fed611ef-4280-4675-bdb0-bdff9218dabc",
@@ -999,7 +1942,16 @@
    "a": "To The Unknown Man (1)",
    "b": "To The Unknown Man (2)",
    "pos": null,
-   "pochette": "covers/fed611ef-4280-4675-bdb0-bdff9218dabc.jpg"
+   "pochette": "covers/fed611ef-4280-4675-bdb0-bdff9218dabc.webp",
+   "discogs": 4020893,
+   "prix": {
+    "bas": 3.18,
+    "moyen": 5.22,
+    "haut": 7.28,
+    "vendu": "2024-11-02",
+    "release": 4020893
+   }
   }
- ]
+ ],
+ "prixMaj": "2026-11-21"
 }

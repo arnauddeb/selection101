@@ -5219,6 +5219,13 @@
     "artiste": "Ray Parker Jr.",
     "a": "Ghostbusters",
     "b": "Ghostbusters (Instrumental)"
+   },
+   "prix": {
+    "bas": 0.5,
+    "moyen": 3,
+    "haut": 7,
+    "vendu": "2026-01-21",
+    "release": 8130818
    }
   },
   {
@@ -5481,6 +5488,13 @@
     "artiste": "ABBA",
     "a": "Chiquitita",
     "b": "Lovelight"
+   },
+   "prix": {
+    "bas": 0.49,
+    "moyen": 1.75,
+    "haut": 5.99,
+    "vendu": "2026-11-09",
+    "release": 983431
    }
   },
   {
@@ -5543,6 +5557,13 @@
     "artiste": "ABBA",
     "a": "Super Trouper",
     "b": "The Piper"
+   },
+   "prix": {
+    "bas": 0.2,
+    "moyen": 2.23,
+    "haut": 6.95,
+    "vendu": "2026-11-17",
+    "release": 596520
    }
   },
   {
@@ -5605,6 +5626,13 @@
     "artiste": "ABBA",
     "a": "Take A Chance On Me",
     "b": "I'm A Marionette"
+   },
+   "prix": {
+    "bas": 1,
+    "moyen": 2,
+    "haut": 15,
+    "vendu": "2026-11-14",
+    "release": 577327
    }
   },
   {
@@ -5809,6 +5837,13 @@
     "artiste": "Bee Gees",
     "a": "Night Fever",
     "b": "Down The Road"
+   },
+   "prix": {
+    "bas": 0.3,
+    "moyen": 1.95,
+    "haut": 10.51,
+    "vendu": "2026-11-19",
+    "release": 2744790
    }
   },
   {
@@ -6149,6 +6184,13 @@
     "artiste": "Boney M.",
     "a": "I See A Boat (On The River) / My Friend Jack",
     "b": ""
+   },
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1.25,
+    "haut": 4.86,
+    "vendu": "2026-11-06",
+    "release": 2900135
    }
   },
   {
@@ -6210,6 +6252,13 @@
     "artiste": "Boney M.",
     "a": "Malaika",
     "b": "Consuela Biaz"
+   },
+   "prix": {
+    "bas": 0.5,
+    "moyen": 1.5,
+    "haut": 2,
+    "vendu": "2025-10-03",
+    "release": 948272
    }
   },
   {
@@ -6269,6 +6318,13 @@
     "artiste": "Boney M.",
     "a": "Hooray! Hooray! It's A Holi-Holiday",
     "b": "Ribbons Of Blue"
+   },
+   "prix": {
+    "bas": 0.27,
+    "moyen": 0.6,
+    "haut": 7.18,
+    "vendu": "2026-10-04",
+    "release": 757398
    }
   },
   {
@@ -6334,6 +6390,13 @@
     "artiste": "Culture Club",
     "a": "Karma Chameleon",
     "b": "That's The Way"
+   },
+   "prix": {
+    "bas": 0.49,
+    "moyen": 1.9,
+    "haut": 3.99,
+    "vendu": "2026-11-11",
+    "release": 1176574
    }
   },
   {
@@ -6466,6 +6529,13 @@
     "artiste": "David Bowie",
     "a": "China Girl",
     "b": "Shake It (Re-Mix)"
+   },
+   "prix": {
+    "bas": 0.5,
+    "moyen": 3,
+    "haut": 19,
+    "vendu": "2026-11-11",
+    "release": 544861
    }
   },
   {
@@ -6599,6 +6669,13 @@
     "artiste": "Elsa",
     "a": "T'en Va Pas",
     "b": "T'en Va Pas (Instrumental)"
+   },
+   "prix": {
+    "bas": 0.29,
+    "moyen": 2.15,
+    "haut": 10.8,
+    "vendu": "2026-11-14",
+    "release": 705785
    }
   },
   {
@@ -6979,6 +7056,13 @@
     "artiste": "Gary Glitter",
     "a": "I Love You Love Me Love",
     "b": "Hands Up! It's A Stick Up"
+   },
+   "prix": {
+    "bas": 0.3,
+    "moyen": 1.13,
+    "haut": 20,
+    "vendu": "2025-01-24",
+    "release": 4904428
    }
   },
   {
@@ -7039,6 +7123,13 @@
     "artiste": "Gipsy Kings",
     "a": "Djobi, Djoba",
     "b": "Allegria"
+   },
+   "prix": {
+    "bas": 0.5,
+    "moyen": 2,
+    "haut": 5,
+    "vendu": "2026-11-09",
+    "release": 1013663
    }
   },
   {
@@ -7369,6 +7460,13 @@
     "artiste": "John Travolta",
     "a": "Greased Lightnin'",
     "b": "Back Doors Crying"
+   },
+   "prix": {
+    "bas": 0.3,
+    "moyen": 1.99,
+    "haut": 6,
+    "vendu": "2026-11-02",
+    "release": 1391655
    }
   },
   {
@@ -7426,6 +7524,13 @@
     "artiste": "John Travolta, Olivia Newton-John",
     "a": "Summer Nights",
     "b": "Rock 'n' Roll Party Queen"
+   },
+   "prix": {
+    "bas": 0.3,
+    "moyen": 2,
+    "haut": 5,
+    "vendu": "2026-08-17",
+    "release": 590897
    }
   },
   {
@@ -7866,6 +7971,13 @@
     "artiste": "Paul McCartney & Michael Jackson",
     "a": "Say Say Say",
     "b": "Ode To A Koala Bear"
+   },
+   "prix": {
+    "bas": 0.6,
+    "moyen": 3,
+    "haut": 10,
+    "vendu": "2026-10-23",
+    "release": 577310
    }
   },
   {
@@ -8059,6 +8171,13 @@
     "artiste": "Scorpions",
     "a": "Wind Of Change",
     "b": "Tease Me Please Me"
+   },
+   "prix": {
+    "bas": 0.8,
+    "moyen": 3,
+    "haut": 5.9,
+    "vendu": "2026-11-12",
+    "release": 2611235
    }
   },
   {
@@ -8311,6 +8430,13 @@
     "artiste": "Village People",
     "a": "Y.M.C.A.",
     "b": "The Women"
+   },
+   "prix": {
+    "bas": 0.29,
+    "moyen": 2,
+    "haut": 10.17,
+    "vendu": "2026-11-10",
+    "release": 410179
    }
   }
  ],

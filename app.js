@@ -304,8 +304,9 @@ function pastilleDiscogs(synchronise) {
     <svg viewBox="0 0 24 24" aria-hidden="true">${dessin}</svg>
   </span>`;
 }
-const symboleVinyle = `<span class="vinyle-seul" aria-hidden="true">
-  <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><path d="M7 16a9 9 0 0 1 9-9m0 18a9 9 0 0 0 9-9"/><circle cx="16" cy="16" r="4"/><path d="M16 16h.01"/></svg>
+// Sans pochette physique : croix en filigrane sur toute l'image.
+const symboleVinyle = `<span class="croix-sans-pochette" aria-hidden="true">
+  <svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0L100 100M100 0L0 100"/></svg>
 </span>`;
 // Disque pointé lors de l'inventaire : badge bleu dans un coin de la pochette.
 const badgePointe = (v) => inventaireCharge && estPointe(v)
@@ -321,7 +322,7 @@ function carte(v) {
   const selB = v.pos ? JUKEBOX.selectionB(v.pos) : "B";
   return `<button class="disque" data-id="${esc(v.id)}" ${attrAction(v)}>
     <div class="pochette${v.avecPochette ? "" : " sans-pochette-physique"}">
-      ${img}${num}${pastilleDiscogs(v.discogs)}${badgePointe(v)}${prixCarte(v.prix)}${v.avecPochette ? "" : symboleVinyle}
+      ${img}${v.avecPochette ? "" : symboleVinyle}${num}${pastilleDiscogs(v.discogs)}${badgePointe(v)}${prixCarte(v.prix)}
     </div>
     <div class="infos">
       <span class="artiste">${esc(v.artiste)}</span>
@@ -548,7 +549,7 @@ function itemCarrousel(v) {
     ? `<p class="cf-prix"><span>${v.prix.source === "conseil" ? "Prix conseillés Discogs" : "Ventes Discogs"} · bas · moyen · haut</span><strong>${prixTexte(v.prix)}</strong></p>` : "";
   return `<div class="cf-item" data-id="${esc(v.id)}"><div class="cf-carte">
     <div class="cf-face cf-recto pochette">
-      ${img}<span class="num${v.pos ? "" : " reserve"}">${v.pos || "Réserve"}</span>${badgePointe(v)}${v.avecPochette ? "" : symboleVinyle}
+      ${img}${v.avecPochette ? "" : symboleVinyle}<span class="num${v.pos ? "" : " reserve"}">${v.pos || "Réserve"}</span>${badgePointe(v)}
     </div>
     <div class="cf-face cf-verso">
       <span class="cf-pos">${v.pos ? `N° ${v.pos}` : "Réserve"}</span>

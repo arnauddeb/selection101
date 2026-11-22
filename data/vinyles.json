@@ -1172,48 +1172,42 @@
    "b": "Burnin' Up",
    "pos": "23",
    "pochette": "covers/d7fd4026-62ce-43b7-8536-074c14838049.webp",
-   "discogs": 3482525,
-   "prix": {
-    "bas": 0.99,
-    "moyen": 1.95,
-    "haut": 6
-   },
+   "discogs": 1121777,
    "infos": {
-    "label": "Red Bus Records",
-    "catno": "02.2975/2",
-    "pays": "Spain",
-    "annee": 1981,
+    "label": "Ariola",
+    "catno": "600 631",
+    "pays": "Europe",
+    "annee": 1982,
     "genres": [
-     "Electronic"
+     "Electronic",
+     "Funk / Soul"
     ],
     "styles": [
-     "Downtempo",
-     "Disco"
+     "Boogie"
     ],
     "auteurs": [
-     "Ashley Ingram",
-     "Leee John",
+     "Imagination",
      "Steve Jolley & Tony Swain"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Body Talk",
-      "duree": "3:35",
+      "titre": "Flashback",
+      "duree": "4:30",
       "auteurs": []
      },
      {
       "position": "B",
-      "titre": "Flashback",
-      "duree": "4:20",
+      "titre": "Burnin' Up",
+      "duree": "4:44",
       "auteurs": []
      }
     ]
    },
    "titresDiscogs": {
     "artiste": "Imagination",
-    "a": "Body Talk",
-    "b": "Flashback"
+    "a": "Flashback",
+    "b": "Burnin' Up"
    }
   },
   {
@@ -1316,10 +1310,10 @@
    "b": "Au Milieu De Nulle Part",
    "pos": "26",
    "pochette": "covers/76dfb488-fd62-477c-8fd6-77316a890a3c.webp",
-   "discogs": 38170992,
+   "discogs": 665901,
    "infos": {
     "label": "Trema",
-    "catno": "150186",
+    "catno": "410 348",
     "pays": "France",
     "annee": 1986,
     "genres": [
@@ -1341,8 +1335,8 @@
      },
      {
       "position": "B",
-      "titre": "Assis Dans L'Eau",
-      "duree": "3:54",
+      "titre": "Au Milieu De Nulle Part",
+      "duree": "3:59",
       "auteurs": [
        "Catherine Lara",
        "Luc Plamondon",
@@ -1354,7 +1348,7 @@
    "titresDiscogs": {
     "artiste": "Catherine Lara",
     "a": "Nuit Magique",
-    "b": "Assis Dans L'Eau"
+    "b": "Au Milieu De Nulle Part"
    }
   },
   {
@@ -2947,44 +2941,45 @@
    "b": "Ton Blues",
    "pos": "56",
    "pochette": "covers/eaa80021-0b42-4c84-a2ae-0ab9ddcdab5d.webp",
-   "discogs": 9009513,
-   "prix": {
-    "bas": 0.5,
-    "moyen": 1,
-    "haut": 3
-   },
+   "discogs": 651172,
    "infos": {
-    "label": "Les Editions Productions Georges Mary",
-    "catno": "74321132067",
+    "label": "Ariola",
+    "catno": "112 628",
     "pays": "France",
-    "annee": 1993,
+    "annee": 1989,
     "genres": [
      "Pop"
+    ],
+    "styles": [
+     "Chanson"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "L'Idole",
-      "duree": "4:19",
+      "titre": "Hélène",
+      "duree": "3:42",
       "auteurs": [
-       "Roch Voisine"
+       "Roch Voisine",
+       "Stéphane Lessard"
       ]
      },
      {
       "position": "B",
-      "titre": "Hélène (Live)",
-      "duree": "6:24",
+      "titre": "Ton Blues",
+      "duree": "3:35",
       "auteurs": [
+       "Marc Voisine",
+       "Marcel Lefebvre",
        "Roch Voisine",
-       "Stéphane Lessard"
+       "Nando Speranza"
       ]
      }
     ]
    },
    "titresDiscogs": {
     "artiste": "Roch Voisine",
-    "a": "L'Idole",
-    "b": "Hélène (Live)"
+    "a": "Hélène",
+    "b": "Ton Blues"
    }
   },
   {
@@ -3101,36 +3096,45 @@
    "b": "One Of These Nights",
    "pos": "59",
    "pochette": "covers/e24758a6-fcd7-4432-84c6-dc0bf5cda673.webp",
-   "discogs": 10649124,
+   "discogs": 744158,
    "infos": {
     "label": "Asylum Records",
-    "catno": "13 084",
-    "pays": "France",
+    "catno": "AS 13.197",
+    "pays": "Benelux",
+    "annee": 1983,
     "genres": [
      "Rock"
     ],
     "styles": [
-     "Classic Rock"
+     "Classic Rock",
+     "Country Rock"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "Hotel California",
-      "duree": "6:30",
-      "auteurs": []
+      "duree": "",
+      "auteurs": [
+       "Don Felder",
+       "Don Henley",
+       "Glenn Frey"
+      ]
      },
      {
       "position": "B",
-      "titre": "New Kid In Town",
-      "duree": "3:51",
-      "auteurs": []
+      "titre": "One Of These Nights",
+      "duree": "",
+      "auteurs": [
+       "Don Henley",
+       "Glenn Frey"
+      ]
      }
     ]
    },
    "titresDiscogs": {
     "artiste": "Eagles",
     "a": "Hotel California",
-    "b": "New Kid In Town"
+    "b": "One Of These Nights"
    }
   },
   {
@@ -3232,44 +3236,41 @@
    "b": "Rocket Love",
    "pos": "62",
    "pochette": "covers/80100cef-6088-472b-a79e-0836f0d34f7b.webp",
-   "discogs": 11109138,
-   "prix": {
-    "bas": 6.5,
-    "moyen": 6.75,
-    "haut": 7
-   },
+   "discogs": 4079965,
    "infos": {
     "label": "Motown",
-    "catno": "ESP-589",
-    "pays": "Spain",
+    "catno": "101658",
+    "pays": "France",
     "annee": 1982,
     "genres": [
      "Funk / Soul"
     ],
     "styles": [
-     "Rhythm & Blues",
      "Soul",
      "Disco"
+    ],
+    "auteurs": [
+     "Stevie Wonder"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Do I Do = ¿Lo Hago?",
-      "duree": "4:14",
+      "titre": "Do I Do",
+      "duree": "4:56",
       "auteurs": []
      },
      {
       "position": "B",
-      "titre": "Do I Do = ¿Lo Hago? Parte 2",
-      "duree": "4:52",
+      "titre": "Rocket Love",
+      "duree": "4:39",
       "auteurs": []
      }
     ]
    },
    "titresDiscogs": {
     "artiste": "Stevie Wonder",
-    "a": "Do I Do = ¿Lo Hago?",
-    "b": "Do I Do = ¿Lo Hago? Parte 2"
+    "a": "Do I Do",
+    "b": "Rocket Love"
    }
   },
   {
@@ -3494,17 +3495,12 @@
   {
    "id": "49f4474a-cb0a-4dc7-88af-9ebb543de60a",
    "artiste": "Joan Jett & The Blackhearts",
-   "a": "I Love Rock'n Roll",
+   "a": "I Love Rock 'N Roll",
    "b": "Love Is Pain",
    "pos": "68",
    "pochette": "covers/49f4474a-cb0a-4dc7-88af-9ebb543de60a.webp",
    "avecPochette": true,
-   "discogs": 5140915,
-   "prix": {
-    "bas": 0.5,
-    "moyen": 2.87,
-    "haut": 30
-   },
+   "discogs": 389998,
    "infos": {
     "label": "The Boardwalk Entertainment Co",
     "catno": "101616",

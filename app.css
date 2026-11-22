@@ -227,7 +227,7 @@ main {
   -webkit-backdrop-filter: blur(12px) saturate(160%); backdrop-filter: blur(12px) saturate(160%);
 }
 .num.reserve { font-weight: 600; font-size: 13px; }
-.pastille-discogs, .vinyle-seul {
+.pastille-discogs {
   position: absolute; right: 8px;
   display: grid; place-items: center;
   border: 2px solid #fff; border-radius: 50%;
@@ -237,9 +237,13 @@ main {
 .pastille-discogs { top: 8px; width: 26px; height: 26px; }
 .pastille-discogs.actif { background: #187344; }
 .pastille-discogs svg { width: 15px; height: 15px; }
-.vinyle-seul { bottom: 8px; width: 40px; height: 40px; }
-.vinyle-seul svg { width: 30px; height: 30px; stroke-width: 1.5; }
-.sans-pochette-physique .prix-disque { max-width: calc(100% - 62px); }
+/* Sans pochette physique : croix fine en filigrane, d'un coin à l'autre. */
+.croix-sans-pochette { position: absolute; inset: 0; pointer-events: none; border-radius: inherit; overflow: hidden; }
+.croix-sans-pochette svg { width: 100%; height: 100%; display: block; }
+.croix-sans-pochette path {
+  fill: none; stroke: rgba(255, 255, 255, .6); stroke-width: 2.5px; stroke-linecap: round;
+  vector-effect: non-scaling-stroke; filter: drop-shadow(0 0 1.5px rgba(0, 0, 0, .55));
+}
 /* Disque pointé (inventaire) : badge bleu à côté de la pastille Discogs */
 .badge-pointe {
   position: absolute; top: 8px; right: 40px; width: 26px; height: 26px;
@@ -601,8 +605,7 @@ textarea { height: auto; padding: 10px 12px; resize: vertical; line-height: 1.45
 .col-prix b { color: var(--ink); font-weight: 700; }
 .vignette { position: relative; width: 44px; height: 44px; border-radius: 6px; background: var(--champ); }
 .vignette img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block; }
-.vignette .vinyle-seul { right: -5px; bottom: -5px; width: 21px; height: 21px; border-width: 1.5px; }
-.vignette .vinyle-seul svg { width: 15px; height: 15px; }
+.vignette .croix-sans-pochette path { stroke-width: 1.5px; }
 .vignette .badge-pointe { top: -5px; right: -5px; width: 19px; height: 19px; border-width: 1.5px; }
 .vignette .badge-pointe svg { width: 11px; height: 11px; }
 .ligne.libre { color: var(--faible); }

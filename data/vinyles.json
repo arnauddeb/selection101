@@ -14,18 +14,11 @@
     "bas": 0.3,
     "moyen": 2,
     "haut": 9.99,
-    "vendu": "2026-11-19",
-    "release": 500696
+    "vendu": "2026-11-19"
    },
    "infos": {
     "label": "Columbia",
     "catno": "1733207",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1986,
     "genres": [
@@ -38,7 +31,6 @@
     "arrangeurs": [
      "Romano Musumarra"
     ],
-    "enVente": 89,
     "pistes": [
      {
       "position": "A",
@@ -62,9 +54,8 @@
       ]
      }
     ],
-    "have": 1785,
     "want": 45,
-    "note": 4,
+    "note": 4.0,
     "votes": 87
    },
    "titresDiscogs": {
@@ -75,11 +66,57 @@
   },
   {
    "id": "47586168-4834-4882-860a-eea4091bc4c1",
-   "artiste": "Cindy Lauper",
-   "a": "Girls Just Want to Have Fun",
+   "artiste": "Cyndi Lauper",
+   "a": "Girls Just Want To Have Fun",
    "b": "Right Track Wrong Train",
    "pos": "01",
-   "pochette": "covers/47586168-4834-4882-860a-eea4091bc4c1.webp"
+   "pochette": "covers/47586168-4834-4882-860a-eea4091bc4c1.webp",
+   "discogs": 4526830,
+   "infos": {
+    "label": "Portrait",
+    "catno": "A 3943",
+    "pays": "France",
+    "annee": 1983,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Synth-pop"
+    ],
+    "producteurs": [
+     "Lennie Petze",
+     "Rick Chertoff"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Girls Just Want To Have Fun",
+      "duree": "3:55",
+      "auteurs": [
+       "Robert Hazard"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Right Track Wrong Train",
+      "duree": "4:40",
+      "auteurs": [
+       "Cyndi Lauper",
+       "Ellie Greenwich",
+       "Jeff Kent"
+      ]
+     }
+    ],
+    "want": 118,
+    "note": 4.38,
+    "votes": 32
+   },
+   "titresDiscogs": {
+    "artiste": "Cyndi Lauper",
+    "a": "Girls Just Want To Have Fun",
+    "b": "Right Track Wrong Train"
+   }
   },
   {
    "id": "f4630491-93f0-4ee9-b99e-b21164941517",
@@ -93,17 +130,11 @@
     "bas": 4.99,
     "moyen": 8,
     "haut": 20,
-    "vendu": "2026-09-27",
-    "release": 1119898
+    "vendu": "2026-09-27"
    },
    "infos": {
     "label": "Mercury",
     "catno": "880 659-1",
-    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
-    "formats": [
-     "12\"",
-     "Maxi-Single"
-    ],
     "pays": "France",
     "annee": 1985,
     "genres": [
@@ -117,7 +148,6 @@
     "producteurs": [
      "Chris Hughes"
     ],
-    "enVente": 6,
     "pistes": [
      {
       "position": "A",
@@ -151,7 +181,6 @@
       ]
      }
     ],
-    "have": 489,
     "want": 363,
     "note": 4.44,
     "votes": 34
@@ -164,9 +193,9 @@
   },
   {
    "id": "3036aaae-3edd-423b-8d54-c5904c3e0567",
-   "artiste": "The Temptations",
+   "artiste": "Temptations, The",
    "a": "My Girl",
-   "b": "Theme From My Girl",
+   "b": "My Girl",
    "pos": "03",
    "pochette": "covers/3036aaae-3edd-423b-8d54-c5904c3e0567.webp",
    "avecPochette": true,
@@ -175,23 +204,16 @@
     "bas": 29.93,
     "moyen": 29.93,
     "haut": 29.93,
-    "vendu": "2014-05-01",
-    "release": 4506646
+    "vendu": "2014-05-01"
    },
    "infos": {
     "label": "Motown",
     "catno": "Anchor 1",
-    "format": "Vinyl, 12\", 45 RPM, Promo",
-    "formats": [
-     "12\"",
-     "Promo"
-    ],
     "pays": "UK",
     "annee": 1994,
     "genres": [
      "Pop"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -206,9 +228,8 @@
       "auteurs": []
      }
     ],
-    "have": 1,
     "want": 11,
-    "note": 1,
+    "note": 1.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -230,17 +251,11 @@
     "bas": 1.09,
     "moyen": 3.59,
     "haut": 4,
-    "vendu": "2026-06-16",
-    "release": 9382130
+    "vendu": "2026-06-16"
    },
    "infos": {
     "label": "Freestyle Records",
     "catno": "FRS 3",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1990,
     "genres": [
@@ -254,7 +269,6 @@
     "producteurs": [
      "Frederick Knight"
     ],
-    "enVente": 7,
     "pistes": [
      {
       "position": "Side 1",
@@ -269,9 +283,8 @@
       "auteurs": []
      }
     ],
-    "have": 28,
     "want": 21,
-    "note": 5,
+    "note": 5.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -293,17 +306,11 @@
     "bas": 0.4,
     "moyen": 1.35,
     "haut": 5,
-    "vendu": "2026-02-14",
-    "release": 701427
+    "vendu": "2026-02-14"
    },
    "infos": {
     "label": "CBS",
     "catno": "5006",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1970,
     "genres": [
@@ -312,7 +319,6 @@
     "styles": [
      "Chanson"
     ],
-    "enVente": 26,
     "pistes": [
      {
       "position": "A",
@@ -333,7 +339,6 @@
       ]
      }
     ],
-    "have": 956,
     "want": 18,
     "note": 4.17,
     "votes": 41
@@ -357,18 +362,11 @@
     "bas": 6.99,
     "moyen": 25,
     "haut": 90,
-    "vendu": "2026-05-11",
-    "release": 6961179
+    "vendu": "2026-05-11"
    },
    "infos": {
     "label": "Polydor",
     "catno": "0381",
-    "format": "Vinyl, 12\", 45 RPM, Maxi-Single, Promo",
-    "formats": [
-     "12\"",
-     "Maxi-Single",
-     "Promo"
-    ],
     "pays": "France",
     "annee": 2002,
     "genres": [
@@ -377,7 +375,6 @@
     "styles": [
      "Disco"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A",
@@ -398,7 +395,6 @@
       "auteurs": []
      }
     ],
-    "have": 43,
     "want": 176,
     "note": 4.57,
     "votes": 7
@@ -422,16 +418,11 @@
     "bas": 1,
     "moyen": 3.44,
     "haut": 8.99,
-    "vendu": "2026-03-16",
-    "release": 14448162
+    "vendu": "2026-03-16"
    },
    "infos": {
     "label": "EMI France",
     "catno": "2043737",
-    "format": "Vinyl, 7\", 45 RPM",
-    "formats": [
-     "7\""
-    ],
     "pays": "France",
     "annee": 1991,
     "genres": [
@@ -442,7 +433,6 @@
     "styles": [
      "Surf"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -457,9 +447,8 @@
       "auteurs": []
      }
     ],
-    "have": 14,
     "want": 14,
-    "note": 4,
+    "note": 4.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -480,17 +469,11 @@
     "bas": 1.6,
     "moyen": 2.3,
     "haut": 3,
-    "vendu": "2024-11-06",
-    "release": 24084461
+    "vendu": "2024-11-06"
    },
    "infos": {
     "label": "Epic",
     "catno": "656673 7",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1991,
     "genres": [
@@ -506,7 +489,6 @@
     "producteurs": [
      "Peter Asher"
     ],
-    "enVente": 2,
     "pistes": [
      {
       "position": "A",
@@ -525,9 +507,8 @@
       ]
      }
     ],
-    "have": 114,
     "want": 21,
-    "note": 3,
+    "note": 3.0,
     "votes": 2
    },
    "titresDiscogs": {
@@ -548,17 +529,10 @@
     "bas": 1.82,
     "moyen": 7.26,
     "haut": 15.28,
-    "vendu": "2026-10-22",
-    "release": 2587952
+    "vendu": "2026-10-22"
    },
    "infos": {
     "label": "Not On Label (Phil Collins)",
-    "format": "Vinyl, 12\", 33 ⅓ RPM, 45 RPM, Unofficial Release, White Label",
-    "formats": [
-     "12\"",
-     "Unofficial Release",
-     "White Label"
-    ],
     "pays": "US",
     "genres": [
      "Electronic"
@@ -568,7 +542,6 @@
      "Tech House",
      "House"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -589,7 +562,6 @@
       "auteurs": []
      }
     ],
-    "have": 41,
     "want": 48,
     "note": 4.25,
     "votes": 4
@@ -612,17 +584,11 @@
     "bas": 12.09,
     "moyen": 12.09,
     "haut": 12.09,
-    "vendu": "2018-03-31",
-    "release": 6212552
+    "vendu": "2018-03-31"
    },
    "infos": {
     "label": "Capitol Records",
     "catno": "4091",
-    "format": "Vinyl, 7\", 45 RPM, Test Pressing",
-    "formats": [
-     "7\"",
-     "Test Pressing"
-    ],
     "pays": "US",
     "annee": 1975,
     "genres": [
@@ -637,7 +603,6 @@
     "producteurs": [
      "Paul McCartney"
     ],
-    "enVente": 1,
     "pistes": [
      {
       "position": "A",
@@ -652,7 +617,6 @@
       "auteurs": []
      }
     ],
-    "have": 9,
     "want": 36
    },
    "titresDiscogs": {
@@ -673,18 +637,11 @@
     "bas": 2.5,
     "moyen": 5,
     "haut": 9.99,
-    "vendu": "2026-10-06",
-    "release": 562721
+    "vendu": "2026-10-06"
    },
    "infos": {
     "label": "Mercury",
     "catno": "874 150-7",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "Europe",
     "annee": 1989,
     "genres": [
@@ -701,7 +658,6 @@
     "producteurs": [
      "Chris Thomas"
     ],
-    "enVente": 17,
     "pistes": [
      {
       "position": "A",
@@ -716,7 +672,6 @@
       "auteurs": []
      }
     ],
-    "have": 506,
     "want": 78,
     "note": 4.29,
     "votes": 28
@@ -740,17 +695,11 @@
     "bas": 0.5,
     "moyen": 1.27,
     "haut": 4.75,
-    "vendu": "2026-04-12",
-    "release": 4109992
+    "vendu": "2026-04-12"
    },
    "infos": {
     "label": "CBS",
     "catno": "A-2927",
-    "format": "Vinyl, 7\", Single, 45 RPM",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1983,
     "genres": [
@@ -760,7 +709,6 @@
     "producteurs": [
      "Maurice White"
     ],
-    "enVente": 33,
     "pistes": [
      {
       "position": "A",
@@ -781,7 +729,6 @@
       ]
      }
     ],
-    "have": 438,
     "want": 15,
     "note": 3.76,
     "votes": 21
@@ -805,17 +752,11 @@
     "bas": 2,
     "moyen": 5.51,
     "haut": 12.5,
-    "vendu": "2025-12-28",
-    "release": 6381365
+    "vendu": "2025-12-28"
    },
    "infos": {
     "label": "Vogue",
     "catno": "45. X. 140.316",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1977,
     "genres": [
@@ -832,7 +773,6 @@
     "producteurs": [
      "Lou Deprijck"
     ],
-    "enVente": 14,
     "pistes": [
      {
       "position": "A",
@@ -847,7 +787,6 @@
       "auteurs": []
      }
     ],
-    "have": 361,
     "want": 166,
     "note": 4.36,
     "votes": 25
@@ -871,18 +810,11 @@
     "bas": 45,
     "moyen": 47,
     "haut": 49,
-    "vendu": "2021-10-22",
-    "release": 10497283
+    "vendu": "2021-10-22"
    },
    "infos": {
     "label": "Columbia",
     "catno": "657969 6",
-    "format": "Vinyl, 12\", 45 RPM, Maxi-Single, Stereo",
-    "formats": [
-     "12\"",
-     "Maxi-Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1992,
     "genres": [
@@ -891,7 +823,6 @@
     "styles": [
      "Chanson"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -912,9 +843,8 @@
       "auteurs": []
      }
     ],
-    "have": 26,
     "want": 42,
-    "note": 4,
+    "note": 4.0,
     "votes": 4
    },
    "titresDiscogs": {
@@ -935,17 +865,11 @@
     "bas": 0.5,
     "moyen": 2.46,
     "haut": 4.8,
-    "vendu": "2026-09-25",
-    "release": 3403785
+    "vendu": "2026-09-25"
    },
    "infos": {
     "label": "CBS",
     "catno": "655011 7",
-    "format": "Vinyl, 7\", Single, 45 RPM",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1989,
     "genres": [
@@ -960,7 +884,6 @@
     "producteurs": [
      "Jean-Claude Bonaventure"
     ],
-    "enVente": 19,
     "pistes": [
      {
       "position": "A",
@@ -975,7 +898,6 @@
       "auteurs": []
      }
     ],
-    "have": 327,
     "want": 60,
     "note": 3.53,
     "votes": 30
@@ -998,17 +920,11 @@
     "bas": 0.5,
     "moyen": 1.13,
     "haut": 2.99,
-    "vendu": "2025-07-25",
-    "release": 9374696
+    "vendu": "2025-07-25"
    },
    "infos": {
     "label": "Epic",
     "catno": "EPC A 4821",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1984,
     "genres": [
@@ -1024,7 +940,6 @@
      "Jean-Jacques Goldman",
      "Marc Lumbroso"
     ],
-    "enVente": 6,
     "pistes": [
      {
       "position": "A",
@@ -1039,7 +954,6 @@
       "auteurs": []
      }
     ],
-    "have": 335,
     "want": 12,
     "note": 4.25,
     "votes": 12
@@ -1063,18 +977,11 @@
     "bas": 1,
     "moyen": 2.75,
     "haut": 3,
-    "vendu": "2026-09-29",
-    "release": 2827909
+    "vendu": "2026-09-29"
    },
    "infos": {
     "label": "Polydor",
     "catno": "421 463",
-    "format": "Vinyl, 7\", 45 RPM, Single, Mono",
-    "formats": [
-     "7\"",
-     "Single",
-     "Mono"
-    ],
     "pays": "France",
     "annee": 1969,
     "genres": [
@@ -1091,7 +998,6 @@
      "Bee Gees",
      "Robert Stigwood"
     ],
-    "enVente": 12,
     "pistes": [
      {
       "position": "A",
@@ -1106,9 +1012,8 @@
       "auteurs": []
      }
     ],
-    "have": 130,
     "want": 17,
-    "note": 3,
+    "note": 3.0,
     "votes": 5
    },
    "titresDiscogs": {
@@ -1129,12 +1034,6 @@
    "infos": {
     "label": "Opus",
     "catno": "90 43 0193",
-    "format": "Vinyl, 7\", 45 RPM, Repress, Mono",
-    "formats": [
-     "7\"",
-     "Repress",
-     "Mono"
-    ],
     "pays": "Czechoslovakia",
     "annee": 1973,
     "genres": [
@@ -1148,7 +1047,6 @@
      "Harold Stott",
      "Mario Capuano"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A",
@@ -1163,7 +1061,6 @@
       "auteurs": []
      }
     ],
-    "have": 10,
     "want": 3
    },
    "titresDiscogs": {
@@ -1176,9 +1073,53 @@
    "id": "7e43b25e-57b1-4850-8281-c7aaba8192ff",
    "artiste": "Wham!",
    "a": "Freedom",
-   "b": "Freedom (Instru)",
+   "b": "Freedom (Instrumental)",
    "pos": "19",
-   "pochette": "covers/7e43b25e-57b1-4850-8281-c7aaba8192ff.webp"
+   "pochette": "covers/7e43b25e-57b1-4850-8281-c7aaba8192ff.webp",
+   "discogs": 390259,
+   "infos": {
+    "label": "Epic",
+    "catno": "EPCA 4743",
+    "pays": "Europe",
+    "annee": 1984,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Europop"
+    ],
+    "auteurs": [
+     "George Michael"
+    ],
+    "producteurs": [
+     "George Michael"
+    ],
+    "arrangeurs": [
+     "George Michael"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Freedom",
+      "duree": "4:59",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Freedom (Instrumental)",
+      "duree": "5:10",
+      "auteurs": []
+     }
+    ],
+    "want": 102,
+    "note": 3.81,
+    "votes": 196
+   },
+   "titresDiscogs": {
+    "artiste": "Wham!",
+    "a": "Freedom",
+    "b": "Freedom (Instrumental)"
+   }
   },
   {
    "id": "cf57cbe3-1df0-4e19-9a50-fd3dd8395fed",
@@ -1191,11 +1132,6 @@
    "infos": {
     "label": "EMI",
     "catno": "2C 008-14.758",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1979,
     "genres": [
@@ -1214,7 +1150,6 @@
     "arrangeurs": [
      "Baciotti"
     ],
-    "enVente": 11,
     "pistes": [
      {
       "position": "A",
@@ -1231,9 +1166,8 @@
       ]
      }
     ],
-    "have": 26,
     "want": 1,
-    "note": 4,
+    "note": 4.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -1255,20 +1189,11 @@
     "bas": 4.55,
     "moyen": 10.69,
     "haut": 22.75,
-    "vendu": "2026-09-20",
-    "release": 1872611
+    "vendu": "2026-09-20"
    },
    "infos": {
     "label": "ARC",
     "catno": "3-10854",
-    "format": "Vinyl, 7\", 45 RPM, Single, Promo, Stereo, Mono",
-    "formats": [
-     "7\"",
-     "Single",
-     "Promo",
-     "Stereo",
-     "Mono"
-    ],
     "pays": "US",
     "annee": 1978,
     "genres": [
@@ -1289,7 +1214,6 @@
     "arrangeurs": [
      "TOM TOM 84"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A",
@@ -1304,7 +1228,6 @@
       "auteurs": []
      }
     ],
-    "have": 76,
     "want": 284,
     "note": 4.5,
     "votes": 4
@@ -1327,17 +1250,11 @@
    "infos": {
     "label": "CBS",
     "catno": "CSR 1066",
-    "format": "Vinyl, 7\", Promo",
-    "formats": [
-     "7\"",
-     "Promo"
-    ],
     "pays": "Peru",
     "annee": 1979,
     "genres": [
      "Funk / Soul"
     ],
-    "enVente": 2,
     "pistes": [
      {
       "position": "A",
@@ -1352,7 +1269,6 @@
       "auteurs": []
      }
     ],
-    "have": 0,
     "want": 33
    },
    "titresDiscogs": {
@@ -1373,17 +1289,11 @@
     "bas": 0.99,
     "moyen": 1.95,
     "haut": 6,
-    "vendu": "2026-09-21",
-    "release": 3482525
+    "vendu": "2026-09-21"
    },
    "infos": {
     "label": "Red Bus Records",
     "catno": "02.2975/2",
-    "format": "Vinyl, 7\", Single, 45 RPM",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "Spain",
     "annee": 1981,
     "genres": [
@@ -1404,7 +1314,6 @@
     "arrangeurs": [
      "Steve Jolley & Tony Swain"
     ],
-    "enVente": 7,
     "pistes": [
      {
       "position": "A",
@@ -1419,9 +1328,8 @@
       "auteurs": []
      }
     ],
-    "have": 26,
     "want": 25,
-    "note": 5,
+    "note": 5.0,
     "votes": 2
    },
    "titresDiscogs": {
@@ -1434,9 +1342,58 @@
    "id": "c9db2c79-07c8-4f8b-9c22-337f15b76011",
    "artiste": "Chemise",
    "a": "She Can't Love You",
-   "b": "She Can't Love You (Instru)",
+   "b": "She Can't Love You (Instrumental)",
    "pos": "24",
-   "pochette": "covers/c9db2c79-07c8-4f8b-9c22-337f15b76011.webp"
+   "pochette": "covers/c9db2c79-07c8-4f8b-9c22-337f15b76011.webp",
+   "discogs": 648897,
+   "infos": {
+    "label": "Philips",
+    "catno": "6400 724",
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Electronic",
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco",
+     "Boogie"
+    ],
+    "auteurs": [
+     "Ricki Byars Muldrow",
+     "Ronald Muldrow"
+    ],
+    "producteurs": [
+     "Ricki Byars Muldrow",
+     "Ronald Muldrow"
+    ],
+    "arrangeurs": [
+     "Ricki Byars Muldrow",
+     "Ronald Muldrow"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "She Can't Love You",
+      "duree": "5:25",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "She Can't Love You (Instrumental)",
+      "duree": "5:25",
+      "auteurs": []
+     }
+    ],
+    "want": 1501,
+    "note": 4.7,
+    "votes": 81
+   },
+   "titresDiscogs": {
+    "artiste": "Chemise",
+    "a": "She Can't Love You",
+    "b": "She Can't Love You (Instrumental)"
+   }
   },
   {
    "id": "d412e6c9-0204-4045-81c7-d65ac616bfa9",
@@ -1450,26 +1407,16 @@
     "bas": 18.2,
     "moyen": 30.14,
     "haut": 38.92,
-    "vendu": "2025-07-05",
-    "release": 8508328
+    "vendu": "2025-07-05"
    },
    "infos": {
     "label": "Capitol Records",
     "catno": "4145",
-    "format": "Vinyl, 7\", 45 RPM, Single, Test Pressing, Stereo, Mono",
-    "formats": [
-     "7\"",
-     "Single",
-     "Test Pressing",
-     "Stereo",
-     "Mono"
-    ],
     "pays": "US",
     "annee": 1975,
     "genres": [
      "Rock"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A1",
@@ -1484,9 +1431,8 @@
       "auteurs": []
      }
     ],
-    "have": 14,
     "want": 30,
-    "note": 5,
+    "note": 5.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -1506,12 +1452,6 @@
    "infos": {
     "label": "Trema",
     "catno": "150186",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1986,
     "genres": [
@@ -1520,7 +1460,6 @@
     "styles": [
      "Chanson"
     ],
-    "enVente": 2,
     "pistes": [
      {
       "position": "A",
@@ -1543,9 +1482,8 @@
       ]
      }
     ],
-    "have": 0,
     "want": 0,
-    "note": 3,
+    "note": 3.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -1561,7 +1499,53 @@
    "b": "Wake Me Up Before You Go-Go (Instru)",
    "pos": "27",
    "pochette": "covers/85770c0d-fd4e-4e84-b3e3-701c5a5b2707.webp",
-   "avecPochette": true
+   "avecPochette": true,
+   "discogs": 1460376,
+   "infos": {
+    "label": "Epic",
+    "catno": "EPC A4440",
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Synth-pop"
+    ],
+    "auteurs": [
+     "George Michael"
+    ],
+    "producteurs": [
+     "George Michael"
+    ],
+    "arrangeurs": [
+     "George Michael"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Wake Me Up Before You Go-Go",
+      "duree": "3:51",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Wake Me Up Before You Go-Go (Instrumental)",
+      "duree": "4:03",
+      "auteurs": []
+     }
+    ],
+    "want": 95,
+    "note": 4.32,
+    "votes": 19
+   },
+   "titresDiscogs": {
+    "artiste": "Wham!",
+    "a": "Wake Me Up Before You Go-Go",
+    "b": "Wake Me Up Before You Go-Go (Instrumental)"
+   }
   },
   {
    "id": "68a97dc9-1560-4a89-8df3-b33dc7786179",
@@ -1576,19 +1560,11 @@
     "bas": 2.5,
     "moyen": 4.51,
     "haut": 8.98,
-    "vendu": "2025-04-19",
-    "release": 3276660
+    "vendu": "2025-04-19"
    },
    "infos": {
     "label": "Atlantic",
     "catno": "3434",
-    "format": "Vinyl, 7\", 45 RPM, Single, Promo, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Promo",
-     "Stereo"
-    ],
     "pays": "US",
     "annee": 1977,
     "genres": [
@@ -1604,7 +1580,6 @@
     "producteurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "enVente": 14,
     "pistes": [
      {
       "position": "A",
@@ -1619,7 +1594,6 @@
       "auteurs": []
      }
     ],
-    "have": 57,
     "want": 39,
     "note": 4.25,
     "votes": 4
@@ -1643,23 +1617,16 @@
     "bas": 9,
     "moyen": 9,
     "haut": 9,
-    "vendu": "2024-11-12",
-    "release": 5840034
+    "vendu": "2024-11-12"
    },
    "infos": {
     "label": "Carrere Music",
     "catno": "903175931-7",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1991,
     "genres": [
      "Pop"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -1683,7 +1650,6 @@
       ]
      }
     ],
-    "have": 3,
     "want": 9,
     "note": 4.67,
     "votes": 3
@@ -1706,17 +1672,11 @@
     "bas": 0.5,
     "moyen": 1.9,
     "haut": 4.5,
-    "vendu": "2026-03-24",
-    "release": 6706932
+    "vendu": "2026-03-24"
    },
    "infos": {
     "label": "Aquarius",
     "catno": "JC 55 558",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1979,
     "genres": [
@@ -1731,7 +1691,6 @@
     "producteurs": [
      "Jean Vanloo"
     ],
-    "enVente": 17,
     "pistes": [
      {
       "position": "A",
@@ -1746,7 +1705,6 @@
       "auteurs": []
      }
     ],
-    "have": 144,
     "want": 88,
     "note": 3.25,
     "votes": 8
@@ -1770,18 +1728,11 @@
     "bas": 0.8,
     "moyen": 0.9,
     "haut": 1,
-    "vendu": "2025-01-13",
-    "release": 9096475
+    "vendu": "2025-01-13"
    },
    "infos": {
     "label": "RCA Victor",
     "catno": "PB 8192",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1978,
     "genres": [
@@ -1794,7 +1745,6 @@
      "Alain Souchon",
      "Laurent Voulzy"
     ],
-    "enVente": 17,
     "pistes": [
      {
       "position": "A",
@@ -1809,9 +1759,8 @@
       "auteurs": []
      }
     ],
-    "have": 106,
     "want": 3,
-    "note": 5,
+    "note": 5.0,
     "votes": 3
    },
    "titresDiscogs": {
@@ -1833,18 +1782,11 @@
     "bas": 0.6,
     "moyen": 2.5,
     "haut": 8.5,
-    "vendu": "2026-11-02",
-    "release": 503674
+    "vendu": "2026-11-02"
    },
    "infos": {
     "label": "Flarenasch",
     "catno": "721 847",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1986,
     "genres": [
@@ -1862,7 +1804,6 @@
     "producteurs": [
      "Richard Seff"
     ],
-    "enVente": 102,
     "pistes": [
      {
       "position": "A",
@@ -1881,7 +1822,6 @@
       "auteurs": []
      }
     ],
-    "have": 3052,
     "want": 103,
     "note": 3.9,
     "votes": 164
@@ -1905,18 +1845,11 @@
     "bas": 0.9,
     "moyen": 2.9,
     "haut": 5,
-    "vendu": "2026-11-11",
-    "release": 507148
+    "vendu": "2026-11-11"
    },
    "infos": {
     "label": "EMI America",
     "catno": "2C 008-86660",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1983,
     "genres": [
@@ -1932,7 +1865,6 @@
      "David Bowie",
      "Nile Rodgers"
     ],
-    "enVente": 56,
     "pistes": [
      {
       "position": "A",
@@ -1952,7 +1884,6 @@
       ]
      }
     ],
-    "have": 2768,
     "want": 220,
     "note": 4.13,
     "votes": 196
@@ -1975,19 +1906,11 @@
    "infos": {
     "label": "4 Track",
     "catno": "M.171",
-    "format": "Vinyl, 7\", 45 RPM, EP, Compilation, Unofficial Release",
-    "formats": [
-     "7\"",
-     "EP",
-     "Compilation",
-     "Unofficial Release"
-    ],
     "pays": "Thailand",
     "genres": [
      "Pop",
      "Folk, World, & Country"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A1",
@@ -2014,7 +1937,6 @@
       "auteurs": []
      }
     ],
-    "have": 3,
     "want": 0
    },
    "titresDiscogs": {
@@ -2025,13 +1947,48 @@
   },
   {
    "id": "507c9e82-6401-4e00-a49f-e1059ec503ad",
-   "artiste": "Mixte",
-   "a": "Génération 60",
-   "b": "Génération 60",
+   "artiste": "Generation 60",
+   "a": "Interprète Les Hits Des Années 60",
+   "b": "Interprète Les Hits Des Années 60",
    "pos": "35",
    "pochette": "covers/507c9e82-6401-4e00-a49f-e1059ec503ad.webp",
    "note": "Salut Les Copains 0:02 \nSi J'Avais Un Marteau 0:33 \nLeçon De Twist 0:23 \nLet's Twist Again 0:21 \nYa Ya Twist 0:17 \nDaniela 0:21 \nDonne-Moi Ma Chance 0:25 \nPremière Surprise Partie 0:13 \nDancin' Party 0:03 \nBelles, Belles, Belles 0:08 \nC'est Ma Fête 0:13 \nTu Parles Trop 0:27 \nJ'ai Un Secret À Te Dire 0:31 \nSunny 0:33",
-   "avecPochette": true
+   "avecPochette": true,
+   "discogs": 12197911,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS A1908",
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Electronic",
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Rock & Roll",
+     "Classic Rock",
+     "Pop Rock",
+     "Disco"
+    ],
+    "producteurs": [
+     "Patrick Oliver",
+     "André Bénichou",
+     "Jean-Claude Oliver",
+     "Roland Lapouge"
+    ],
+    "arrangeurs": [
+     "Patrick Oliver"
+    ],
+    "want": 8,
+    "note": 3.94,
+    "votes": 16
+   },
+   "titresDiscogs": {
+    "artiste": "Generation 60",
+    "a": "Interprète Les Hits Des Années 60",
+    "b": ""
+   }
   },
   {
    "id": "e85e4570-c73e-485f-840a-226f3078c733",
@@ -2046,20 +2003,11 @@
     "bas": 1.36,
     "moyen": 5.92,
     "haut": 10.17,
-    "vendu": "2026-08-15",
-    "release": 4886849
+    "vendu": "2026-08-15"
    },
    "infos": {
     "label": "Casablanca",
     "catno": "NB 978 DJ",
-    "format": "Vinyl, 7\", 45 RPM, Single, Promo, Stereo, Mono",
-    "formats": [
-     "7\"",
-     "Single",
-     "Promo",
-     "Stereo",
-     "Mono"
-    ],
     "pays": "US",
     "annee": 1979,
     "genres": [
@@ -2077,7 +2025,6 @@
      "Giorgio Moroder",
      "Pete Bellotte"
     ],
-    "enVente": 6,
     "pistes": [
      {
       "position": "A",
@@ -2092,7 +2039,6 @@
       "auteurs": []
      }
     ],
-    "have": 40,
     "want": 92,
     "note": 4.67,
     "votes": 3
@@ -2116,18 +2062,11 @@
     "bas": 0.2,
     "moyen": 1.91,
     "haut": 4.4,
-    "vendu": "2026-05-05",
-    "release": 6474350
+    "vendu": "2026-05-05"
    },
    "infos": {
     "label": "RCA Victor",
     "catno": "PB 8804",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1981,
     "genres": [
@@ -2139,7 +2078,6 @@
     "auteurs": [
      "Hervé Cristiani"
     ],
-    "enVente": 37,
     "pistes": [
      {
       "position": "A",
@@ -2158,7 +2096,6 @@
       ]
      }
     ],
-    "have": 538,
     "want": 16,
     "note": 4.04,
     "votes": 25
@@ -2182,18 +2119,11 @@
     "bas": 1.95,
     "moyen": 5,
     "haut": 8,
-    "vendu": "2026-02-04",
-    "release": 7215999
+    "vendu": "2026-02-04"
    },
    "infos": {
     "label": "Planet",
     "catno": "12 341",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1978,
     "genres": [
@@ -2209,7 +2139,6 @@
     "producteurs": [
      "Richard Perry"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A",
@@ -2228,9 +2157,8 @@
       ]
      }
     ],
-    "have": 39,
     "want": 42,
-    "note": 4,
+    "note": 4.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -2252,18 +2180,11 @@
     "bas": 10.8,
     "moyen": 18.49,
     "haut": 31,
-    "vendu": "2025-11-07",
-    "release": 23159903
+    "vendu": "2025-11-07"
    },
    "infos": {
     "label": "Discoring Records",
     "catno": "DR-011",
-    "format": "Vinyl, 12\", 33 ⅓ RPM, 45 RPM, Maxi-Single, Reissue",
-    "formats": [
-     "12\"",
-     "Maxi-Single",
-     "Reissue"
-    ],
     "pays": "Italy",
     "annee": 2022,
     "genres": [
@@ -2280,7 +2201,6 @@
     "producteurs": [
      "Jean-Michel Rivat"
     ],
-    "enVente": 8,
     "pistes": [
      {
       "position": "A",
@@ -2301,7 +2221,6 @@
       "auteurs": []
      }
     ],
-    "have": 305,
     "want": 286,
     "note": 4.86,
     "votes": 44
@@ -2325,17 +2244,11 @@
     "bas": 5,
     "moyen": 10.97,
     "haut": 29.44,
-    "vendu": "2026-11-11",
-    "release": 386991
+    "vendu": "2026-11-11"
    },
    "infos": {
     "label": "Polydor",
     "catno": "885 765-1",
-    "format": "Vinyl, 12\", Maxi-Single, 45 RPM",
-    "formats": [
-     "12\"",
-     "Maxi-Single"
-    ],
     "pays": "France",
     "annee": 1987,
     "genres": [
@@ -2352,7 +2265,6 @@
     "arrangeurs": [
      "Franck Langolff"
     ],
-    "enVente": 41,
     "pistes": [
      {
       "position": "A",
@@ -2382,7 +2294,6 @@
       ]
      }
     ],
-    "have": 1443,
     "want": 263,
     "note": 4.37,
     "votes": 131
@@ -2405,10 +2316,6 @@
    "infos": {
     "label": "Ibach Records",
     "catno": "60 118",
-    "format": "Vinyl, 7\", 45 RPM",
-    "formats": [
-     "7\""
-    ],
     "pays": "France",
     "annee": 1981,
     "genres": [
@@ -2417,7 +2324,6 @@
     "styles": [
      "Chanson"
     ],
-    "enVente": 1,
     "pistes": [
      {
       "position": "A",
@@ -2440,7 +2346,6 @@
       ]
      }
     ],
-    "have": 5,
     "want": 31
    },
    "titresDiscogs": {
@@ -2451,12 +2356,45 @@
   },
   {
    "id": "ef667476-d38a-40ac-adda-0e89c43c7a30",
-   "artiste": "Mixte",
-   "a": "Stars On 45",
-   "b": "Stars On 45",
+   "artiste": "Stars On 45",
+   "a": "Stars On 45 Vol. 3",
+   "b": "'Stars On' Theme",
    "pos": "42",
    "pochette": "covers/ef667476-d38a-40ac-adda-0e89c43c7a30.webp",
-   "avecPochette": true
+   "avecPochette": true,
+   "discogs": 948971,
+   "infos": {
+    "label": "Carrere",
+    "catno": "49.835",
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Electronic",
+     "Rock"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "producteurs": [
+     "Jaap Eggermont"
+    ],
+    "pistes": [
+     {
+      "position": "B",
+      "titre": "'Stars On' Theme",
+      "duree": "4:10",
+      "auteurs": []
+     }
+    ],
+    "want": 20,
+    "note": 3.78,
+    "votes": 9
+   },
+   "titresDiscogs": {
+    "artiste": "Stars On 45",
+    "a": "Stars On 45 Vol. 3",
+    "b": "'Stars On' Theme"
+   }
   },
   {
    "id": "82473f82-684f-47fb-b71b-87b19bf76bec",
@@ -2465,7 +2403,131 @@
    "b": "Hits Des Années 60",
    "pos": "43",
    "pochette": "covers/82473f82-684f-47fb-b71b-87b19bf76bec.webp",
-   "avecPochette": true
+   "avecPochette": true,
+   "discogs": 590926,
+   "infos": {
+    "label": "Barclay",
+    "catno": "100 125",
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Intro 1960",
+      "duree": "0:10",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "Sherry Baby",
+      "duree": "0:30",
+      "auteurs": [
+       "Bob Gaudio"
+      ]
+     },
+     {
+      "position": "A3",
+      "titre": "Baby Come Back",
+      "duree": "0:31",
+      "auteurs": [
+       "Eddy Grant"
+      ]
+     },
+     {
+      "position": "A4",
+      "titre": "96 Tears",
+      "duree": "0:23",
+      "auteurs": [
+       "Rudy Martinez"
+      ]
+     },
+     {
+      "position": "A5",
+      "titre": "No Milk Today",
+      "duree": "0:44",
+      "auteurs": [
+       "Graham Gouldman"
+      ]
+     },
+     {
+      "position": "A6",
+      "titre": "Douwadidi",
+      "duree": "0:26",
+      "auteurs": []
+     },
+     {
+      "position": "A7",
+      "titre": "Monday Monday",
+      "duree": "0:33",
+      "auteurs": [
+       "John Phillips"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Mr. Tambourine Man",
+      "duree": "0:34",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "California Dreaming",
+      "duree": "0:41",
+      "auteurs": [
+       "John Phillips",
+       "Michelle Gilliam"
+      ]
+     },
+     {
+      "position": "B3",
+      "titre": "Sugar Sugar",
+      "duree": "0:40",
+      "auteurs": [
+       "Andy Kim",
+       "Jeff Barry"
+      ]
+     },
+     {
+      "position": "B4",
+      "titre": "Louie, Louie",
+      "duree": "0:19",
+      "auteurs": [
+       "Richard Berry"
+      ]
+     },
+     {
+      "position": "B5",
+      "titre": "Needles And Pins",
+      "duree": "0:34",
+      "auteurs": [
+       "Jack Nitzsche",
+       "Sonny Bono"
+      ]
+     },
+     {
+      "position": "B6",
+      "titre": "You Gonna Take Me Higher",
+      "duree": "0:45",
+      "auteurs": [
+       "James Brown"
+      ]
+     }
+    ],
+    "want": 11,
+    "note": 3.62,
+    "votes": 29
+   },
+   "titresDiscogs": {
+    "artiste": "Magazine 60",
+    "a": "Intro 1960 / Sherry Baby / Baby Come Back / 96 Tears / No Milk Today / Douwadidi / Monday Monday",
+    "b": "Mr. Tambourine Man / California Dreaming / Sugar Sugar / Louie, Louie / Needles And Pins / You Gonna Take Me Higher"
+   }
   },
   {
    "id": "c343118f-6c02-45c8-aa31-b407f2fc4035",
@@ -2480,17 +2542,11 @@
     "bas": 0.75,
     "moyen": 3.99,
     "haut": 7.69,
-    "vendu": "2026-10-26",
-    "release": 894424
+    "vendu": "2026-10-26"
    },
    "infos": {
     "label": "RCA Victor",
     "catno": "PC 8089",
-    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
-    "formats": [
-     "12\"",
-     "Maxi-Single"
-    ],
     "pays": "France",
     "annee": 1977,
     "genres": [
@@ -2507,7 +2563,6 @@
     "arrangeurs": [
      "Laurent Voulzy"
     ],
-    "enVente": 59,
     "pistes": [
      {
       "position": "A1",
@@ -2534,7 +2589,6 @@
       "auteurs": []
      }
     ],
-    "have": 1051,
     "want": 57,
     "note": 4.04,
     "votes": 91
@@ -2558,17 +2612,11 @@
     "bas": 5,
     "moyen": 53.91,
     "haut": 82.5,
-    "vendu": "2025-06-16",
-    "release": 7703173
+    "vendu": "2025-06-16"
    },
    "infos": {
     "label": "Arcade",
     "catno": "3019906",
-    "format": "Vinyl, 12\", 45 RPM, Single",
-    "formats": [
-     "12\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1996,
     "genres": [
@@ -2584,7 +2632,6 @@
     "arrangeurs": [
      "Pierre Groscolas"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -2605,9 +2652,8 @@
       ]
      }
     ],
-    "have": 5,
     "want": 24,
-    "note": 5,
+    "note": 5.0,
     "votes": 2
    },
    "titresDiscogs": {
@@ -2629,20 +2675,11 @@
     "bas": 1.37,
     "moyen": 2.72,
     "haut": 4.96,
-    "vendu": "2026-08-06",
-    "release": 8855071
+    "vendu": "2026-08-06"
    },
    "infos": {
     "label": "Sire",
     "catno": "SRE 1027",
-    "format": "Vinyl, 7\", 45 RPM, Promo, Single, Mono, Stereo",
-    "formats": [
-     "7\"",
-     "Promo",
-     "Single",
-     "Mono",
-     "Stereo"
-    ],
     "pays": "US",
     "annee": 1978,
     "genres": [
@@ -2662,7 +2699,6 @@
     "producteurs": [
      "Frank Farian"
     ],
-    "enVente": 10,
     "pistes": [
      {
       "position": "A",
@@ -2677,9 +2713,8 @@
       "auteurs": []
      }
     ],
-    "have": 32,
     "want": 48,
-    "note": 5,
+    "note": 5.0,
     "votes": 2
    },
    "titresDiscogs": {
@@ -2701,20 +2736,11 @@
     "bas": 3.64,
     "moyen": 6.32,
     "haut": 45.5,
-    "vendu": "2026-04-26",
-    "release": 3064717
+    "vendu": "2026-04-26"
    },
    "infos": {
     "label": "ATCO Records",
     "catno": "7080",
-    "format": "Vinyl, 7\", 45 RPM, Single, Promo, Stereo, Mono",
-    "formats": [
-     "7\"",
-     "Single",
-     "Promo",
-     "Stereo",
-     "Mono"
-    ],
     "pays": "US",
     "annee": 1976,
     "genres": [
@@ -2729,7 +2755,6 @@
     "arrangeurs": [
      "Steven Hammer"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A",
@@ -2748,9 +2773,8 @@
       ]
      }
     ],
-    "have": 24,
     "want": 133,
-    "note": 3,
+    "note": 3.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -2772,19 +2796,11 @@
     "bas": 1.55,
     "moyen": 4.09,
     "haut": 16.38,
-    "vendu": "2026-07-02",
-    "release": 4065042
+    "vendu": "2026-07-02"
    },
    "infos": {
     "label": "ATCO Records",
     "catno": "45-7063",
-    "format": "Vinyl, 7\", 45 RPM, Promo, Stereo, Mono",
-    "formats": [
-     "7\"",
-     "Promo",
-     "Stereo",
-     "Mono"
-    ],
     "pays": "US",
     "annee": 1976,
     "genres": [
@@ -2803,7 +2819,6 @@
     "arrangeurs": [
      "Steven Hammer"
     ],
-    "enVente": 10,
     "pistes": [
      {
       "position": "A",
@@ -2818,7 +2833,6 @@
       "auteurs": []
      }
     ],
-    "have": 51,
     "want": 94,
     "note": 4.67,
     "votes": 3
@@ -2842,21 +2856,11 @@
     "bas": 0.96,
     "moyen": 44.5,
     "haut": 495,
-    "vendu": "2026-09-25",
-    "release": 416696
+    "vendu": "2026-09-25"
    },
    "infos": {
     "label": "Polydor",
     "catno": "815 619-7",
-    "format": "Vinyl, 7\", 45 RPM, Single, Reissue",
-    "formats": [
-     "7\"",
-     "Single",
-     "Reissue",
-     "Picture Disc",
-     "Box Set",
-     "Compilation"
-    ],
     "pays": "Germany",
     "annee": 1984,
     "genres": [
@@ -2868,7 +2872,6 @@
      "Ballad",
      "Soft Rock"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "1-A",
@@ -3365,7 +3368,6 @@
       ]
      }
     ],
-    "have": 640,
     "want": 242,
     "note": 4.16,
     "votes": 83
@@ -3389,17 +3391,11 @@
     "bas": 0.6,
     "moyen": 2.39,
     "haut": 5.99,
-    "vendu": "2026-09-10",
-    "release": 4592954
+    "vendu": "2026-09-10"
    },
    "infos": {
     "label": "Contempo",
     "catno": "CS.2068",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "UK",
     "annee": 1975,
     "genres": [
@@ -3414,7 +3410,6 @@
     "producteurs": [
      "S.A. Creations Artistiques"
     ],
-    "enVente": 32,
     "pistes": [
      {
       "position": "A",
@@ -3429,7 +3424,6 @@
       "auteurs": []
      }
     ],
-    "have": 75,
     "want": 43,
     "note": 3.5,
     "votes": 2
@@ -3451,18 +3445,11 @@
    "discogs": 31339168,
    "infos": {
     "label": "Not On Label (ABBA)",
-    "format": "Vinyl, 12\", 45 RPM, Picture Disc, Unofficial Release",
-    "formats": [
-     "12\"",
-     "Picture Disc",
-     "Unofficial Release"
-    ],
     "pays": "UK",
     "annee": 2024,
     "genres": [
      "Pop"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A1",
@@ -3495,7 +3482,6 @@
       "auteurs": []
      }
     ],
-    "have": 3,
     "want": 27
    },
    "titresDiscogs": {
@@ -3517,22 +3503,15 @@
     "bas": 2.99,
     "moyen": 5.09,
     "haut": 7.18,
-    "vendu": "2026-02-16",
-    "release": 11251175
+    "vendu": "2026-02-16"
    },
    "infos": {
     "label": "Atlantic",
     "catno": "212013",
-    "format": "Vinyl, 7\", 45 RPM, EP",
-    "formats": [
-     "7\"",
-     "EP"
-    ],
     "pays": "France",
     "genres": [
      "Rock"
     ],
-    "enVente": 4,
     "pistes": [
      {
       "position": "A1",
@@ -3559,7 +3538,6 @@
       "auteurs": []
      }
     ],
-    "have": 30,
     "want": 11
    },
    "titresDiscogs": {
@@ -3581,18 +3559,11 @@
     "bas": 1.99,
     "moyen": 1.99,
     "haut": 1.99,
-    "vendu": "2021-01-29",
-    "release": 7776398
+    "vendu": "2021-01-29"
    },
    "infos": {
     "label": "Little Prune Music",
     "catno": "JD 460516",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1990,
     "genres": [
@@ -3602,7 +3573,6 @@
      "Chanson",
      "Vocal"
     ],
-    "enVente": 1,
     "pistes": [
      {
       "position": "A",
@@ -3617,9 +3587,8 @@
       "auteurs": []
      }
     ],
-    "have": 1,
     "want": 1,
-    "note": 5,
+    "note": 5.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -3641,16 +3610,11 @@
     "bas": 25,
     "moyen": 28.67,
     "haut": 32.33,
-    "vendu": "2021-02-06",
-    "release": 7480756
+    "vendu": "2021-02-06"
    },
    "infos": {
     "label": "Capitol Records",
     "catno": "S7C-11233",
-    "format": "Vinyl, 7\"",
-    "formats": [
-     "7\""
-    ],
     "pays": "Brazil",
     "annee": 1974,
     "genres": [
@@ -3659,7 +3623,6 @@
     "styles": [
      "Rock & Roll"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A",
@@ -3680,9 +3643,8 @@
       ]
      }
     ],
-    "have": 6,
     "want": 6,
-    "note": 5,
+    "note": 5.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -3704,17 +3666,11 @@
     "bas": 4,
     "moyen": 10,
     "haut": 28.37,
-    "vendu": "2026-10-24",
-    "release": 85940
+    "vendu": "2026-10-24"
    },
    "infos": {
     "label": "CBS",
     "catno": "CBS 651438 8",
-    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
-    "formats": [
-     "12\"",
-     "Maxi-Single"
-    ],
     "pays": "France",
     "annee": 1988,
     "genres": [
@@ -3731,7 +3687,6 @@
      "Sauveur Pichot",
      "William Picard"
     ],
-    "enVente": 31,
     "pistes": [
      {
       "position": "A",
@@ -3758,7 +3713,6 @@
       "auteurs": []
      }
     ],
-    "have": 666,
     "want": 139,
     "note": 4.13,
     "votes": 60
@@ -3781,17 +3735,11 @@
     "bas": 0.5,
     "moyen": 1,
     "haut": 3,
-    "vendu": "2025-09-12",
-    "release": 9009513
+    "vendu": "2025-09-12"
    },
    "infos": {
     "label": "Les Editions Productions Georges Mary",
     "catno": "74321132067",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1993,
     "genres": [
@@ -3802,7 +3750,6 @@
      "Andre Di Cesare",
      "Roch Voisine"
     ],
-    "enVente": 4,
     "pistes": [
      {
       "position": "A",
@@ -3822,7 +3769,6 @@
       ]
      }
     ],
-    "have": 48,
     "want": 5
    },
    "titresDiscogs": {
@@ -3837,7 +3783,53 @@
    "a": "Don't Go Breaking My Heart",
    "b": "Snow Queen",
    "pos": "57",
-   "pochette": "covers/02cf007d-3089-4439-bd1a-92d324e50665.webp"
+   "pochette": "covers/02cf007d-3089-4439-bd1a-92d324e50665.webp",
+   "discogs": 2154164,
+   "infos": {
+    "label": "The Rocket Record Company",
+    "catno": "ROKN 512",
+    "pays": "UK",
+    "annee": 1976,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Soft Rock"
+    ],
+    "producteurs": [
+     "Gus Dudgeon"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Don't Go Breaking My Heart",
+      "duree": "4:19",
+      "auteurs": [
+       "Ann Orson & Carte Blanche"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Snow Queen",
+      "duree": "5:39",
+      "auteurs": [
+       "Bernie Taupin",
+       "Davey Johnstone",
+       "David Nutter",
+       "Elton John",
+       "Kiki Dee"
+      ]
+     }
+    ],
+    "want": 89,
+    "note": 3.95,
+    "votes": 123
+   },
+   "titresDiscogs": {
+    "artiste": "Elton John & Kiki Dee",
+    "a": "Don't Go Breaking My Heart",
+    "b": "Snow Queen"
+   }
   },
   {
    "id": "c91ab752-0a83-4b4e-8ff1-46f11f4f7a56",
@@ -3852,17 +3844,11 @@
     "bas": 0.2,
     "moyen": 1.29,
     "haut": 7.21,
-    "vendu": "2026-09-14",
-    "release": 1925404
+    "vendu": "2026-09-14"
    },
    "infos": {
     "label": "Motown",
     "catno": "ZB 61451",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1984,
     "genres": [
@@ -3885,7 +3871,6 @@
     "arrangeurs": [
      "Stevie Wonder"
     ],
-    "enVente": 80,
     "pistes": [
      {
       "position": "A",
@@ -3900,7 +3885,6 @@
       "auteurs": []
      }
     ],
-    "have": 2045,
     "want": 77,
     "note": 3.96,
     "votes": 97
@@ -3922,11 +3906,6 @@
    "infos": {
     "label": "Asylum Records",
     "catno": "13 084",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "genres": [
      "Rock"
@@ -3934,7 +3913,6 @@
     "styles": [
      "Classic Rock"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -3949,7 +3927,6 @@
       "auteurs": []
      }
     ],
-    "have": 12,
     "want": 50,
     "note": 3.5,
     "votes": 2
@@ -3972,23 +3949,16 @@
     "bas": 9.1,
     "moyen": 15.93,
     "haut": 27.25,
-    "vendu": "2026-05-22",
-    "release": 12382175
+    "vendu": "2026-05-22"
    },
    "infos": {
     "label": "Tamla",
     "catno": "T 54176",
-    "format": "Vinyl, 7\", 45 RPM, Promo",
-    "formats": [
-     "7\"",
-     "Promo"
-    ],
     "pays": "US",
     "annee": 1968,
     "genres": [
      "Funk / Soul"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -4003,7 +3973,6 @@
       "auteurs": []
      }
     ],
-    "have": 12,
     "want": 58,
     "note": 4.33,
     "votes": 3
@@ -4027,17 +3996,11 @@
     "bas": 15,
     "moyen": 16.5,
     "haut": 18,
-    "vendu": "2026-04-12",
-    "release": 5880244
+    "vendu": "2026-04-12"
    },
    "infos": {
     "label": "Cosmos",
     "catno": "105",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "Turkey",
     "genres": [
      "Funk / Soul",
@@ -4046,7 +4009,6 @@
     "styles": [
      "Disco"
     ],
-    "enVente": 4,
     "pistes": [
      {
       "position": "A",
@@ -4065,7 +4027,6 @@
       ]
      }
     ],
-    "have": 14,
     "want": 11,
     "note": 4.5,
     "votes": 2
@@ -4088,18 +4049,11 @@
     "bas": 6.5,
     "moyen": 6.75,
     "haut": 7,
-    "vendu": "2025-12-04",
-    "release": 11109138
+    "vendu": "2025-12-04"
    },
    "infos": {
     "label": "Motown",
     "catno": "ESP-589",
-    "format": "Vinyl, 7\", 45 RPM, Single, Promo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Promo"
-    ],
     "pays": "Spain",
     "annee": 1982,
     "genres": [
@@ -4110,7 +4064,6 @@
      "Soul",
      "Disco"
     ],
-    "enVente": 6,
     "pistes": [
      {
       "position": "A",
@@ -4125,7 +4078,6 @@
       "auteurs": []
      }
     ],
-    "have": 15,
     "want": 46,
     "note": 4.5,
     "votes": 2
@@ -4148,17 +4100,11 @@
     "bas": 0.01,
     "moyen": 0.46,
     "haut": 0.9,
-    "vendu": "2022-12-13",
-    "release": 13537586
+    "vendu": "2022-12-13"
    },
    "infos": {
     "label": "CBS",
     "catno": "CBS A 1407",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "Ireland",
     "annee": 1981,
     "genres": [
@@ -4169,7 +4115,6 @@
     "styles": [
      "Disco"
     ],
-    "enVente": 11,
     "pistes": [
      {
       "position": "A.1",
@@ -4238,9 +4183,8 @@
       "auteurs": []
      }
     ],
-    "have": 65,
     "want": 10,
-    "note": 2,
+    "note": 2.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -4262,18 +4206,11 @@
     "bas": 0.2,
     "moyen": 2.15,
     "haut": 7.5,
-    "vendu": "2026-11-14",
-    "release": 536976
+    "vendu": "2026-11-14"
    },
    "infos": {
     "label": "Charles Talar Records",
     "catno": "2000997",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1984,
     "genres": [
@@ -4291,7 +4228,6 @@
     "producteurs": [
      "Bob Mehdi"
     ],
-    "enVente": 91,
     "pistes": [
      {
       "position": "A",
@@ -4306,7 +4242,6 @@
       "auteurs": []
      }
     ],
-    "have": 2535,
     "want": 73,
     "note": 3.63,
     "votes": 115
@@ -4330,17 +4265,11 @@
     "bas": 2,
     "moyen": 5,
     "haut": 7.27,
-    "vendu": "2025-08-01",
-    "release": 2901049
+    "vendu": "2025-08-01"
    },
    "infos": {
     "label": "Pathé Marconi EMI",
     "catno": "2C008-04700",
-    "format": "Vinyl, 7\", Reissue",
-    "formats": [
-     "7\"",
-     "Reissue"
-    ],
     "pays": "France",
     "annee": 1982,
     "genres": [
@@ -4349,7 +4278,6 @@
     "styles": [
      "Rock & Roll"
     ],
-    "enVente": 13,
     "pistes": [
      {
       "position": "A",
@@ -4369,7 +4297,6 @@
       ]
      }
     ],
-    "have": 69,
     "want": 11,
     "note": 4.5,
     "votes": 6
@@ -4393,17 +4320,11 @@
     "bas": 0.78,
     "moyen": 2.99,
     "haut": 9.9,
-    "vendu": "2026-11-15",
-    "release": 186604
+    "vendu": "2026-11-15"
    },
    "infos": {
     "label": "Island Records",
     "catno": "6172 870",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1979,
     "genres": [
@@ -4422,7 +4343,6 @@
     "producteurs": [
      "The Buggles"
     ],
-    "enVente": 50,
     "pistes": [
      {
       "position": "A",
@@ -4437,7 +4357,6 @@
       "auteurs": []
      }
     ],
-    "have": 4658,
     "want": 329,
     "note": 4.06,
     "votes": 289
@@ -4461,17 +4380,11 @@
     "bas": 2.5,
     "moyen": 6.89,
     "haut": 15.9,
-    "vendu": "2026-10-31",
-    "release": 1081518
+    "vendu": "2026-10-31"
    },
    "infos": {
     "label": "London Records",
     "catno": "886 056-1",
-    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
-    "formats": [
-     "12\"",
-     "Maxi-Single"
-    ],
     "pays": "France",
     "annee": 1986,
     "genres": [
@@ -4481,7 +4394,6 @@
      "Synth-pop",
      "Hi NRG"
     ],
-    "enVente": 33,
     "pistes": [
      {
       "position": "A",
@@ -4512,7 +4424,6 @@
       ]
      }
     ],
-    "have": 463,
     "want": 120,
     "note": 4.31,
     "votes": 45
@@ -4536,17 +4447,11 @@
     "bas": 0.5,
     "moyen": 2.87,
     "haut": 30,
-    "vendu": "2025-03-20",
-    "release": 5140915
+    "vendu": "2025-03-20"
    },
    "infos": {
     "label": "The Boardwalk Entertainment Co",
     "catno": "101616",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1982,
     "genres": [
@@ -4559,7 +4464,6 @@
      "Kenny Laguna",
      "Ritchie Cordell"
     ],
-    "enVente": 11,
     "pistes": [
      {
       "position": "A",
@@ -4579,7 +4483,6 @@
       ]
      }
     ],
-    "have": 266,
     "want": 98,
     "note": 4.25,
     "votes": 24
@@ -4603,17 +4506,11 @@
     "bas": 0.99,
     "moyen": 4.99,
     "haut": 7,
-    "vendu": "2025-01-05",
-    "release": 11066213
+    "vendu": "2025-01-05"
    },
    "infos": {
     "label": "London Records",
     "catno": "84078",
-    "format": "Vinyl, 7\", Single, 45 RPM",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1972,
     "genres": [
@@ -4622,7 +4519,6 @@
     "styles": [
      "Rock & Roll"
     ],
-    "enVente": 5,
     "pistes": [
      {
       "position": "A",
@@ -4642,9 +4538,8 @@
       ]
      }
     ],
-    "have": 50,
     "want": 33,
-    "note": 5,
+    "note": 5.0,
     "votes": 4
    },
    "titresDiscogs": {
@@ -4666,17 +4561,11 @@
     "bas": 4.33,
     "moyen": 4.75,
     "haut": 5.7,
-    "vendu": "2024-09-01",
-    "release": 14886483
+    "vendu": "2024-09-01"
    },
    "infos": {
     "label": "Virgin",
     "catno": "90148",
-    "format": "Vinyl, 7\", Single, 45 RPM",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1984,
     "genres": [
@@ -4688,7 +4577,6 @@
     "producteurs": [
      "Glyn Johns"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A",
@@ -4709,7 +4597,6 @@
       ]
      }
     ],
-    "have": 92,
     "want": 20,
     "note": 4.8,
     "votes": 5
@@ -4733,18 +4620,11 @@
     "bas": 4,
     "moyen": 13.5,
     "haut": 25,
-    "vendu": "2026-03-11",
-    "release": 5833321
+    "vendu": "2026-03-11"
    },
    "infos": {
     "label": "Ariola",
     "catno": "PRO 1112",
-    "format": "Vinyl, 12\", 45 RPM, Maxi-Single, Promo",
-    "formats": [
-     "12\"",
-     "Maxi-Single",
-     "Promo"
-    ],
     "pays": "France",
     "annee": 1995,
     "genres": [
@@ -4758,7 +4638,6 @@
     "producteurs": [
      "Marc Moulin"
     ],
-    "enVente": 1,
     "pistes": [
      {
       "position": "A",
@@ -4773,7 +4652,6 @@
       "auteurs": []
      }
     ],
-    "have": 48,
     "want": 120,
     "note": 4.8,
     "votes": 5
@@ -4804,17 +4682,11 @@
     "bas": 1,
     "moyen": 2.42,
     "haut": 7,
-    "vendu": "2026-10-01",
-    "release": 701924
+    "vendu": "2026-10-01"
    },
    "infos": {
     "label": "CBS",
     "catno": "655137 7",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1989,
     "genres": [
@@ -4830,7 +4702,6 @@
      "Daniel Glikmans",
      "Thierry Hazard"
     ],
-    "enVente": 49,
     "pistes": [
      {
       "position": "A",
@@ -4845,7 +4716,6 @@
       "auteurs": []
      }
     ],
-    "have": 1708,
     "want": 60,
     "note": 3.9,
     "votes": 89
@@ -4868,11 +4738,6 @@
    "infos": {
     "label": "Casablanca",
     "catno": "6175 034",
-    "format": "Vinyl, 7\", Single, 45 RPM",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1979,
     "genres": [
@@ -4887,7 +4752,6 @@
     "producteurs": [
      "Steven Greenberg"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -4902,7 +4766,6 @@
       "auteurs": []
      }
     ],
-    "have": 5,
     "want": 10
    },
    "titresDiscogs": {
@@ -4922,11 +4785,6 @@
    "infos": {
     "label": "Capitol Records",
     "catno": "6365",
-    "format": "Vinyl, 7\", Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "Mexico",
     "annee": 1968,
     "genres": [
@@ -4941,7 +4799,6 @@
     "producteurs": [
      "George Martin"
     ],
-    "enVente": 2,
     "pistes": [
      {
       "position": "A",
@@ -4956,7 +4813,6 @@
       "auteurs": []
      }
     ],
-    "have": 16,
     "want": 48,
     "note": 4.75,
     "votes": 4
@@ -4979,13 +4835,6 @@
    "infos": {
     "label": "Polydor",
     "catno": "S/N-529",
-    "format": "Vinyl, 7\", 45 RPM, Promo, Stereo, Mono",
-    "formats": [
-     "7\"",
-     "Promo",
-     "Stereo",
-     "Mono"
-    ],
     "pays": "Mexico",
     "genres": [
      "Rock"
@@ -4996,7 +4845,6 @@
     "producteurs": [
      "Peter Müller"
     ],
-    "enVente": 1,
     "pistes": [
      {
       "position": "A",
@@ -5016,7 +4864,6 @@
       ]
      }
     ],
-    "have": 1,
     "want": 8
    },
    "titresDiscogs": {
@@ -5038,17 +4885,11 @@
     "bas": 4,
     "moyen": 6.74,
     "haut": 16,
-    "vendu": "2024-01-06",
-    "release": 6443950
+    "vendu": "2024-01-06"
    },
    "infos": {
     "label": "Carrere",
     "catno": "8803",
-    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
-    "formats": [
-     "12\"",
-     "Maxi-Single"
-    ],
     "pays": "France",
     "annee": 1987,
     "genres": [
@@ -5064,7 +4905,6 @@
     "producteurs": [
      "Jeff Barry"
     ],
-    "enVente": 9,
     "pistes": [
      {
       "position": "A",
@@ -5093,7 +4933,6 @@
       ]
      }
     ],
-    "have": 35,
     "want": 30,
     "note": 3.8,
     "votes": 5
@@ -5117,17 +4956,11 @@
     "bas": 1.85,
     "moyen": 3,
     "haut": 8,
-    "vendu": "2026-01-25",
-    "release": 1068580
+    "vendu": "2026-01-25"
    },
    "infos": {
     "label": "Eurodisc",
     "catno": "911 119",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1977,
     "genres": [
@@ -5136,7 +4969,6 @@
     "styles": [
      "Disco"
     ],
-    "enVente": 10,
     "pistes": [
      {
       "position": "A",
@@ -5151,9 +4983,8 @@
       "auteurs": []
      }
     ],
-    "have": 51,
     "want": 18,
-    "note": 5,
+    "note": 5.0,
     "votes": 3
    },
    "titresDiscogs": {
@@ -5174,11 +5005,6 @@
    "infos": {
     "label": "Arista",
     "catno": "106740",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1984,
     "genres": [
@@ -5195,7 +5021,6 @@
     "producteurs": [
      "Ray Parker Jr."
     ],
-    "enVente": 14,
     "pistes": [
      {
       "position": "A",
@@ -5210,7 +5035,6 @@
       "auteurs": []
      }
     ],
-    "have": 938,
     "want": 135,
     "note": 4.17,
     "votes": 52
@@ -5224,8 +5048,7 @@
     "bas": 0.5,
     "moyen": 3,
     "haut": 7,
-    "vendu": "2026-01-21",
-    "release": 8130818
+    "vendu": "2026-01-21"
    }
   },
   {
@@ -5241,17 +5064,11 @@
     "bas": 1,
     "moyen": 3.19,
     "haut": 12.88,
-    "vendu": "2026-11-18",
-    "release": 677126
+    "vendu": "2026-11-18"
    },
    "infos": {
     "label": "Vogue",
     "catno": "101237",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1979,
     "genres": [
@@ -5269,7 +5086,6 @@
     "arrangeurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "enVente": 26,
     "pistes": [
      {
       "position": "A",
@@ -5284,7 +5100,6 @@
       "auteurs": []
      }
     ],
-    "have": 2538,
     "want": 245,
     "note": 4.2,
     "votes": 161
@@ -5308,17 +5123,11 @@
     "bas": 0.37,
     "moyen": 2,
     "haut": 9.13,
-    "vendu": "2026-11-07",
-    "release": 585346
+    "vendu": "2026-11-07"
    },
    "infos": {
     "label": "Vogue",
     "catno": "101353",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1980,
     "genres": [
@@ -5336,7 +5145,6 @@
     "arrangeurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "enVente": 133,
     "pistes": [
      {
       "position": "A",
@@ -5351,7 +5159,6 @@
       "auteurs": []
      }
     ],
-    "have": 2604,
     "want": 90,
     "note": 4.15,
     "votes": 159
@@ -5375,17 +5182,11 @@
     "bas": 0.72,
     "moyen": 3.5,
     "haut": 12,
-    "vendu": "2026-10-15",
-    "release": 893378
+    "vendu": "2026-10-15"
    },
    "infos": {
     "label": "Melba",
     "catno": "45.X. 140 188",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1977,
     "genres": [
@@ -5403,7 +5204,6 @@
     "producteurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "enVente": 94,
     "pistes": [
      {
       "position": "A",
@@ -5418,7 +5218,6 @@
       "auteurs": []
      }
     ],
-    "have": 1886,
     "want": 67,
     "note": 3.97,
     "votes": 130
@@ -5441,12 +5240,6 @@
    "infos": {
     "label": "Polydor",
     "catno": "2001 850",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "Netherlands",
     "annee": 1979,
     "genres": [
@@ -5464,7 +5257,6 @@
     "arrangeurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "enVente": 112,
     "pistes": [
      {
       "position": "A",
@@ -5479,7 +5271,6 @@
       "auteurs": []
      }
     ],
-    "have": 2387,
     "want": 60,
     "note": 4.08,
     "votes": 121
@@ -5493,8 +5284,7 @@
     "bas": 0.49,
     "moyen": 1.75,
     "haut": 5.99,
-    "vendu": "2026-11-09",
-    "release": 983431
+    "vendu": "2026-11-09"
    }
   },
   {
@@ -5509,11 +5299,6 @@
    "infos": {
     "label": "Vogue",
     "catno": "101384",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1980,
     "genres": [
@@ -5533,7 +5318,6 @@
     "arrangeurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "enVente": 109,
     "pistes": [
      {
       "position": "A",
@@ -5548,7 +5332,6 @@
       "auteurs": []
      }
     ],
-    "have": 2063,
     "want": 64,
     "note": 4.07,
     "votes": 129
@@ -5562,8 +5345,7 @@
     "bas": 0.2,
     "moyen": 2.23,
     "haut": 6.95,
-    "vendu": "2026-11-17",
-    "release": 596520
+    "vendu": "2026-11-17"
    }
   },
   {
@@ -5578,11 +5360,6 @@
    "infos": {
     "label": "Melba",
     "catno": "45. X. 140357",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1978,
     "genres": [
@@ -5602,7 +5379,6 @@
     "arrangeurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "enVente": 84,
     "pistes": [
      {
       "position": "A",
@@ -5617,7 +5393,6 @@
       "auteurs": []
      }
     ],
-    "have": 1915,
     "want": 77,
     "note": 4.11,
     "votes": 113
@@ -5631,8 +5406,7 @@
     "bas": 1,
     "moyen": 2,
     "haut": 15,
-    "vendu": "2026-11-14",
-    "release": 577327
+    "vendu": "2026-11-14"
    }
   },
   {
@@ -5648,16 +5422,11 @@
     "bas": 0.5,
     "moyen": 3.25,
     "haut": 10.92,
-    "vendu": "2026-10-11",
-    "release": 830264
+    "vendu": "2026-10-11"
    },
    "infos": {
     "label": "Disc'Az",
     "catno": "SG 528",
-    "format": "Vinyl, 7\", 45 RPM",
-    "formats": [
-     "7\""
-    ],
     "pays": "France",
     "annee": 1975,
     "genres": [
@@ -5675,7 +5444,6 @@
      "Barry White",
      "Gene Page"
     ],
-    "enVente": 23,
     "pistes": [
      {
       "position": "A",
@@ -5696,7 +5464,6 @@
       ]
      }
     ],
-    "have": 1152,
     "want": 94,
     "note": 4.22,
     "votes": 89
@@ -5720,18 +5487,11 @@
     "bas": 0.2,
     "moyen": 1.19,
     "haut": 6.5,
-    "vendu": "2026-09-16",
-    "release": 843462
+    "vendu": "2026-09-16"
    },
    "infos": {
     "label": "RSO",
     "catno": "2090 331",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1978,
     "genres": [
@@ -5745,7 +5505,6 @@
      "Bee Gees",
      "Karl Richardson"
     ],
-    "enVente": 120,
     "pistes": [
      {
       "position": "A",
@@ -5765,7 +5524,6 @@
       ]
      }
     ],
-    "have": 1855,
     "want": 37,
     "note": 3.91,
     "votes": 94
@@ -5788,11 +5546,6 @@
    "infos": {
     "label": "RSO",
     "catno": "2090 272",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1978,
     "genres": [
@@ -5808,7 +5561,6 @@
      "Karl Richardson",
      "Robin Gibb, Barry Gibb & Maurice Gibb"
     ],
-    "enVente": 38,
     "pistes": [
      {
       "position": "A",
@@ -5828,7 +5580,6 @@
       ]
      }
     ],
-    "have": 1208,
     "want": 76,
     "note": 4.06,
     "votes": 68
@@ -5842,8 +5593,7 @@
     "bas": 0.3,
     "moyen": 1.95,
     "haut": 10.51,
-    "vendu": "2026-11-19",
-    "release": 2744790
+    "vendu": "2026-11-19"
    }
   },
   {
@@ -5859,17 +5609,11 @@
     "bas": 0.95,
     "moyen": 2,
     "haut": 8,
-    "vendu": "2026-11-04",
-    "release": 590894
+    "vendu": "2026-11-04"
    },
    "infos": {
     "label": "RSO",
     "catno": "2090 259",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1977,
     "genres": [
@@ -5891,7 +5635,6 @@
      "Karl Richardson",
      "Bee Gees"
     ],
-    "enVente": 67,
     "pistes": [
      {
       "position": "A",
@@ -5906,7 +5649,6 @@
       "auteurs": []
      }
     ],
-    "have": 2489,
     "want": 117,
     "note": 4.12,
     "votes": 135
@@ -5930,18 +5672,11 @@
     "bas": 0.9,
     "moyen": 3,
     "haut": 10.47,
-    "vendu": "2026-10-03",
-    "release": 577324
+    "vendu": "2026-10-03"
    },
    "infos": {
     "label": "Carrere",
     "catno": "49.421",
-    "format": "Vinyl, 7\", 45 RPM, Single, Reissue",
-    "formats": [
-     "7\"",
-     "Single",
-     "Reissue"
-    ],
     "pays": "France",
     "annee": 1978,
     "genres": [
@@ -5957,7 +5692,6 @@
     "producteurs": [
      "Frank Farian"
     ],
-    "enVente": 18,
     "pistes": [
      {
       "position": "A",
@@ -5978,7 +5712,6 @@
       ]
      }
     ],
-    "have": 1946,
     "want": 228,
     "note": 4.05,
     "votes": 108
@@ -6002,17 +5735,11 @@
     "bas": 0.1,
     "moyen": 1.74,
     "haut": 9.5,
-    "vendu": "2026-10-18",
-    "release": 746257
+    "vendu": "2026-10-18"
    },
    "infos": {
     "label": "Carrere",
     "catno": "49.289",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1977,
     "genres": [
@@ -6025,7 +5752,6 @@
     "producteurs": [
      "Frank Farian"
     ],
-    "enVente": 32,
     "pistes": [
      {
       "position": "A",
@@ -6047,7 +5773,6 @@
       ]
      }
     ],
-    "have": 1668,
     "want": 109,
     "note": 4.16,
     "votes": 97
@@ -6071,17 +5796,11 @@
     "bas": 0.25,
     "moyen": 1.75,
     "haut": 6.51,
-    "vendu": "2026-10-15",
-    "release": 1905880
+    "vendu": "2026-10-15"
    },
    "infos": {
     "label": "Hansa International",
     "catno": "16 959 AT",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "Netherlands",
     "annee": 1976,
     "genres": [
@@ -6093,7 +5812,6 @@
     "producteurs": [
      "Frank Farian"
     ],
-    "enVente": 11,
     "pistes": [
      {
       "position": "A",
@@ -6113,7 +5831,6 @@
       ]
      }
     ],
-    "have": 601,
     "want": 129,
     "note": 3.74,
     "votes": 35
@@ -6136,12 +5853,6 @@
    "infos": {
     "label": "Hansa International",
     "catno": "101 750",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "Germany",
     "annee": 1980,
     "genres": [
@@ -6153,7 +5864,6 @@
     "producteurs": [
      "Frank Farian"
     ],
-    "enVente": 114,
     "pistes": [
      {
       "position": "A",
@@ -6175,7 +5885,6 @@
       ]
      }
     ],
-    "have": 1309,
     "want": 40,
     "note": 3.65,
     "votes": 71
@@ -6189,8 +5898,7 @@
     "bas": 0.2,
     "moyen": 1.25,
     "haut": 4.86,
-    "vendu": "2026-11-06",
-    "release": 2900135
+    "vendu": "2026-11-06"
    }
   },
   {
@@ -6205,12 +5913,6 @@
    "infos": {
     "label": "Carrere",
     "catno": "49.802",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1981,
     "genres": [
@@ -6222,7 +5924,6 @@
     "producteurs": [
      "Frank Farian"
     ],
-    "enVente": 34,
     "pistes": [
      {
       "position": "A",
@@ -6243,7 +5944,6 @@
       ]
      }
     ],
-    "have": 328,
     "want": 18,
     "note": 3.2,
     "votes": 20
@@ -6257,8 +5957,7 @@
     "bas": 0.5,
     "moyen": 1.5,
     "haut": 2,
-    "vendu": "2025-10-03",
-    "release": 948272
+    "vendu": "2025-10-03"
    }
   },
   {
@@ -6273,11 +5972,6 @@
    "infos": {
     "label": "Atlantic",
     "catno": "K 11279",
-    "format": "Vinyl, 7\", Single, 45 RPM",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "UK",
     "annee": 1979,
     "genres": [
@@ -6289,7 +5983,6 @@
     "producteurs": [
      "Frank Farian"
     ],
-    "enVente": 89,
     "pistes": [
      {
       "position": "A",
@@ -6309,7 +6002,6 @@
       ]
      }
     ],
-    "have": 420,
     "want": 23,
     "note": 3.81,
     "votes": 16
@@ -6323,8 +6015,7 @@
     "bas": 0.27,
     "moyen": 0.6,
     "haut": 7.18,
-    "vendu": "2026-10-04",
-    "release": 757398
+    "vendu": "2026-10-04"
    }
   },
   {
@@ -6339,11 +6030,6 @@
    "infos": {
     "label": "Virgin",
     "catno": "105 750",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1983,
     "genres": [
@@ -6358,7 +6044,6 @@
     "producteurs": [
      "Steve Levine"
     ],
-    "enVente": 77,
     "pistes": [
      {
       "position": "A",
@@ -6381,7 +6066,6 @@
       ]
      }
     ],
-    "have": 1544,
     "want": 80,
     "note": 4.13,
     "votes": 87
@@ -6395,8 +6079,7 @@
     "bas": 0.49,
     "moyen": 1.9,
     "haut": 3.99,
-    "vendu": "2026-11-11",
-    "release": 1176574
+    "vendu": "2026-11-11"
    }
   },
   {
@@ -6412,18 +6095,11 @@
     "bas": 0.9,
     "moyen": 2.9,
     "haut": 5,
-    "vendu": "2026-11-11",
-    "release": 507148
+    "vendu": "2026-11-11"
    },
    "infos": {
     "label": "EMI America",
     "catno": "2C 008-86660",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1983,
     "genres": [
@@ -6439,7 +6115,6 @@
      "David Bowie",
      "Nile Rodgers"
     ],
-    "enVente": 56,
     "pistes": [
      {
       "position": "A",
@@ -6459,7 +6134,6 @@
       ]
      }
     ],
-    "have": 2768,
     "want": 220,
     "note": 4.13,
     "votes": 196
@@ -6482,11 +6156,6 @@
    "infos": {
     "label": "EMI America",
     "catno": "1866877",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1983,
     "genres": [
@@ -6500,7 +6169,6 @@
      "David Bowie",
      "Nile Rodgers"
     ],
-    "enVente": 73,
     "pistes": [
      {
       "position": "A",
@@ -6520,7 +6188,6 @@
       ]
      }
     ],
-    "have": 1994,
     "want": 101,
     "note": 4.24,
     "votes": 136
@@ -6534,8 +6201,7 @@
     "bas": 0.5,
     "moyen": 3,
     "haut": 19,
-    "vendu": "2026-11-11",
-    "release": 544861
+    "vendu": "2026-11-11"
    }
   },
   {
@@ -6551,17 +6217,11 @@
     "bas": 1.14,
     "moyen": 3.61,
     "haut": 18.2,
-    "vendu": "2026-11-15",
-    "release": 1435235
+    "vendu": "2026-11-15"
    },
    "infos": {
     "label": "Asylum Records",
     "catno": "E-45085",
-    "format": "Vinyl, 7\", 45 RPM, Stereo",
-    "formats": [
-     "7\"",
-     "Stereo"
-    ],
     "pays": "US",
     "annee": 1977,
     "genres": [
@@ -6573,7 +6233,6 @@
     "producteurs": [
      "Bill Szymczyk"
     ],
-    "enVente": 13,
     "pistes": [
      {
       "position": "A",
@@ -6596,7 +6255,6 @@
       ]
      }
     ],
-    "have": 763,
     "want": 92,
     "note": 4.25,
     "votes": 57
@@ -6619,12 +6277,6 @@
    "infos": {
     "label": "Carrere",
     "catno": "14092",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1986,
     "genres": [
@@ -6642,7 +6294,6 @@
     "arrangeurs": [
      "Romano Musumarra"
     ],
-    "enVente": 111,
     "pistes": [
      {
       "position": "A",
@@ -6660,7 +6311,6 @@
       "auteurs": []
      }
     ],
-    "have": 2210,
     "want": 115,
     "note": 3.9,
     "votes": 134
@@ -6674,8 +6324,7 @@
     "bas": 0.29,
     "moyen": 2.15,
     "haut": 10.8,
-    "vendu": "2026-11-14",
-    "release": 705785
+    "vendu": "2026-11-14"
    }
   },
   {
@@ -6691,18 +6340,11 @@
     "bas": 0.2,
     "moyen": 1.5,
     "haut": 5.72,
-    "vendu": "2026-10-16",
-    "release": 1068562
+    "vendu": "2026-10-16"
    },
    "infos": {
     "label": "Apache",
     "catno": "249433-7",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1984,
     "genres": [
@@ -6714,7 +6356,6 @@
     "auteurs": [
      "Michel Berger"
     ],
-    "enVente": 74,
     "pistes": [
      {
       "position": "A",
@@ -6729,7 +6370,6 @@
       "auteurs": []
      }
     ],
-    "have": 1028,
     "want": 25,
     "note": 3.98,
     "votes": 58
@@ -6753,17 +6393,11 @@
     "bas": 1,
     "moyen": 2.5,
     "haut": 6.6,
-    "vendu": "2025-11-24",
-    "release": 8926407
+    "vendu": "2025-11-24"
    },
    "infos": {
     "label": "Atlantic",
     "catno": "11 698",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1981,
     "genres": [
@@ -6775,7 +6409,6 @@
     "auteurs": [
      "Michel Berger"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A",
@@ -6790,7 +6423,6 @@
       "auteurs": []
      }
     ],
-    "have": 219,
     "want": 25,
     "note": 4.57,
     "votes": 7
@@ -6814,18 +6446,11 @@
     "bas": 10,
     "moyen": 10,
     "haut": 10,
-    "vendu": "2023-06-29",
-    "release": 10847163
+    "vendu": "2023-06-29"
    },
    "infos": {
     "label": "Atlantic",
     "catno": "PRO 41",
-    "format": "Vinyl, 7\", 45 RPM, Single, Promo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Promo"
-    ],
     "pays": "France",
     "annee": 1975,
     "genres": [
@@ -6840,7 +6465,6 @@
     "producteurs": [
      "Michel Berger"
     ],
-    "enVente": 7,
     "pistes": [
      {
       "position": "A",
@@ -6859,7 +6483,6 @@
       ]
      }
     ],
-    "have": 18,
     "want": 31,
     "note": 4.67,
     "votes": 3
@@ -6883,17 +6506,11 @@
     "bas": 0.5,
     "moyen": 2.06,
     "haut": 4.36,
-    "vendu": "2026-11-16",
-    "release": 1349739
+    "vendu": "2026-11-16"
    },
    "infos": {
     "label": "Bell Records",
     "catno": "2008 057",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1972,
     "genres": [
@@ -6909,7 +6526,6 @@
     "producteurs": [
      "Mike Leander"
     ],
-    "enVente": 44,
     "pistes": [
      {
       "position": "A",
@@ -6924,7 +6540,6 @@
       "auteurs": []
      }
     ],
-    "have": 747,
     "want": 55,
     "note": 4.12,
     "votes": 50
@@ -6947,11 +6562,6 @@
    "infos": {
     "label": "Bell Records",
     "catno": "2008 136",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1973,
     "genres": [
@@ -6967,7 +6577,6 @@
     "producteurs": [
      "Mike Leander"
     ],
-    "enVente": 26,
     "pistes": [
      {
       "position": "A",
@@ -6982,7 +6591,6 @@
       "auteurs": []
      }
     ],
-    "have": 326,
     "want": 16,
     "note": 3.06,
     "votes": 16
@@ -6991,8 +6599,7 @@
     "bas": 0.5,
     "moyen": 2.95,
     "haut": 5,
-    "vendu": "2026-09-03",
-    "release": 5451969
+    "vendu": "2026-09-03"
    },
    "titresDiscogs": {
     "artiste": "Gary Glitter",
@@ -7012,11 +6619,6 @@
    "infos": {
     "label": "Bell Records",
     "catno": "2008 210",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1973,
     "genres": [
@@ -7032,7 +6634,6 @@
     "producteurs": [
      "Mike Leander"
     ],
-    "enVente": 28,
     "pistes": [
      {
       "position": "A",
@@ -7047,7 +6648,6 @@
       "auteurs": []
      }
     ],
-    "have": 208,
     "want": 14,
     "note": 3.6,
     "votes": 5
@@ -7061,8 +6661,7 @@
     "bas": 0.3,
     "moyen": 1.13,
     "haut": 20,
-    "vendu": "2025-01-24",
-    "release": 4904428
+    "vendu": "2025-01-24"
    }
   },
   {
@@ -7077,13 +6676,6 @@
    "infos": {
     "label": "Philips",
     "catno": "811 434-7",
-    "format": "Vinyl, 7\", 45 RPM, Single, Reissue, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Reissue",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1987,
     "genres": [
@@ -7099,7 +6691,6 @@
     "producteurs": [
      "Sara Music"
     ],
-    "enVente": 24,
     "pistes": [
      {
       "position": "A",
@@ -7114,7 +6705,6 @@
       "auteurs": []
      }
     ],
-    "have": 482,
     "want": 56,
     "note": 3.59,
     "votes": 29
@@ -7128,8 +6718,7 @@
     "bas": 0.5,
     "moyen": 2,
     "haut": 5,
-    "vendu": "2026-11-09",
-    "release": 1013663
+    "vendu": "2026-11-09"
    }
   },
   {
@@ -7144,11 +6733,6 @@
    "infos": {
     "label": "Kapp Records",
     "catno": "214.005",
-    "format": "Vinyl, 7\", 45 RPM, EP",
-    "formats": [
-     "7\"",
-     "EP"
-    ],
     "pays": "France",
     "annee": 1960,
     "genres": [
@@ -7158,7 +6742,6 @@
     "styles": [
      "Holiday"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A1",
@@ -7197,7 +6780,6 @@
       "auteurs": []
      }
     ],
-    "have": 2,
     "want": 0
    },
    "titresDiscogs": {
@@ -7219,17 +6801,11 @@
     "bas": 0.9,
     "moyen": 3,
     "haut": 4,
-    "vendu": "2025-06-08",
-    "release": 11674561
+    "vendu": "2025-06-08"
    },
    "infos": {
     "label": "Epic",
     "catno": "EPC A 3103",
-    "format": "Vinyl, 7\", Single, 45 RPM",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1982,
     "genres": [
@@ -7238,7 +6814,6 @@
     "styles": [
      "Chanson"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A",
@@ -7253,9 +6828,8 @@
       "auteurs": []
      }
     ],
-    "have": 139,
     "want": 8,
-    "note": 4,
+    "note": 4.0,
     "votes": 4
    },
    "titresDiscogs": {
@@ -7277,17 +6851,11 @@
     "bas": 3.5,
     "moyen": 8.34,
     "haut": 30,
-    "vendu": "2026-05-17",
-    "release": 987861
+    "vendu": "2026-05-17"
    },
    "infos": {
     "label": "Epic",
     "catno": "A 12.6668",
-    "format": "Vinyl, 12\", 45 RPM, Maxi-Single",
-    "formats": [
-     "12\"",
-     "Maxi-Single"
-    ],
     "pays": "France",
     "annee": 1985,
     "genres": [
@@ -7301,7 +6869,6 @@
      "Marc Lumbroso",
      "Jean-Jacques Goldman"
     ],
-    "enVente": 18,
     "pistes": [
      {
       "position": "A",
@@ -7318,7 +6885,6 @@
       "auteurs": []
      }
     ],
-    "have": 512,
     "want": 57,
     "note": 4.2,
     "votes": 49
@@ -7342,17 +6908,11 @@
     "bas": 0.01,
     "moyen": 1.05,
     "haut": 7,
-    "vendu": "2026-07-24",
-    "release": 6907459
+    "vendu": "2026-07-24"
    },
    "infos": {
     "label": "CBS",
     "catno": "3368",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "Netherlands",
     "annee": 1968,
     "genres": [
@@ -7364,7 +6924,6 @@
     "producteurs": [
      "Jacques Plait"
     ],
-    "enVente": 14,
     "pistes": [
      {
       "position": "A",
@@ -7391,7 +6950,6 @@
       ]
      }
     ],
-    "have": 103,
     "want": 15,
     "note": 3.13,
     "votes": 8
@@ -7414,11 +6972,6 @@
    "infos": {
     "label": "Midsong International",
     "catno": "45.MD. 151",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1978,
     "genres": [
@@ -7430,7 +6983,6 @@
      "Rock & Roll",
      "Soft Rock"
     ],
-    "enVente": 34,
     "pistes": [
      {
       "position": "A",
@@ -7451,7 +7003,6 @@
       ]
      }
     ],
-    "have": 878,
     "want": 26,
     "note": 3.7,
     "votes": 50
@@ -7465,8 +7016,7 @@
     "bas": 0.3,
     "moyen": 1.99,
     "haut": 6,
-    "vendu": "2026-11-02",
-    "release": 1391655
+    "vendu": "2026-11-02"
    }
   },
   {
@@ -7481,11 +7031,6 @@
    "infos": {
     "label": "RSO",
     "catno": "2090 316",
-    "format": "Vinyl, 7\", 45 RPM, Stereo",
-    "formats": [
-     "7\"",
-     "Stereo"
-    ],
     "pays": "France",
     "annee": 1978,
     "genres": [
@@ -7500,7 +7045,6 @@
     "producteurs": [
      "Louis St. Louis"
     ],
-    "enVente": 29,
     "pistes": [
      {
       "position": "A",
@@ -7515,7 +7059,6 @@
       "auteurs": []
      }
     ],
-    "have": 827,
     "want": 43,
     "note": 3.85,
     "votes": 48
@@ -7529,8 +7072,7 @@
     "bas": 0.3,
     "moyen": 2,
     "haut": 5,
-    "vendu": "2026-08-17",
-    "release": 590897
+    "vendu": "2026-08-17"
    }
   },
   {
@@ -7545,10 +7087,6 @@
    "infos": {
     "label": "Zed El Youm",
     "catno": "Z.E.Y-6212",
-    "format": "Vinyl, 7\", 45 RPM",
-    "formats": [
-     "7\""
-    ],
     "pays": "Algeria",
     "genres": [
      "Funk / Soul",
@@ -7557,7 +7095,6 @@
     "styles": [
      "Disco"
     ],
-    "enVente": 0,
     "pistes": [
      {
       "position": "A",
@@ -7572,7 +7109,6 @@
       "auteurs": []
      }
     ],
-    "have": 37,
     "want": 43,
     "note": 3.5,
     "votes": 2
@@ -7596,17 +7132,11 @@
     "bas": 0.3,
     "moyen": 1,
     "haut": 4,
-    "vendu": "2026-02-04",
-    "release": 972559
+    "vendu": "2026-02-04"
    },
    "infos": {
     "label": "Flarenasch",
     "catno": "15115",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1991,
     "genres": [
@@ -7628,7 +7158,6 @@
     "arrangeurs": [
      "Dimitri Yerasimos"
     ],
-    "enVente": 72,
     "pistes": [
      {
       "position": "A",
@@ -7643,7 +7172,6 @@
       "auteurs": []
      }
     ],
-    "have": 1231,
     "want": 32,
     "note": 3.68,
     "votes": 63
@@ -7667,17 +7195,11 @@
     "bas": 0.49,
     "moyen": 2,
     "haut": 8,
-    "vendu": "2025-12-16",
-    "release": 1485728
+    "vendu": "2025-12-16"
    },
    "infos": {
     "label": "RCA",
     "catno": "PB 8067",
-    "format": "Vinyl, 7\", 45 RPM, Stereo",
-    "formats": [
-     "7\"",
-     "Stereo"
-    ],
     "pays": "Italy",
     "annee": 1977,
     "genres": [
@@ -7690,8 +7212,6 @@
      "Alain Souchon",
      "Laurent Voulzy"
     ],
-    "enVente": 107,
-    "have": 255,
     "want": 13,
     "note": 3.6,
     "votes": 25
@@ -7715,17 +7235,11 @@
     "bas": 5,
     "moyen": 5,
     "haut": 5,
-    "vendu": "2017-10-04",
-    "release": 9051508
+    "vendu": "2017-10-04"
    },
    "infos": {
     "label": "Disques Déesse",
     "catno": "DDP 101",
-    "format": "Vinyl, 7\", 45 RPM, EP",
-    "formats": [
-     "7\"",
-     "EP"
-    ],
     "pays": "France",
     "annee": 1966,
     "genres": [
@@ -7734,7 +7248,6 @@
     "arrangeurs": [
      "Jack Defer"
     ],
-    "enVente": 2,
     "pistes": [
      {
       "position": "A1",
@@ -7770,9 +7283,8 @@
       ]
      }
     ],
-    "have": 41,
     "want": 1,
-    "note": 3,
+    "note": 3.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -7793,11 +7305,6 @@
    "infos": {
     "label": "Disques Déesse",
     "catno": "DDP 129",
-    "format": "Vinyl, 7\", 45 RPM, EP",
-    "formats": [
-     "7\"",
-     "EP"
-    ],
     "pays": "France",
     "genres": [
      "Pop",
@@ -7806,7 +7313,6 @@
     "styles": [
      "Chanson"
     ],
-    "enVente": 3,
     "pistes": [
      {
       "position": "A1",
@@ -7837,9 +7343,8 @@
       "auteurs": []
      }
     ],
-    "have": 15,
     "want": 0,
-    "note": 4,
+    "note": 4.0,
     "votes": 1
    },
    "titresDiscogs": {
@@ -7861,17 +7366,11 @@
     "bas": 0.45,
     "moyen": 2,
     "haut": 4,
-    "vendu": "2026-11-20",
-    "release": 673288
+    "vendu": "2026-11-20"
    },
    "infos": {
     "label": "Carrere",
     "catno": "13761",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1984,
     "genres": [
@@ -7888,7 +7387,6 @@
     "producteurs": [
      "Peter Müller"
     ],
-    "enVente": 103,
     "pistes": [
      {
       "position": "A",
@@ -7903,7 +7401,6 @@
       "auteurs": []
      }
     ],
-    "have": 2557,
     "want": 110,
     "note": 4.08,
     "votes": 135
@@ -7926,11 +7423,6 @@
    "infos": {
     "label": "Parlophone",
     "catno": "1652527",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1983,
     "genres": [
@@ -7942,7 +7434,6 @@
     "producteurs": [
      "George Martin"
     ],
-    "enVente": 65,
     "pistes": [
      {
       "position": "A",
@@ -7962,7 +7453,6 @@
       ]
      }
     ],
-    "have": 2642,
     "want": 145,
     "note": 4.19,
     "votes": 182
@@ -7976,8 +7466,7 @@
     "bas": 0.6,
     "moyen": 3,
     "haut": 10,
-    "vendu": "2026-10-23",
-    "release": 577310
+    "vendu": "2026-10-23"
    }
   },
   {
@@ -7993,17 +7482,11 @@
     "bas": 0.1,
     "moyen": 1.48,
     "haut": 7.92,
-    "vendu": "2026-10-09",
-    "release": 648376
+    "vendu": "2026-10-09"
    },
    "infos": {
     "label": "Polydor",
     "catno": "2056 954",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1982,
     "genres": [
@@ -8012,7 +7495,6 @@
     "styles": [
      "Chanson"
     ],
-    "enVente": 67,
     "pistes": [
      {
       "position": "A",
@@ -8033,9 +7515,8 @@
       ]
      }
     ],
-    "have": 1322,
     "want": 22,
-    "note": 4,
+    "note": 4.0,
     "votes": 63
    },
    "titresDiscogs": {
@@ -8057,17 +7538,11 @@
     "bas": 0.8,
     "moyen": 4.8,
     "haut": 20,
-    "vendu": "2026-11-16",
-    "release": 4159617
+    "vendu": "2026-11-16"
    },
    "infos": {
     "label": "EMI",
     "catno": "2 C 006-60045",
-    "format": "Vinyl, 7\", Single, 45 RPM",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1977,
     "genres": [
@@ -8080,7 +7555,6 @@
      "Queen",
      "Mike Stone"
     ],
-    "enVente": 48,
     "pistes": [
      {
       "position": "A",
@@ -8099,7 +7573,6 @@
       ]
      }
     ],
-    "have": 2258,
     "want": 203,
     "note": 4.26,
     "votes": 119
@@ -8122,11 +7595,6 @@
    "infos": {
     "label": "Mercury",
     "catno": "878 692-7",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1990,
     "genres": [
@@ -8140,7 +7608,6 @@
      "Keith Olsen",
      "Scorpions"
     ],
-    "enVente": 36,
     "pistes": [
      {
       "position": "A",
@@ -8162,7 +7629,6 @@
       ]
      }
     ],
-    "have": 2045,
     "want": 134,
     "note": 4.08,
     "votes": 132
@@ -8176,13 +7642,12 @@
     "bas": 0.8,
     "moyen": 3,
     "haut": 5.9,
-    "vendu": "2026-11-12",
-    "release": 2611235
+    "vendu": "2026-11-12"
    }
   },
   {
    "id": "8c63b252-c805-44cc-ac30-7a9085c4c5a0",
-   "artiste": "The Frost",
+   "artiste": "Frost (2), The",
    "a": "Rock And Rool Music",
    "b": "Donny's Blues",
    "pos": null,
@@ -8192,12 +7657,6 @@
    "infos": {
     "label": "Vanguard",
     "catno": "119 017",
-    "format": "Vinyl, 7\", 45 RPM, Single, Misprint",
-    "formats": [
-     "7\"",
-     "Single",
-     "Misprint"
-    ],
     "pays": "France",
     "annee": 1969,
     "genres": [
@@ -8208,7 +7667,6 @@
      "Psychedelic Rock",
      "Classic Rock"
     ],
-    "enVente": 7,
     "pistes": [
      {
       "position": "A",
@@ -8227,7 +7685,6 @@
       ]
      }
     ],
-    "have": 48,
     "want": 8,
     "note": 3.5,
     "votes": 4
@@ -8240,7 +7697,7 @@
   },
   {
    "id": "25cfa028-522f-4959-ac7d-7b2df7265bf5",
-   "artiste": "The Shocking Blue",
+   "artiste": "Shocking Blue",
    "a": "Venus",
    "b": "Hot Sand",
    "pos": null,
@@ -8251,17 +7708,11 @@
     "bas": 0.4,
     "moyen": 3,
     "haut": 7,
-    "vendu": "2026-11-05",
-    "release": 901394
+    "vendu": "2026-11-05"
    },
    "infos": {
     "label": "Disc'Az",
     "catno": "AZ 10 473",
-    "format": "Vinyl, 7\", 45 RPM, Single",
-    "formats": [
-     "7\"",
-     "Single"
-    ],
     "pays": "France",
     "annee": 1969,
     "genres": [
@@ -8274,7 +7725,6 @@
     "auteurs": [
      "Robbie van Leeuwen"
     ],
-    "enVente": 42,
     "pistes": [
      {
       "position": "A",
@@ -8289,7 +7739,6 @@
       "auteurs": []
      }
     ],
-    "have": 1708,
     "want": 154,
     "note": 4.21,
     "votes": 117
@@ -8307,15 +7756,11 @@
    "b": "Le Chant Du Départ / La Madelon",
    "pos": null,
    "pochette": "covers/401e1402-0367-44b9-b59a-81c85b1ec27c-mwqybsfv.webp",
+   "avecPochette": true,
    "discogs": 4818175,
    "infos": {
     "label": "Vega",
     "catno": "LDP 5.051",
-    "format": "Vinyl, 7\", 45 RPM, EP",
-    "formats": [
-     "7\"",
-     "EP"
-    ],
     "pays": "France",
     "annee": 1972,
     "genres": [
@@ -8324,7 +7769,6 @@
     "styles": [
      "Marches"
     ],
-    "enVente": 16,
     "pistes": [
      {
       "position": "A1",
@@ -8359,9 +7803,8 @@
       ]
      }
     ],
-    "have": 48,
     "want": 1,
-    "note": 3,
+    "note": 3.0,
     "votes": 5
    },
    "titresDiscogs": {
@@ -8382,12 +7825,6 @@
    "infos": {
     "label": "Metronome",
     "catno": "0030.140",
-    "format": "Vinyl, 7\", 45 RPM, Single, Stereo",
-    "formats": [
-     "7\"",
-     "Single",
-     "Stereo"
-    ],
     "pays": "Germany",
     "annee": 1978,
     "genres": [
@@ -8406,7 +7843,6 @@
      "Jacques Morali",
      "Henri Belolo"
     ],
-    "enVente": 175,
     "pistes": [
      {
       "position": "A",
@@ -8421,7 +7857,6 @@
       "auteurs": []
      }
     ],
-    "have": 2629,
     "want": 97,
     "note": 3.68,
     "votes": 149
@@ -8435,10 +7870,15 @@
     "bas": 0.29,
     "moyen": 2,
     "haut": 10.17,
-    "vendu": "2026-11-10",
-    "release": 410179
+    "vendu": "2026-11-10"
    }
   }
  ],
- "prixMaj": "2026-11-21"
+ "prixMaj": "2026-11-22",
+ "valeurDiscogs": {
+  "bas": "€316.11",
+  "median": "€678.04",
+  "haut": "€1,901.78",
+  "date": 1795308179.69204
+ }
 }

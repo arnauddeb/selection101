@@ -25,7 +25,10 @@
       <div class="marque">
         <h1>Jukebox <span class="total" id="total" hidden></span></h1>
         <p id="sous-titre">Selection 101</p>
-        <p id="statut-sync-discogs" role="status" hidden></p>
+        <div class="suivi-discogs seul-edition">
+          <p id="statut-sync-discogs" role="status" hidden></p>
+          <button type="button" id="btn-historique-discogs" aria-haspopup="dialog">Historique des mises à jour</button>
+        </div>
       </div>
       <div class="actions">
         <button type="button" class="icone" id="btn-stats" aria-label="Statistiques de la collection" title="Statistiques de la collection" disabled>
@@ -168,9 +171,16 @@
                 </section>
                 <div class="champs">
                   <label class="champ"><span>Artiste</span><input id="f-artiste" required></label>
-                  <label class="champ"><span>Face A <b id="sel-a"></b></span><input id="f-a" required></label>
-                  <label class="champ"><span>Face B <b id="sel-b"></b></span><input id="f-b"></label>
-                  <p class="aide indication-titre" id="indication-titre" hidden>En jaune, les titres ajustés manuellement.</p>
+                  <div class="champ">
+                    <label for="f-a">Face A <b id="sel-a"></b></label>
+                    <input id="f-a" required>
+                    <small class="titre-discogs" id="titre-discogs-a" hidden></small>
+                  </div>
+                  <div class="champ">
+                    <label for="f-b">Face B <b id="sel-b"></b></label>
+                    <input id="f-b">
+                    <small class="titre-discogs" id="titre-discogs-b" hidden></small>
+                  </div>
                   <button type="button" class="lien" id="btn-verifier">Vérifier avec Discogs</button>
                 </div>
                 <div class="alerte suggestion" id="suggestion" hidden>
@@ -284,6 +294,8 @@
         <span>Synchronisation Discogs</span>
         <p class="aide prix-aide" id="r-verif">Utilise « Synchroniser avec Discogs » dans la barre du jukebox.</p>
         <button type="button" class="secondaire" id="btn-voir-verif" hidden>Voir les résultats</button>
+        <button type="button" class="secondaire" id="btn-valeur-discogs">Actualiser l’estimation Discogs</button>
+        <p class="aide" id="r-valeur-discogs" role="status"></p>
       </div>
       <div class="champ">
         <span>Comparer les pochettes avec Discogs</span>
@@ -297,6 +309,26 @@
       </footer>
     </form>
   </div>
+
+  <dialog class="stats-collection historique-discogs" id="historique-discogs" aria-labelledby="historique-titre">
+    <div class="feuille">
+      <header class="feuille-tete">
+        <h2 id="historique-titre">Mises à jour Discogs</h2>
+        <form method="dialog">
+          <button class="icone fermer" aria-label="Fermer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+        </form>
+      </header>
+      <p class="lead">Compare les valeurs et restaure les fiches de la collection locale.</p>
+      <p id="historique-statut" class="lead" role="status"></p>
+      <p id="historique-attente" class="lead" hidden>La restauration sera disponible à la fin de la synchronisation.</p>
+      <div id="historique-choix" class="historique-choix" hidden>
+        <label for="historique-entree">Mise à jour</label>
+        <select id="historique-entree"></select>
+      </div>
+      <button type="button" class="secondaire" id="historique-restaurer" hidden>Restaurer toutes les fiches de cette mise à jour</button>
+      <div id="historique-fiches" class="historique-fiches"></div>
+    </div>
+  </dialog>
 
   <!-- Résultats de la vérification Discogs -->
   <div class="voile" id="verif" hidden>

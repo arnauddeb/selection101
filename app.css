@@ -72,6 +72,8 @@ a { color: var(--accent); }
 .barre-haut { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
 .marque h1 { margin: 0; font-size: 32px; line-height: 1.05; font-weight: 700; letter-spacing: -.025em; }
 .marque p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+.suivi-discogs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 10px; }
+#btn-historique-discogs { font-size: 14px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; min-height: 28px; text-align: left; }
 .total {
   display: inline-block; vertical-align: middle; margin-left: 6px; padding: 4px 11px; border-radius: 999px;
   background: var(--champ); color: var(--ink); font-size: 17px; font-weight: 600; letter-spacing: 0;
@@ -95,6 +97,7 @@ a { color: var(--accent); }
 .pilule:disabled { opacity: .6; }
 .sync-discogs { background: var(--champ); color: var(--ink); white-space: nowrap; }
 .sync-discogs-court { display: none; }
+#statut-sync-discogs, #r-verif { white-space: pre-line; }
 @media (max-width: 700px) {
   .sync-discogs { padding-inline: 10px; font-size: 13px; }
   .sync-discogs-court { display: inline; }
@@ -312,6 +315,22 @@ html:has(.stats-collection[open]) { overflow: hidden; }
 .stats-grille dd { margin: 2px 0 0; font-size: 18px; font-weight: 700; }
 .stats-grille small { display: block; margin-top: 3px; font-weight: 400; }
 
+.historique-discogs { width: min(760px, calc(100% - 24px)); }
+#historique-statut:empty { display: none; }
+.historique-choix { display: grid; gap: 4px; font-size: 14px; }
+.historique-choix select { width: 100%; padding: 9px; border: 1px solid var(--ligne); border-radius: 10px; background: var(--carte); }
+#historique-restaurer, .historique-fiches button { align-self: flex-start; height: auto; min-height: 38px; padding: 7px 14px; font-size: 14px; }
+.historique-discogs button:disabled { opacity: .5; }
+.historique-fiches { display: grid; gap: 6px; }
+.historique-fiches details { padding: 10px 12px; border-radius: 12px; background: var(--carte); overflow-wrap: anywhere; }
+.historique-fiches summary { cursor: pointer; }
+.historique-fiches summary small { color: var(--muted); margin-inline-start: 6px; }
+.historique-table { width: 100%; border-collapse: collapse; table-layout: fixed; margin: 8px 0; font-size: 14px; }
+.historique-table th, .historique-table td { border-top: 1px solid var(--ligne); padding: 6px; text-align: left; vertical-align: top; }
+.historique-table thead th { color: var(--muted); }
+.historique-table th:first-child { width: 27%; }
+.historique-table td { white-space: pre-line; }
+
 .fiche-disque {
   width: min(1040px, calc(100% - 40px)); max-width: none;
   max-height: calc(100dvh - 48px);
@@ -351,7 +370,7 @@ html:has(.fiche-disque[open]) { overflow: hidden; }
 .fiche-reference .aide { margin: 0; }
 .fiche-disque .titre-ajuste { color: var(--ink); background: color-mix(in srgb, #eeb700 30%, var(--carte)); }
 .fiche-disque mark.titre-ajuste { padding-inline: 3px; border-radius: 3px; }
-.fiche-disque .indication-titre { margin: 0; }
+.fiche-disque .titre-discogs { display: block; color: var(--muted); font-size: 12px; line-height: 1.4; padding-left: 2px; overflow-wrap: anywhere; }
 .fiche-contenu { grid-area: contenu; display: grid; gap: 14px; }
 .fiche-bloc { display: flex; flex-direction: column; gap: 8px; }
 .fiche-emplacement {
@@ -415,8 +434,8 @@ html:has(.fiche-disque[open]) { overflow: hidden; }
 
 .champ { display: flex; flex-direction: column; gap: 5px; }
 .fiche-disque .champ { gap: 4px; }
-.champ > span { font-size: 13px; font-weight: 500; color: var(--muted); padding-left: 2px; }
-.champ > span b { color: var(--accent); font-weight: 600; margin-left: 4px; }
+.champ > :is(span, label) { font-size: 13px; font-weight: 500; color: var(--muted); padding-left: 2px; }
+.champ > :is(span, label) b { color: var(--accent); font-weight: 600; margin-left: 4px; }
 .champ input, .champ select, textarea {
   width: 100%; height: 44px; padding: 0 12px;
   border: 0; border-radius: 11px; background: var(--carte);

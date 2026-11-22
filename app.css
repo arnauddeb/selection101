@@ -96,6 +96,12 @@ a { color: var(--accent); }
 .pilule:active { transform: scale(.94); }
 .pilule:disabled { opacity: .6; }
 .sync-discogs { background: var(--champ); color: var(--ink); white-space: nowrap; }
+.etiquettes { display: inline-flex; align-items: center; gap: 7px; padding-inline: 14px 16px; background: var(--champ); color: var(--ink); white-space: nowrap; }
+.etiquettes svg { width: 18px; height: 18px; }
+@media (max-width: 700px) {
+  .etiquettes { width: 40px; padding: 0; justify-content: center; }
+  .etiquettes span { display: none; }
+}
 .sync-discogs-court { display: none; }
 #statut-sync-discogs, #r-verif, .historique-bilan { white-space: pre-line; }
 .historique-bilan { margin: 0 0 12px; padding: 10px 12px; border-radius: 10px; background: var(--champ); font-size: 14px; line-height: 1.45; }

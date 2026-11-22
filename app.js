@@ -9,6 +9,7 @@ const JUKEBOX = {
   selectionA: (pos) => "1" + pos, // numéro à composer pour la face A
   selectionB: (pos) => "2" + pos, // numéro à composer pour la face B
 };
+const ADRESSE_45OJUKE = "https://45ojuke.fr/"; // bouton « Étiquettes »
 const TAILLE_POCHETTE = 320;      // px, carré (≈ 13 Ko en WebP)
 const QUALITE_POCHETTE = 0.7;     // qualité WebP (0 à 1)
 
@@ -452,6 +453,7 @@ function rendre() {
   document.body.classList.toggle("recherche-active", !!etat.q);
   if (!etat.charge) return;
   $("btn-stats").disabled = false;
+  $("btn-etiquettes").disabled = false;
   rendreInventaire();
 
   const emplacement = etat.f.emplacement;
@@ -1648,6 +1650,19 @@ $("btn-export").addEventListener("click", () => {
   $("btn-csv").disabled = $("btn-copier").disabled = !nb;
   ouvrir("export");
 });
+// Bouton « Étiquettes » : ouvre 45'O'Juke avec la liste du jukebox déjà dans « Mes disques ».
+// La liste voyage après le # de l'adresse (jamais envoyée à un serveur), en JSON UTF-8 encodé en base64url.
+function lien45OJuke() {
+  const octets = new TextEncoder().encode(JSON.stringify({ source: "Selection101", disques: lignesExport(true) }));
+  let binaire = "";
+  for (const o of octets) binaire += String.fromCharCode(o);
+  return `${ADRESSE_45OJUKE}#disques=${btoa(binaire).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "")}`;
+}
+$("btn-etiquettes").addEventListener("click", () => {
+  if (!etat.vinyles.some((v) => v.pos)) return toast("Aucun disque dans le jukebox pour l'instant.");
+  window.open(lien45OJuke(), "_blank", "noopener");
+});
+
 $("btn-csv").addEventListener("click", () => {
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([csv45(lignesExport($("export-garder").checked))], { type: "text/csv;charset=utf-8" }));

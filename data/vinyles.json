@@ -115,63 +115,49 @@
    "b": "Pharaohs",
    "pos": "02",
    "pochette": "covers/f4630491-93f0-4ee9-b99e-b21164941517.webp",
-   "discogs": 1119898,
+   "discogs": 536786,
    "prix": {
-    "bas": 4.99,
-    "moyen": 8,
-    "haut": 20
+    "bas": 1.5,
+    "moyen": 3.72,
+    "haut": 12.0
    },
    "infos": {
     "label": "Mercury",
-    "catno": "880 659-1",
-    "pays": "France",
+    "catno": "880 659-7",
+    "pays": "Netherlands",
     "annee": 1985,
     "genres": [
      "Electronic",
-     "Rock"
+     "Pop"
     ],
     "styles": [
-     "New Wave",
      "Synth-pop"
+    ],
+    "auteurs": [
+     "Chris Hughes",
+     "Curt Smith",
+     "Ian Stanley",
+     "Roland Orzabal"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Everybody Wants To Rule The World (Extended Version)",
-      "duree": "5:40",
-      "auteurs": [
-       "Chris Hughes",
-       "Ian Stanley",
-       "Roland Orzabal"
-      ]
+      "titre": "Everybody Wants To Rule The World",
+      "duree": "4:08",
+      "auteurs": []
      },
      {
-      "position": "B1",
-      "titre": "Everybody Wants To Rule The World (7\" Version)",
-      "duree": "4:10",
-      "auteurs": [
-       "Chris Hughes",
-       "Ian Stanley",
-       "Roland Orzabal"
-      ]
-     },
-     {
-      "position": "B2",
+      "position": "B",
       "titre": "Pharaohs",
       "duree": "3:42",
-      "auteurs": [
-       "Chris Hughes",
-       "Curt Smith",
-       "Ian Stanley",
-       "Roland Orzabal"
-      ]
+      "auteurs": []
      }
     ]
    },
    "titresDiscogs": {
     "artiste": "Tears For Fears",
-    "a": "Everybody Wants To Rule The World (Extended Version)",
-    "b": "Everybody Wants To Rule The World (7\" Version) / Pharaohs"
+    "a": "Everybody Wants To Rule The World",
+    "b": "Pharaohs"
    }
   },
   {
@@ -182,39 +168,49 @@
    "pos": "03",
    "pochette": "covers/3036aaae-3edd-423b-8d54-c5904c3e0567.webp",
    "avecPochette": true,
-   "discogs": 4506646,
+   "discogs": 5296504,
    "prix": {
-    "bas": 29.93,
-    "moyen": 29.93,
-    "haut": 29.93
+    "bas": 0.96,
+    "moyen": 3.58,
+    "haut": 18.84
    },
    "infos": {
-    "label": "Motown",
-    "catno": "Anchor 1",
+    "label": "Epic",
+    "catno": "657676 7",
     "pays": "UK",
-    "annee": 1994,
+    "annee": 1991,
     "genres": [
-     "Pop"
+     "Funk / Soul",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Soul"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "My Girl",
-      "duree": "",
-      "auteurs": []
+      "duree": "2:43",
+      "auteurs": [
+       "Ronald White",
+       "Smokey Robinson"
+      ]
      },
      {
       "position": "B",
-      "titre": "My Girl",
-      "duree": "",
-      "auteurs": []
+      "titre": "Theme From My Girl",
+      "duree": "3:35",
+      "auteurs": [
+       "James Newton Howard"
+      ]
      }
     ]
    },
    "titresDiscogs": {
     "artiste": "Temptations, The",
     "a": "My Girl",
-    "b": "My Girl"
+    "b": "Theme From My Girl"
    }
   },
   {
@@ -1172,34 +1168,36 @@
    "b": "Burnin' Up",
    "pos": "23",
    "pochette": "covers/d7fd4026-62ce-43b7-8536-074c14838049.webp",
-   "discogs": 1121777,
+   "discogs": 1108923,
    "infos": {
-    "label": "Ariola",
-    "catno": "600 631",
-    "pays": "Europe",
-    "annee": 1982,
+    "label": "R & B Records",
+    "catno": "RBS 206",
+    "pays": "UK",
+    "annee": 1981,
     "genres": [
      "Electronic",
-     "Funk / Soul"
+     "Pop"
     ],
     "styles": [
-     "Boogie"
+     "Electro",
+     "Synth-pop",
+     "Disco"
     ],
     "auteurs": [
-     "Imagination",
-     "Steve Jolley & Tony Swain"
+     "Steve Jolley & Tony Swain",
+     "Imagination"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "Flashback",
-      "duree": "4:30",
+      "duree": "3:40",
       "auteurs": []
      },
      {
       "position": "B",
       "titre": "Burnin' Up",
-      "duree": "4:44",
+      "duree": "3:50",
       "auteurs": []
      }
     ]
@@ -1208,6 +1206,11 @@
     "artiste": "Imagination",
     "a": "Flashback",
     "b": "Burnin' Up"
+   },
+   "prix": {
+    "bas": 0.12,
+    "moyen": 0.83,
+    "haut": 3.59
    }
   },
   {
@@ -1217,15 +1220,15 @@
    "b": "She Can't Love You (Instru)",
    "pos": "24",
    "pochette": "covers/c9db2c79-07c8-4f8b-9c22-337f15b76011.webp",
-   "discogs": 648897,
+   "discogs": 747703,
    "prix": {
-    "bas": 12,
-    "moyen": 27,
-    "haut": 50
+    "bas": 5.0,
+    "moyen": 9.0,
+    "haut": 19.9
    },
    "infos": {
     "label": "Philips",
-    "catno": "6400 724",
+    "catno": "6010 612",
     "pays": "France",
     "annee": 1982,
     "genres": [
@@ -1233,8 +1236,7 @@
      "Funk / Soul"
     ],
     "styles": [
-     "Disco",
-     "Boogie"
+     "Disco"
     ],
     "auteurs": [
      "Ricki Byars Muldrow",
@@ -1244,13 +1246,13 @@
      {
       "position": "A",
       "titre": "She Can't Love You",
-      "duree": "5:25",
+      "duree": "3:55",
       "auteurs": []
      },
      {
       "position": "B",
       "titre": "She Can't Love You (Instrumental)",
-      "duree": "5:25",
+      "duree": "3:35",
       "auteurs": []
      }
     ]
@@ -1349,6 +1351,11 @@
     "artiste": "Catherine Lara",
     "a": "Nuit Magique",
     "b": "Au Milieu De Nulle Part"
+   },
+   "prix": {
+    "bas": 0.15,
+    "moyen": 2.0,
+    "haut": 11.88
    }
   },
   {
@@ -1965,22 +1972,22 @@
    "pos": "39",
    "pochette": "covers/d757cf08-f347-48d4-ac3a-8f5dbf3d82bd.webp",
    "avecPochette": true,
-   "discogs": 23159903,
+   "discogs": 148431,
    "prix": {
-    "bas": 10.8,
-    "moyen": 18.49,
-    "haut": 31
+    "bas": 1.0,
+    "moyen": 4.22,
+    "haut": 9.76
    },
    "infos": {
-    "label": "Discoring Records",
-    "catno": "DR-011",
-    "pays": "Italy",
-    "annee": 2022,
+    "label": "CBS",
+    "catno": "CBS 650175 7",
+    "pays": "Europe",
+    "annee": 1986,
     "genres": [
-     "Electronic"
+     "Electronic",
+     "Pop"
     ],
     "styles": [
-     "Euro-Disco",
      "Synth-pop"
     ],
     "auteurs": [
@@ -1990,28 +1997,22 @@
     "pistes": [
      {
       "position": "A",
-      "titre": "Voyage, Voyage (Extended Remix)",
-      "duree": "6:45",
+      "titre": "Voyage Voyage",
+      "duree": "4:22",
       "auteurs": []
      },
      {
-      "position": "B1",
-      "titre": "Voyage, Voyage (Euro Remix)",
-      "duree": "6:12",
-      "auteurs": []
-     },
-     {
-      "position": "B2",
-      "titre": "Voyage, Voyage (Original)",
-      "duree": "4:21",
+      "position": "B",
+      "titre": "Destin Fragile (Instrumental)",
+      "duree": "3:31",
       "auteurs": []
      }
     ]
    },
    "titresDiscogs": {
     "artiste": "Desireless",
-    "a": "Voyage, Voyage (Extended Remix)",
-    "b": "Voyage, Voyage (Euro Remix) / Voyage, Voyage (Original)"
+    "a": "Voyage Voyage",
+    "b": "Destin Fragile (Instrumental)"
    }
   },
   {
@@ -2876,62 +2877,51 @@
    "pos": "55",
    "pochette": "covers/56676d45-684a-4e39-86ad-abc473c4ab84.webp",
    "avecPochette": true,
-   "discogs": 85940,
+   "discogs": 500660,
    "prix": {
-    "bas": 4,
-    "moyen": 10,
-    "haut": 28.37
+    "bas": 0.75,
+    "moyen": 1.99,
+    "haut": 6.0
    },
    "infos": {
     "label": "CBS",
-    "catno": "CBS 651438 8",
+    "catno": "CBS 651438 7",
     "pays": "France",
     "annee": 1988,
     "genres": [
      "Electronic"
     ],
     "styles": [
-     "Disco",
-     "Hi NRG",
-     "Euro House",
      "Synth-pop"
     ],
     "auteurs": [
-     "Claude Mainguy",
-     "Sauveur Pichot",
      "William Picard"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Nuit De Folie (Crazy Night Remix)",
-      "duree": "6:40",
-      "auteurs": []
+      "titre": "Nuit De Folie",
+      "duree": "4:10",
+      "auteurs": [
+       "Claude Mainguy",
+       "Sauveur Pichot"
+      ]
      },
      {
-      "position": "B1",
-      "titre": "Nuit De Folie (French Mix Club)",
-      "duree": "6:40",
-      "auteurs": []
-     },
-     {
-      "position": "B2",
-      "titre": "Nuit De Folie (A Capella Chœur)",
-      "duree": "0:50",
-      "auteurs": []
-     },
-     {
-      "position": "B3",
-      "titre": "Nuit De Folie (A Capella Voix Rap)",
-      "duree": "0:40",
-      "auteurs": []
+      "position": "B",
+      "titre": "Tout Pour La Danse",
+      "duree": "3:15",
+      "auteurs": [
+       "Claude Mainguy",
+       "Guy Mattéoni"
+      ]
      }
     ]
    },
    "titresDiscogs": {
     "artiste": "Début De Soirée",
-    "a": "Nuit De Folie (Crazy Night Remix)",
-    "b": "Nuit De Folie (French Mix Club) / Nuit De Folie (A Capella Chœur) / Nuit De Folie (A Capella Voix Rap)"
+    "a": "Nuit De Folie",
+    "b": "Tout Pour La Danse"
    }
   },
   {
@@ -2980,6 +2970,11 @@
     "artiste": "Roch Voisine",
     "a": "Hélène",
     "b": "Ton Blues"
+   },
+   "prix": {
+    "bas": 0.29,
+    "moyen": 1.48,
+    "haut": 4.0
    }
   },
   {
@@ -3135,6 +3130,11 @@
     "artiste": "Eagles",
     "a": "Hotel California",
     "b": "One Of These Nights"
+   },
+   "prix": {
+    "bas": 1.25,
+    "moyen": 8.0,
+    "haut": 15.0
    }
   },
   {
@@ -3271,6 +3271,11 @@
     "artiste": "Stevie Wonder",
     "a": "Do I Do",
     "b": "Rocket Love"
+   },
+   "prix": {
+    "bas": 1.0,
+    "moyen": 2.49,
+    "haut": 8.55
    }
   },
   {
@@ -3437,45 +3442,37 @@
    "pos": "67",
    "pochette": "covers/3fb6f5ec-b53b-44b5-80a4-b1be798cfba1.webp",
    "avecPochette": true,
-   "discogs": 1081518,
+   "discogs": 1031162,
    "prix": {
-    "bas": 2.5,
-    "moyen": 6.89,
-    "haut": 15.9
+    "bas": 0.5,
+    "moyen": 1.76,
+    "haut": 3.95
    },
    "infos": {
     "label": "London Records",
-    "catno": "886 056-1",
-    "pays": "France",
+    "catno": "NANA 10",
+    "pays": "UK",
     "annee": 1986,
     "genres": [
-     "Electronic"
+     "Electronic",
+     "Pop"
     ],
     "styles": [
-     "Synth-pop",
-     "Hi NRG"
+     "Synth-pop"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Venus (Extended Version)",
-      "duree": "7:20",
+      "titre": "Venus",
+      "duree": "3:40",
       "auteurs": [
        "Robbie van Leeuwen"
       ]
      },
      {
-      "position": "B1",
-      "titre": "Venus (Dub)",
-      "duree": "8:15",
-      "auteurs": [
-       "Robbie van Leeuwen"
-      ]
-     },
-     {
-      "position": "B2",
+      "position": "B",
       "titre": "White Train",
-      "duree": "3:50",
+      "duree": "3:52",
       "auteurs": [
        "Keren Woodward",
        "Patrick Seymour",
@@ -3488,8 +3485,8 @@
    },
    "titresDiscogs": {
     "artiste": "Bananarama",
-    "a": "Venus (Extended Version)",
-    "b": "Venus (Dub) / White Train"
+    "a": "Venus",
+    "b": "White Train"
    }
   },
   {
@@ -3500,23 +3497,24 @@
    "pos": "68",
    "pochette": "covers/49f4474a-cb0a-4dc7-88af-9ebb543de60a.webp",
    "avecPochette": true,
-   "discogs": 389998,
+   "discogs": 532933,
    "infos": {
     "label": "The Boardwalk Entertainment Co",
-    "catno": "101616",
-    "pays": "France",
+    "catno": "100·07·186",
+    "pays": "Germany",
     "annee": 1982,
     "genres": [
      "Rock"
     ],
     "styles": [
+     "Pop Rock",
      "Hard Rock"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "I Love Rock 'N Roll",
-      "duree": "2:56",
+      "titre": "I Love Rock'n Roll",
+      "duree": "2:55",
       "auteurs": [
        "Alan Merrill",
        "Jake Hooker"
@@ -3534,8 +3532,13 @@
    },
    "titresDiscogs": {
     "artiste": "Joan Jett & The Blackhearts",
-    "a": "I Love Rock 'N Roll",
+    "a": "I Love Rock'n Roll",
     "b": "Love Is Pain"
+   },
+   "prix": {
+    "bas": 1.0,
+    "moyen": 3.99,
+    "haut": 8.45
    }
   },
   {
@@ -5607,30 +5610,31 @@
    "pos": null,
    "pochette": "covers/ac79a8ff-30b8-4b2f-940e-e2b60d2b2266-mwqrccdf.webp",
    "avecPochette": true,
-   "discogs": 987861,
+   "discogs": 660009,
    "prix": {
-    "bas": 3.5,
-    "moyen": 8.34,
-    "haut": 30
+    "bas": 0.2,
+    "moyen": 0.67,
+    "haut": 3.49
    },
    "infos": {
     "label": "Epic",
-    "catno": "A 12.6668",
-    "pays": "France",
+    "catno": "EPCA 6668",
+    "pays": "Europe",
     "annee": 1985,
     "genres": [
-     "Rock",
      "Pop"
     ],
-    "auteurs": [
-     "Jean-Jacques Goldman"
+    "styles": [
+     "Chanson",
+     "Europop"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "Je Te Donne",
-      "duree": "4:22",
+      "duree": "4:24",
       "auteurs": [
+       "Jean-Jacques Goldman",
        "Michael Jones"
       ]
      },
@@ -5638,7 +5642,9 @@
       "position": "B",
       "titre": "Confidentiel",
       "duree": "2:35",
-      "auteurs": []
+      "auteurs": [
+       "Jean-Jacques Goldman"
+      ]
      }
     ]
    },
@@ -10671,44 +10677,45 @@
    "b": "Tam Tam Man",
    "pos": null,
    "pochette": "covers/74f8e27a-961a-4308-b41f-d034edd8b349-mwrp8exs.webp",
-   "discogs": 1456478,
+   "discogs": 702907,
    "infos": {
     "label": "CBS",
-    "catno": "CBSA 12.6050",
-    "pays": "France",
+    "catno": "CBSA 6050",
+    "pays": "Europe",
     "annee": 1985,
     "genres": [
-     "Electronic",
      "Pop"
     ],
     "styles": [
-     "Downtempo",
-     "Ballad"
+     "Chanson"
+    ],
+    "auteurs": [
+     "Jean-Paul Dreau"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Tout Simplement (Tout Doucement)",
-      "duree": "5:14",
+      "titre": "Tout Doucement (Tout Simplement)",
+      "duree": "3:55",
       "auteurs": []
      },
      {
       "position": "B",
       "titre": "Tam Tam Man",
-      "duree": "5:25",
+      "duree": "3:20",
       "auteurs": []
      }
     ]
    },
    "titresDiscogs": {
     "artiste": "Bibie",
-    "a": "Tout Simplement (Tout Doucement)",
+    "a": "Tout Doucement (Tout Simplement)",
     "b": "Tam Tam Man"
    },
    "prix": {
-    "bas": 0.6,
-    "moyen": 6.25,
-    "haut": 15.0
+    "bas": 0.1,
+    "moyen": 0.85,
+    "haut": 4.0
    }
   },
   {
@@ -11833,9 +11840,9 @@
   }
  ],
  "valeurDiscogs": {
-  "bas": "€245.85",
-  "median": "€623.23",
-  "haut": "€1,711.60",
-  "date": 1795363910.08499
+  "bas": "€185.64",
+  "median": "€529.38",
+  "haut": "€1,543.66",
+  "date": 1795369182.190929
  }
 }

@@ -283,6 +283,25 @@ function rechercheCollection(q) {
   };
 }
 
+// Ordre des résultats : emplacement, puis artiste, puis chanson, puis le reste (label, genre, pays…).
+function pertinence(q) {
+  const mots = texteRecherche(q).split(" ").filter(Boolean);
+  const cache = new Map();
+  const rang = (v) => {
+    if (cache.has(v.id)) return cache.get(v.id);
+    const artiste = " " + texteRecherche([v.artiste, v.titresDiscogs?.artiste].join(" "));
+    const titres = " " + texteRecherche([v.a, v.b, v.titresDiscogs?.a, v.titresDiscogs?.b].join(" "));
+    const debut = (champ, mot) => champ.includes(" " + mot);
+    const score = mots.reduce((total, mot) => total + (
+      /^\d{1,3}$/.test(mot) && correspondNumero(v, mot) ? 0
+        : debut(artiste, mot) ? 1 : artiste.includes(mot) ? 1.5
+          : debut(titres, mot) ? 2 : titres.includes(mot) ? 2.5 : 3), 0);
+    cache.set(v.id, score);
+    return score;
+  };
+  return (x, y) => rang(x) - rang(y);
+}
+
 // ——— Rendu ———
 // Ventes Discogs sur la pochette : bas · moyen (en gras) · haut.
 const titrePrix = (p) => `${p.source === "conseil" ? "Prix conseillés Discogs (VG · VG+ · NM)" : "Ventes Discogs"} — bas ${euros(p.bas || p.moyen)} · moyen ${euros(p.moyen)} · haut ${euros(p.haut || p.moyen)}`;
@@ -504,6 +523,8 @@ function rendre() {
       classe += " avec-groupes";
     } else {
       const res = etat.q ? liste.filter(rechercheCollection(etat.q)) : liste;
+      // Sans tri choisi, les meilleurs résultats d'abord (le tri reste stable à égalité).
+      if (etat.q && !(filtreActif("tri") && TRIS.get(etat.f.tri))) res.sort(pertinence(etat.q));
       html = blocDisques(res, rendu);
       affiches = res;
       nombre = res.length;
@@ -1121,8 +1142,9 @@ async function comparerPochettes() {
       const titre = v.a.replace(/\(.*?\)/g, "").trim();
       let r = await discogsPatient("database/search", { artist: v.artiste, track: titre, type: "release", per_page: "12" });
       if (!r.results?.length) r = await discogsPatient("database/search", { q: `${v.artiste} ${titre}`, type: "release", per_page: "12" });
-      const est45 = (x) => /7"|45 RPM/.test((x.format || []).join(" "));
-      const candidats = (r.results || []).filter((x) => x.cover_image && !x.cover_image.includes("spacer")).sort((x, y) => est45(y) - est45(x)).slice(0, 6);
+      // Uniquement des 45 tours 17 cm (7") : jamais de maxi 30 cm.
+      const est45 = (x) => /7"/.test((x.format || []).join(" "));
+      const candidats = (r.results || []).filter((x) => est45(x) && x.cover_image && !x.cover_image.includes("spacer")).slice(0, 6);
       let meilleur = null;
       for (const c of candidats) {
         try {
@@ -1246,7 +1268,15 @@ $("btn-ajouter-jukebox").addEventListener("click", () => {
   if (v && !v.pos) ouvrirRemplacement(v);
 });
 
-$("remplacement-liste").addEventListener("click", (e) => {
+// Image de la pochette en PNG (le presse-papiers n'accepte que le PNG).
+async function pochettePng(source) {
+  const img = await chargerImage(source);
+  const c = Object.assign(document.createElement("canvas"), { width: img.naturalWidth, height: img.naturalHeight });
+  c.getContext("2d").drawImage(img, 0, 0);
+  return new Promise((ok, ko) => c.toBlob((blob) => (blob ? ok(blob) : ko(new Error("Image illisible"))), "image/png"));
+}
+
+$("remplacement-liste").addEventListener("click", async (e) => {
   const b = e.target.closest("[data-remplacer]");
   if (!b) return;
   const v = etat.vinyles.find((x) => x.id === $("remplacement-liste").dataset.disque);
@@ -1254,9 +1284,21 @@ $("remplacement-liste").addEventListener("click", (e) => {
   const pos = b.dataset.remplacer;
   const o = etat.vinyles.find((x) => x.pos === pos);
   const place = o ? `N° ${pos} – ${decrireDisque(o)}` : `N° ${pos} (position libre)`;
-  const corps = `Je souhaite ajouter ce disque dans le jukebox :\n${decrireDisque(v)}\n\nà la place de : ${place}`;
+  // Case « Avec pochette » cochée : on le dit, et l'image affichée part dans le presse-papiers pour être collée dans le mail.
+  const avecImage = !!(v.avecPochette && v.pochette);
+  const pochette = v.avecPochette ? "Avec sa pochette" + (avecImage ? " (photo ci-dessous)" : "") : "Sans pochette";
+  const corps = `Je souhaite ajouter ce disque dans le jukebox :\n${decrireDisque(v)}\n${pochette}\n\nà la place de : ${place}\n\n`;
   $("remplacement").close();
+  let copiee = false;
+  if (avecImage && navigator.clipboard?.write && window.ClipboardItem) {
+    try {
+      // ClipboardItem créé tout de suite (Safari exige le geste de l'utilisateur), l'image arrive ensuite.
+      await navigator.clipboard.write([new ClipboardItem({ "image/png": pochettePng(v.pochette) })]);
+      copiee = true;
+    } catch {}
+  }
   location.href = `mailto:?subject=${encodeURIComponent(SUJET_REMPLACEMENT)}&body=${encodeURIComponent(corps)}`;
+  if (avecImage) toast(copiee ? "Pochette copiée : colle-la dans le mail (⌘V)" : "Impossible de copier la pochette");
 });
 
 function ouvrirFiche(v, posLibre) {
@@ -1472,14 +1514,13 @@ async function chercherDiscogs(page = 1) {
   ul.innerHTML = `<li class="info">Recherche…</li>`;
   const moi = (discogsCtl = { releases: new Map() });
   try {
-    const r = await discogs("database/search", { q, type: "release", format: "Vinyl", per_page: "50", page });
+    const r = await discogs("database/search", { q, type: "release", format: '7"', per_page: "50", page });
     if (!dialogueFiche.open || moi !== discogsCtl) return;
-    // 45 tours d'abord (éditions françaises en tête), puis les autres formats.
-    const est45 = (x) => /7"|45 RPM/.test((x.format || []).join(" "));
+    // Uniquement des 45 tours 17 cm (7"), éditions françaises en tête : jamais de maxi ni d'autre format.
+    const est45 = (x) => /7"/.test((x.format || []).join(" "));
     const res = Array.from(new Map((r.results || []).map((x) => [x.id, x])).values());
     res.sort((a, b) => (b.country === "France") - (a.country === "France"));
     const quarante5 = res.filter(est45);
-    const autres = res.filter((x) => !est45(x));
     if (!res.length) { ul.innerHTML = `<li class="info">Rien trouvé. Essaie avec moins de mots.</li>`; return; }
     const ligne = (x) => {
       const catno = (x.catno || "").trim();
@@ -1498,9 +1539,8 @@ async function chercherDiscogs(page = 1) {
       </button></li>`;
     };
     ul.innerHTML = [
-      `<li class="titre-resultats">45 tours</li>`,
-      quarante5.length ? quarante5.map(ligne).join("") : `<li class="info">Aucun 45 tours trouvé.</li>`,
-      autres.length ? `<li class="titre-resultats">Autres formats</li>${autres.map(ligne).join("")}` : "",
+      `<li class="titre-resultats">45 tours (17 cm)</li>`,
+      quarante5.length ? quarante5.map(ligne).join("") : `<li class="info">Aucun 45 tours 17 cm trouvé.</li>`,
       page > 1 ? `<li><button type="button" data-discogs-page="${page - 1}">Résultats précédents</button></li>` : "",
       page < r.pagination?.pages ? `<li><button type="button" data-discogs-page="${page + 1}">Résultats suivants</button></li>` : "",
     ].join("");

@@ -241,8 +241,8 @@ main {
 .croix-sans-pochette { position: absolute; inset: 0; pointer-events: none; border-radius: inherit; overflow: hidden; }
 .croix-sans-pochette svg { width: 100%; height: 100%; display: block; }
 .croix-sans-pochette path {
-  fill: none; stroke: rgba(255, 255, 255, .6); stroke-width: 2.5px; stroke-linecap: round;
-  vector-effect: non-scaling-stroke; filter: drop-shadow(0 0 1.5px rgba(0, 0, 0, .55));
+  fill: none; stroke: rgba(255, 255, 255, .8); stroke-width: 3.5px; stroke-linecap: round;
+  vector-effect: non-scaling-stroke; filter: drop-shadow(0 0 2px rgba(0, 0, 0, .7));
 }
 /* Disque pointé (inventaire) : badge bleu à côté de la pastille Discogs */
 .badge-pointe {
@@ -338,7 +338,7 @@ html:has(.stats-collection[open]) { overflow: hidden; }
 .remplacement-liste .titres { display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere; }
 .remplacement-liste small { color: var(--muted); font-size: 13px; }
 .remplacement-liste .libre { color: var(--muted); font-style: italic; }
-.btn-ajouter-jukebox { align-self: flex-start; margin-top: 4px; }
+.btn-ajouter-jukebox { height: 38px; margin-top: 8px; padding: 0 14px; font-size: 14px; }
 
 .historique-discogs { width: min(760px, calc(100% - 24px)); }
 #historique-statut:empty { display: none; }
@@ -605,7 +605,7 @@ textarea { height: auto; padding: 10px 12px; resize: vertical; line-height: 1.45
 .col-prix b { color: var(--ink); font-weight: 700; }
 .vignette { position: relative; width: 44px; height: 44px; border-radius: 6px; background: var(--champ); }
 .vignette img { width: 100%; height: 100%; object-fit: cover; border-radius: 6px; display: block; }
-.vignette .croix-sans-pochette path { stroke-width: 1.5px; }
+.vignette .croix-sans-pochette path { stroke-width: 2px; }
 .vignette .badge-pointe { top: -5px; right: -5px; width: 19px; height: 19px; border-width: 1.5px; }
 .vignette .badge-pointe svg { width: 11px; height: 11px; }
 .ligne.libre { color: var(--faible); }

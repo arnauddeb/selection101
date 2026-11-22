@@ -1204,8 +1204,7 @@ function rendreFicheLecture(v) {
     <p class="lead">${esc(position)} · ${v.avecPochette ? "Avec pochette" : "Sans pochette"}</p>
     <p><b>Face A</b> ${titre("a")}</p>
     ${v.b ? `<p><b>Face B</b> ${titre("b")}</p>` : ""}
-    ${v.note ? `<div><h3>Note</h3><p>${esc(v.note)}</p></div>` : ""}
-    ${v.pos ? "" : `<button type="button" class="secondaire btn-ajouter-jukebox" data-ajouter-jukebox="${esc(v.id)}">Ajouter au jukebox</button>`}`;
+    ${v.note ? `<div><h3>Note</h3><p>${esc(v.note)}</p></div>` : ""}`;
 }
 
 // ——— Ajouter au jukebox (disque en réserve) : prépare un mail de remplacement ———
@@ -1226,11 +1225,9 @@ function ouvrirRemplacement(v) {
   $("remplacement").showModal();
 }
 
-$("fiche-lecture").addEventListener("click", (e) => {
-  const b = e.target.closest("[data-ajouter-jukebox]");
-  if (!b) return;
-  const v = etat.vinyles.find((x) => x.id === b.dataset.ajouterJukebox);
-  if (v) ouvrirRemplacement(v);
+$("btn-ajouter-jukebox").addEventListener("click", () => {
+  const v = etat.vinyles.find((x) => x.id === fiche?.id);
+  if (v && !v.pos) ouvrirRemplacement(v);
 });
 
 $("remplacement-liste").addEventListener("click", (e) => {
@@ -1265,6 +1262,7 @@ function ouvrirFiche(v, posLibre) {
   remplirPositions(v ? v.pos : posLibre || "", v?.id);
   afficherPochette(v?.pochette || "");
   $("btn-supprimer").hidden = !v;
+  $("btn-ajouter-jukebox").hidden = !v || !!v.pos; // disque en réserve : proposer un remplacement par mail
   $("btn-supprimer").textContent = "Supprimer";
   delete $("btn-supprimer").dataset.confirmer;
   majLienDiscogs();

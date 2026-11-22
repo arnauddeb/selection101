@@ -1607,57 +1607,50 @@
   {
    "id": "e7ef3264-8261-46a3-9b59-6ccff716bcd4",
    "artiste": "Al Bano & Romina Power",
-   "a": "Felicita",
-   "b": "Arrivedecci De Bahi",
+   "a": "Felicita'",
+   "b": "Arrivederci A Bahia",
    "pos": "29",
    "pochette": "covers/e7ef3264-8261-46a3-9b59-6ccff716bcd4.webp",
    "avecPochette": true,
-   "discogs": 5840034,
-   "prix": {
-    "bas": 9,
-    "moyen": 9,
-    "haut": 9,
-    "vendu": "2024-11-12"
-   },
+   "discogs": 1011600,
    "infos": {
-    "label": "Carrere Music",
-    "catno": "903175931-7",
-    "pays": "France",
-    "annee": 1991,
+    "label": "Baby Records",
+    "catno": "1C 006-64 705",
+    "pays": "Germany",
+    "annee": 1982,
     "genres": [
      "Pop"
+    ],
+    "auteurs": [
+     "Cristiano Minellono",
+     "Dario Farina",
+     "Gino De Stefani"
+    ],
+    "producteurs": [
+     "Baby Records"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Felicitá",
-      "duree": "3:23",
-      "auteurs": [
-       "Cristiano Minellono",
-       "Dario Farina",
-       "Gino De Stefani"
-      ]
+      "titre": "Felicita'",
+      "duree": "3:12",
+      "auteurs": []
      },
      {
       "position": "B",
-      "titre": "Libertá",
-      "duree": "4:23",
-      "auteurs": [
-       "Romina Power",
-       "Springbock",
-       "Vito Pallavicini",
-       "Willy Molco"
-      ]
+      "titre": "Arrivederci A Bahia",
+      "duree": "3:03",
+      "auteurs": []
      }
     ],
-    "want": 9,
-    "note": 4.67,
-    "votes": 3
+    "want": 109,
+    "note": 4.05,
+    "votes": 98
    },
    "titresDiscogs": {
     "artiste": "Al Bano & Romina Power",
-    "a": "Felicitá",
-    "b": "Libertá"
+    "a": "Felicita'",
+    "b": "Arrivederci A Bahia"
    }
   },
   {
@@ -7871,6 +7864,5354 @@
     "moyen": 2,
     "haut": 10.17,
     "vendu": "2026-11-10"
+   }
+  },
+  {
+   "id": "6d06fe4a-5b07-4f8b-9fb9-bb91fa3f2fc7",
+   "artiste": "Sophie & Magaly",
+   "a": "Papa Pingouin",
+   "b": "Tous Les Enfants Du Monde",
+   "pos": null,
+   "pochette": "covers/6d06fe4a-5b07-4f8b-9fb9-bb91fa3f2fc7-mwrnr2iu.webp",
+   "avecPochette": true,
+   "discogs": 2042497,
+   "infos": {
+    "label": "Jupiter Records",
+    "catno": "101 546",
+    "pays": "France",
+    "annee": 1980,
+    "genres": [
+     "Pop",
+     "Children's"
+    ],
+    "styles": [
+     "Europop",
+     "Novelty"
+    ],
+    "producteurs": [
+     "Jean Paul Cara",
+     "Ralph Siegel"
+    ],
+    "arrangeurs": [
+     "Norbert Daum"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Papa Pingouin",
+      "duree": "3:05",
+      "auteurs": [
+       "Jean Paul Cara",
+       "Pierre Delanoë",
+       "Bernd Meinunger",
+       "Ralph Siegel"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Tous Les Enfants Du Monde",
+      "duree": "3:25",
+      "auteurs": [
+       "Jean Paul Cara",
+       "Ralph Siegel"
+      ]
+     }
+    ],
+    "want": 21,
+    "note": 3.15,
+    "votes": 20
+   },
+   "titresDiscogs": {
+    "artiste": "Sophie & Magaly",
+    "a": "Papa Pingouin",
+    "b": "Tous Les Enfants Du Monde"
+   }
+  },
+  {
+   "id": "c9f446c6-192c-4fa5-b5cc-8e7b8a73562f",
+   "artiste": "François Guizerix",
+   "a": "Prehistorock",
+   "b": "Le Blues Du Lapin",
+   "pos": null,
+   "pochette": "covers/c9f446c6-192c-4fa5-b5cc-8e7b8a73562f-mwrnrdlw.webp",
+   "avecPochette": true,
+   "discogs": 5816750,
+   "infos": {
+    "label": "Milan",
+    "catno": "S 040 085",
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Pop",
+     "Children's"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Emilhenco"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Prehistorock",
+      "duree": "2:38",
+      "auteurs": [
+       "Tany Turens"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Le Blues Du Lapin",
+      "duree": "2:34",
+      "auteurs": [
+       "Tany Turens"
+      ]
+     }
+    ],
+    "want": 7,
+    "note": 4,
+    "votes": 6
+   },
+   "titresDiscogs": {
+    "artiste": "François Guizerix",
+    "a": "Prehistorock",
+    "b": "Le Blues Du Lapin"
+   }
+  },
+  {
+   "id": "4cf5032f-5199-40a1-9587-2db8f2e0c944",
+   "artiste": "Cyrille, Pierre Brahe",
+   "a": "On M'Appelle Sans Famille",
+   "b": "Et Je M'En Vais Avec Mes Chiens",
+   "pos": null,
+   "pochette": "covers/4cf5032f-5199-40a1-9587-2db8f2e0c944-mwrns4pd.webp",
+   "avecPochette": true,
+   "discogs": 2336329,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS A1940",
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Pop",
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "On M'Appelle Sans Famille",
+      "duree": "2:29",
+      "auteurs": [
+       "Charles Level",
+       "Jean Renard"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Et Je M'En Vais Avec Mes Chiens",
+      "duree": "2:25",
+      "auteurs": [
+       "Francis Scaglia"
+      ]
+     }
+    ],
+    "want": 46,
+    "note": 4.59,
+    "votes": 22
+   },
+   "titresDiscogs": {
+    "artiste": "Cyrille, Pierre Brahe",
+    "a": "On M'Appelle Sans Famille",
+    "b": "Et Je M'En Vais Avec Mes Chiens"
+   }
+  },
+  {
+   "id": "71679b44-ca15-455e-bc63-df376a451eb8",
+   "artiste": "Jean-Claude Borelly",
+   "a": "Dolannes Mélodie",
+   "b": "Dolannes Mélodie [Flûte De Pan]",
+   "pos": null,
+   "pochette": "covers/71679b44-ca15-455e-bc63-df376a451eb8-mwrnstbh.webp",
+   "avecPochette": true,
+   "discogs": 2412514,
+   "infos": {
+    "label": "Delphine",
+    "catno": "SG 64014",
+    "pays": "France",
+    "annee": 1975,
+    "genres": [
+     "Folk, World, & Country",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Easy Listening"
+    ],
+    "auteurs": [
+     "Olivier Toussaint",
+     "Paul De Senneville"
+    ],
+    "arrangeurs": [
+     "Hervé Roy"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Dolannes Mélodie",
+      "duree": "3:30",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Dolannes Mélodie [Flûte De Pan]",
+      "duree": "3:30",
+      "auteurs": []
+     }
+    ],
+    "want": 13,
+    "note": 3.27,
+    "votes": 30
+   },
+   "titresDiscogs": {
+    "artiste": "Jean-Claude Borelly",
+    "a": "Dolannes Mélodie",
+    "b": "Dolannes Mélodie [Flûte De Pan]"
+   }
+  },
+  {
+   "id": "3c66f95b-920c-4720-aa2a-89b6c70164d6",
+   "artiste": "Jacques Hourdeaux",
+   "a": "Le Petit Garçon Et Le Routier = Teddy Bear",
+   "b": "La Fille De L'autoroute",
+   "pos": null,
+   "pochette": "covers/3c66f95b-920c-4720-aa2a-89b6c70164d6-mwrntlfy.webp",
+   "avecPochette": true,
+   "discogs": 1279490,
+   "infos": {
+    "label": "Disques Festival",
+    "catno": "SPX 243",
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Country Rock"
+    ],
+    "producteurs": [
+     "Joec"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Le Petit Garçon Et Le Routier = Teddy Bear",
+      "duree": "4:38",
+      "auteurs": [
+       "Billy Joe Burnette",
+       "Dale Royal",
+       "Jacques Hourdeaux",
+       "Red Sovine",
+       "Tommy Hill"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "La Fille De L'autoroute",
+      "duree": "4:47",
+      "auteurs": [
+       "André Verchuren",
+       "Francis Baxter",
+       "Georges Delfosse",
+       "Jacques Hourdeaux"
+      ]
+     }
+    ],
+    "want": 3,
+    "note": 3.09,
+    "votes": 11
+   },
+   "titresDiscogs": {
+    "artiste": "Jacques Hourdeaux",
+    "a": "Le Petit Garçon Et Le Routier = Teddy Bear",
+    "b": "La Fille De L'autoroute"
+   }
+  },
+  {
+   "id": "41b18350-7113-4aae-9d4b-3b7057fcf927",
+   "artiste": "Hervé Vilard",
+   "a": "Nous = Donna, Donna Mia",
+   "b": "L'amour Au Hasard",
+   "pos": null,
+   "pochette": "covers/41b18350-7113-4aae-9d4b-3b7057fcf927-mwrnud3s.webp",
+   "avecPochette": true,
+   "discogs": 720305,
+   "infos": {
+    "label": "Trema",
+    "catno": "410 100",
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Jacques Revaux"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Nous = Donna, Donna Mia",
+      "duree": "3:40",
+      "auteurs": [
+       "Claude Lemesle",
+       "Ludovico Peregrini",
+       "Mike Bongiorno",
+       "Toto Cutugno"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "L'amour Au Hasard",
+      "duree": "3:25",
+      "auteurs": [
+       "Hervé Vilard",
+       "Pierre Grillet",
+       "René Pratx"
+      ]
+     }
+    ],
+    "want": 14,
+    "note": 3.98,
+    "votes": 46
+   },
+   "titresDiscogs": {
+    "artiste": "Hervé Vilard",
+    "a": "Nous = Donna, Donna Mia",
+    "b": "L'amour Au Hasard"
+   }
+  },
+  {
+   "id": "8e7255d5-edfe-4b03-a69a-ff6066269a53",
+   "artiste": "Orchestre De Valses De Schoënbrun",
+   "a": "Le Beau Danube Bleu / Légende De La Forêt Viennoise",
+   "b": "Aimer, Boire Et Chanter / Sang Viennois",
+   "pos": null,
+   "pochette": "covers/8e7255d5-edfe-4b03-a69a-ff6066269a53-mwrnux27.webp",
+   "avecPochette": true,
+   "discogs": 5869397,
+   "infos": {
+    "label": "Disque Saphir",
+    "catno": "LDP 5037",
+    "pays": "France",
+    "genres": [
+     "Classical"
+    ],
+    "styles": [
+     "Romantic"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Le Beau Danube Bleu",
+      "duree": "",
+      "auteurs": [
+       "Johann Strauss Jr."
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Légende De La Forêt Viennoise",
+      "duree": "",
+      "auteurs": [
+       "Johann Strauss Jr."
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Aimer, Boire Et Chanter",
+      "duree": "",
+      "auteurs": [
+       "Johann Strauss Jr."
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Sang Viennois",
+      "duree": "",
+      "auteurs": [
+       "Johann Strauss Jr."
+      ]
+     }
+    ],
+    "want": 1,
+    "note": 4,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Orchestre De Valses De Schoënbrun",
+    "a": "Le Beau Danube Bleu / Légende De La Forêt Viennoise",
+    "b": "Aimer, Boire Et Chanter / Sang Viennois"
+   }
+  },
+  {
+   "id": "2d5d1645-b050-46aa-bcdd-a2c64d13681b",
+   "artiste": "Dave",
+   "a": "Comment Ne Pas Être Amoureux De Vous (Can't Help Falling In Love)",
+   "b": "Le Palmier Du Pauvre (Fool-If You Think It's Over)",
+   "pos": null,
+   "pochette": "covers/2d5d1645-b050-46aa-bcdd-a2c64d13681b-mwrnvcg0.webp",
+   "avecPochette": true,
+   "discogs": 720267,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 6461",
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Jean-Jacques Souplet"
+    ],
+    "arrangeurs": [
+     "Guy Mattéoni"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Comment Ne Pas Être Amoureux De Vous (Can't Help Falling In Love)",
+      "duree": "3:18",
+      "auteurs": [
+       "George David Weiss",
+       "Hugo Peretti",
+       "Luigi Creatore"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Le Palmier Du Pauvre (Fool-If You Think It's Over)",
+      "duree": "3:40",
+      "auteurs": [
+       "Chris Rea"
+      ]
+     }
+    ],
+    "want": 2,
+    "note": 3.38,
+    "votes": 16
+   },
+   "titresDiscogs": {
+    "artiste": "Dave",
+    "a": "Comment Ne Pas Être Amoureux De Vous (Can't Help Falling In Love)",
+    "b": "Le Palmier Du Pauvre (Fool-If You Think It's Over)"
+   }
+  },
+  {
+   "id": "a4654992-b0cc-4a8e-b18b-f72b4dc40623",
+   "artiste": "Tino Rossi",
+   "a": "La Chapelle Au Clair De Lune = Chapel In The Moonlight / La Dernière Valse = The Last Waltz",
+   "b": "Prenons Le Temps D'aimer / Tu N'as Que Vingt Ans = Einmal Möcht'ich Erwachen",
+   "pos": null,
+   "pochette": "covers/a4654992-b0cc-4a8e-b18b-f72b4dc40623-mwrnvurq.webp",
+   "avecPochette": true,
+   "discogs": 3062725,
+   "infos": {
+    "label": "Columbia",
+    "catno": "ESRF 1899",
+    "pays": "France",
+    "annee": 1967,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "La Chapelle Au Clair De Lune = Chapel In The Moonlight",
+      "duree": "2:25",
+      "auteurs": [
+       "Billy Hill"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "La Dernière Valse = The Last Waltz",
+      "duree": "2:55",
+      "auteurs": [
+       "Barry Mason",
+       "Les Reed"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Prenons Le Temps D'aimer",
+      "duree": "2:45",
+      "auteurs": [
+       "Jean Lavande",
+       "Roger Lucchesi"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Tu N'as Que Vingt Ans = Einmal Möcht'ich Erwachen",
+      "duree": "2:40",
+      "auteurs": [
+       "Lotar Olias",
+       "Max Colpet"
+      ]
+     }
+    ],
+    "want": 3,
+    "note": 2,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Tino Rossi",
+    "a": "La Chapelle Au Clair De Lune = Chapel In The Moonlight / La Dernière Valse = The Last Waltz",
+    "b": "Prenons Le Temps D'aimer / Tu N'as Que Vingt Ans = Einmal Möcht'ich Erwachen"
+   }
+  },
+  {
+   "id": "77a8bf89-a403-44f8-88cc-eacc274ed076",
+   "artiste": "Dave",
+   "a": "Du Côté De Chez Swann",
+   "b": "Fais-moi L'amour (Cette Nuit C'est Toi Qui M'aimes)",
+   "pos": null,
+   "pochette": "covers/77a8bf89-a403-44f8-88cc-eacc274ed076-mwrnwlop.webp",
+   "avecPochette": true,
+   "discogs": 12565148,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 3832",
+    "pays": "France",
+    "annee": 1975,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Patrick Loiseau"
+    ],
+    "producteurs": [
+     "Jean-Jacques Souplet"
+    ],
+    "arrangeurs": [
+     "Guy Mattéoni"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Du Côté De Chez Swann",
+      "duree": "2:58",
+      "auteurs": [
+       "Michel Cywie"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Fais-moi L'amour (Cette Nuit C'est Toi Qui M'aimes)",
+      "duree": "3:17",
+      "auteurs": [
+       "Maryse Millet"
+      ]
+     }
+    ],
+    "want": 3,
+    "note": 5,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Dave",
+    "a": "Du Côté De Chez Swann",
+    "b": "Fais-moi L'amour (Cette Nuit C'est Toi Qui M'aimes)"
+   }
+  },
+  {
+   "id": "b0c1107a-4eca-4cd6-ab64-7d30837d468c",
+   "artiste": "Dave",
+   "a": "Raconte-Moi Des Mensonges",
+   "b": "Plus Ca Va Plus Je T'Aime",
+   "pos": null,
+   "pochette": "covers/b0c1107a-4eca-4cd6-ab64-7d30837d468c-mwrnycas.webp",
+   "avecPochette": true,
+   "discogs": 1218750,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 5857",
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Jean-Jacques Souplet",
+     "Paul Boussard"
+    ],
+    "arrangeurs": [
+     "Guy Mattéoni"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Raconte-Moi Des Mensonges",
+      "duree": "3:10",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Plus Ca Va Plus Je T'Aime",
+      "duree": "2:47",
+      "auteurs": []
+     }
+    ],
+    "want": 4,
+    "note": 1.83,
+    "votes": 6
+   },
+   "titresDiscogs": {
+    "artiste": "Dave",
+    "a": "Raconte-Moi Des Mensonges",
+    "b": "Plus Ca Va Plus Je T'Aime"
+   }
+  },
+  {
+   "id": "587aeabf-5877-4468-bdfb-e721a0dc2b84",
+   "artiste": "Georgette Plana Accompagnée Par Le Le Casino Orchestra",
+   "a": "Riquita / Le Tango De Manon",
+   "b": "On M'appelle Frisson / Sur La Riviera",
+   "pos": null,
+   "pochette": "covers/587aeabf-5877-4468-bdfb-e721a0dc2b84-mwrnynoz.webp",
+   "avecPochette": true,
+   "discogs": 972533,
+   "infos": {
+    "label": "Disques Vogue",
+    "catno": "EPL 8 608",
+    "pays": "France",
+    "annee": 1968,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Riquita",
+      "duree": "3:15",
+      "auteurs": [
+       "Ernest Dumont",
+       "Ferdinand Louis Benech"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Le Tango De Manon",
+      "duree": "2:50",
+      "auteurs": [
+       "Fernand Heintz",
+       "Émile Gibert"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "On M'appelle Frisson",
+      "duree": "3:45",
+      "auteurs": [
+       "Ernest Dumont",
+       "Ferdinand Louis Benech"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Sur La Riviera",
+      "duree": "2:30",
+      "auteurs": [
+       "Emile Ronn",
+       "Léo Daniderff",
+       "Marcel Bertal"
+      ]
+     }
+    ],
+    "want": 4,
+    "note": 3.19,
+    "votes": 27
+   },
+   "titresDiscogs": {
+    "artiste": "Georgette Plana Accompagnée Par Le Le Casino Orchestra",
+    "a": "Riquita / Le Tango De Manon",
+    "b": "On M'appelle Frisson / Sur La Riviera"
+   }
+  },
+  {
+   "id": "45211885-c19b-4be5-9439-1ecf0f0745aa",
+   "artiste": "Frédéric François",
+   "a": "Chicago",
+   "b": "Comment Veux-tu Que Je T'oublie",
+   "pos": null,
+   "pochette": "covers/45211885-c19b-4be5-9439-1ecf0f0745aa-mwrnzi6p.webp",
+   "avecPochette": true,
+   "discogs": 8225101,
+   "infos": {
+    "label": "Vogue",
+    "catno": "VATS 3036",
+    "pays": "Portugal",
+    "annee": 1975,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Chicago",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Comment Veux-tu Que Je T'oublie",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "want": 1,
+    "note": 4.5,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Frédéric François",
+    "a": "Chicago",
+    "b": "Comment Veux-tu Que Je T'oublie"
+   }
+  },
+  {
+   "id": "e3649008-00cb-4062-bc1d-21c90481a1f4",
+   "artiste": "Lionel Leroy",
+   "a": "Ulysse",
+   "b": "Télémaque",
+   "pos": null,
+   "pochette": "covers/e3649008-00cb-4062-bc1d-21c90481a1f4-mwro02i7.webp",
+   "avecPochette": true,
+   "discogs": 3731821,
+   "infos": {
+    "label": "Saban Records",
+    "catno": "2097 898",
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Pop",
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Chanson",
+     "Anison",
+     "Theme",
+     "Soundtrack"
+    ],
+    "auteurs": [
+     "Haim Saban",
+     "Shuki Levy"
+    ],
+    "producteurs": [
+     "Haim Saban",
+     "Shuki Levy"
+    ],
+    "arrangeurs": [
+     "Haim Saban",
+     "Shuki Levy"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Ulysse",
+      "duree": "3:22",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Télémaque",
+      "duree": "2:30",
+      "auteurs": []
+     }
+    ],
+    "want": 60,
+    "note": 3.99,
+    "votes": 77
+   },
+   "titresDiscogs": {
+    "artiste": "Lionel Leroy",
+    "a": "Ulysse",
+    "b": "Télémaque"
+   }
+  },
+  {
+   "id": "87d80954-c413-4c8b-8023-c4ce90486946",
+   "artiste": "Sheila (5) & Ringo",
+   "a": "Les Gondoles A Venise",
+   "b": "Les Gondoles A Venise (Version Instrumentale)",
+   "pos": null,
+   "pochette": "covers/87d80954-c413-4c8b-8023-c4ce90486946-mwro0hks.webp",
+   "avecPochette": true,
+   "discogs": 825458,
+   "infos": {
+    "label": "Disques Carrere",
+    "catno": "49.026",
+    "pays": "France",
+    "annee": 1973,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Claude Carrère",
+     "Michaele, Lana & Paul Sebastian"
+    ],
+    "arrangeurs": [
+     "Jean-Claude Petit"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Les Gondoles A Venise",
+      "duree": "3:41",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Les Gondoles A Venise (Version Instrumentale)",
+      "duree": "3:41",
+      "auteurs": []
+     }
+    ],
+    "want": 15,
+    "note": 3.91,
+    "votes": 47
+   },
+   "titresDiscogs": {
+    "artiste": "Sheila (5) & Ringo",
+    "a": "Les Gondoles A Venise",
+    "b": "Les Gondoles A Venise (Version Instrumentale)"
+   }
+  },
+  {
+   "id": "11ac72dd-0a82-41c8-8157-49ce161c4dc5",
+   "artiste": "Franck Olivier",
+   "a": "Albator 84",
+   "b": "Le Retour D'Albator",
+   "pos": null,
+   "pochette": "covers/11ac72dd-0a82-41c8-8157-49ce161c4dc5-mwro0ukf.webp",
+   "avecPochette": true,
+   "discogs": 987591,
+   "infos": {
+    "label": "Carrere",
+    "catno": "13.118",
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Pop",
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Chanson",
+     "Anison",
+     "Theme"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Albator 84",
+      "duree": "3:06",
+      "auteurs": [
+       "Anne Valery",
+       "Pierre D'Heaume",
+       "Alec R. Costandinos"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Le Retour D'Albator",
+      "duree": "3:10",
+      "auteurs": [
+       "André Barse",
+       "Michel Salva",
+       "Carlos Leresche"
+      ]
+     }
+    ],
+    "want": 47,
+    "note": 4.2,
+    "votes": 25
+   },
+   "titresDiscogs": {
+    "artiste": "Franck Olivier",
+    "a": "Albator 84",
+    "b": "Le Retour D'Albator"
+   }
+  },
+  {
+   "id": "5383b1b8-ee39-4b51-b082-298bf6936db0",
+   "artiste": "Rika Zaraï",
+   "a": "Alors Je Chante",
+   "b": "Un Mur À Jerusalem",
+   "pos": null,
+   "pochette": "covers/5383b1b8-ee39-4b51-b082-298bf6936db0-mwro15mi.webp",
+   "avecPochette": true,
+   "discogs": 444404,
+   "infos": {
+    "label": "Philips",
+    "catno": "370 849 BF",
+    "pays": "France",
+    "annee": 1969,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Alors Je Chante",
+      "duree": "3:05",
+      "auteurs": [
+       "Aniano Alcalde",
+       "Daniel Faure",
+       "Juan Barcons",
+       "María José de Ceratto",
+       "Rika Zaraï"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Un Mur À Jerusalem",
+      "duree": "2:56",
+      "auteurs": [
+       "Mahum Heyman",
+       "Pierre Delanoë"
+      ]
+     }
+    ],
+    "want": 7,
+    "note": 3.05,
+    "votes": 21
+   },
+   "titresDiscogs": {
+    "artiste": "Rika Zaraï",
+    "a": "Alors Je Chante",
+    "b": "Un Mur À Jerusalem"
+   }
+  },
+  {
+   "id": "bc2270a6-909a-4b08-b788-2ab5b64f0bdf",
+   "artiste": "Sheila",
+   "a": "Les Rois Mages \"Tweedle Dee Tweedle Dum\"",
+   "b": "Une Femme",
+   "pos": null,
+   "pochette": "covers/bc2270a6-909a-4b08-b788-2ab5b64f0bdf-mwro1huc.webp",
+   "avecPochette": true,
+   "discogs": 816789,
+   "infos": {
+    "label": "Disques Carrere",
+    "catno": "6061 135",
+    "pays": "France",
+    "annee": 1971,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Les Rois Mages \"Tweedle Dee Tweedle Dum\"",
+      "duree": "3:13",
+      "auteurs": [
+       "Giosy Capuano",
+       "Harold Stott",
+       "Mario Capuano"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Une Femme",
+      "duree": "3:00",
+      "auteurs": [
+       "Claude Carrère",
+       "Jean Claudric",
+       "Vline Buggy"
+      ]
+     }
+    ],
+    "want": 28,
+    "note": 3.73,
+    "votes": 66
+   },
+   "titresDiscogs": {
+    "artiste": "Sheila",
+    "a": "Les Rois Mages \"Tweedle Dee Tweedle Dum\"",
+    "b": "Une Femme"
+   }
+  },
+  {
+   "id": "71d8521d-f43c-48fd-bec8-9f230f120d5f",
+   "artiste": "David Alexandre Winter",
+   "a": "Oh Lady Mary",
+   "b": "Qu'est-Ce Que J'ai Dansé",
+   "pos": null,
+   "pochette": "covers/71d8521d-f43c-48fd-bec8-9f230f120d5f-mwro2pz7.webp",
+   "discogs": 4669930,
+   "infos": {
+    "label": "Riviera",
+    "catno": "121 222",
+    "pays": "France",
+    "annee": 1969,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Oh Lady Mary",
+      "duree": "2:54",
+      "auteurs": [
+       "Metin Bükey",
+       "Patricia Carli"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Qu'est-Ce Que J'ai Dansé",
+      "duree": "2:28",
+      "auteurs": [
+       "Gamble & Huff",
+       "Pierre Saka"
+      ]
+     }
+    ],
+    "want": 29,
+    "note": 3.85,
+    "votes": 13
+   },
+   "titresDiscogs": {
+    "artiste": "David Alexandre Winter",
+    "a": "Oh Lady Mary",
+    "b": "Qu'est-Ce Que J'ai Dansé"
+   }
+  },
+  {
+   "id": "f73d8efa-b98f-4075-a05d-619299ccd4b7",
+   "artiste": "Richard Anthony",
+   "a": "Amoureux De Ma Femme",
+   "b": "L'un Pour L'autre",
+   "pos": null,
+   "pochette": "covers/f73d8efa-b98f-4075-a05d-619299ccd4b7-mwro3bb9.webp",
+   "avecPochette": true,
+   "discogs": 692505,
+   "infos": {
+    "label": "Trema",
+    "catno": "46 109",
+    "pays": "France",
+    "annee": 1974,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Jacques Revaux"
+    ],
+    "arrangeurs": [
+     "Hervé Roy"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Amoureux De Ma Femme",
+      "duree": "2:38",
+      "auteurs": [
+       "Daniele Pace",
+       "Luciano Beretta",
+       "Mario Panzeri",
+       "Michele Del Prete"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "L'un Pour L'autre",
+      "duree": "3:07",
+      "auteurs": [
+       "Franck Pourcel",
+       "Michel Jourdan"
+      ]
+     }
+    ],
+    "want": 24,
+    "note": 3.6,
+    "votes": 40
+   },
+   "titresDiscogs": {
+    "artiste": "Richard Anthony",
+    "a": "Amoureux De Ma Femme",
+    "b": "L'un Pour L'autre"
+   }
+  },
+  {
+   "id": "dba1cc5c-0196-4b8b-9322-8a6961d92e18",
+   "artiste": "Michèle Torr",
+   "a": "Emmène-moi Danser Ce Soir",
+   "b": "Chanteuse",
+   "pos": null,
+   "pochette": "covers/dba1cc5c-0196-4b8b-9322-8a6961d92e18-mwro3qui.webp",
+   "avecPochette": true,
+   "discogs": 679066,
+   "infos": {
+    "label": "Disc'Az",
+    "catno": "SG 660",
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Emmène-moi Danser Ce Soir",
+      "duree": "3:10",
+      "auteurs": [
+       "François Valéry",
+       "Jean Albertini"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Chanteuse",
+      "duree": "2:59",
+      "auteurs": [
+       "Didier Barbelivien",
+       "Jean Albertini",
+       "Yvon Rioland"
+      ]
+     }
+    ],
+    "want": 12,
+    "note": 3.69,
+    "votes": 35
+   },
+   "titresDiscogs": {
+    "artiste": "Michèle Torr",
+    "a": "Emmène-moi Danser Ce Soir",
+    "b": "Chanteuse"
+   }
+  },
+  {
+   "id": "d4825636-86ff-4f3c-a903-62a62607edd2",
+   "artiste": "Mike Brant",
+   "a": "Rien Qu'une Larme",
+   "b": "C'est Une Belle Fête",
+   "pos": null,
+   "pochette": "covers/d4825636-86ff-4f3c-a903-62a62607edd2-mwro4g61.webp",
+   "avecPochette": true,
+   "discogs": 653205,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 1372",
+    "pays": "France",
+    "annee": 1973,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Charles Talar",
+     "Alain Krief"
+    ],
+    "arrangeurs": [
+     "Roger Loubet"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Rien Qu'une Larme",
+      "duree": "3:10",
+      "auteurs": [
+       "Michel Jourdan",
+       "Mike Brant"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "C'est Une Belle Fête",
+      "duree": "2:45",
+      "auteurs": [
+       "Mike Brant",
+       "Richard Seff"
+      ]
+     }
+    ],
+    "want": 13,
+    "note": 3.55,
+    "votes": 33
+   },
+   "titresDiscogs": {
+    "artiste": "Mike Brant",
+    "a": "Rien Qu'une Larme",
+    "b": "C'est Une Belle Fête"
+   }
+  },
+  {
+   "id": "b9d33daa-c5e0-4c12-8a8b-858a2039a9a9",
+   "artiste": "Demis Roussos",
+   "a": "Loin Des Yeux Loin Du Cœur",
+   "b": "Il Faut Qu'Il Revienne (Brother)",
+   "pos": null,
+   "pochette": "covers/b9d33daa-c5e0-4c12-8a8b-858a2039a9a9-mwro4xc5.webp",
+   "avecPochette": true,
+   "discogs": 1218796,
+   "infos": {
+    "label": "Philips",
+    "catno": "6173 666",
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Alec R. Costandinos"
+    ],
+    "arrangeurs": [
+     "Ray Knehnetsky"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Loin Des Yeux Loin Du Cœur",
+      "duree": "",
+      "auteurs": [
+       "Alec R. Costandinos",
+       "Didier Barbelivien"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Il Faut Qu'Il Revienne (Brother)",
+      "duree": "",
+      "auteurs": [
+       "Alec R. Costandinos",
+       "Danielle Vezolles",
+       "Michel Jouveaux",
+       "Yaïr Klinger"
+      ]
+     }
+    ],
+    "want": 2,
+    "note": 3.8,
+    "votes": 20
+   },
+   "titresDiscogs": {
+    "artiste": "Demis Roussos",
+    "a": "Loin Des Yeux Loin Du Cœur",
+    "b": "Il Faut Qu'Il Revienne (Brother)"
+   }
+  },
+  {
+   "id": "ec1a059c-ad06-4211-a0e4-28a5dc3501b5",
+   "artiste": "Frédéric François",
+   "a": "Est-Ce Que Tu Es Seule Ce Soir ?",
+   "b": "Si J'étais Le Père Noël",
+   "pos": null,
+   "pochette": "covers/ec1a059c-ad06-4211-a0e4-28a5dc3501b5-mwro58gm.webp",
+   "avecPochette": true,
+   "discogs": 2284415,
+   "infos": {
+    "label": "Trema",
+    "catno": "410.513",
+    "pays": "France",
+    "annee": 1990,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Frédéric François"
+    ],
+    "producteurs": [
+     "CD Music"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Est-Ce Que Tu Es Seule Ce Soir ?",
+      "duree": "3:50",
+      "auteurs": [
+       "Michaele"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Si J'étais Le Père Noël",
+      "duree": "3:35",
+      "auteurs": [
+       "Marino Atria"
+      ]
+     }
+    ],
+    "want": 3,
+    "note": 3.14,
+    "votes": 14
+   },
+   "titresDiscogs": {
+    "artiste": "Frédéric François",
+    "a": "Est-Ce Que Tu Es Seule Ce Soir ?",
+    "b": "Si J'étais Le Père Noël"
+   }
+  },
+  {
+   "id": "1f76a233-75d6-493e-b102-050838758891",
+   "artiste": "Enrico Macias",
+   "a": "La Romance",
+   "b": "J'irai Jusqu'en Auvergne",
+   "pos": null,
+   "pochette": "covers/1f76a233-75d6-493e-b102-050838758891-mwro6pa0.webp",
+   "avecPochette": true,
+   "discogs": 1248799,
+   "infos": {
+    "label": "Philips",
+    "catno": "6009 213",
+    "pays": "France",
+    "annee": 1972,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "La Romance",
+      "duree": "2:23",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "J'irai Jusqu'en Auvergne",
+      "duree": "2:48",
+      "auteurs": []
+     }
+    ],
+    "want": 2,
+    "note": 3.5,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Enrico Macias",
+    "a": "La Romance",
+    "b": "J'irai Jusqu'en Auvergne"
+   }
+  },
+  {
+   "id": "f49c56ae-717f-4977-b246-70aa9876fa3f",
+   "artiste": "Julio Iglesias",
+   "a": "Ou Est Passée Ma Boheme ? (Quiereme Mucho)",
+   "b": "L'amour C'est Quoi ? (Preguntale)",
+   "pos": null,
+   "pochette": "covers/f49c56ae-717f-4977-b246-70aa9876fa3f-mwro7be7.webp",
+   "avecPochette": true,
+   "discogs": 1318861,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 7838",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Ramón Arcusa",
+     "Pierre Carrel"
+    ],
+    "arrangeurs": [
+     "Rafael Ferro",
+     "Ramón Arcusa"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Ou Est Passée Ma Boheme ? (Quiereme Mucho)",
+      "duree": "3:52",
+      "auteurs": [
+       "Gonzalo Roig",
+       "John Mercury",
+       "Michel Jourdan"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "L'amour C'est Quoi ? (Preguntale)",
+      "duree": "4:49",
+      "auteurs": [
+       "Claude Lemesle",
+       "Julio Iglesias",
+       "Manuel De La Calva",
+       "Ramón Arcusa"
+      ]
+     }
+    ],
+    "want": 6,
+    "note": 3.36,
+    "votes": 22
+   },
+   "titresDiscogs": {
+    "artiste": "Julio Iglesias",
+    "a": "Ou Est Passée Ma Boheme ? (Quiereme Mucho)",
+    "b": "L'amour C'est Quoi ? (Preguntale)"
+   }
+  },
+  {
+   "id": "12c96a7e-fe4d-4071-8bf6-45756fe521d9",
+   "artiste": "Les Sunlights",
+   "a": "Maman, La Plus Belle Du Monde / Je Serai La",
+   "b": "Comme Un P'tit Coquelicot / Comment Ne Pas T'aimer",
+   "pos": null,
+   "pochette": "covers/12c96a7e-fe4d-4071-8bf6-45756fe521d9-mwro7ocz.webp",
+   "avecPochette": true,
+   "discogs": 6530789,
+   "infos": {
+    "label": "Disc'Az",
+    "catno": "EP 1 210",
+    "pays": "France",
+    "annee": 1968,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Maman, La Plus Belle Du Monde",
+      "duree": "3:15",
+      "auteurs": [
+       "Marino Marini"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Je Serai La",
+      "duree": "2:05",
+      "auteurs": [
+       "Bruno Cogoni",
+       "Marius Staquet"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Comme Un P'tit Coquelicot",
+      "duree": "3:24",
+      "auteurs": [
+       "Raymond Asso",
+       "Claude Valéry"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Comment Ne Pas T'aimer",
+      "duree": "1:45",
+      "auteurs": [
+       "Bruno Cogoni",
+       "Carlos Leresche",
+       "Jacques Demarny"
+      ]
+     }
+    ],
+    "want": 1,
+    "note": 1.5,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Les Sunlights",
+    "a": "Maman, La Plus Belle Du Monde / Je Serai La",
+    "b": "Comme Un P'tit Coquelicot / Comment Ne Pas T'aimer"
+   }
+  },
+  {
+   "id": "575c8e01-5484-4fc1-bb9b-f77d37238282",
+   "artiste": "Enrico Macias",
+   "a": "Je Le Vois Sur Ton Visage",
+   "b": "Les Millionnaires Du Dimanche",
+   "pos": null,
+   "pochette": "covers/575c8e01-5484-4fc1-bb9b-f77d37238282-mwro8d8s.webp",
+   "discogs": 6679327,
+   "infos": {
+    "label": "Pathé",
+    "catno": "45 G 2149",
+    "pays": "France",
+    "annee": 1967,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Je Le Vois Sur Ton Visage",
+      "duree": "3:15",
+      "auteurs": [
+       "Enrico Macias",
+       "Jacques Demarny",
+       "Jean Claudric"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Les Millionnaires Du Dimanche",
+      "duree": "3:15",
+      "auteurs": [
+       "Enrico Macias",
+       "Jacques Demarny",
+       "Martial Ayela"
+      ]
+     }
+    ],
+    "want": 0,
+    "note": 2,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Enrico Macias",
+    "a": "Je Le Vois Sur Ton Visage",
+    "b": "Les Millionnaires Du Dimanche"
+   }
+  },
+  {
+   "id": "373fe792-9b6e-459a-8f14-93ac2bbab39f",
+   "artiste": "Demis Roussos",
+   "a": "My Reason",
+   "b": "When I'm A Kid",
+   "pos": null,
+   "pochette": "covers/373fe792-9b6e-459a-8f14-93ac2bbab39f-mwro8rkz.webp",
+   "avecPochette": true,
+   "discogs": 1377534,
+   "infos": {
+    "label": "Philips",
+    "catno": "6009 249",
+    "pays": "France",
+    "annee": 1972,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Ballad"
+    ],
+    "arrangeurs": [
+     "Harry And Steal"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "My Reason",
+      "duree": "",
+      "auteurs": [
+       "Harris Chalkitis",
+       "Helen Bank",
+       "Stelios Vlavianos"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "When I'm A Kid",
+      "duree": "",
+      "auteurs": [
+       "Boris Bergman",
+       "Harris Chalkitis",
+       "Stelios Vlavianos"
+      ]
+     }
+    ],
+    "want": 16,
+    "note": 3.88,
+    "votes": 40
+   },
+   "titresDiscogs": {
+    "artiste": "Demis Roussos",
+    "a": "My Reason",
+    "b": "When I'm A Kid"
+   }
+  },
+  {
+   "id": "0f13b02e-8a67-4709-81c6-25fe13f5a1be",
+   "artiste": "Robert Trabucco Et Son Ensemble Musette",
+   "a": "Y'a D'la Joie / Maitre Pierre",
+   "b": "L'hirondelle Du Faubourg / Ça Fait Boum",
+   "pos": null,
+   "pochette": "covers/0f13b02e-8a67-4709-81c6-25fe13f5a1be-mwro98mv.webp",
+   "avecPochette": true,
+   "discogs": 13300073,
+   "infos": {
+    "label": "Score",
+    "catno": "14043",
+    "pays": "France",
+    "genres": [
+     "Pop",
+     "Brass & Military"
+    ],
+    "styles": [
+     "Musette"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Y'a D'la Joie",
+      "duree": "2:38",
+      "auteurs": [
+       "Charles Trenet",
+       "Michel Emer"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Maitre Pierre",
+      "duree": "2:38",
+      "auteurs": [
+       "Henri Betti",
+       "Jacques Plante"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "L'hirondelle Du Faubourg",
+      "duree": "3:02",
+      "auteurs": [
+       "Ernest Dumont",
+       "Ferdinand Louis Benech"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Ça Fait Boum",
+      "duree": "2:55",
+      "auteurs": [
+       "Charles Tutelier",
+       "Emile Audifred",
+       "Georges Sellers",
+       "Marc Cab"
+      ]
+     }
+    ],
+    "want": 1,
+    "note": 3,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Robert Trabucco Et Son Ensemble Musette",
+    "a": "Y'a D'la Joie / Maitre Pierre",
+    "b": "L'hirondelle Du Faubourg / Ça Fait Boum"
+   }
+  },
+  {
+   "id": "3afa4b23-2488-4dda-85bc-38719128145c",
+   "artiste": "David Whitaker",
+   "a": "Ne Me Dis Plus Jamais / Top Of The Strip",
+   "b": "La Poupée Dans La Vitrine / Strip Poker At Caesar's Palace",
+   "pos": null,
+   "pochette": "covers/3afa4b23-2488-4dda-85bc-38719128145c-mwro9k12.webp",
+   "avecPochette": true,
+   "discogs": 675885,
+   "infos": {
+    "label": "Jockey Records",
+    "catno": "PPN 1296",
+    "pays": "France",
+    "annee": 1967,
+    "genres": [
+     "Jazz",
+     "Funk / Soul",
+     "Pop"
+    ],
+    "styles": [
+     "Easy Listening",
+     "Soul",
+     "Funk",
+     "Rhythm & Blues"
+    ],
+    "auteurs": [
+     "Louis Gasté"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Ne Me Dis Plus Jamais",
+      "duree": "2:12",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "Top Of The Strip",
+      "duree": "2:05",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "La Poupée Dans La Vitrine",
+      "duree": "2:18",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Strip Poker At Caesar's Palace",
+      "duree": "2:50",
+      "auteurs": []
+     }
+    ],
+    "want": 372,
+    "note": 4.11,
+    "votes": 56
+   },
+   "titresDiscogs": {
+    "artiste": "David Whitaker",
+    "a": "Ne Me Dis Plus Jamais / Top Of The Strip",
+    "b": "La Poupée Dans La Vitrine / Strip Poker At Caesar's Palace"
+   }
+  },
+  {
+   "id": "8b6870dd-ff81-44cf-a0cf-859e9af36e7b",
+   "artiste": "Various",
+   "a": "Bon Anniversaire / Maman Vous Aime",
+   "b": "C'est Ta Fête Maman / Papa Aime Maman",
+   "pos": null,
+   "pochette": "covers/8b6870dd-ff81-44cf-a0cf-859e9af36e7b-mwroa564.webp",
+   "avecPochette": true,
+   "discogs": 9870676,
+   "infos": {
+    "label": "Trianon",
+    "catno": "4487 ets",
+    "pays": "France",
+    "annee": 1964,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Bon Anniversaire",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "Maman Vous Aime",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "C'est Ta Fête Maman",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Papa Aime Maman",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "want": 0,
+    "note": 3.5,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Various",
+    "a": "Bon Anniversaire / Maman Vous Aime",
+    "b": "C'est Ta Fête Maman / Papa Aime Maman"
+   }
+  },
+  {
+   "id": "304849a4-66dc-4948-a355-bcacf51c2734",
+   "artiste": "André Verchuren",
+   "a": "Le Sous-Marin Vert = Yellow Submarine / Un Homme Et Une Femme",
+   "b": "La Chanson De Lara / Angélique",
+   "pos": null,
+   "pochette": "covers/304849a4-66dc-4948-a355-bcacf51c2734-mwroajll.webp",
+   "avecPochette": true,
+   "discogs": 12948224,
+   "infos": {
+    "label": "Disques Festival",
+    "catno": "FY 2442",
+    "pays": "France",
+    "annee": 1966,
+    "genres": [
+     "Pop"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Le Sous-Marin Vert = Yellow Submarine",
+      "duree": "2:10",
+      "auteurs": [
+       "Jean Broussolle",
+       "Lennon-McCartney"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Un Homme Et Une Femme",
+      "duree": "1:55",
+      "auteurs": [
+       "Francis Lai",
+       "Pierre Barouh"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "La Chanson De Lara",
+      "duree": "2:10",
+      "auteurs": [
+       "Hubert Ithier",
+       "Maurice Jarre"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Angélique",
+      "duree": "2:50",
+      "auteurs": [
+       "Jean Fénol",
+       "Maurice Boubert",
+       "Michel Orso"
+      ]
+     }
+    ],
+    "want": 3
+   },
+   "titresDiscogs": {
+    "artiste": "André Verchuren",
+    "a": "Le Sous-Marin Vert = Yellow Submarine / Un Homme Et Une Femme",
+    "b": "La Chanson De Lara / Angélique"
+   }
+  },
+  {
+   "id": "60d66211-9c03-4f84-a053-3de9dc85bde5",
+   "artiste": "Chantal Goya",
+   "a": "C'est Guignol!",
+   "b": "Le Soulier Qui Vole (Partir)",
+   "pos": null,
+   "pochette": "covers/60d66211-9c03-4f84-a053-3de9dc85bde5-mwrob1we.webp",
+   "avecPochette": true,
+   "discogs": 3007736,
+   "infos": {
+    "label": "RCA",
+    "catno": "PB 8662",
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Children's"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Jean-Jacques Debout"
+    ],
+    "arrangeurs": [
+     "Jean-Daniel Mercier"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "C'est Guignol!",
+      "duree": "2:50",
+      "auteurs": [
+       "Jean-Jacques Debout"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Le Soulier Qui Vole (Partir)",
+      "duree": "3:30",
+      "auteurs": [
+       "Jean-Jacques Debout"
+      ]
+     }
+    ],
+    "want": 4,
+    "note": 3.54,
+    "votes": 13
+   },
+   "titresDiscogs": {
+    "artiste": "Chantal Goya",
+    "a": "C'est Guignol!",
+    "b": "Le Soulier Qui Vole (Partir)"
+   }
+  },
+  {
+   "id": "76771b1d-e83e-4c04-8cec-b410afb65ed8",
+   "artiste": "Fabrice",
+   "a": "Les Quat'Z Amis",
+   "b": "Les Quat'Z Amis",
+   "pos": null,
+   "pochette": "covers/76771b1d-e83e-4c04-8cec-b410afb65ed8-mwrobhx8.webp",
+   "avecPochette": true,
+   "discogs": 5872342,
+   "infos": {
+    "label": "Disques Festival",
+    "catno": "SPX 229",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Theme"
+    ],
+    "producteurs": [
+     "Janine Guyon"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Les Quat'Z Amis",
+      "duree": "2:52",
+      "auteurs": [
+       "Georges Jouvin",
+       "Jo Moutet",
+       "Jacques Demarny"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Les Quat'Z Amis",
+      "duree": "2:55",
+      "auteurs": [
+       "Georges Jouvin",
+       "Jo Moutet",
+       "Jacques Demarny"
+      ]
+     }
+    ],
+    "want": 41,
+    "note": 4.5,
+    "votes": 8
+   },
+   "titresDiscogs": {
+    "artiste": "Fabrice",
+    "a": "Les Quat'Z Amis",
+    "b": "Les Quat'Z Amis"
+   }
+  },
+  {
+   "id": "d3ab80b8-f277-474d-9ee9-3e1e7373fccb",
+   "artiste": "Danielle Licari",
+   "a": "Heidi (Générique)",
+   "b": "Mon Beau Sapin, Roi Des Forêts (Chant De Noël)",
+   "pos": null,
+   "pochette": "covers/d3ab80b8-f277-474d-9ee9-3e1e7373fccb-mwroc3sq.webp",
+   "avecPochette": true,
+   "discogs": 979699,
+   "infos": {
+    "label": "Disques Adès",
+    "catno": "11.043",
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Pop",
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Nursery Rhymes",
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Heidi (Générique)",
+      "duree": "2:50",
+      "auteurs": [
+       "Andrea Wagner",
+       "Wolfgang Weinzierl",
+       "Christian Bruhn"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Mon Beau Sapin, Roi Des Forêts (Chant De Noël)",
+      "duree": "2:13",
+      "auteurs": []
+     }
+    ],
+    "want": 29,
+    "note": 3.89,
+    "votes": 19
+   },
+   "titresDiscogs": {
+    "artiste": "Danielle Licari",
+    "a": "Heidi (Générique)",
+    "b": "Mon Beau Sapin, Roi Des Forêts (Chant De Noël)"
+   }
+  },
+  {
+   "id": "9acd87de-7738-402a-b256-9936d0543f70",
+   "artiste": "Various",
+   "a": "Maya L'abeille - Générique",
+   "b": "Chanson De Flip",
+   "pos": null,
+   "pochette": "covers/9acd87de-7738-402a-b256-9936d0543f70-mwrocfnk.webp",
+   "avecPochette": true,
+   "discogs": 938796,
+   "infos": {
+    "label": "Le Petit Ménestrel",
+    "catno": "11.021",
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Pop",
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Theme",
+     "Chanson"
+    ],
+    "auteurs": [
+     "Florian Cusano",
+     "Karel Svoboda",
+     "Pierre Cholodenko",
+     "Pierre Delanoë"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Maya L'abeille - Générique",
+      "duree": "2:15",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Chanson De Flip",
+      "duree": "2:30",
+      "auteurs": []
+     }
+    ],
+    "want": 16,
+    "note": 3.65,
+    "votes": 26
+   },
+   "titresDiscogs": {
+    "artiste": "Various",
+    "a": "Maya L'abeille - Générique",
+    "b": "Chanson De Flip"
+   }
+  },
+  {
+   "id": "67a6c231-2ae0-4b97-ab6b-4d3d5d467a91",
+   "artiste": "Mireille Mathieu",
+   "a": "Un Enfant Viendra",
+   "b": "Les Jardins D'automne",
+   "pos": null,
+   "pochette": "covers/67a6c231-2ae0-4b97-ab6b-4d3d5d467a91-mwrocwpg.webp",
+   "avecPochette": true,
+   "discogs": 2320981,
+   "infos": {
+    "label": "Philips",
+    "catno": "6172 657",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Don Costa"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Un Enfant Viendra",
+      "duree": "3:31",
+      "auteurs": [
+       "Christian Bruhn",
+       "Eddy Marnay"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Les Jardins D'automne",
+      "duree": "4:05",
+      "auteurs": [
+       "Don Costa",
+       "Eddy Marnay"
+      ]
+     }
+    ],
+    "want": 5,
+    "note": 3.89,
+    "votes": 9
+   },
+   "titresDiscogs": {
+    "artiste": "Mireille Mathieu",
+    "a": "Un Enfant Viendra",
+    "b": "Les Jardins D'automne"
+   }
+  },
+  {
+   "id": "d6fca74f-4da5-41c3-af91-ef190e1879e2",
+   "artiste": "Jairo",
+   "a": "Les Jardins Du Ciel (Sun Of Jamaïca)",
+   "b": "Tes Mots Caressent Ma Vie (Como Decirte Que Te Quiero)",
+   "pos": null,
+   "pochette": "covers/d6fca74f-4da5-41c3-af91-ef190e1879e2-mwrod9im.webp",
+   "avecPochette": true,
+   "discogs": 728520,
+   "infos": {
+    "label": "Garima Records",
+    "catno": "ZB 8514",
+    "pays": "France",
+    "annee": 1980,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Renaldo Cerri"
+    ],
+    "arrangeurs": [
+     "Jean Claudric"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Les Jardins Du Ciel (Sun Of Jamaïca)",
+      "duree": "3:55",
+      "auteurs": [
+       "Wolff-Ekkehardt Stein",
+       "Wolfgang Jass"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Tes Mots Caressent Ma Vie (Como Decirte Que Te Quiero)",
+      "duree": "3:10",
+      "auteurs": [
+       "Jairo",
+       "Alfonso Luis Gonzalez"
+      ]
+     }
+    ],
+    "want": 5,
+    "note": 3.75,
+    "votes": 36
+   },
+   "titresDiscogs": {
+    "artiste": "Jairo",
+    "a": "Les Jardins Du Ciel (Sun Of Jamaïca)",
+    "b": "Tes Mots Caressent Ma Vie (Como Decirte Que Te Quiero)"
+   }
+  },
+  {
+   "id": "d79ac2e6-c7ca-4f58-a76b-19a2ea18cc91",
+   "artiste": "Les Sunlights",
+   "a": "Les Roses Blanches",
+   "b": "Il N'y A Que L'Amour / Mon Cœur Est Un Coffret",
+   "pos": null,
+   "pochette": "covers/d79ac2e6-c7ca-4f58-a76b-19a2ea18cc91-mwrodqc5.webp",
+   "avecPochette": true,
+   "discogs": 2665212,
+   "infos": {
+    "label": "Disc'AZ",
+    "catno": "EP 1 170",
+    "pays": "France",
+    "annee": 1968,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Beat",
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Les Roses Blanches",
+      "duree": "4:37",
+      "auteurs": [
+       "Charles Louis Pothier",
+       "Léon Raiter"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Il N'y A Que L'Amour",
+      "duree": "2:32",
+      "auteurs": [
+       "Bruno Cogoni",
+       "Jacques Demarny",
+       "Willy Staquet"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Mon Cœur Est Un Coffret",
+      "duree": "2:42",
+      "auteurs": [
+       "Bruno Cogoni",
+       "Pierre Odar"
+      ]
+     }
+    ],
+    "want": 8,
+    "note": 3.22,
+    "votes": 27
+   },
+   "titresDiscogs": {
+    "artiste": "Les Sunlights",
+    "a": "Les Roses Blanches",
+    "b": "Il N'y A Que L'Amour / Mon Cœur Est Un Coffret"
+   }
+  },
+  {
+   "id": "5def91d9-2f07-4bb3-b663-2cef9a3b81b8",
+   "artiste": "Danielle Licari",
+   "a": "Pinocchio, Joli Pantin  (Générique)",
+   "b": "Air De « Rocco Le Pic Vert » (« Rocco, Der Specht ») / Air De « Au Pays Des Nains » (« Im Land Der Zwerge »)",
+   "pos": null,
+   "pochette": "covers/5def91d9-2f07-4bb3-b663-2cef9a3b81b8-mwroeewe.webp",
+   "avecPochette": true,
+   "discogs": 6320364,
+   "infos": {
+    "label": "Disques Adès",
+    "catno": "11.044",
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Nursery Rhymes",
+     "Chanson"
+    ],
+    "auteurs": [
+     "Karel Svoboda"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Pinocchio, Joli Pantin  (Générique)",
+      "duree": "3:20",
+      "auteurs": [
+       "Florian Cusano"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Air De « Rocco Le Pic Vert » (« Rocco, Der Specht »)",
+      "duree": "1:54",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Air De « Au Pays Des Nains » (« Im Land Der Zwerge »)",
+      "duree": "2:26",
+      "auteurs": []
+     }
+    ],
+    "want": 4,
+    "note": 4.75,
+    "votes": 8
+   },
+   "titresDiscogs": {
+    "artiste": "Danielle Licari",
+    "a": "Pinocchio, Joli Pantin  (Générique)",
+    "b": "Air De « Rocco Le Pic Vert » (« Rocco, Der Specht ») / Air De « Au Pays Des Nains » (« Im Land Der Zwerge »)"
+   }
+  },
+  {
+   "id": "2f973054-fcc8-455a-ab98-1c73f17db991",
+   "artiste": "Tino Rossi",
+   "a": "Le Temps Des Guitares / Eternelle Chanson",
+   "b": "Le Soleil Et La Mer / Adios Amigo",
+   "pos": null,
+   "pochette": "covers/2f973054-fcc8-455a-ab98-1c73f17db991-mwroeu6u.webp",
+   "avecPochette": true,
+   "discogs": 2513233,
+   "infos": {
+    "label": "Columbia",
+    "catno": "ESVF 1064",
+    "pays": "France",
+    "annee": 1963,
+    "genres": [
+     "Pop",
+     "Folk, World, & Country"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Francis Lopez"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Le Temps Des Guitares",
+      "duree": "2:15",
+      "auteurs": []
+     },
+     {
+      "position": "A2",
+      "titre": "Eternelle Chanson",
+      "duree": "2:25",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Le Soleil Et La Mer",
+      "duree": "2:20",
+      "auteurs": []
+     },
+     {
+      "position": "B2",
+      "titre": "Adios Amigo",
+      "duree": "2:15",
+      "auteurs": []
+     }
+    ],
+    "want": 1,
+    "note": 3.5,
+    "votes": 4
+   },
+   "titresDiscogs": {
+    "artiste": "Tino Rossi",
+    "a": "Le Temps Des Guitares / Eternelle Chanson",
+    "b": "Le Soleil Et La Mer / Adios Amigo"
+   }
+  },
+  {
+   "id": "7893a4e4-bb4a-4cde-8633-3cdd522c9ec6",
+   "artiste": "Tino Rossi",
+   "a": "Ah ! Le Petit Vin Blanc",
+   "b": "Bonne Fete Papa",
+   "pos": null,
+   "pochette": "covers/7893a4e4-bb4a-4cde-8633-3cdd522c9ec6-mwrof7bg.webp",
+   "avecPochette": true,
+   "discogs": 11642024,
+   "infos": {
+    "label": "Columbia",
+    "catno": "2C006-10308M",
+    "pays": "France",
+    "annee": 1969,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Ah ! Le Petit Vin Blanc",
+      "duree": "",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Bonne Fete Papa",
+      "duree": "",
+      "auteurs": []
+     }
+    ],
+    "want": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Tino Rossi",
+    "a": "Ah ! Le Petit Vin Blanc",
+    "b": "Bonne Fete Papa"
+   }
+  },
+  {
+   "id": "2d7c44ac-b60a-42af-b9f2-e379c1d115f4",
+   "artiste": "Dave",
+   "a": "Est-Ce Par Hasard (Let's Fall In Love)",
+   "b": "Ton Amour Est La Rivière",
+   "pos": null,
+   "pochette": "covers/2d7c44ac-b60a-42af-b9f2-e379c1d115f4-mwrofoc0.webp",
+   "avecPochette": true,
+   "discogs": 718390,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 5469",
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Jean-Jacques Souplet"
+    ],
+    "arrangeurs": [
+     "Guy Mattéoni"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Est-Ce Par Hasard (Let's Fall In Love)",
+      "duree": "2:38",
+      "auteurs": [
+       "Harold Arlen",
+       "Ted Koehler"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Ton Amour Est La Rivière",
+      "duree": "3:18",
+      "auteurs": [
+       "Cyril Assous",
+       "Patrick Loiseau"
+      ]
+     }
+    ],
+    "want": 3,
+    "note": 3.63,
+    "votes": 27
+   },
+   "titresDiscogs": {
+    "artiste": "Dave",
+    "a": "Est-Ce Par Hasard (Let's Fall In Love)",
+    "b": "Ton Amour Est La Rivière"
+   }
+  },
+  {
+   "id": "61fcc576-671d-4e32-9c79-33e51171ddb4",
+   "artiste": "Mireille Mathieu",
+   "a": "Pardonne-Moi Ce Caprice D'Enfant / La Princesse Et L'Amour",
+   "b": "Pourquoi Le Monde Est Sans Amour / L'Homme Qui Sera Mon Homme",
+   "pos": null,
+   "pochette": "covers/61fcc576-671d-4e32-9c79-33e51171ddb4-mwrog4dq.webp",
+   "avecPochette": true,
+   "discogs": 9277996,
+   "infos": {
+    "label": "Barclay",
+    "catno": "71447",
+    "pays": "France",
+    "annee": 1970,
+    "genres": [
+     "Pop"
+    ],
+    "producteurs": [
+     "Léo Missir"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Pardonne-Moi Ce Caprice D'Enfant",
+      "duree": "3:19",
+      "auteurs": [
+       "Patricia Carli"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "La Princesse Et L'Amour",
+      "duree": "3:05",
+      "auteurs": [
+       "Léo Missir",
+       "Patricia Carli"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Pourquoi Le Monde Est Sans Amour",
+      "duree": "2:55",
+      "auteurs": [
+       "Patricia Carli",
+       "Jean Schmitt"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "L'Homme Qui Sera Mon Homme",
+      "duree": "2:45",
+      "auteurs": [
+       "Olivier Toussaint",
+       "Paul de Senneville",
+       "Jean-Loup Dabadie"
+      ]
+     }
+    ],
+    "want": 4,
+    "note": 3.27,
+    "votes": 11
+   },
+   "titresDiscogs": {
+    "artiste": "Mireille Mathieu",
+    "a": "Pardonne-Moi Ce Caprice D'Enfant / La Princesse Et L'Amour",
+    "b": "Pourquoi Le Monde Est Sans Amour / L'Homme Qui Sera Mon Homme"
+   }
+  },
+  {
+   "id": "daaaaf25-677e-48aa-980e-6d04e8388c66",
+   "artiste": "Mireille Mathieu",
+   "a": "Santa Maria De La Mer",
+   "b": "Toi L'Indien Mon Ami",
+   "pos": null,
+   "pochette": "covers/daaaaf25-677e-48aa-980e-6d04e8388c66-mwrogfyh.webp",
+   "avecPochette": true,
+   "discogs": 651213,
+   "infos": {
+    "label": "Philips",
+    "catno": "6172 653",
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Santa Maria De La Mer",
+      "duree": "3:37",
+      "auteurs": [
+       "Christian Bruhn",
+       "Eddy Marnay"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Toi L'Indien Mon Ami",
+      "duree": "3:10",
+      "auteurs": [
+       "Dany Saval",
+       "Serge Prisset"
+      ]
+     }
+    ],
+    "want": 6,
+    "note": 3.34,
+    "votes": 29
+   },
+   "titresDiscogs": {
+    "artiste": "Mireille Mathieu",
+    "a": "Santa Maria De La Mer",
+    "b": "Toi L'Indien Mon Ami"
+   }
+  },
+  {
+   "id": "b29a2bfe-7c42-4fd6-adee-9e59d7d8d7f9",
+   "artiste": "Richard Anthony",
+   "a": "Le Sirop Typhon",
+   "b": "En Passant La Frontière",
+   "pos": null,
+   "pochette": "covers/b29a2bfe-7c42-4fd6-adee-9e59d7d8d7f9-mwrogr59.webp",
+   "avecPochette": true,
+   "discogs": 561899,
+   "infos": {
+    "label": "Columbia",
+    "catno": "2 C 006-10018",
+    "pays": "France",
+    "annee": 1969,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "arrangeurs": [
+     "Reg Guest"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Le Sirop Typhon",
+      "duree": "3:30",
+      "auteurs": [
+       "John Gorman",
+       "Mike McGear",
+       "Richard Anthony",
+       "Roger McGough"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "En Passant La Frontière",
+      "duree": "3:20",
+      "auteurs": [
+       "Eddy Marnay",
+       "Luis Aguile"
+      ]
+     }
+    ],
+    "want": 9,
+    "note": 3.69,
+    "votes": 32
+   },
+   "titresDiscogs": {
+    "artiste": "Richard Anthony",
+    "a": "Le Sirop Typhon",
+    "b": "En Passant La Frontière"
+   }
+  },
+  {
+   "id": "624188ed-e4c9-47ec-8f1c-5ebe1870671d",
+   "artiste": "Hervé Vilard",
+   "a": "Pour Toi Ce N'était Rien",
+   "b": "Je N'aurai Pas Le Cœur",
+   "pos": null,
+   "pochette": "covers/624188ed-e4c9-47ec-8f1c-5ebe1870671d-mwroh6t1.webp",
+   "avecPochette": true,
+   "discogs": 3811607,
+   "infos": {
+    "label": "Disques Carrere",
+    "catno": "49.029",
+    "pays": "France",
+    "annee": 1973,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "arrangeurs": [
+     "Jean Claudric"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Pour Toi Ce N'était Rien",
+      "duree": "",
+      "auteurs": [
+       "Domenico Modugno",
+       "Enrica Bonaccorti",
+       "Pierre Delanoë"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Je N'aurai Pas Le Cœur",
+      "duree": "",
+      "auteurs": [
+       "Humbert Ibach",
+       "Yves Dessca",
+       "Jacques Revaux",
+       "Pierre Groscolas"
+      ]
+     }
+    ],
+    "want": 4,
+    "note": 3.27,
+    "votes": 11
+   },
+   "titresDiscogs": {
+    "artiste": "Hervé Vilard",
+    "a": "Pour Toi Ce N'était Rien",
+    "b": "Je N'aurai Pas Le Cœur"
+   }
+  },
+  {
+   "id": "56ce74cc-4fe2-40e4-becb-204d8a3a34bc",
+   "artiste": "Christophe",
+   "a": "Aline",
+   "b": "Je Ne T'aime Plus",
+   "pos": null,
+   "pochette": "covers/56ce74cc-4fe2-40e4-becb-204d8a3a34bc-mwrohgey.webp",
+   "avecPochette": true,
+   "discogs": 683086,
+   "infos": {
+    "label": "Les Disques Motors",
+    "catno": "MTO 55000",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Christophe"
+    ],
+    "producteurs": [
+     "Francis O'Neill",
+     "Jacques Denjean",
+     "Roger Corsin",
+     "Jean Albertini"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Aline",
+      "duree": "2:52",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Je Ne T'aime Plus",
+      "duree": "3:03",
+      "auteurs": []
+     }
+    ],
+    "want": 63,
+    "note": 3.95,
+    "votes": 135
+   },
+   "titresDiscogs": {
+    "artiste": "Christophe",
+    "a": "Aline",
+    "b": "Je Ne T'aime Plus"
+   }
+  },
+  {
+   "id": "1775898e-b70e-4c2f-b5a5-0e2275938a4f",
+   "artiste": "Hugues Aufray",
+   "a": "Debout Les Gars / Nous Avons Beaucoup Dansé",
+   "b": "Pends-moi = Dang Me / Ja-Da",
+   "pos": null,
+   "pochette": "covers/1775898e-b70e-4c2f-b5a5-0e2275938a4f-mwrohvaj.webp",
+   "avecPochette": true,
+   "discogs": 2443678,
+   "infos": {
+    "label": "Barclay",
+    "catno": "70 692",
+    "pays": "France",
+    "annee": 1964,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Folk Rock",
+     "Chanson"
+    ],
+    "producteurs": [
+     "Norbert Saada"
+    ],
+    "arrangeurs": [
+     "Tatcho Fantini"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Debout Les Gars",
+      "duree": "1:59",
+      "auteurs": [
+       "Hugues Aufray",
+       "Pierre Delanoë"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Nous Avons Beaucoup Dansé",
+      "duree": "2:05",
+      "auteurs": [
+       "Guy Magenta",
+       "Hugues Aufray",
+       "Pierre Delanoë"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Pends-moi = Dang Me",
+      "duree": "2:10",
+      "auteurs": [
+       "Hugues Aufray",
+       "Roger Miller",
+       "Vline Buggy"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Ja-Da",
+      "duree": "2:45",
+      "auteurs": [
+       "Bob Carleton",
+       "Pierre Saka"
+      ]
+     }
+    ],
+    "want": 7,
+    "note": 4.07,
+    "votes": 14
+   },
+   "titresDiscogs": {
+    "artiste": "Hugues Aufray",
+    "a": "Debout Les Gars / Nous Avons Beaucoup Dansé",
+    "b": "Pends-moi = Dang Me / Ja-Da"
+   }
+  },
+  {
+   "id": "34b27e72-85d3-4425-bdf0-9a5b139777e9",
+   "artiste": "Chantal Goya",
+   "a": "Bécassine",
+   "b": "Peine",
+   "pos": null,
+   "pochette": "covers/34b27e72-85d3-4425-bdf0-9a5b139777e9-mwroi6kj.webp",
+   "avecPochette": true,
+   "discogs": 793090,
+   "infos": {
+    "label": "RCA Victor",
+    "catno": "PB 8493",
+    "pays": "France",
+    "annee": 1980,
+    "genres": [
+     "Pop",
+     "Children's"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Jean-Jacques Debout"
+    ],
+    "producteurs": [
+     "Jean-Jacques Debout"
+    ],
+    "arrangeurs": [
+     "Jean-Daniel Mercier"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Bécassine",
+      "duree": "2:40",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Peine",
+      "duree": "3:45",
+      "auteurs": []
+     }
+    ],
+    "want": 6,
+    "note": 3.38,
+    "votes": 29
+   },
+   "titresDiscogs": {
+    "artiste": "Chantal Goya",
+    "a": "Bécassine",
+    "b": "Peine"
+   }
+  },
+  {
+   "id": "b47f3261-9b14-4137-8387-f2194fb272d9",
+   "artiste": "Jocelyne Neel Et Les Écoliers Du Fidelaire",
+   "a": "Le Roi Dagobert",
+   "b": "Coucou",
+   "pos": null,
+   "pochette": "covers/b47f3261-9b14-4137-8387-f2194fb272d9-mwrokc3t.webp",
+   "avecPochette": true,
+   "discogs": 10168021,
+   "infos": {
+    "label": "Disques Festival",
+    "catno": "EN 30",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Children's"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Le Roi Dagobert",
+      "duree": "3:12",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Coucou",
+      "duree": "1:36",
+      "auteurs": []
+     }
+    ],
+    "want": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Jocelyne Neel Et Les Écoliers Du Fidelaire",
+    "a": "Le Roi Dagobert",
+    "b": "Coucou"
+   }
+  },
+  {
+   "id": "dd975675-645d-40db-84b8-e5f30090e3b8",
+   "artiste": "Jocelyne Neel",
+   "a": "Il Était Une Bergère",
+   "b": "Le Petit Chasseur",
+   "pos": null,
+   "pochette": "covers/dd975675-645d-40db-84b8-e5f30090e3b8-mwrolc46.webp",
+   "avecPochette": true,
+   "discogs": 24387509,
+   "infos": {
+    "label": "Disques Festival",
+    "catno": "EN 32",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Children's"
+    ],
+    "styles": [
+     "Nursery Rhymes"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Il Était Une Bergère",
+      "duree": "2:25",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Le Petit Chasseur",
+      "duree": "2:36",
+      "auteurs": []
+     }
+    ],
+    "want": 0
+   },
+   "titresDiscogs": {
+    "artiste": "Jocelyne Neel",
+    "a": "Il Était Une Bergère",
+    "b": "Le Petit Chasseur"
+   }
+  },
+  {
+   "id": "72d343de-f699-486b-9bec-5311a7f8483d",
+   "artiste": "Jocelyne Neel",
+   "a": "Cadet Rousselle",
+   "b": "Chevalier Du Guet",
+   "pos": null,
+   "pochette": "covers/72d343de-f699-486b-9bec-5311a7f8483d-mwrom08j.webp",
+   "avecPochette": true,
+   "discogs": 12642122,
+   "infos": {
+    "label": "Disques Festival",
+    "catno": "EN 33",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Children's"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Cadet Rousselle",
+      "duree": "2:48",
+      "auteurs": []
+     },
+     {
+      "position": "B1",
+      "titre": "Chevalier Du Guet",
+      "duree": "4:00",
+      "auteurs": []
+     }
+    ],
+    "want": 0
+   },
+   "titresDiscogs": {
+    "artiste": "Jocelyne Neel",
+    "a": "Cadet Rousselle",
+    "b": "Chevalier Du Guet"
+   }
+  },
+  {
+   "id": "89751a40-dff2-4924-bffb-a5083837acf3",
+   "artiste": "Jocelyne Neel Et Les Écoliers Du Fidelaire",
+   "a": "Nous N'irons Plus Au Bois",
+   "b": "Mon Père M'a Donné Un Mari",
+   "pos": null,
+   "pochette": "covers/89751a40-dff2-4924-bffb-a5083837acf3-mwrondw4.webp",
+   "avecPochette": true,
+   "discogs": 7407475,
+   "infos": {
+    "label": "Disques Festival",
+    "catno": "EN 35",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Children's"
+    ],
+    "styles": [
+     "Nursery Rhymes",
+     "Chanson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Nous N'irons Plus Au Bois",
+      "duree": "3:38",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Mon Père M'a Donné Un Mari",
+      "duree": "2:15",
+      "auteurs": []
+     }
+    ],
+    "want": 0,
+    "note": 3,
+    "votes": 2
+   },
+   "titresDiscogs": {
+    "artiste": "Jocelyne Neel Et Les Écoliers Du Fidelaire",
+    "a": "Nous N'irons Plus Au Bois",
+    "b": "Mon Père M'a Donné Un Mari"
+   }
+  },
+  {
+   "id": "49660229-ef89-4795-9ce2-eaccea11de4a",
+   "artiste": "Frédéric François",
+   "a": "Quand Vient Le Soir On Se Retrouve",
+   "b": "Pour Toi",
+   "pos": null,
+   "pochette": "covers/49660229-ef89-4795-9ce2-eaccea11de4a-mwront56.webp",
+   "avecPochette": true,
+   "discogs": 1296863,
+   "infos": {
+    "label": "Vogue",
+    "catno": "45. VB. 4206",
+    "pays": "France",
+    "annee": 1973,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Constant Defourny"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Quand Vient Le Soir On Se Retrouve",
+      "duree": "3:38",
+      "auteurs": [
+       "Frédéric François",
+       "Marino Atria"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Pour Toi",
+      "duree": "3:11",
+      "auteurs": [
+       "Frédéric François",
+       "Marino Atria"
+      ]
+     }
+    ],
+    "want": 4,
+    "note": 3.19,
+    "votes": 16
+   },
+   "titresDiscogs": {
+    "artiste": "Frédéric François",
+    "a": "Quand Vient Le Soir On Se Retrouve",
+    "b": "Pour Toi"
+   }
+  },
+  {
+   "id": "6c736b2e-bc2f-4d21-a585-de0dddfac5cd",
+   "artiste": "Nono",
+   "a": "La Chanson De Nono",
+   "b": "La Chanson De Nono (Instrumental)",
+   "pos": null,
+   "pochette": "covers/6c736b2e-bc2f-4d21-a585-de0dddfac5cd-mwroplyh.webp",
+   "avecPochette": true,
+   "discogs": 757734,
+   "infos": {
+    "label": "Saban Records & Music",
+    "catno": "2097 130",
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Theme"
+    ],
+    "auteurs": [
+     "Haim Saban",
+     "Shuki Levy"
+    ],
+    "producteurs": [
+     "Haim Saban",
+     "Shuki Levy"
+    ],
+    "arrangeurs": [
+     "Haim Saban",
+     "Shuki Levy"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "La Chanson De Nono",
+      "duree": "2:24",
+      "auteurs": [
+       "Haim Saban",
+       "Pascal Auriat"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "La Chanson De Nono (Instrumental)",
+      "duree": "2:24",
+      "auteurs": []
+     }
+    ],
+    "want": 30,
+    "note": 3.56,
+    "votes": 18
+   },
+   "titresDiscogs": {
+    "artiste": "Nono",
+    "a": "La Chanson De Nono",
+    "b": "La Chanson De Nono (Instrumental)"
+   }
+  },
+  {
+   "id": "0f0aa337-c146-4945-9c7b-0561b140b37d",
+   "artiste": "Licence IV",
+   "a": "Viens Boire Un P'tit Coup A La Maison",
+   "b": "Viens Boire Un P'tit Coup A La Maison (Instrumental)",
+   "pos": null,
+   "pochette": "covers/0f0aa337-c146-4945-9c7b-0561b140b37d-mwropz3n.webp",
+   "avecPochette": true,
+   "discogs": 703470,
+   "infos": {
+    "label": "Charles Talar Records",
+    "catno": "1740087",
+    "pays": "France",
+    "annee": 1986,
+    "genres": [
+     "Pop",
+     "Folk, World, & Country"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Francis Vacher",
+     "Jean-Jacques Lafon",
+     "Olivier Guillot"
+    ],
+    "arrangeurs": [
+     "Alain Mouysset"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Viens Boire Un P'tit Coup A La Maison",
+      "duree": "3:27",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Viens Boire Un P'tit Coup A La Maison (Instrumental)",
+      "duree": "4:12",
+      "auteurs": []
+     }
+    ],
+    "want": 35,
+    "note": 3.76,
+    "votes": 92
+   },
+   "titresDiscogs": {
+    "artiste": "Licence IV",
+    "a": "Viens Boire Un P'tit Coup A La Maison",
+    "b": "Viens Boire Un P'tit Coup A La Maison (Instrumental)"
+   }
+  },
+  {
+   "id": "ad20c5a9-2162-467f-8482-7c6a24face8d",
+   "artiste": "Dorothée, Smurfs (2), The",
+   "a": "Les Schtroumpfs (Chanson Schtroumpf Télévision)",
+   "b": "L'école Des Schtroumpfs",
+   "pos": null,
+   "pochette": "covers/ad20c5a9-2162-467f-8482-7c6a24face8d-mwroqsbe.webp",
+   "avecPochette": true,
+   "discogs": 983140,
+   "infos": {
+    "label": "AB Productions",
+    "catno": "810 827-7",
+    "pays": "France",
+    "annee": 1983,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Ferry Wienneke"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Les Schtroumpfs (Chanson Schtroumpf Télévision)",
+      "duree": "2:42",
+      "auteurs": [
+       "Dan Lacksman",
+       "Victor Szell"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "L'école Des Schtroumpfs",
+      "duree": "3:18",
+      "auteurs": [
+       "Jean-François Porry",
+       "Ferry Wienneke",
+       "Günther Behrle",
+       "Jean Frankfurter"
+      ]
+     }
+    ],
+    "want": 20,
+    "note": 3.09,
+    "votes": 33
+   },
+   "titresDiscogs": {
+    "artiste": "Dorothée, Smurfs (2), The",
+    "a": "Les Schtroumpfs (Chanson Schtroumpf Télévision)",
+    "b": "L'école Des Schtroumpfs"
+   }
+  },
+  {
+   "id": "f32b813e-213c-4bce-95e2-7f116289b6c4",
+   "artiste": "Dorothée",
+   "a": "Rox Et Rouky",
+   "b": "Disney Dimanche",
+   "pos": null,
+   "pochette": "covers/f32b813e-213c-4bce-95e2-7f116289b6c4-mwrorosh.webp",
+   "avecPochette": true,
+   "discogs": 987080,
+   "infos": {
+    "label": "Disques Adès",
+    "catno": "VS-642 F",
+    "pays": "France",
+    "annee": 1981,
+    "genres": [
+     "Pop",
+     "Children's",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Theme",
+     "Chanson"
+    ],
+    "auteurs": [
+     "Gérard Salesses",
+     "Jean-François Porry"
+    ],
+    "arrangeurs": [
+     "Gérard Salesses"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Rox Et Rouky",
+      "duree": "3:00",
+      "auteurs": [
+       "Jean-François Porry"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Disney Dimanche",
+      "duree": "2:39",
+      "auteurs": [
+       "William Leymergie"
+      ]
+     }
+    ],
+    "want": 20,
+    "note": 3.49,
+    "votes": 55
+   },
+   "titresDiscogs": {
+    "artiste": "Dorothée",
+    "a": "Rox Et Rouky",
+    "b": "Disney Dimanche"
+   }
+  },
+  {
+   "id": "a308f0c3-10bd-420a-81a9-e451aa0b04ae",
+   "artiste": "Tino Rossi",
+   "a": "Minuit, Chrétiens / Trois Anges Sont Venus",
+   "b": "Petit Papa Noël / Noël En Mer",
+   "pos": null,
+   "pochette": "covers/a308f0c3-10bd-420a-81a9-e451aa0b04ae-mwrow7ks.webp",
+   "discogs": 4553914,
+   "infos": {
+    "label": "Columbia",
+    "catno": "2C 012-13003",
+    "pays": "France",
+    "annee": 1978,
+    "genres": [
+     "Children's"
+    ],
+    "styles": [
+     "Chanson",
+     "Holiday"
+    ],
+    "pistes": [
+     {
+      "position": "A1",
+      "titre": "Minuit, Chrétiens",
+      "duree": "3:12",
+      "auteurs": [
+       "Adolphe C. Adam",
+       "Cappeau De Roquemaure"
+      ]
+     },
+     {
+      "position": "A2",
+      "titre": "Trois Anges Sont Venus",
+      "duree": "3:08",
+      "auteurs": [
+       "Augusta Holmès"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Petit Papa Noël",
+      "duree": "3:13",
+      "auteurs": [
+       "Henri Martinet",
+       "Raymond Vincy"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Noël En Mer",
+      "duree": "2:57",
+      "auteurs": [
+       "Armand Foucher",
+       "Hippolyte Ackermans"
+      ]
+     }
+    ],
+    "want": 9,
+    "note": 3.87,
+    "votes": 23
+   },
+   "titresDiscogs": {
+    "artiste": "Tino Rossi",
+    "a": "Minuit, Chrétiens / Trois Anges Sont Venus",
+    "b": "Petit Papa Noël / Noël En Mer"
+   }
+  },
+  {
+   "id": "c4278833-cd2c-4ba4-8d41-14fa6b8e9aab",
+   "artiste": "Steve Miller Band",
+   "a": "Abracadabra",
+   "b": "Never Say No",
+   "pos": null,
+   "pochette": "covers/c4278833-cd2c-4ba4-8d41-14fa6b8e9aab-mwroxqpw.webp",
+   "discogs": 1474646,
+   "infos": {
+    "label": "Mercury",
+    "catno": "6000 836",
+    "pays": "France",
+    "annee": 1982,
+    "genres": [
+     "Electronic",
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Synth-pop"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Abracadabra",
+      "duree": "3:42",
+      "auteurs": [
+       "Steve Miller"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Never Say No",
+      "duree": "3:37",
+      "auteurs": [
+       "Gary Mallaber",
+       "John Massaro",
+       "Kenny Lee Lewis"
+      ]
+     }
+    ],
+    "want": 62,
+    "note": 3.64,
+    "votes": 33
+   },
+   "titresDiscogs": {
+    "artiste": "Steve Miller Band",
+    "a": "Abracadabra",
+    "b": "Never Say No"
+   }
+  },
+  {
+   "id": "d4ba4ca9-43a2-4457-8f0d-80464bbc1eee",
+   "artiste": "Claudia Sylva",
+   "a": "Je Te Donne Mon Cœur",
+   "b": "Dis-Moi (Ton Secret)",
+   "pos": null,
+   "pochette": "covers/d4ba4ca9-43a2-4457-8f0d-80464bbc1eee-mwroy6hi.webp",
+   "discogs": 15846590,
+   "infos": {
+    "label": "Decca",
+    "catno": "71.103",
+    "pays": "France",
+    "annee": 1966,
+    "genres": [
+     "Pop"
+    ],
+    "auteurs": [
+     "Claudia Sylva",
+     "Hector Delfosse"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Je Te Donne Mon Cœur",
+      "duree": "2:00",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Dis-Moi (Ton Secret)",
+      "duree": "2:15",
+      "auteurs": []
+     }
+    ],
+    "want": 0,
+    "note": 4,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Claudia Sylva",
+    "a": "Je Te Donne Mon Cœur",
+    "b": "Dis-Moi (Ton Secret)"
+   }
+  },
+  {
+   "id": "fc79b688-4662-4598-9793-876708b8cc70",
+   "artiste": "Jeane Manson",
+   "a": "La Chapelle De Harlem",
+   "b": "Les Larmes Aux Yeux",
+   "pos": null,
+   "pochette": "covers/fc79b688-4662-4598-9793-876708b8cc70-mwroyrmn.webp",
+   "discogs": 718338,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 4986",
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Jean Renard",
+     "Michel Mallory"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "La Chapelle De Harlem",
+      "duree": "3:08",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Les Larmes Aux Yeux",
+      "duree": "3:59",
+      "auteurs": []
+     }
+    ],
+    "want": 7,
+    "note": 3.11,
+    "votes": 18
+   },
+   "titresDiscogs": {
+    "artiste": "Jeane Manson",
+    "a": "La Chapelle De Harlem",
+    "b": "Les Larmes Aux Yeux"
+   }
+  },
+  {
+   "id": "d66c18e1-963b-4948-b42f-32e6150f21d8",
+   "artiste": "Whitney Houston",
+   "a": "I'm Your Baby Tonight",
+   "b": "I'm Knockin'",
+   "pos": null,
+   "pochette": "covers/d66c18e1-963b-4948-b42f-32e6150f21d8-mwrozh9t.webp",
+   "discogs": 5590804,
+   "infos": {
+    "label": "Arista",
+    "catno": "113 594",
+    "pays": "France",
+    "annee": 1990,
+    "genres": [
+     "Hip Hop",
+     "Funk / Soul",
+     "Pop"
+    ],
+    "styles": [
+     "Contemporary R&B",
+     "Vocal"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "I'm Your Baby Tonight",
+      "duree": "4:13",
+      "auteurs": [
+       "L.A. & Babyface"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "I'm Knockin'",
+      "duree": "4:04",
+      "auteurs": [
+       "BeBe Winans",
+       "Rhett Lawrence",
+       "Rickey Minor"
+      ]
+     }
+    ],
+    "want": 41,
+    "note": 4.07,
+    "votes": 29
+   },
+   "titresDiscogs": {
+    "artiste": "Whitney Houston",
+    "a": "I'm Your Baby Tonight",
+    "b": "I'm Knockin'"
+   }
+  },
+  {
+   "id": "74c1cf8a-86b1-412a-b274-3188e888eed8",
+   "artiste": "Supertramp",
+   "a": "Goodbye Stranger",
+   "b": "Even In The Quietest Moments",
+   "pos": null,
+   "pochette": "covers/74c1cf8a-86b1-412a-b274-3188e888eed8-mwrozxwv.webp",
+   "discogs": 1037934,
+   "infos": {
+    "label": "A&M Records",
+    "catno": "AMS 7620",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Art Rock"
+    ],
+    "auteurs": [
+     "Rick Davies & Roger Hodgson"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Goodbye Stranger",
+      "duree": "5:44",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Even In The Quietest Moments",
+      "duree": "6:39",
+      "auteurs": []
+     }
+    ],
+    "want": 65,
+    "note": 4.11,
+    "votes": 54
+   },
+   "titresDiscogs": {
+    "artiste": "Supertramp",
+    "a": "Goodbye Stranger",
+    "b": "Even In The Quietest Moments"
+   }
+  },
+  {
+   "id": "9b555ae6-8239-4d4d-ac42-275c4338e725",
+   "artiste": "Roch Voisine",
+   "a": "Hélène",
+   "b": "Ton Blues",
+   "pos": null,
+   "pochette": "covers/9b555ae6-8239-4d4d-ac42-275c4338e725-mwrp0j4r.webp",
+   "discogs": 1260491,
+   "infos": {
+    "label": "Ariola",
+    "catno": "112 628",
+    "pays": "Europe",
+    "annee": 1989,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Soft Rock"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Hélène",
+      "duree": "3:42",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Ton Blues",
+      "duree": "3:35",
+      "auteurs": []
+     }
+    ],
+    "want": 7,
+    "note": 3.87,
+    "votes": 15
+   },
+   "titresDiscogs": {
+    "artiste": "Roch Voisine",
+    "a": "Hélène",
+    "b": "Ton Blues"
+   }
+  },
+  {
+   "id": "bc6ba036-2999-4420-a290-02fb8fc7916a",
+   "artiste": "Barry White",
+   "a": "What Am I Gonna Do With You?",
+   "b": "What Am I Gonna Do With You Baby?",
+   "pos": null,
+   "pochette": "covers/bc6ba036-2999-4420-a290-02fb8fc7916a-mwrp15hu.webp",
+   "discogs": 1272774,
+   "infos": {
+    "label": "Philips",
+    "catno": "6162 041",
+    "pays": "Netherlands",
+    "annee": 1975,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Barry White"
+    ],
+    "producteurs": [
+     "Barry White"
+    ],
+    "arrangeurs": [
+     "Barry White"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "What Am I Gonna Do With You?",
+      "duree": "3:31",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "What Am I Gonna Do With You Baby?",
+      "duree": "3:35",
+      "auteurs": []
+     }
+    ],
+    "want": 21,
+    "note": 3.74,
+    "votes": 19
+   },
+   "titresDiscogs": {
+    "artiste": "Barry White",
+    "a": "What Am I Gonna Do With You?",
+    "b": "What Am I Gonna Do With You Baby?"
+   }
+  },
+  {
+   "id": "aa238d72-51e8-4e73-92ef-bb097a394813",
+   "artiste": "Francis Cabrel Et Les Petits Chanteurs D'Asnières",
+   "a": "Il Faudra Leur Dire",
+   "b": "Il Faudra Leur Dire (Instrumental)",
+   "pos": null,
+   "pochette": "covers/aa238d72-51e8-4e73-92ef-bb097a394813-mwrp218f.webp",
+   "discogs": 736284,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS 650291 7",
+    "pays": "France",
+    "annee": 1986,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Francis Cabrel"
+    ],
+    "producteurs": [
+     "Georges Augier De Moussac"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Il Faudra Leur Dire",
+      "duree": "3:42",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Il Faudra Leur Dire (Instrumental)",
+      "duree": "3:42",
+      "auteurs": []
+     }
+    ],
+    "want": 15,
+    "note": 3.92,
+    "votes": 63
+   },
+   "titresDiscogs": {
+    "artiste": "Francis Cabrel Et Les Petits Chanteurs D'Asnières",
+    "a": "Il Faudra Leur Dire",
+    "b": "Il Faudra Leur Dire (Instrumental)"
+   }
+  },
+  {
+   "id": "b1d7df52-2e54-489f-bc63-f543fcdef6f4",
+   "artiste": "Daniel Balavoine",
+   "a": "L'Aziza",
+   "b": "Tous Les Cris Les S.O.S.",
+   "pos": null,
+   "pochette": "covers/b1d7df52-2e54-489f-bc63-f543fcdef6f4-mwrp2sd7.webp",
+   "discogs": 8078857,
+   "infos": {
+    "label": "Barclay",
+    "catno": "883 484-7",
+    "pays": "France",
+    "annee": 1985,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Vocal"
+    ],
+    "auteurs": [
+     "Daniel Balavoine"
+    ],
+    "producteurs": [
+     "Andy Scott",
+     "Fred Defaye"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "L'Aziza",
+      "duree": "4:20",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Tous Les Cris Les S.O.S.",
+      "duree": "5:00",
+      "auteurs": []
+     }
+    ],
+    "want": 21,
+    "note": 4.17,
+    "votes": 46
+   },
+   "titresDiscogs": {
+    "artiste": "Daniel Balavoine",
+    "a": "L'Aziza",
+    "b": "Tous Les Cris Les S.O.S."
+   }
+  },
+  {
+   "id": "7a045c98-8a6e-4e35-aae2-631aba346f83",
+   "artiste": "Wham!",
+   "a": "Wake Me Up Before You Go-Go",
+   "b": "Wake Me Up Before You Go-Go (Instrumental)",
+   "pos": null,
+   "pochette": "covers/7a045c98-8a6e-4e35-aae2-631aba346f83-mwrp3a4m.webp",
+   "discogs": 1460376,
+   "infos": {
+    "label": "Epic",
+    "catno": "EPC A4440",
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Synth-pop"
+    ],
+    "auteurs": [
+     "George Michael"
+    ],
+    "producteurs": [
+     "George Michael"
+    ],
+    "arrangeurs": [
+     "George Michael"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Wake Me Up Before You Go-Go",
+      "duree": "3:51",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Wake Me Up Before You Go-Go (Instrumental)",
+      "duree": "4:03",
+      "auteurs": []
+     }
+    ],
+    "want": 95,
+    "note": 4.32,
+    "votes": 19
+   },
+   "titresDiscogs": {
+    "artiste": "Wham!",
+    "a": "Wake Me Up Before You Go-Go",
+    "b": "Wake Me Up Before You Go-Go (Instrumental)"
+   }
+  },
+  {
+   "id": "99047074-a917-4f88-bc0b-82d32bbe3ca0",
+   "artiste": "Johnny Hallyday",
+   "a": "Qu'Est-Ce Que Tu Croyais \"Rock'n'roll Dancing\"",
+   "b": "C'Est Mieux Ainsi",
+   "pos": null,
+   "pochette": "covers/99047074-a917-4f88-bc0b-82d32bbe3ca0-mwrp3yxo.webp",
+   "discogs": 8325889,
+   "infos": {
+    "label": "Philips",
+    "catno": "6172 254",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "producteurs": [
+     "Eddie Vartan"
+    ],
+    "arrangeurs": [
+     "Jacques Denjean"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Qu'Est-Ce Que Tu Croyais \"Rock'n'roll Dancing\"",
+      "duree": "3:30",
+      "auteurs": [
+       "Fred Beckmeier",
+       "Georges Terme",
+       "Steve Beckmeier"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "C'Est Mieux Ainsi",
+      "duree": "3:55",
+      "auteurs": [
+       "Franck Langolff",
+       "Pascal Lefèbvre"
+      ]
+     }
+    ],
+    "want": 8,
+    "note": 3.4,
+    "votes": 10
+   },
+   "titresDiscogs": {
+    "artiste": "Johnny Hallyday",
+    "a": "Qu'Est-Ce Que Tu Croyais \"Rock'n'roll Dancing\"",
+    "b": "C'Est Mieux Ainsi"
+   }
+  },
+  {
+   "id": "53b26cbc-9f7c-4a61-8bdf-14d166a48619",
+   "artiste": "Kool & The Gang",
+   "a": "Fresh",
+   "b": "Rollin'",
+   "pos": null,
+   "pochette": "covers/53b26cbc-9f7c-4a61-8bdf-14d166a48619-mwrp4oam.webp",
+   "discogs": 547263,
+   "infos": {
+    "label": "De-Lite Records",
+    "catno": "102024",
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Fresh",
+      "duree": "4:20",
+      "auteurs": [
+       "J.T. Taylor",
+       "Kool & The Gang",
+       "Sandy Linzer"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Rollin'",
+      "duree": "3:11",
+      "auteurs": [
+       "J.T. Taylor",
+       "Kool & The Gang",
+       "Ronald Bell"
+      ]
+     }
+    ],
+    "want": 142,
+    "note": 4.12,
+    "votes": 83
+   },
+   "titresDiscogs": {
+    "artiste": "Kool & The Gang",
+    "a": "Fresh",
+    "b": "Rollin'"
+   }
+  },
+  {
+   "id": "5fdf6789-a2dc-4032-bca5-7075f57e6769",
+   "artiste": "Shuky & Aviva",
+   "a": "Je T'aime Un Peu Trop",
+   "b": "On S'en Va",
+   "pos": null,
+   "pochette": "covers/5fdf6789-a2dc-4032-bca5-7075f57e6769-mwrp53nw.webp",
+   "discogs": 687879,
+   "infos": {
+    "label": "Wip Records",
+    "catno": "2097 501",
+    "pays": "France",
+    "annee": 1975,
+    "genres": [
+     "Rock",
+     "Funk / Soul"
+    ],
+    "styles": [
+     "Soft Rock",
+     "Funk"
+    ],
+    "auteurs": [
+     "Michel Jourdan",
+     "Shuki Levy"
+    ],
+    "producteurs": [
+     "Alain Krief"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Je T'aime Un Peu Trop",
+      "duree": "3:21",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "On S'en Va",
+      "duree": "2:47",
+      "auteurs": [
+       "Haim Saban"
+      ]
+     }
+    ],
+    "want": 34,
+    "note": 3.62,
+    "votes": 26
+   },
+   "titresDiscogs": {
+    "artiste": "Shuky & Aviva",
+    "a": "Je T'aime Un Peu Trop",
+    "b": "On S'en Va"
+   }
+  },
+  {
+   "id": "7cf83621-b747-4467-80dd-bbf863f508e4",
+   "artiste": "Bingo!",
+   "a": "Hey, Hey, Doe Je Mee?",
+   "b": "La, La, La Medley Van Strauss",
+   "pos": null,
+   "pochette": "covers/7cf83621-b747-4467-80dd-bbf863f508e4-mwrp5i7h.webp",
+   "discogs": 342419,
+   "infos": {
+    "label": "Holy Hole Music",
+    "catno": "HH 91 05 137",
+    "pays": "Belgium",
+    "annee": 1991,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Euro House"
+    ],
+    "producteurs": [
+     "Christoff Wybouw"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Hey, Hey, Doe Je Mee?",
+      "duree": "",
+      "auteurs": [
+       "Christoff Wybouw",
+       "Phil Sterman",
+       "Serge Feys"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "La, La, La Medley Van Strauss",
+      "duree": "",
+      "auteurs": [
+       "Traditional"
+      ]
+     }
+    ],
+    "want": 3,
+    "note": 2.9,
+    "votes": 10
+   },
+   "titresDiscogs": {
+    "artiste": "Bingo!",
+    "a": "Hey, Hey, Doe Je Mee?",
+    "b": "La, La, La Medley Van Strauss"
+   }
+  },
+  {
+   "id": "aa9f6701-f13c-4fce-b2d0-936a93f45775",
+   "artiste": "Benny Neyman",
+   "a": "Laat Me Huilen",
+   "b": "Voor Jou (Kori Moy)",
+   "pos": null,
+   "pochette": "covers/aa9f6701-f13c-4fce-b2d0-936a93f45775-mwrp6lzu.webp",
+   "discogs": 3383139,
+   "infos": {
+    "label": "CNR",
+    "catno": "142.249",
+    "pays": "Netherlands",
+    "annee": 1986,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Ballad"
+    ],
+    "producteurs": [
+     "Will Hoebee"
+    ],
+    "arrangeurs": [
+     "Nikos Ignatiadis"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Laat Me Huilen",
+      "duree": "3:48",
+      "auteurs": [
+       "Benny Neyman",
+       "Robert Frank Jacobi"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Voor Jou (Kori Moy)",
+      "duree": "3:55",
+      "auteurs": [
+       "Benny Neyman",
+       "Nikos Ignatiadis"
+      ]
+     }
+    ],
+    "want": 3,
+    "note": 3.8,
+    "votes": 10
+   },
+   "titresDiscogs": {
+    "artiste": "Benny Neyman",
+    "a": "Laat Me Huilen",
+    "b": "Voor Jou (Kori Moy)"
+   }
+  },
+  {
+   "id": "e2d985e0-155d-4830-b44e-a4c012f9daa6",
+   "artiste": "Vangelis",
+   "a": "To The Unknown Man (I)",
+   "b": "To The Unknown Man (II)",
+   "pos": null,
+   "pochette": "covers/e2d985e0-155d-4830-b44e-a4c012f9daa6-mwrp780f.webp",
+   "discogs": 1944062,
+   "infos": {
+    "label": "RCA",
+    "catno": "PB 5064",
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Electronic"
+    ],
+    "styles": [
+     "Modern Classical",
+     "Ambient"
+    ],
+    "auteurs": [
+     "Vangelis"
+    ],
+    "producteurs": [
+     "Vangelis"
+    ],
+    "arrangeurs": [
+     "Vangelis"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "To The Unknown Man (I)",
+      "duree": "4:10",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "To The Unknown Man (II)",
+      "duree": "2:28",
+      "auteurs": []
+     }
+    ],
+    "want": 32,
+    "note": 4.47,
+    "votes": 17
+   },
+   "titresDiscogs": {
+    "artiste": "Vangelis",
+    "a": "To The Unknown Man (I)",
+    "b": "To The Unknown Man (II)"
+   }
+  },
+  {
+   "id": "84b2a5c3-f381-43f2-a192-811222c5f6ed",
+   "artiste": "Bonnie Tyler",
+   "a": "Here She Comes",
+   "b": "Time",
+   "pos": null,
+   "pochette": "covers/84b2a5c3-f381-43f2-a192-811222c5f6ed-mwrp7msw.webp",
+   "discogs": 12344816,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBS A 4637",
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Electronic",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Synth-pop"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Here She Comes",
+      "duree": "3:21",
+      "auteurs": [
+       "Giorgio Moroder",
+       "Pete Bellotte"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Time",
+      "duree": "3:37",
+      "auteurs": [
+       "Bonnie Tyler",
+       "Paul Hopkins"
+      ]
+     }
+    ],
+    "want": 8,
+    "note": 2.67,
+    "votes": 3
+   },
+   "titresDiscogs": {
+    "artiste": "Bonnie Tyler",
+    "a": "Here She Comes",
+    "b": "Time"
+   }
+  },
+  {
+   "id": "fc2d0b9e-8cd3-4ccc-baed-6ecb422f54c9",
+   "artiste": "David Bowie",
+   "a": "Ashes To Ashes",
+   "b": "Move On",
+   "pos": null,
+   "pochette": "covers/fc2d0b9e-8cd3-4ccc-baed-6ecb422f54c9-mwrp7zl2.webp",
+   "discogs": 1624915,
+   "infos": {
+    "label": "RCA",
+    "catno": "PB 9575",
+    "pays": "France",
+    "annee": 1980,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "David Bowie"
+    ],
+    "producteurs": [
+     "David Bowie",
+     "Tony Visconti"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Ashes To Ashes",
+      "duree": "3:35",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Move On",
+      "duree": "3:16",
+      "auteurs": []
+     }
+    ],
+    "want": 170,
+    "note": 4.22,
+    "votes": 188
+   },
+   "titresDiscogs": {
+    "artiste": "David Bowie",
+    "a": "Ashes To Ashes",
+    "b": "Move On"
+   }
+  },
+  {
+   "id": "74f8e27a-961a-4308-b41f-d034edd8b349",
+   "artiste": "Bibie",
+   "a": "Tout Simplement (Tout Doucement)",
+   "b": "Tam Tam Man",
+   "pos": null,
+   "pochette": "covers/74f8e27a-961a-4308-b41f-d034edd8b349-mwrp8exs.webp",
+   "discogs": 1456478,
+   "infos": {
+    "label": "CBS",
+    "catno": "CBSA 12.6050",
+    "pays": "France",
+    "annee": 1985,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Downtempo",
+     "Ballad"
+    ],
+    "producteurs": [
+     "Jean-Paul Malek"
+    ],
+    "arrangeurs": [
+     "Bernard Estardy"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Tout Simplement (Tout Doucement)",
+      "duree": "5:14",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Tam Tam Man",
+      "duree": "5:25",
+      "auteurs": []
+     }
+    ],
+    "want": 33,
+    "note": 3.87,
+    "votes": 15
+   },
+   "titresDiscogs": {
+    "artiste": "Bibie",
+    "a": "Tout Simplement (Tout Doucement)",
+    "b": "Tam Tam Man"
+   }
+  },
+  {
+   "id": "da6b382b-672b-4ff2-b953-0db4c52d8a3b",
+   "artiste": "Patrick Bruel",
+   "a": "J'te L'dis Quand Même",
+   "b": "Même Si On Est Fou",
+   "pos": null,
+   "pochette": "covers/da6b382b-672b-4ff2-b953-0db4c52d8a3b-mwrpbpyj.webp",
+   "discogs": 665160,
+   "infos": {
+    "label": "RCA",
+    "catno": "PB 43571",
+    "pays": "France",
+    "annee": 1990,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Mick Lanaro",
+     "Patrick Bruel"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "J'te L'dis Quand Même",
+      "duree": "3:38",
+      "auteurs": [
+       "Patrick Bruel"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Même Si On Est Fou",
+      "duree": "3:30",
+      "auteurs": [
+       "Gérard Presgurvic",
+       "Patrick Bruel"
+      ]
+     }
+    ],
+    "want": 31,
+    "note": 4.21,
+    "votes": 38
+   },
+   "titresDiscogs": {
+    "artiste": "Patrick Bruel",
+    "a": "J'te L'dis Quand Même",
+    "b": "Même Si On Est Fou"
+   }
+  },
+  {
+   "id": "94467996-68e0-463f-b1cd-6e503c65889d",
+   "artiste": "Mecano",
+   "a": "Une Femme Avec Une Femme",
+   "b": "Mujer Contra Mujer",
+   "pos": null,
+   "pochette": "covers/94467996-68e0-463f-b1cd-6e503c65889d-mwrpc6n0.webp",
+   "discogs": 663449,
+   "infos": {
+    "label": "Ariola",
+    "catno": "113189",
+    "pays": "France",
+    "annee": 1990,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "José María Cano"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Une Femme Avec Une Femme",
+      "duree": "4:05",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Mujer Contra Mujer",
+      "duree": "4:05",
+      "auteurs": []
+     }
+    ],
+    "want": 37,
+    "note": 4.35,
+    "votes": 79
+   },
+   "titresDiscogs": {
+    "artiste": "Mecano",
+    "a": "Une Femme Avec Une Femme",
+    "b": "Mujer Contra Mujer"
+   }
+  },
+  {
+   "id": "89eee67c-5a26-4e8b-abdd-70c8c9bdfc2c",
+   "artiste": "Electric Light Orchestra",
+   "a": "Don't Bring Me Down",
+   "b": "Dreaming Of 4000",
+   "pos": null,
+   "pochette": "covers/89eee67c-5a26-4e8b-abdd-70c8c9bdfc2c-mwrpcowe.webp",
+   "discogs": 946536,
+   "infos": {
+    "label": "Jet Records",
+    "catno": "JET 503",
+    "pays": "France",
+    "annee": 1979,
+    "genres": [
+     "Rock"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Classic Rock"
+    ],
+    "auteurs": [
+     "Jeff Lynne"
+    ],
+    "producteurs": [
+     "Jeff Lynne"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Don't Bring Me Down",
+      "duree": "4:08",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Dreaming Of 4000",
+      "duree": "5:00",
+      "auteurs": []
+     }
+    ],
+    "want": 54,
+    "note": 4.14,
+    "votes": 21
+   },
+   "titresDiscogs": {
+    "artiste": "Electric Light Orchestra",
+    "a": "Don't Bring Me Down",
+    "b": "Dreaming Of 4000"
+   }
+  },
+  {
+   "id": "599d1c25-1745-4881-b3be-1c6aa55e390e",
+   "artiste": "Mylène Farmer",
+   "a": "Pourvu Qu'elles Soient Douces",
+   "b": "Puisque...",
+   "pos": null,
+   "pochette": "covers/599d1c25-1745-4881-b3be-1c6aa55e390e-mwrpd7lj.webp",
+   "discogs": 221901,
+   "infos": {
+    "label": "Polydor",
+    "catno": "887 847-7",
+    "pays": "France",
+    "annee": 1988,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Synth-pop"
+    ],
+    "auteurs": [
+     "Mylène Farmer",
+     "Laurent Boutonnat"
+    ],
+    "producteurs": [
+     "Laurent Boutonnat"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Pourvu Qu'elles Soient Douces",
+      "duree": "4:10",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Puisque...",
+      "duree": "5:10",
+      "auteurs": []
+     }
+    ],
+    "want": 99,
+    "note": 4.41,
+    "votes": 173
+   },
+   "titresDiscogs": {
+    "artiste": "Mylène Farmer",
+    "a": "Pourvu Qu'elles Soient Douces",
+    "b": "Puisque..."
+   }
+  },
+  {
+   "id": "dc9f4e70-acca-48ad-bbfd-0d1efb9168d9",
+   "artiste": "Stevie Wonder",
+   "a": "I Just Called To Say I Love You",
+   "b": "I Just Called To Say I Love You (Instrumental)",
+   "pos": null,
+   "pochette": "covers/dc9f4e70-acca-48ad-bbfd-0d1efb9168d9-mwrpdr2y.webp",
+   "discogs": 1925404,
+   "infos": {
+    "label": "Motown",
+    "catno": "ZB 61451",
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Electronic",
+     "Funk / Soul",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soul",
+     "Synth-pop",
+     "Score",
+     "Soundtrack"
+    ],
+    "auteurs": [
+     "Stevie Wonder"
+    ],
+    "producteurs": [
+     "Stevie Wonder"
+    ],
+    "arrangeurs": [
+     "Stevie Wonder"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "I Just Called To Say I Love You",
+      "duree": "4:16",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "I Just Called To Say I Love You (Instrumental)",
+      "duree": "4:16",
+      "auteurs": []
+     }
+    ],
+    "want": 77,
+    "note": 3.96,
+    "votes": 97
+   },
+   "titresDiscogs": {
+    "artiste": "Stevie Wonder",
+    "a": "I Just Called To Say I Love You",
+    "b": "I Just Called To Say I Love You (Instrumental)"
+   }
+  },
+  {
+   "id": "712eea88-02d8-41ea-bd55-3831de0a8059",
+   "artiste": "Félix Gray & Didier Barbelivien",
+   "a": "À Toutes Les Filles",
+   "b": "À Toutes Les Filles (Instrumental)",
+   "pos": null,
+   "pochette": "covers/712eea88-02d8-41ea-bd55-3831de0a8059-mwrpef9b.webp",
+   "discogs": 585533,
+   "infos": {
+    "label": "Zone Music",
+    "catno": "990197",
+    "pays": "France",
+    "annee": 1990,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Félix Gray",
+     "Didier Barbelivien"
+    ],
+    "producteurs": [
+     "Jean Albertini"
+    ],
+    "arrangeurs": [
+     "Bernard Estardy"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "À Toutes Les Filles",
+      "duree": "4:14",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "À Toutes Les Filles (Instrumental)",
+      "duree": "4:14",
+      "auteurs": []
+     }
+    ],
+    "want": 19,
+    "note": 3.55,
+    "votes": 73
+   },
+   "titresDiscogs": {
+    "artiste": "Félix Gray & Didier Barbelivien",
+    "a": "À Toutes Les Filles",
+    "b": "À Toutes Les Filles (Instrumental)"
+   }
+  },
+  {
+   "id": "a6209234-f155-4f0d-99b6-da5a88fde89e",
+   "artiste": "Julien Clerc",
+   "a": "La Fille Aux Bas Nylon",
+   "b": "Angela",
+   "pos": null,
+   "pochette": "covers/a6209234-f155-4f0d-99b6-da5a88fde89e-mwrpesnq.webp",
+   "discogs": 2374946,
+   "infos": {
+    "label": "Virgin",
+    "catno": "90138",
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Synth-pop"
+    ],
+    "auteurs": [
+     "Julien Clerc"
+    ],
+    "producteurs": [
+     "Christopher Neil"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "La Fille Aux Bas Nylon",
+      "duree": "4:18",
+      "auteurs": [
+       "Jean Roussel",
+       "Luc Plamondon"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Angela",
+      "duree": "2:52",
+      "auteurs": [
+       "David McNeil"
+      ]
+     }
+    ],
+    "want": 14,
+    "note": 3.79,
+    "votes": 47
+   },
+   "titresDiscogs": {
+    "artiste": "Julien Clerc",
+    "a": "La Fille Aux Bas Nylon",
+    "b": "Angela"
+   }
+  },
+  {
+   "id": "b2c9be5d-fd7e-4b29-9184-7e3ccc6015d8",
+   "artiste": "Earth And Fire",
+   "a": "Weekend",
+   "b": "Answer Me",
+   "pos": null,
+   "pochette": "covers/b2c9be5d-fd7e-4b29-9184-7e3ccc6015d8-mwrpf7hi.webp",
+   "discogs": 2746333,
+   "infos": {
+    "label": "Carrere",
+    "catno": "49.624",
+    "pays": "France",
+    "annee": 1980,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock"
+    ],
+    "producteurs": [
+     "Gerrit-Jan Leenders"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Weekend",
+      "duree": "3:40",
+      "auteurs": [
+       "Gerard Koerts"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Answer Me",
+      "duree": "5:23",
+      "auteurs": [
+       "Bert Ruiter",
+       "Chris Koerts"
+      ]
+     }
+    ],
+    "want": 24,
+    "note": 4.57,
+    "votes": 7
+   },
+   "titresDiscogs": {
+    "artiste": "Earth And Fire",
+    "a": "Weekend",
+    "b": "Answer Me"
+   }
+  },
+  {
+   "id": "2e64f033-7f3c-4623-854b-325603707cd1",
+   "artiste": "Patricia Kaas",
+   "a": "Mon Mec A Moi",
+   "b": "Chanson D'amour Pas Finie / Un Dernier Blues",
+   "pos": null,
+   "pochette": "covers/2e64f033-7f3c-4623-854b-325603707cd1-mwrpftb5.webp",
+   "discogs": 987582,
+   "infos": {
+    "label": "Polydor",
+    "catno": "887 850-7",
+    "pays": "France",
+    "annee": 1988,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Bernard Estardy",
+     "Didier Barbelivien",
+     "François Bernheim"
+    ],
+    "arrangeurs": [
+     "Bernard Estardy"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Mon Mec A Moi",
+      "duree": "4:16",
+      "auteurs": [
+       "Didier Barbelivien",
+       "François Bernheim"
+      ]
+     },
+     {
+      "position": "B1",
+      "titre": "Chanson D'amour Pas Finie",
+      "duree": "1:37",
+      "auteurs": [
+       "Didier Barbelivien",
+       "François Bernheim"
+      ]
+     },
+     {
+      "position": "B2",
+      "titre": "Un Dernier Blues",
+      "duree": "1:35",
+      "auteurs": [
+       "Didier Barbelivien"
+      ]
+     }
+    ],
+    "want": 20,
+    "note": 4.04,
+    "votes": 50
+   },
+   "titresDiscogs": {
+    "artiste": "Patricia Kaas",
+    "a": "Mon Mec A Moi",
+    "b": "Chanson D'amour Pas Finie / Un Dernier Blues"
+   }
+  },
+  {
+   "id": "ee91fd7b-ab6c-4110-9b49-5474aa66eb6d",
+   "artiste": "George Michael",
+   "a": "One More Try",
+   "b": "Look At Your Hands",
+   "pos": null,
+   "pochette": "covers/ee91fd7b-ab6c-4110-9b49-5474aa66eb6d-mwrpgi00.webp",
+   "discogs": 347789,
+   "infos": {
+    "label": "Epic",
+    "catno": "EPC 651532 7",
+    "pays": "Europe",
+    "annee": 1988,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Ballad"
+    ],
+    "producteurs": [
+     "George Michael"
+    ],
+    "arrangeurs": [
+     "George Michael"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "One More Try",
+      "duree": "5:49",
+      "auteurs": [
+       "George Michael"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Look At Your Hands",
+      "duree": "4:36",
+      "auteurs": [
+       "David Austin",
+       "George Michael"
+      ]
+     }
+    ],
+    "want": 78,
+    "note": 3.94,
+    "votes": 160
+   },
+   "titresDiscogs": {
+    "artiste": "George Michael",
+    "a": "One More Try",
+    "b": "Look At Your Hands"
+   }
+  },
+  {
+   "id": "61f4dc66-c4b9-4efe-a09d-6a915d7f905e",
+   "artiste": "Julien Clerc",
+   "a": "Melissa",
+   "b": "Tant D'amour",
+   "pos": null,
+   "pochette": "covers/61f4dc66-c4b9-4efe-a09d-6a915d7f905e-mwrpgu4m.webp",
+   "discogs": 699176,
+   "infos": {
+    "label": "Virgin",
+    "catno": "90169",
+    "pays": "France",
+    "annee": 1985,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "producteurs": [
+     "Christopher Neil"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Melissa",
+      "duree": "2:55",
+      "auteurs": [
+       "David McNeil",
+       "Julien Clerc"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Tant D'amour",
+      "duree": "3:16",
+      "auteurs": [
+       "Jean-Loup Dabadie",
+       "Julien Clerc"
+      ]
+     }
+    ],
+    "want": 24,
+    "note": 3.71,
+    "votes": 66
+   },
+   "titresDiscogs": {
+    "artiste": "Julien Clerc",
+    "a": "Melissa",
+    "b": "Tant D'amour"
+   }
+  },
+  {
+   "id": "d6fa4061-e03c-47ec-90e6-c99ab400c07e",
+   "artiste": "Ringo",
+   "a": "Good Bye, Elvis",
+   "b": "Good Bye, Elvis (Instrumental)",
+   "pos": null,
+   "pochette": "covers/d6fa4061-e03c-47ec-90e6-c99ab400c07e-mwrphbv1.webp",
+   "discogs": 660279,
+   "infos": {
+    "label": "Formule 1",
+    "catno": "49 307",
+    "pays": "France",
+    "annee": 1977,
+    "genres": [
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Claude Carrère",
+     "Jean Kluger",
+     "Vline Buggy",
+     "Will Tura"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Good Bye, Elvis",
+      "duree": "2:51",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Good Bye, Elvis (Instrumental)",
+      "duree": "2:51",
+      "auteurs": []
+     }
+    ],
+    "want": 2,
+    "note": 2.92,
+    "votes": 24
+   },
+   "titresDiscogs": {
+    "artiste": "Ringo",
+    "a": "Good Bye, Elvis",
+    "b": "Good Bye, Elvis (Instrumental)"
+   }
+  },
+  {
+   "id": "5f7c658f-44fa-4e5b-a1f7-7151b1b7d699",
+   "artiste": "Jeanne Mas",
+   "a": "Johnny, Johnny",
+   "b": "Lisa",
+   "pos": null,
+   "pochette": "covers/5f7c658f-44fa-4e5b-a1f7-7151b1b7d699-mwrphxxx.webp",
+   "discogs": 535100,
+   "infos": {
+    "label": "Columbia",
+    "catno": "1729167",
+    "pays": "France",
+    "annee": 1985,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Chanson",
+     "Synth-pop"
+    ],
+    "auteurs": [
+     "Jeanne Mas",
+     "Romano Musumarra"
+    ],
+    "producteurs": [
+     "Romano Musumarra"
+    ],
+    "arrangeurs": [
+     "Romano Musumarra"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Johnny, Johnny",
+      "duree": "4:05",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Lisa",
+      "duree": "4:13",
+      "auteurs": []
+     }
+    ],
+    "want": 45,
+    "note": 3.7,
+    "votes": 73
+   },
+   "titresDiscogs": {
+    "artiste": "Jeanne Mas",
+    "a": "Johnny, Johnny",
+    "b": "Lisa"
+   }
+  },
+  {
+   "id": "20c9eca2-8b0f-417f-9da7-1e9e86faeed1",
+   "artiste": "Michel Delpech",
+   "a": "Le Blé En Herbe",
+   "b": "Pour Un Flirt",
+   "pos": null,
+   "pochette": "covers/20c9eca2-8b0f-417f-9da7-1e9e86faeed1-mwrpiahs.webp",
+   "discogs": 436490,
+   "infos": {
+    "label": "Barclay",
+    "catno": "61.444 L",
+    "pays": "France",
+    "annee": 1971,
+    "genres": [
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Chanson"
+    ],
+    "auteurs": [
+     "Michel Delpech",
+     "Roland Vincent"
+    ],
+    "producteurs": [
+     "Naps Lamarche"
+    ],
+    "arrangeurs": [
+     "Roland Vincent"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Le Blé En Herbe",
+      "duree": "3:50",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Pour Un Flirt",
+      "duree": "3:24",
+      "auteurs": []
+     }
+    ],
+    "want": 31,
+    "note": 3.66,
+    "votes": 82
+   },
+   "titresDiscogs": {
+    "artiste": "Michel Delpech",
+    "a": "Le Blé En Herbe",
+    "b": "Pour Un Flirt"
+   }
+  },
+  {
+   "id": "bbac8de0-ed59-4ed5-b89d-7c349e3e48c4",
+   "artiste": "Wham!",
+   "a": "Wake Me Up Before You Go-Go",
+   "b": "Wake Me Up Before You Go-Go (Instrumental)",
+   "pos": null,
+   "pochette": "covers/bbac8de0-ed59-4ed5-b89d-7c349e3e48c4-mwrpitmo.webp",
+   "discogs": 1460376,
+   "infos": {
+    "label": "Epic",
+    "catno": "EPC A4440",
+    "pays": "France",
+    "annee": 1984,
+    "genres": [
+     "Electronic",
+     "Pop"
+    ],
+    "styles": [
+     "Pop Rock",
+     "Synth-pop"
+    ],
+    "auteurs": [
+     "George Michael"
+    ],
+    "producteurs": [
+     "George Michael"
+    ],
+    "arrangeurs": [
+     "George Michael"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Wake Me Up Before You Go-Go",
+      "duree": "3:51",
+      "auteurs": []
+     },
+     {
+      "position": "B",
+      "titre": "Wake Me Up Before You Go-Go (Instrumental)",
+      "duree": "4:03",
+      "auteurs": []
+     }
+    ],
+    "want": 95,
+    "note": 4.32,
+    "votes": 19
+   },
+   "titresDiscogs": {
+    "artiste": "Wham!",
+    "a": "Wake Me Up Before You Go-Go",
+    "b": "Wake Me Up Before You Go-Go (Instrumental)"
+   }
+  },
+  {
+   "id": "a6477309-c757-4011-ac4e-ed74d98c2211",
+   "artiste": "Cher",
+   "a": "The Shoop Shoop Song (It's In His Kiss)",
+   "b": "Baby I'm Yours",
+   "pos": null,
+   "pochette": "covers/a6477309-c757-4011-ac4e-ed74d98c2211-mwrpjhow.webp",
+   "discogs": 2064788,
+   "infos": {
+    "label": "Epic",
+    "catno": "656673 7",
+    "pays": "France",
+    "annee": 1991,
+    "genres": [
+     "Funk / Soul",
+     "Pop",
+     "Stage & Screen"
+    ],
+    "styles": [
+     "Soundtrack",
+     "Rhythm & Blues",
+     "Europop"
+    ],
+    "producteurs": [
+     "Peter Asher"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "The Shoop Shoop Song (It's In His Kiss)",
+      "duree": "2:50",
+      "auteurs": [
+       "Rudy Clark"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Baby I'm Yours",
+      "duree": "3:19",
+      "auteurs": [
+       "Van McCoy"
+      ]
+     }
+    ],
+    "want": 50,
+    "note": 4.19,
+    "votes": 36
+   },
+   "titresDiscogs": {
+    "artiste": "Cher",
+    "a": "The Shoop Shoop Song (It's In His Kiss)",
+    "b": "Baby I'm Yours"
+   }
+  },
+  {
+   "id": "78b5bf9f-c050-470c-bee1-dc5416325b25",
+   "artiste": "Unknown Artist",
+   "a": "Le Baron Tzigane",
+   "b": "Les Noces De Figaro",
+   "pos": null,
+   "pochette": "covers/78b5bf9f-c050-470c-bee1-dc5416325b25-mwrpke6s.webp",
+   "discogs": 7765845,
+   "infos": {
+    "label": "Kraftone",
+    "catno": "K 67",
+    "pays": "Belgium",
+    "genres": [
+     "Classical"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Le Baron Tzigane",
+      "duree": "",
+      "auteurs": [
+       "Johann Strauss Jr."
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Les Noces De Figaro",
+      "duree": "",
+      "auteurs": [
+       "Wolfgang Amadeus Mozart"
+      ]
+     }
+    ],
+    "want": 0,
+    "note": 5,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Unknown Artist",
+    "a": "Le Baron Tzigane",
+    "b": "Les Noces De Figaro"
+   }
+  },
+  {
+   "id": "872092c3-4aab-4e2f-a4b7-e9a85d5ccd6d",
+   "artiste": "Gino Pizza",
+   "a": "Santa Lucia",
+   "b": "Marina",
+   "pos": null,
+   "pochette": "covers/872092c3-4aab-4e2f-a4b7-e9a85d5ccd6d-mwrpl09o.webp",
+   "discogs": 7046586,
+   "infos": {
+    "label": "Kraftone",
+    "catno": "K 31",
+    "pays": "Belgium",
+    "genres": [
+     "Folk, World, & Country"
+    ],
+    "styles": [
+     "Folk"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "Santa Lucia",
+      "duree": "",
+      "auteurs": [
+       "Traditional"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Marina",
+      "duree": "",
+      "auteurs": [
+       "Rocco Granata"
+      ]
+     }
+    ],
+    "want": 1,
+    "note": 5,
+    "votes": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Gino Pizza",
+    "a": "Santa Lucia",
+    "b": "Marina"
+   }
+  },
+  {
+   "id": "33af9314-26fb-460b-bba4-4f81528b6728",
+   "artiste": "Gianni Franco",
+   "a": "La Mer De Napoli",
+   "b": "Et La Mer Chantait",
+   "pos": null,
+   "pochette": "covers/33af9314-26fb-460b-bba4-4f81528b6728-mwrpw4b8.webp",
+   "discogs": 11683669,
+   "infos": {
+    "label": "Epn",
+    "catno": "EPN 62075",
+    "pays": "Belgium",
+    "genres": [
+     "Pop"
+    ],
+    "pistes": [
+     {
+      "position": "A",
+      "titre": "La Mer De Napoli",
+      "duree": "2:47",
+      "auteurs": [
+       "Gianni Doro"
+      ]
+     },
+     {
+      "position": "B",
+      "titre": "Et La Mer Chantait",
+      "duree": "2:48",
+      "auteurs": [
+       "Gianni Doro"
+      ]
+     }
+    ],
+    "want": 1
+   },
+   "titresDiscogs": {
+    "artiste": "Gianni Franco",
+    "a": "La Mer De Napoli",
+    "b": "Et La Mer Chantait"
    }
   }
  ],

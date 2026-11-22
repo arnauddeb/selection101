@@ -466,6 +466,7 @@ textarea { height: auto; padding: 10px 12px; resize: vertical; line-height: 1.45
   padding: 7px 8px; border-radius: 10px; text-align: left; background: var(--carte);
 }
 .resultats li.info { display: block; color: var(--muted); font-size: 14px; padding: 12px; }
+.resultats li > button[data-discogs-page] { display: block; text-align: center; }
 .resultats li.titre-resultats { padding: 10px 4px 4px; font-size: 13px; font-weight: 600; color: var(--muted); }
 .resultats li > button:active { background: var(--champ); }
 .resultats img, .resultats .vignette { width: 48px; height: 48px; border-radius: 6px; object-fit: cover; background: var(--champ); display: block; }

@@ -1125,7 +1125,7 @@ $("discogs-q").addEventListener("input", () => {
 $("discogs-q").addEventListener("keydown", (e) => {
   if (e.key === "Enter") { e.preventDefault(); clearTimeout(discogsTimer); chercherDiscogs(); }
 });
-async function chercherDiscogs() {
+async function chercherDiscogs(page = 1) {
   arreterRechercheDiscogs();
   if (!dialogueFiche.open) return;
   const q = $("discogs-q").value.trim();
@@ -1138,22 +1138,18 @@ async function chercherDiscogs() {
   ul.innerHTML = `<li class="info">Recherche…</li>`;
   const moi = (discogsCtl = { releases: new Map() });
   try {
-    const r = await discogs("database/search", { q, type: "release", format: "Vinyl", per_page: "50" });
+    const r = await discogs("database/search", { q, type: "release", format: "Vinyl", per_page: "50", page });
     if (!dialogueFiche.open || moi !== discogsCtl) return;
     // 45 tours d'abord (éditions françaises en tête), puis les autres formats.
     const est45 = (x) => /7"|45 RPM/.test((x.format || []).join(" "));
-    const parPays = (liste) => liste.map((x, i) => ({ x, i })).sort((a, b) => (b.x.country === "France") - (a.x.country === "France") || a.i - b.i).map((o) => o.x);
-    // Discogs liste chaque pressage : on n'en garde qu'un par disque et par pays.
-    const vus = new Set();
-    const res = (r.results || []).filter((x) => {
-      const cle = `${x.master_id || norm(x.title)}|${x.country || ""}|${est45(x)}`;
-      return !vus.has(cle) && vus.add(cle);
-    });
-    const quarante5 = parPays(res.filter(est45)).slice(0, 15);
-    const autres = parPays(res.filter((x) => !est45(x))).slice(0, 8);
+    const res = Array.from(new Map((r.results || []).map((x) => [x.id, x])).values());
+    res.sort((a, b) => (b.country === "France") - (a.country === "France"));
+    const quarante5 = res.filter(est45);
+    const autres = res.filter((x) => !est45(x));
     if (!res.length) { ul.innerHTML = `<li class="info">Rien trouvé. Essaie avec moins de mots.</li>`; return; }
     const ligne = (x) => {
-      const details = [x.year, x.country, (x.label || [])[0]].filter(Boolean).join(" · ");
+      const catno = (x.catno || "").trim();
+      const details = [x.year, x.country, x.label?.[0], catno.toLowerCase() === "none" ? "" : catno].filter(Boolean).join(" · ");
       const vignette = x.thumb ? `<img src="${esc(x.thumb)}" alt="" loading="lazy">` : `<span class="vignette"></span>`;
       return `<li><button type="button" data-release="${x.id}">
         ${vignette}
@@ -1171,6 +1167,8 @@ async function chercherDiscogs() {
       `<li class="titre-resultats">45 tours</li>`,
       quarante5.length ? quarante5.map(ligne).join("") : `<li class="info">Aucun 45 tours trouvé.</li>`,
       autres.length ? `<li class="titre-resultats">Autres formats</li>${autres.map(ligne).join("")}` : "",
+      page > 1 ? `<li><button type="button" data-discogs-page="${page - 1}">Résultats précédents</button></li>` : "",
+      page < r.pagination?.pages ? `<li><button type="button" data-discogs-page="${page + 1}">Résultats suivants</button></li>` : "",
     ].join("");
     ul.scrollTop = 0;
     chargerFacesResultats(ul, moi);
@@ -1180,6 +1178,8 @@ async function chercherDiscogs() {
   }
 }
 $("discogs-resultats").addEventListener("click", async (e) => {
+  const pagination = e.target.closest("button[data-discogs-page]");
+  if (pagination && discogsCtl) return chercherDiscogs(Number(pagination.dataset.discogsPage));
   const b = e.target.closest("button[data-release]");
   if (!b) return;
   const ul = $("discogs-resultats");

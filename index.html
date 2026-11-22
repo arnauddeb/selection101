@@ -55,6 +55,20 @@
       <button role="tab" id="tab-jukebox" class="actif" aria-selected="true">Jukebox <span id="nb-jukebox"></span></button>
       <button role="tab" id="tab-reserve" aria-selected="false">Réserve <span id="nb-reserve"></span></button>
     </div>
+    <div class="modes" id="modes-affichage" role="radiogroup" aria-label="Affichage">
+      <button type="button" role="radio" data-mode="grille" aria-label="Grille" title="Grille">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg>
+      </button>
+      <button type="button" role="radio" data-mode="coverflow" aria-label="Coverflow" title="Coverflow">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="5" width="8" height="14" rx="1.5"/><path d="M5 7.5 2.5 8.5v7l2.5 1M19 7.5l2.5 1v7l-2.5 1"/></svg>
+      </button>
+      <button type="button" role="radio" data-mode="liste" aria-label="Liste" title="Liste">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.01M4.5 12h.01M4.5 18h.01"/></svg>
+      </button>
+      <button type="button" role="radio" data-mode="juke" aria-label="Étiquettes du jukebox" title="Étiquettes du jukebox">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="6" rx="1"/><rect x="3" y="13" width="18" height="6" rx="1"/><path d="M3 8h18M3 16h18"/></svg>
+      </button>
+    </div>
     <div class="filtres">
       <button type="button" class="filtre bouton-inventaire seul-edition" id="btn-inventaire" aria-pressed="false" aria-controls="barre-inventaire">
         <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="m8 12 3 3 5-6"/></svg>
@@ -105,6 +119,13 @@
           <option value="sans">Sans</option>
         </select>
       </label>
+      <label class="filtre"><span>Prix</span>
+        <select data-filtre="prix">
+          <option value="">Tous</option>
+          <option value="avec">Avec prix</option>
+          <option value="sans">Sans prix</option>
+        </select>
+      </label>
       <label class="filtre seul-edition"><span>Discogs</span>
         <select data-filtre="discogs">
           <option value="">Tous</option>
@@ -128,6 +149,10 @@
     </div>
     <p class="etat" id="etat">Chargement…</p>
     <div class="grille" id="grille"></div>
+    <section class="carrousel" id="carrousel" aria-label="Pochettes" hidden>
+      <div class="cf-piste" id="cf-piste" tabindex="0"></div>
+      <p class="cf-legende" id="cf-legende" aria-live="polite"></p>
+    </section>
   </main>
 
   <button class="fab seul-edition" id="btn-ajouter" aria-label="Ajouter un disque">
@@ -319,6 +344,7 @@
         </form>
       </header>
       <p class="lead">Compare les valeurs et restaure les fiches de la collection locale.</p>
+      <p id="historique-bilan" class="historique-bilan" hidden></p>
       <p id="historique-statut" class="lead" role="status"></p>
       <p id="historique-attente" class="lead" hidden>La restauration sera disponible à la fin de la synchronisation.</p>
       <div id="historique-choix" class="historique-choix" hidden>

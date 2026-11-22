@@ -101,8 +101,17 @@ async function pochetteCarree(blob) {
 const lsGet = (k) => { try { return localStorage.getItem(k) || ""; } catch { return ""; } };
 const lsSet = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
 // Filtres mémorisés sur l'appareil.
-const FILTRES = ["emplacement", "tri", "inventaire", "doublon", "pochette", "discogs"];
+const FILTRES = ["emplacement", "tri", "inventaire", "doublon", "pochette", "prix", "discogs"];
 const etat = { vinyles: [], vue: "jukebox", q: "", charge: false, edition: null, f: Object.fromEntries(FILTRES.map((k) => [k, lsGet(`jb.${k}`)])) };
+
+// Mode d'affichage (sur grand écran) : grille, coverflow, liste, juke. Mémorisé sur l'appareil.
+const MODES = ["grille", "coverflow", "liste", "juke"];
+etat.mode = MODES.includes(lsGet("jb.mode")) ? lsGet("jb.mode") : "grille";
+etat.affiches = [];
+const mqBureau = matchMedia("(min-width: 820px)");
+// Téléphone tourné sur le côté : carrousel plein écran.
+const mqPaysage = matchMedia("(orientation: landscape) and (max-height: 540px) and (hover: none) and (pointer: coarse)");
+const modeAffichage = () => (mqPaysage.matches ? "coverflow" : mqBureau.matches ? etat.mode : "grille");
 
 let modeInventaire = false;
 let inventaireCharge = false;
@@ -176,6 +185,7 @@ function filtrer(liste) {
   const l = liste.filter((v) => {
     if (dbl && !dbl.has(v.id)) return false;
     if (f.pochette && !!v.avecPochette !== (f.pochette === "avec")) return false;
+    if (f.prix && !!v.prix?.moyen !== (f.prix === "avec")) return false;
     if (etat.edition && f.discogs && !!v.discogs !== (f.discogs === "oui")) return false;
     if (filtreActif("inventaire") && estPointe(v) !== (f.inventaire === "pointes")) return false;
     return true;
@@ -274,12 +284,15 @@ function rechercheCollection(q) {
 
 // ——— Rendu ———
 // Ventes Discogs sur la pochette : bas · moyen (en gras) · haut.
+const titrePrix = (p) => `${p.source === "conseil" ? "Prix conseillés Discogs (VG · VG+ · NM)" : "Ventes Discogs"} — bas ${euros(p.bas || p.moyen)} · moyen ${euros(p.moyen)} · haut ${euros(p.haut || p.moyen)}`;
+function prixTexte(p) {
+  if (!p?.moyen) return "";
+  return p.bas === p.moyen && p.haut === p.moyen ? `<b>${euros(p.moyen)}</b>`
+    : `${court(p.bas || p.moyen)} · <b>${court(p.moyen)}</b> · ${court(p.haut || p.moyen)} €`;
+}
 function prixCarte(p) {
   if (!p?.moyen) return "";
-  const titre = `${p.source === "conseil" ? "Prix conseillés Discogs (VG · VG+ · NM)" : "Ventes Discogs"} — bas ${euros(p.bas || p.moyen)} · moyen ${euros(p.moyen)} · haut ${euros(p.haut || p.moyen)}`;
-  const texte = p.bas === p.moyen && p.haut === p.moyen ? `<b>${euros(p.moyen)}</b>`
-    : `${court(p.bas)} · <b>${court(p.moyen)}</b> · ${court(p.haut)} €`;
-  return `<span class="prix-disque" title="${titre}">${texte}</span>`;
+  return `<span class="prix-disque" title="${titrePrix(p)}">${prixTexte(p)}</span>`;
 }
 function pastilleDiscogs(synchronise) {
   const libelle = synchronise ? "Synchronisé avec Discogs" : "Non synchronisé avec Discogs";
@@ -293,24 +306,22 @@ function pastilleDiscogs(synchronise) {
 const symboleVinyle = `<span class="vinyle-seul" aria-hidden="true">
   <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="13"/><path d="M7 16a9 9 0 0 1 9-9m0 18a9 9 0 0 0 9-9"/><circle cx="16" cy="16" r="4"/><path d="M16 16h.01"/></svg>
 </span>`;
-function statutsDisque(v, present) {
-  const pointage = inventaireCharge ? `<span class="statut-disque pointage${present ? " actif" : ""}">${present ? "✓ Pointé" : "À vérifier"}</span>` : "";
-  const pochette = `<span class="statut-disque etat-pochette${v.avecPochette ? "" : " absente"}">${v.avecPochette ? "Avec pochette" : "Sans pochette"}</span>`;
-  return `<span class="statuts-disque">${pointage}${pochette}</span>`;
-}
+// Disque pointé lors de l'inventaire : badge bleu dans un coin de la pochette.
+const badgePointe = (v) => inventaireCharge && estPointe(v)
+  ? '<span class="badge-pointe" role="img" aria-label="Pointé" title="Pointé"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12.5 4 4 8-9"/></svg></span>'
+  : "";
+const attrAction = (v) => (modeInventaire ? `aria-pressed="${estPointe(v)}"` : 'aria-haspopup="dialog"');
 function carte(v) {
   const num = v.pos ? `<span class="num">${v.pos}</span>` : '<span class="num reserve">Réserve</span>';
-  const present = estPointe(v);
   const img = v.pochette
     ? `<img src="${esc(v.pochette)}" alt="" loading="lazy" decoding="async" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'sans'}))">`
     : `<div class="sans"></div>`;
   const selA = v.pos ? JUKEBOX.selectionA(v.pos) : "A";
   const selB = v.pos ? JUKEBOX.selectionB(v.pos) : "B";
-  return `<button class="disque" data-id="${esc(v.id)}" ${modeInventaire ? `aria-pressed="${present}"` : 'aria-haspopup="dialog"'}>
+  return `<button class="disque" data-id="${esc(v.id)}" ${attrAction(v)}>
     <div class="pochette${v.avecPochette ? "" : " sans-pochette-physique"}">
-      ${img}${num}${pastilleDiscogs(v.discogs)}${prixCarte(v.prix)}${v.avecPochette ? "" : symboleVinyle}
+      ${img}${num}${pastilleDiscogs(v.discogs)}${badgePointe(v)}${prixCarte(v.prix)}${v.avecPochette ? "" : symboleVinyle}
     </div>
-    ${statutsDisque(v, present)}
     <div class="infos">
       <span class="artiste">${esc(v.artiste)}</span>
       <span class="face"><b>${selA}</b><span>${esc(v.a)}</span></span>
@@ -324,7 +335,80 @@ const carteLibre = (pos) => `<button class="disque libre" data-libre="${pos}">
     <div class="infos"><span class="artiste">Libre</span><span>${JUKEBOX.selectionA(pos)} · ${JUKEBOX.selectionB(pos)}</span></div>
   </button>`;
 
-function resultatsNumeriques(liste, numero) {
+// Mode Liste : un tableau compact, triable en cliquant sur les en-têtes.
+function enteteListe() {
+  const tri = filtreActif("tri") ? etat.f.tri : "";
+  const col = (libelle, croissant, decroissant, classe = "") => {
+    const sens = tri === croissant ? "ascending" : decroissant && tri === decroissant ? "descending" : "";
+    const suivant = sens === "ascending" && decroissant ? decroissant : croissant;
+    const fleche = sens ? `<i aria-hidden="true">${sens === "ascending" ? "↑" : "↓"}</i>` : "";
+    return `<button type="button" class="col-tri ${classe}${sens ? " actif" : ""}" data-tri="${suivant}" title="Trier par ${libelle.toLowerCase()}">${libelle}${fleche}</button>`;
+  };
+  return `<div class="ligne-entete">
+    ${col("N°", "", null, "col-num")}<span></span>
+    ${col("Artiste", "artiste-az", "artiste-za")}
+    ${col("Face A", "titre-az", "titre-za")}
+    <span>Face B</span>
+    ${col("Année", "annee-croissante", "annee-decroissante")}
+    <span class="col-label">Label</span>
+    ${col("Prix", "prix-decroissant", "prix-croissant", "col-prix")}
+  </div>`;
+}
+function vignette(v) {
+  const img = v.pochette ? `<img src="${esc(v.pochette)}" alt="" loading="lazy" decoding="async" onerror="this.remove()">` : "";
+  return `<span class="vignette">${img}${v.avecPochette ? "" : symboleVinyle}${badgePointe(v)}</span>`;
+}
+function ligne(v) {
+  const selA = v.pos ? JUKEBOX.selectionA(v.pos) : "A";
+  const selB = v.pos ? JUKEBOX.selectionB(v.pos) : "B";
+  return `<button class="disque ligne" data-id="${esc(v.id)}" ${attrAction(v)}>
+    <span class="col-num">${v.pos ? esc(v.pos) : "<small>Rés.</small>"}</span>
+    ${vignette(v)}
+    <span class="col-artiste">${esc(v.artiste)}</span>
+    <span class="col-face"><b>${selA}</b><span>${esc(v.a)}</span></span>
+    <span class="col-face">${v.b ? `<b>${selB}</b><span>${esc(v.b)}</span>` : ""}</span>
+    <span class="col-annee">${esc(v.infos?.annee || "")}</span>
+    <span class="col-label">${esc(v.infos?.label || "")}</span>
+    <span class="col-prix"${v.prix?.moyen ? ` title="${titrePrix(v.prix)}"` : ""}>${prixTexte(v.prix)}</span>
+  </button>`;
+}
+const ligneLibre = (pos) => `<button class="disque ligne libre" data-libre="${pos}">
+    <span class="col-num">${pos}</span><span class="vignette"></span>
+    <span class="col-artiste">Libre</span>
+    <span class="col-face"><b>${JUKEBOX.selectionA(pos)}</b></span>
+    <span class="col-face"><b>${JUKEBOX.selectionB(pos)}</b></span>
+    <span></span><span class="col-label"></span><span></span>
+  </button>`;
+
+// Mode Juke : les étiquettes du panneau de sélection.
+function etiquette(v) {
+  const selA = v.pos ? JUKEBOX.selectionA(v.pos) : "A";
+  const selB = v.pos ? JUKEBOX.selectionB(v.pos) : "B";
+  return `<button class="disque etiquette" data-id="${esc(v.id)}" ${attrAction(v)}>
+    <span class="et-face"><b>${selA}</b><span>${esc(v.a)}</span></span>
+    <span class="et-artiste">${esc(v.artiste)}</span>
+    <span class="et-face"><b>${selB}</b><span>${esc(v.b || "")}</span></span>
+    ${badgePointe(v)}
+  </button>`;
+}
+const etiquetteLibre = (pos) => `<button class="disque etiquette libre" data-libre="${pos}">
+    <span class="et-face"><b>${JUKEBOX.selectionA(pos)}</b></span>
+    <span class="et-artiste">Libre · ${pos}</span>
+    <span class="et-face"><b>${JUKEBOX.selectionB(pos)}</b></span>
+  </button>`;
+
+const RENDUS = {
+  grille: { classe: "grille", disque: carte, libre: carteLibre },
+  liste: { classe: "liste", disque: ligne, libre: ligneLibre, entete: enteteListe },
+  juke: { classe: "juke", disque: etiquette, libre: etiquetteLibre },
+};
+const renduActuel = () => RENDUS[modeAffichage()] || RENDUS.grille;
+const rendreDisque = (v) => renduActuel().disque(v);
+// Entrées : un disque, ou le numéro d'une position libre.
+const blocDisques = (entrees, rendu) => (rendu.entete ? rendu.entete() : "")
+  + entrees.map((e) => (typeof e === "string" ? rendu.libre(e) : rendu.disque(e))).join("");
+
+function resultatsNumeriques(liste, numero, rendu) {
   const groupes = { numero: [], date: [], autre: [] };
   for (const v of liste) {
     const groupe = classerNumero(v, numero);
@@ -338,9 +422,9 @@ function resultatsNumeriques(liste, numero) {
   const html = Object.entries(groupes).map(([groupe, disques]) => disques.length ? `
     <section class="groupe-resultats">
       <h2>${titres[groupe]}</h2>
-      <div class="grille">${disques.map(carte).join("")}</div>
+      <div class="${rendu.classe}">${blocDisques(disques, rendu)}</div>
     </section>` : "").join("");
-  return { html, total: groupes.numero.length + groupes.date.length + groupes.autre.length };
+  return { html, disques: [...groupes.numero, ...groupes.date, ...groupes.autre] };
 }
 
 function rendre() {
@@ -378,7 +462,9 @@ function rendre() {
     $(id).setAttribute("aria-selected", String(vue === onglet));
   }
 
-  let html, vide = "";
+  const mode = modeAffichage();
+  const rendu = renduActuel();
+  let html, vide = "", affiches, classe = rendu.classe;
   const filtresActifs = FILTRES.some(filtreActif);
   for (const s of document.querySelectorAll("[data-filtre]")) {
     const cle = s.dataset.filtre;
@@ -389,7 +475,9 @@ function rendre() {
   if (!etat.q && etat.vue === "jukebox" && !filtresActifs && !modeInventaire) {
     // Vue normale du jukebox : les 80 positions, libres comprises.
     const occ = parPosition();
-    html = toutesPositions.map((p) => (occ.has(p) ? carte(occ.get(p)) : carteLibre(p))).join("");
+    const entrees = toutesPositions.map((p) => occ.get(p) || p);
+    affiches = entrees.filter((e) => typeof e !== "string");
+    html = blocDisques(entrees, rendu);
     $("compte-filtre").textContent = "";
   } else {
     // En mode Auto, recherche et doublons couvrent toute la collection.
@@ -398,20 +486,188 @@ function rendre() {
     const liste = filtrer(source);
     let nombre;
     if (/^\d{1,4}$/.test(etat.q)) {
-      const groupes = resultatsNumeriques(liste, etat.q);
+      const groupes = resultatsNumeriques(liste, etat.q, rendu);
       html = groupes.html;
-      nombre = groupes.total;
+      affiches = groupes.disques;
+      nombre = affiches.length;
+      classe += " avec-groupes";
     } else {
       const res = etat.q ? liste.filter(rechercheCollection(etat.q)) : liste;
-      html = res.map(carte).join("");
+      html = blocDisques(res, rendu);
+      affiches = res;
       nombre = res.length;
     }
     $("compte-filtre").textContent = filtresActifs || etat.q ? `${nombre} disque${nombre > 1 ? "s" : ""}` : "";
     if (!nombre) vide = etat.q ? "Aucun disque ne correspond." : filtresActifs ? "Aucun disque avec ce filtre." : "Aucun disque en réserve.";
   }
   $("etat").textContent = vide;
-  $("grille").innerHTML = html;
+  etat.affiches = affiches;
+  const grille = $("grille");
+  grille.className = classe;
+  grille.hidden = mode === "coverflow";
+  grille.innerHTML = mode === "coverflow" || vide ? "" : html;
+  majModes();
+  rendreCarrousel(mode === "coverflow");
 }
+
+// ——— Modes d'affichage ———
+function majModes() {
+  for (const b of document.querySelectorAll("[data-mode]")) {
+    const actif = b.dataset.mode === etat.mode;
+    b.classList.toggle("actif", actif);
+    b.setAttribute("aria-checked", String(actif));
+  }
+}
+$("modes-affichage").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-mode]");
+  if (!b || b.dataset.mode === etat.mode) return;
+  etat.mode = b.dataset.mode;
+  lsSet("jb.mode", etat.mode);
+  rendre();
+  window.scrollTo({ top: 0 });
+  if (etat.mode === "coverflow") cf.piste.focus({ preventScroll: true });
+});
+mqBureau.addEventListener("change", () => rendre());
+mqPaysage.addEventListener("change", () => rendre());
+
+// ——— Carrousel (téléphone sur le côté, et mode Coverflow) ———
+// Un clic sur la pochette du centre la retourne ; au dos, les infos du disque.
+const cf = { piste: $("cf-piste"), html: "", index: -1, de: 0, a: -1, raf: 0, roue: 0, roueTimer: 0, cible: -1, cibleT: 0 };
+function itemCarrousel(v) {
+  const selA = v.pos ? JUKEBOX.selectionA(v.pos) : "A";
+  const selB = v.pos ? JUKEBOX.selectionB(v.pos) : "B";
+  const i = v.infos || {};
+  const meta = [i.annee, i.label, i.pays].filter(Boolean).join(" · ");
+  const styles = (i.styles?.length ? i.styles : i.genres || []).slice(0, 3).join(", ");
+  const img = v.pochette
+    ? `<img src="${esc(v.pochette)}" alt="" loading="lazy" decoding="async" draggable="false" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'sans'}))">`
+    : '<div class="sans"></div>';
+  const prix = v.prix?.moyen
+    ? `<p class="cf-prix"><span>${v.prix.source === "conseil" ? "Prix conseillés Discogs" : "Ventes Discogs"} · bas · moyen · haut</span><strong>${prixTexte(v.prix)}</strong></p>` : "";
+  return `<div class="cf-item" data-id="${esc(v.id)}"><div class="cf-carte">
+    <div class="cf-face cf-recto pochette">
+      ${img}<span class="num${v.pos ? "" : " reserve"}">${v.pos || "Réserve"}</span>${badgePointe(v)}${v.avecPochette ? "" : symboleVinyle}
+    </div>
+    <div class="cf-face cf-verso">
+      <span class="cf-pos">${v.pos ? `N° ${v.pos}` : "Réserve"}</span>
+      <h3>${esc(v.artiste)}</h3>
+      <p class="face"><b>${selA}</b><span>${esc(v.a)}</span></p>
+      ${v.b ? `<p class="face"><b>${selB}</b><span>${esc(v.b)}</span></p>` : ""}
+      ${meta ? `<p class="cf-meta">${esc(meta)}</p>` : ""}
+      ${styles ? `<p class="cf-meta">${esc(styles)}</p>` : ""}
+      <div class="cf-bas">${prix}<button type="button" class="cf-fiche">Voir la fiche</button></div>
+    </div>
+  </div></div>`;
+}
+function pasCarrousel() {
+  const it = cf.piste.children;
+  return it.length > 1 ? it[1].offsetLeft - it[0].offsetLeft : it[0]?.offsetWidth || 1;
+}
+function rendreCarrousel(actif) {
+  document.body.classList.toggle("cf-actif", actif);
+  document.body.classList.toggle("cf-plein-ecran", actif && mqPaysage.matches);
+  $("carrousel").hidden = !actif;
+  if (!actif) {
+    if (cf.html) { cf.html = ""; cf.piste.innerHTML = ""; }
+    cf.index = -1;
+    return;
+  }
+  const html = etat.affiches.map(itemCarrousel).join("");
+  if (html !== cf.html) {
+    const idCentre = cf.piste.children[cf.index]?.dataset.id;
+    cf.html = html;
+    cf.piste.innerHTML = html;
+    cf.de = 0; cf.a = -1; cf.index = -1;
+    const i = Math.max(0, etat.affiches.findIndex((v) => v.id === idCentre));
+    cf.piste.scrollLeft = i * pasCarrousel();
+  }
+  majCoverflow();
+}
+function majCoverflow() {
+  cf.raf = 0;
+  const items = cf.piste.children;
+  if (!items.length) {
+    $("cf-legende").innerHTML = "<span>Aucun disque à afficher.</span>";
+    return;
+  }
+  const pas = pasCarrousel();
+  const largeur = items[0].offsetWidth;
+  const pos = cf.piste.scrollLeft / pas;
+  const de = Math.max(0, Math.floor(pos) - 6);
+  const a = Math.min(items.length - 1, Math.ceil(pos) + 6);
+  for (let i = cf.de; i <= cf.a; i++) if ((i < de || i > a) && items[i]) items[i].style.cssText = "";
+  for (let i = de; i <= a; i++) {
+    const o = i - pos, ecart = Math.abs(o), cote = Math.sign(o), pres = Math.min(ecart, 1);
+    items[i].style.cssText = `transform: translateX(${(cote * pres * largeur * 0.28).toFixed(1)}px) translateZ(${(-Math.min(ecart, 4) * 60 - pres * 120).toFixed(1)}px) rotateY(${(-cote * pres * 58).toFixed(2)}deg);`
+      + `z-index: ${1000 - Math.round(ecart * 10)}; opacity: ${Math.max(0, 1 - Math.max(0, ecart - 3) * 0.5).toFixed(2)}`;
+  }
+  cf.de = de; cf.a = a;
+  const centre = Math.min(items.length - 1, Math.max(0, Math.round(pos)));
+  if (centre !== cf.index) {
+    items[cf.index]?.firstElementChild.classList.remove("retournee");
+    for (const item of items) item.classList.remove("centre");
+    items[centre].classList.add("centre");
+    cf.index = centre;
+    const v = etat.affiches[centre];
+    $("cf-legende").innerHTML = v
+      ? `<b>${esc(v.artiste)}</b><span>${esc(v.a)}${v.b ? ` · ${esc(v.b)}` : ""}</span><small>${centre + 1} / ${items.length}</small>` : "";
+  }
+}
+function allerA(i) {
+  const n = cf.piste.children.length;
+  if (!n) return;
+  cf.cible = Math.max(0, Math.min(n - 1, i));
+  cf.cibleT = performance.now();
+  const doux = !matchMedia("(prefers-reduced-motion: reduce)").matches;
+  cf.piste.scrollTo({ left: cf.cible * pasCarrousel(), behavior: doux ? "smooth" : "auto" });
+}
+// Pendant une animation, on part de la pochette visée plutôt que de celle du centre.
+const indexBase = () => (cf.cible >= 0 && performance.now() - cf.cibleT < 450 ? cf.cible : cf.index);
+const retourner = () => cf.piste.children[cf.index]?.firstElementChild.classList.toggle("retournee");
+
+cf.piste.addEventListener("scroll", () => { if (!cf.raf) cf.raf = requestAnimationFrame(majCoverflow); }, { passive: true });
+cf.piste.addEventListener("click", (e) => {
+  const item = e.target.closest(".cf-item");
+  if (!item) return;
+  if (e.target.closest(".cf-fiche")) {
+    const v = etat.vinyles.find((x) => x.id === item.dataset.id);
+    if (v) ouvrirFiche(v);
+    return;
+  }
+  const i = Array.prototype.indexOf.call(cf.piste.children, item);
+  if (i !== cf.index) allerA(i);
+  else retourner();
+});
+// Molette : une pochette à la fois. Le glissé horizontal du trackpad reste natif.
+cf.piste.addEventListener("wheel", (e) => {
+  if (Math.abs(e.deltaX) >= Math.abs(e.deltaY)) return;
+  e.preventDefault();
+  cf.roue += e.deltaY;
+  clearTimeout(cf.roueTimer);
+  cf.roueTimer = setTimeout(() => { cf.roue = 0; }, 180);
+  if (Math.abs(cf.roue) >= 50) {
+    allerA(indexBase() + Math.sign(cf.roue));
+    cf.roue = 0;
+  }
+}, { passive: false });
+document.addEventListener("keydown", (e) => {
+  if (!document.body.classList.contains("cf-actif") || e.defaultPrevented || e.altKey || e.metaKey || e.ctrlKey) return;
+  if (document.querySelector("dialog[open]") || [...document.querySelectorAll(".voile")].some((v) => !v.hidden)) return;
+  if (e.target.closest?.("input, textarea, select, [contenteditable]")) return;
+  const n = cf.piste.children.length;
+  if (e.key === "ArrowRight") allerA(indexBase() + 1);
+  else if (e.key === "ArrowLeft") allerA(indexBase() - 1);
+  else if (e.key === "Home") allerA(0);
+  else if (e.key === "End") allerA(n - 1);
+  else if ((e.key === "Enter" || e.key === " ") && !e.target.closest?.("button, a")) retourner();
+  else return;
+  e.preventDefault();
+});
+addEventListener("resize", () => {
+  if (!document.body.classList.contains("cf-actif") || cf.index < 0) return;
+  cf.piste.scrollLeft = cf.index * pasCarrousel();
+  majCoverflow();
+});
 
 function changerVue(vue) {
   etat.vue = vue;
@@ -643,16 +899,14 @@ const AUTEURS_DISCOGS = /Written-By|Words By|Lyrics By|Music By|Composed By|Song
 function infosDiscogs(rel) {
   const l = (rel.labels || [])[0] || {};
   const roles = (motif, credits = rel.extraartists) => [...new Set((credits || []).filter((a) => motif.test(a.role || "")).map((a) => sansNumero(a.name)))].slice(0, 6);
-  const r = rel.community?.rating || {};
   const pistes = (rel.tracklist || []).filter((p) => (p.type_ || "track") === "track" && p.title?.trim()).map((p) => ({
     position: p.position || "", titre: p.title.trim(), duree: p.duration || "", auteurs: roles(AUTEURS_DISCOGS, p.extraartists || []),
   }));
   const infos = {
     label: sansNumero(l.name), catno: l.catno && l.catno.toLowerCase() !== "none" ? l.catno : "",
     pays: rel.country || "", annee: rel.year || null, genres: rel.genres || [], styles: rel.styles || [],
-    auteurs: roles(AUTEURS_DISCOGS), producteurs: roles(/Producer/i), arrangeurs: roles(/Arranged By/i),
+    auteurs: roles(AUTEURS_DISCOGS),
     pistes,
-    want: rel.community?.want ?? null, note: r.count ? Math.round(r.average * 100) / 100 : null, votes: r.count || null,
   };
   return Object.fromEntries(Object.entries(infos).filter(([, x]) => (Array.isArray(x) ? x.length : x !== "" && x !== null)));
 }
@@ -665,9 +919,6 @@ function contenuInfosDiscogs(i) {
     ["Genre", (i.genres || []).join(", ")],
     ["Style", (i.styles || []).join(", ")],
     ["Auteurs", (i.auteurs || []).join(", ")],
-    ["Production", (i.producteurs || []).join(", ")],
-    ["Arrangements", (i.arrangeurs || []).join(", ")],
-    ["Discogs", [i.want != null && `${i.want} le veulent`, i.note && `★ ${court(i.note)} (${i.votes})`].filter(Boolean).join(" · ")],
   ].filter(([, x]) => x);
   return lignes.map(([k, x]) => `<div><dt>${k}</dt><dd>${esc(x)}</dd></div>`).join("");
 }
@@ -993,7 +1244,7 @@ async function pointerDisque(v) {
       if (avaitFocus) (trouverCarte(v.id) || trouverCarte(voisine?.dataset.id) || $("filtre-inventaire")).focus({ preventScroll: true });
     } else {
       if (carteActuelle) {
-        carteActuelle.outerHTML = carte(etat.vinyles.find((disque) => disque.id === v.id) || v);
+        carteActuelle.outerHTML = rendreDisque(etat.vinyles.find((disque) => disque.id === v.id) || v);
         if (avaitFocus) trouverCarte(v.id)?.focus({ preventScroll: true });
       }
       rendreInventaire();
@@ -1026,6 +1277,8 @@ $("btn-inventaire").addEventListener("click", async () => {
 $("reste-inventaire").addEventListener("change", (e) => changerFiltre("inventaire", e.target.checked ? "a-verifier" : ""));
 
 $("grille").addEventListener("click", (e) => {
+  const tri = e.target.closest("[data-tri]");
+  if (tri) return changerFiltre("tri", tri.dataset.tri);
   const b = e.target.closest(".disque");
   if (!b) return;
   if (b.dataset.libre && etat.edition) return ouvrirFiche(null, b.dataset.libre);
@@ -1460,10 +1713,13 @@ function afficherVerif(p) {
   const statut = $("statut-sync-discogs");
   const etape = p.etape || "Synchronisation Discogs";
   const dernierBilan = p.exportes != null ? p : rapport;
-  statut.hidden = !p.en_cours && dernierBilan?.exportes == null && !p.erreur;
-  statut.textContent = p.en_cours
-    ? p.total ? `${etape} · ${p.fait}/${p.total}` : `${etape}…`
-    : [p.erreur, dernierBilan?.exportes != null && bilanDiscogs(dernierBilan)].filter(Boolean).join("\n");
+  // Sous le titre : seulement la progression pendant la synchronisation.
+  // Le bilan s'affiche dans « Historique des mises à jour ».
+  statut.hidden = !p.en_cours;
+  statut.textContent = p.en_cours ? (p.total ? `${etape} · ${p.fait}/${p.total}` : `${etape}…`) : "";
+  const bilan = p.en_cours ? "" : [p.erreur, dernierBilan?.exportes != null && bilanDiscogs(dernierBilan)].filter(Boolean).join("\n");
+  $("historique-bilan").hidden = !bilan;
+  $("historique-bilan").textContent = bilan;
   if (p.en_cours) {
     $("r-verif").textContent = "Synchronisation en cours. Tu peux continuer à utiliser le jukebox.";
   } else if (rapport) {
@@ -1531,11 +1787,10 @@ const nbFichesModifiees = (n) => n <= 1 ? `${n} fiche modifiée` : `${n} fiches 
 const libellesHistorique = {
   artiste: "Artiste", a: "Face A", b: "Face B", discogs: "Référence Discogs", infos: "Infos Discogs",
   titresDiscogs: "Titres Discogs", prix: "Prix", bas: "Prix bas", moyen: "Prix moyen", haut: "Prix haut",
-  source: "Source des prix", vendu: "Ventes relevées", label: "Label", catno: "N° de catalogue",
+  source: "Source des prix", label: "Label", catno: "N° de catalogue",
   pays: "Pays", annee: "Année", genres: "Genres",
-  styles: "Styles", auteurs: "Auteurs", producteurs: "Producteurs", arrangeurs: "Arrangeurs",
-  pistes: "Pistes", want: "Membres Discogs qui veulent cette édition",
-  note: "Note Discogs", votes: "Nombre de votes",
+  styles: "Styles", auteurs: "Auteurs",
+  pistes: "Pistes",
 };
 const dateHistorique = new Intl.DateTimeFormat("fr-FR", { dateStyle: "short", timeStyle: "medium" });
 

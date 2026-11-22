@@ -480,7 +480,15 @@ function rendre() {
     const occ = parPosition();
     const entrees = toutesPositions.map((p) => occ.get(p) || p);
     affiches = entrees.filter((e) => typeof e !== "string");
-    html = blocDisques(entrees, rendu);
+    if (mode === "juke") {
+      // Comme le panneau du jukebox : colonnes de 10 (100 → 109, puis 110 → 119 à côté…).
+      const colonnes = [];
+      for (let i = 0; i < entrees.length; i += 10) colonnes.push(`<div class="juke-colonne">${blocDisques(entrees.slice(i, i + 10), rendu)}</div>`);
+      html = colonnes.join("");
+      classe += " juke-panneau";
+    } else {
+      html = blocDisques(entrees, rendu);
+    }
     $("compte-filtre").textContent = "";
   } else {
     // En mode Auto, recherche et doublons couvrent toute la collection.

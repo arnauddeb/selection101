@@ -879,8 +879,16 @@ function afficherPochette(src) {
   const img = $("pochette-img");
   if (src) img.src = src; else img.removeAttribute("src");
   $("pochette-vide").hidden = !!src;
+  majPochetteManquante();
 }
 $("pochette-img").addEventListener("error", () => afficherPochette(""));
+// Sans pochette physique : croix sur l'image et mention « Pochette manquante » juste en dessous.
+function majPochetteManquante() {
+  const sans = !!fiche && !$("f-avec-pochette").checked && (!fiche.nouveau || !!$("pochette-img").getAttribute("src"));
+  $("fiche-croix").hidden = !sans || !$("pochette-img").getAttribute("src");
+  $("fiche-pochette-manquante").hidden = !sans;
+}
+$("f-avec-pochette").addEventListener("change", majPochetteManquante);
 function majLienDiscogs() {
   const lien = $("lien-discogs");
   const release = releaseDe(fiche);
@@ -1258,6 +1266,7 @@ function ouvrirFiche(v, posLibre) {
   majTitresAjustes();
   $("f-note").value = v?.note || "";
   $("f-avec-pochette").checked = !!v?.avecPochette;
+  majPochetteManquante();
   $("bloc-note").open = !!v?.note;
   remplirPositions(v ? v.pos : posLibre || "", v?.id);
   afficherPochette(v?.pochette || "");

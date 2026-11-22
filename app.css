@@ -388,6 +388,7 @@ html:has(.fiche-disque[open]) { overflow: hidden; }
 }
 .fiche-visuel { grid-area: pochette; display: grid; gap: 8px; }
 .fiche-visuel .pochette-edit { width: 100%; }
+.pochette-manquante { margin: 8px 0 0; color: var(--accent); font-size: 14px; font-weight: 600; }
 .fiche-visuel .pochette-edit:has(.pochette-vide:not([hidden])) { aspect-ratio: 2; box-shadow: none; }
 .fiche-reference { display: grid; align-content: start; justify-items: start; gap: 2px; }
 .fiche-reference:not(:has(> :not([hidden]))) { display: none; }

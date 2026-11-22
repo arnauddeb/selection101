@@ -1,5 +1,4 @@
 {
- "version": 2,
  "vinyles": [
   {
    "id": "5af7aa7e-8160-43a3-9d4d-f684590cbea8",
@@ -27,9 +26,6 @@
      "Chanson",
      "Synth-pop"
     ],
-    "arrangeurs": [
-     "Romano Musumarra"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -52,10 +48,7 @@
        "Romano Musumarra"
       ]
      }
-    ],
-    "want": 45,
-    "note": 4.0,
-    "votes": 87
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jeanne Mas",
@@ -83,10 +76,6 @@
     "styles": [
      "Synth-pop"
     ],
-    "producteurs": [
-     "Lennie Petze",
-     "Rick Chertoff"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -106,10 +95,7 @@
        "Jeff Kent"
       ]
      }
-    ],
-    "want": 118,
-    "note": 4.38,
-    "votes": 32
+    ]
    },
    "titresDiscogs": {
     "artiste": "Cyndi Lauper",
@@ -125,8 +111,8 @@
   {
    "id": "f4630491-93f0-4ee9-b99e-b21164941517",
    "artiste": "Tears For Fears",
-   "a": "Everybody Wants To Rule The World (Extended Version)",
-   "b": "Everybody Wants To Rule The World (7\" Version) / Pharaohs",
+   "a": "Everybody Wants To Rule The World",
+   "b": "Pharaohs",
    "pos": "02",
    "pochette": "covers/f4630491-93f0-4ee9-b99e-b21164941517.webp",
    "discogs": 1119898,
@@ -147,9 +133,6 @@
     "styles": [
      "New Wave",
      "Synth-pop"
-    ],
-    "producteurs": [
-     "Chris Hughes"
     ],
     "pistes": [
      {
@@ -183,10 +166,7 @@
        "Roland Orzabal"
       ]
      }
-    ],
-    "want": 363,
-    "note": 4.44,
-    "votes": 34
+    ]
    },
    "titresDiscogs": {
     "artiste": "Tears For Fears",
@@ -229,10 +209,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 11,
-    "note": 1.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Temptations, The",
@@ -248,50 +225,46 @@
    "pos": "04",
    "pochette": "covers/c7d64b99-848f-4422-84f2-6604d730ca8d.webp",
    "avecPochette": true,
-   "discogs": 9382130,
-   "prix": {
-    "bas": 1.09,
-    "moyen": 3.59,
-    "haut": 4
-   },
+   "discogs": 698249,
    "infos": {
-    "label": "Freestyle Records",
-    "catno": "FRS 3",
+    "label": "T.K. Records",
+    "catno": "TKR 7543",
     "pays": "France",
-    "annee": 1990,
+    "annee": 1979,
     "genres": [
-     "Electronic",
-     "Pop"
+     "Electronic"
     ],
     "styles": [
-     "Euro House",
      "Disco"
-    ],
-    "producteurs": [
-     "Frederick Knight"
     ],
     "pistes": [
      {
-      "position": "Side 1",
-      "titre": "Ring My Bell 1990 Mega Remix",
-      "duree": "",
-      "auteurs": []
+      "position": "A",
+      "titre": "Ring My Bell",
+      "duree": "3:30",
+      "auteurs": [
+       "Frederick Knight"
+      ]
      },
      {
-      "position": "Side 2",
-      "titre": "Ring My Bell 1979 Original 7\" Version",
-      "duree": "",
-      "auteurs": []
+      "position": "B",
+      "titre": "If I Could Feel That Old Feeling Again",
+      "duree": "4:11",
+      "auteurs": [
+       "David Camon"
+      ]
      }
-    ],
-    "want": 21,
-    "note": 5.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Anita Ward",
-    "a": "Ring My Bell 1990 Mega Remix",
-    "b": "Ring My Bell 1979 Original 7\" Version"
+    "a": "Ring My Bell",
+    "b": "If I Could Feel That Old Feeling Again"
+   },
+   "prix": {
+    "bas": 0.37,
+    "moyen": 1.35,
+    "haut": 6
    }
   },
   {
@@ -338,10 +311,7 @@
        "Pierre Delanoë"
       ]
      }
-    ],
-    "want": 18,
-    "note": 4.17,
-    "votes": 41
+    ]
    },
    "titresDiscogs": {
     "artiste": "Joe Dassin",
@@ -357,102 +327,97 @@
    "pos": "06",
    "pochette": "covers/be5bdc25-5ee7-4ef8-a4c0-5a3b08b73ec5.webp",
    "avecPochette": true,
-   "discogs": 6961179,
-   "prix": {
-    "bas": 6.99,
-    "moyen": 25,
-    "haut": 90
-   },
+   "discogs": 3125755,
    "infos": {
-    "label": "Polydor",
-    "catno": "0381",
+    "label": "RSO",
+    "catno": "2090 195",
     "pays": "France",
-    "annee": 2002,
+    "annee": 1976,
     "genres": [
-     "Funk / Soul"
+     "Electronic"
     ],
     "styles": [
      "Disco"
     ],
+    "auteurs": [
+     "Robin Gibb, Barry Gibb & Maurice Gibb"
+    ],
     "pistes": [
      {
       "position": "A",
-      "titre": "You Should Be Dancing (Remix Maxi)",
-      "duree": "7:05",
+      "titre": "You Should Be Dancing",
+      "duree": "4:15",
       "auteurs": []
      },
      {
-      "position": "B1",
-      "titre": "You Should Be Dancing (Dub Mix)",
-      "duree": "5:16",
-      "auteurs": []
-     },
-     {
-      "position": "B2",
-      "titre": "You Should Be Dancing (Remix Single)",
-      "duree": "3:35",
+      "position": "B",
+      "titre": "Subway",
+      "duree": "4:20",
       "auteurs": []
      }
-    ],
-    "want": 176,
-    "note": 4.57,
-    "votes": 7
+    ]
    },
    "titresDiscogs": {
     "artiste": "Bee Gees",
-    "a": "You Should Be Dancing (Remix Maxi)",
-    "b": "You Should Be Dancing (Dub Mix) / You Should Be Dancing (Remix Single)"
+    "a": "You Should Be Dancing",
+    "b": "Subway"
+   },
+   "prix": {
+    "bas": 0.7,
+    "moyen": 3,
+    "haut": 10
    }
   },
   {
    "id": "50024049-135a-4537-9ba9-2f0d3919dcfb",
-   "artiste": "The Beach Boys",
+   "artiste": "Beach Boys, The",
    "a": "Good Vibrations",
    "b": "Let's Go Away For Awhile",
    "pos": "07",
    "pochette": "covers/50024049-135a-4537-9ba9-2f0d3919dcfb.webp",
    "avecPochette": true,
-   "discogs": 14448162,
-   "prix": {
-    "bas": 1,
-    "moyen": 3.44,
-    "haut": 8.99
-   },
+   "discogs": 1347840,
    "infos": {
-    "label": "EMI France",
-    "catno": "2043737",
-    "pays": "France",
-    "annee": 1991,
+    "label": "Capitol Records",
+    "catno": "K 23 328",
+    "pays": "Germany",
+    "annee": 1966,
     "genres": [
-     "Rock",
-     "Pop",
-     "Folk, World, & Country"
+     "Rock"
     ],
     "styles": [
-     "Surf"
+     "Psychedelic Rock",
+     "Pop Rock"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "California Dreamin'",
-      "duree": "",
-      "auteurs": []
+      "titre": "Good Vibrations",
+      "duree": "2:34",
+      "auteurs": [
+       "Brian Wilson",
+       "Mike Love"
+      ]
      },
      {
       "position": "B",
-      "titre": "Good Vibrations",
-      "duree": "",
-      "auteurs": []
+      "titre": "Let's Go Away For Awhile",
+      "duree": "2:18",
+      "auteurs": [
+       "Brian Wilson"
+      ]
      }
-    ],
-    "want": 14,
-    "note": 4.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Beach Boys, The",
-    "a": "California Dreamin'",
-    "b": "Good Vibrations"
+    "a": "Good Vibrations",
+    "b": "Let's Go Away For Awhile"
+   },
+   "prix": {
+    "bas": 0.99,
+    "moyen": 4.62,
+    "haut": 15
    }
   },
   {
@@ -483,9 +448,6 @@
      "Rhythm & Blues",
      "Europop"
     ],
-    "producteurs": [
-     "Peter Asher"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -503,10 +465,7 @@
        "Van McCoy"
       ]
      }
-    ],
-    "want": 21,
-    "note": 3.0,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Cher",
@@ -521,51 +480,46 @@
    "b": "The Roof Is Leaking",
    "pos": "09",
    "pochette": "covers/9b1e52fb-e768-4b69-a6f9-7ab2acd0b45e.webp",
-   "discogs": 2587952,
-   "prix": {
-    "bas": 1.82,
-    "moyen": 7.26,
-    "haut": 15.28
-   },
+   "discogs": 2221419,
    "infos": {
-    "label": "Not On Label (Phil Collins)",
-    "pays": "US",
+    "label": "Atlantic",
+    "catno": "ATL 79 198",
+    "pays": "France",
+    "annee": 1981,
     "genres": [
-     "Electronic"
+     "Rock",
+     "Pop"
     ],
     "styles": [
-     "Progressive House",
-     "Tech House",
-     "House"
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "Phil Collins"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "In The Air Tonight (Mix 1)",
-      "duree": "",
+      "titre": "In The Air Tonight",
+      "duree": "4:57",
       "auteurs": []
      },
      {
-      "position": "B1",
-      "titre": "In The Air Tonight (Mix 2)",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "B2",
-      "titre": "In The Air Tonight (Mix 3)",
-      "duree": "",
+      "position": "B",
+      "titre": "The Roof Is Leaking",
+      "duree": "3:16",
       "auteurs": []
      }
-    ],
-    "want": 48,
-    "note": 4.25,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Phil Collins",
-    "a": "In The Air Tonight (Mix 1)",
-    "b": "In The Air Tonight (Mix 2) / In The Air Tonight (Mix 3)"
+    "a": "In The Air Tonight",
+    "b": "The Roof Is Leaking"
+   },
+   "prix": {
+    "bas": 0.2,
+    "moyen": 2.49,
+    "haut": 6
    }
   },
   {
@@ -575,16 +529,11 @@
    "b": "Love In Song",
    "pos": "10",
    "pochette": "covers/cdd06da4-8c12-491a-9c8f-9b73b9ce51f0.webp",
-   "discogs": 6212552,
-   "prix": {
-    "bas": 12.09,
-    "moyen": 12.09,
-    "haut": 12.09
-   },
+   "discogs": 1114902,
    "infos": {
     "label": "Capitol Records",
-    "catno": "4091",
-    "pays": "US",
+    "catno": "R 6006",
+    "pays": "UK",
     "annee": 1975,
     "genres": [
      "Rock"
@@ -595,29 +544,30 @@
     "auteurs": [
      "Paul McCartney"
     ],
-    "producteurs": [
-     "Paul McCartney"
-    ],
     "pistes": [
      {
       "position": "A",
       "titre": "Listen To What The Man Said",
-      "duree": "3:53",
+      "duree": "",
       "auteurs": []
      },
      {
       "position": "B",
-      "titre": "Listen To What The Man Said",
-      "duree": "3:53",
+      "titre": "Love In Song",
+      "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 36
+    ]
    },
    "titresDiscogs": {
     "artiste": "Wings",
     "a": "Listen To What The Man Said",
-    "b": "Listen To What The Man Said"
+    "b": "Love In Song"
+   },
+   "prix": {
+    "bas": 0.35,
+    "moyen": 2.39,
+    "haut": 7.18
    }
   },
   {
@@ -649,9 +599,6 @@
      "Andrew Farriss",
      "Michael Hutchence"
     ],
-    "producteurs": [
-     "Chris Thomas"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -665,10 +612,7 @@
       "duree": "3:58",
       "auteurs": []
      }
-    ],
-    "want": 78,
-    "note": 4.29,
-    "votes": 28
+    ]
    },
    "titresDiscogs": {
     "artiste": "INXS",
@@ -699,9 +643,6 @@
      "Funk / Soul",
      "Pop"
     ],
-    "producteurs": [
-     "Maurice White"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -721,10 +662,7 @@
        "Bernard Taylor"
       ]
      }
-    ],
-    "want": 15,
-    "note": 3.76,
-    "votes": 21
+    ]
    },
    "titresDiscogs": {
     "artiste": "Earth, Wind & Fire",
@@ -762,9 +700,6 @@
      "Lou Deprijck",
      "Yves Lacomblez"
     ],
-    "producteurs": [
-     "Lou Deprijck"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -778,10 +713,7 @@
       "duree": "2:41",
       "auteurs": []
      }
-    ],
-    "want": 166,
-    "note": 4.36,
-    "votes": 25
+    ]
    },
    "titresDiscogs": {
     "artiste": "Plastic Bertrand",
@@ -797,17 +729,12 @@
    "pos": "14",
    "pochette": "covers/92e1b7d1-240f-4c14-8322-2f4284e4854b.webp",
    "avecPochette": true,
-   "discogs": 10497283,
-   "prix": {
-    "bas": 45,
-    "moyen": 47,
-    "haut": 49
-   },
+   "discogs": 3794833,
    "infos": {
     "label": "Columbia",
-    "catno": "657969 6",
+    "catno": "657726 7",
     "pays": "France",
-    "annee": 1992,
+    "annee": 1991,
     "genres": [
      "Pop"
     ],
@@ -817,31 +744,31 @@
     "pistes": [
      {
       "position": "A",
-      "titre": "Tu Manques",
-      "duree": "8:11",
-      "auteurs": []
+      "titre": "Un, Deux, Trois",
+      "duree": "4:05",
+      "auteurs": [
+       "Jean-Jacques Goldman"
+      ]
      },
      {
-      "position": "B1",
-      "titre": "Vivre Cent Vies",
-      "duree": "4:18",
-      "auteurs": []
-     },
-     {
-      "position": "B2",
-      "titre": "Un, Deux, Trois (Remix)",
-      "duree": "5:32",
-      "auteurs": []
+      "position": "B",
+      "titre": "Je Commence Demain (Version Tournée 91, Inédit)",
+      "duree": "5:42",
+      "auteurs": [
+       "Jean-Jacques Goldman"
+      ]
      }
-    ],
-    "want": 42,
-    "note": 4.0,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Fredericks Goldman Jones",
-    "a": "Tu Manques",
-    "b": "Vivre Cent Vies / Un, Deux, Trois (Remix)"
+    "a": "Un, Deux, Trois",
+    "b": "Je Commence Demain (Version Tournée 91, Inédit)"
+   },
+   "prix": {
+    "bas": 0.19,
+    "moyen": 1.95,
+    "haut": 8
    }
   },
   {
@@ -871,9 +798,6 @@
     "auteurs": [
      "Chico De Oliveira"
     ],
-    "producteurs": [
-     "Jean-Claude Bonaventure"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -887,10 +811,7 @@
       "duree": "3:48",
       "auteurs": []
      }
-    ],
-    "want": 60,
-    "note": 3.53,
-    "votes": 30
+    ]
    },
    "titresDiscogs": {
     "artiste": "Kaoma",
@@ -901,8 +822,8 @@
   {
    "id": "04e6f500-20e6-4603-ab8c-6223e502053f",
    "artiste": "Jean-Jacques Goldman",
-   "a": "Long Is The Road (Américain)",
-   "b": "P'tit Blues Peinard (Inédit)",
+   "a": "Long Is The Road",
+   "b": "P'tit Blues Peinard",
    "pos": "16",
    "pochette": "covers/04e6f500-20e6-4603-ab8c-6223e502053f.webp",
    "discogs": 9374696,
@@ -925,10 +846,6 @@
     "auteurs": [
      "Jean-Jacques Goldman"
     ],
-    "producteurs": [
-     "Jean-Jacques Goldman",
-     "Marc Lumbroso"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -942,10 +859,7 @@
       "duree": "4:27",
       "auteurs": []
      }
-    ],
-    "want": 12,
-    "note": 4.25,
-    "votes": 12
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jean-Jacques Goldman",
@@ -982,10 +896,6 @@
      "Barry Gibb",
      "Maurice Gibb"
     ],
-    "producteurs": [
-     "Bee Gees",
-     "Robert Stigwood"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -999,10 +909,7 @@
       "duree": "2:55",
       "auteurs": []
      }
-    ],
-    "want": 17,
-    "note": 3.0,
-    "votes": 5
+    ]
    },
    "titresDiscogs": {
     "artiste": "Bee Gees",
@@ -1013,22 +920,23 @@
   {
    "id": "8ff50b69-07a2-4724-9098-5e392af32849",
    "artiste": "Middle Of The Road",
-   "a": "The Talk Of All The U.S.A.",
+   "a": "Talk Of All The USA",
    "b": "On This Land",
    "pos": "18",
    "pochette": "covers/8ff50b69-07a2-4724-9098-5e392af32849.webp",
    "avecPochette": true,
-   "discogs": 6228312,
+   "discogs": 2108544,
    "infos": {
-    "label": "Opus",
-    "catno": "90 43 0193",
-    "pays": "Czechoslovakia",
-    "annee": 1973,
+    "label": "RCA Victor",
+    "catno": "41.023",
+    "pays": "France",
+    "annee": 1972,
     "genres": [
+     "Rock",
      "Pop"
     ],
     "styles": [
-     "Europop"
+     "Pop Rock"
     ],
     "auteurs": [
      "Giosy Capuano",
@@ -1038,33 +946,42 @@
     "pistes": [
      {
       "position": "A",
-      "titre": "Tweedle Dee, Tweedle Dum",
-      "duree": "",
+      "titre": "Talk Of All The USA",
+      "duree": "3:13",
       "auteurs": []
      },
      {
       "position": "B",
-      "titre": "The Talk Of All The U. S. A.",
-      "duree": "",
+      "titre": "On This Land",
+      "duree": "3:45",
       "auteurs": []
      }
-    ],
-    "want": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "Middle Of The Road",
-    "a": "Tweedle Dee, Tweedle Dum",
-    "b": "The Talk Of All The U. S. A."
+    "a": "Talk Of All The USA",
+    "b": "On This Land"
+   },
+   "prix": {
+    "bas": 0.4,
+    "moyen": 3.62,
+    "haut": 6
    }
   },
   {
    "id": "7e43b25e-57b1-4850-8281-c7aaba8192ff",
    "artiste": "Wham!",
    "a": "Freedom",
-   "b": "Freedom (Instrumental)",
+   "b": "Freedom (Instru)",
    "pos": "19",
    "pochette": "covers/7e43b25e-57b1-4850-8281-c7aaba8192ff.webp",
    "discogs": 390259,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 1.77,
+    "haut": 4.78
+   },
    "infos": {
     "label": "Epic",
     "catno": "EPCA 4743",
@@ -1077,12 +994,6 @@
      "Europop"
     ],
     "auteurs": [
-     "George Michael"
-    ],
-    "producteurs": [
-     "George Michael"
-    ],
-    "arrangeurs": [
      "George Michael"
     ],
     "pistes": [
@@ -1098,20 +1009,12 @@
       "duree": "5:10",
       "auteurs": []
      }
-    ],
-    "want": 102,
-    "note": 3.81,
-    "votes": 196
+    ]
    },
    "titresDiscogs": {
     "artiste": "Wham!",
     "a": "Freedom",
     "b": "Freedom (Instrumental)"
-   },
-   "prix": {
-    "bas": 0.5,
-    "moyen": 1.77,
-    "haut": 4.78
    }
   },
   {
@@ -1137,12 +1040,6 @@
      "Baciotti",
      "Pamela Marion Forrest"
     ],
-    "producteurs": [
-     "Yona"
-    ],
-    "arrangeurs": [
-     "Baciotti"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -1158,10 +1055,7 @@
        "Jacques Lachambre"
       ]
      }
-    ],
-    "want": 1,
-    "note": 4.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "La Velle",
@@ -1177,96 +1071,98 @@
    "pos": "21",
    "pochette": "covers/145ef4b9-18ce-4a3f-9752-3246d0ef9efb.webp",
    "avecPochette": true,
-   "discogs": 1872611,
-   "prix": {
-    "bas": 4.55,
-    "moyen": 10.69,
-    "haut": 22.75
-   },
+   "discogs": 7014728,
    "infos": {
-    "label": "ARC",
-    "catno": "3-10854",
-    "pays": "US",
-    "annee": 1978,
+    "label": "CBS",
+    "catno": "CBS 6922",
+    "pays": "France",
+    "annee": 1979,
     "genres": [
-     "Funk / Soul"
+     "Electronic"
     ],
     "styles": [
-     "Funk",
      "Disco"
-    ],
-    "auteurs": [
-     "Al McKay",
-     "Allee Willis",
-     "Maurice White"
-    ],
-    "producteurs": [
-     "Maurice White"
-    ],
-    "arrangeurs": [
-     "TOM TOM 84"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "September",
       "duree": "3:37",
-      "auteurs": []
+      "auteurs": [
+       "Al McKay",
+       "Allee Willis",
+       "Maurice White"
+      ]
      },
      {
       "position": "B",
-      "titre": "September",
-      "duree": "3:37",
-      "auteurs": []
+      "titre": "Can't Hide Love",
+      "duree": "4:11",
+      "auteurs": [
+       "Skip Scarborough"
+      ]
      }
-    ],
-    "want": 284,
-    "note": 4.5,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Earth, Wind & Fire",
     "a": "September",
-    "b": "September"
+    "b": "Can't Hide Love"
+   },
+   "prix": {
+    "bas": 1,
+    "moyen": 3.46,
+    "haut": 10.77
    }
   },
   {
    "id": "8dada09e-2443-4ffb-a820-84055f7a15fa",
-   "artiste": "Earth Wind & Fire",
+   "artiste": "Earth, Wind & Fire With Emotions, The",
    "a": "Boogie Wonderland",
    "b": "Boogie Wonderland (Instru)",
    "pos": "22",
    "pochette": "covers/8dada09e-2443-4ffb-a820-84055f7a15fa.webp",
    "avecPochette": true,
-   "discogs": 25113730,
+   "discogs": 6073395,
    "infos": {
     "label": "CBS",
-    "catno": "CSR 1066",
-    "pays": "Peru",
+    "catno": "7292",
+    "pays": "France",
     "annee": 1979,
     "genres": [
      "Funk / Soul"
+    ],
+    "styles": [
+     "Disco"
+    ],
+    "auteurs": [
+     "Allee Willis",
+     "Jon Lind"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "Boogie Wonderland",
-      "duree": "",
+      "duree": "4:55",
       "auteurs": []
      },
      {
       "position": "B",
-      "titre": "Boogie Wonderland",
-      "duree": "",
+      "titre": "Boogie Wonderland (Instrumental)",
+      "duree": "4:56",
       "auteurs": []
      }
-    ],
-    "want": 33
+    ]
    },
    "titresDiscogs": {
-    "artiste": "Earth, Wind & Fire",
+    "artiste": "Earth, Wind & Fire With Emotions, The",
     "a": "Boogie Wonderland",
-    "b": "Boogie Wonderland"
+    "b": "Boogie Wonderland (Instrumental)"
+   },
+   "prix": {
+    "bas": 0.2,
+    "moyen": 2.2,
+    "haut": 6.5
    }
   },
   {
@@ -1299,12 +1195,6 @@
      "Leee John",
      "Steve Jolley & Tony Swain"
     ],
-    "producteurs": [
-     "Steve Jolley & Tony Swain"
-    ],
-    "arrangeurs": [
-     "Steve Jolley & Tony Swain"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -1318,10 +1208,7 @@
       "duree": "4:20",
       "auteurs": []
      }
-    ],
-    "want": 25,
-    "note": 5.0,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Imagination",
@@ -1333,10 +1220,15 @@
    "id": "c9db2c79-07c8-4f8b-9c22-337f15b76011",
    "artiste": "Chemise",
    "a": "She Can't Love You",
-   "b": "She Can't Love You (Instrumental)",
+   "b": "She Can't Love You (Instru)",
    "pos": "24",
    "pochette": "covers/c9db2c79-07c8-4f8b-9c22-337f15b76011.webp",
    "discogs": 648897,
+   "prix": {
+    "bas": 12,
+    "moyen": 27,
+    "haut": 50
+   },
    "infos": {
     "label": "Philips",
     "catno": "6400 724",
@@ -1354,14 +1246,6 @@
      "Ricki Byars Muldrow",
      "Ronald Muldrow"
     ],
-    "producteurs": [
-     "Ricki Byars Muldrow",
-     "Ronald Muldrow"
-    ],
-    "arrangeurs": [
-     "Ricki Byars Muldrow",
-     "Ronald Muldrow"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -1375,20 +1259,12 @@
       "duree": "5:25",
       "auteurs": []
      }
-    ],
-    "want": 1501,
-    "note": 4.7,
-    "votes": 81
+    ]
    },
    "titresDiscogs": {
     "artiste": "Chemise",
     "a": "She Can't Love You",
     "b": "She Can't Love You (Instrumental)"
-   },
-   "prix": {
-    "bas": 12.0,
-    "moyen": 27.0,
-    "haut": 50.0
    }
   },
   {
@@ -1425,10 +1301,7 @@
       "duree": "3:30",
       "auteurs": []
      }
-    ],
-    "want": 30,
-    "note": 5.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Wings",
@@ -1476,10 +1349,7 @@
        "Sebastian Santa Maria"
       ]
      }
-    ],
-    "want": 0,
-    "note": 3.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Catherine Lara",
@@ -1512,12 +1382,6 @@
     "auteurs": [
      "George Michael"
     ],
-    "producteurs": [
-     "George Michael"
-    ],
-    "arrangeurs": [
-     "George Michael"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -1531,10 +1395,7 @@
       "duree": "4:03",
       "auteurs": []
      }
-    ],
-    "want": 95,
-    "note": 4.32,
-    "votes": 19
+    ]
    },
    "titresDiscogs": {
     "artiste": "Wham!",
@@ -1555,52 +1416,47 @@
    "pos": "28",
    "pochette": "covers/68a97dc9-1560-4a89-8df3-b33dc7786179.webp",
    "avecPochette": true,
-   "discogs": 3276660,
-   "prix": {
-    "bas": 2.5,
-    "moyen": 4.51,
-    "haut": 8.98
-   },
+   "discogs": 358171,
    "infos": {
-    "label": "Atlantic",
-    "catno": "3434",
-    "pays": "US",
-    "annee": 1977,
+    "label": "Melba",
+    "catno": "45.X. 140 149",
+    "pays": "France",
+    "annee": 1976,
     "genres": [
+     "Rock",
      "Pop"
     ],
     "styles": [
-     "Disco",
-     "Europop"
+     "Europop",
+     "Pop Rock"
     ],
     "auteurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
-    "producteurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "Money, Money, Money",
-      "duree": "3:05",
+      "duree": "3:06",
       "auteurs": []
      },
      {
       "position": "B",
-      "titre": "Money, Money, Money",
-      "duree": "3:05",
+      "titre": "Crazy World",
+      "duree": "3:47",
       "auteurs": []
      }
-    ],
-    "want": 39,
-    "note": 4.25,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "ABBA",
     "a": "Money, Money, Money",
-    "b": "Money, Money, Money"
+    "b": "Crazy World"
+   },
+   "prix": {
+    "bas": 0.26,
+    "moyen": 2.34,
+    "haut": 8
    }
   },
   {
@@ -1625,9 +1481,6 @@
      "Dario Farina",
      "Gino De Stefani"
     ],
-    "producteurs": [
-     "Baby Records"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -1641,10 +1494,7 @@
       "duree": "3:03",
       "auteurs": []
      }
-    ],
-    "want": 109,
-    "note": 4.05,
-    "votes": 98
+    ]
    },
    "titresDiscogs": {
     "artiste": "Al Bano & Romina Power",
@@ -1684,9 +1534,6 @@
     "auteurs": [
      "Patrick Hernandez"
     ],
-    "producteurs": [
-     "Jean Vanloo"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -1700,10 +1547,7 @@
       "duree": "3:40",
       "auteurs": []
      }
-    ],
-    "want": 89,
-    "note": 3.25,
-    "votes": 8
+    ]
    },
    "titresDiscogs": {
     "artiste": "Patrick Hernandez",
@@ -1753,10 +1597,7 @@
       "duree": "4:36",
       "auteurs": []
      }
-    ],
-    "want": 3,
-    "note": 5.0,
-    "votes": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "Laurent Voulzy",
@@ -1768,7 +1609,7 @@
    "id": "3d320d23-e498-403a-b9ce-285155ac54ae",
    "artiste": "Images",
    "a": "Les Démons De Minuit",
-   "b": "Les Démons De Minuit (Instrumental)",
+   "b": "Les Démons De Minuit (Instru)",
    "pos": "32",
    "pochette": "covers/3d320d23-e498-403a-b9ce-285155ac54ae-mwqqtex5.webp",
    "avecPochette": true,
@@ -1795,9 +1636,6 @@
      "Christophe Despres",
      "Jean-Louis Pujade"
     ],
-    "producteurs": [
-     "Richard Seff"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -1815,10 +1653,7 @@
       "duree": "3:58",
       "auteurs": []
      }
-    ],
-    "want": 103,
-    "note": 3.9,
-    "votes": 164
+    ]
    },
    "titresDiscogs": {
     "artiste": "Images",
@@ -1854,10 +1689,6 @@
      "Pop Rock",
      "Synth-pop"
     ],
-    "producteurs": [
-     "David Bowie",
-     "Nile Rodgers"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -1876,10 +1707,7 @@
        "Giorgio Moroder"
       ]
      }
-    ],
-    "want": 220,
-    "note": 4.13,
-    "votes": 196
+    ]
    },
    "titresDiscogs": {
     "artiste": "David Bowie",
@@ -1895,59 +1723,65 @@
    "pos": "34",
    "pochette": "covers/8b25a53e-efc6-4a84-845d-451a7a851b78.webp",
    "avecPochette": true,
-   "discogs": 33503501,
+   "discogs": 5682575,
    "infos": {
-    "label": "4 Track",
-    "catno": "M.171",
-    "pays": "Thailand",
+    "label": "CBS",
+    "catno": "2816",
+    "pays": "France",
+    "annee": 1967,
     "genres": [
-     "Pop",
-     "Folk, World, & Country"
+     "Rock",
+     "Pop"
+    ],
+    "styles": [
+     "Folk Rock",
+     "Pop Rock"
     ],
     "pistes": [
      {
-      "position": "A1",
-      "titre": "San Francisco",
-      "duree": "",
-      "auteurs": []
+      "position": "A",
+      "titre": "San Francisco (Be Sure To Wear Some Flowers In Your Hair)",
+      "duree": "2:58",
+      "auteurs": [
+       "John Phillips"
+      ]
      },
      {
-      "position": "A2",
-      "titre": "San Francisco",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "B1",
-      "titre": "To Sir, With Love",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "B2",
-      "titre": "Guantanamera",
-      "duree": "",
-      "auteurs": []
+      "position": "B",
+      "titre": "What's The Difference",
+      "duree": "2:20",
+      "auteurs": [
+       "Scott McKenzie"
+      ]
      }
-    ],
-    "want": 0
+    ]
    },
    "titresDiscogs": {
     "artiste": "Scott McKenzie",
-    "a": "San Francisco / San Francisco",
-    "b": "To Sir, With Love / Guantanamera"
+    "a": "San Francisco (Be Sure To Wear Some Flowers In Your Hair)",
+    "b": "What's The Difference"
+   },
+   "prix": {
+    "bas": 1,
+    "moyen": 4.2,
+    "haut": 12
    }
   },
   {
    "id": "507c9e82-6401-4e00-a49f-e1059ec503ad",
    "artiste": "Generation 60",
-   "a": "Interprète Les Hits Des Années 60",
-   "b": "Interprète Les Hits Des Années 60",
+   "a": "Les Hits Des Années 60",
+   "b": "Les Hits Des Années 60",
    "pos": "35",
    "pochette": "covers/507c9e82-6401-4e00-a49f-e1059ec503ad.webp",
    "note": "Salut Les Copains 0:02 \nSi J'Avais Un Marteau 0:33 \nLeçon De Twist 0:23 \nLet's Twist Again 0:21 \nYa Ya Twist 0:17 \nDaniela 0:21 \nDonne-Moi Ma Chance 0:25 \nPremière Surprise Partie 0:13 \nDancin' Party 0:03 \nBelles, Belles, Belles 0:08 \nC'est Ma Fête 0:13 \nTu Parles Trop 0:27 \nJ'ai Un Secret À Te Dire 0:31 \nSunny 0:33",
    "avecPochette": true,
    "discogs": 12197911,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 0.6,
+    "haut": 0.99
+   },
    "infos": {
     "label": "CBS",
     "catno": "CBS A1908",
@@ -1963,29 +1797,12 @@
      "Classic Rock",
      "Pop Rock",
      "Disco"
-    ],
-    "producteurs": [
-     "Patrick Oliver",
-     "André Bénichou",
-     "Jean-Claude Oliver",
-     "Roland Lapouge"
-    ],
-    "arrangeurs": [
-     "Patrick Oliver"
-    ],
-    "want": 8,
-    "note": 3.94,
-    "votes": 16
+    ]
    },
    "titresDiscogs": {
     "artiste": "Generation 60",
     "a": "Interprète Les Hits Des Années 60",
     "b": ""
-   },
-   "prix": {
-    "bas": 0.5,
-    "moyen": 0.6,
-    "haut": 0.99
    }
   },
   {
@@ -1996,54 +1813,50 @@
    "pos": "36",
    "pochette": "covers/e85e4570-c73e-485f-840a-226f3078c733.webp",
    "avecPochette": true,
-   "discogs": 4886849,
-   "prix": {
-    "bas": 1.36,
-    "moyen": 5.92,
-    "haut": 10.17
-   },
+   "discogs": 378146,
    "infos": {
-    "label": "Casablanca",
-    "catno": "NB 978 DJ",
-    "pays": "US",
+    "label": "Philips",
+    "catno": "6175 010",
+    "pays": "Netherlands",
     "annee": 1979,
     "genres": [
-     "Electronic"
+     "Electronic",
+     "Funk / Soul"
     ],
     "styles": [
      "Disco"
-    ],
-    "auteurs": [
-     "Harold Faltermeyer",
-     "Keith Forsey",
-     "Pete Bellotte"
-    ],
-    "producteurs": [
-     "Giorgio Moroder",
-     "Pete Bellotte"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "Hot Stuff",
       "duree": "3:47",
-      "auteurs": []
+      "auteurs": [
+       "Harold Faltermeyer",
+       "Keith Forsey",
+       "Pete Bellotte"
+      ]
      },
      {
       "position": "B",
-      "titre": "Hot Stuff",
-      "duree": "3:47",
-      "auteurs": []
+      "titre": "Journey To The Centre Of Your Heart",
+      "duree": "3:49",
+      "auteurs": [
+       "Giorgio Moroder",
+       "Pete Bellotte"
+      ]
      }
-    ],
-    "want": 92,
-    "note": 4.67,
-    "votes": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "Donna Summer",
     "a": "Hot Stuff",
-    "b": "Hot Stuff"
+    "b": "Journey To The Centre Of Your Heart"
+   },
+   "prix": {
+    "bas": 0.95,
+    "moyen": 2.9,
+    "haut": 8
    }
   },
   {
@@ -2091,10 +1904,7 @@
        "Hervé Cristiani"
       ]
      }
-    ],
-    "want": 16,
-    "note": 4.04,
-    "votes": 25
+    ]
    },
    "titresDiscogs": {
     "artiste": "Hervé Cristiani",
@@ -2110,56 +1920,47 @@
    "pos": "38",
    "pochette": "covers/5dc8bc52-ca8b-498c-bfaa-9119079e17d8.webp",
    "avecPochette": true,
-   "discogs": 7215999,
-   "prix": {
-    "bas": 1.95,
-    "moyen": 5,
-    "haut": 8
-   },
+   "discogs": 5043043,
    "infos": {
-    "label": "Planet",
-    "catno": "12 341",
-    "pays": "France",
+    "label": "Elektra",
+    "catno": "12327",
+    "pays": "Benelux",
     "annee": 1978,
     "genres": [
-     "Electronic",
-     "Rock",
-     "Funk / Soul"
+     "Rock"
     ],
     "styles": [
-     "Pop Rock",
-     "Soul",
-     "Disco"
-    ],
-    "producteurs": [
-     "Richard Perry"
+     "Pop Rock"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "Fire",
-      "duree": "3:41",
+      "duree": "3:28",
       "auteurs": [
        "Bruce Springsteen"
       ]
      },
      {
       "position": "B",
-      "titre": "Happiness",
-      "duree": "4:19",
+      "titre": "Just Like A Rolling Stone",
+      "duree": "3:37",
       "auteurs": [
-       "Allen Toussaint"
+       "Brian Cadd",
+       "Jean Anne Chapman"
       ]
      }
-    ],
-    "want": 42,
-    "note": 4.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Pointer Sisters",
     "a": "Fire",
-    "b": "Happiness"
+    "b": "Just Like A Rolling Stone"
+   },
+   "prix": {
+    "bas": 0.3,
+    "moyen": 1.19,
+    "haut": 5
    }
   },
   {
@@ -2192,9 +1993,6 @@
      "Dominique Dubois",
      "Jean-Michel Rivat"
     ],
-    "producteurs": [
-     "Jean-Michel Rivat"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -2214,10 +2012,7 @@
       "duree": "4:21",
       "auteurs": []
      }
-    ],
-    "want": 287,
-    "note": 4.86,
-    "votes": 44
+    ]
    },
    "titresDiscogs": {
     "artiste": "Desireless",
@@ -2233,15 +2028,10 @@
    "pos": "40",
    "pochette": "covers/d8944b8b-c5d6-4ed3-bd96-705b0dee1501.webp",
    "avecPochette": true,
-   "discogs": 386991,
-   "prix": {
-    "bas": 5,
-    "moyen": 10.97,
-    "haut": 29.44
-   },
+   "discogs": 342512,
    "infos": {
     "label": "Polydor",
-    "catno": "885 765-1",
+    "catno": "885 765-7",
     "pays": "France",
     "annee": 1987,
     "genres": [
@@ -2250,35 +2040,20 @@
     ],
     "styles": [
      "Synth-pop",
-     "Latin"
-    ],
-    "producteurs": [
-     "Franck Langolff"
-    ],
-    "arrangeurs": [
-     "Franck Langolff"
+     "Chanson"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Joe Le Taxi (Version Longue)",
-      "duree": "5:30",
-      "auteurs": [
-       "Franck Langolff",
-       "Étienne Roda-Gil"
-      ]
-     },
-     {
-      "position": "B1",
       "titre": "Joe Le Taxi",
       "duree": "3:54",
       "auteurs": [
-       "Franck Langolff",
-       "Étienne Roda-Gil"
+       "Étienne Roda-Gil",
+       "Franck Langolff"
       ]
      },
      {
-      "position": "B2",
+      "position": "B",
       "titre": "Varvara Pavlovna",
       "duree": "3:28",
       "auteurs": [
@@ -2286,42 +2061,45 @@
        "Franck Langolff"
       ]
      }
-    ],
-    "want": 264,
-    "note": 4.37,
-    "votes": 131
+    ]
    },
    "titresDiscogs": {
     "artiste": "Vanessa Paradis",
-    "a": "Joe Le Taxi (Version Longue)",
-    "b": "Joe Le Taxi / Varvara Pavlovna"
+    "a": "Joe Le Taxi",
+    "b": "Varvara Pavlovna"
+   },
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1.97,
+    "haut": 4.97
    }
   },
   {
    "id": "20d58400-f002-44c6-94aa-7449de89eed8",
-   "artiste": "Ricchi & Poveri",
+   "artiste": "Ricchi E Poveri",
    "a": "Sarà Perché Ti Amo",
    "b": "Bello L'Amore",
    "pos": "41",
    "pochette": "covers/20d58400-f002-44c6-94aa-7449de89eed8.webp",
    "avecPochette": true,
-   "discogs": 23891555,
+   "discogs": 1324671,
    "infos": {
-    "label": "Ibach Records",
-    "catno": "60 118",
-    "pays": "France",
+    "label": "Baby Records",
+    "catno": "BR 50232",
+    "pays": "Italy",
     "annee": 1981,
     "genres": [
+     "Rock",
      "Pop"
     ],
     "styles": [
-     "Chanson"
+     "Pop Rock"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "Sarà Perché Ti Amo",
-      "duree": "3:10",
+      "duree": "",
       "auteurs": [
        "Daniele Pace",
        "Dario Farina",
@@ -2331,20 +2109,24 @@
      {
       "position": "B",
       "titre": "Bello L'Amore",
-      "duree": "3:20",
+      "duree": "",
       "auteurs": [
        "Angelo Sotgiu",
        "Cristiano Minellono",
        "Franco Gatti"
       ]
      }
-    ],
-    "want": 31
+    ]
    },
    "titresDiscogs": {
     "artiste": "Ricchi E Poveri",
     "a": "Sarà Perché Ti Amo",
     "b": "Bello L'Amore"
+   },
+   "prix": {
+    "bas": 1.64,
+    "moyen": 4.75,
+    "haut": 22.75
    }
   },
   {
@@ -2368,9 +2150,6 @@
     "styles": [
      "Disco"
     ],
-    "producteurs": [
-     "Jaap Eggermont"
-    ],
     "pistes": [
      {
       "position": "B",
@@ -2378,10 +2157,7 @@
       "duree": "4:10",
       "auteurs": []
      }
-    ],
-    "want": 20,
-    "note": 3.78,
-    "votes": 9
+    ]
    },
    "titresDiscogs": {
     "artiste": "Stars On 45",
@@ -2516,10 +2292,7 @@
        "James Brown"
       ]
      }
-    ],
-    "want": 11,
-    "note": 3.62,
-    "votes": 29
+    ]
    },
    "titresDiscogs": {
     "artiste": "Magazine 60",
@@ -2535,20 +2308,15 @@
   {
    "id": "c343118f-6c02-45c8-aa31-b407f2fc4035",
    "artiste": "Laurent Voulzy",
-   "a": "Rockollection (1)",
-   "b": "Rockollection (2)",
+   "a": "Rockollection (Part I)",
+   "b": "Rockollection (Part II)",
    "pos": "44",
    "pochette": "covers/c343118f-6c02-45c8-aa31-b407f2fc4035.webp",
    "avecPochette": true,
-   "discogs": 894424,
-   "prix": {
-    "bas": 0.75,
-    "moyen": 3.99,
-    "haut": 7.69
-   },
+   "discogs": 1553547,
    "infos": {
     "label": "RCA Victor",
-    "catno": "PC 8089",
+    "catno": "PB 8067",
     "pays": "France",
     "annee": 1977,
     "genres": [
@@ -2559,46 +2327,32 @@
     ],
     "auteurs": [
      "Alain Souchon",
-     "Brian",
-     "Laurent Voulzy"
-    ],
-    "arrangeurs": [
      "Laurent Voulzy"
     ],
     "pistes": [
      {
-      "position": "A1",
-      "titre": "Rockollection (Part 1)",
+      "position": "A",
+      "titre": "Rockollection (Part I)",
       "duree": "3:50",
       "auteurs": []
      },
      {
-      "position": "A2",
-      "titre": "Rockollection (Part 2)",
+      "position": "B",
+      "titre": "Rockollection (Part II)",
       "duree": "3:40",
       "auteurs": []
-     },
-     {
-      "position": "A3",
-      "titre": "Rockollection (Final Orchestre)",
-      "duree": "4:15",
-      "auteurs": []
-     },
-     {
-      "position": "B",
-      "titre": "Le Miroir",
-      "duree": "3:55",
-      "auteurs": []
      }
-    ],
-    "want": 57,
-    "note": 4.04,
-    "votes": 91
+    ]
    },
    "titresDiscogs": {
     "artiste": "Laurent Voulzy",
-    "a": "Rockollection (Part 1) / Rockollection (Part 2) / Rockollection (Final Orchestre)",
-    "b": "Le Miroir"
+    "a": "Rockollection (Part I)",
+    "b": "Rockollection (Part II)"
+   },
+   "prix": {
+    "bas": 0.2,
+    "moyen": 0.95,
+    "haut": 5.41
    }
   },
   {
@@ -2609,35 +2363,23 @@
    "pos": "45",
    "pochette": "covers/d6c64a29-dbc6-407d-9307-00c74968e15c.webp",
    "avecPochette": true,
-   "discogs": 7703173,
-   "prix": {
-    "bas": 5,
-    "moyen": 53.91,
-    "haut": 82.5
-   },
+   "discogs": 721616,
    "infos": {
-    "label": "Arcade",
-    "catno": "3019906",
+    "label": "Trema",
+    "catno": "50 015",
     "pays": "France",
-    "annee": 1996,
+    "annee": 1973,
     "genres": [
      "Pop"
     ],
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Gérard Melet",
-     "Jacques Revaux"
-    ],
-    "arrangeurs": [
-     "Pierre Groscolas"
-    ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Lady Lay ( Club Mix )",
-      "duree": "6:53",
+      "titre": "Lady Lay",
+      "duree": "2:58",
       "auteurs": [
        "Michel Jourdan",
        "Pierre Groscolas"
@@ -2645,22 +2387,24 @@
      },
      {
       "position": "B",
-      "titre": "Lady Lay ( Album Version )",
-      "duree": "3:09",
+      "titre": "Un Jour Pas Comme Les Autres",
+      "duree": "3:20",
       "auteurs": [
        "Michel Jourdan",
        "Pierre Groscolas"
       ]
      }
-    ],
-    "want": 24,
-    "note": 5.0,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Pierre Groscolas",
-    "a": "Lady Lay ( Club Mix )",
-    "b": "Lady Lay ( Album Version )"
+    "a": "Lady Lay",
+    "b": "Un Jour Pas Comme Les Autres"
+   },
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1.19,
+    "haut": 4.47
    }
   },
   {
@@ -2671,33 +2415,21 @@
    "pos": "46",
    "pochette": "covers/621c33b1-fe45-4a28-b506-5c90949ae82e.webp",
    "avecPochette": true,
-   "discogs": 8855071,
-   "prix": {
-    "bas": 1.37,
-    "moyen": 2.72,
-    "haut": 4.96
-   },
+   "discogs": 577325,
    "infos": {
-    "label": "Sire",
-    "catno": "SRE 1027",
-    "pays": "US",
+    "label": "Carrere",
+    "catno": "49.359",
+    "pays": "France",
     "annee": 1978,
     "genres": [
-     "Electronic",
-     "Pop"
+     "Electronic"
     ],
     "styles": [
-     "Vocal",
      "Disco"
     ],
     "auteurs": [
-     "Brent Dowe",
      "Frank Farian",
-     "George Reyam",
-     "James McNaughton"
-    ],
-    "producteurs": [
-     "Frank Farian"
+     "George Reyam"
     ],
     "pistes": [
      {
@@ -2708,19 +2440,21 @@
      },
      {
       "position": "B",
-      "titre": "Rivers Of Babylon",
-      "duree": "4:16",
+      "titre": "Brown Girl In The Ring",
+      "duree": "4:04",
       "auteurs": []
      }
-    ],
-    "want": 48,
-    "note": 5.0,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Boney M.",
     "a": "Rivers Of Babylon",
-    "b": "Rivers Of Babylon"
+    "b": "Brown Girl In The Ring"
+   },
+   "prix": {
+    "bas": 0.2,
+    "moyen": 1,
+    "haut": 6
    }
   },
   {
@@ -2731,55 +2465,48 @@
    "pos": "47",
    "pochette": "covers/107ae17d-6a49-4747-9564-2ca59c30bd52.webp",
    "avecPochette": true,
-   "discogs": 3064717,
-   "prix": {
-    "bas": 3.64,
-    "moyen": 6.32,
-    "haut": 45.5
-   },
+   "discogs": 746408,
    "infos": {
-    "label": "ATCO Records",
-    "catno": "7080",
-    "pays": "US",
-    "annee": 1976,
+    "label": "Carrere",
+    "catno": "49.245",
+    "pays": "France",
+    "annee": 1977,
     "genres": [
      "Funk / Soul"
     ],
     "styles": [
      "Disco"
     ],
-    "producteurs": [
-     "Frank Farian"
-    ],
-    "arrangeurs": [
-     "Steven Hammer"
-    ],
     "pistes": [
      {
       "position": "A",
       "titre": "Sunny",
-      "duree": "3:59",
+      "duree": "4:00",
       "auteurs": [
        "Bobby Hebb"
       ]
      },
      {
       "position": "B",
-      "titre": "Sunny",
-      "duree": "3:59",
+      "titre": "New York City",
+      "duree": "3:30",
       "auteurs": [
-       "Bobby Hebb"
+       "Frank Farian",
+       "George Reyam",
+       "Stefan Klinkhammer"
       ]
      }
-    ],
-    "want": 133,
-    "note": 3.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Boney M.",
     "a": "Sunny",
-    "b": "Sunny"
+    "b": "New York City"
+   },
+   "prix": {
+    "bas": 0.1,
+    "moyen": 2.15,
+    "haut": 6
    }
   },
   {
@@ -2790,55 +2517,49 @@
    "pos": "48",
    "pochette": "covers/8b23ad06-c1af-45fb-b7ad-d20acb206dd5.webp",
    "avecPochette": true,
-   "discogs": 4065042,
-   "prix": {
-    "bas": 1.55,
-    "moyen": 4.09,
-    "haut": 16.38
-   },
+   "discogs": 358356,
    "infos": {
-    "label": "ATCO Records",
-    "catno": "45-7063",
-    "pays": "US",
+    "label": "Disques Carrere",
+    "catno": "49.226",
+    "pays": "France",
     "annee": 1976,
     "genres": [
+     "Electronic",
      "Funk / Soul"
     ],
     "styles": [
-     "Disco"
-    ],
-    "auteurs": [
-     "Frank Farian",
-     "George Reyam"
-    ],
-    "producteurs": [
-     "Frank Farian"
-    ],
-    "arrangeurs": [
-     "Steven Hammer"
+     "Disco",
+     "Funk"
     ],
     "pistes": [
      {
       "position": "A",
       "titre": "Daddy Cool",
-      "duree": "3:27",
-      "auteurs": []
+      "duree": "4:05",
+      "auteurs": [
+       "Frank Farian",
+       "George Reyam"
+      ]
      },
      {
       "position": "B",
-      "titre": "Daddy Cool",
-      "duree": "3:27",
-      "auteurs": []
+      "titre": "No Women No Cry",
+      "duree": "5:00",
+      "auteurs": [
+       "Bob Marley"
+      ]
      }
-    ],
-    "want": 94,
-    "note": 4.67,
-    "votes": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "Boney M.",
     "a": "Daddy Cool",
-    "b": "Daddy Cool"
+    "b": "No Women No Cry"
+   },
+   "prix": {
+    "bas": 0.45,
+    "moyen": 3.99,
+    "haut": 10
    }
   },
   {
@@ -2866,9 +2587,6 @@
      "Björn Ulvaeus",
      "Stig Anderson"
     ],
-    "producteurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -2882,10 +2600,7 @@
       "duree": "3:16",
       "auteurs": []
      }
-    ],
-    "want": 169,
-    "note": 4.14,
-    "votes": 170
+    ]
    },
    "titresDiscogs": {
     "artiste": "ABBA",
@@ -2906,18 +2621,13 @@
    "pos": "50",
    "pochette": "covers/77695495-ebbc-4b11-bf5c-138f8b6d6636.webp",
    "avecPochette": true,
-   "discogs": 4592954,
-   "prix": {
-    "bas": 0.6,
-    "moyen": 2.39,
-    "haut": 5.99
-   },
+   "discogs": 3130337,
    "infos": {
-    "label": "Contempo",
-    "catno": "CS.2068",
-    "pays": "UK",
-    "annee": 1975,
+    "label": "Disques Flèche",
+    "catno": "6061 851",
+    "pays": "France",
     "genres": [
+     "Electronic",
      "Funk / Soul"
     ],
     "styles": [
@@ -2926,142 +2636,136 @@
     "auteurs": [
      "Subway"
     ],
-    "producteurs": [
-     "S.A. Creations Artistiques"
-    ],
     "pistes": [
      {
       "position": "A",
       "titre": "Chinese Kung Fu",
-      "duree": "",
+      "duree": "3:00",
       "auteurs": []
      },
      {
       "position": "B",
-      "titre": "Chinese Kung Fu (Disco Version)",
-      "duree": "",
+      "titre": "Rythm Kung Fu",
+      "duree": "3:02",
       "auteurs": []
      }
-    ],
-    "want": 43,
-    "note": 3.5,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Banzaii",
     "a": "Chinese Kung Fu",
-    "b": "Chinese Kung Fu (Disco Version)"
+    "b": "Rythm Kung Fu"
+   },
+   "prix": {
+    "bas": 0.5,
+    "moyen": 3,
+    "haut": 5.9
    }
   },
   {
    "id": "0118cc28-3945-4e8b-8462-c9dfaf010528",
-   "artiste": "ABBA",
+   "artiste": "ABBA, Björn & Benny, Agnetha & Anni-Frid",
    "a": "Waterloo",
    "b": "Watch Out",
    "pos": "51",
    "pochette": "covers/0118cc28-3945-4e8b-8462-c9dfaf010528.webp",
    "avecPochette": true,
-   "discogs": 31339168,
+   "discogs": 358174,
    "infos": {
-    "label": "Not On Label (ABBA)",
-    "pays": "UK",
-    "annee": 2024,
+    "label": "Vogue",
+    "catno": "45. X. 3075",
+    "pays": "France",
+    "annee": 1974,
     "genres": [
+     "Rock",
      "Pop"
+    ],
+    "styles": [
+     "Schlager",
+     "Europop"
+    ],
+    "auteurs": [
+     "Benny Andersson",
+     "Björn Ulvaeus",
+     "Stig Anderson"
     ],
     "pistes": [
      {
-      "position": "A1",
+      "position": "A",
       "titre": "Waterloo",
-      "duree": "",
+      "duree": "2:46",
       "auteurs": []
      },
      {
-      "position": "A2",
-      "titre": "Waterloo (Alternate Mix)",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "B1",
-      "titre": "Waterloo (Swedish)",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "B2",
-      "titre": "Waterloo (German)",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "B3",
-      "titre": "Waterloo (French)",
-      "duree": "",
+      "position": "B",
+      "titre": "Watch Out",
+      "duree": "3:46",
       "auteurs": []
      }
-    ],
-    "want": 27
+    ]
    },
    "titresDiscogs": {
-    "artiste": "ABBA",
-    "a": "Waterloo / Waterloo (Alternate Mix)",
-    "b": "Waterloo (Swedish) / Waterloo (German) / Waterloo (French)"
+    "artiste": "ABBA, Björn & Benny, Agnetha & Anni-Frid",
+    "a": "Waterloo",
+    "b": "Watch Out"
+   },
+   "prix": {
+    "bas": 0.49,
+    "moyen": 2.48,
+    "haut": 10
    }
   },
   {
    "id": "4d3f1be3-da1f-410b-9d95-a559ebc45586",
    "artiste": "Ray Charles",
-   "a": "What'd I Say (1)",
-   "b": "What'd I Say (2)",
+   "a": "What'd I Say (Part. 1)",
+   "b": "What'd I Say (Part. 2)",
    "pos": "52",
    "pochette": "covers/4d3f1be3-da1f-410b-9d95-a559ebc45586.webp",
    "avecPochette": true,
-   "discogs": 11251175,
-   "prix": {
-    "bas": 2.99,
-    "moyen": 5.09,
-    "haut": 7.18
-   },
+   "discogs": 6454509,
    "infos": {
     "label": "Atlantic",
-    "catno": "212013",
+    "catno": "650148",
     "pays": "France",
+    "annee": 1969,
     "genres": [
-     "Rock"
+     "Jazz",
+     "Funk / Soul",
+     "Blues",
+     "Pop"
+    ],
+    "styles": [
+     "Rhythm & Blues",
+     "Soul"
+    ],
+    "auteurs": [
+     "Ray Charles"
     ],
     "pistes": [
      {
-      "position": "A1",
-      "titre": "What'D I Say (Part 1)",
+      "position": "A",
+      "titre": "What'd I Say (Part. 1)",
       "duree": "3:05",
       "auteurs": []
      },
      {
-      "position": "A2",
-      "titre": "What'D I Say (Part 2)",
+      "position": "B",
+      "titre": "What'd I Say (Part. 2)",
       "duree": "1:59",
       "auteurs": []
-     },
-     {
-      "position": "B1",
-      "titre": "Blackjack",
-      "duree": "2:15",
-      "auteurs": []
-     },
-     {
-      "position": "B2",
-      "titre": "Heartbreaker",
-      "duree": "2:51",
-      "auteurs": []
      }
-    ],
-    "want": 11
+    ]
    },
    "titresDiscogs": {
-    "artiste": "Ray Charles And His Orchestra",
-    "a": "What'D I Say (Part 1) / What'D I Say (Part 2)",
-    "b": "Blackjack / Heartbreaker"
+    "artiste": "Ray Charles",
+    "a": "What'd I Say (Part. 1)",
+    "b": "What'd I Say (Part. 2)"
+   },
+   "prix": {
+    "bas": 0.99,
+    "moyen": 5,
+    "haut": 10
    }
   },
   {
@@ -3072,46 +2776,49 @@
    "pos": "53",
    "pochette": "covers/cba09af8-fbbb-4bef-bf90-04fb10d41834.webp",
    "avecPochette": true,
-   "discogs": 7776398,
-   "prix": {
-    "bas": 1.99,
-    "moyen": 1.99,
-    "haut": 1.99
-   },
+   "discogs": 1446385,
    "infos": {
-    "label": "Little Prune Music",
-    "catno": "JD 460516",
+    "label": "Monument",
+    "catno": "MNT 2752",
     "pays": "France",
-    "annee": 1990,
+    "annee": 1975,
     "genres": [
-     "Pop"
+     "Rock"
     ],
     "styles": [
-     "Chanson",
-     "Vocal"
+     "Country Rock",
+     "Soft Rock",
+     "Rockabilly"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "I Can Help (Nouvelle Version)",
-      "duree": "3:52",
-      "auteurs": []
+      "titre": "I Can Help",
+      "duree": "2:57",
+      "auteurs": [
+       "Billy Swan"
+      ]
      },
      {
       "position": "B",
-      "titre": "Sound Of Love",
-      "duree": "3:40",
-      "auteurs": []
+      "titre": "Ways Of A Woman In Love",
+      "duree": "3:11",
+      "auteurs": [
+       "Bill Justis",
+       "Charlie Rich"
+      ]
      }
-    ],
-    "want": 1,
-    "note": 5.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Billy Swan",
-    "a": "I Can Help (Nouvelle Version)",
-    "b": "Sound Of Love"
+    "a": "I Can Help",
+    "b": "Ways Of A Woman In Love"
+   },
+   "prix": {
+    "bas": 0.1,
+    "moyen": 1.9,
+    "haut": 7
    }
   },
   {
@@ -3122,51 +2829,49 @@
    "pos": "54",
    "pochette": "covers/d7a43a14-7059-4611-8c15-85a57f679cc1.webp",
    "avecPochette": true,
-   "discogs": 7480756,
-   "prix": {
-    "bas": 25,
-    "moyen": 28.67,
-    "haut": 32.33
-   },
+   "discogs": 5193194,
    "infos": {
     "label": "Capitol Records",
-    "catno": "S7C-11233",
-    "pays": "Brazil",
-    "annee": 1974,
+    "catno": "2C008-81170",
+    "pays": "France",
+    "annee": 1982,
     "genres": [
      "Rock"
     ],
     "styles": [
      "Rock & Roll"
     ],
+    "auteurs": [
+     "Gene Vincent"
+    ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Be-Bop A Lula",
-      "duree": "",
+      "titre": "Be-Bop-A-Lula",
+      "duree": "2:31",
       "auteurs": [
-       "Gene Vincent",
        "Sheriff Tex Davis"
       ]
      },
      {
       "position": "B",
-      "titre": "Blue Jean Bop",
-      "duree": "",
+      "titre": "Baby Blue",
+      "duree": "2:26",
       "auteurs": [
-       "Gene Vincent",
-       "Hal Levy"
+       "Bobby Jones"
       ]
      }
-    ],
-    "want": 6,
-    "note": 5.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Gene Vincent",
-    "a": "Be-Bop A Lula",
-    "b": "Blue Jean Bop"
+    "a": "Be-Bop-A-Lula",
+    "b": "Baby Blue"
+   },
+   "prix": {
+    "bas": 1,
+    "moyen": 4.6,
+    "haut": 8
    }
   },
   {
@@ -3227,10 +2932,7 @@
       "duree": "0:40",
       "auteurs": []
      }
-    ],
-    "want": 139,
-    "note": 4.13,
-    "votes": 60
+    ]
    },
    "titresDiscogs": {
     "artiste": "Début De Soirée",
@@ -3259,11 +2961,6 @@
     "genres": [
      "Pop"
     ],
-    "producteurs": [
-     "Marc Beaulieu",
-     "Andre Di Cesare",
-     "Roch Voisine"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -3282,8 +2979,7 @@
        "Stéphane Lessard"
       ]
      }
-    ],
-    "want": 5
+    ]
    },
    "titresDiscogs": {
     "artiste": "Roch Voisine",
@@ -3310,9 +3006,6 @@
     "styles": [
      "Soft Rock"
     ],
-    "producteurs": [
-     "Gus Dudgeon"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -3334,10 +3027,7 @@
        "Kiki Dee"
       ]
      }
-    ],
-    "want": 89,
-    "note": 3.95,
-    "votes": 123
+    ]
    },
    "titresDiscogs": {
     "artiste": "Elton John & Kiki Dee",
@@ -3354,7 +3044,7 @@
    "id": "c91ab752-0a83-4b4e-8ff1-46f11f4f7a56",
    "artiste": "Stevie Wonder",
    "a": "I Just Called To Say I Love You",
-   "b": "I Just Called To Say I Love You (Instrumental)",
+   "b": "I Just Called To Say I Love You (Instru)",
    "pos": "58",
    "pochette": "covers/c91ab752-0a83-4b4e-8ff1-46f11f4f7a56-mwqqvyxl.webp",
    "avecPochette": true,
@@ -3383,12 +3073,6 @@
     "auteurs": [
      "Stevie Wonder"
     ],
-    "producteurs": [
-     "Stevie Wonder"
-    ],
-    "arrangeurs": [
-     "Stevie Wonder"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -3402,10 +3086,7 @@
       "duree": "4:16",
       "auteurs": []
      }
-    ],
-    "want": 77,
-    "note": 3.96,
-    "votes": 97
+    ]
    },
    "titresDiscogs": {
     "artiste": "Stevie Wonder",
@@ -3444,10 +3125,7 @@
       "duree": "3:51",
       "auteurs": []
      }
-    ],
-    "want": 50,
-    "note": 3.5,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Eagles",
@@ -3489,10 +3167,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 58,
-    "note": 4.33,
-    "votes": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "Marvin Gaye",
@@ -3542,10 +3217,7 @@
        "Barry Gibb"
       ]
      }
-    ],
-    "want": 11,
-    "note": 4.5,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Bee Gees",
@@ -3592,10 +3264,7 @@
       "duree": "4:52",
       "auteurs": []
      }
-    ],
-    "want": 46,
-    "note": 4.5,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Stevie Wonder",
@@ -3634,9 +3303,6 @@
     "auteurs": [
      "Christian Dingler"
     ],
-    "producteurs": [
-     "Bob Mehdi"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -3650,10 +3316,7 @@
       "duree": "2:47",
       "auteurs": []
      }
-    ],
-    "want": 73,
-    "note": 3.63,
-    "votes": 115
+    ]
    },
    "titresDiscogs": {
     "artiste": "Cookie Dingler",
@@ -3663,23 +3326,18 @@
   },
   {
    "id": "72bf444a-c441-44a2-9926-1d97d04763ce",
-   "artiste": "The Shadows",
+   "artiste": "Shadows, The",
    "a": "Apache",
    "b": "Guitar Tango",
    "pos": "65",
    "pochette": "covers/72bf444a-c441-44a2-9926-1d97d04763ce.webp",
    "avecPochette": true,
-   "discogs": 2901049,
-   "prix": {
-    "bas": 2,
-    "moyen": 5,
-    "haut": 7.27
-   },
+   "discogs": 1813688,
    "infos": {
-    "label": "Pathé Marconi EMI",
-    "catno": "2C008-04700",
+    "label": "Columbia",
+    "catno": "2C 004 - 04.700",
     "pays": "France",
-    "annee": 1982,
+    "annee": 1975,
     "genres": [
      "Rock"
     ],
@@ -3690,7 +3348,7 @@
      {
       "position": "A",
       "titre": "Apache",
-      "duree": "",
+      "duree": "2:53",
       "auteurs": [
        "Jerry Lordan"
       ]
@@ -3704,15 +3362,17 @@
        "Norman Maine"
       ]
      }
-    ],
-    "want": 11,
-    "note": 4.5,
-    "votes": 6
+    ]
    },
    "titresDiscogs": {
     "artiste": "Shadows, The",
     "a": "Apache",
     "b": "Guitar Tango"
+   },
+   "prix": {
+    "bas": 0.75,
+    "moyen": 2.99,
+    "haut": 9.1
    }
   },
   {
@@ -3747,9 +3407,6 @@
      "Geoff Downes",
      "Trevor Horn"
     ],
-    "producteurs": [
-     "The Buggles"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -3763,10 +3420,7 @@
       "duree": "3:27",
       "auteurs": []
      }
-    ],
-    "want": 329,
-    "note": 4.06,
-    "votes": 289
+    ]
    },
    "titresDiscogs": {
     "artiste": "Buggles, The",
@@ -3829,10 +3483,7 @@
        "Siobhan Fahey"
       ]
      }
-    ],
-    "want": 120,
-    "note": 4.31,
-    "votes": 45
+    ]
    },
    "titresDiscogs": {
     "artiste": "Bananarama",
@@ -3865,10 +3516,6 @@
     "styles": [
      "Hard Rock"
     ],
-    "producteurs": [
-     "Kenny Laguna",
-     "Ritchie Cordell"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -3887,10 +3534,7 @@
        "Joan Jett"
       ]
      }
-    ],
-    "want": 98,
-    "note": 4.25,
-    "votes": 24
+    ]
    },
    "titresDiscogs": {
     "artiste": "Joan Jett & The Blackhearts",
@@ -3941,10 +3585,7 @@
        "Gerry Goffin"
       ]
      }
-    ],
-    "want": 33,
-    "note": 5.0,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Little Eva",
@@ -3977,9 +3618,6 @@
     "styles": [
      "Pop Rock"
     ],
-    "producteurs": [
-     "Glyn Johns"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -3999,10 +3637,7 @@
        "Téléphone"
       ]
      }
-    ],
-    "want": 20,
-    "note": 4.8,
-    "votes": 5
+    ]
    },
    "titresDiscogs": {
     "artiste": "Téléphone",
@@ -4012,56 +3647,55 @@
   },
   {
    "id": "d1992b5b-c8b5-416d-ade1-1393d3af3002",
-   "artiste": "LIO",
-   "a": "Le Le Banana Split",
+   "artiste": "Lio",
+   "a": "Le Banana Split",
    "b": "Teenager",
    "pos": "71",
    "pochette": "covers/d1992b5b-c8b5-416d-ade1-1393d3af3002.webp",
    "avecPochette": true,
-   "discogs": 5833321,
-   "prix": {
-    "bas": 4,
-    "moyen": 13.5,
-    "haut": 25
-   },
+   "discogs": 650715,
    "infos": {
-    "label": "Ariola",
-    "catno": "PRO 1112",
+    "label": "Arabella",
+    "catno": "100878",
     "pays": "France",
-    "annee": 1995,
+    "annee": 1979,
     "genres": [
      "Electronic",
      "Pop"
     ],
     "styles": [
      "Chanson",
-     "Synth-pop"
+     "Synth-pop",
+     "New Wave"
     ],
-    "producteurs": [
-     "Marc Moulin"
+    "auteurs": [
+     "Hagen Dierks",
+     "Jay Alanski"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Le Banana Split (Disco Mix)",
-      "duree": "6:00",
+      "titre": "Le Banana Split",
+      "duree": "2:35",
       "auteurs": []
      },
      {
       "position": "B",
-      "titre": "Le Banana Split (Radio Mix)",
-      "duree": "2:35",
+      "titre": "Teenager",
+      "duree": "2:55",
       "auteurs": []
      }
-    ],
-    "want": 120,
-    "note": 4.8,
-    "votes": 5
+    ]
    },
    "titresDiscogs": {
     "artiste": "Lio",
-    "a": "Le Banana Split (Disco Mix)",
-    "b": "Le Banana Split (Radio Mix)"
+    "a": "Le Banana Split",
+    "b": "Teenager"
+   },
+   "prix": {
+    "bas": 0.5,
+    "moyen": 3.98,
+    "haut": 11.99
    }
   },
   {
@@ -4087,9 +3721,6 @@
      "Jaap Eggermont",
      "Martin Duiser"
     ],
-    "producteurs": [
-     "Jaap Eggermont"
-    ],
     "pistes": [
      {
       "position": "B",
@@ -4097,10 +3728,7 @@
       "duree": "3:30",
       "auteurs": []
      }
-    ],
-    "want": 44,
-    "note": 3.39,
-    "votes": 61
+    ]
    },
    "titresDiscogs": {
     "artiste": "Stars On 45",
@@ -4141,10 +3769,6 @@
     "auteurs": [
      "Thierry Hazard"
     ],
-    "producteurs": [
-     "Daniel Glikmans",
-     "Thierry Hazard"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4158,10 +3782,7 @@
       "duree": "4:19",
       "auteurs": []
      }
-    ],
-    "want": 60,
-    "note": 3.9,
-    "votes": 89
+    ]
    },
    "titresDiscogs": {
     "artiste": "Thierry Hazard",
@@ -4192,9 +3813,6 @@
     "auteurs": [
      "Steven Greenberg"
     ],
-    "producteurs": [
-     "Steven Greenberg"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4208,8 +3826,7 @@
       "duree": "3:09",
       "auteurs": []
      }
-    ],
-    "want": 10
+    ]
    },
    "titresDiscogs": {
     "artiste": "Lipps, Inc.",
@@ -4239,9 +3856,6 @@
     "auteurs": [
      "Lennon-McCartney"
     ],
-    "producteurs": [
-     "George Martin"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4255,64 +3869,12 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 48,
-    "note": 4.75,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Beatles, The",
     "a": "Hey Jude",
     "b": "Revolution"
-   }
-  },
-  {
-   "id": "10c71a16-e948-4dbe-8df5-5d7df821fadc",
-   "artiste": "Opus",
-   "a": "Live Is Life",
-   "b": "Up And Down",
-   "pos": "76",
-   "pochette": "covers/10c71a16-e948-4dbe-8df5-5d7df821fadc.webp",
-   "avecPochette": true,
-   "discogs": 34452028,
-   "infos": {
-    "label": "Polydor",
-    "catno": "S/N-529",
-    "pays": "Mexico",
-    "genres": [
-     "Rock"
-    ],
-    "styles": [
-     "Pop Rock"
-    ],
-    "producteurs": [
-     "Peter Müller"
-    ],
-    "pistes": [
-     {
-      "position": "A",
-      "titre": "Live Is Life",
-      "duree": "3:30",
-      "auteurs": [
-       "Opus"
-      ]
-     },
-     {
-      "position": "B",
-      "titre": "Live Is Life",
-      "duree": "3:30",
-      "auteurs": [
-       "Ewald Pfleger",
-       "Opus"
-      ]
-     }
-    ],
-    "want": 8
-   },
-   "titresDiscogs": {
-    "artiste": "Opus",
-    "a": "Live Is Life",
-    "b": "Live Is Life"
    }
   },
   {
@@ -4323,66 +3885,51 @@
    "pos": "77",
    "pochette": "covers/129b5093-521c-4048-9ae4-d36699c92141.webp",
    "avecPochette": true,
-   "discogs": 6443950,
-   "prix": {
-    "bas": 4,
-    "moyen": 6.74,
-    "haut": 16
-   },
+   "discogs": 893986,
    "infos": {
-    "label": "Carrere",
-    "catno": "8803",
-    "pays": "France",
-    "annee": 1987,
+    "label": "RCA Victor",
+    "catno": "63-1008",
+    "pays": "Germany",
+    "annee": 1969,
     "genres": [
-     "Hip Hop",
+     "Rock",
      "Pop"
     ],
     "styles": [
-     "Europop"
-    ],
-    "auteurs": [
-     "Don Kirshner"
-    ],
-    "producteurs": [
-     "Jeff Barry"
+     "Vocal",
+     "Bubblegum",
+     "Rock & Roll"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Sugar Sugar (Candyfloss Mix)",
-      "duree": "5:25",
+      "titre": "Sugar, Sugar",
+      "duree": "2:48",
       "auteurs": [
        "Andy Kim",
        "Jeff Barry"
       ]
      },
      {
-      "position": "B1",
-      "titre": "Sugar Sugar (Original Version)",
-      "duree": "2:45",
+      "position": "B",
+      "titre": "Melody Hill",
+      "duree": "2:27",
       "auteurs": [
-       "Andy Kim",
-       "Jeff Barry"
-      ]
-     },
-     {
-      "position": "B2",
-      "titre": "Sugar And Spice",
-      "duree": "2:01",
-      "auteurs": [
-       "Jeff Barry"
+       "Mark Barkan",
+       "Ritchie Adams"
       ]
      }
-    ],
-    "want": 30,
-    "note": 3.8,
-    "votes": 5
+    ]
    },
    "titresDiscogs": {
     "artiste": "Archies, The",
-    "a": "Sugar Sugar (Candyfloss Mix)",
-    "b": "Sugar Sugar (Original Version) / Sugar And Spice"
+    "a": "Sugar, Sugar",
+    "b": "Melody Hill"
+   },
+   "prix": {
+    "bas": 0.48,
+    "moyen": 1.49,
+    "haut": 7.18
    }
   },
   {
@@ -4393,56 +3940,67 @@
    "pos": "78",
    "pochette": "covers/641dfaff-f706-45c7-b9e9-ff47cba6a2bc.webp",
    "avecPochette": true,
-   "discogs": 1068580,
-   "prix": {
-    "bas": 1.85,
-    "moyen": 3,
-    "haut": 8
-   },
+   "discogs": 6072567,
    "infos": {
-    "label": "Eurodisc",
-    "catno": "911 119",
+    "label": "Fontana",
+    "catno": "260.129 MF",
     "pays": "France",
-    "annee": 1977,
+    "annee": 1968,
     "genres": [
-     "Funk / Soul"
+     "Rock",
+     "Funk / Soul",
+     "Pop"
     ],
     "styles": [
-     "Disco"
+     "Pop Rock",
+     "Soul",
+     "Beat"
     ],
     "pistes": [
      {
       "position": "A",
-      "titre": "Baby Come Back",
-      "duree": "2:32",
-      "auteurs": []
+      "titre": "Baby, Come Back",
+      "duree": "2:38",
+      "auteurs": [
+       "Eddy Grant"
+      ]
      },
      {
       "position": "B",
-      "titre": "Johnny B. Goode",
-      "duree": "3:55",
-      "auteurs": []
+      "titre": "Hold Me Closer",
+      "duree": "2:30",
+      "auteurs": [
+       "Eddy Grant",
+       "Lincoln Gordon"
+      ]
      }
-    ],
-    "want": 18,
-    "note": 5.0,
-    "votes": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "Equals, The",
-    "a": "Baby Come Back",
-    "b": "Johnny B. Goode"
+    "a": "Baby, Come Back",
+    "b": "Hold Me Closer"
+   },
+   "prix": {
+    "bas": 0.8,
+    "moyen": 2.56,
+    "haut": 10
    }
   },
   {
    "id": "b6b58145-c500-49f0-a165-13ad669bc2d2",
    "artiste": "Ray Parker Jr.",
    "a": "Ghostbusters",
-   "b": "Ghostbusters (Instrumental)",
+   "b": "Ghostbusters (Instru)",
    "pos": "79",
    "pochette": "covers/b6b58145-c500-49f0-a165-13ad669bc2d2-mwqx04lj.webp",
    "avecPochette": true,
    "discogs": 8130818,
+   "prix": {
+    "bas": 0.5,
+    "moyen": 3,
+    "haut": 7
+   },
    "infos": {
     "label": "Arista",
     "catno": "106740",
@@ -4459,9 +4017,6 @@
     "auteurs": [
      "Ray Parker Jr."
     ],
-    "producteurs": [
-     "Ray Parker Jr."
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4475,20 +4030,12 @@
       "duree": "3:46",
       "auteurs": []
      }
-    ],
-    "want": 135,
-    "note": 4.17,
-    "votes": 52
+    ]
    },
    "titresDiscogs": {
     "artiste": "Ray Parker Jr.",
     "a": "Ghostbusters",
     "b": "Ghostbusters (Instrumental)"
-   },
-   "prix": {
-    "bas": 0.5,
-    "moyen": 3,
-    "haut": 7
    }
   },
   {
@@ -4519,12 +4066,6 @@
     "auteurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "producteurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
-    "arrangeurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4538,10 +4079,7 @@
       "duree": "3:28",
       "auteurs": []
      }
-    ],
-    "want": 245,
-    "note": 4.2,
-    "votes": 161
+    ]
    },
    "titresDiscogs": {
     "artiste": "ABBA",
@@ -4577,12 +4115,6 @@
     "auteurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "producteurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
-    "arrangeurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4596,10 +4128,7 @@
       "duree": "3:43",
       "auteurs": []
      }
-    ],
-    "want": 90,
-    "note": 4.15,
-    "votes": 159
+    ]
    },
    "titresDiscogs": {
     "artiste": "ABBA",
@@ -4638,9 +4167,6 @@
      "Björn Ulvaeus",
      "Stig Anderson"
     ],
-    "producteurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4654,10 +4180,7 @@
       "duree": "4:23",
       "auteurs": []
      }
-    ],
-    "want": 67,
-    "note": 3.97,
-    "votes": 130
+    ]
    },
    "titresDiscogs": {
     "artiste": "ABBA",
@@ -4688,12 +4211,6 @@
     "auteurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "producteurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
-    "arrangeurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4707,10 +4224,7 @@
       "duree": "3:34",
       "auteurs": []
      }
-    ],
-    "want": 60,
-    "note": 4.08,
-    "votes": 121
+    ]
    },
    "titresDiscogs": {
     "artiste": "ABBA",
@@ -4748,12 +4262,6 @@
     "auteurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "producteurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
-    "arrangeurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4767,10 +4275,7 @@
       "duree": "3:27",
       "auteurs": []
      }
-    ],
-    "want": 64,
-    "note": 4.07,
-    "votes": 129
+    ]
    },
    "titresDiscogs": {
     "artiste": "ABBA",
@@ -4808,12 +4313,6 @@
     "auteurs": [
      "Björn Ulvaeus & Benny Andersson"
     ],
-    "producteurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
-    "arrangeurs": [
-     "Björn Ulvaeus & Benny Andersson"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4827,10 +4326,7 @@
       "duree": "3:54",
       "auteurs": []
      }
-    ],
-    "want": 77,
-    "note": 4.11,
-    "votes": 113
+    ]
    },
    "titresDiscogs": {
     "artiste": "ABBA",
@@ -4870,13 +4366,6 @@
      "Soul",
      "Disco"
     ],
-    "producteurs": [
-     "Barry White"
-    ],
-    "arrangeurs": [
-     "Barry White",
-     "Gene Page"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4896,10 +4385,7 @@
        "Barry White"
       ]
      }
-    ],
-    "want": 94,
-    "note": 4.22,
-    "votes": 89
+    ]
    },
    "titresDiscogs": {
     "artiste": "Barry White",
@@ -4932,11 +4418,6 @@
     "styles": [
      "Ballad"
     ],
-    "producteurs": [
-     "Albhy Galuten",
-     "Bee Gees",
-     "Karl Richardson"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -4955,10 +4436,7 @@
        "Barry Gibb"
       ]
      }
-    ],
-    "want": 37,
-    "note": 3.91,
-    "votes": 94
+    ]
    },
    "titresDiscogs": {
     "artiste": "Bee Gees",
@@ -4988,11 +4466,6 @@
      "Soundtrack",
      "Disco"
     ],
-    "producteurs": [
-     "Albhy Galuten",
-     "Karl Richardson",
-     "Robin Gibb, Barry Gibb & Maurice Gibb"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5011,10 +4484,7 @@
        "Robin Gibb"
       ]
      }
-    ],
-    "want": 76,
-    "note": 4.06,
-    "votes": 68
+    ]
    },
    "titresDiscogs": {
     "artiste": "Bee Gees",
@@ -5060,11 +4530,6 @@
     "auteurs": [
      "Robin Gibb, Barry Gibb & Maurice Gibb"
     ],
-    "producteurs": [
-     "Albhy Galuten",
-     "Karl Richardson",
-     "Bee Gees"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5078,10 +4543,7 @@
       "duree": "4:43",
       "auteurs": []
      }
-    ],
-    "want": 117,
-    "note": 4.12,
-    "votes": 135
+    ]
    },
    "titresDiscogs": {
     "artiste": "Bee Gees",
@@ -5118,9 +4580,6 @@
     "auteurs": [
      "Fred Jay"
     ],
-    "producteurs": [
-     "Frank Farian"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5140,10 +4599,7 @@
        "Mats Björklund"
       ]
      }
-    ],
-    "want": 228,
-    "note": 4.05,
-    "votes": 108
+    ]
    },
    "titresDiscogs": {
     "artiste": "Boney M.",
@@ -5177,9 +4633,6 @@
     "styles": [
      "Disco"
     ],
-    "producteurs": [
-     "Frank Farian"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5200,10 +4653,7 @@
        "Fred Jay"
       ]
      }
-    ],
-    "want": 109,
-    "note": 4.16,
-    "votes": 97
+    ]
    },
    "titresDiscogs": {
     "artiste": "Boney M.",
@@ -5236,9 +4686,6 @@
     "styles": [
      "Disco"
     ],
-    "producteurs": [
-     "Frank Farian"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5257,10 +4704,7 @@
        "Bob Marley"
       ]
      }
-    ],
-    "want": 129,
-    "note": 3.74,
-    "votes": 35
+    ]
    },
    "titresDiscogs": {
     "artiste": "Boney M.",
@@ -5288,9 +4732,6 @@
     "styles": [
      "Disco"
     ],
-    "producteurs": [
-     "Frank Farian"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5311,10 +4752,7 @@
        "The Smoke"
       ]
      }
-    ],
-    "want": 40,
-    "note": 3.65,
-    "votes": 71
+    ]
    },
    "titresDiscogs": {
     "artiste": "Boney M.",
@@ -5347,9 +4785,6 @@
     "styles": [
      "Disco"
     ],
-    "producteurs": [
-     "Frank Farian"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5369,10 +4804,7 @@
        "Michael O'Hara"
       ]
      }
-    ],
-    "want": 18,
-    "note": 3.2,
-    "votes": 20
+    ]
    },
    "titresDiscogs": {
     "artiste": "Boney M.",
@@ -5405,9 +4837,6 @@
     "styles": [
      "Disco"
     ],
-    "producteurs": [
-     "Frank Farian"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5426,10 +4855,7 @@
        "Keith Forsey"
       ]
      }
-    ],
-    "want": 23,
-    "note": 3.81,
-    "votes": 16
+    ]
    },
    "titresDiscogs": {
     "artiste": "Boney M.",
@@ -5465,9 +4891,6 @@
      "New Wave",
      "Synth-pop"
     ],
-    "producteurs": [
-     "Steve Levine"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5489,10 +4912,7 @@
        "Culture Club"
       ]
      }
-    ],
-    "want": 80,
-    "note": 4.13,
-    "votes": 87
+    ]
    },
    "titresDiscogs": {
     "artiste": "Culture Club",
@@ -5533,10 +4953,6 @@
      "Pop Rock",
      "Synth-pop"
     ],
-    "producteurs": [
-     "David Bowie",
-     "Nile Rodgers"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5555,10 +4971,7 @@
        "Giorgio Moroder"
       ]
      }
-    ],
-    "want": 220,
-    "note": 4.13,
-    "votes": 196
+    ]
    },
    "titresDiscogs": {
     "artiste": "David Bowie",
@@ -5587,10 +5000,6 @@
     "styles": [
      "Synth-pop"
     ],
-    "producteurs": [
-     "David Bowie",
-     "Nile Rodgers"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5609,10 +5018,7 @@
        "David Bowie"
       ]
      }
-    ],
-    "want": 101,
-    "note": 4.24,
-    "votes": 136
+    ]
    },
    "titresDiscogs": {
     "artiste": "David Bowie",
@@ -5650,9 +5056,6 @@
     "styles": [
      "Classic Rock"
     ],
-    "producteurs": [
-     "Bill Szymczyk"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5674,10 +5077,7 @@
        "John David Souther"
       ]
      }
-    ],
-    "want": 92,
-    "note": 4.25,
-    "votes": 57
+    ]
    },
    "titresDiscogs": {
     "artiste": "Eagles",
@@ -5711,9 +5111,6 @@
     "auteurs": [
      "Romano Musumarra"
     ],
-    "arrangeurs": [
-     "Romano Musumarra"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5730,10 +5127,7 @@
       "duree": "4:45",
       "auteurs": []
      }
-    ],
-    "want": 115,
-    "note": 3.9,
-    "votes": 134
+    ]
    },
    "titresDiscogs": {
     "artiste": "Elsa",
@@ -5787,10 +5181,7 @@
       "duree": "3:44",
       "auteurs": []
      }
-    ],
-    "want": 25,
-    "note": 3.98,
-    "votes": 58
+    ]
    },
    "titresDiscogs": {
     "artiste": "France Gall",
@@ -5839,10 +5230,7 @@
       "duree": "4:40",
       "auteurs": []
      }
-    ],
-    "want": 25,
-    "note": 4.57,
-    "votes": 7
+    ]
    },
    "titresDiscogs": {
     "artiste": "France Gall",
@@ -5878,9 +5266,6 @@
      "Chanson",
      "Disco"
     ],
-    "producteurs": [
-     "Michel Berger"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5898,10 +5283,7 @@
        "Michel Berger"
       ]
      }
-    ],
-    "want": 31,
-    "note": 4.67,
-    "votes": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "France Gall",
@@ -5938,9 +5320,6 @@
      "Mike Leander",
      "Gary Glitter"
     ],
-    "producteurs": [
-     "Mike Leander"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -5954,10 +5333,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 55,
-    "note": 4.12,
-    "votes": 50
+    ]
    },
    "titresDiscogs": {
     "artiste": "Gary Glitter",
@@ -5989,9 +5365,6 @@
      "Gary Glitter",
      "Mike Leander"
     ],
-    "producteurs": [
-     "Mike Leander"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6005,10 +5378,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 16,
-    "note": 3.06,
-    "votes": 16
+    ]
    },
    "prix": {
     "bas": 0.5,
@@ -6045,9 +5415,6 @@
      "Gary Glitter",
      "Mike Leander"
     ],
-    "producteurs": [
-     "Mike Leander"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6061,10 +5428,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 14,
-    "note": 3.6,
-    "votes": 5
+    ]
    },
    "titresDiscogs": {
     "artiste": "Gary Glitter",
@@ -6101,9 +5465,6 @@
      "Gipsy Kings",
      "Los Reyes"
     ],
-    "producteurs": [
-     "Sara Music"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6117,10 +5478,7 @@
       "duree": "2:40",
       "auteurs": []
      }
-    ],
-    "want": 56,
-    "note": 3.59,
-    "votes": 29
+    ]
    },
    "titresDiscogs": {
     "artiste": "Gipsy Kings",
@@ -6191,8 +5549,7 @@
       "duree": "1:41",
       "auteurs": []
      }
-    ],
-    "want": 0
+    ]
    },
    "titresDiscogs": {
     "artiste": "Holiday Bells, The",
@@ -6238,10 +5595,7 @@
       "duree": "3:52",
       "auteurs": []
      }
-    ],
-    "want": 8,
-    "note": 4.0,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jean-Jacques Goldman",
@@ -6275,10 +5629,6 @@
     "auteurs": [
      "Jean-Jacques Goldman"
     ],
-    "producteurs": [
-     "Marc Lumbroso",
-     "Jean-Jacques Goldman"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6294,10 +5644,7 @@
       "duree": "2:35",
       "auteurs": []
      }
-    ],
-    "want": 57,
-    "note": 4.2,
-    "votes": 49
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jean-Jacques Goldman / Michael Jones",
@@ -6330,9 +5677,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Jacques Plait"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6358,10 +5702,7 @@
        "Roberto Livraghi"
       ]
      }
-    ],
-    "want": 15,
-    "note": 3.13,
-    "votes": 8
+    ]
    },
    "titresDiscogs": {
     "artiste": "Joe Dassin",
@@ -6411,10 +5752,7 @@
        "Peter Allen"
       ]
      }
-    ],
-    "want": 26,
-    "note": 3.7,
-    "votes": 50
+    ]
    },
    "titresDiscogs": {
     "artiste": "John Travolta",
@@ -6450,9 +5788,6 @@
      "Rock & Roll",
      "Soft Rock"
     ],
-    "producteurs": [
-     "Louis St. Louis"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6466,10 +5801,7 @@
       "duree": "2:08",
       "auteurs": []
      }
-    ],
-    "want": 43,
-    "note": 3.85,
-    "votes": 48
+    ]
    },
    "titresDiscogs": {
     "artiste": "John Travolta, Olivia Newton-John",
@@ -6515,10 +5847,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 43,
-    "note": 3.5,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "John Travolta, Olivia Newton-John",
@@ -6555,15 +5884,6 @@
      "Dimitri Yerasimos",
      "Lagaf'"
     ],
-    "producteurs": [
-     "Dimitri Yerasimos",
-     "Goofie Show",
-     "Hervé Hubert",
-     "Emmanuel Jacques"
-    ],
-    "arrangeurs": [
-     "Dimitri Yerasimos"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6577,10 +5897,7 @@
       "duree": "3:55",
       "auteurs": []
      }
-    ],
-    "want": 32,
-    "note": 3.68,
-    "votes": 63
+    ]
    },
    "titresDiscogs": {
     "artiste": "Lagaf'",
@@ -6616,10 +5933,7 @@
     "auteurs": [
      "Alain Souchon",
      "Laurent Voulzy"
-    ],
-    "want": 13,
-    "note": 3.6,
-    "votes": 25
+    ]
    },
    "titresDiscogs": {
     "artiste": "Laurent Voulzy",
@@ -6648,9 +5962,6 @@
     "annee": 1966,
     "genres": [
      "Folk, World, & Country"
-    ],
-    "arrangeurs": [
-     "Jack Defer"
     ],
     "pistes": [
      {
@@ -6686,10 +5997,7 @@
        "Robert Capenoul"
       ]
      }
-    ],
-    "want": 1,
-    "note": 3.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Les Capenoules",
@@ -6746,10 +6054,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 0,
-    "note": 4.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Les Capenoules Accompagnés par L'Orchestre De Jack Defer",
@@ -6787,9 +6092,6 @@
      "Ewald Pfleger",
      "Opus"
     ],
-    "producteurs": [
-     "Peter Müller"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6803,10 +6105,7 @@
       "duree": "3:49",
       "auteurs": []
      }
-    ],
-    "want": 110,
-    "note": 4.08,
-    "votes": 135
+    ]
    },
    "titresDiscogs": {
     "artiste": "Opus",
@@ -6834,9 +6133,6 @@
     "styles": [
      "Synth-pop"
     ],
-    "producteurs": [
-     "George Martin"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6855,10 +6151,7 @@
        "Paul McCartney"
       ]
      }
-    ],
-    "want": 145,
-    "note": 4.19,
-    "votes": 182
+    ]
    },
    "titresDiscogs": {
     "artiste": "Paul McCartney & Michael Jackson",
@@ -6915,10 +6208,7 @@
        "Pierre Bachelet"
       ]
      }
-    ],
-    "want": 22,
-    "note": 4.0,
-    "votes": 63
+    ]
    },
    "titresDiscogs": {
     "artiste": "Pierre Bachelet",
@@ -6951,10 +6241,6 @@
     "styles": [
      "Pop Rock"
     ],
-    "producteurs": [
-     "Queen",
-     "Mike Stone"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -6972,10 +6258,7 @@
        "Brian May"
       ]
      }
-    ],
-    "want": 203,
-    "note": 4.26,
-    "votes": 119
+    ]
    },
    "titresDiscogs": {
     "artiste": "Queen",
@@ -7004,10 +6287,6 @@
      "Soft Rock",
      "Hard Rock"
     ],
-    "producteurs": [
-     "Keith Olsen",
-     "Scorpions"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7028,10 +6307,7 @@
        "Rudolf Schenker"
       ]
      }
-    ],
-    "want": 134,
-    "note": 4.08,
-    "votes": 132
+    ]
    },
    "titresDiscogs": {
     "artiste": "Scorpions",
@@ -7083,10 +6359,7 @@
        "Don Hartman"
       ]
      }
-    ],
-    "want": 8,
-    "note": 3.5,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Frost (2), The",
@@ -7136,10 +6409,7 @@
       "duree": "2:35",
       "auteurs": []
      }
-    ],
-    "want": 154,
-    "note": 4.21,
-    "votes": 117
+    ]
    },
    "titresDiscogs": {
     "artiste": "Shocking Blue",
@@ -7200,10 +6470,7 @@
        "Camille Robert"
       ]
      }
-    ],
-    "want": 1,
-    "note": 3.0,
-    "votes": 5
+    ]
    },
    "titresDiscogs": {
     "artiste": "Unknown Artist",
@@ -7237,10 +6504,6 @@
      "Henri Belolo",
      "Victor Willis"
     ],
-    "producteurs": [
-     "Jacques Morali",
-     "Henri Belolo"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7254,10 +6517,7 @@
       "duree": "3:39",
       "auteurs": []
      }
-    ],
-    "want": 97,
-    "note": 3.68,
-    "votes": 149
+    ]
    },
    "titresDiscogs": {
     "artiste": "Village People",
@@ -7292,13 +6552,6 @@
      "Europop",
      "Novelty"
     ],
-    "producteurs": [
-     "Jean Paul Cara",
-     "Ralph Siegel"
-    ],
-    "arrangeurs": [
-     "Norbert Daum"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7320,10 +6573,7 @@
        "Ralph Siegel"
       ]
      }
-    ],
-    "want": 21,
-    "note": 3.15,
-    "votes": 20
+    ]
    },
    "titresDiscogs": {
     "artiste": "Sophie & Magaly",
@@ -7357,9 +6607,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Emilhenco"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7377,10 +6624,7 @@
        "Tany Turens"
       ]
      }
-    ],
-    "want": 7,
-    "note": 4.0,
-    "votes": 6
+    ]
    },
    "titresDiscogs": {
     "artiste": "François Guizerix",
@@ -7434,10 +6678,7 @@
        "Francis Scaglia"
       ]
      }
-    ],
-    "want": 46,
-    "note": 4.59,
-    "votes": 22
+    ]
    },
    "titresDiscogs": {
     "artiste": "Cyrille, Pierre Brahe",
@@ -7475,9 +6716,6 @@
      "Olivier Toussaint",
      "Paul De Senneville"
     ],
-    "arrangeurs": [
-     "Hervé Roy"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7491,10 +6729,7 @@
       "duree": "3:30",
       "auteurs": []
      }
-    ],
-    "want": 13,
-    "note": 3.27,
-    "votes": 30
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jean-Claude Borelly",
@@ -7527,9 +6762,6 @@
     "styles": [
      "Country Rock"
     ],
-    "producteurs": [
-     "Joec"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7554,10 +6786,7 @@
        "Jacques Hourdeaux"
       ]
      }
-    ],
-    "want": 3,
-    "note": 3.09,
-    "votes": 11
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jacques Hourdeaux",
@@ -7590,9 +6819,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Jacques Revaux"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7615,10 +6841,7 @@
        "René Pratx"
       ]
      }
-    ],
-    "want": 14,
-    "note": 3.98,
-    "votes": 46
+    ]
    },
    "titresDiscogs": {
     "artiste": "Hervé Vilard",
@@ -7683,10 +6906,7 @@
        "Johann Strauss Jr."
       ]
      }
-    ],
-    "want": 1,
-    "note": 4.0,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Orchestre De Valses De Schoënbrun",
@@ -7719,12 +6939,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Jean-Jacques Souplet"
-    ],
-    "arrangeurs": [
-     "Guy Mattéoni"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7744,10 +6958,7 @@
        "Chris Rea"
       ]
      }
-    ],
-    "want": 2,
-    "note": 3.38,
-    "votes": 16
+    ]
    },
    "titresDiscogs": {
     "artiste": "Dave",
@@ -7816,10 +7027,7 @@
        "Max Colpet"
       ]
      }
-    ],
-    "want": 3,
-    "note": 2.0,
-    "votes": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "Tino Rossi",
@@ -7855,12 +7063,6 @@
     "auteurs": [
      "Patrick Loiseau"
     ],
-    "producteurs": [
-     "Jean-Jacques Souplet"
-    ],
-    "arrangeurs": [
-     "Guy Mattéoni"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7878,10 +7080,7 @@
        "Maryse Millet"
       ]
      }
-    ],
-    "want": 3,
-    "note": 5.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Dave",
@@ -7914,13 +7113,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Jean-Jacques Souplet",
-     "Paul Boussard"
-    ],
-    "arrangeurs": [
-     "Guy Mattéoni"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -7934,10 +7126,7 @@
       "duree": "2:47",
       "auteurs": []
      }
-    ],
-    "want": 4,
-    "note": 1.83,
-    "votes": 6
+    ]
    },
    "titresDiscogs": {
     "artiste": "Dave",
@@ -8008,10 +7197,7 @@
        "Marcel Bertal"
       ]
      }
-    ],
-    "want": 4,
-    "note": 3.19,
-    "votes": 27
+    ]
    },
    "titresDiscogs": {
     "artiste": "Georgette Plana Accompagnée Par Le Le Casino Orchestra",
@@ -8057,10 +7243,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 1,
-    "note": 4.5,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Frédéric François",
@@ -8102,14 +7285,6 @@
      "Haim Saban",
      "Shuki Levy"
     ],
-    "producteurs": [
-     "Haim Saban",
-     "Shuki Levy"
-    ],
-    "arrangeurs": [
-     "Haim Saban",
-     "Shuki Levy"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -8123,10 +7298,7 @@
       "duree": "2:30",
       "auteurs": []
      }
-    ],
-    "want": 60,
-    "note": 3.99,
-    "votes": 77
+    ]
    },
    "titresDiscogs": {
     "artiste": "Lionel Leroy",
@@ -8163,9 +7335,6 @@
      "Claude Carrère",
      "Michaele, Lana & Paul Sebastian"
     ],
-    "arrangeurs": [
-     "Jean-Claude Petit"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -8179,10 +7348,7 @@
       "duree": "3:41",
       "auteurs": []
      }
-    ],
-    "want": 15,
-    "note": 3.91,
-    "votes": 47
+    ]
    },
    "titresDiscogs": {
     "artiste": "Sheila (5) & Ringo",
@@ -8240,10 +7406,7 @@
        "Carlos Leresche"
       ]
      }
-    ],
-    "want": 47,
-    "note": 4.2,
-    "votes": 25
+    ]
    },
    "titresDiscogs": {
     "artiste": "Franck Olivier",
@@ -8298,10 +7461,7 @@
        "Pierre Delanoë"
       ]
      }
-    ],
-    "want": 7,
-    "note": 3.05,
-    "votes": 21
+    ]
    },
    "titresDiscogs": {
     "artiste": "Rika Zaraï",
@@ -8355,10 +7515,7 @@
        "Vline Buggy"
       ]
      }
-    ],
-    "want": 28,
-    "note": 3.73,
-    "votes": 66
+    ]
    },
    "titresDiscogs": {
     "artiste": "Sheila",
@@ -8409,10 +7566,7 @@
        "Pierre Saka"
       ]
      }
-    ],
-    "want": 29,
-    "note": 3.85,
-    "votes": 13
+    ]
    },
    "titresDiscogs": {
     "artiste": "David Alexandre Winter",
@@ -8445,12 +7599,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Jacques Revaux"
-    ],
-    "arrangeurs": [
-     "Hervé Roy"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -8472,10 +7620,7 @@
        "Michel Jourdan"
       ]
      }
-    ],
-    "want": 24,
-    "note": 3.6,
-    "votes": 40
+    ]
    },
    "titresDiscogs": {
     "artiste": "Richard Anthony",
@@ -8528,10 +7673,7 @@
        "Yvon Rioland"
       ]
      }
-    ],
-    "want": 12,
-    "note": 3.69,
-    "votes": 35
+    ]
    },
    "titresDiscogs": {
     "artiste": "Michèle Torr",
@@ -8564,13 +7706,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Charles Talar",
-     "Alain Krief"
-    ],
-    "arrangeurs": [
-     "Roger Loubet"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -8590,10 +7725,7 @@
        "Richard Seff"
       ]
      }
-    ],
-    "want": 13,
-    "note": 3.55,
-    "votes": 33
+    ]
    },
    "titresDiscogs": {
     "artiste": "Mike Brant",
@@ -8626,12 +7758,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Alec R. Costandinos"
-    ],
-    "arrangeurs": [
-     "Ray Knehnetsky"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -8653,10 +7779,7 @@
        "Yaïr Klinger"
       ]
      }
-    ],
-    "want": 2,
-    "note": 3.8,
-    "votes": 20
+    ]
    },
    "titresDiscogs": {
     "artiste": "Demis Roussos",
@@ -8692,9 +7815,6 @@
     "auteurs": [
      "Frédéric François"
     ],
-    "producteurs": [
-     "CD Music"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -8712,10 +7832,7 @@
        "Marino Atria"
       ]
      }
-    ],
-    "want": 3,
-    "note": 3.14,
-    "votes": 14
+    ]
    },
    "titresDiscogs": {
     "artiste": "Frédéric François",
@@ -8761,10 +7878,7 @@
       "duree": "2:48",
       "auteurs": []
      }
-    ],
-    "want": 2,
-    "note": 3.5,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Enrico Macias",
@@ -8797,14 +7911,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Ramón Arcusa",
-     "Pierre Carrel"
-    ],
-    "arrangeurs": [
-     "Rafael Ferro",
-     "Ramón Arcusa"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -8827,10 +7933,7 @@
        "Ramón Arcusa"
       ]
      }
-    ],
-    "want": 6,
-    "note": 3.36,
-    "votes": 22
+    ]
    },
    "titresDiscogs": {
     "artiste": "Julio Iglesias",
@@ -8902,10 +8005,7 @@
        "Jacques Demarny"
       ]
      }
-    ],
-    "want": 1,
-    "note": 1.5,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Les Sunlights",
@@ -8916,62 +8016,6 @@
     "bas": 0.4,
     "moyen": 3.61,
     "haut": 6.83
-   }
-  },
-  {
-   "id": "575c8e01-5484-4fc1-bb9b-f77d37238282",
-   "artiste": "Enrico Macias",
-   "a": "Je Le Vois Sur Ton Visage",
-   "b": "Les Millionnaires Du Dimanche",
-   "pos": null,
-   "pochette": "covers/575c8e01-5484-4fc1-bb9b-f77d37238282-mwro8d8s.webp",
-   "discogs": 6679327,
-   "infos": {
-    "label": "Pathé",
-    "catno": "45 G 2149",
-    "pays": "France",
-    "annee": 1967,
-    "genres": [
-     "Pop"
-    ],
-    "styles": [
-     "Chanson"
-    ],
-    "pistes": [
-     {
-      "position": "A",
-      "titre": "Je Le Vois Sur Ton Visage",
-      "duree": "3:15",
-      "auteurs": [
-       "Enrico Macias",
-       "Jacques Demarny",
-       "Jean Claudric"
-      ]
-     },
-     {
-      "position": "B",
-      "titre": "Les Millionnaires Du Dimanche",
-      "duree": "3:15",
-      "auteurs": [
-       "Enrico Macias",
-       "Jacques Demarny",
-       "Martial Ayela"
-      ]
-     }
-    ],
-    "want": 0,
-    "note": 2.0,
-    "votes": 2
-   },
-   "titresDiscogs": {
-    "artiste": "Enrico Macias",
-    "a": "Je Le Vois Sur Ton Visage",
-    "b": "Les Millionnaires Du Dimanche"
-   },
-   "prix": {
-    "bas": 5.0,
-    "moyen": 5.0,
-    "haut": 5.0
    }
   },
   {
@@ -8994,9 +8038,6 @@
     "styles": [
      "Ballad"
     ],
-    "arrangeurs": [
-     "Harry And Steal"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -9018,10 +8059,7 @@
        "Stelios Vlavianos"
       ]
      }
-    ],
-    "want": 16,
-    "note": 3.88,
-    "votes": 40
+    ]
    },
    "titresDiscogs": {
     "artiste": "Demis Roussos",
@@ -9093,10 +8131,7 @@
        "Marc Cab"
       ]
      }
-    ],
-    "want": 1,
-    "note": 3.0,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Robert Trabucco Et Son Ensemble Musette",
@@ -9157,10 +8192,7 @@
       "duree": "2:50",
       "auteurs": []
      }
-    ],
-    "want": 372,
-    "note": 4.11,
-    "votes": 56
+    ]
    },
    "titresDiscogs": {
     "artiste": "David Whitaker",
@@ -9218,10 +8250,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 0,
-    "note": 3.5,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Various",
@@ -9284,8 +8313,7 @@
        "Michel Orso"
       ]
      }
-    ],
-    "want": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "André Verchuren",
@@ -9318,12 +8346,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Jean-Jacques Debout"
-    ],
-    "arrangeurs": [
-     "Jean-Daniel Mercier"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -9341,10 +8363,7 @@
        "Jean-Jacques Debout"
       ]
      }
-    ],
-    "want": 4,
-    "note": 3.54,
-    "votes": 13
+    ]
    },
    "titresDiscogs": {
     "artiste": "Chantal Goya",
@@ -9378,9 +8397,6 @@
     "styles": [
      "Theme"
     ],
-    "producteurs": [
-     "Janine Guyon"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -9402,10 +8418,7 @@
        "Jacques Demarny"
       ]
      }
-    ],
-    "want": 41,
-    "note": 4.5,
-    "votes": 8
+    ]
    },
    "titresDiscogs": {
     "artiste": "Fabrice",
@@ -9459,10 +8472,7 @@
       "duree": "2:13",
       "auteurs": []
      }
-    ],
-    "want": 29,
-    "note": 3.89,
-    "votes": 19
+    ]
    },
    "titresDiscogs": {
     "artiste": "Danielle Licari",
@@ -9517,10 +8527,7 @@
       "duree": "2:30",
       "auteurs": []
      }
-    ],
-    "want": 16,
-    "note": 3.65,
-    "votes": 26
+    ]
    },
    "titresDiscogs": {
     "artiste": "Various",
@@ -9553,9 +8560,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Don Costa"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -9575,10 +8579,7 @@
        "Eddy Marnay"
       ]
      }
-    ],
-    "want": 5,
-    "note": 3.89,
-    "votes": 9
+    ]
    },
    "titresDiscogs": {
     "artiste": "Mireille Mathieu",
@@ -9611,12 +8612,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Renaldo Cerri"
-    ],
-    "arrangeurs": [
-     "Jean Claudric"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -9636,10 +8631,7 @@
        "Alfonso Luis Gonzalez"
       ]
      }
-    ],
-    "want": 5,
-    "note": 3.75,
-    "votes": 36
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jairo",
@@ -9703,10 +8695,7 @@
        "Pierre Odar"
       ]
      }
-    ],
-    "want": 8,
-    "note": 3.22,
-    "votes": 27
+    ]
    },
    "titresDiscogs": {
     "artiste": "Les Sunlights",
@@ -9766,10 +8755,7 @@
       "duree": "2:26",
       "auteurs": []
      }
-    ],
-    "want": 4,
-    "note": 4.75,
-    "votes": 8
+    ]
    },
    "titresDiscogs": {
     "artiste": "Danielle Licari",
@@ -9831,10 +8817,7 @@
       "duree": "2:15",
       "auteurs": []
      }
-    ],
-    "want": 1,
-    "note": 3.5,
-    "votes": 4
+    ]
    },
    "titresDiscogs": {
     "artiste": "Tino Rossi",
@@ -9880,8 +8863,7 @@
       "duree": "",
       "auteurs": []
      }
-    ],
-    "want": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Tino Rossi",
@@ -9909,12 +8891,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Jean-Jacques Souplet"
-    ],
-    "arrangeurs": [
-     "Guy Mattéoni"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -9934,10 +8910,7 @@
        "Patrick Loiseau"
       ]
      }
-    ],
-    "want": 3,
-    "note": 3.63,
-    "votes": 27
+    ]
    },
    "titresDiscogs": {
     "artiste": "Dave",
@@ -9966,9 +8939,6 @@
     "annee": 1970,
     "genres": [
      "Pop"
-    ],
-    "producteurs": [
-     "Léo Missir"
     ],
     "pistes": [
      {
@@ -10007,10 +8977,7 @@
        "Jean-Loup Dabadie"
       ]
      }
-    ],
-    "want": 4,
-    "note": 3.27,
-    "votes": 11
+    ]
    },
    "titresDiscogs": {
     "artiste": "Mireille Mathieu",
@@ -10062,10 +9029,7 @@
        "Serge Prisset"
       ]
      }
-    ],
-    "want": 6,
-    "note": 3.34,
-    "votes": 29
+    ]
    },
    "titresDiscogs": {
     "artiste": "Mireille Mathieu",
@@ -10098,9 +9062,6 @@
     "styles": [
      "Chanson"
     ],
-    "arrangeurs": [
-     "Reg Guest"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -10122,10 +9083,7 @@
        "Luis Aguile"
       ]
      }
-    ],
-    "want": 9,
-    "note": 3.69,
-    "votes": 32
+    ]
    },
    "titresDiscogs": {
     "artiste": "Richard Anthony",
@@ -10158,9 +9116,6 @@
     "styles": [
      "Chanson"
     ],
-    "arrangeurs": [
-     "Jean Claudric"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -10183,10 +9138,7 @@
        "Pierre Groscolas"
       ]
      }
-    ],
-    "want": 4,
-    "note": 3.27,
-    "votes": 11
+    ]
    },
    "titresDiscogs": {
     "artiste": "Hervé Vilard",
@@ -10222,12 +9174,6 @@
     "auteurs": [
      "Christophe"
     ],
-    "producteurs": [
-     "Francis O'Neill",
-     "Jacques Denjean",
-     "Roger Corsin",
-     "Jean Albertini"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -10241,10 +9187,7 @@
       "duree": "3:03",
       "auteurs": []
      }
-    ],
-    "want": 63,
-    "note": 3.95,
-    "votes": 135
+    ]
    },
    "titresDiscogs": {
     "artiste": "Christophe",
@@ -10278,12 +9221,6 @@
     "styles": [
      "Folk Rock",
      "Chanson"
-    ],
-    "producteurs": [
-     "Norbert Saada"
-    ],
-    "arrangeurs": [
-     "Tatcho Fantini"
     ],
     "pistes": [
      {
@@ -10324,10 +9261,7 @@
        "Pierre Saka"
       ]
      }
-    ],
-    "want": 7,
-    "note": 4.07,
-    "votes": 14
+    ]
    },
    "titresDiscogs": {
     "artiste": "Hugues Aufray",
@@ -10364,12 +9298,6 @@
     "auteurs": [
      "Jean-Jacques Debout"
     ],
-    "producteurs": [
-     "Jean-Jacques Debout"
-    ],
-    "arrangeurs": [
-     "Jean-Daniel Mercier"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -10383,10 +9311,7 @@
       "duree": "3:45",
       "auteurs": []
      }
-    ],
-    "want": 6,
-    "note": 3.38,
-    "votes": 29
+    ]
    },
    "titresDiscogs": {
     "artiste": "Chantal Goya",
@@ -10429,8 +9354,7 @@
       "duree": "1:36",
       "auteurs": []
      }
-    ],
-    "want": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jocelyne Neel Et Les Écoliers Du Fidelaire",
@@ -10471,8 +9395,7 @@
       "duree": "2:36",
       "auteurs": []
      }
-    ],
-    "want": 0
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jocelyne Neel",
@@ -10510,8 +9433,7 @@
       "duree": "4:00",
       "auteurs": []
      }
-    ],
-    "want": 0
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jocelyne Neel",
@@ -10553,10 +9475,7 @@
       "duree": "2:15",
       "auteurs": []
      }
-    ],
-    "want": 0,
-    "note": 3.0,
-    "votes": 2
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jocelyne Neel Et Les Écoliers Du Fidelaire",
@@ -10584,9 +9503,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Constant Defourny"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -10606,10 +9522,7 @@
        "Marino Atria"
       ]
      }
-    ],
-    "want": 4,
-    "note": 3.19,
-    "votes": 16
+    ]
    },
    "titresDiscogs": {
     "artiste": "Frédéric François",
@@ -10648,14 +9561,6 @@
      "Haim Saban",
      "Shuki Levy"
     ],
-    "producteurs": [
-     "Haim Saban",
-     "Shuki Levy"
-    ],
-    "arrangeurs": [
-     "Haim Saban",
-     "Shuki Levy"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -10672,10 +9577,7 @@
       "duree": "2:24",
       "auteurs": []
      }
-    ],
-    "want": 30,
-    "note": 3.56,
-    "votes": 18
+    ]
    },
    "titresDiscogs": {
     "artiste": "Nono",
@@ -10714,9 +9616,6 @@
      "Jean-Jacques Lafon",
      "Olivier Guillot"
     ],
-    "arrangeurs": [
-     "Alain Mouysset"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -10730,10 +9629,7 @@
       "duree": "4:12",
       "auteurs": []
      }
-    ],
-    "want": 35,
-    "note": 3.76,
-    "votes": 92
+    ]
    },
    "titresDiscogs": {
     "artiste": "Licence IV",
@@ -10766,9 +9662,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Ferry Wienneke"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -10790,10 +9683,7 @@
        "Jean Frankfurter"
       ]
      }
-    ],
-    "want": 20,
-    "note": 3.09,
-    "votes": 33
+    ]
    },
    "titresDiscogs": {
     "artiste": "Dorothée, Smurfs (2), The",
@@ -10833,9 +9723,6 @@
      "Gérard Salesses",
      "Jean-François Porry"
     ],
-    "arrangeurs": [
-     "Gérard Salesses"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -10853,10 +9740,7 @@
        "William Leymergie"
       ]
      }
-    ],
-    "want": 20,
-    "note": 3.49,
-    "votes": 55
+    ]
    },
    "titresDiscogs": {
     "artiste": "Dorothée",
@@ -10925,10 +9809,7 @@
        "Hippolyte Ackermans"
       ]
      }
-    ],
-    "want": 9,
-    "note": 3.87,
-    "votes": 23
+    ]
    },
    "titresDiscogs": {
     "artiste": "Tino Rossi",
@@ -10981,10 +9862,7 @@
        "Kenny Lee Lewis"
       ]
      }
-    ],
-    "want": 62,
-    "note": 3.64,
-    "votes": 33
+    ]
    },
    "titresDiscogs": {
     "artiste": "Steve Miller Band",
@@ -11030,10 +9908,7 @@
       "duree": "2:15",
       "auteurs": []
      }
-    ],
-    "want": 0,
-    "note": 4.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Claudia Sylva",
@@ -11077,10 +9952,7 @@
       "duree": "3:59",
       "auteurs": []
      }
-    ],
-    "want": 7,
-    "note": 3.11,
-    "votes": 18
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jeane Manson",
@@ -11134,10 +10006,7 @@
        "Rickey Minor"
       ]
      }
-    ],
-    "want": 41,
-    "note": 4.07,
-    "votes": 29
+    ]
    },
    "titresDiscogs": {
     "artiste": "Whitney Houston",
@@ -11185,10 +10054,7 @@
       "duree": "6:39",
       "auteurs": []
      }
-    ],
-    "want": 65,
-    "note": 4.11,
-    "votes": 54
+    ]
    },
    "titresDiscogs": {
     "artiste": "Supertramp",
@@ -11233,10 +10099,7 @@
       "duree": "3:35",
       "auteurs": []
      }
-    ],
-    "want": 7,
-    "note": 3.87,
-    "votes": 15
+    ]
    },
    "titresDiscogs": {
     "artiste": "Roch Voisine",
@@ -11271,12 +10134,6 @@
     "auteurs": [
      "Barry White"
     ],
-    "producteurs": [
-     "Barry White"
-    ],
-    "arrangeurs": [
-     "Barry White"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11290,10 +10147,7 @@
       "duree": "3:35",
       "auteurs": []
      }
-    ],
-    "want": 21,
-    "note": 3.74,
-    "votes": 19
+    ]
    },
    "titresDiscogs": {
     "artiste": "Barry White",
@@ -11328,9 +10182,6 @@
     "auteurs": [
      "Francis Cabrel"
     ],
-    "producteurs": [
-     "Georges Augier De Moussac"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11344,10 +10195,7 @@
       "duree": "3:42",
       "auteurs": []
      }
-    ],
-    "want": 15,
-    "note": 3.92,
-    "votes": 63
+    ]
    },
    "titresDiscogs": {
     "artiste": "Francis Cabrel Et Les Petits Chanteurs D'Asnières",
@@ -11383,10 +10231,6 @@
     "auteurs": [
      "Daniel Balavoine"
     ],
-    "producteurs": [
-     "Andy Scott",
-     "Fred Defaye"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11400,10 +10244,7 @@
       "duree": "5:00",
       "auteurs": []
      }
-    ],
-    "want": 21,
-    "note": 4.17,
-    "votes": 46
+    ]
    },
    "titresDiscogs": {
     "artiste": "Daniel Balavoine",
@@ -11440,12 +10281,6 @@
     "auteurs": [
      "George Michael"
     ],
-    "producteurs": [
-     "George Michael"
-    ],
-    "arrangeurs": [
-     "George Michael"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11459,10 +10294,7 @@
       "duree": "4:03",
       "auteurs": []
      }
-    ],
-    "want": 95,
-    "note": 4.32,
-    "votes": 19
+    ]
    },
    "titresDiscogs": {
     "artiste": "Wham!",
@@ -11495,12 +10327,6 @@
     "styles": [
      "Pop Rock"
     ],
-    "producteurs": [
-     "Eddie Vartan"
-    ],
-    "arrangeurs": [
-     "Jacques Denjean"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11521,10 +10347,7 @@
        "Pascal Lefèbvre"
       ]
      }
-    ],
-    "want": 8,
-    "note": 3.4,
-    "votes": 10
+    ]
    },
    "titresDiscogs": {
     "artiste": "Johnny Hallyday",
@@ -11577,10 +10400,7 @@
        "Ronald Bell"
       ]
      }
-    ],
-    "want": 142,
-    "note": 4.12,
-    "votes": 83
+    ]
    },
    "titresDiscogs": {
     "artiste": "Kool & The Gang",
@@ -11618,9 +10438,6 @@
      "Michel Jourdan",
      "Shuki Levy"
     ],
-    "producteurs": [
-     "Alain Krief"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11636,10 +10453,7 @@
        "Haim Saban"
       ]
      }
-    ],
-    "want": 34,
-    "note": 3.62,
-    "votes": 26
+    ]
    },
    "titresDiscogs": {
     "artiste": "Shuky & Aviva",
@@ -11650,63 +10464,6 @@
     "bas": 0.25,
     "moyen": 2.0,
     "haut": 8.35
-   }
-  },
-  {
-   "id": "7cf83621-b747-4467-80dd-bbf863f508e4",
-   "artiste": "Bingo!",
-   "a": "Hey, Hey, Doe Je Mee?",
-   "b": "La, La, La Medley Van Strauss",
-   "pos": null,
-   "pochette": "covers/7cf83621-b747-4467-80dd-bbf863f508e4-mwrp5i7h.webp",
-   "discogs": 342419,
-   "infos": {
-    "label": "Holy Hole Music",
-    "catno": "HH 91 05 137",
-    "pays": "Belgium",
-    "annee": 1991,
-    "genres": [
-     "Electronic"
-    ],
-    "styles": [
-     "Euro House"
-    ],
-    "producteurs": [
-     "Christoff Wybouw"
-    ],
-    "pistes": [
-     {
-      "position": "A",
-      "titre": "Hey, Hey, Doe Je Mee?",
-      "duree": "",
-      "auteurs": [
-       "Christoff Wybouw",
-       "Phil Sterman",
-       "Serge Feys"
-      ]
-     },
-     {
-      "position": "B",
-      "titre": "La, La, La Medley Van Strauss",
-      "duree": "",
-      "auteurs": [
-       "Traditional"
-      ]
-     }
-    ],
-    "want": 3,
-    "note": 2.9,
-    "votes": 10
-   },
-   "titresDiscogs": {
-    "artiste": "Bingo!",
-    "a": "Hey, Hey, Doe Je Mee?",
-    "b": "La, La, La Medley Van Strauss"
-   },
-   "prix": {
-    "bas": 0.1,
-    "moyen": 0.75,
-    "haut": 2.95
    }
   },
   {
@@ -11729,12 +10486,6 @@
      "Chanson",
      "Ballad"
     ],
-    "producteurs": [
-     "Will Hoebee"
-    ],
-    "arrangeurs": [
-     "Nikos Ignatiadis"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11754,10 +10505,7 @@
        "Nikos Ignatiadis"
       ]
      }
-    ],
-    "want": 3,
-    "note": 3.8,
-    "votes": 10
+    ]
    },
    "titresDiscogs": {
     "artiste": "Benny Neyman",
@@ -11793,12 +10541,6 @@
     "auteurs": [
      "Vangelis"
     ],
-    "producteurs": [
-     "Vangelis"
-    ],
-    "arrangeurs": [
-     "Vangelis"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11812,10 +10554,7 @@
       "duree": "2:28",
       "auteurs": []
      }
-    ],
-    "want": 32,
-    "note": 4.47,
-    "votes": 17
+    ]
    },
    "titresDiscogs": {
     "artiste": "Vangelis",
@@ -11868,10 +10607,7 @@
        "Paul Hopkins"
       ]
      }
-    ],
-    "want": 8,
-    "note": 2.67,
-    "votes": 3
+    ]
    },
    "titresDiscogs": {
     "artiste": "Bonnie Tyler",
@@ -11906,10 +10642,6 @@
     "auteurs": [
      "David Bowie"
     ],
-    "producteurs": [
-     "David Bowie",
-     "Tony Visconti"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11923,10 +10655,7 @@
       "duree": "3:16",
       "auteurs": []
      }
-    ],
-    "want": 170,
-    "note": 4.22,
-    "votes": 188
+    ]
    },
    "titresDiscogs": {
     "artiste": "David Bowie",
@@ -11960,12 +10689,6 @@
      "Downtempo",
      "Ballad"
     ],
-    "producteurs": [
-     "Jean-Paul Malek"
-    ],
-    "arrangeurs": [
-     "Bernard Estardy"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -11979,10 +10702,7 @@
       "duree": "5:25",
       "auteurs": []
      }
-    ],
-    "want": 33,
-    "note": 3.87,
-    "votes": 15
+    ]
    },
    "titresDiscogs": {
     "artiste": "Bibie",
@@ -12014,10 +10734,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Mick Lanaro",
-     "Patrick Bruel"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12036,10 +10752,7 @@
        "Patrick Bruel"
       ]
      }
-    ],
-    "want": 31,
-    "note": 4.21,
-    "votes": 38
+    ]
    },
    "titresDiscogs": {
     "artiste": "Patrick Bruel",
@@ -12087,10 +10800,7 @@
       "duree": "4:05",
       "auteurs": []
      }
-    ],
-    "want": 37,
-    "note": 4.35,
-    "votes": 79
+    ]
    },
    "titresDiscogs": {
     "artiste": "Mecano",
@@ -12126,9 +10836,6 @@
     "auteurs": [
      "Jeff Lynne"
     ],
-    "producteurs": [
-     "Jeff Lynne"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12142,10 +10849,7 @@
       "duree": "5:00",
       "auteurs": []
      }
-    ],
-    "want": 54,
-    "note": 4.14,
-    "votes": 21
+    ]
    },
    "titresDiscogs": {
     "artiste": "Electric Light Orchestra",
@@ -12182,9 +10886,6 @@
      "Mylène Farmer",
      "Laurent Boutonnat"
     ],
-    "producteurs": [
-     "Laurent Boutonnat"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12198,10 +10899,7 @@
       "duree": "5:10",
       "auteurs": []
      }
-    ],
-    "want": 99,
-    "note": 4.41,
-    "votes": 173
+    ]
    },
    "titresDiscogs": {
     "artiste": "Mylène Farmer",
@@ -12241,12 +10939,6 @@
     "auteurs": [
      "Stevie Wonder"
     ],
-    "producteurs": [
-     "Stevie Wonder"
-    ],
-    "arrangeurs": [
-     "Stevie Wonder"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12260,10 +10952,7 @@
       "duree": "4:16",
       "auteurs": []
      }
-    ],
-    "want": 77,
-    "note": 3.96,
-    "votes": 97
+    ]
    },
    "titresDiscogs": {
     "artiste": "Stevie Wonder",
@@ -12299,12 +10988,6 @@
      "Félix Gray",
      "Didier Barbelivien"
     ],
-    "producteurs": [
-     "Jean Albertini"
-    ],
-    "arrangeurs": [
-     "Bernard Estardy"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12318,10 +11001,7 @@
       "duree": "4:14",
       "auteurs": []
      }
-    ],
-    "want": 19,
-    "note": 3.55,
-    "votes": 73
+    ]
    },
    "titresDiscogs": {
     "artiste": "Félix Gray & Didier Barbelivien",
@@ -12357,9 +11037,6 @@
     "auteurs": [
      "Julien Clerc"
     ],
-    "producteurs": [
-     "Christopher Neil"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12378,10 +11055,7 @@
        "David McNeil"
       ]
      }
-    ],
-    "want": 14,
-    "note": 3.79,
-    "votes": 47
+    ]
    },
    "titresDiscogs": {
     "artiste": "Julien Clerc",
@@ -12414,9 +11088,6 @@
     "styles": [
      "Pop Rock"
     ],
-    "producteurs": [
-     "Gerrit-Jan Leenders"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12435,10 +11106,7 @@
        "Chris Koerts"
       ]
      }
-    ],
-    "want": 24,
-    "note": 4.57,
-    "votes": 7
+    ]
    },
    "titresDiscogs": {
     "artiste": "Earth And Fire",
@@ -12470,14 +11138,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Bernard Estardy",
-     "Didier Barbelivien",
-     "François Bernheim"
-    ],
-    "arrangeurs": [
-     "Bernard Estardy"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12505,10 +11165,7 @@
        "Didier Barbelivien"
       ]
      }
-    ],
-    "want": 20,
-    "note": 4.04,
-    "votes": 50
+    ]
    },
    "titresDiscogs": {
     "artiste": "Patricia Kaas",
@@ -12540,12 +11197,6 @@
     "styles": [
      "Ballad"
     ],
-    "producteurs": [
-     "George Michael"
-    ],
-    "arrangeurs": [
-     "George Michael"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12564,10 +11215,7 @@
        "George Michael"
       ]
      }
-    ],
-    "want": 78,
-    "note": 3.94,
-    "votes": 160
+    ]
    },
    "titresDiscogs": {
     "artiste": "George Michael",
@@ -12599,9 +11247,6 @@
     "styles": [
      "Chanson"
     ],
-    "producteurs": [
-     "Christopher Neil"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12621,10 +11266,7 @@
        "Julien Clerc"
       ]
      }
-    ],
-    "want": 24,
-    "note": 3.71,
-    "votes": 66
+    ]
    },
    "titresDiscogs": {
     "artiste": "Julien Clerc",
@@ -12675,10 +11317,7 @@
       "duree": "2:51",
       "auteurs": []
      }
-    ],
-    "want": 2,
-    "note": 2.92,
-    "votes": 24
+    ]
    },
    "titresDiscogs": {
     "artiste": "Ringo",
@@ -12716,12 +11355,6 @@
      "Jeanne Mas",
      "Romano Musumarra"
     ],
-    "producteurs": [
-     "Romano Musumarra"
-    ],
-    "arrangeurs": [
-     "Romano Musumarra"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12735,10 +11368,7 @@
       "duree": "4:13",
       "auteurs": []
      }
-    ],
-    "want": 45,
-    "note": 3.7,
-    "votes": 73
+    ]
    },
    "titresDiscogs": {
     "artiste": "Jeanne Mas",
@@ -12775,12 +11405,6 @@
      "Michel Delpech",
      "Roland Vincent"
     ],
-    "producteurs": [
-     "Naps Lamarche"
-    ],
-    "arrangeurs": [
-     "Roland Vincent"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12794,10 +11418,7 @@
       "duree": "3:24",
       "auteurs": []
      }
-    ],
-    "want": 31,
-    "note": 3.66,
-    "votes": 82
+    ]
    },
    "titresDiscogs": {
     "artiste": "Michel Delpech",
@@ -12834,12 +11455,6 @@
     "auteurs": [
      "George Michael"
     ],
-    "producteurs": [
-     "George Michael"
-    ],
-    "arrangeurs": [
-     "George Michael"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12853,10 +11468,7 @@
       "duree": "4:03",
       "auteurs": []
      }
-    ],
-    "want": 95,
-    "note": 4.32,
-    "votes": 19
+    ]
    },
    "titresDiscogs": {
     "artiste": "Wham!",
@@ -12892,9 +11504,6 @@
      "Rhythm & Blues",
      "Europop"
     ],
-    "producteurs": [
-     "Peter Asher"
-    ],
     "pistes": [
      {
       "position": "A",
@@ -12912,10 +11521,7 @@
        "Van McCoy"
       ]
      }
-    ],
-    "want": 50,
-    "note": 4.19,
-    "votes": 36
+    ]
    },
    "titresDiscogs": {
     "artiste": "Cher",
@@ -12960,10 +11566,7 @@
        "Wolfgang Amadeus Mozart"
       ]
      }
-    ],
-    "want": 0,
-    "note": 5.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Unknown Artist",
@@ -13011,10 +11614,7 @@
        "Rocco Granata"
       ]
      }
-    ],
-    "want": 1,
-    "note": 5.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Gino Pizza",
@@ -13059,14 +11659,14 @@
        "Gianni Doro"
       ]
      }
-    ],
-    "want": 1
+    ]
    },
    "titresDiscogs": {
     "artiste": "Gianni Franco",
     "a": "La Mer De Napoli",
     "b": "Et La Mer Chantait"
-   }
+   },
+   "avecPochette": true
   },
   {
    "id": "89719fc1-17d1-46f5-a87f-e723797c118f",
@@ -13076,60 +11676,6 @@
    "pos": null,
    "pochette": "covers/89719fc1-17d1-46f5-a87f-e723797c118f-mwrq0u1v.webp",
    "avecPochette": true
-  },
-  {
-   "artiste": "Al Bano & Romina Power",
-   "a": "Felicitá",
-   "b": "Libertá",
-   "pos": null,
-   "discogs": 5840034,
-   "infos": {
-    "label": "Carrere Music",
-    "catno": "903175931-7",
-    "pays": "France",
-    "annee": 1991,
-    "genres": [
-     "Pop"
-    ],
-    "pistes": [
-     {
-      "position": "A",
-      "titre": "Felicitá",
-      "duree": "3:23",
-      "auteurs": [
-       "Cristiano Minellono",
-       "Dario Farina",
-       "Gino De Stefani"
-      ]
-     },
-     {
-      "position": "B",
-      "titre": "Libertá",
-      "duree": "4:23",
-      "auteurs": [
-       "Romina Power",
-       "Springbock",
-       "Vito Pallavicini",
-       "Willy Molco"
-      ]
-     }
-    ],
-    "want": 9,
-    "note": 4.67,
-    "votes": 3
-   },
-   "titresDiscogs": {
-    "artiste": "Al Bano & Romina Power",
-    "a": "Felicitá",
-    "b": "Libertá"
-   },
-   "pochette": "https://i.discogs.com/GIN6Mu3z-Rzpx6cPaK7lrAynZONMolIi4ZB6IASwveg/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU4NDAw/MzQtMTQwNDE1MjA5/Ny0yMzIxLmpwZWc.jpeg",
-   "id": "cc2f8881-f81c-4daf-9e0b-e4a957be950d",
-   "prix": {
-    "bas": 9.0,
-    "moyen": 9.0,
-    "haut": 9.0
-   }
   },
   {
    "id": "d75b7d48-275f-47b5-bd69-b371d9f4457f",
@@ -13225,10 +11771,7 @@
       "duree": "3:07",
       "auteurs": []
      }
-    ],
-    "want": 17,
-    "note": 4.11,
-    "votes": 19
+    ]
    },
    "titresDiscogs": {
     "artiste": "Stars On 45",
@@ -13242,648 +11785,61 @@
    }
   },
   {
-   "artiste": "ABBA",
-   "a": "People Need Love",
-   "b": "Merry-Go-Round",
-   "pos": null,
-   "discogs": 416696,
+   "id": "9dd4e44a-2955-4556-9f6a-1d6ac399fc5a",
+   "artiste": "Opus",
+   "a": "Live Is Life",
+   "b": "Up And Down",
+   "pos": "76",
+   "pochette": "covers/9dd4e44a-2955-4556-9f6a-1d6ac399fc5a-mwryjj1c.webp",
+   "avecPochette": true,
+   "discogs": 673288,
    "infos": {
-    "label": "Polydor",
-    "catno": "815 619-7",
-    "pays": "Germany",
+    "label": "Carrere",
+    "catno": "13761",
+    "pays": "France",
     "annee": 1984,
     "genres": [
      "Rock",
      "Pop"
     ],
     "styles": [
-     "Disco",
-     "Ballad",
-     "Soft Rock"
+     "Pop Rock"
+    ],
+    "auteurs": [
+     "Ewald Pfleger",
+     "Opus"
     ],
     "pistes": [
      {
-      "position": "1-A",
-      "titre": "People Need Love",
-      "duree": "2:44",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "1-B",
-      "titre": "Merry-Go-Round",
-      "duree": "3:24",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "2-A",
-      "titre": "Ring Ring",
-      "duree": "3:05",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Neil Sedaka",
-       "Phil Cody",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "2-B",
-      "titre": "Rock 'n' Roll Band",
-      "duree": "3:10",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "3-A",
-      "titre": "Waterloo (English Version)",
-      "duree": "2:47",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "3-B",
-      "titre": "Watch Out",
-      "duree": "3:46",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "4-A",
-      "titre": "Honey Honey",
-      "duree": "2:56",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "4-B",
-      "titre": "Ring Ring",
-      "duree": "3:09",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Neil Sedaka",
-       "Phil Cody",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "5-A",
-      "titre": "So Long",
-      "duree": "3:05",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "5-B",
-      "titre": "I've Been Waiting For You",
-      "duree": "3:38",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "6-A",
-      "titre": "I Do, I Do, I Do, I Do, I Do",
-      "duree": "3:15",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "6-B",
-      "titre": "Rock Me",
-      "duree": "3:04",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "7-A",
-      "titre": "SOS",
-      "duree": "3:21",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "7-B",
-      "titre": "The Man In The Middle",
-      "duree": "3:00",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "8-A",
-      "titre": "Mamma Mia",
-      "duree": "3:32",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "8-B",
-      "titre": "Intermezzo No. 1",
-      "duree": "3:46",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "9-A",
-      "titre": "Fernando",
-      "duree": "4:14",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "9-B",
-      "titre": "Tropical Loveland",
-      "duree": "3:04",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "10-A",
-      "titre": "Dancing Queen",
-      "duree": "3:51",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "10-B",
-      "titre": "That's Me",
-      "duree": "3:17",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "11-A",
-      "titre": "Money, Money, Money",
-      "duree": "3:05",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "11-B",
-      "titre": "Crazy World",
-      "duree": "3:47",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "12-A",
-      "titre": "Knowing Me, Knowing You",
-      "duree": "4:02",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "12-B",
-      "titre": "Happy Hawaii",
-      "duree": "4:22",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "13-A",
-      "titre": "The Name Of The Game",
-      "duree": "4:50",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "13-B",
-      "titre": "I Wonder (Departure) (Live)",
-      "duree": "4:29",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "14-A",
-      "titre": "Take A Chance On Me",
-      "duree": "4:05",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "14-B",
-      "titre": "I'm A Marionette",
-      "duree": "4:03",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "15-A",
-      "titre": "Eagle",
-      "duree": "4:23",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "15-B",
-      "titre": "Thank You For The Music",
-      "duree": "3:48",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "16-A",
-      "titre": "Summer Night City",
-      "duree": "3:34",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "16-B",
-      "titre": "Medley: Pick A Bale Of Cotton / On Top Of Old Smokey / Midnight Special",
+      "position": "A",
+      "titre": "Live Is Life",
       "duree": "4:15",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Traditional"
-      ]
-     },
-     {
-      "position": "17-A",
-      "titre": "Chiquitita",
-      "duree": "5:26",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "17-B",
-      "titre": "Lovelight",
-      "duree": "3:28",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "18-A",
-      "titre": "Does Your Mother Know",
-      "duree": "3:13",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "18-B",
-      "titre": "Kisses Of Fire",
-      "duree": "3:16",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "19-A",
-      "titre": "Voulez-Vous",
-      "duree": "5:11",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "19-B",
-      "titre": "Angeleyes",
-      "duree": "3:47",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "20-A",
-      "titre": "Gimme! Gimme! Gimme! (A Man After Midnight)",
-      "duree": "4:47",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "20-B",
-      "titre": "The King Has Lost His Crown",
-      "duree": "3:30",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "21-A",
-      "titre": "I Have A Dream",
-      "duree": "4:44",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "21-B",
-      "titre": "Take A Chance On Me (Live)",
-      "duree": "4:24",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "22-A",
-      "titre": "The Winner Takes It All",
-      "duree": "4:56",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "22-B",
-      "titre": "Elaine",
-      "duree": "3:39",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "23-A",
-      "titre": "Super Trouper",
-      "duree": "4:13",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "23-B",
-      "titre": "The Piper",
-      "duree": "3:25",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "24-A",
-      "titre": "One Of Us",
-      "duree": "3:55",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "24-B",
-      "titre": "Should I Laugh Or Cry",
-      "duree": "4:29",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "25-A",
-      "titre": "Head Over Heels",
-      "duree": "3:45",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "25-B",
-      "titre": "The Visitors",
-      "duree": "5:49",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "26-A",
-      "titre": "The Day Before You Came",
-      "duree": "5:50",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "26-B",
-      "titre": "Cassandra",
-      "duree": "4:50",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "27-A",
-      "titre": "Under Attack",
-      "duree": "3:45",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "27-B",
-      "titre": "You Owe Me One",
-      "duree": "3:29",
-      "auteurs": [
-       "Björn Ulvaeus & Benny Andersson"
-      ]
-     },
-     {
-      "position": "28-A",
-      "titre": "Waterloo (German Version)",
-      "duree": "2:46",
-      "auteurs": [
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Gerd Müller-Schwanke",
-       "Stig Anderson"
-      ]
-     },
-     {
-      "position": "28-B",
-      "titre": "Waterloo (French Version)",
-      "duree": "2:46",
-      "auteurs": [
-       "Alain Boublil",
-       "Benny Andersson",
-       "Björn Ulvaeus",
-       "Stig Anderson"
-      ]
-     }
-    ],
-    "want": 242,
-    "note": 4.16,
-    "votes": 83
-   },
-   "titresDiscogs": {
-    "artiste": "ABBA",
-    "a": "People Need Love",
-    "b": "Merry-Go-Round"
-   },
-   "pochette": "https://i.discogs.com/9elQxcRTprKelIAj197oJ5UkYJ2Kh22A-f3WiSvBN8g/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjY5/Ni0xNTkzMzM0ODE1/LTgwMTcuanBlZw.jpeg",
-   "id": "91d18db7-af7c-417d-b11f-6060db601d0b",
-   "prix": {
-    "bas": 0.96,
-    "moyen": 44.5,
-    "haut": 495.0
-   }
-  },
-  {
-   "artiste": "Stars On 45",
-   "a": "Stars On 45 Volume Two / Voulez Vous / S.O.S. / Bang A Boomerang / Money, Money, Money / Knowing Me, Knowing You / Fernando / The Winner Takes It All / Super Trouper / Stars On 45 (2)",
-   "b": "Stars Get Ready",
-   "pos": null,
-   "discogs": 13537586,
-   "infos": {
-    "label": "CBS",
-    "catno": "CBS A 1407",
-    "pays": "Ireland",
-    "annee": 1981,
-    "genres": [
-     "Electronic",
-     "Rock",
-     "Pop"
-    ],
-    "styles": [
-     "Disco"
-    ],
-    "pistes": [
-     {
-      "position": "A.1",
-      "titre": "Stars On 45 Volume Two",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "A.2",
-      "titre": "Voulez Vous",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "A.3",
-      "titre": "S.O.S.",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "A.4",
-      "titre": "Bang A Boomerang",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "A.5",
-      "titre": "Money, Money, Money",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "A.6",
-      "titre": "Knowing Me, Knowing You",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "A.7",
-      "titre": "Fernando",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "A.8",
-      "titre": "The Winner Takes It All",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "A.9",
-      "titre": "Super Trouper",
-      "duree": "",
-      "auteurs": []
-     },
-     {
-      "position": "A.10",
-      "titre": "Stars On 45 (2)",
-      "duree": "",
       "auteurs": []
      },
      {
       "position": "B",
-      "titre": "Stars Get Ready",
-      "duree": "",
+      "titre": "Up And Down",
+      "duree": "3:49",
       "auteurs": []
      }
-    ],
-    "want": 10,
-    "note": 2.0,
-    "votes": 1
+    ]
    },
    "titresDiscogs": {
-    "artiste": "Stars On 45",
-    "a": "Stars On 45 Volume Two / Voulez Vous / S.O.S. / Bang A Boomerang / Money, Money, Money / Knowing Me, Knowing You / Fernando / The Winner Takes It All / Super Trouper / Stars On 45 (2)",
-    "b": "Stars Get Ready"
+    "artiste": "Opus",
+    "a": "Live Is Life",
+    "b": "Up And Down"
    },
-   "pochette": "https://i.discogs.com/_jz4mKvoCoiDKauiT4g7jWjnEE1UNrhtWHJ0ap94I3M/rs:fit/g:sm/q:40/h:150/w:150/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNTM3/NTg2LTE1NTYxMDIz/NzUtNzQyNC5qcGVn.jpeg",
-   "id": "ad65a9f6-7eaa-4994-a384-d708a0801ab0",
    "prix": {
-    "bas": 0.01,
-    "moyen": 0.46,
-    "haut": 0.9
+    "bas": 0.45,
+    "moyen": 2,
+    "haut": 4
    }
   }
  ],
- "prixMaj": "2026-11-22",
  "valeurDiscogs": {
-  "bas": "€382.41",
-  "median": "€858.86",
-  "haut": "€2,481.94",
-  "date": 1795348037.862525
+  "bas": "€250.13",
+  "median": "€613.30",
+  "haut": "€1,683.53",
+  "date": 1795361917.9340959
  }
 }

@@ -69,7 +69,7 @@ a { color: var(--accent); }
   border-bottom: 1px solid var(--ligne);
 }
 .barre > * { max-width: var(--largeur-page); margin-inline: auto; }
-.barre-haut { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.barre-haut { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
 .marque h1 { margin: 0; font-size: 32px; line-height: 1.05; font-weight: 700; letter-spacing: -.025em; }
 .marque p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
 .suivi-discogs { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 10px; }
@@ -87,7 +87,6 @@ a { color: var(--accent); }
 .prix-disque b { color: #fff; font-weight: 700; font-size: 13px; }
 .actions { display: flex; gap: 8px; flex: none; }
 .marque { flex: 1; min-width: 0; }
-.barre-haut { align-items: flex-start; }
 .pilule {
   height: 40px; padding: 0 18px; border-radius: 20px;
   background: var(--accent); color: var(--accent-ink); font-size: 15px; font-weight: 600;
@@ -98,14 +97,13 @@ a { color: var(--accent); }
 .sync-discogs { background: var(--champ); color: var(--ink); white-space: nowrap; }
 .etiquettes { display: inline-flex; align-items: center; gap: 7px; padding-inline: 14px 16px; background: var(--champ); color: var(--ink); white-space: nowrap; }
 .etiquettes svg { width: 18px; height: 18px; }
-@media (max-width: 700px) {
-  .etiquettes { width: 40px; padding: 0; justify-content: center; }
-  .etiquettes span { display: none; }
-}
 .sync-discogs-court { display: none; }
 #statut-sync-discogs, #r-verif, .historique-bilan { white-space: pre-line; }
 .historique-bilan { margin: 0 0 12px; padding: 10px 12px; border-radius: 10px; background: var(--champ); font-size: 14px; line-height: 1.45; }
 @media (max-width: 700px) {
+  .etiquettes { width: 40px; padding: 0; justify-content: center; }
+  .etiquettes span { display: none; }
+  #btn-export { display: none; }
   .sync-discogs { padding-inline: 10px; font-size: 13px; }
   .sync-discogs-court { display: inline; }
   .sync-discogs-complet { display: none; }
@@ -329,6 +327,15 @@ html:has(.stats-collection[open]) { overflow: hidden; }
 .stats-grille dd { margin: 2px 0 0; font-size: 18px; font-weight: 700; }
 .stats-grille small { display: block; margin-top: 3px; font-weight: 400; }
 
+.remplacement-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.remplacement-liste button { display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 12px; border: 0; border-radius: var(--r); background: var(--champ); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.remplacement-liste button:hover, .remplacement-liste button:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.remplacement-liste .num { flex: none; min-width: 2.2em; font-weight: 700; font-variant-numeric: tabular-nums; }
+.remplacement-liste .titres { display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere; }
+.remplacement-liste small { color: var(--muted); font-size: 13px; }
+.remplacement-liste .libre { color: var(--muted); font-style: italic; }
+.btn-ajouter-jukebox { align-self: flex-start; margin-top: 4px; }
+
 .historique-discogs { width: min(760px, calc(100% - 24px)); }
 #historique-statut:empty { display: none; }
 .historique-choix { display: grid; gap: 4px; font-size: 14px; }
@@ -529,7 +536,6 @@ textarea { height: auto; padding: 10px 12px; resize: vertical; line-height: 1.45
 .champs .lien { margin-top: 0; }
 .choix { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 .choix .secondaire { height: 40px; padding: 0 16px; font-size: 15px; background: var(--carte); }
-@media (max-width: 700px) { #btn-export { display: none; } }
 .bascule { display: flex; gap: 10px; align-items: flex-start; color: var(--ink); }
 .bascule input { width: 20px; height: 20px; margin: 0; accent-color: var(--accent); flex: none; }
 .case-pochette { align-items: center; min-height: 44px; padding: 0 14px; border-radius: 11px; background: var(--carte); box-shadow: inset 0 0 0 1px var(--ligne); font-size: 16px; cursor: pointer; }
@@ -639,7 +645,7 @@ body:not(.edition) .ligne.libre { cursor: default; }
 .carrousel { --cf: clamp(240px, calc(100vh - 400px), 440px); display: flex; flex-direction: column; align-items: center; gap: 10px; }
 .cf-piste {
   width: 100%; display: flex; align-items: center;
-  overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain;
+  overflow: auto hidden; overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory; scrollbar-width: none;
   perspective: 1200px; padding-block: 36px; outline: none;
   -webkit-user-select: none; user-select: none;
@@ -665,7 +671,7 @@ body:not(.edition) .ligne.libre { cursor: default; }
 .retournee .cf-recto { pointer-events: none; }
 .cf-verso p { margin: 0; }
 .cf-pos { align-self: flex-start; padding: 2px 9px; border-radius: 10px; background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; }
-.cf-verso h3 { margin: 2px 0 2px; font-size: clamp(17px, calc(var(--cf) * .065), 26px); line-height: 1.15; letter-spacing: -.015em; }
+.cf-verso h3 { margin: 2px 0; font-size: clamp(17px, calc(var(--cf) * .065), 26px); line-height: 1.15; letter-spacing: -.015em; }
 .cf-verso .face { font-size: clamp(13px, calc(var(--cf) * .045), 17px); }
 .cf-meta { font-size: 12.5px; color: var(--muted); }
 .cf-bas { margin-top: auto; display: flex; flex-direction: column; gap: 8px; padding-top: 6px; }
@@ -695,3 +701,17 @@ body:not(.edition) .ligne.libre { cursor: default; }
 .cf-plein-ecran .cf-legende b { font-size: 15px; }
 .cf-plein-ecran .cf-legende span { font-size: 13px; }
 .cf-recto .badge-pointe { right: 10px; top: 10px; }
+
+/* Confirmation de la synchronisation Discogs */
+.confirmer-synchro .feuille { display: flex; flex-direction: column; gap: 14px; }
+.confirmer-synchro h3 { margin: 0 0 6px; font-size: 16px; }
+.cs-bloc .aide { margin: 0 0 8px; }
+.cs-import { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--carte); }
+.cs-import span { overflow-wrap: anywhere; }
+.cs-import small { display: block; color: var(--muted); }
+.cs-import select { flex: none; max-width: 48%; }
+.cs-modif summary { display: flex; align-items: center; gap: 8px; }
+.cs-modif summary input { flex: none; width: 20px; height: 20px; }
+.cs-modif.pointe { outline: 2px solid var(--accent); outline-offset: -2px; }
+.cs-actions { position: sticky; bottom: 0; display: flex; justify-content: flex-end; gap: 10px; padding-top: 10px; background: inherit; }
+.sync-discogs.arret { background: var(--accent); color: var(--accent-ink); }

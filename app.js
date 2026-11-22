@@ -785,6 +785,30 @@ dialogueFiche.addEventListener("keydown", (e) => {
   if (e.key === "Escape") e.stopPropagation();
 });
 
+// Flèches gauche / droite : fiche précédente / suivante (dans l'ordre affiché).
+function ficheModifiee() {
+  const v = etat.vinyles.find((x) => x.id === fiche?.id);
+  if (!v) return true;
+  return $("f-artiste").value !== (v.artiste || "") || $("f-a").value !== (v.a || "") || $("f-b").value !== (v.b || "") ||
+    $("f-note").value !== (v.note || "") || $("f-avec-pochette").checked !== !!v.avecPochette ||
+    ($("f-pos").value || "") !== (v.pos || "") || !!fiche.blob || fiche.discogs !== (v.discogs || null) || fiche.pochette !== (v.pochette || "");
+}
+dialogueFiche.addEventListener("keydown", (e) => {
+  if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+  if (e.altKey || e.metaKey || e.ctrlKey || e.shiftKey || e.defaultPrevented) return;
+  if (e.target.closest?.("input, textarea, select, [contenteditable]")) return;
+  if (!fiche || fiche.nouveau || $("btn-enregistrer").disabled) return;
+  const liste = etat.affiches || [];
+  const i = liste.findIndex((v) => v.id === fiche.id);
+  if (i < 0 || liste.length < 2) return;
+  e.preventDefault();
+  if (etat.edition && ficheModifiee()) return toast("Enregistre d'abord tes modifications");
+  const suivant = liste[(i + (e.key === "ArrowRight" ? 1 : -1) + liste.length) % liste.length];
+  const v = etat.vinyles.find((x) => x.id === suivant.id) || suivant;
+  dialogueFiche.close();
+  ouvrirFiche(v);
+});
+
 // ——— Doublons ———
 // Titre « de base » : sans majuscules, accents, ponctuation ni ce qui est entre parenthèses.
 const base = (s) => norm(s).replace(/\(.*?\)|\[.*?\]/g, " ").replace(/[^a-z0-9]+/g, " ").trim();
@@ -1179,8 +1203,47 @@ function rendreFicheLecture(v) {
     <p class="lead">${esc(position)} · ${v.avecPochette ? "Avec pochette" : "Sans pochette"}</p>
     <p><b>Face A</b> ${titre("a")}</p>
     ${v.b ? `<p><b>Face B</b> ${titre("b")}</p>` : ""}
-    ${v.note ? `<div><h3>Note</h3><p>${esc(v.note)}</p></div>` : ""}`;
+    ${v.note ? `<div><h3>Note</h3><p>${esc(v.note)}</p></div>` : ""}
+    ${v.pos ? "" : `<button type="button" class="secondaire btn-ajouter-jukebox" data-ajouter-jukebox="${esc(v.id)}">Ajouter au jukebox</button>`}`;
 }
+
+// ——— Ajouter au jukebox (disque en réserve) : prépare un mail de remplacement ———
+const SUJET_REMPLACEMENT = "Jukebox - Remplacement musique";
+const decrireDisque = (v) => `${v.artiste} – ${v.a}${v.b ? " / " + v.b : ""}`;
+
+function ouvrirRemplacement(v) {
+  $("remplacement-disque").textContent = decrireDisque(v);
+  const parPos = new Map(etat.vinyles.filter((x) => x.pos).map((x) => [x.pos, x]));
+  $("remplacement-liste").innerHTML = toutesPositions.map((pos) => {
+    const o = parPos.get(pos);
+    const titres = o
+      ? `<span class="titres"><b>${esc(o.artiste)}</b><small>${esc(o.a)}${o.b ? " / " + esc(o.b) : ""}</small></span>`
+      : `<span class="titres libre">Libre</span>`;
+    return `<li><button type="button" data-remplacer="${pos}"><span class="num">${pos}</span>${titres}</button></li>`;
+  }).join("");
+  $("remplacement-liste").dataset.disque = v.id;
+  $("remplacement").showModal();
+}
+
+$("fiche-lecture").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-ajouter-jukebox]");
+  if (!b) return;
+  const v = etat.vinyles.find((x) => x.id === b.dataset.ajouterJukebox);
+  if (v) ouvrirRemplacement(v);
+});
+
+$("remplacement-liste").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-remplacer]");
+  if (!b) return;
+  const v = etat.vinyles.find((x) => x.id === $("remplacement-liste").dataset.disque);
+  if (!v) return;
+  const pos = b.dataset.remplacer;
+  const o = etat.vinyles.find((x) => x.pos === pos);
+  const place = o ? `N° ${pos} – ${decrireDisque(o)}` : `N° ${pos} (position libre)`;
+  const corps = `Je souhaite ajouter ce disque dans le jukebox :\n${decrireDisque(v)}\n\nà la place de : ${place}`;
+  $("remplacement").close();
+  location.href = `mailto:?subject=${encodeURIComponent(SUJET_REMPLACEMENT)}&body=${encodeURIComponent(corps)}`;
+});
 
 function ouvrirFiche(v, posLibre) {
   fiche = { id: v?.id || uid(), nouveau: !v, pochette: v?.pochette || "", blob: null, discogs: v?.discogs || null,
@@ -1486,14 +1549,31 @@ $("discogs-resultats").addEventListener("click", async (e) => {
 async function enregistrerCollection(vinyles) {
   const avant = new Map(etat.vinyles.map((v) => [v.id, v]));
   const apres = new Set(vinyles.map((v) => v.id));
-  const { nouveauxPointes = [], vinyles: enregistres } = await posterJson("collection", {
-    vinyles: trier(vinyles),
-    modifications: vinyles.filter((v) => avant.get(v.id) !== v),
+  const modifications = vinyles.filter((v) => avant.get(v.id) !== v);
+  const { vinyles: enregistres } = await posterJson("collection", {
+    modifications,
+    // Version d'origine de chaque fiche : le serveur n'applique que les champs réellement modifiés.
+    bases: Object.fromEntries(modifications.filter((v) => avant.has(v.id)).map((v) => [v.id, avant.get(v.id)])),
     supprimes: [...avant.keys()].filter((id) => !apres.has(id)),
   });
-  for (const id of nouveauxPointes) presentsInventaire.add(id);
-  etat.vinyles = trier(enregistres || vinyles);
+  etat.vinyles = trier(enregistres);
   majPublier();
+}
+// Disques importés depuis Discogs : leur miniature en ligne est remplacée par une pochette WebP enregistrée ici.
+async function rapatrierPochettes() {
+  const remplaces = new Map();
+  for (const v of etat.vinyles.filter((x) => x.discogs && /^https?:/.test(x.pochette || ""))) {
+    try {
+      const rel = await discogs(`releases/${v.discogs}`);
+      const image = (rel.images || []).find((i) => i.type === "primary") || (rel.images || [])[0];
+      const blob = await pochetteCarree(await api(`image?url=${encodeURIComponent(image?.uri || v.pochette)}`));
+      const { chemin } = await api(`pochette?nom=${v.id}-${Date.now().toString(36)}.webp`, { method: "POST", body: blob });
+      remplaces.set(v.id, { ...v, pochette: chemin });
+    } catch {}
+  }
+  if (!remplaces.size) return;
+  await enregistrerCollection(etat.vinyles.map((v) => remplaces.get(v.id) || v));
+  rendre();
 }
 const retirerPochette = (chemin) => {
   if (chemin?.startsWith("covers/")) api(`retirer-pochette?nom=${encodeURIComponent(chemin.slice(7))}`, { method: "POST" }).catch(() => {});
@@ -1559,7 +1639,7 @@ $("btn-supprimer").addEventListener("click", async () => {
     retirerPochette(ancien?.pochette);
     fermer("fiche");
     rendre();
-    toast("Disque supprimé");
+    toast(ancien?.discogs ? "Disque supprimé (et retiré de ta collection Discogs)" : "Disque supprimé");
   } catch {
     erreurFiche("Suppression impossible. Réessaie.");
   }
@@ -1595,7 +1675,8 @@ $("btn-publier").addEventListener("click", async () => {
   }, 700);
   try {
     const r = await api("publier", { method: "POST" });
-    toast(r.a_jour ? "Déjà à jour en ligne ✓" : "Publié ✓ — en ligne d'ici une minute");
+    if (r.pages === false) toast(r.a_jour ? "Fichiers à jour sur GitHub, mais GitHub Pages n'est pas activé : le site n'est pas en ligne." : "Envoyé sur GitHub, mais GitHub Pages n'a pas pu être activé : le site n'est pas encore en ligne.");
+    else toast(r.a_jour ? "Déjà à jour en ligne ✓" : "Publié ✓ — en ligne d'ici une minute");
   } catch (err) {
     toast(err.message);
   } finally {
@@ -1705,7 +1786,9 @@ function bilanDiscogs(p) {
   const changements = [];
   if (p.deplaces) changements.push(`${p.deplaces} ${p.deplaces === 1 ? "disque a changé" : "disques ont changé"} de dossier sur Discogs`);
   if (p.exportes) changements.push(`${p.exportes} ${p.exportes === 1 ? "disque ajouté" : "disques ajoutés"} à Discogs`);
+  if (p.retires) changements.push(`${p.retires} ${p.retires === 1 ? "disque retiré" : "disques retirés"} de Discogs (absents de ton site)`);
   if (p.importes) changements.push(`${p.importes} ${p.importes === 1 ? "disque ajouté" : "disques ajoutés"} à ta réserve`);
+  if (p.fiches_modifiees) changements.push(nbFichesModifiees(p.fiches_modifiees));
 
   const bilan = changements.length ? [`${changements.join(", ")}.`] : [];
   if (p.sans_reference) bilan.push(`${p.sans_reference} ${p.sans_reference === 1 ? "disque à lier" : "disques à lier"} à Discogs.`);
@@ -1714,13 +1797,21 @@ function bilanDiscogs(p) {
       ? "Pour afficher les numéros de case, crée le champ « Case jukebox » (texte privé) sur Discogs."
       : p.info_cases);
   }
+  if (p.conflits) bilan.push(`${p.conflits} ${p.conflits === 1 ? "fiche n’a pas été modifiée car elle a changé" : "fiches n’ont pas été modifiées car elles ont changé"} pendant la confirmation.`);
   if (p.erreur_valeur) bilan.push("Estimation Discogs non actualisée.");
+  if (p.erreur_suppressions) bilan.push(`Disques supprimés pas encore retirés de Discogs : ${p.erreur_suppressions}`);
   return bilan.join("\n") || (p.erreur ? "" : "Synchronisation terminée.");
 }
 
 function afficherVerif(p) {
-  boutonSyncDiscogs.disabled = !!p.en_cours;
   synchronisationEnCours = !!p.en_cours;
+  // Pendant la synchronisation, le bouton devient « Arrêter ».
+  boutonSyncDiscogs.disabled = false;
+  boutonSyncDiscogs.classList.toggle("arret", synchronisationEnCours);
+  boutonSyncDiscogs.querySelector(".sync-discogs-complet").textContent = synchronisationEnCours ? "Arrêter la synchronisation" : "Synchroniser avec Discogs";
+  boutonSyncDiscogs.querySelector(".sync-discogs-court").textContent = synchronisationEnCours ? "■ Arrêter" : "↻ Discogs";
+  boutonSyncDiscogs.title = synchronisationEnCours ? "Arrêter et annuler la synchronisation" : "Synchroniser avec Discogs";
+  boutonSyncDiscogs.setAttribute("aria-label", boutonSyncDiscogs.title);
   $("btn-valeur-discogs").disabled = synchronisationEnCours || actualisationValeurEnCours;
   controlesHistorique();
   rapport = p.rapport || rapport;
@@ -1752,8 +1843,13 @@ async function suivreVerif() {
       if (progression.en_cours) afficherVerif(progression);
     } while (progression.en_cours);
 
+    if (progression.plan) {
+      afficherVerif(progression);
+      return ouvrirConfirmation(progression.plan);
+    }
     await chargerInventaire().catch(() => {});
     await charger();
+    rapatrierPochettes();
     afficherVerif(progression);
     if (historiqueDiscogs.open) await chargerHistorique();
     majPublier();
@@ -1765,6 +1861,18 @@ async function suivreVerif() {
 }
 
 boutonSyncDiscogs.addEventListener("click", async () => {
+  if (synchronisationEnCours) {
+    if (!confirm("Arrêter la synchronisation et annuler ce qu’elle a changé ?")) return;
+    boutonSyncDiscogs.disabled = true;
+    try {
+      await api("arreter-synchro", { method: "POST" });
+      toast("Arrêt de la synchronisation…");
+    } catch (err) {
+      boutonSyncDiscogs.disabled = false;
+      toast(err.message);
+    }
+    return;
+  }
   if (!etat.edition.discogs) return ouvrirReglages("Ajoute ta clé Discogs pour synchroniser la collection.");
   boutonSyncDiscogs.disabled = true;
   try {
@@ -1777,6 +1885,73 @@ boutonSyncDiscogs.addEventListener("click", async () => {
   }
 });
 $("btn-voir-verif").addEventListener("click", () => { fermer("reglages"); ouvrirVerif(); });
+
+// Fenêtre de confirmation : la synchronisation n'applique que ce qui est coché.
+const confirmation = $("confirmer-synchro");
+let planSynchro = null;
+function ouvrirConfirmation(plan) {
+  planSynchro = plan;
+  const imports = plan.imports || [], modifs = plan.modifs || [];
+  $("cs-bloc-imports").hidden = !imports.length;
+  $("cs-bloc-modifs").hidden = !modifs.length;
+  $("cs-vide").hidden = !!(imports.length || modifs.length);
+  $("cs-imports").innerHTML = imports.map((i) => `
+    <li class="cs-import">
+      <span><strong>${esc(i.artiste)}</strong> · ${esc(i.a)}${i.b ? ` / ${esc(i.b)}` : ""}
+        <small>${[i.format, i.annee, i.label, `Discogs #${i.release}`, i.nombre > 1 ? `${i.nombre} exemplaires en trop` : ""].filter(Boolean).map(esc).join(" · ")}</small></span>
+      <label class="bascule"><input type="checkbox" data-import="${i.release}" checked> Retirer de Discogs</label>
+    </li>`).join("");
+  $("cs-modifs").innerHTML = modifs.map((f) => `
+    <details class="cs-modif${f.pointe ? " pointe" : ""}">
+      <summary><input type="checkbox" data-modif="${esc(f.id)}"${f.pointe ? "" : " checked"} aria-label="Appliquer">
+        <strong>${f.pointe ? "🔒 " : ""}${esc(f.artiste)} · ${esc(f.titre)}</strong>
+        <small>${f.pos ? `Position ${esc(f.pos)}` : "Réserve"}${f.pointe ? " · Pointé" : ""}</small></summary>
+      <table class="historique-table">
+        <thead><tr><th scope="col">Champ</th><th scope="col">Avant</th><th scope="col">Après</th></tr></thead>
+        <tbody>${lignesHistorique(f.champs).map(([nom, avant, apres]) => `<tr><th scope="row">${esc(nom)}</th><td>${esc(avant)}</td><td>${esc(apres)}</td></tr>`).join("")}</tbody>
+      </table>
+    </details>`).join("");
+  $("cs-tout").checked = modifs.length > 0 && modifs.every((f) => !f.pointe);
+  $("cs-appliquer").disabled = $("cs-annuler").disabled = false;
+  if (!confirmation.open) confirmation.showModal();
+}
+// Cocher sans ouvrir le détail.
+$("cs-modifs").addEventListener("click", (e) => { if (e.target.matches("input[data-modif]")) e.stopPropagation(); });
+$("cs-modifs").addEventListener("change", () => {
+  const cases = [...$("cs-modifs").querySelectorAll("input[data-modif]")];
+  $("cs-tout").checked = cases.every((c) => c.checked);
+});
+$("cs-tout").addEventListener("change", (e) => {
+  for (const c of $("cs-modifs").querySelectorAll("input[data-modif]")) c.checked = e.target.checked;
+});
+// Échap ne ferme pas : il faut choisir « Appliquer » ou « Annuler ».
+confirmation.addEventListener("cancel", (e) => e.preventDefault());
+$("cs-annuler").addEventListener("click", async () => {
+  $("cs-appliquer").disabled = $("cs-annuler").disabled = true;
+  try { await posterJson("annuler-synchro", { jeton: planSynchro?.jeton }); } catch {}
+  planSynchro = null;
+  confirmation.close();
+  boutonSyncDiscogs.disabled = false;
+  toast("Synchronisation annulée : rien n’a été modifié");
+});
+$("cs-appliquer").addEventListener("click", async () => {
+  const imports = Object.fromEntries([...$("cs-imports").querySelectorAll("input[data-import]")].map((c) => [c.dataset.import, c.checked ? "retirer" : "garder"]));
+  const modifs = [...$("cs-modifs").querySelectorAll("input[data-modif]:checked")].map((c) => c.dataset.modif);
+  const pointes = (planSynchro?.modifs || []).filter((f) => f.pointe && modifs.includes(f.id)).length;
+  if (pointes && !confirm(`${pointes} ${pointes === 1 ? "disque pointé sera modifié" : "disques pointés seront modifiés"}. Continuer ?`)) return;
+  $("cs-appliquer").disabled = $("cs-annuler").disabled = true;
+  try {
+    await posterJson("appliquer-synchro", { jeton: planSynchro?.jeton, imports, modifs });
+    planSynchro = null;
+    confirmation.close();
+    afficherVerif({ en_cours: true });
+    await suivreVerif();
+  } catch (err) {
+    $("cs-appliquer").disabled = $("cs-annuler").disabled = false;
+    toast(err.message);
+    if (err.status === 409) { confirmation.close(); boutonSyncDiscogs.disabled = false; }
+  }
+});
 
 let actualisationValeurEnCours = false;
 $("btn-valeur-discogs").addEventListener("click", async (event) => {
@@ -1961,11 +2136,11 @@ async function ouvrirVerif() {
   ouvrir("verif");
 }
 async function appliquer(ids) {
-  const { modifiees } = await posterJson("appliquer-titres-discogs", { ids, horodatage: rapport.horodatage });
+  const { modifiees, ecartees = 0 } = await posterJson("appliquer-titres-discogs", { ids, horodatage: rapport.horodatage });
   await charger();
   majPublier();
   rendreVerif();
-  toast(nbFichesModifiees(modifiees));
+  toast(nbFichesModifiees(modifiees) + (ecartees ? ` · ${ecartees} ignorée${ecartees > 1 ? "s" : ""} (pressage changé depuis la vérification)` : ""));
 }
 $("verif").addEventListener("click", async (e) => {
   const maj = e.target.closest("[data-maj]"), ign = e.target.closest("[data-ignorer]"), ouv = e.target.closest("[data-ouvrir]");
@@ -2045,9 +2220,11 @@ $("recherche").addEventListener("input", (e) => {
   await charger();
   if (etat.edition) {
     majPublier();
+    rapatrierPochettes();
     api("verification").then((p) => {
       afficherVerif(p);
       if (p.en_cours) suivreVerif();
+      else if (p.plan) ouvrirConfirmation(p.plan);
     }).catch(() => { boutonSyncDiscogs.disabled = false; });
     // En revenant sur la page (après une modification ailleurs), on revérifie.
     document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") majPublier(); });

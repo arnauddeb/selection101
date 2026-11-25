@@ -897,12 +897,19 @@ function remplirPositions(posActuelle, idActuel) {
 }
 function majSelections() {
   const p = $("f-pos").value;
+  $("f-pos").dataset.avant = p;
   $("sel-a").textContent = p ? JUKEBOX.selectionA(p) : "";
   $("sel-b").textContent = p ? JUKEBOX.selectionB(p) : "";
+  // Le lien sous l'emplacement : « Mettre en réserve » si le disque est à sa place enregistrée,
+  // sinon il annule le choix en cours (« Laisser en réserve » ou « Garder le N° xx »).
+  const enPlace = posEnregistree();
   $("btn-reserve").hidden = !p;
+  $("btn-reserve").textContent = p === enPlace ? "Mettre en réserve" : enPlace ? `Garder le N° ${enPlace}` : "Laisser en réserve";
   const o = p && parPosition().get(p);
-  $("aide-pos").hidden = !(o && o.id !== fiche?.id);
-  if (o) $("aide-pos").textContent = `${o.artiste} passera en réserve.`;
+  const r = !p && fiche?.remplacant && etat.vinyles.find((x) => x.id === fiche.remplacant.id);
+  $("aide-pos").hidden = !(o && o.id !== fiche?.id) && !r;
+  if (o) $("aide-pos").textContent = `${o.artiste} (actuellement au N° ${p}) passera en réserve pour laisser la place à ce disque.`;
+  else if (r) $("aide-pos").textContent = `${r.artiste} – ${r.a} prendra le N° ${fiche.remplacant.pos}.`;
 }
 function afficherPochette(src) {
   const img = $("pochette-img");
@@ -1249,6 +1256,18 @@ function rendreFicheLecture(v) {
 const SUJET_REMPLACEMENT = "Jukebox - Remplacement musique";
 const decrireDisque = (v) => `${v.artiste} – ${v.a}${v.b ? " / " + v.b : ""}`;
 
+// Filtre une liste de boutons (data-cherche) selon le texte tapé, sans tenir compte des accents.
+function filtrerListe(liste, q, vide) {
+  const mots = norm(q).split(/\s+/).filter(Boolean);
+  let n = 0;
+  for (const li of $(liste).children) {
+    const ok = mots.every((m) => li.dataset.cherche.includes(m));
+    li.hidden = !ok;
+    if (ok) n++;
+  }
+  $(vide).hidden = n > 0;
+}
+
 function ouvrirRemplacement(v) {
   $("remplacement-disque").textContent = decrireDisque(v);
   const parPos = new Map(etat.vinyles.filter((x) => x.pos).map((x) => [x.pos, x]));
@@ -1257,15 +1276,60 @@ function ouvrirRemplacement(v) {
     const titres = o
       ? `<span class="titres"><b>${esc(o.artiste)}</b><small>${esc(o.a)}${o.b ? " / " + esc(o.b) : ""}</small></span>`
       : `<span class="titres libre">Libre</span>`;
-    return `<li><button type="button" data-remplacer="${pos}"><span class="num">${pos}</span>${titres}</button></li>`;
+    const cherche = norm(`${pos} ${o ? `${o.artiste} ${o.a} ${o.b || ""}` : "libre"}`);
+    return `<li data-cherche="${esc(cherche)}"><button type="button" data-remplacer="${pos}"><span class="num">${pos}</span>${titres}</button></li>`;
   }).join("");
   $("remplacement-liste").dataset.disque = v.id;
+  $("remplacement-q").value = "";
+  $("remplacement-vide").hidden = true;
   $("remplacement").showModal();
+  if (matchMedia("(hover: hover)").matches) $("remplacement-q").focus();
 }
+$("remplacement-q").addEventListener("input", (e) => filtrerListe("remplacement-liste", e.target.value, "remplacement-vide"));
+
+// ——— Mettre en réserve (disque du jukebox) : laisser l'emplacement vide ou y mettre un disque de la réserve ———
+let posAvantReserve = "", posLiberee = "";
+// pos : l'emplacement que le disque libère ; restaurer : la valeur à remettre si on annule.
+function ouvrirMiseReserve(pos, restaurer = pos) {
+  posLiberee = pos;
+  posAvantReserve = restaurer;
+  const artiste = $("f-artiste").value.trim(), a = $("f-a").value.trim(), b = $("f-b").value.trim();
+  $("mise-reserve-disque").textContent = `N° ${pos} · ${artiste}${a ? " – " + a : ""}${b ? " / " + b : ""}`;
+  $("mise-reserve-vide").textContent = `Laisser le N° ${pos} vide`;
+  const reserve = etat.vinyles.filter((x) => !x.pos && x.id !== fiche?.id && x.id !== fiche?.remplacer)
+    .sort((x, y) => norm(x.artiste).localeCompare(norm(y.artiste)) || norm(x.a).localeCompare(norm(y.a)));
+  $("mise-reserve-liste").innerHTML = reserve.map((o) => {
+    const cherche = norm(`${o.artiste} ${o.a} ${o.b || ""}`);
+    return `<li data-cherche="${esc(cherche)}"><button type="button" data-remplacant="${esc(o.id)}"><span class="titres"><b>${esc(o.artiste)}</b><small>${esc(o.a)}${o.b ? " / " + esc(o.b) : ""}</small></span></button></li>`;
+  }).join("");
+  $("mise-reserve-q").value = "";
+  $("mise-reserve-aucun").hidden = reserve.length > 0;
+  $("mise-reserve").returnValue = "";
+  $("mise-reserve").showModal();
+  if (matchMedia("(hover: hover)").matches) $("mise-reserve-q").focus();
+}
+function choisirMiseReserve(remplacantId) {
+  fiche.remplacant = remplacantId ? { id: remplacantId, pos: posLiberee } : null;
+  $("f-pos").value = "";
+  $("mise-reserve").close("choisi");
+  majSelections();
+}
+$("mise-reserve-q").addEventListener("input", (e) => filtrerListe("mise-reserve-liste", e.target.value, "mise-reserve-aucun"));
+$("mise-reserve-vide").addEventListener("click", () => choisirMiseReserve(null));
+$("mise-reserve-liste").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-remplacant]");
+  if (b) choisirMiseReserve(b.dataset.remplacant);
+});
+// Fermé sans choix (croix, Échap) : rien ne change, le disque reste à sa place.
+$("mise-reserve").addEventListener("close", () => {
+  if ($("mise-reserve").returnValue === "choisi") return;
+  $("f-pos").value = posAvantReserve;
+  majSelections();
+});
 
 $("btn-ajouter-jukebox").addEventListener("click", () => {
   const v = etat.vinyles.find((x) => x.id === fiche?.id);
-  if (v && !v.pos) ouvrirRemplacement(v);
+  if (v && !v.pos && !etat.edition) ouvrirRemplacement(v);
 });
 
 // Image de la pochette en PNG (le presse-papiers n'accepte que le PNG).
@@ -1321,7 +1385,8 @@ function ouvrirFiche(v, posLibre) {
   remplirPositions(v ? v.pos : posLibre || "", v?.id);
   afficherPochette(v?.pochette || "");
   $("btn-supprimer").hidden = !v;
-  $("btn-ajouter-jukebox").hidden = !v || !!v.pos; // disque en réserve : proposer un remplacement par mail
+  // Disque en réserve, sur le site en ligne seulement : proposer un remplacement par mail (pas dans l'administration).
+  $("btn-ajouter-jukebox").hidden = !v || !!v.pos || !!etat.edition;
   $("btn-supprimer").textContent = "Supprimer";
   delete $("btn-supprimer").dataset.confirmer;
   majLienDiscogs();
@@ -1411,9 +1476,20 @@ $("grille").addEventListener("click", (e) => {
   else ouvrirFiche(v);
 });
 $("btn-ajouter").addEventListener("click", () => ouvrirFiche(null, ""));
-$("f-pos").addEventListener("change", majSelections);
+// Choisir « Réserve » pour un disque du jukebox : on demande quoi faire de son emplacement.
+const posEnregistree = () => (fiche && !fiche.nouveau && etat.vinyles.find((x) => x.id === fiche.id)?.pos) || "";
+$("f-pos").addEventListener("change", () => {
+  const avant = $("f-pos").dataset.avant || "";
+  if (fiche) fiche.remplacant = null;
+  majSelections();
+  if (!$("f-pos").value && posEnregistree()) ouvrirMiseReserve(posEnregistree(), avant);
+});
 $("btn-reserve").addEventListener("click", () => {
-  $("f-pos").value = "";
+  const p = $("f-pos").value, enPlace = posEnregistree();
+  if (p && p === enPlace) return ouvrirMiseReserve(p);
+  // Annule le choix en cours : retour à l'emplacement enregistré (ou à la réserve).
+  if (fiche) fiche.remplacant = null;
+  $("f-pos").value = enPlace;
   majSelections();
 });
 $("pochette-edit").addEventListener("click", () => $("pochette-fichier").click());
@@ -1666,13 +1742,18 @@ $("form-disque").addEventListener("submit", async (e) => {
     if (fiche.prix) disque.prix = fiche.prix;
     if (fiche.discogs && fiche.infos) disque.infos = fiche.infos;
     if (fiche.discogs && fiche.titresDiscogs) disque.titresDiscogs = fiche.titresDiscogs;
-    const liste = etat.vinyles.map((v) => (pos && v.id !== disque.id && v.pos === pos ? { ...v, pos: null } : v)).filter((v) => v.id !== disque.id && v.id !== remplace?.id);
+    let liste = etat.vinyles.map((v) => (pos && v.id !== disque.id && v.pos === pos ? { ...v, pos: null } : v)).filter((v) => v.id !== disque.id && v.id !== remplace?.id);
+    // Mis en réserve avec un remplaçant choisi : le disque de la réserve prend l'emplacement libéré.
+    const rp = !pos && fiche.remplacant;
+    const remplacant = rp && liste.find((v) => v.id === rp.id && !v.pos) && !liste.some((v) => v.pos === rp.pos) ? rp : null;
+    if (remplacant) liste = liste.map((v) => (v.id === remplacant.id ? { ...v, pos: remplacant.pos } : v));
     await enregistrerCollection([...liste, disque]);
     if (ancien?.pochette !== pochette) retirerPochette(ancien?.pochette);
     if (remplace?.pochette && remplace.pochette !== pochette) retirerPochette(remplace.pochette);
     fermer("fiche");
     rendre();
-    toast(pos ? `Enregistré en ${pos}` : "Enregistré en réserve");
+    const nouveau = remplacant && liste.find((v) => v.id === remplacant.id);
+    toast(pos ? `Enregistré en ${pos}` : nouveau ? `En réserve · ${nouveau.artiste} au N° ${remplacant.pos}` : "Enregistré en réserve");
   } catch (err) {
     btn.disabled = false;
     btn.textContent = "Enregistrer";

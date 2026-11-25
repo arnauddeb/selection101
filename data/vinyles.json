@@ -1513,7 +1513,7 @@
    "artiste": "Patrick Hernandez",
    "a": "Born To Be Alive",
    "b": "Born To Be Alive (Instru)",
-   "pos": "30",
+   "pos": null,
    "pochette": "covers/d3532070-a49e-498f-9050-18dace5fb790.webp",
    "discogs": 6706932,
    "prix": {
@@ -3234,7 +3234,7 @@
    "artiste": "Stevie Wonder",
    "a": "Do I Do",
    "b": "Rocket Love",
-   "pos": "62",
+   "pos": null,
    "pochette": "covers/80100cef-6088-472b-a79e-0836f0d34f7b.webp",
    "discogs": 4079965,
    "infos": {
@@ -5495,7 +5495,7 @@
    "artiste": "Holiday Bells, The",
    "a": "Douce Nuit / Venite Adoremus / Vive Le Vent D'hiver",
    "b": "Les Anges De Nos Campagnes / Petite Ville De Bethleem / Mon Beau Sapin",
-   "pos": null,
+   "pos": "30",
    "pochette": "covers/3ac466de-d7ea-4574-8a7f-843c19e32f9d.webp",
    "avecPochette": true,
    "discogs": 17177470,
@@ -9760,7 +9760,7 @@
    "artiste": "Tino Rossi",
    "a": "Minuit, Chrétiens / Trois Anges Sont Venus",
    "b": "Petit Papa Noël / Noël En Mer",
-   "pos": null,
+   "pos": "62",
    "pochette": "covers/a308f0c3-10bd-420a-81a9-e451aa0b04ae-mwrow7ks.webp",
    "discogs": 4553914,
    "infos": {
@@ -10019,54 +10019,6 @@
     "bas": 0.5,
     "moyen": 2.0,
     "haut": 10.0
-   }
-  },
-  {
-   "id": "74c1cf8a-86b1-412a-b274-3188e888eed8",
-   "artiste": "Supertramp",
-   "a": "Goodbye Stranger",
-   "b": "Even In The Quietest Moments",
-   "pos": null,
-   "pochette": "covers/74c1cf8a-86b1-412a-b274-3188e888eed8-mwrozxwv.webp",
-   "discogs": 1037934,
-   "infos": {
-    "label": "A&M Records",
-    "catno": "AMS 7620",
-    "pays": "France",
-    "annee": 1979,
-    "genres": [
-     "Rock"
-    ],
-    "styles": [
-     "Art Rock"
-    ],
-    "auteurs": [
-     "Rick Davies & Roger Hodgson"
-    ],
-    "pistes": [
-     {
-      "position": "A",
-      "titre": "Goodbye Stranger",
-      "duree": "5:44",
-      "auteurs": []
-     },
-     {
-      "position": "B",
-      "titre": "Even In The Quietest Moments",
-      "duree": "6:39",
-      "auteurs": []
-     }
-    ]
-   },
-   "titresDiscogs": {
-    "artiste": "Supertramp",
-    "a": "Goodbye Stranger",
-    "b": "Even In The Quietest Moments"
-   },
-   "prix": {
-    "bas": 0.9,
-    "moyen": 3.0,
-    "haut": 12.82
    }
   },
   {
